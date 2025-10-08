@@ -1,0 +1,81 @@
+Event	ID	Name			Wwise Object Path	Notes
+	47361196	Play_ProtoClick			\Default Work Unit\Play_ProtoClick	
+	872174764	Play_MegaAbsorbObstaclesActivated			\Default Work Unit\Play_MegaAbsorbObstaclesActivated	
+	1103419735	Play_West			\Default Work Unit\Play_West	
+	1228161944	Play_LesserAbsorbObstaclesActivated			\Default Work Unit\Play_LesserAbsorbObstaclesActivated	
+	1553219250	Play_Collision			\Default Work Unit\Play_Collision	
+	1578180715	Play_PA_Settings_Opened			\Default Work Unit\Play_PA_Settings_Opened	
+	1839782124	Play_MainChamberNotification			\Default Work Unit\Play_MainChamberNotification	
+	1850732987	Play_North			\Default Work Unit\Play_North	
+	1884537203	Play_PA_Settings_Confirmed			\Default Work Unit\Play_PA_Settings_Confirmed	
+	1921606916	Play_MegaReflectObstaclesActivated			\Default Work Unit\Play_MegaReflectObstaclesActivated	
+	2173823837	Play_ObstacleEmitter			\Default Work Unit\Play_ObstacleEmitter	
+	2245461924	Play_NoObstaclesActivated			\Default Work Unit\Play_NoObstaclesActivated	
+	2248556949	Play_45_Angle_Indicator			\Default Work Unit\Play_45_Angle_Indicator	
+	2531445826	Play_StartingPositionNotification			\Default Work Unit\Play_StartingPositionNotification	
+	2570030149	Play_Compass_Synth			\Default Work Unit\Play_Compass_Synth	
+	3187449017	Play_South			\Default Work Unit\Play_South	
+	3559566211	Play_HumanClick			\Default Work Unit\Play_HumanClick	
+	3787876787	Stop_Compass_Synth			\Default Work Unit\Stop_Compass_Synth	
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+	4162345221	Play_East			\Default Work Unit\Play_East	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	250675185	Click_Amplitude			\Default Work Unit\Click_Amplitude	
+	1741542810	Player_Yaw			\Default Work Unit\Player_Yaw	
+	4151021112	Click_Pitch			\Default Work Unit\Click_Pitch	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	846920411	Ambisonic_Main_Mix			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix	
+	3587466022	Ambisonic_Reverbs			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	459160926	StereoVerb			\Default Work Unit\Master Audio Bus\StereoVerb	
+	867873073	Hallway02_Ambi_Verb			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway02_Ambi_Verb	
+	903073294	SimpleReflect			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\SimpleReflect	
+	2018380841	LateReverb			\Default Work Unit\Master Audio Bus\StereoVerb\LateReverb	
+	3311067494	Hallway01_Ambi_Verb			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway01_Ambi_Verb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	222388465	Parametric EQ (Custom)	Wwise Parametric EQ			
+	468583253	Parametric EQ (Custom)	Wwise Parametric EQ			
+	617097675	Tremolo (Custom)	Wwise Tremolo			
+	798867357	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	807199837	Parametric EQ (Custom)	Wwise Parametric EQ			
+	1309861968	Mausoleum1_Gallery_Ambix_o3	Wwise Convolution Reverb			Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.
+	3399505373	Reflect_Physically_Based	Wwise Reflect			
+	3421951496	Garage1_6m_Ambix_o3	Wwise Convolution Reverb			Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+	4213309952	SchoolHall	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2033835	Footstep01	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\C4\{C49C2844-31E8-C405-C7A4-525EDA00034B}.wem		\Actor-Mixer Hierarchy\User\FootstepContainer\Footsteps\Footstep01		7340
+	88841646	ObstacleEmitter	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\FC\{FCC7B1FB-CE01-4152-537F-E11CA17200D8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObstacleEmitter		234440
+	114198763	MegaReflectObstaclesActivated	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\A5\{A5E03BF7-481E-196A-5E93-E06F36A66004}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MegaReflectObstaclesActivated		171744
+	230135971	45_Angle_Indicator	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\AA\{AA4D1716-76C6-97B2-7C2B-AF3803C41279}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\45_Angle_Indicator		45452
+	254450818	Compass_Synth	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\6D\{6D9CF55A-8E36-6DD8-6BFA-C62F2A654B22}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\Compass_Synth		438928
+	269530736	StartingPositionNotification	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\99\{99DA7A1D-8415-834E-0B51-C9A19B1AB3A2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\StartingPositionNotification		118752
+	345466174	East	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\25\{25D867D3-2B35-AAEC-AF5E-09B3B2DC8A15}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\East		127148
+	369476291	Footstep03	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\1C\{1C6928D6-A8D4-FF59-29D3-42AB7B9796EC}.wem		\Actor-Mixer Hierarchy\User\FootstepContainer\Footsteps\Footstep03		10680
+	398837345	MegaAbsorbObstaclesActivated	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\AF\{AFF124AE-F3F6-209A-8BCC-44DC075A8050}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MegaAbsorbObstaclesActivated		165984
+	442760386	NoObstaclesActivated	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\C6\{C6A72F12-C434-9A4D-8CD8-A0EEDEE421B6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NoObstaclesActivated		95712
+	516543843	ProtoClick	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\93\{93B4E0F3-0447-B77D-E9D1-197F1EB73A63}.wem		\Actor-Mixer Hierarchy\User\Clicks\ProtoClick		12624
+	556476513	Collision	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\03\{0339539D-B4A4-DE01-61A1-86982B9D2C67}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Collision		68304
+	641815117	PA_Settings_Opened	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\6E\{6E26DD8D-EA58-705B-9A5E-0ECA428612E1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\PA_Settings_Opened		45280
+	696266850	Footstep04	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\C3\{C3962221-8A60-AA0C-9E32-DC6D2FE66A21}.wem		\Actor-Mixer Hierarchy\User\FootstepContainer\Footsteps\Footstep04		7084
+	701429478	LesserAbsorbObstaclesActivated	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\3C\{3C946C75-9138-A306-9BA6-3FBDCB2EE49D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\LesserAbsorbObstaclesActivated		167136
+	714290107	Footstep02	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\74\{74AB8055-2FDC-D746-E76E-46AFFC863E1D}.wem		\Actor-Mixer Hierarchy\User\FootstepContainer\Footsteps\Footstep02		9004
+	763360263	West	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\77\{77BCEC7E-7166-25C1-8049-D4CB783D5F34}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\West		247700
+	875313660	Footstep05	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\81\{811B7B63-2E63-C1F2-D7FD-4DF84D11343B}.wem		\Actor-Mixer Hierarchy\User\FootstepContainer\Footsteps\Footstep05		6800
+	905814100	PA_Settings_Confirmed	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\F8\{F84ABC2B-7B33-D353-24F5-9903792540E1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\PA_Settings_Confirmed		53728
+	908350307	HumanClick	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\55\{5562B044-4AE1-DBB0-6252-35B8AB3ECED3}.wem		\Actor-Mixer Hierarchy\User\Clicks\HumanClick		40784
+	932884221	MainChamberNotification	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\47\{4720930C-DA88-B7E4-80D6-B59F98AF82EA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainChamberNotification		85344
+	964506797	South	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\4A\{4A5A8D4D-D7B1-CF26-92E3-7D12C96F1B28}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\South		202524
+	970935376	North	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\86\{861EBDD4-BB94-CA95-0D99-750493246E07}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\North		147348
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	300588143	Garage1_6m_Ambix_o3	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\41\{41E3540B-6581-2688-844B-1C6834273462}.wem	Wwise Convolution Reverb (Shared)	\Effects\BOOM Library IR - R&S - HOA\BOOM Library IR - R&S\HOA\Garage 01\Garage1_6m_Ambix_o3	Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.	1855680
+	522077337	SchoolHall	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\10\{100CA1C1-2AEE-C63A-F808-168B33264EC7}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\SchoolHall	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	570576
+	685116775	Mausoleum1_Gallery_Ambix_o3	C:\Unity\WwiseTrials\SoundObjectDestinationTrials\SoundObjectDestinationTrials_WwiseProject\.cache\2E\{2E54E46C-25F2-35D4-4C0C-EF75C3699968}.wem	Wwise Convolution Reverb (Shared)	\Effects\BOOM Library IR - R&S - HOA\BOOM Library IR - R&S\HOA\Mausoleum\Mausoleum1_Gallery_Ambix_o3	Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.	3978560
+

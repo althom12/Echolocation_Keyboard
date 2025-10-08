@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A59E1798-7907-4414-9A51-ABE0DC2B49DE}" SchemaVersion="123">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{A59E1798-7907-4414-9A51-ABE0DC2B49DE}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="Pulse_Modulator" ID="{45EF6860-6EA5-4F2C-A5EE-151C55635699}" ShortID="393620875"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>

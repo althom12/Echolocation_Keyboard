@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{71362385-39DD-41AA-AE29-CACFB165C806}" SchemaVersion="123">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{71362385-39DD-41AA-AE29-CACFB165C806}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{B491F553-DEF4-4E6E-9D24-77784102CF9E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_ProtoClick" ID="{5882A6CD-4982-426A-A6C1-93E02FD2BD28}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MainChamberNotification" ID="{464F3B29-3A26-434B-9B0F-32311574E6DF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hallway01_Ambi_Verb" ID="{7EEA5551-616A-43E4-950C-0C1277D1B60B}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Compass_Synth" ID="{609C5A8B-0EBE-4490-8A28-550DF89B9FAF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_East" ID="{160459A9-48AA-44EA-A295-765751BF09FA}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MegaAbsorbObstaclesActivated" ID="{5A26FADB-89B8-44F3-AB14-054FAA33182C}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_45_Angle_Indicator" ID="{A5A63898-3C74-4510-8D1C-BF46D87A9EA1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MegaReflectObstaclesActivated" ID="{EC88DD70-D988-4572-9032-ACDDAC051E67}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Compass_Synth" ID="{BD07EC20-FEE7-45DF-9E8F-82E57C8E177E}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LateReverb" ID="{F02E6885-FC95-47CA-AB5D-FF9298F1B276}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_West" ID="{FB135816-E131-4813-B4B0-D0C8A7F03E0F}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hallway02_Ambi_Verb" ID="{A99E3B76-79C5-482E-A7C1-01943ED52D06}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_StartingPositionNotification" ID="{A6E38A81-6490-4969-A5B9-C8AC57C7A2D0}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HumanClick" ID="{044D7B23-E026-499A-806F-B8BE29CEF09D}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ObstacleEmitter" ID="{F9539CF8-66C1-4A27-8361-8A2DBDDD8271}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_North" ID="{321939A0-93A7-4B0A-B74E-DF86596918A7}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Collision" ID="{6B681C0B-6064-4B4D-A34D-4DAE0FA6D9D5}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_South" ID="{3628B8C9-A60D-4BCB-BA9D-A7F1A4A00EA1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_LesserAbsorbObstaclesActivated" ID="{7A279AD4-C5B4-4C8A-8982-2D7CD1CD5E35}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps" ID="{1E1AF629-B0C2-4DA3-8D13-0ECC4347584B}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PA_Settings_Confirmed" ID="{0D5C929F-43CA-4DDA-B704-F9428D7185E5}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_NoObstaclesActivated" ID="{509A8904-B713-4EE8-8ED4-9B2AD2BA3A3F}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PA_Settings_Opened" ID="{B2F0387E-682B-4EFA-9B96-143B776BB4F7}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Tutorial_Bank" ID="{5FEF39A8-436C-4F9F-9930-B17E0B4387BF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Pause_Tutorial" ID="{93F1813A-5309-41D4-BE3B-841F52200D60}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_06_AdvancedMechanics" ID="{BE08CA2F-5ACB-4236-832D-C8CC1372B342}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_07_MainGame" ID="{745CEBA6-A3C5-4428-B55E-1597479A26CD}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_03_RotationAndSonicCompass" ID="{9C060430-7356-4987-B2F9-F0FBA8F6EF01}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_04_SpawnPositions" ID="{88DBD3AB-3E2D-4A17-9AAC-C7EE4C957981}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_01_Intro" ID="{C0F6A7BF-6A77-4C83-AC0A-B6857B389196}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_02_BasicMechanics" ID="{98432684-208D-4ECF-9D90-9EA54FA9C4D1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_05_Obstacles" ID="{82F4CBA9-C59E-4F06-8E36-E27F3174D815}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Tutorial" ID="{AA549C6B-619A-4F1B-996B-8AE72C9B8B25}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

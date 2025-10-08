@@ -1,0 +1,811 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
+    "Language": "SFX",
+    "Hash": "{7490AD40-A4CB-0CFC-5E61-92431004B528}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "2033835",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Footstep01.wav",
+      "CachePath": "C4/{C49C2844-31E8-C405-C7A4-525EDA00034B}.wem"
+     },
+     {
+      "Id": "88841646",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ObstacleEmitter.wav",
+      "CachePath": "FC/{FCC7B1FB-CE01-4152-537F-E11CA17200D8}.wem"
+     },
+     {
+      "Id": "114198763",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MegaReflectObstaclesActivated.wav",
+      "CachePath": "A5/{A5E03BF7-481E-196A-5E93-E06F36A66004}.wem"
+     },
+     {
+      "Id": "230135971",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ui_mainmenu_select.wav",
+      "CachePath": "AA/{AA4D1716-76C6-97B2-7C2B-AF3803C41279}.wem"
+     },
+     {
+      "Id": "254450818",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Compass_Synth.wav",
+      "CachePath": "6D/{6D9CF55A-8E36-6DD8-6BFA-C62F2A654B22}.wem"
+     },
+     {
+      "Id": "269530736",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StartingPositionNotification.wav",
+      "CachePath": "99/{99DA7A1D-8415-834E-0B51-C9A19B1AB3A2}.wem"
+     },
+     {
+      "Id": "300588143",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOOM Library IR - R&S\\Garage1_6m_Ambix_o3.wav",
+      "CachePath": "41/{41E3540B-6581-2688-844B-1C6834273462}.wem"
+     },
+     {
+      "Id": "345466174",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "East.wav",
+      "CachePath": "25/{25D867D3-2B35-AAEC-AF5E-09B3B2DC8A15}.wem"
+     },
+     {
+      "Id": "369476291",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Footstep03.wav",
+      "CachePath": "1C/{1C6928D6-A8D4-FF59-29D3-42AB7B9796EC}.wem"
+     },
+     {
+      "Id": "398837345",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MegaAbsorbObstaclesActivated.wav",
+      "CachePath": "AF/{AFF124AE-F3F6-209A-8BCC-44DC075A8050}.wem"
+     },
+     {
+      "Id": "442760386",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NoObstaclesActivated.wav",
+      "CachePath": "C6/{C6A72F12-C434-9A4D-8CD8-A0EEDEE421B6}.wem"
+     },
+     {
+      "Id": "516543843",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EcholocationClick.wav",
+      "CachePath": "93/{93B4E0F3-0447-B77D-E9D1-197F1EB73A63}.wem"
+     },
+     {
+      "Id": "522077337",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AudioEase\\Altiverb - Outdoor and More\\Domestic\\AE_SchoolHall.wav",
+      "CachePath": "10/{100CA1C1-2AEE-C63A-F808-168B33264EC7}.wem"
+     },
+     {
+      "Id": "556476513",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Collision.wav",
+      "CachePath": "03/{0339539D-B4A4-DE01-61A1-86982B9D2C67}.wem"
+     },
+     {
+      "Id": "641815117",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PA_Settings_Opened.wav",
+      "CachePath": "6E/{6E26DD8D-EA58-705B-9A5E-0ECA428612E1}.wem"
+     },
+     {
+      "Id": "685116775",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BOOM Library IR - R&S\\Mausoleum1_Gallery_Ambix_o3.wav",
+      "CachePath": "2E/{2E54E46C-25F2-35D4-4C0C-EF75C3699968}.wem"
+     },
+     {
+      "Id": "696266850",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Footstep04.wav",
+      "CachePath": "C3/{C3962221-8A60-AA0C-9E32-DC6D2FE66A21}.wem"
+     },
+     {
+      "Id": "701429478",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LesserAbsorbObstaclesActivated.wav",
+      "CachePath": "3C/{3C946C75-9138-A306-9BA6-3FBDCB2EE49D}.wem"
+     },
+     {
+      "Id": "714290107",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Footstep02.wav",
+      "CachePath": "74/{74AB8055-2FDC-D746-E76E-46AFFC863E1D}.wem"
+     },
+     {
+      "Id": "763360263",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "West.wav",
+      "CachePath": "77/{77BCEC7E-7166-25C1-8049-D4CB783D5F34}.wem"
+     },
+     {
+      "Id": "875313660",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Footstep05.wav",
+      "CachePath": "81/{811B7B63-2E63-C1F2-D7FD-4DF84D11343B}.wem"
+     },
+     {
+      "Id": "905814100",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PA_Settings_Confirmed.wav",
+      "CachePath": "F8/{F84ABC2B-7B33-D353-24F5-9903792540E1}.wem"
+     },
+     {
+      "Id": "908350307",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "2025-09-04 09-13-40.wav",
+      "CachePath": "55/{5562B044-4AE1-DBB0-6252-35B8AB3ECED3}.wem"
+     },
+     {
+      "Id": "932884221",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ttsmaker-file-2025-9-24-2-2-30.wav",
+      "CachePath": "47/{4720930C-DA88-B7E4-80D6-B59F98AF82EA}.wem"
+     },
+     {
+      "Id": "964506797",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "South.wav",
+      "CachePath": "4A/{4A5A8D4D-D7B1-CF26-92E3-7D12C96F1B28}.wem"
+     },
+     {
+      "Id": "970935376",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "North.wav",
+      "CachePath": "86/{861EBDD4-BB94-CA95-0D99-750493246E07}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "222388465",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Environment\\Collision\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{40FE6AD2-174E-4F4D-B38A-B78B78455BBD}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "468583253",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Compass\\45_Angle_Indicator\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{9F5FCE0A-F5F5-4B91-A777-D550AB70E0E7}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "617097675",
+       "Name": "Tremolo (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Compass\\Compass_Synth\\[Effect Slot [0]: (Tremolo)]\\Tremolo (Custom)",
+       "GUID": "{74887D9F-2DF5-4974-9AE0-8D22BCE1A203}",
+       "LibName": "Wwise Tremolo",
+       "LibId": "8585219"
+      },
+      {
+       "Id": "798867357",
+       "Name": "Resonance Audio Renderer (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\[Effect Slot [0]: (Resonance Audio Renderer)]\\Resonance Audio Renderer (Custom)",
+       "GUID": "{2CC423DB-F503-4B6E-96B3-1DB376F8629F}",
+       "LibName": "Resonance Audio Renderer",
+       "LibId": "6557955"
+      },
+      {
+       "Id": "807199837",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Compass\\Compass_Synth\\[Effect Slot [1]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{8BDD186E-7081-48A6-9B67-B54DF892A360}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "1309861968",
+       "Name": "Mausoleum1_Gallery_Ambix_o3",
+       "ObjectPath": "\\Effects\\BOOM Library IR - R&S - HOA\\BOOM Library IR - R&S\\HOA\\Mausoleum\\Mausoleum1_Gallery_Ambix_o3",
+       "GUID": "{AB9BF9F9-7735-4F31-9933-D8D2D0A5621A}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "685116775"
+        }
+       ]
+      },
+      {
+       "Id": "3399505373",
+       "Name": "Reflect_Physically_Based",
+       "ObjectPath": "\\Effects\\Factory Reflect Physically-Based\\Reflect_Physically_Based",
+       "GUID": "{C69F5865-C206-4B45-BC40-315F3F39151A}",
+       "LibName": "Wwise Reflect",
+       "LibId": "11206659"
+      },
+      {
+       "Id": "3421951496",
+       "Name": "Garage1_6m_Ambix_o3",
+       "ObjectPath": "\\Effects\\BOOM Library IR - R&S - HOA\\BOOM Library IR - R&S\\HOA\\Garage 01\\Garage1_6m_Ambix_o3",
+       "GUID": "{094765E5-4A6C-4414-B3AB-C1776BA99C1C}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "300588143"
+        }
+       ]
+      },
+      {
+       "Id": "3604890626",
+       "Name": "High_Pass_60Hz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\High Pass Filters\\High_Pass_60Hz",
+       "GUID": "{F9627628-0B10-4272-BC30-D4C20423CB38}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "4213309952",
+       "Name": "SchoolHall",
+       "ObjectPath": "\\Effects\\Factory Altiverb - Outdoor and More\\Altiverb - Outdoor and More\\Domestic\\SchoolHall",
+       "GUID": "{BB0D7BD2-44E6-4818-AC96-C0216B54E854}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "522077337"
+        }
+       ]
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "2248556949",
+      "Name": "Play_45_Angle_Indicator",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_45_Angle_Indicator",
+      "GUID": "{A5A63898-3C74-4510-8D1C-BF46D87A9EA1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.354329",
+      "DurationMax": "0.354329",
+      "MediaRefs": [
+       {
+        "Id": "230135971"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "468583253"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1553219250",
+      "Name": "Play_Collision",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Collision",
+      "GUID": "{6B681C0B-6064-4B4D-A34D-4DAE0FA6D9D5}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.35526142",
+      "DurationMax": "0.35526142",
+      "MediaRefs": [
+       {
+        "Id": "556476513"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "222388465"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2570030149",
+      "Name": "Play_Compass_Synth",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Compass_Synth",
+      "GUID": "{609C5A8B-0EBE-4490-8A28-550DF89B9FAF}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "254450818"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "617097675"
+        },
+        {
+         "Id": "807199837"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "4162345221",
+      "Name": "Play_East",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_East",
+      "GUID": "{160459A9-48AA-44EA-A295-765751BF09FA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.66173506",
+      "DurationMax": "0.66173506",
+      "MediaRefs": [
+       {
+        "Id": "345466174"
+       }
+      ]
+     },
+     {
+      "Id": "3854155799",
+      "Name": "Play_Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Footsteps",
+      "GUID": "{1E1AF629-B0C2-4DA3-8D13-0ECC4347584B}",
+      "MaxAttenuation": "20",
+      "DurationType": "OneShot",
+      "DurationMin": "0.038023513",
+      "DurationMax": "0.06000256",
+      "MediaRefs": [
+       {
+        "Id": "2033835"
+       },
+       {
+        "Id": "369476291"
+       },
+       {
+        "Id": "696266850"
+       },
+       {
+        "Id": "714290107"
+       },
+       {
+        "Id": "875313660"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "903073294",
+        "Name": "SimpleReflect",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
+        "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "3559566211",
+      "Name": "Play_HumanClick",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_HumanClick",
+      "GUID": "{044D7B23-E026-499A-806F-B8BE29CEF09D}",
+      "MaxAttenuation": "20",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21191256",
+      "DurationMax": "0.21191256",
+      "MediaRefs": [
+       {
+        "Id": "908350307"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "903073294",
+        "Name": "SimpleReflect",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
+        "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "1228161944",
+      "Name": "Play_LesserAbsorbObstaclesActivated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_LesserAbsorbObstaclesActivated",
+      "GUID": "{7A279AD4-C5B4-4C8A-8982-2D7CD1CD5E35}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.48",
+      "DurationMax": "3.48",
+      "MediaRefs": [
+       {
+        "Id": "701429478"
+       }
+      ]
+     },
+     {
+      "Id": "1839782124",
+      "Name": "Play_MainChamberNotification",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MainChamberNotification",
+      "GUID": "{464F3B29-3A26-434B-9B0F-32311574E6DF}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.776",
+      "DurationMax": "1.776",
+      "MediaRefs": [
+       {
+        "Id": "932884221"
+       }
+      ]
+     },
+     {
+      "Id": "872174764",
+      "Name": "Play_MegaAbsorbObstaclesActivated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MegaAbsorbObstaclesActivated",
+      "GUID": "{5A26FADB-89B8-44F3-AB14-054FAA33182C}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.456",
+      "DurationMax": "3.456",
+      "MediaRefs": [
+       {
+        "Id": "398837345"
+       }
+      ]
+     },
+     {
+      "Id": "1921606916",
+      "Name": "Play_MegaReflectObstaclesActivated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MegaReflectObstaclesActivated",
+      "GUID": "{EC88DD70-D988-4572-9032-ACDDAC051E67}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.576",
+      "DurationMax": "3.576",
+      "MediaRefs": [
+       {
+        "Id": "114198763"
+       }
+      ]
+     },
+     {
+      "Id": "2245461924",
+      "Name": "Play_NoObstaclesActivated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_NoObstaclesActivated",
+      "GUID": "{509A8904-B713-4EE8-8ED4-9B2AD2BA3A3F}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.992",
+      "DurationMax": "1.992",
+      "MediaRefs": [
+       {
+        "Id": "442760386"
+       }
+      ]
+     },
+     {
+      "Id": "1850732987",
+      "Name": "Play_North",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_North",
+      "GUID": "{321939A0-93A7-4B0A-B74E-DF86596918A7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7669282",
+      "DurationMax": "0.7669282",
+      "MediaRefs": [
+       {
+        "Id": "970935376"
+       }
+      ]
+     },
+     {
+      "Id": "2173823837",
+      "Name": "Play_ObstacleEmitter",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ObstacleEmitter",
+      "GUID": "{F9539CF8-66C1-4A27-8361-8A2DBDDD8271}",
+      "MaxAttenuation": "20",
+      "DurationType": "OneShot",
+      "DurationMin": "2.441093",
+      "DurationMax": "2.441093",
+      "MediaRefs": [
+       {
+        "Id": "88841646"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3604890626"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1884537203",
+      "Name": "Play_PA_Settings_Confirmed",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_PA_Settings_Confirmed",
+      "GUID": "{0D5C929F-43CA-4DDA-B704-F9428D7185E5}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.838",
+      "DurationMax": "0.838",
+      "MediaRefs": [
+       {
+        "Id": "905814100"
+       }
+      ]
+     },
+     {
+      "Id": "1578180715",
+      "Name": "Play_PA_Settings_Opened",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_PA_Settings_Opened",
+      "GUID": "{B2F0387E-682B-4EFA-9B96-143B776BB4F7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.706",
+      "DurationMax": "0.706",
+      "MediaRefs": [
+       {
+        "Id": "641815117"
+       }
+      ]
+     },
+     {
+      "Id": "47361196",
+      "Name": "Play_ProtoClick",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ProtoClick",
+      "GUID": "{5882A6CD-4982-426A-A6C1-93E02FD2BD28}",
+      "MaxAttenuation": "20",
+      "DurationType": "OneShot",
+      "DurationMin": "0.0650035",
+      "DurationMax": "0.0650035",
+      "MediaRefs": [
+       {
+        "Id": "516543843"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3604890626"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "903073294",
+        "Name": "SimpleReflect",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
+        "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "3187449017",
+      "Name": "Play_South",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_South",
+      "GUID": "{3628B8C9-A60D-4BCB-BA9D-A7F1A4A00EA1}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0543253",
+      "DurationMax": "1.0543253",
+      "MediaRefs": [
+       {
+        "Id": "964506797"
+       }
+      ]
+     },
+     {
+      "Id": "2531445826",
+      "Name": "Play_StartingPositionNotification",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_StartingPositionNotification",
+      "GUID": "{A6E38A81-6490-4969-A5B9-C8AC57C7A2D0}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.472",
+      "DurationMax": "2.472",
+      "MediaRefs": [
+       {
+        "Id": "269530736"
+       }
+      ]
+     },
+     {
+      "Id": "1103419735",
+      "Name": "Play_West",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_West",
+      "GUID": "{FB135816-E131-4813-B4B0-D0C8A7F03E0F}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.289602",
+      "DurationMax": "1.289602",
+      "MediaRefs": [
+       {
+        "Id": "763360263"
+       }
+      ]
+     },
+     {
+      "Id": "3787876787",
+      "Name": "Stop_Compass_Synth",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_Compass_Synth",
+      "GUID": "{BD07EC20-FEE7-45DF-9E8F-82E57C8E177E}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "Busses": [
+     {
+      "Id": "846920411",
+      "Name": "Ambisonic_Main_Mix",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix",
+      "GUID": "{3B650CB4-D79D-484A-8330-A92F518AF95C}",
+      "Color": "4",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "798867357"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3587466022",
+      "Name": "Ambisonic_Reverbs",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs",
+      "GUID": "{794C00D1-33D0-4144-9B46-E7F3EA8CC6C3}",
+      "Color": "4"
+     },
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "459160926",
+      "Name": "StereoVerb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
+      "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
+     },
+     {
+      "Id": "867873073",
+      "Name": "Hallway02_Ambi_Verb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs\\Hallway02_Ambi_Verb",
+      "GUID": "{A99E3B76-79C5-482E-A7C1-01943ED52D06}",
+      "Color": "4",
+      "MaxAttenuation": "100",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1309861968"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "903073294",
+      "Name": "SimpleReflect",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
+      "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
+      "Color": "4",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3399505373"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2018380841",
+      "Name": "LateReverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb\\LateReverb",
+      "GUID": "{F02E6885-FC95-47CA-AB5D-FF9298F1B276}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "4213309952"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "459160926",
+        "Name": "StereoVerb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
+        "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
+       }
+      ]
+     },
+     {
+      "Id": "3311067494",
+      "Name": "Hallway01_Ambi_Verb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs\\Hallway01_Ambi_Verb",
+      "GUID": "{7EEA5551-616A-43E4-950C-0C1277D1B60B}",
+      "Color": "4",
+      "MaxAttenuation": "100",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3421951496"
+        }
+       ]
+      }
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "250675185",
+      "Name": "Click_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Click_Amplitude",
+      "GUID": "{0FBE1FBA-6190-4768-BDD5-F176F2DF9F21}"
+     },
+     {
+      "Id": "1741542810",
+      "Name": "Player_Yaw",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Player_Yaw",
+      "GUID": "{CB486B96-1484-40E7-9CD9-3F320AF21649}"
+     },
+     {
+      "Id": "4151021112",
+      "Name": "Click_Pitch",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Click_Pitch",
+      "GUID": "{93870C3F-9FB9-4F38-932C-E5C5E1507190}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8BFFBCBE-082A-B112-6C9C-2542D111B514}"
+ }
+}

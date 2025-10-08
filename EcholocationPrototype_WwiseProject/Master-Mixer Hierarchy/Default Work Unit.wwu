@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" SchemaVersion="123">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{CBA10D38-14B2-4C1B-9623-09EBDED56687}" WorkUnitID="{5A7CD6FC-DDC5-429B-9975-63AFBACE5F00}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<AuxBus Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>768</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{85BEB6B8-9D15-4FD7-8B68-0C0582B0FA25}" ShortID="169382242">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+																<ObjectRef Name="Reflect_Physically_Based" ID="{C69F5865-C206-4B45-BC40-315F3F39151A}" WorkUnitID="{9A5AAF13-8275-479B-8D44-4B723CE5B2F9}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+								<Bus Name="Ambisonic_Reverbs" ID="{794C00D1-33D0-4144-9B46-E7F3EA8CC6C3}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Ambisonic_Spread" ID="{E2C6CDD1-0E5B-48CD-BE34-D22AEF6CDF4F}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AuxBus Name="Hallway01_Ambi_Verb" ID="{7EEA5551-616A-43E4-950C-0C1277D1B60B}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>528</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Ambisonic_Spread" ID="{E2C6CDD1-0E5B-48CD-BE34-D22AEF6CDF4F}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+												</Reference>
+											</ReferenceList>
+											<PositioningInfo>
+												<Panner Name="" ID="{35C0C953-3A64-4623-AA4C-A2D60A2AF800}"/>
+											</PositioningInfo>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{78601155-06E3-4022-AC73-56D84861C3DC}" ShortID="203514136">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Garage1_6m_Ambix_o3" ID="{094765E5-4A6C-4414-B3AB-C1776BA99C1C}" WorkUnitID="{9746A558-D9AC-4B19-8F92-DD6133C7032C}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{63A8D459-5687-4107-86D1-A3A351559B20}" ShortID="754137680">
+																<PropertyList>
+																	<Property Name="Bypass" Type="bool" Value="True"/>
+																</PropertyList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Hallway02_Ambi_Verb" ID="{A99E3B76-79C5-482E-A7C1-01943ED52D06}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>521</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Ambisonic_Spread" ID="{E2C6CDD1-0E5B-48CD-BE34-D22AEF6CDF4F}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{757EB4B6-87DB-4916-9E23-C26EEDE1BDC4}" ShortID="23745252">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Mausoleum1_Gallery_Ambix_o3" ID="{AB9BF9F9-7735-4F31-9933-D8D2D0A5621A}" WorkUnitID="{9746A558-D9AC-4B19-8F92-DD6133C7032C}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{4A1194ED-047C-41AA-82E3-A4405DDBDC40}" ShortID="275402321">
+																<PropertyList>
+																	<Property Name="Bypass" Type="bool" Value="True"/>
+																</PropertyList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{C0EF512A-927C-4BEC-BA40-0DB3E3A7BF42}" ShortID="595959928">
+														<PropertyList>
+															<Property Name="Bypass" Type="bool" Value="True"/>
+														</PropertyList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{15C9AC0F-69F1-476B-9F1A-0A039EB8710E}" ShortID="982376250">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Resonance Audio Renderer (Custom)" ID="{2CC423DB-F503-4B6E-96B3-1DB376F8629F}" ShortID="798867357" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<AuxBus Name="StereoVerb" ID="{9EF68921-BACF-4938-89C9-9BA749ECDD53}">
+							<ChildrenList>
+								<AuxBus Name="LateReverb" ID="{F02E6885-FC95-47CA-AB5D-FF9298F1B276}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{CF1E3F5A-2CB0-43C7-BA57-12ED87E1CE32}" ShortID="116079018">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																<ObjectRef Name="SchoolHall" ID="{BB0D7BD2-44E6-4818-AC96-C0216B54E854}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</AuxBus>
+						<Bus Name="Tutorial" ID="{4D84C236-582F-41AB-B345-173AAF59D10E}"/>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{11593332-6276-464B-A2A4-E7CB57414BFF}" ShortID="263497858"/>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

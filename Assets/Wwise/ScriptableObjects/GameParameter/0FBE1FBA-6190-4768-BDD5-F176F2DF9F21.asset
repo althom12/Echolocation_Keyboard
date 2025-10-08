@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334d97766c6dec74f9a8f7a94145158b, type: 3}
+  m_Name: 0FBE1FBA-6190-4768-BDD5-F176F2DF9F21
+  m_EditorClassIdentifier: 
+  objectName: Click_Amplitude
+  id: 250675185
+  guid: 0FBE1FBA-6190-4768-BDD5-F176F2DF9F21

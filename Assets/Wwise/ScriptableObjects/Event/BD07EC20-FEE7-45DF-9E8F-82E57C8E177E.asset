@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
+  m_Name: BD07EC20-FEE7-45DF-9E8F-82E57C8E177E
+  m_EditorClassIdentifier: 
+  objectName: Stop_Compass_Synth
+  id: 3787876787
+  guid: BD07EC20-FEE7-45DF-9E8F-82E57C8E177E
+  IsInUserDefinedSoundBank: 1

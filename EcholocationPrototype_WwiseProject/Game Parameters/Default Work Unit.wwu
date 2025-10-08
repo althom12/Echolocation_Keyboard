@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Player_Yaw" ID="{CB486B96-1484-40E7-9CD9-3F320AF21649}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="360"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Click_Pitch" ID="{93870C3F-9FB9-4F38-932C-E5C5E1507190}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1200"/>
+						<Property Name="Min" Type="Real64" Value="-1200"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Click_Amplitude" ID="{0FBE1FBA-6190-4768-BDD5-F176F2DF9F21}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
+						<Property Name="Min" Type="Real64" Value="-30"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
