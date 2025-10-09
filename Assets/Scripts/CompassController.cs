@@ -9,7 +9,7 @@ public class CompassController : MonoBehaviour
     public AK.Wwise.Event PlayEastEvent;
     public AK.Wwise.Event PlaySouthEvent;
     public AK.Wwise.Event PlayWestEvent;
-    public AK.Wwise.Event PlayPingEvent; // --- NEW: Add the ping event here
+    public AK.Wwise.Event PlayPingEvent;
 
     // --- Public Settings ---
     public float angleTolerance = 5.0f;
@@ -18,38 +18,40 @@ public class CompassController : MonoBehaviour
     private string playerYawRTPC = "Player_Yaw";
     private bool isCompassActive = false;
 
-    // --- MODIFIED: Expanded enum to include all 8 compass points ---
     private enum CompassPoint { None, North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest };
     private CompassPoint lastPoint = CompassPoint.None;
 
     void Update()
     {
+        // --- MODIFIED: This block now handles toggling ---
         if (Input.GetMouseButtonDown(1))
         {
-            isCompassActive = true;
-            PlayPulseEvent.Post(gameObject);
+            // Invert the isCompassActive state
+            isCompassActive = !isCompassActive;
+
+            if (isCompassActive)
+            {
+                // If the compass is now ON, play the start event
+                PlayPulseEvent.Post(gameObject);
+            }
+            else
+            {
+                // If the compass is now OFF, play the stop event and reset the last point
+                StopPulseEvent.Post(gameObject);
+                lastPoint = CompassPoint.None;
+            }
         }
 
-        if (Input.GetMouseButtonUp(1))
-        {
-            isCompassActive = false;
-            StopPulseEvent.Post(gameObject);
-            lastPoint = CompassPoint.None; // --- MODIFIED: Reset the lastPoint
-        }
-
+        // --- This logic remains the same ---
         if (isCompassActive)
         {
             float currentYaw = transform.eulerAngles.y;
             AkSoundEngine.SetRTPCValue(playerYawRTPC, currentYaw, gameObject);
 
-            // --- MODIFIED: This whole block is new and improved ---
-            // Determine the current compass point (could be cardinal or intermediate).
             CompassPoint currentPoint = GetCompassPoint(currentYaw);
 
-            // If we have entered a NEW point zone...
             if (currentPoint != lastPoint)
             {
-                // ...play the appropriate sound.
                 switch (currentPoint)
                 {
                     // Cardinal Directions
@@ -75,28 +77,21 @@ public class CompassController : MonoBehaviour
                         break;
                 }
             }
-
-            // Remember this frame's point for the next frame.
             lastPoint = currentPoint;
         }
     }
 
-    // --- MODIFIED: This function now checks for all 8 directions ---
     private CompassPoint GetCompassPoint(float yaw)
     {
-        // Check Cardinal directions FIRST, as they take priority.
         if (yaw <= angleTolerance || yaw >= 360 - angleTolerance) return CompassPoint.North;
         if (yaw >= 90 - angleTolerance && yaw <= 90 + angleTolerance) return CompassPoint.East;
         if (yaw >= 180 - angleTolerance && yaw <= 180 + angleTolerance) return CompassPoint.South;
         if (yaw >= 270 - angleTolerance && yaw <= 270 + angleTolerance) return CompassPoint.West;
-
-        // THEN, check the intermediate "ping" angles.
         if (yaw >= 45 - angleTolerance && yaw <= 45 + angleTolerance) return CompassPoint.NorthEast;
         if (yaw >= 135 - angleTolerance && yaw <= 135 + angleTolerance) return CompassPoint.SouthEast;
         if (yaw >= 225 - angleTolerance && yaw <= 225 + angleTolerance) return CompassPoint.SouthWest;
         if (yaw >= 315 - angleTolerance && yaw <= 315 + angleTolerance) return CompassPoint.NorthWest;
 
-        // If not in any specific zone, return None.
         return CompassPoint.None;
     }
 }

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 8dd9c1f7dc146d4ebfe22ed40cc1a04a
     GuidInternal: 
-    m_lastTime: -8584439329197550097
+    m_lastTime: -8584424684189000359
     List:
     - name: MegaAbsorb
       guid: b5b40f142a16f5448e35587dfe65ec4d
@@ -51,7 +51,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584448199703168679
+    m_lastTime: -8584424684189000359
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7b608fe74c76ed4da6fc102f3ae55110
     GuidInternal: 
-    m_lastTime: -8584426721260819641
+    m_lastTime: -8584424684193288409
     List:
     - name: Ambisonic_Main_Mix
       guid: b40c653b9dd74a488330a92f518af95c
@@ -502,7 +502,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584426657239959102
+    m_lastTime: -8584424684189040475
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -544,7 +544,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584426657239838754
+    m_lastTime: -8584424684194672603
     List:
     - name: Pause_Tutorial
       guid: 3a81f1930953d441be3b841f52200d60
@@ -561,8 +561,8 @@ MonoBehaviour:
         guid: 3a81f1930953d441be3b841f52200d60
       Path: Events\Default Work Unit\Pause_Tutorial
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_01_Intro
       guid: bfa7f6c0776a834cac0ab6857b389196
       id: 1159590420
@@ -578,8 +578,8 @@ MonoBehaviour:
         guid: bfa7f6c0776a834cac0ab6857b389196
       Path: Events\Default Work Unit\Play_01_Intro
       maxAttenuation: 0
-      maxDuration: 48.72
-      minDuration: 48.72
+      maxDuration: -1
+      minDuration: -1
     - name: Play_02_BasicMechanics
       guid: 842643988d20cf4e9d909ea54fa9c4d1
       id: 2826305660
@@ -595,8 +595,8 @@ MonoBehaviour:
         guid: 842643988d20cf4e9d909ea54fa9c4d1
       Path: Events\Default Work Unit\Play_02_BasicMechanics
       maxAttenuation: 0
-      maxDuration: 25.008
-      minDuration: 25.008
+      maxDuration: -1
+      minDuration: -1
     - name: Play_03_RotationAndSonicCompass
       guid: 3004069c56738749b2f9f0fba8f6ef01
       id: 3663181753
@@ -612,8 +612,8 @@ MonoBehaviour:
         guid: 3004069c56738749b2f9f0fba8f6ef01
       Path: Events\Default Work Unit\Play_03_RotationAndSonicCompass
       maxAttenuation: 0
-      maxDuration: 37.101856
-      minDuration: 37.101856
+      maxDuration: -1
+      minDuration: -1
     - name: Play_04_SpawnPositions
       guid: abd3db882d3e174a9aacc7ee4c957981
       id: 2924510430
@@ -629,8 +629,8 @@ MonoBehaviour:
         guid: abd3db882d3e174a9aacc7ee4c957981
       Path: Events\Default Work Unit\Play_04_SpawnPositions
       maxAttenuation: 0
-      maxDuration: 28.252743
-      minDuration: 28.252743
+      maxDuration: -1
+      minDuration: -1
     - name: Play_05_Obstacles
       guid: a9cbf4829ec5064f8e36e27f3174d815
       id: 4004824028
@@ -646,8 +646,8 @@ MonoBehaviour:
         guid: a9cbf4829ec5064f8e36e27f3174d815
       Path: Events\Default Work Unit\Play_05_Obstacles
       maxAttenuation: 0
-      maxDuration: 67.03312
-      minDuration: 67.03312
+      maxDuration: -1
+      minDuration: -1
     - name: Play_06_AdvancedMechanics
       guid: 2fca08becb5a3642832dc8cc1372b342
       id: 2793081246
@@ -663,8 +663,8 @@ MonoBehaviour:
         guid: 2fca08becb5a3642832dc8cc1372b342
       Path: Events\Default Work Unit\Play_06_AdvancedMechanics
       maxAttenuation: 0
-      maxDuration: 31.690338
-      minDuration: 31.690338
+      maxDuration: -1
+      minDuration: -1
     - name: Play_07_MainGame
       guid: a6eb5c74c5a32844b55e1597479a26cd
       id: 1817525157
@@ -680,8 +680,8 @@ MonoBehaviour:
         guid: a6eb5c74c5a32844b55e1597479a26cd
       Path: Events\Default Work Unit\Play_07_MainGame
       maxAttenuation: 0
-      maxDuration: 1.5471251
-      minDuration: 1.5471251
+      maxDuration: -1
+      minDuration: -1
     - name: Play_45_Angle_Indicator
       guid: 9838a6a5743c10458d1cbf46d87a9ea1
       id: 2248556949
@@ -697,8 +697,8 @@ MonoBehaviour:
         guid: 9838a6a5743c10458d1cbf46d87a9ea1
       Path: Events\Default Work Unit\Play_45_Angle_Indicator
       maxAttenuation: 0
-      maxDuration: 0.354329
-      minDuration: 0.354329
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Collision
       guid: 0b1c686b64604d4ba34d4dae0fa6d9d5
       id: 1553219250
@@ -714,8 +714,8 @@ MonoBehaviour:
         guid: 0b1c686b64604d4ba34d4dae0fa6d9d5
       Path: Events\Default Work Unit\Play_Collision
       maxAttenuation: 0
-      maxDuration: 0.35526142
-      minDuration: 0.35526142
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Compass_Synth
       guid: 8b5a9c60be0e90448a28550df89b9faf
       id: 2570030149
@@ -731,8 +731,8 @@ MonoBehaviour:
         guid: 8b5a9c60be0e90448a28550df89b9faf
       Path: Events\Default Work Unit\Play_Compass_Synth
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_East
       guid: a9590416aa48ea44a295765751bf09fa
       id: 4162345221
@@ -748,8 +748,8 @@ MonoBehaviour:
         guid: a9590416aa48ea44a295765751bf09fa
       Path: Events\Default Work Unit\Play_East
       maxAttenuation: 0
-      maxDuration: 0.66173506
-      minDuration: 0.66173506
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Footsteps
       guid: 29f61a1ec2b0a34d8d130ecc4347584b
       id: 3854155799
@@ -764,9 +764,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 29f61a1ec2b0a34d8d130ecc4347584b
       Path: Events\Default Work Unit\Play_Footsteps
-      maxAttenuation: 20
-      maxDuration: 0.06000256
-      minDuration: 0.038023513
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_HumanClick
       guid: 237b4d0426e09a49806fb8be29cef09d
       id: 3559566211
@@ -781,9 +781,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 237b4d0426e09a49806fb8be29cef09d
       Path: Events\Default Work Unit\Play_HumanClick
-      maxAttenuation: 20
-      maxDuration: 0.21191256
-      minDuration: 0.21191256
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_LesserAbsorbObstaclesActivated
       guid: d49a277ab4c58a4c89822d7cd1cd5e35
       id: 1228161944
@@ -799,8 +799,8 @@ MonoBehaviour:
         guid: d49a277ab4c58a4c89822d7cd1cd5e35
       Path: Events\Default Work Unit\Play_LesserAbsorbObstaclesActivated
       maxAttenuation: 0
-      maxDuration: 3.48
-      minDuration: 3.48
+      maxDuration: -1
+      minDuration: -1
     - name: Play_MainChamberNotification
       guid: 293b4f46263a4b439b0f32311574e6df
       id: 1839782124
@@ -816,8 +816,8 @@ MonoBehaviour:
         guid: 293b4f46263a4b439b0f32311574e6df
       Path: Events\Default Work Unit\Play_MainChamberNotification
       maxAttenuation: 0
-      maxDuration: 1.776
-      minDuration: 1.776
+      maxDuration: -1
+      minDuration: -1
     - name: Play_MegaAbsorbObstaclesActivated
       guid: dbfa265ab889f344ab14054faa33182c
       id: 872174764
@@ -833,8 +833,8 @@ MonoBehaviour:
         guid: dbfa265ab889f344ab14054faa33182c
       Path: Events\Default Work Unit\Play_MegaAbsorbObstaclesActivated
       maxAttenuation: 0
-      maxDuration: 3.456
-      minDuration: 3.456
+      maxDuration: -1
+      minDuration: -1
     - name: Play_MegaReflectObstaclesActivated
       guid: 70dd88ec88d972459032acddac051e67
       id: 1921606916
@@ -850,8 +850,8 @@ MonoBehaviour:
         guid: 70dd88ec88d972459032acddac051e67
       Path: Events\Default Work Unit\Play_MegaReflectObstaclesActivated
       maxAttenuation: 0
-      maxDuration: 3.576
-      minDuration: 3.576
+      maxDuration: -1
+      minDuration: -1
     - name: Play_NoObstaclesActivated
       guid: 04899a5013b7e84e8ed49b2ad2ba3a3f
       id: 2245461924
@@ -867,8 +867,8 @@ MonoBehaviour:
         guid: 04899a5013b7e84e8ed49b2ad2ba3a3f
       Path: Events\Default Work Unit\Play_NoObstaclesActivated
       maxAttenuation: 0
-      maxDuration: 1.992
-      minDuration: 1.992
+      maxDuration: -1
+      minDuration: -1
     - name: Play_North
       guid: a0391932a7930a4bb74edf86596918a7
       id: 1850732987
@@ -884,8 +884,8 @@ MonoBehaviour:
         guid: a0391932a7930a4bb74edf86596918a7
       Path: Events\Default Work Unit\Play_North
       maxAttenuation: 0
-      maxDuration: 0.7669282
-      minDuration: 0.7669282
+      maxDuration: -1
+      minDuration: -1
     - name: Play_ObstacleEmitter
       guid: f89c53f9c166274a83618a2dbddd8271
       id: 2173823837
@@ -900,9 +900,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: f89c53f9c166274a83618a2dbddd8271
       Path: Events\Default Work Unit\Play_ObstacleEmitter
-      maxAttenuation: 20
-      maxDuration: 2.441093
-      minDuration: 2.441093
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_PA_Settings_Confirmed
       guid: 9f925c0dca43da4db704f9428d7185e5
       id: 1884537203
@@ -918,8 +918,8 @@ MonoBehaviour:
         guid: 9f925c0dca43da4db704f9428d7185e5
       Path: Events\Default Work Unit\Play_PA_Settings_Confirmed
       maxAttenuation: 0
-      maxDuration: 0.838
-      minDuration: 0.838
+      maxDuration: -1
+      minDuration: -1
     - name: Play_PA_Settings_Opened
       guid: 7e38f0b22b68fa4e9b96143b776bb4f7
       id: 1578180715
@@ -935,8 +935,8 @@ MonoBehaviour:
         guid: 7e38f0b22b68fa4e9b96143b776bb4f7
       Path: Events\Default Work Unit\Play_PA_Settings_Opened
       maxAttenuation: 0
-      maxDuration: 0.706
-      minDuration: 0.706
+      maxDuration: -1
+      minDuration: -1
     - name: Play_ProtoClick
       guid: cda6825882496a42a6c193e02fd2bd28
       id: 47361196
@@ -951,9 +951,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: cda6825882496a42a6c193e02fd2bd28
       Path: Events\Default Work Unit\Play_ProtoClick
-      maxAttenuation: 20
-      maxDuration: 0.0650035
-      minDuration: 0.0650035
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_South
       guid: c9b828360da6cb4bba9da7f1a4a00ea1
       id: 3187449017
@@ -969,8 +969,8 @@ MonoBehaviour:
         guid: c9b828360da6cb4bba9da7f1a4a00ea1
       Path: Events\Default Work Unit\Play_South
       maxAttenuation: 0
-      maxDuration: 1.0543253
-      minDuration: 1.0543253
+      maxDuration: -1
+      minDuration: -1
     - name: Play_StartingPositionNotification
       guid: 818ae3a690646949a5b9c8ac57c7a2d0
       id: 2531445826
@@ -986,8 +986,8 @@ MonoBehaviour:
         guid: 818ae3a690646949a5b9c8ac57c7a2d0
       Path: Events\Default Work Unit\Play_StartingPositionNotification
       maxAttenuation: 0
-      maxDuration: 2.472
-      minDuration: 2.472
+      maxDuration: -1
+      minDuration: -1
     - name: Play_West
       guid: 165813fb31e11348b4b0d0c8a7f03e0f
       id: 1103419735
@@ -1003,8 +1003,8 @@ MonoBehaviour:
         guid: 165813fb31e11348b4b0d0c8a7f03e0f
       Path: Events\Default Work Unit\Play_West
       maxAttenuation: 0
-      maxDuration: 1.289602
-      minDuration: 1.289602
+      maxDuration: -1
+      minDuration: -1
     - name: Resume_Tutorial
       guid: 6b9c54aa9a611b4f996b8ae72c9b8b25
       id: 4041214897
@@ -1020,8 +1020,8 @@ MonoBehaviour:
         guid: 6b9c54aa9a611b4f996b8ae72c9b8b25
       Path: Events\Default Work Unit\Resume_Tutorial
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Compass_Synth
       guid: 20ec07bde7fedf459e8f82e57c8e177e
       id: 3787876787
@@ -1037,8 +1037,8 @@ MonoBehaviour:
         guid: 20ec07bde7fedf459e8f82e57c8e177e
       Path: Events\Default Work Unit\Stop_Compass_Synth
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1051,7 +1051,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ccf16443b3e388408a8153c2fb94031d
     GuidInternal: 
-    m_lastTime: -8584428970913837743
+    m_lastTime: -8584424684194662599
     List:
     - name: Click_Amplitude
       guid: ba1fbe0f90616847bdd5f176f2df9f21
@@ -1107,7 +1107,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c986ff14cb5b9d4aa67cfbb724946620
     GuidInternal: 
-    m_lastTime: -8584448198790451220
+    m_lastTime: -8584424684189015458
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -1121,7 +1121,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 70154adbe1b6c64bb555beead6d8d31f
     GuidInternal: 
-    m_lastTime: -8584448198790451220
+    m_lastTime: -8584424684189015458
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1135,10 +1135,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: ea052a54ef44f74da974bbcac066f830
     GuidInternal: 
-    m_lastTime: -8584448198790441211
+    m_lastTime: -8584424684189015458
     List: []
   ExpandedFileSystemItemIds: 020000000300000005000000060000002200000023000000
-  ExpandedWaapiItemIds: 05000000060000002200000023000000
+  ExpandedWaapiItemIds: 0100000004000000050000000600000007000000080000002200000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
