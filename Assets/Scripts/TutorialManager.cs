@@ -9,7 +9,7 @@ public class TutorialManager : MonoBehaviour
         Intro, // State 0
         TheEcholocationClick, // State 1
         ForwardMovement, // State 2
-        Collision, // State 3
+        //Collision, // State 3
         ForwardMovementAndCollision, // State 4
         ContinuedCollisions, // State 5
         BackwardMovement,
@@ -55,6 +55,9 @@ public class TutorialManager : MonoBehaviour
     [Header("Tutorial Settings")]
     [Tooltip("Assign all spawn points in order, matching the TutorialState enum order.")]
     public Transform[] spawnPoints;
+
+    [Tooltip("Plays once when the tutorial enters the 'Complete' state.")]
+    public AK.Wwise.Event tutorialCompleteSound;
 
     private TutorialState currentState;
     private bool isAudioPaused = false;
@@ -143,6 +146,8 @@ public class TutorialManager : MonoBehaviour
             playerAudio.ResetPitchRTPC();
             Debug.Log("Tutorial Complete! Starting Main Game.");
             // Note: The final instruction and teleport are handled below, just like any other stage.
+
+            tutorialCompleteSound?.Post(gameObject);
         }
 
         // Use the enum's integer value to get the correct array index

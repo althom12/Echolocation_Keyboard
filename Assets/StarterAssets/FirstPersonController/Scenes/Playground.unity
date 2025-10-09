@@ -1970,9 +1970,6 @@ MonoBehaviour:
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5594540f40e89fe4f8658f80c009a258, type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
   pauseEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -2002,7 +1999,10 @@ MonoBehaviour:
   - {fileID: 1483892129}
   - {fileID: 1483892129}
   - {fileID: 1483892129}
-  - {fileID: 1483892129}
+  tutorialCompleteSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 570296401401be94fb0870376e68dbe2, type: 2}
 --- !u!65 &360123818
 BoxCollider:
   m_ObjectHideFlags: 0

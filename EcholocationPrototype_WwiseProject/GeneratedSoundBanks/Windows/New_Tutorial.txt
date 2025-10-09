@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1270779724	Play_03_2_ContinuedCollision_Script			\Default Work Unit\NewTutorial\Play_03_2_ContinuedCollision_Script	
 	1554164582	Play_19_FinalNotes_Script			\Default Work Unit\NewTutorial\Play_19_FinalNotes_Script	
 	1647568189	Resume_NewTutorial			\Default Work Unit\Resume_NewTutorial	
+	1835021098	Play_20_MainGame			\Default Work Unit\NewTutorial\Play_20_MainGame	
 	1927997407	Play_13_Section1Review_Script			\Default Work Unit\NewTutorial\Play_13_Section1Review_Script	
 	2049499323	Play_18_ClickPitch_EQ			\Default Work Unit\NewTutorial\Play_18_ClickPitch_EQ	
 	2105156477	Play_11_MainChamberSpawn_FULL			\Default Work Unit\NewTutorial\Play_11_MainChamberSpawn_FULL	
@@ -44,5 +45,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	867657858	03_2_ContinuedCollision_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\32\{32470D80-901D-63AC-E1CB-C5A40C94B287}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\03_2_ContinuedCollision_Script		5124192
 	931676524	14_ActivatingObstacles_FULL	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\97\{97E0F85D-80AD-B828-0C19-0C0724983FF5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\14_ActivatingObstacles_FULL		6160236
 	967323047	19_FinalNotes_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\8F\{8FCA2A1E-13E6-76AA-B294-0CD7F4B3B897}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\19_FinalNotes_Script		4032096
+	985907913	20_MainGame	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\1D\{1DBD240F-80C0-95B8-20A3-6EE8FCAAEFC2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\20_MainGame		309984
 	1018327434	06_MovementPractice_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\36\{3654659E-7444-B60F-9B23-6210FCE701F9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\06_MovementPractice_Script		3718752
 

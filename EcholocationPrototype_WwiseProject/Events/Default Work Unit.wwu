@@ -328,6 +328,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_20_MainGame" ID="{7D6B1663-B7F7-4DE3-AEFC-6D94EF774B84}">
+							<ChildrenList>
+								<Action Name="" ID="{F083D7EA-7E5C-4E54-8BEA-02ACE1B2ECE6}" ShortID="930755683">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="20_MainGame" ID="{826B915C-D046-48D4-9F2B-691E28EE0DB7}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="OldTutorial" ID="{E6C58FE4-FE7A-44C8-8266-1EC187DF6E2A}" ShortID="382658657">

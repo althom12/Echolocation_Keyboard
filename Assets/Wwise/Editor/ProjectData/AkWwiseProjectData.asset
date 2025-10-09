@@ -519,7 +519,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584415985235070450
+    m_lastTime: -8584415952821197126
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -575,7 +575,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584415985235050451
+    m_lastTime: -8584415952821176992
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -1219,6 +1219,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 42
       minDuration: 42
+    - name: Play_20_MainGame
+      guid: 63166b7df7b7e34daefc6d94ef774b84
+      id: 1835021098
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: NewTutorial
+        ObjectType: 4
+        guid: f42bad6abfa98f438fcb732e892b384d
+      - ElementName: Play_20_MainGame
+        ObjectType: 3
+        guid: 63166b7df7b7e34daefc6d94ef774b84
+      Path: Events\Default Work Unit\NewTutorial\Play_20_MainGame
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_45_Angle_Indicator
       guid: 9838a6a5743c10458d1cbf46d87a9ea1
       id: 2248556949

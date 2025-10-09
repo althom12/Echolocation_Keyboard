@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{50B2033B-70B5-4C82-9AD3-BD9C5972BE76}",
     "Language": "SFX",
-    "Hash": "{4DEEEEF6-7C1E-BA2D-D37A-611003AE36C2}",
+    "Hash": "{2192B407-8B20-C428-A6E4-6369440A6508}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\New_Tutorial",
     "ShortName": "New_Tutorial",
     "Path": "New_Tutorial.bnk",
@@ -174,6 +174,14 @@
       "Location": "Memory",
       "ShortName": "19_FinalNotes_Script.wav",
       "CachePath": "8F/{8FCA2A1E-13E6-76AA-B294-0CD7F4B3B897}.wem"
+     },
+     {
+      "Id": "985907913",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "20_MainGame.wav",
+      "CachePath": "1D/{1DBD240F-80C0-95B8-20A3-6EE8FCAAEFC2}.wem"
      },
      {
       "Id": "1018327434",
@@ -476,6 +484,20 @@
       ]
      },
      {
+      "Id": "1835021098",
+      "Name": "Play_20_MainGame",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_20_MainGame",
+      "GUID": "{7D6B1663-B7F7-4DE3-AEFC-6D94EF774B84}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.456",
+      "DurationMax": "6.456",
+      "MediaRefs": [
+       {
+        "Id": "985907913"
+       }
+      ]
+     },
+     {
       "Id": "672691329",
       "Name": "Play_Welcome_Intro",
       "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_Welcome_Intro",
@@ -502,6 +524,6 @@
     ]
    }
   ],
-  "FileHash": "{CB5EB722-6292-A1F4-DA3E-0327DEDB8049}"
+  "FileHash": "{B3801C17-03FD-F8B6-56CC-E4C3CC8FA532}"
  }
 }

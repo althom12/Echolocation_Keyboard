@@ -68,6 +68,7 @@
 						<ObjectRef Name="Play_03_1_ForwardMovementAndCollision_EQ" ID="{2B944243-3904-4C67-88DE-D9A2764DC6C9}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_07_Rotation_FULL" ID="{0983CD7C-C4D9-4CFE-BED2-2A07850CF945}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_08_SonicCompass_FULL" ID="{D942D0C1-F8F7-4D67-99F7-96E8BEF5CC73}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_20_MainGame" ID="{7D6B1663-B7F7-4DE3-AEFC-6D94EF774B84}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_06_MovementPractice_Script" ID="{C5406529-9C7A-4F3A-9894-2441CAD0DBD1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_14_ActivatingObstacles_FULL" ID="{82FDD523-2752-4F57-96E3-94AD0B1B683F}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

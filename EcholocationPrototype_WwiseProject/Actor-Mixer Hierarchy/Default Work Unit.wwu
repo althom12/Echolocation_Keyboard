@@ -1774,6 +1774,28 @@
 								<ActiveSource Name="Welcome&amp;Intro" ID="{8F0A10DB-2026-45A8-8A25-15AA8368A4B4}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="20_MainGame" ID="{826B915C-D046-48D4-9F2B-691E28EE0DB7}" ShortID="386301645">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="20_MainGame" ID="{5888F254-5ED2-468C-8426-71A5830EE441}">
+									<Language>SFX</Language>
+									<AudioFile>20_MainGame.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="985907913"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="20_MainGame" ID="{5888F254-5ED2-468C-8426-71A5830EE441}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
