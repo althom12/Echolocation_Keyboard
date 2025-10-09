@@ -43,11 +43,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	617097675	Tremolo (Custom)	Wwise Tremolo			
 	798867357	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 	807199837	Parametric EQ (Custom)	Wwise Parametric EQ			
-	1309861968	Mausoleum1_Gallery_Ambix_o3	Wwise Convolution Reverb			Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.
-	3399505373	Reflect_Physically_Based	Wwise Reflect			
-	3421951496	Garage1_6m_Ambix_o3	Wwise Convolution Reverb			Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
-	4213309952	SchoolHall	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	2033835	Footstep01	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C4\{C49C2844-31E8-C405-C7A4-525EDA00034B}.wem		\Actor-Mixer Hierarchy\User\FootstepContainer\Footsteps\Footstep01		7340
@@ -73,9 +69,4 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	932884221	MainChamberNotification	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\47\{4720930C-DA88-B7E4-80D6-B59F98AF82EA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainChamberNotification		85344
 	964506797	South	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\4A\{4A5A8D4D-D7B1-CF26-92E3-7D12C96F1B28}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\South		202524
 	970935376	North	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\86\{861EBDD4-BB94-CA95-0D99-750493246E07}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\North		147348
-
-Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
-	300588143	Garage1_6m_Ambix_o3	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\41\{41E3540B-6581-2688-844B-1C6834273462}.wem	Wwise Convolution Reverb (Shared)	\Effects\BOOM Library IR - R&S - HOA\BOOM Library IR - R&S\HOA\Garage 01\Garage1_6m_Ambix_o3	Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.	1855680
-	522077337	SchoolHall	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\10\{100CA1C1-2AEE-C63A-F808-168B33264EC7}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\SchoolHall	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	570576
-	685116775	Mausoleum1_Gallery_Ambix_o3	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\2E\{2E54E46C-25F2-35D4-4C0C-EF75C3699968}.wem	Wwise Convolution Reverb (Shared)	\Effects\BOOM Library IR - R&S - HOA\BOOM Library IR - R&S\HOA\Mausoleum\Mausoleum1_Gallery_Ambix_o3	Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.	3978560
 

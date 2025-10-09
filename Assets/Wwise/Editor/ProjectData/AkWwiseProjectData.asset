@@ -502,7 +502,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584424684189040475
+    m_lastTime: -8584416104640102166
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -518,6 +518,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 53f591b4f4de6e4e9d2477784102cf9e
       Path: SoundBanks\Default Work Unit\Main
+    - name: New_Tutorial
+      guid: 3b03b250b570824c9ad3bd9c5972be76
+      id: 2565639494
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 85233671dd39aa41ae29cacfb165c806
+      - ElementName: New_Tutorial
+        ObjectType: 7
+        guid: 3b03b250b570824c9ad3bd9c5972be76
+      Path: SoundBanks\Default Work Unit\New_Tutorial
     - name: Tutorial_Bank
       guid: a839ef5f6c439f4f9930b17e0b4387bf
       id: 651994684
@@ -544,7 +558,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584424684194672603
+    m_lastTime: -8584416104640112165
     List:
     - name: Pause_Tutorial
       guid: 3a81f1930953d441be3b841f52200d60
@@ -580,6 +594,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_01_TheEcholocationClick2_EQ
+      guid: f50418e8b3ecd8418d1953c762c4a06d
+      id: 3703251308
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_01_TheEcholocationClick2_EQ
+        ObjectType: 3
+        guid: f50418e8b3ecd8418d1953c762c4a06d
+      Path: Events\Default Work Unit\Play_01_TheEcholocationClick2_EQ
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_02_BasicMechanics
       guid: 842643988d20cf4e9d909ea54fa9c4d1
       id: 2826305660
@@ -597,6 +628,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_02_ForwardMovement_EQ
+      guid: f5f8aba84cd0ba44960eaa6581e0ffb0
+      id: 4090907250
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_02_ForwardMovement_EQ
+        ObjectType: 3
+        guid: f5f8aba84cd0ba44960eaa6581e0ffb0
+      Path: Events\Default Work Unit\Play_02_ForwardMovement_EQ
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_03_1_ForwardMovementAndCollision_EQ
+      guid: 4342942b0439674c88ded9a2764dc6c9
+      id: 4275180162
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_03_1_ForwardMovementAndCollision_EQ
+        ObjectType: 3
+        guid: 4342942b0439674c88ded9a2764dc6c9
+      Path: Events\Default Work Unit\Play_03_1_ForwardMovementAndCollision_EQ
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_03_2_ContinuedCollision_Script
+      guid: 811e63f88aa106479b853ff5ba24dac7
+      id: 1270779724
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_03_2_ContinuedCollision_Script
+        ObjectType: 3
+        guid: 811e63f88aa106479b853ff5ba24dac7
+      Path: Events\Default Work Unit\Play_03_2_ContinuedCollision_Script
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_03_RotationAndSonicCompass
       guid: 3004069c56738749b2f9f0fba8f6ef01
       id: 3663181753
@@ -611,6 +693,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3004069c56738749b2f9f0fba8f6ef01
       Path: Events\Default Work Unit\Play_03_RotationAndSonicCompass
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_04_BackwardMovement_Script
+      guid: 6b53be262153614aa045fbec027c02f8
+      id: 3857492957
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_04_BackwardMovement_Script
+        ObjectType: 3
+        guid: 6b53be262153614aa045fbec027c02f8
+      Path: Events\Default Work Unit\Play_04_BackwardMovement_Script
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -648,6 +747,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_05_SidewaysMovement_Script
+      guid: 622a8e1e4ee300479be2a08316857b2e
+      id: 2183594182
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_05_SidewaysMovement_Script
+        ObjectType: 3
+        guid: 622a8e1e4ee300479be2a08316857b2e
+      Path: Events\Default Work Unit\Play_05_SidewaysMovement_Script
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_06_AdvancedMechanics
       guid: 2fca08becb5a3642832dc8cc1372b342
       id: 2793081246
@@ -665,6 +781,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_06_MovementPractice_Script
+      guid: 296540c57a9c3a4f98942441cad0dbd1
+      id: 4073819487
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_06_MovementPractice_Script
+        ObjectType: 3
+        guid: 296540c57a9c3a4f98942441cad0dbd1
+      Path: Events\Default Work Unit\Play_06_MovementPractice_Script
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_07_MainGame
       guid: a6eb5c74c5a32844b55e1597479a26cd
       id: 1817525157
@@ -679,6 +812,227 @@ MonoBehaviour:
         ObjectType: 3
         guid: a6eb5c74c5a32844b55e1597479a26cd
       Path: Events\Default Work Unit\Play_07_MainGame
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_07_Rotation_FULL
+      guid: 7ccd8309d9c4fe4cbed22a07850cf945
+      id: 1146828738
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_07_Rotation_FULL
+        ObjectType: 3
+        guid: 7ccd8309d9c4fe4cbed22a07850cf945
+      Path: Events\Default Work Unit\Play_07_Rotation_FULL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_08_SonicCompass_FULL
+      guid: c1d042d9f7f8674d99f796e8bef5cc73
+      id: 3227459707
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_08_SonicCompass_FULL
+        ObjectType: 3
+        guid: c1d042d9f7f8674d99f796e8bef5cc73
+      Path: Events\Default Work Unit\Play_08_SonicCompass_FULL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_09_RotationAndMovementPractice_Script
+      guid: 3203664eba004d489a777b44100b1772
+      id: 3152927959
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_09_RotationAndMovementPractice_Script
+        ObjectType: 3
+        guid: 3203664eba004d489a777b44100b1772
+      Path: Events\Default Work Unit\Play_09_RotationAndMovementPractice_Script
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_10_SpawnAtStart_FULL
+      guid: 5321eda847331a48b81dcc696ddf8b24
+      id: 3498038182
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_10_SpawnAtStart_FULL
+        ObjectType: 3
+        guid: 5321eda847331a48b81dcc696ddf8b24
+      Path: Events\Default Work Unit\Play_10_SpawnAtStart_FULL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_11_MainChamberSpawn_FULL
+      guid: fa920cc5e40d7d4bbaa64c02b4445286
+      id: 2105156477
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_11_MainChamberSpawn_FULL
+        ObjectType: 3
+        guid: fa920cc5e40d7d4bbaa64c02b4445286
+      Path: Events\Default Work Unit\Play_11_MainChamberSpawn_FULL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_12_SpawnPointsAndMovementPractice_Script
+      guid: 99757a3142ea5e458e53ef7954ca9dbf
+      id: 2205939773
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_12_SpawnPointsAndMovementPractice_Script
+        ObjectType: 3
+        guid: 99757a3142ea5e458e53ef7954ca9dbf
+      Path: Events\Default Work Unit\Play_12_SpawnPointsAndMovementPractice_Script
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_13_Section1Review_Script
+      guid: 5dee582fb9c0444cb8d58ce1f0d67ac8
+      id: 1927997407
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_13_Section1Review_Script
+        ObjectType: 3
+        guid: 5dee582fb9c0444cb8d58ce1f0d67ac8
+      Path: Events\Default Work Unit\Play_13_Section1Review_Script
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_14_ActivatingObstacles_FULL
+      guid: 23d5fd825227574f96e394ad0b1b683f
+      id: 180411800
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_14_ActivatingObstacles_FULL
+        ObjectType: 3
+        guid: 23d5fd825227574f96e394ad0b1b683f
+      Path: Events\Default Work Unit\Play_14_ActivatingObstacles_FULL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_15_NavigatingObstacles_FULL
+      guid: 2cea4b60be2aca4a94feb1c7f486b2f0
+      id: 2932099217
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_15_NavigatingObstacles_FULL
+        ObjectType: 3
+        guid: 2cea4b60be2aca4a94feb1c7f486b2f0
+      Path: Events\Default Work Unit\Play_15_NavigatingObstacles_FULL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_16_ObstacleFeedback_EQ
+      guid: 0760e5b53fcabd418456e3b0e96d882e
+      id: 41179137
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_16_ObstacleFeedback_EQ
+        ObjectType: 3
+        guid: 0760e5b53fcabd418456e3b0e96d882e
+      Path: Events\Default Work Unit\Play_16_ObstacleFeedback_EQ
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_17_ObstacleReview_EQ
+      guid: 1afe364f58691343a2c4956bc5dac5cc
+      id: 285928759
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_17_ObstacleReview_EQ
+        ObjectType: 3
+        guid: 1afe364f58691343a2c4956bc5dac5cc
+      Path: Events\Default Work Unit\Play_17_ObstacleReview_EQ
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_18_ClickPitch_EQ
+      guid: 1a91db8d08d684459401b5fe0fbbb3d5
+      id: 2049499323
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_18_ClickPitch_EQ
+        ObjectType: 3
+        guid: 1a91db8d08d684459401b5fe0fbbb3d5
+      Path: Events\Default Work Unit\Play_18_ClickPitch_EQ
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_19_FinalNotes_Script
+      guid: c384e05733a24147ab70341ff987f73c
+      id: 1554164582
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_19_FinalNotes_Script
+        ObjectType: 3
+        guid: c384e05733a24147ab70341ff987f73c
+      Path: Events\Default Work Unit\Play_19_FinalNotes_Script
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -985,6 +1339,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 818ae3a690646949a5b9c8ac57c7a2d0
       Path: Events\Default Work Unit\Play_StartingPositionNotification
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Welcome_Intro
+      guid: 1cadc882e7f73044a199eedbbdc671b2
+      id: 672691329
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_Welcome_Intro
+        ObjectType: 3
+        guid: 1cadc882e7f73044a199eedbbdc671b2
+      Path: Events\Default Work Unit\Play_Welcome_Intro
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

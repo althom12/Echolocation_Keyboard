@@ -1,0 +1,487 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2565639494",
+    "Type": "User",
+    "GUID": "{50B2033B-70B5-4C82-9AD3-BD9C5972BE76}",
+    "Language": "SFX",
+    "Hash": "{843D03DA-C6D3-A9BD-BE48-9856A24F6453}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\New_Tutorial",
+    "ShortName": "New_Tutorial",
+    "Path": "New_Tutorial.bnk",
+    "Media": [
+     {
+      "Id": "112753623",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "13_Section1Review_Script.wav",
+      "CachePath": "50/{501F7A47-1627-94F5-D52F-3DCE4CB2D0BC}.wem"
+     },
+     {
+      "Id": "123584678",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Welcome&Intro.wav",
+      "CachePath": "99/{99AA7E07-2689-D6DC-90FB-24D4500343A8}.wem"
+     },
+     {
+      "Id": "177301784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "05_SidewaysMovement_Script.wav",
+      "CachePath": "AE/{AE377022-16B3-AC4F-40BD-02B533A3EEC4}.wem"
+     },
+     {
+      "Id": "204469262",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "09_RotationAndMovementPractice_Script.wav",
+      "CachePath": "C6/{C6E643EA-DBE9-EF20-D83D-0A64CC9D628A}.wem"
+     },
+     {
+      "Id": "225709703",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "11_MainChamberSpawn_FULL.wav",
+      "CachePath": "1B/{1B2A6BB4-9A9A-E2BC-7B0B-7A657FDCC478}.wem"
+     },
+     {
+      "Id": "268475161",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "15_NavigatingObstacles_FULL.wav",
+      "CachePath": "2F/{2FC212F1-E876-28AB-9031-8C93D356478D}.wem"
+     },
+     {
+      "Id": "291116588",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "04_BackwardMovement_Script.wav",
+      "CachePath": "0A/{0AEBACC7-696A-61FE-F5F3-E7B671D2F73F}.wem"
+     },
+     {
+      "Id": "296756075",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "12_SpawnPointsAndMovementPractice_Script.wav",
+      "CachePath": "4E/{4EFB71AE-9F2C-9D8D-ED04-591E51D6010F}.wem"
+     },
+     {
+      "Id": "301150210",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "16_ObstacleFeedback_EQ.wav",
+      "CachePath": "0E/{0EA77B63-5745-B6C2-3131-264323F4FC0C}.wem"
+     },
+     {
+      "Id": "467465405",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "07_Rotation_FULL.wav",
+      "CachePath": "C7/{C75E71BF-73EB-F004-197F-7D6957D1A779}.wem"
+     },
+     {
+      "Id": "475204004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "02_ForwardMovement_EQ.wav",
+      "CachePath": "2D/{2DFF87C5-295B-56CE-B597-D51C4ED62C49}.wem"
+     },
+     {
+      "Id": "536126730",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "01_TheEcholocationClick2_EQ.wav",
+      "CachePath": "9D/{9D1D9C9D-35BB-E57A-0751-BCDA0D88B2C5}.wem"
+     },
+     {
+      "Id": "552900870",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "03.1_ForwardMovementAndCollision_EQ.wav",
+      "CachePath": "FD/{FDDEF9BC-72C0-94F6-BE2C-C32EEF540A94}.wem"
+     },
+     {
+      "Id": "663097205",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "10_SpawnAtStart_FULL.wav",
+      "CachePath": "E8/{E8CA4E15-296B-67A7-C8C4-0D451EFA46CA}.wem"
+     },
+     {
+      "Id": "712486106",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "18_ClickPitch_EQ.wav",
+      "CachePath": "42/{425F6A93-9ACC-0F7A-94EB-7B6EFE543392}.wem"
+     },
+     {
+      "Id": "808522767",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "17_ObstacleReview_EQ.wav",
+      "CachePath": "0E/{0E4467EF-3C28-0D42-F312-55BE2EFE6DB1}.wem"
+     },
+     {
+      "Id": "824353250",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "08_SonicCompass_FULL.wav",
+      "CachePath": "85/{85116F8B-E7E1-122F-8799-B32E104533DE}.wem"
+     },
+     {
+      "Id": "867657858",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "03.2_ContinuedCollision_Script.wav",
+      "CachePath": "32/{32470D80-901D-63AC-E1CB-C5A40C94B287}.wem"
+     },
+     {
+      "Id": "931676524",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "14_ActivatingObstacles_FULL.wav",
+      "CachePath": "97/{97E0F85D-80AD-B828-0C19-0C0724983FF5}.wem"
+     },
+     {
+      "Id": "967323047",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "19_FinalNotes_Script.wav",
+      "CachePath": "8F/{8FCA2A1E-13E6-76AA-B294-0CD7F4B3B897}.wem"
+     },
+     {
+      "Id": "1018327434",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "06_MovementPractice_Script.wav",
+      "CachePath": "36/{3654659E-7444-B60F-9B23-6210FCE701F9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3703251308",
+      "Name": "Play_01_TheEcholocationClick2_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_01_TheEcholocationClick2_EQ",
+      "GUID": "{E81804F5-ECB3-41D8-8D19-53C762C4A06D}",
+      "DurationType": "OneShot",
+      "DurationMin": "33.6225",
+      "DurationMax": "33.6225",
+      "MediaRefs": [
+       {
+        "Id": "536126730"
+       }
+      ]
+     },
+     {
+      "Id": "4090907250",
+      "Name": "Play_02_ForwardMovement_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_02_ForwardMovement_EQ",
+      "GUID": "{A8ABF8F5-D04C-44BA-960E-AA6581E0FFB0}",
+      "DurationType": "OneShot",
+      "DurationMin": "45.325356",
+      "DurationMax": "45.325356",
+      "MediaRefs": [
+       {
+        "Id": "475204004"
+       }
+      ]
+     },
+     {
+      "Id": "4275180162",
+      "Name": "Play_03_1_ForwardMovementAndCollision_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_03_1_ForwardMovementAndCollision_EQ",
+      "GUID": "{2B944243-3904-4C67-88DE-D9A2764DC6C9}",
+      "DurationType": "OneShot",
+      "DurationMin": "35.758728",
+      "DurationMax": "35.758728",
+      "MediaRefs": [
+       {
+        "Id": "552900870"
+       }
+      ]
+     },
+     {
+      "Id": "1270779724",
+      "Name": "Play_03_2_ContinuedCollision_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_03_2_ContinuedCollision_Script",
+      "GUID": "{F8631E81-A18A-4706-9B85-3FF5BA24DAC7}",
+      "DurationType": "OneShot",
+      "DurationMin": "53.376",
+      "DurationMax": "53.376",
+      "MediaRefs": [
+       {
+        "Id": "867657858"
+       }
+      ]
+     },
+     {
+      "Id": "3857492957",
+      "Name": "Play_04_BackwardMovement_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_04_BackwardMovement_Script",
+      "GUID": "{26BE536B-5321-4A61-A045-FBEC027C02F8}",
+      "DurationType": "OneShot",
+      "DurationMin": "33.456",
+      "DurationMax": "33.456",
+      "MediaRefs": [
+       {
+        "Id": "291116588"
+       }
+      ]
+     },
+     {
+      "Id": "2183594182",
+      "Name": "Play_05_SidewaysMovement_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_05_SidewaysMovement_Script",
+      "GUID": "{1E8E2A62-E34E-4700-9BE2-A08316857B2E}",
+      "DurationType": "OneShot",
+      "DurationMin": "42.048",
+      "DurationMax": "42.048",
+      "MediaRefs": [
+       {
+        "Id": "177301784"
+       }
+      ]
+     },
+     {
+      "Id": "4073819487",
+      "Name": "Play_06_MovementPractice_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_06_MovementPractice_Script",
+      "GUID": "{C5406529-9C7A-4F3A-9894-2441CAD0DBD1}",
+      "DurationType": "OneShot",
+      "DurationMin": "38.736",
+      "DurationMax": "38.736",
+      "MediaRefs": [
+       {
+        "Id": "1018327434"
+       }
+      ]
+     },
+     {
+      "Id": "1146828738",
+      "Name": "Play_07_Rotation_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_07_Rotation_FULL",
+      "GUID": "{0983CD7C-C4D9-4CFE-BED2-2A07850CF945}",
+      "DurationType": "OneShot",
+      "DurationMin": "64.272835",
+      "DurationMax": "64.272835",
+      "MediaRefs": [
+       {
+        "Id": "467465405"
+       }
+      ]
+     },
+     {
+      "Id": "3227459707",
+      "Name": "Play_08_SonicCompass_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_08_SonicCompass_FULL",
+      "GUID": "{D942D0C1-F8F7-4D67-99F7-96E8BEF5CC73}",
+      "DurationType": "OneShot",
+      "DurationMin": "54.89198",
+      "DurationMax": "54.89198",
+      "MediaRefs": [
+       {
+        "Id": "824353250"
+       }
+      ]
+     },
+     {
+      "Id": "3152927959",
+      "Name": "Play_09_RotationAndMovementPractice_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_09_RotationAndMovementPractice_Script",
+      "GUID": "{4E660332-00BA-484D-9A77-7B44100B1772}",
+      "DurationType": "OneShot",
+      "DurationMin": "21.696",
+      "DurationMax": "21.696",
+      "MediaRefs": [
+       {
+        "Id": "204469262"
+       }
+      ]
+     },
+     {
+      "Id": "3498038182",
+      "Name": "Play_10_SpawnAtStart_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_10_SpawnAtStart_FULL",
+      "GUID": "{A8ED2153-3347-481A-B81D-CC696DDF8B24}",
+      "DurationType": "OneShot",
+      "DurationMin": "38.08073",
+      "DurationMax": "38.08073",
+      "MediaRefs": [
+       {
+        "Id": "663097205"
+       }
+      ]
+     },
+     {
+      "Id": "2105156477",
+      "Name": "Play_11_MainChamberSpawn_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_11_MainChamberSpawn_FULL",
+      "GUID": "{C50C92FA-0DE4-4B7D-BAA6-4C02B4445286}",
+      "DurationType": "OneShot",
+      "DurationMin": "27.724625",
+      "DurationMax": "27.724625",
+      "MediaRefs": [
+       {
+        "Id": "225709703"
+       }
+      ]
+     },
+     {
+      "Id": "2205939773",
+      "Name": "Play_12_SpawnPointsAndMovementPractice_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_12_SpawnPointsAndMovementPractice_Script",
+      "GUID": "{317A7599-EA42-455E-8E53-EF7954CA9DBF}",
+      "DurationType": "OneShot",
+      "DurationMin": "18.144",
+      "DurationMax": "18.144",
+      "MediaRefs": [
+       {
+        "Id": "296756075"
+       }
+      ]
+     },
+     {
+      "Id": "1927997407",
+      "Name": "Play_13_Section1Review_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_13_Section1Review_Script",
+      "GUID": "{2F58EE5D-C0B9-4C44-B8D5-8CE1F0D67AC8}",
+      "DurationType": "OneShot",
+      "DurationMin": "28.68",
+      "DurationMax": "28.68",
+      "MediaRefs": [
+       {
+        "Id": "112753623"
+       }
+      ]
+     },
+     {
+      "Id": "180411800",
+      "Name": "Play_14_ActivatingObstacles_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_14_ActivatingObstacles_FULL",
+      "GUID": "{82FDD523-2752-4F57-96E3-94AD0B1B683F}",
+      "DurationType": "OneShot",
+      "DurationMin": "64.16812",
+      "DurationMax": "64.16812",
+      "MediaRefs": [
+       {
+        "Id": "931676524"
+       }
+      ]
+     },
+     {
+      "Id": "2932099217",
+      "Name": "Play_15_NavigatingObstacles_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_15_NavigatingObstacles_FULL",
+      "GUID": "{604BEA2C-2ABE-4ACA-94FE-B1C7F486B2F0}",
+      "DurationType": "OneShot",
+      "DurationMin": "76.81161",
+      "DurationMax": "76.81161",
+      "MediaRefs": [
+       {
+        "Id": "268475161"
+       }
+      ]
+     },
+     {
+      "Id": "41179137",
+      "Name": "Play_16_ObstacleFeedback_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_16_ObstacleFeedback_EQ",
+      "GUID": "{B5E56007-CA3F-41BD-8456-E3B0E96D882E}",
+      "DurationType": "OneShot",
+      "DurationMin": "28.235458",
+      "DurationMax": "28.235458",
+      "MediaRefs": [
+       {
+        "Id": "301150210"
+       }
+      ]
+     },
+     {
+      "Id": "285928759",
+      "Name": "Play_17_ObstacleReview_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_17_ObstacleReview_EQ",
+      "GUID": "{4F36FE1A-6958-4313-A2C4-956BC5DAC5CC}",
+      "DurationType": "OneShot",
+      "DurationMin": "38.173603",
+      "DurationMax": "38.173603",
+      "MediaRefs": [
+       {
+        "Id": "808522767"
+       }
+      ]
+     },
+     {
+      "Id": "2049499323",
+      "Name": "Play_18_ClickPitch_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_18_ClickPitch_EQ",
+      "GUID": "{8DDB911A-D608-4584-9401-B5FE0FBBB3D5}",
+      "DurationType": "OneShot",
+      "DurationMin": "45.882626",
+      "DurationMax": "45.882626",
+      "MediaRefs": [
+       {
+        "Id": "712486106"
+       }
+      ]
+     },
+     {
+      "Id": "1554164582",
+      "Name": "Play_19_FinalNotes_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_19_FinalNotes_Script",
+      "GUID": "{57E084C3-A233-4741-AB70-341FF987F73C}",
+      "DurationType": "OneShot",
+      "DurationMin": "42",
+      "DurationMax": "42",
+      "MediaRefs": [
+       {
+        "Id": "967323047"
+       }
+      ]
+     },
+     {
+      "Id": "672691329",
+      "Name": "Play_Welcome_Intro",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Welcome_Intro",
+      "GUID": "{82C8AD1C-F7E7-4430-A199-EEDBBDC671B2}",
+      "DurationType": "OneShot",
+      "DurationMin": "31.32",
+      "DurationMax": "31.32",
+      "MediaRefs": [
+       {
+        "Id": "123584678"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B7DEDF56-6C95-54EF-8F3C-A56265D3C494}"
+ }
+}

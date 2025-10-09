@@ -3,27 +3,38 @@ using StarterAssets;
 
 public class TutorialManager : MonoBehaviour
 {
-    // --- MODIFIED: Expanded the enum to match your 7 stages ---
+    // --- MODIFIED: Expanded for 20+ stages. Add as many as you need! ---
     public enum TutorialState
     {
-        Intro,
-        BasicMechanics,
-        RotationAndCompass,
-        SpawnPositions,
-        Obstacles,
-        AdvancedMechanics,
-        Complete // The final state after the last instruction
-    }
-
-    // --- MODIFIED: Expanded the replay enum ---
-    private enum ReplayState
-    {
-        Off,
-        Playing_Basic,
-        Playing_Rotation,
-        Playing_Spawns,
-        Playing_Obstacles,
-        Playing_Advanced
+        Intro, // State 0
+        TheEcholocationClick, // State 1
+        ForwardMovement, // State 2
+        Collision, // State 3
+        ForwardMovementAndCollision, // State 4
+        ContinuedCollisions, // State 5
+        BackwardMovement,
+        SidewaysMovement,
+        MovementPractice,
+        RotationIntro,
+        SonicCompass,
+        RotationAndMovementPractice,
+        SpawnAtStart,
+        MainChamberSpawn,
+        SpawnPointsAndMovement,
+        Section01Review,
+        ActivatingObstacles,
+        NavigatingObstacles,
+        ObstacleFeedback,
+        ObstacleReview,
+        ClickPitch,
+        Outro,
+        Complete
+        // Add your new tutorial parts here, for example:
+        // Part6_NewConcept,
+        // Part7_AnotherOne,
+        // ... up to Part 20
+        // This should be the last instruction before 'Complete'
+        // The final state
     }
 
     [Header("Core References")]
@@ -34,7 +45,7 @@ public class TutorialManager : MonoBehaviour
     [Header("Audio Events")]
     [Tooltip("Plays when the game opens (e.g., Play_01_Intro)")]
     public AK.Wwise.Event introductoryAudio;
-    [Tooltip("Assign all 7 instructional sounds in order, starting with Basic Mechanics.")]
+    [Tooltip("Assign all instructional sounds in order, matching the TutorialState enum order.")]
     public AK.Wwise.Event[] instructionSounds;
 
     [Header("Pause/Resume Events")]
@@ -42,18 +53,30 @@ public class TutorialManager : MonoBehaviour
     public AK.Wwise.Event resumeEvent;
 
     [Header("Tutorial Settings")]
-    [Tooltip("Assign all 7 spawn points in order.")]
+    [Tooltip("Assign all spawn points in order, matching the TutorialState enum order.")]
     public Transform[] spawnPoints;
 
     private TutorialState currentState;
     private bool isAudioPaused = false;
-    private ReplayState _currentReplayState = ReplayState.Off;
+
+    // --- REFACTORED: Replaced ReplayState enum with a simple index ---
+    private int replayIndex = -1; // -1 means replay is off
 
     void Start()
     {
+        // --- VALIDATION: Added checks for array lengths ---
         if (playerAudio == null || obstacleManager == null || playerController == null)
         {
-            Debug.LogError("TUTORIAL MANAGER ERROR: One or more core references are not assigned in the Inspector!", this.gameObject);
+            Debug.LogError("TUTORIAL MANAGER ERROR: Core references are not assigned!", this.gameObject);
+            this.enabled = false;
+            return;
+        }
+
+        // The number of states (minus Intro and Complete) must match the number of sounds/spawns
+        int instructionalStateCount = System.Enum.GetNames(typeof(TutorialState)).Length - 2;
+        if (instructionSounds.Length != instructionalStateCount || spawnPoints.Length != instructionalStateCount)
+        {
+            Debug.LogError($"TUTORIAL MANAGER ERROR: Mismatch between array sizes and TutorialState enum count. Expecting {instructionalStateCount} items in each array.", this.gameObject);
             this.enabled = false;
             return;
         }
@@ -71,8 +94,6 @@ public class TutorialManager : MonoBehaviour
             GoToNextState();
         }
 
-        // Handles pausing/resuming with Spacebar (via ObstacleLocatorAudio script)
-
         // Handles replaying instructions with Tab key
         if (currentState == TutorialState.Complete && Input.GetKeyDown(KeyCode.Tab))
         {
@@ -80,47 +101,66 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
-    // --- MODIFIED: Expanded replay logic for the new stages ---
+    // --- REFACTORED: Simplified replay logic using an index ---
     void CycleInstructionReplay()
     {
-        AkSoundEngine.StopAll(gameObject);
-        if (isAudioPaused)
+        StopAndResumeAudio();
+
+        replayIndex++; // Move to the next instruction
+
+        // If index goes past the last sound, turn replay off
+        if (replayIndex >= instructionSounds.Length)
         {
-            resumeEvent?.Post(gameObject);
-            isAudioPaused = false;
+            replayIndex = -1;
+            Debug.Log("Instruction Replay Stopped.");
+            return;
         }
-        switch (_currentReplayState)
+
+        // Play the sound at the current index
+        instructionSounds[replayIndex]?.Post(gameObject);
+        // Get the name of the state from the enum value for a clear debug message
+        string stateName = ((TutorialState)(replayIndex + 1)).ToString();
+        Debug.Log($"Replaying: {stateName}");
+    }
+
+    // --- REFACTORED: Simplified state progression ---
+    void GoToNextState()
+    {
+        StopAndResumeAudio();
+        replayIndex = -1; // Reset replay when progressing
+
+        // Increment the current state to the next one in the enum
+        currentState++;
+
+        Debug.Log($"Proceeding to: {currentState}");
+
+        // Check if the tutorial is now complete
+        if (currentState == TutorialState.Complete)
         {
-            case ReplayState.Off:
-                _currentReplayState = ReplayState.Playing_Basic;
-                instructionSounds[0]?.Post(gameObject); // Basic Mechanics
-                Debug.Log("Replaying: Basic Mechanics");
-                break;
-            case ReplayState.Playing_Basic:
-                _currentReplayState = ReplayState.Playing_Rotation;
-                instructionSounds[1]?.Post(gameObject); // Rotation and Compass
-                Debug.Log("Replaying: Rotation and Compass");
-                break;
-            case ReplayState.Playing_Rotation:
-                _currentReplayState = ReplayState.Playing_Spawns;
-                instructionSounds[2]?.Post(gameObject); // Spawn Positions
-                Debug.Log("Replaying: Spawn Positions");
-                break;
-            case ReplayState.Playing_Spawns:
-                _currentReplayState = ReplayState.Playing_Obstacles;
-                instructionSounds[3]?.Post(gameObject); // Obstacles
-                Debug.Log("Replaying: Obstacles");
-                break;
-            case ReplayState.Playing_Obstacles:
-                _currentReplayState = ReplayState.Playing_Advanced;
-                instructionSounds[4]?.Post(gameObject); // Advanced Mechanics
-                Debug.Log("Replaying: Advanced Mechanics");
-                break;
-            case ReplayState.Playing_Advanced:
-                _currentReplayState = ReplayState.Off;
-                Debug.Log("Instruction Replay Stopped.");
-                break;
+            // --- FINAL STAGE LOGIC ---
+            // This logic now only runs once when entering the 'Complete' state.
+            obstacleManager.enabled = true;
+            playerAudio.ResetPitchRTPC();
+            Debug.Log("Tutorial Complete! Starting Main Game.");
+            // Note: The final instruction and teleport are handled below, just like any other stage.
         }
+
+        // Use the enum's integer value to get the correct array index
+        // We subtract 1 because 'Intro' is state 0, but the arrays are for states 1 onwards.
+        int currentIndex = (int)currentState - 1;
+
+        if (currentIndex < 0 || currentIndex >= instructionSounds.Length)
+        {
+            // This case handles the transition from Intro to the first state, or if something goes wrong.
+            // The first state (e.g., BasicMechanics) is handled correctly as (1-1) = index 0.
+            if (currentState == TutorialState.Intro) return; // Should not happen with current logic
+            Debug.LogWarning($"Tutorial Manager: No instruction/spawn for state {currentState}.");
+            return;
+        }
+
+        // Teleport player and play the corresponding instruction sound
+        playerController.Teleport(spawnPoints[currentIndex].position, spawnPoints[currentIndex].rotation);
+        instructionSounds[currentIndex]?.Post(gameObject);
     }
 
     public void ToggleAudioPause()
@@ -138,67 +178,14 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
-    // --- MODIFIED: Greatly expanded the state machine for all 7 stages ---
-    void GoToNextState()
+    // --- NEW: Helper function to reduce code duplication ---
+    private void StopAndResumeAudio()
     {
         AkSoundEngine.StopAll(gameObject);
-        _currentReplayState = ReplayState.Off;
         if (isAudioPaused)
         {
             resumeEvent?.Post(gameObject);
             isAudioPaused = false;
-        }
-
-        switch (currentState)
-        {
-            case TutorialState.Intro:
-                currentState = TutorialState.BasicMechanics;
-                playerController.Teleport(spawnPoints[0].position, spawnPoints[0].rotation);
-                instructionSounds[0]?.Post(gameObject); // Play_02_BasicMechanics
-                Debug.Log("Tutorial Started: Basic Mechanics.");
-                break;
-
-            case TutorialState.BasicMechanics:
-                currentState = TutorialState.RotationAndCompass;
-                playerController.Teleport(spawnPoints[1].position, spawnPoints[1].rotation);
-                instructionSounds[1]?.Post(gameObject); // Play_03_RotationAndSonicCompass
-                Debug.Log("Proceeding to: Rotation and Compass.");
-                break;
-
-            case TutorialState.RotationAndCompass:
-                currentState = TutorialState.SpawnPositions;
-                playerController.Teleport(spawnPoints[2].position, spawnPoints[2].rotation);
-                instructionSounds[2]?.Post(gameObject); // Play_04_SpawnPositions
-                Debug.Log("Proceeding to: Spawn Positions.");
-                break;
-
-            case TutorialState.SpawnPositions:
-                currentState = TutorialState.Obstacles;
-                playerController.Teleport(spawnPoints[3].position, spawnPoints[3].rotation);
-                instructionSounds[3]?.Post(gameObject); // Play_05_Obstacles
-                Debug.Log("Proceeding to: Obstacles.");
-                break;
-
-            case TutorialState.Obstacles:
-                currentState = TutorialState.AdvancedMechanics;
-                playerController.Teleport(spawnPoints[4].position, spawnPoints[4].rotation);
-                instructionSounds[4]?.Post(gameObject); // Play_06_AdvancedMechanics
-                Debug.Log("Proceeding to: Advanced Mechanics.");
-                break;
-
-            case TutorialState.AdvancedMechanics:
-                currentState = TutorialState.Complete;
-                playerController.Teleport(spawnPoints[5].position, spawnPoints[5].rotation);
-                instructionSounds[5]?.Post(gameObject); // Play_07_MainGame
-                // Assuming obstacles are active in the main game area
-                obstacleManager.enabled = true;
-                playerAudio.ResetPitchRTPC();
-                Debug.Log("Tutorial Complete! Starting Main Game.");
-                break;
-
-            case TutorialState.Complete:
-                Debug.Log("Tutorial is already complete.");
-                break;
         }
     }
 }

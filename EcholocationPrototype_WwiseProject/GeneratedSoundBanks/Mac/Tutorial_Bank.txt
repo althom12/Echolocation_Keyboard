@@ -1,0 +1,20 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1159590420	Play_01_Intro			\Default Work Unit\Play_01_Intro	
+	1193160806	Pause_Tutorial			\Default Work Unit\Pause_Tutorial	
+	1817525157	Play_07_MainGame			\Default Work Unit\Play_07_MainGame	
+	2793081246	Play_06_AdvancedMechanics			\Default Work Unit\Play_06_AdvancedMechanics	
+	2826305660	Play_02_BasicMechanics			\Default Work Unit\Play_02_BasicMechanics	
+	2924510430	Play_04_SpawnPositions			\Default Work Unit\Play_04_SpawnPositions	
+	3663181753	Play_03_RotationAndSonicCompass			\Default Work Unit\Play_03_RotationAndSonicCompass	
+	4004824028	Play_05_Obstacles			\Default Work Unit\Play_05_Obstacles	
+	4041214897	Resume_Tutorial			\Default Work Unit\Resume_Tutorial	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	64849393	03_RotationAndSonicCompass	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C1\{C160315C-E173-C989-7E06-E9166EF6C0FE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialAudio\Tutorial\03_RotationAndSonicCompass		1780984
+	66883511	07_MainGame	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\EA\{EA7CE619-B1DF-51FC-BB90-BB22A16A0ABF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialAudio\Tutorial\07_MainGame		74358
+	109757317	04_SpawnPositions	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\BE\{BE58C5EA-89A6-F8D3-CA68-808F65A54A6C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialAudio\Tutorial\04_SpawnPositions		1356226
+	177187774	05_Obstacles	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\16\{1629B299-6083-EB82-FE68-B9D0FD27C731}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialAudio\Tutorial\05_Obstacles		3217686
+	313911972	06_AdvancedMechanics	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\FC\{FC7B0D91-7C09-4AF5-D364-1790AAD9B017}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialAudio\Tutorial\06_AdvancedMechanics		1521280
+	349363750	02_BasicMechanics	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\B0\{B0E4876D-FA60-2186-82F9-046BE3549193}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialAudio\Tutorial\02_BasicMechanics		1200480
+	744565023	01_Intro	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\29\{293E6E12-BEF2-0658-0568-9583B8714FB5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialAudio\Tutorial\01_Intro		2338656
+

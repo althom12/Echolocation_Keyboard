@@ -1,0 +1,46 @@
+Event	ID	Name			Wwise Object Path	Notes
+	41179137	Play_16_ObstacleFeedback_EQ			\Default Work Unit\Play_16_ObstacleFeedback_EQ	
+	180411800	Play_14_ActivatingObstacles_FULL			\Default Work Unit\Play_14_ActivatingObstacles_FULL	
+	285928759	Play_17_ObstacleReview_EQ			\Default Work Unit\Play_17_ObstacleReview_EQ	
+	672691329	Play_Welcome_Intro			\Default Work Unit\Play_Welcome_Intro	
+	1146828738	Play_07_Rotation_FULL			\Default Work Unit\Play_07_Rotation_FULL	
+	1270779724	Play_03_2_ContinuedCollision_Script			\Default Work Unit\Play_03_2_ContinuedCollision_Script	
+	1554164582	Play_19_FinalNotes_Script			\Default Work Unit\Play_19_FinalNotes_Script	
+	1927997407	Play_13_Section1Review_Script			\Default Work Unit\Play_13_Section1Review_Script	
+	2049499323	Play_18_ClickPitch_EQ			\Default Work Unit\Play_18_ClickPitch_EQ	
+	2105156477	Play_11_MainChamberSpawn_FULL			\Default Work Unit\Play_11_MainChamberSpawn_FULL	
+	2183594182	Play_05_SidewaysMovement_Script			\Default Work Unit\Play_05_SidewaysMovement_Script	
+	2205939773	Play_12_SpawnPointsAndMovementPractice_Script			\Default Work Unit\Play_12_SpawnPointsAndMovementPractice_Script	
+	2932099217	Play_15_NavigatingObstacles_FULL			\Default Work Unit\Play_15_NavigatingObstacles_FULL	
+	3152927959	Play_09_RotationAndMovementPractice_Script			\Default Work Unit\Play_09_RotationAndMovementPractice_Script	
+	3227459707	Play_08_SonicCompass_FULL			\Default Work Unit\Play_08_SonicCompass_FULL	
+	3498038182	Play_10_SpawnAtStart_FULL			\Default Work Unit\Play_10_SpawnAtStart_FULL	
+	3703251308	Play_01_TheEcholocationClick2_EQ			\Default Work Unit\Play_01_TheEcholocationClick2_EQ	
+	3857492957	Play_04_BackwardMovement_Script			\Default Work Unit\Play_04_BackwardMovement_Script	
+	4073819487	Play_06_MovementPractice_Script			\Default Work Unit\Play_06_MovementPractice_Script	
+	4090907250	Play_02_ForwardMovement_EQ			\Default Work Unit\Play_02_ForwardMovement_EQ	
+	4275180162	Play_03_1_ForwardMovementAndCollision_EQ			\Default Work Unit\Play_03_1_ForwardMovementAndCollision_EQ	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	112753623	13_Section1Review_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\50\{501F7A47-1627-94F5-D52F-3DCE4CB2D0BC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\13_Section1Review_Script		2753376
+	123584678	Welcome&Intro	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\99\{99AA7E07-2689-D6DC-90FB-24D4500343A8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\Welcome&Intro		3006816
+	177301784	05_SidewaysMovement_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AE\{AE377022-16B3-AC4F-40BD-02B533A3EEC4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\05_SidewaysMovement_Script		4036704
+	204469262	09_RotationAndMovementPractice_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C6\{C6E643EA-DBE9-EF20-D83D-0A64CC9D628A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\09_RotationAndMovementPractice_Script		2082912
+	225709703	11_MainChamberSpawn_FULL	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\1B\{1B2A6BB4-9A9A-E2BC-7B0B-7A657FDCC478}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\11_MainChamberSpawn_FULL		2661660
+	268475161	15_NavigatingObstacles_FULL	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\2F\{2FC212F1-E876-28AB-9031-8C93D356478D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\15_NavigatingObstacles_FULL		7374010
+	291116588	04_BackwardMovement_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\0A\{0AEBACC7-696A-61FE-F5F3-E7B671D2F73F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\04_BackwardMovement_Script		3211872
+	296756075	12_SpawnPointsAndMovementPractice_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\4E\{4EFB71AE-9F2C-9D8D-ED04-591E51D6010F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\12_SpawnPointsAndMovementPractice_Script		1741920
+	301150210	16_ObstacleFeedback_EQ	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\0E\{0EA77B63-5745-B6C2-3131-264323F4FC0C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\16_ObstacleFeedback_EQ		2710700
+	467465405	07_Rotation_FULL	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C7\{C75E71BF-73EB-F004-197F-7D6957D1A779}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\07_Rotation_FULL		6170288
+	475204004	02_ForwardMovement_EQ	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\2D\{2DFF87C5-295B-56CE-B597-D51C4ED62C49}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\02_ForwardMovement_EQ		4351330
+	536126730	01_TheEcholocationClick2_EQ	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\9D\{9D1D9C9D-35BB-E57A-0751-BCDA0D88B2C5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\01_TheEcholocationClick2_EQ		3227856
+	552900870	03_1_ForwardMovementAndCollision_EQ	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\FD\{FDDEF9BC-72C0-94F6-BE2C-C32EEF540A94}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\03_1_ForwardMovementAndCollision_EQ		3432934
+	663097205	10_SpawnAtStart_FULL	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\E8\{E8CA4E15-296B-67A7-C8C4-0D451EFA46CA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\10_SpawnAtStart_FULL		3655846
+	712486106	18_ClickPitch_EQ	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\42\{425F6A93-9ACC-0F7A-94EB-7B6EFE543392}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\18_ClickPitch_EQ		4404828
+	808522767	17_ObstacleReview_EQ	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\0E\{0E4467EF-3C28-0D42-F312-55BE2EFE6DB1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\17_ObstacleReview_EQ		3664762
+	824353250	08_SonicCompass_FULL	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\85\{85116F8B-E7E1-122F-8799-B32E104533DE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\08_SonicCompass_FULL		5269726
+	867657858	03_2_ContinuedCollision_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\32\{32470D80-901D-63AC-E1CB-C5A40C94B287}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\03_2_ContinuedCollision_Script		5124192
+	931676524	14_ActivatingObstacles_FULL	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\97\{97E0F85D-80AD-B828-0C19-0C0724983FF5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\14_ActivatingObstacles_FULL		6160236
+	967323047	19_FinalNotes_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\8F\{8FCA2A1E-13E6-76AA-B294-0CD7F4B3B897}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\19_FinalNotes_Script		4032096
+	1018327434	06_MovementPractice_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\36\{3654659E-7444-B60F-9B23-6210FCE701F9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\06_MovementPractice_Script		3718752
+
