@@ -333,6 +333,237 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_01_TheEcholocationClick2_EQ" ID="{E81804F5-ECB3-41D8-8D19-53C762C4A06D}">
+					<ChildrenList>
+						<Action Name="" ID="{D856C397-9BF7-415C-A18D-48C71AEDE75A}" ShortID="652830672">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="01_TheEcholocationClick2_EQ" ID="{F28FD946-1C50-4E2E-8DF2-D46CD33FED8E}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_02_ForwardMovement_EQ" ID="{A8ABF8F5-D04C-44BA-960E-AA6581E0FFB0}">
+					<ChildrenList>
+						<Action Name="" ID="{99C9B6A6-06DE-42F8-BAB3-34C9FA3B5CDB}" ShortID="323248786">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="02_ForwardMovement_EQ" ID="{DF42C30A-9D18-4470-8503-EE09C1DE9451}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_03_1_ForwardMovementAndCollision_EQ" ID="{2B944243-3904-4C67-88DE-D9A2764DC6C9}">
+					<ChildrenList>
+						<Action Name="" ID="{48604876-5646-48FF-ADD8-B5605343890C}" ShortID="978651346">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="03_1_ForwardMovementAndCollision_EQ" ID="{BF9BC906-8666-4146-85F8-7A4C86CCF8D5}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_03_2_ContinuedCollision_Script" ID="{F8631E81-A18A-4706-9B85-3FF5BA24DAC7}">
+					<ChildrenList>
+						<Action Name="" ID="{7F01E3CA-117E-48B3-97B9-62386BC4F8BE}" ShortID="466752600">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="03_2_ContinuedCollision_Script" ID="{6658FFC9-119D-41F8-9135-0B76BAC4C4B8}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_04_BackwardMovement_Script" ID="{26BE536B-5321-4A61-A045-FBEC027C02F8}">
+					<ChildrenList>
+						<Action Name="" ID="{50C9621B-E20F-4718-A58B-F7CA7B6E1D84}" ShortID="714259803">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="04_BackwardMovement_Script" ID="{5B5EDF9E-5934-4B94-A3C0-6A8DA7F712C6}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_05_SidewaysMovement_Script" ID="{1E8E2A62-E34E-4700-9BE2-A08316857B2E}">
+					<ChildrenList>
+						<Action Name="" ID="{5242A840-D948-4DB2-9CB4-540574E7E57B}" ShortID="703106935">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="05_SidewaysMovement_Script" ID="{B89F2EB0-33E4-4DFF-A499-11C486706188}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_06_MovementPractice_Script" ID="{C5406529-9C7A-4F3A-9894-2441CAD0DBD1}">
+					<ChildrenList>
+						<Action Name="" ID="{4E716410-06C2-4027-BE93-B6EED76FF86B}" ShortID="755404615">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="06_MovementPractice_Script" ID="{F9EAA563-64B4-43D7-A1AF-FBAED0621D4F}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_07_Rotation_FULL" ID="{0983CD7C-C4D9-4CFE-BED2-2A07850CF945}">
+					<ChildrenList>
+						<Action Name="" ID="{F71B673A-C4CF-4AB8-AE7A-B7206224ABAC}" ShortID="401206154">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="07_Rotation_FULL" ID="{F0299740-C4A1-4A6E-999B-FEBD57A8F86D}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_08_SonicCompass_FULL" ID="{D942D0C1-F8F7-4D67-99F7-96E8BEF5CC73}">
+					<ChildrenList>
+						<Action Name="" ID="{5981758B-EC7E-4F67-8B75-0B45164907DB}" ShortID="796940196">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="08_SonicCompass_FULL" ID="{057663CB-BE6A-497E-A925-18AF28625BE9}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_09_RotationAndMovementPractice_Script" ID="{4E660332-00BA-484D-9A77-7B44100B1772}">
+					<ChildrenList>
+						<Action Name="" ID="{7059CBC0-F02B-4FBF-8FF6-723862CF8CAB}" ShortID="748014839">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="09_RotationAndMovementPractice_Script" ID="{E639D5BC-4624-4107-A7E9-DC063332CDD7}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_10_SpawnAtStart_FULL" ID="{A8ED2153-3347-481A-B81D-CC696DDF8B24}">
+					<ChildrenList>
+						<Action Name="" ID="{BFE82C58-8682-4ED8-A321-FB69E9A6501B}" ShortID="186014013">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="10_SpawnAtStart_FULL" ID="{0C1ABDAC-3DC3-4A90-88B4-0C2CA9EF4CEF}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_11_MainChamberSpawn_FULL" ID="{C50C92FA-0DE4-4B7D-BAA6-4C02B4445286}">
+					<ChildrenList>
+						<Action Name="" ID="{BF25FDC6-A8D2-43AF-8415-6DFDDD191ADE}" ShortID="165588885">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="11_MainChamberSpawn_FULL" ID="{88F3309A-3231-4249-9B66-F071BA634CE9}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_12_SpawnPointsAndMovementPractice_Script" ID="{317A7599-EA42-455E-8E53-EF7954CA9DBF}">
+					<ChildrenList>
+						<Action Name="" ID="{B8E01410-13D6-4791-834E-24F2210180D6}" ShortID="320993848">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="12_SpawnPointsAndMovementPractice_Script" ID="{343A9D02-502B-4626-8203-3825F28E24B4}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_13_Section1Review_Script" ID="{2F58EE5D-C0B9-4C44-B8D5-8CE1F0D67AC8}">
+					<ChildrenList>
+						<Action Name="" ID="{44FAC7F9-E578-4945-8725-D5DB82407814}" ShortID="1047489482">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="13_Section1Review_Script" ID="{1070BFE1-69CC-4701-ABBF-A04E182C0329}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_14_ActivatingObstacles_FULL" ID="{82FDD523-2752-4F57-96E3-94AD0B1B683F}">
+					<ChildrenList>
+						<Action Name="" ID="{D3A9DD68-3EAA-41CC-9BAF-1B384D7B4A43}" ShortID="214105266">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="14_ActivatingObstacles_FULL" ID="{3AB3E475-5031-4150-8B6D-C504C9B5EC55}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_15_NavigatingObstacles_FULL" ID="{604BEA2C-2ABE-4ACA-94FE-B1C7F486B2F0}">
+					<ChildrenList>
+						<Action Name="" ID="{54FC39E9-750D-4427-A30B-C77CE8CC7C6F}" ShortID="699291376">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="15_NavigatingObstacles_FULL" ID="{5D7B7E78-F5D6-4188-9AD5-2F5D80D7B5C5}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_16_ObstacleFeedback_EQ" ID="{B5E56007-CA3F-41BD-8456-E3B0E96D882E}">
+					<ChildrenList>
+						<Action Name="" ID="{49B0A129-F21C-40B1-BE55-A91BFFDB21B3}" ShortID="779884767">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="16_ObstacleFeedback_EQ" ID="{945A8A44-5DD9-4DD4-BD61-D49D6B0991A9}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_17_ObstacleReview_EQ" ID="{4F36FE1A-6958-4313-A2C4-956BC5DAC5CC}">
+					<ChildrenList>
+						<Action Name="" ID="{E3E9510D-90CB-412B-98E2-13E2C10C04F2}" ShortID="1054673012">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="17_ObstacleReview_EQ" ID="{78D62EB4-03A0-4077-8D58-842AD8F8FA6E}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_18_ClickPitch_EQ" ID="{8DDB911A-D608-4584-9401-B5FE0FBBB3D5}">
+					<ChildrenList>
+						<Action Name="" ID="{609594A7-3F50-426E-821D-AFB6F7D7627C}" ShortID="417197946">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="18_ClickPitch_EQ" ID="{46CBD206-31DA-47E7-916D-0C5F26018896}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_19_FinalNotes_Script" ID="{57E084C3-A233-4741-AB70-341FF987F73C}">
+					<ChildrenList>
+						<Action Name="" ID="{FA33DC93-3E50-4DF2-A465-B394B1CAAE2D}" ShortID="936402383">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="19_FinalNotes_Script" ID="{C6958E1A-C9ED-4461-8764-877515FC68FB}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Welcome_Intro" ID="{82C8AD1C-F7E7-4430-A199-EEDBBDC671B2}">
+					<ChildrenList>
+						<Action Name="" ID="{59246791-B8A6-45BA-A323-98B9D89374D8}" ShortID="551337221">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Welcome&amp;Intro" ID="{07A55DA8-F38C-4D5A-98D7-BFFE402A002B}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
