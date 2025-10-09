@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{50B2033B-70B5-4C82-9AD3-BD9C5972BE76}",
     "Language": "SFX",
-    "Hash": "{843D03DA-C6D3-A9BD-BE48-9856A24F6453}",
+    "Hash": "{4DEEEEF6-7C1E-BA2D-D37A-611003AE36C2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\New_Tutorial",
     "ShortName": "New_Tutorial",
     "Path": "New_Tutorial.bnk",
@@ -186,9 +186,19 @@
     ],
     "Events": [
      {
+      "Id": "914525656",
+      "Name": "Pause_NewTutorial",
+      "ObjectPath": "\\Events\\Default Work Unit\\Pause_NewTutorial",
+      "GUID": "{7021B7F0-4F42-4728-8143-719BE97D2360}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "3703251308",
       "Name": "Play_01_TheEcholocationClick2_EQ",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_01_TheEcholocationClick2_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_01_TheEcholocationClick2_EQ",
       "GUID": "{E81804F5-ECB3-41D8-8D19-53C762C4A06D}",
       "DurationType": "OneShot",
       "DurationMin": "33.6225",
@@ -202,7 +212,7 @@
      {
       "Id": "4090907250",
       "Name": "Play_02_ForwardMovement_EQ",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_02_ForwardMovement_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_02_ForwardMovement_EQ",
       "GUID": "{A8ABF8F5-D04C-44BA-960E-AA6581E0FFB0}",
       "DurationType": "OneShot",
       "DurationMin": "45.325356",
@@ -216,7 +226,7 @@
      {
       "Id": "4275180162",
       "Name": "Play_03_1_ForwardMovementAndCollision_EQ",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_03_1_ForwardMovementAndCollision_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_03_1_ForwardMovementAndCollision_EQ",
       "GUID": "{2B944243-3904-4C67-88DE-D9A2764DC6C9}",
       "DurationType": "OneShot",
       "DurationMin": "35.758728",
@@ -230,7 +240,7 @@
      {
       "Id": "1270779724",
       "Name": "Play_03_2_ContinuedCollision_Script",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_03_2_ContinuedCollision_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_03_2_ContinuedCollision_Script",
       "GUID": "{F8631E81-A18A-4706-9B85-3FF5BA24DAC7}",
       "DurationType": "OneShot",
       "DurationMin": "53.376",
@@ -244,7 +254,7 @@
      {
       "Id": "3857492957",
       "Name": "Play_04_BackwardMovement_Script",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_04_BackwardMovement_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_04_BackwardMovement_Script",
       "GUID": "{26BE536B-5321-4A61-A045-FBEC027C02F8}",
       "DurationType": "OneShot",
       "DurationMin": "33.456",
@@ -258,7 +268,7 @@
      {
       "Id": "2183594182",
       "Name": "Play_05_SidewaysMovement_Script",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_05_SidewaysMovement_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_05_SidewaysMovement_Script",
       "GUID": "{1E8E2A62-E34E-4700-9BE2-A08316857B2E}",
       "DurationType": "OneShot",
       "DurationMin": "42.048",
@@ -272,7 +282,7 @@
      {
       "Id": "4073819487",
       "Name": "Play_06_MovementPractice_Script",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_06_MovementPractice_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_06_MovementPractice_Script",
       "GUID": "{C5406529-9C7A-4F3A-9894-2441CAD0DBD1}",
       "DurationType": "OneShot",
       "DurationMin": "38.736",
@@ -286,7 +296,7 @@
      {
       "Id": "1146828738",
       "Name": "Play_07_Rotation_FULL",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_07_Rotation_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_07_Rotation_FULL",
       "GUID": "{0983CD7C-C4D9-4CFE-BED2-2A07850CF945}",
       "DurationType": "OneShot",
       "DurationMin": "64.272835",
@@ -300,7 +310,7 @@
      {
       "Id": "3227459707",
       "Name": "Play_08_SonicCompass_FULL",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_08_SonicCompass_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_08_SonicCompass_FULL",
       "GUID": "{D942D0C1-F8F7-4D67-99F7-96E8BEF5CC73}",
       "DurationType": "OneShot",
       "DurationMin": "54.89198",
@@ -314,7 +324,7 @@
      {
       "Id": "3152927959",
       "Name": "Play_09_RotationAndMovementPractice_Script",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_09_RotationAndMovementPractice_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_09_RotationAndMovementPractice_Script",
       "GUID": "{4E660332-00BA-484D-9A77-7B44100B1772}",
       "DurationType": "OneShot",
       "DurationMin": "21.696",
@@ -328,7 +338,7 @@
      {
       "Id": "3498038182",
       "Name": "Play_10_SpawnAtStart_FULL",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_10_SpawnAtStart_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_10_SpawnAtStart_FULL",
       "GUID": "{A8ED2153-3347-481A-B81D-CC696DDF8B24}",
       "DurationType": "OneShot",
       "DurationMin": "38.08073",
@@ -342,7 +352,7 @@
      {
       "Id": "2105156477",
       "Name": "Play_11_MainChamberSpawn_FULL",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_11_MainChamberSpawn_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_11_MainChamberSpawn_FULL",
       "GUID": "{C50C92FA-0DE4-4B7D-BAA6-4C02B4445286}",
       "DurationType": "OneShot",
       "DurationMin": "27.724625",
@@ -356,7 +366,7 @@
      {
       "Id": "2205939773",
       "Name": "Play_12_SpawnPointsAndMovementPractice_Script",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_12_SpawnPointsAndMovementPractice_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_12_SpawnPointsAndMovementPractice_Script",
       "GUID": "{317A7599-EA42-455E-8E53-EF7954CA9DBF}",
       "DurationType": "OneShot",
       "DurationMin": "18.144",
@@ -370,7 +380,7 @@
      {
       "Id": "1927997407",
       "Name": "Play_13_Section1Review_Script",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_13_Section1Review_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_13_Section1Review_Script",
       "GUID": "{2F58EE5D-C0B9-4C44-B8D5-8CE1F0D67AC8}",
       "DurationType": "OneShot",
       "DurationMin": "28.68",
@@ -384,7 +394,7 @@
      {
       "Id": "180411800",
       "Name": "Play_14_ActivatingObstacles_FULL",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_14_ActivatingObstacles_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_14_ActivatingObstacles_FULL",
       "GUID": "{82FDD523-2752-4F57-96E3-94AD0B1B683F}",
       "DurationType": "OneShot",
       "DurationMin": "64.16812",
@@ -398,7 +408,7 @@
      {
       "Id": "2932099217",
       "Name": "Play_15_NavigatingObstacles_FULL",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_15_NavigatingObstacles_FULL",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_15_NavigatingObstacles_FULL",
       "GUID": "{604BEA2C-2ABE-4ACA-94FE-B1C7F486B2F0}",
       "DurationType": "OneShot",
       "DurationMin": "76.81161",
@@ -412,7 +422,7 @@
      {
       "Id": "41179137",
       "Name": "Play_16_ObstacleFeedback_EQ",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_16_ObstacleFeedback_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_16_ObstacleFeedback_EQ",
       "GUID": "{B5E56007-CA3F-41BD-8456-E3B0E96D882E}",
       "DurationType": "OneShot",
       "DurationMin": "28.235458",
@@ -426,7 +436,7 @@
      {
       "Id": "285928759",
       "Name": "Play_17_ObstacleReview_EQ",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_17_ObstacleReview_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_17_ObstacleReview_EQ",
       "GUID": "{4F36FE1A-6958-4313-A2C4-956BC5DAC5CC}",
       "DurationType": "OneShot",
       "DurationMin": "38.173603",
@@ -440,7 +450,7 @@
      {
       "Id": "2049499323",
       "Name": "Play_18_ClickPitch_EQ",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_18_ClickPitch_EQ",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_18_ClickPitch_EQ",
       "GUID": "{8DDB911A-D608-4584-9401-B5FE0FBBB3D5}",
       "DurationType": "OneShot",
       "DurationMin": "45.882626",
@@ -454,7 +464,7 @@
      {
       "Id": "1554164582",
       "Name": "Play_19_FinalNotes_Script",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_19_FinalNotes_Script",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_19_FinalNotes_Script",
       "GUID": "{57E084C3-A233-4741-AB70-341FF987F73C}",
       "DurationType": "OneShot",
       "DurationMin": "42",
@@ -468,7 +478,7 @@
      {
       "Id": "672691329",
       "Name": "Play_Welcome_Intro",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Welcome_Intro",
+      "ObjectPath": "\\Events\\Default Work Unit\\NewTutorial\\Play_Welcome_Intro",
       "GUID": "{82C8AD1C-F7E7-4430-A199-EEDBBDC671B2}",
       "DurationType": "OneShot",
       "DurationMin": "31.32",
@@ -478,10 +488,20 @@
         "Id": "123584678"
        }
       ]
+     },
+     {
+      "Id": "1647568189",
+      "Name": "Resume_NewTutorial",
+      "ObjectPath": "\\Events\\Default Work Unit\\Resume_NewTutorial",
+      "GUID": "{3AB7DE9F-2B54-48B9-AC87-7FD1FD0EFECF}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{C1BFD244-2925-486D-D183-A56DE1872723}"
+  "FileHash": "{CB5EB722-6292-A1F4-DA3E-0327DEDB8049}"
  }
 }

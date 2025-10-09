@@ -199,6 +199,12 @@
 							</ChildrenList>
 						</AuxBus>
 						<Bus Name="Tutorial" ID="{4D84C236-582F-41AB-B345-173AAF59D10E}"/>
+						<Bus Name="NewTutorial" ID="{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">

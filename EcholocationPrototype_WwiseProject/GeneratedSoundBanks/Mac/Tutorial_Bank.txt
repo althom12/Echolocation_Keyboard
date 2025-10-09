@@ -1,13 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1159590420	Play_01_Intro			\Default Work Unit\Play_01_Intro	
-	1193160806	Pause_Tutorial			\Default Work Unit\Pause_Tutorial	
-	1817525157	Play_07_MainGame			\Default Work Unit\Play_07_MainGame	
-	2793081246	Play_06_AdvancedMechanics			\Default Work Unit\Play_06_AdvancedMechanics	
-	2826305660	Play_02_BasicMechanics			\Default Work Unit\Play_02_BasicMechanics	
-	2924510430	Play_04_SpawnPositions			\Default Work Unit\Play_04_SpawnPositions	
-	3663181753	Play_03_RotationAndSonicCompass			\Default Work Unit\Play_03_RotationAndSonicCompass	
-	4004824028	Play_05_Obstacles			\Default Work Unit\Play_05_Obstacles	
-	4041214897	Resume_Tutorial			\Default Work Unit\Resume_Tutorial	
+	1159590420	Play_01_Intro			\Default Work Unit\OldTutorial\Play_01_Intro	
+	1817525157	Play_07_MainGame			\Default Work Unit\OldTutorial\Play_07_MainGame	
+	2793081246	Play_06_AdvancedMechanics			\Default Work Unit\OldTutorial\Play_06_AdvancedMechanics	
+	2826305660	Play_02_BasicMechanics			\Default Work Unit\OldTutorial\Play_02_BasicMechanics	
+	2924510430	Play_04_SpawnPositions			\Default Work Unit\OldTutorial\Play_04_SpawnPositions	
+	3663181753	Play_03_RotationAndSonicCompass			\Default Work Unit\OldTutorial\Play_03_RotationAndSonicCompass	
+	4004824028	Play_05_Obstacles			\Default Work Unit\OldTutorial\Play_05_Obstacles	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	64849393	03_RotationAndSonicCompass	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C1\{C160315C-E173-C989-7E06-E9166EF6C0FE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialAudio\Tutorial\03_RotationAndSonicCompass		1780984

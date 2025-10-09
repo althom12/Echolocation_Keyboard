@@ -1,24 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
-	47361196	Play_ProtoClick			\Default Work Unit\Play_ProtoClick	
-	872174764	Play_MegaAbsorbObstaclesActivated			\Default Work Unit\Play_MegaAbsorbObstaclesActivated	
-	1103419735	Play_West			\Default Work Unit\Play_West	
-	1228161944	Play_LesserAbsorbObstaclesActivated			\Default Work Unit\Play_LesserAbsorbObstaclesActivated	
+	872174764	Play_MegaAbsorbObstaclesActivated			\Default Work Unit\Obstacles\Play_MegaAbsorbObstaclesActivated	
+	1103419735	Play_West			\Default Work Unit\Compass\Play_West	
+	1228161944	Play_LesserAbsorbObstaclesActivated			\Default Work Unit\Obstacles\Play_LesserAbsorbObstaclesActivated	
 	1553219250	Play_Collision			\Default Work Unit\Play_Collision	
 	1578180715	Play_PA_Settings_Opened			\Default Work Unit\Play_PA_Settings_Opened	
 	1839782124	Play_MainChamberNotification			\Default Work Unit\Play_MainChamberNotification	
-	1850732987	Play_North			\Default Work Unit\Play_North	
+	1850732987	Play_North			\Default Work Unit\Compass\Play_North	
 	1884537203	Play_PA_Settings_Confirmed			\Default Work Unit\Play_PA_Settings_Confirmed	
-	1921606916	Play_MegaReflectObstaclesActivated			\Default Work Unit\Play_MegaReflectObstaclesActivated	
-	2173823837	Play_ObstacleEmitter			\Default Work Unit\Play_ObstacleEmitter	
-	2245461924	Play_NoObstaclesActivated			\Default Work Unit\Play_NoObstaclesActivated	
-	2248556949	Play_45_Angle_Indicator			\Default Work Unit\Play_45_Angle_Indicator	
+	1921606916	Play_MegaReflectObstaclesActivated			\Default Work Unit\Obstacles\Play_MegaReflectObstaclesActivated	
+	2173823837	Play_ObstacleEmitter			\Default Work Unit\Obstacles\Play_ObstacleEmitter	
+	2245461924	Play_NoObstaclesActivated			\Default Work Unit\Obstacles\Play_NoObstaclesActivated	
+	2248556949	Play_45_Angle_Indicator			\Default Work Unit\Compass\Play_45_Angle_Indicator	
 	2531445826	Play_StartingPositionNotification			\Default Work Unit\Play_StartingPositionNotification	
-	2570030149	Play_Compass_Synth			\Default Work Unit\Play_Compass_Synth	
-	3187449017	Play_South			\Default Work Unit\Play_South	
+	2570030149	Play_Compass_Synth			\Default Work Unit\Compass\Play_Compass_Synth	
+	3187449017	Play_South			\Default Work Unit\Compass\Play_South	
 	3559566211	Play_HumanClick			\Default Work Unit\Play_HumanClick	
-	3787876787	Stop_Compass_Synth			\Default Work Unit\Stop_Compass_Synth	
+	3787876787	Stop_Compass_Synth			\Default Work Unit\Compass\Stop_Compass_Synth	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
-	4162345221	Play_East			\Default Work Unit\Play_East	
+	4162345221	Play_East			\Default Work Unit\Compass\Play_East	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	250675185	Click_Amplitude			\Default Work Unit\Click_Amplitude	
@@ -56,7 +55,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	369476291	Footstep03	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\1C\{1C6928D6-A8D4-FF59-29D3-42AB7B9796EC}.wem		\Actor-Mixer Hierarchy\User\FootstepContainer\Footsteps\Footstep03		10680
 	398837345	MegaAbsorbObstaclesActivated	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AF\{AFF124AE-F3F6-209A-8BCC-44DC075A8050}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MegaAbsorbObstaclesActivated		165984
 	442760386	NoObstaclesActivated	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C6\{C6A72F12-C434-9A4D-8CD8-A0EEDEE421B6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NoObstaclesActivated		95712
-	516543843	ProtoClick	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\93\{93B4E0F3-0447-B77D-E9D1-197F1EB73A63}.wem		\Actor-Mixer Hierarchy\User\Clicks\ProtoClick		12624
 	556476513	Collision	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\03\{0339539D-B4A4-DE01-61A1-86982B9D2C67}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Collision		68304
 	641815117	PA_Settings_Opened	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\6E\{6E26DD8D-EA58-705B-9A5E-0ECA428612E1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\PA_Settings_Opened		45280
 	696266850	Footstep04	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C3\{C3962221-8A60-AA0C-9E32-DC6D2FE66A21}.wem		\Actor-Mixer Hierarchy\User\FootstepContainer\Footsteps\Footstep04		7084

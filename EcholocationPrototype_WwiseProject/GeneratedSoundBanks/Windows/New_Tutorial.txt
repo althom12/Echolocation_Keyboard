@@ -1,25 +1,27 @@
 Event	ID	Name			Wwise Object Path	Notes
-	41179137	Play_16_ObstacleFeedback_EQ			\Default Work Unit\Play_16_ObstacleFeedback_EQ	
-	180411800	Play_14_ActivatingObstacles_FULL			\Default Work Unit\Play_14_ActivatingObstacles_FULL	
-	285928759	Play_17_ObstacleReview_EQ			\Default Work Unit\Play_17_ObstacleReview_EQ	
-	672691329	Play_Welcome_Intro			\Default Work Unit\Play_Welcome_Intro	
-	1146828738	Play_07_Rotation_FULL			\Default Work Unit\Play_07_Rotation_FULL	
-	1270779724	Play_03_2_ContinuedCollision_Script			\Default Work Unit\Play_03_2_ContinuedCollision_Script	
-	1554164582	Play_19_FinalNotes_Script			\Default Work Unit\Play_19_FinalNotes_Script	
-	1927997407	Play_13_Section1Review_Script			\Default Work Unit\Play_13_Section1Review_Script	
-	2049499323	Play_18_ClickPitch_EQ			\Default Work Unit\Play_18_ClickPitch_EQ	
-	2105156477	Play_11_MainChamberSpawn_FULL			\Default Work Unit\Play_11_MainChamberSpawn_FULL	
-	2183594182	Play_05_SidewaysMovement_Script			\Default Work Unit\Play_05_SidewaysMovement_Script	
-	2205939773	Play_12_SpawnPointsAndMovementPractice_Script			\Default Work Unit\Play_12_SpawnPointsAndMovementPractice_Script	
-	2932099217	Play_15_NavigatingObstacles_FULL			\Default Work Unit\Play_15_NavigatingObstacles_FULL	
-	3152927959	Play_09_RotationAndMovementPractice_Script			\Default Work Unit\Play_09_RotationAndMovementPractice_Script	
-	3227459707	Play_08_SonicCompass_FULL			\Default Work Unit\Play_08_SonicCompass_FULL	
-	3498038182	Play_10_SpawnAtStart_FULL			\Default Work Unit\Play_10_SpawnAtStart_FULL	
-	3703251308	Play_01_TheEcholocationClick2_EQ			\Default Work Unit\Play_01_TheEcholocationClick2_EQ	
-	3857492957	Play_04_BackwardMovement_Script			\Default Work Unit\Play_04_BackwardMovement_Script	
-	4073819487	Play_06_MovementPractice_Script			\Default Work Unit\Play_06_MovementPractice_Script	
-	4090907250	Play_02_ForwardMovement_EQ			\Default Work Unit\Play_02_ForwardMovement_EQ	
-	4275180162	Play_03_1_ForwardMovementAndCollision_EQ			\Default Work Unit\Play_03_1_ForwardMovementAndCollision_EQ	
+	41179137	Play_16_ObstacleFeedback_EQ			\Default Work Unit\NewTutorial\Play_16_ObstacleFeedback_EQ	
+	180411800	Play_14_ActivatingObstacles_FULL			\Default Work Unit\NewTutorial\Play_14_ActivatingObstacles_FULL	
+	285928759	Play_17_ObstacleReview_EQ			\Default Work Unit\NewTutorial\Play_17_ObstacleReview_EQ	
+	672691329	Play_Welcome_Intro			\Default Work Unit\NewTutorial\Play_Welcome_Intro	
+	914525656	Pause_NewTutorial			\Default Work Unit\Pause_NewTutorial	
+	1146828738	Play_07_Rotation_FULL			\Default Work Unit\NewTutorial\Play_07_Rotation_FULL	
+	1270779724	Play_03_2_ContinuedCollision_Script			\Default Work Unit\NewTutorial\Play_03_2_ContinuedCollision_Script	
+	1554164582	Play_19_FinalNotes_Script			\Default Work Unit\NewTutorial\Play_19_FinalNotes_Script	
+	1647568189	Resume_NewTutorial			\Default Work Unit\Resume_NewTutorial	
+	1927997407	Play_13_Section1Review_Script			\Default Work Unit\NewTutorial\Play_13_Section1Review_Script	
+	2049499323	Play_18_ClickPitch_EQ			\Default Work Unit\NewTutorial\Play_18_ClickPitch_EQ	
+	2105156477	Play_11_MainChamberSpawn_FULL			\Default Work Unit\NewTutorial\Play_11_MainChamberSpawn_FULL	
+	2183594182	Play_05_SidewaysMovement_Script			\Default Work Unit\NewTutorial\Play_05_SidewaysMovement_Script	
+	2205939773	Play_12_SpawnPointsAndMovementPractice_Script			\Default Work Unit\NewTutorial\Play_12_SpawnPointsAndMovementPractice_Script	
+	2932099217	Play_15_NavigatingObstacles_FULL			\Default Work Unit\NewTutorial\Play_15_NavigatingObstacles_FULL	
+	3152927959	Play_09_RotationAndMovementPractice_Script			\Default Work Unit\NewTutorial\Play_09_RotationAndMovementPractice_Script	
+	3227459707	Play_08_SonicCompass_FULL			\Default Work Unit\NewTutorial\Play_08_SonicCompass_FULL	
+	3498038182	Play_10_SpawnAtStart_FULL			\Default Work Unit\NewTutorial\Play_10_SpawnAtStart_FULL	
+	3703251308	Play_01_TheEcholocationClick2_EQ			\Default Work Unit\NewTutorial\Play_01_TheEcholocationClick2_EQ	
+	3857492957	Play_04_BackwardMovement_Script			\Default Work Unit\NewTutorial\Play_04_BackwardMovement_Script	
+	4073819487	Play_06_MovementPractice_Script			\Default Work Unit\NewTutorial\Play_06_MovementPractice_Script	
+	4090907250	Play_02_ForwardMovement_EQ			\Default Work Unit\NewTutorial\Play_02_ForwardMovement_EQ	
+	4275180162	Play_03_1_ForwardMovementAndCollision_EQ			\Default Work Unit\NewTutorial\Play_03_1_ForwardMovementAndCollision_EQ	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	112753623	13_Section1Review_Script	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\50\{501F7A47-1627-94F5-D52F-3DCE4CB2D0BC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\13_Section1Review_Script		2753376

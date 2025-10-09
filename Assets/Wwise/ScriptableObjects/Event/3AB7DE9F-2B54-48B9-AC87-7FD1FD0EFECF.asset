@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
-  m_Name: 5882A6CD-4982-426A-A6C1-93E02FD2BD28
+  m_Name: 3AB7DE9F-2B54-48B9-AC87-7FD1FD0EFECF
   m_EditorClassIdentifier: 
-  objectName: Play_ProtoClick
-  id: 47361196
-  guid: 5882A6CD-4982-426A-A6C1-93E02FD2BD28
+  objectName: Resume_NewTutorial
+  id: 1647568189
+  guid: 3AB7DE9F-2B54-48B9-AC87-7FD1FD0EFECF
   IsInUserDefinedSoundBank: 1

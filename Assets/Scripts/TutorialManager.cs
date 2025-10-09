@@ -165,6 +165,10 @@ public class TutorialManager : MonoBehaviour
 
     public void ToggleAudioPause()
     {
+        Debug.Log("ToggleAudioPause method was successfully called!");
+
+    
+
         isAudioPaused = !isAudioPaused;
         if (isAudioPaused)
         {

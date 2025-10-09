@@ -4776,39 +4776,99 @@ MonoBehaviour:
   introductoryAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8b2d29d6fe311494a8f322e63430cf19, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 3b4f8e6793947e84a9957ce45f6716a2, type: 2}
   instructionSounds:
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 97b7e3639deeee5478ba6a3be4536b78, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: c3d2bd57b32428445b5e6b66f92b948c, type: 2}
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: af29b9d97aa94ac4d88114568fe6f542, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 3af01b4c28ab4574e9e8bf9c39227b72, type: 2}
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 98e6b11aa67bfeb42aa5738a64ff6b9b, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 90f0aaf068f3cb448a9845c22676f704, type: 2}
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 37ccbb26f2a7d034b9efe3f678ec84c6, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 3ff6a3509d4bc7c49a4be3cdab7df05f, type: 2}
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 2597f4735d2269f48a96dfd3789c425e, type: 2}
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c5483406034349b9e5a3c006419b3, type: 2}
   pauseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5e1e8aa5702f8274598288f0bc58e160, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 20048cbde797d534f982d8b6c0d9fa6b, type: 2}
   resumeEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 269ea2b18bf18304bb47dfa5cec7d762, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: f837f3482cfba714c9775420f751c5bf, type: 2}
   spawnPoints:
   - {fileID: 1569314653}
   - {fileID: 1483892129}
   - {fileID: 1483892129}
   - {fileID: 445884804}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
+  - {fileID: 1483892129}
   - {fileID: 1483892129}
   - {fileID: 1483892129}
 --- !u!65 &360123818
@@ -21671,7 +21731,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7df8ca556eae34245a517956c46e7224, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: a63217f163de7c5479947b852a21b526, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
   loadAsynchronous: 0

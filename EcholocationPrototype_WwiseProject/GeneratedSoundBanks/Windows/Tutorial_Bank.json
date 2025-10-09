@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5FEF39A8-436C-4F9F-9930-B17E0B4387BF}",
     "Language": "SFX",
-    "Hash": "{34779DAA-B238-CEFF-18D7-F0746DB32BAE}",
+    "Hash": "{337760BE-F87E-6B68-3ADA-13F5AC67CB2D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Tutorial_Bank",
     "ShortName": "Tutorial_Bank",
     "Path": "Tutorial_Bank.bnk",
@@ -74,19 +74,9 @@
     ],
     "Events": [
      {
-      "Id": "1193160806",
-      "Name": "Pause_Tutorial",
-      "ObjectPath": "\\Events\\Default Work Unit\\Pause_Tutorial",
-      "GUID": "{93F1813A-5309-41D4-BE3B-841F52200D60}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
       "Id": "1159590420",
       "Name": "Play_01_Intro",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_01_Intro",
+      "ObjectPath": "\\Events\\Default Work Unit\\OldTutorial\\Play_01_Intro",
       "GUID": "{C0F6A7BF-6A77-4C83-AC0A-B6857B389196}",
       "DurationType": "OneShot",
       "DurationMin": "48.72",
@@ -100,7 +90,7 @@
      {
       "Id": "2826305660",
       "Name": "Play_02_BasicMechanics",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_02_BasicMechanics",
+      "ObjectPath": "\\Events\\Default Work Unit\\OldTutorial\\Play_02_BasicMechanics",
       "GUID": "{98432684-208D-4ECF-9D90-9EA54FA9C4D1}",
       "DurationType": "OneShot",
       "DurationMin": "25.008",
@@ -114,7 +104,7 @@
      {
       "Id": "3663181753",
       "Name": "Play_03_RotationAndSonicCompass",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_03_RotationAndSonicCompass",
+      "ObjectPath": "\\Events\\Default Work Unit\\OldTutorial\\Play_03_RotationAndSonicCompass",
       "GUID": "{9C060430-7356-4987-B2F9-F0FBA8F6EF01}",
       "DurationType": "OneShot",
       "DurationMin": "37.101856",
@@ -128,7 +118,7 @@
      {
       "Id": "2924510430",
       "Name": "Play_04_SpawnPositions",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_04_SpawnPositions",
+      "ObjectPath": "\\Events\\Default Work Unit\\OldTutorial\\Play_04_SpawnPositions",
       "GUID": "{88DBD3AB-3E2D-4A17-9AAC-C7EE4C957981}",
       "DurationType": "OneShot",
       "DurationMin": "28.252743",
@@ -142,7 +132,7 @@
      {
       "Id": "4004824028",
       "Name": "Play_05_Obstacles",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_05_Obstacles",
+      "ObjectPath": "\\Events\\Default Work Unit\\OldTutorial\\Play_05_Obstacles",
       "GUID": "{82F4CBA9-C59E-4F06-8E36-E27F3174D815}",
       "DurationType": "OneShot",
       "DurationMin": "67.03312",
@@ -156,7 +146,7 @@
      {
       "Id": "2793081246",
       "Name": "Play_06_AdvancedMechanics",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_06_AdvancedMechanics",
+      "ObjectPath": "\\Events\\Default Work Unit\\OldTutorial\\Play_06_AdvancedMechanics",
       "GUID": "{BE08CA2F-5ACB-4236-832D-C8CC1372B342}",
       "DurationType": "OneShot",
       "DurationMin": "31.690338",
@@ -170,7 +160,7 @@
      {
       "Id": "1817525157",
       "Name": "Play_07_MainGame",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_07_MainGame",
+      "ObjectPath": "\\Events\\Default Work Unit\\OldTutorial\\Play_07_MainGame",
       "GUID": "{745CEBA6-A3C5-4428-B55E-1597479A26CD}",
       "DurationType": "OneShot",
       "DurationMin": "1.5471251",
@@ -180,20 +170,10 @@
         "Id": "66883511"
        }
       ]
-     },
-     {
-      "Id": "4041214897",
-      "Name": "Resume_Tutorial",
-      "ObjectPath": "\\Events\\Default Work Unit\\Resume_Tutorial",
-      "GUID": "{AA549C6B-619A-4F1B-996B-8AE72C9B8B25}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{8ED61315-F5D9-F05E-3C3A-1D528492D3E8}"
+  "FileHash": "{270EBA0D-0F8A-DC79-6C4C-C961BDBE2E18}"
  }
 }

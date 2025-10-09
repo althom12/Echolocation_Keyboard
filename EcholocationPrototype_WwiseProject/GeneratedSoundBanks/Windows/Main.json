@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{7490AD40-A4CB-0CFC-5E61-92431004B528}",
+    "Hash": "{A537FD31-FA34-DCD4-F488-12ABD423655B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -102,14 +102,6 @@
       "Location": "Memory",
       "ShortName": "NoObstaclesActivated.wav",
       "CachePath": "C6/{C6A72F12-C434-9A4D-8CD8-A0EEDEE421B6}.wem"
-     },
-     {
-      "Id": "516543843",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EcholocationClick.wav",
-      "CachePath": "93/{93B4E0F3-0447-B77D-E9D1-197F1EB73A63}.wem"
      },
      {
       "Id": "522077337",
@@ -329,7 +321,7 @@
      {
       "Id": "2248556949",
       "Name": "Play_45_Angle_Indicator",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_45_Angle_Indicator",
+      "ObjectPath": "\\Events\\Default Work Unit\\Compass\\Play_45_Angle_Indicator",
       "GUID": "{A5A63898-3C74-4510-8D1C-BF46D87A9EA1}",
       "DurationType": "OneShot",
       "DurationMin": "0.354329",
@@ -371,7 +363,7 @@
      {
       "Id": "2570030149",
       "Name": "Play_Compass_Synth",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Compass_Synth",
+      "ObjectPath": "\\Events\\Default Work Unit\\Compass\\Play_Compass_Synth",
       "GUID": "{609C5A8B-0EBE-4490-8A28-550DF89B9FAF}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -393,7 +385,7 @@
      {
       "Id": "4162345221",
       "Name": "Play_East",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_East",
+      "ObjectPath": "\\Events\\Default Work Unit\\Compass\\Play_East",
       "GUID": "{160459A9-48AA-44EA-A295-765751BF09FA}",
       "DurationType": "OneShot",
       "DurationMin": "0.66173506",
@@ -467,7 +459,7 @@
      {
       "Id": "1228161944",
       "Name": "Play_LesserAbsorbObstaclesActivated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_LesserAbsorbObstaclesActivated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Obstacles\\Play_LesserAbsorbObstaclesActivated",
       "GUID": "{7A279AD4-C5B4-4C8A-8982-2D7CD1CD5E35}",
       "DurationType": "OneShot",
       "DurationMin": "3.48",
@@ -495,7 +487,7 @@
      {
       "Id": "872174764",
       "Name": "Play_MegaAbsorbObstaclesActivated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_MegaAbsorbObstaclesActivated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Obstacles\\Play_MegaAbsorbObstaclesActivated",
       "GUID": "{5A26FADB-89B8-44F3-AB14-054FAA33182C}",
       "DurationType": "OneShot",
       "DurationMin": "3.456",
@@ -509,7 +501,7 @@
      {
       "Id": "1921606916",
       "Name": "Play_MegaReflectObstaclesActivated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_MegaReflectObstaclesActivated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Obstacles\\Play_MegaReflectObstaclesActivated",
       "GUID": "{EC88DD70-D988-4572-9032-ACDDAC051E67}",
       "DurationType": "OneShot",
       "DurationMin": "3.576",
@@ -523,7 +515,7 @@
      {
       "Id": "2245461924",
       "Name": "Play_NoObstaclesActivated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_NoObstaclesActivated",
+      "ObjectPath": "\\Events\\Default Work Unit\\Obstacles\\Play_NoObstaclesActivated",
       "GUID": "{509A8904-B713-4EE8-8ED4-9B2AD2BA3A3F}",
       "DurationType": "OneShot",
       "DurationMin": "1.992",
@@ -537,7 +529,7 @@
      {
       "Id": "1850732987",
       "Name": "Play_North",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_North",
+      "ObjectPath": "\\Events\\Default Work Unit\\Compass\\Play_North",
       "GUID": "{321939A0-93A7-4B0A-B74E-DF86596918A7}",
       "DurationType": "OneShot",
       "DurationMin": "0.7669282",
@@ -551,7 +543,7 @@
      {
       "Id": "2173823837",
       "Name": "Play_ObstacleEmitter",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_ObstacleEmitter",
+      "ObjectPath": "\\Events\\Default Work Unit\\Obstacles\\Play_ObstacleEmitter",
       "GUID": "{F9539CF8-66C1-4A27-8361-8A2DBDDD8271}",
       "MaxAttenuation": "20",
       "DurationType": "OneShot",
@@ -599,40 +591,9 @@
       ]
      },
      {
-      "Id": "47361196",
-      "Name": "Play_ProtoClick",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_ProtoClick",
-      "GUID": "{5882A6CD-4982-426A-A6C1-93E02FD2BD28}",
-      "MaxAttenuation": "20",
-      "DurationType": "OneShot",
-      "DurationMin": "0.0650035",
-      "DurationMax": "0.0650035",
-      "MediaRefs": [
-       {
-        "Id": "516543843"
-       }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "3604890626"
-        }
-       ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "903073294",
-        "Name": "SimpleReflect",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
-        "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
-        "Color": "4"
-       }
-      ]
-     },
-     {
       "Id": "3187449017",
       "Name": "Play_South",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_South",
+      "ObjectPath": "\\Events\\Default Work Unit\\Compass\\Play_South",
       "GUID": "{3628B8C9-A60D-4BCB-BA9D-A7F1A4A00EA1}",
       "DurationType": "OneShot",
       "DurationMin": "1.0543253",
@@ -660,7 +621,7 @@
      {
       "Id": "1103419735",
       "Name": "Play_West",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_West",
+      "ObjectPath": "\\Events\\Default Work Unit\\Compass\\Play_West",
       "GUID": "{FB135816-E131-4813-B4B0-D0C8A7F03E0F}",
       "DurationType": "OneShot",
       "DurationMin": "1.289602",
@@ -674,7 +635,7 @@
      {
       "Id": "3787876787",
       "Name": "Stop_Compass_Synth",
-      "ObjectPath": "\\Events\\Default Work Unit\\Stop_Compass_Synth",
+      "ObjectPath": "\\Events\\Default Work Unit\\Compass\\Stop_Compass_Synth",
       "GUID": "{BD07EC20-FEE7-45DF-9E8F-82E57C8E177E}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -806,6 +767,6 @@
     ]
    }
   ],
-  "FileHash": "{8BFFBCBE-082A-B112-6C9C-2542D111B514}"
+  "FileHash": "{58A0D624-F136-9823-FD0F-683FB8A8BE40}"
  }
 }

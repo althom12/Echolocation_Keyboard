@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{8B241510-2720-07D8-5006-C932C9054A63}",
+    "Hash": "{765E5AE1-EBF1-BCFD-57B9-B01D58913C11}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -133,6 +133,13 @@
         }
        ]
       }
+     },
+     {
+      "Id": "2583787875",
+      "Name": "NewTutorial",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\NewTutorial",
+      "GUID": "{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}",
+      "Color": "4"
      },
      {
       "Id": "3587466022",
@@ -759,6 +766,6 @@
     ]
    }
   ],
-  "FileHash": "{67E6DDF2-A4C4-6DBB-336C-060228655B50}"
+  "FileHash": "{056D1533-9A28-B53B-6CE1-F1CC09A8AA34}"
  }
 }
