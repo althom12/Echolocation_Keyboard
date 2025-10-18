@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7b608fe74c76ed4da6fc102f3ae55110
     GuidInternal: 
-    m_lastTime: -8584415985235040441
+    m_lastTime: -8584414448415145534
     List:
     - name: Ambisonic_Main_Mix
       guid: b40c653b9dd74a488330a92f518af95c
@@ -519,7 +519,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584415952821197126
+    m_lastTime: -8584414448411584218
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -575,7 +575,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584415952821176992
+    m_lastTime: -8584414448420330530
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -1237,8 +1237,8 @@ MonoBehaviour:
         guid: 63166b7df7b7e34daefc6d94ef774b84
       Path: Events\Default Work Unit\NewTutorial\Play_20_MainGame
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 6.456
+      minDuration: 6.456
     - name: Play_45_Angle_Indicator
       guid: 9838a6a5743c10458d1cbf46d87a9ea1
       id: 2248556949
