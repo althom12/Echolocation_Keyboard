@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FFAF676E-D48A-47AD-96F3-D46239242935}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Obstacles" ID="{FFAF676E-D48A-47AD-96F3-D46239242935}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="ObstacleEmitter" ID="{0E8A4058-9180-4C63-8031-CC735BE4B396}" ShortID="447177816">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+						<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Maze_Attenuation" ID="{87D1B473-5DCE-49E8-AD19-1D3B042E8AAA}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ObstacleEmitter" ID="{DFB2098F-98D7-4B01-BF62-8C88250E91FC}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.296126202174596"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.97157708289928"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.44109286688085"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ObstacleEmitter.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="88841646"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{2DA4BC2E-C85C-439C-A8C5-221456CEEB43}" ShortID="211465018">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="ObstacleEmitter" ID="{DFB2098F-98D7-4B01-BF62-8C88250E91FC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

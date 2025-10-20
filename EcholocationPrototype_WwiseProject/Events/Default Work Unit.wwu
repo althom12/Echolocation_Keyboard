@@ -3,28 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_HumanClick" ID="{044D7B23-E026-499A-806F-B8BE29CEF09D}">
-					<ChildrenList>
-						<Action Name="" ID="{867DAA78-4369-489A-898C-11DE97EDA2AA}" ShortID="365877199">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="HumanClick" ID="{13FA7D23-846F-4B00-8C0A-AF601752B4B4}" WorkUnitID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Footsteps" ID="{1E1AF629-B0C2-4DA3-8D13-0ECC4347584B}">
-					<ChildrenList>
-						<Action Name="" ID="{1359F058-8F2B-47BF-8BC1-3CECADABB49B}" ShortID="758742863">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{BA54F0F0-C059-4599-A51F-532813713BB3}" WorkUnitID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_PA_Settings_Confirmed" ID="{0D5C929F-43CA-4DDA-B704-F9428D7185E5}">
 					<ChildrenList>
 						<Action Name="" ID="{EFED656B-37C2-4CCC-B700-7198666B1104}" ShortID="1069255591">
@@ -42,54 +20,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="PA_Settings_Opened" ID="{3770E24B-7963-4A4F-8105-9FCC7BF1A3FB}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Collision" ID="{6B681C0B-6064-4B4D-A34D-4DAE0FA6D9D5}">
-					<ChildrenList>
-						<Action Name="" ID="{5D24A312-5214-4365-BCEE-54087649CB19}" ShortID="161268105">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Collision" ID="{6738C066-A92B-4D4F-9008-2D7BE48E94C2}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_StartingPositionNotification" ID="{A6E38A81-6490-4969-A5B9-C8AC57C7A2D0}">
-					<ChildrenList>
-						<Action Name="" ID="{F14D77BF-BCC2-428E-B51A-47C3F456E312}" ShortID="796935259">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="StartingPositionNotification" ID="{EC490A30-A361-46BE-8378-6C1FBCEE4293}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_MainChamberNotification" ID="{464F3B29-3A26-434B-9B0F-32311574E6DF}">
-					<ChildrenList>
-						<Action Name="" ID="{220B6044-7A52-4B99-9F49-2ECA6D630D34}" ShortID="583436870">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MainChamberNotification" ID="{47B5DBF0-CC21-49CD-9B97-CF14D0A42156}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Pause_Tutorial" ID="{93F1813A-5309-41D4-BE3B-841F52200D60}">
-					<ChildrenList>
-						<Action Name="" ID="{8BBFD62D-930A-4601-B0C2-B543EFC7A761}" ShortID="1057390897">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Tutorial" ID="{4D84C236-582F-41AB-B345-173AAF59D10E}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -339,6 +269,36 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Pause_NewTutorial" ID="{7021B7F0-4F42-4728-8143-719BE97D2360}">
+							<ChildrenList>
+								<Action Name="" ID="{6ADBE0A8-9F28-4EBA-B66A-DE57DB746992}" ShortID="313568611">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NewTutorial" ID="{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Resume_NewTutorial" ID="{3AB7DE9F-2B54-48B9-AC87-7FD1FD0EFECF}">
+							<ChildrenList>
+								<Action Name="" ID="{974012CB-0BEA-4E65-B525-4E74F302AC31}" ShortID="276220848">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NewTutorial" ID="{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="OldTutorial" ID="{E6C58FE4-FE7A-44C8-8266-1EC187DF6E2A}" ShortID="382658657">
@@ -420,6 +380,21 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Pause_Tutorial" ID="{93F1813A-5309-41D4-BE3B-841F52200D60}">
+							<ChildrenList>
+								<Action Name="" ID="{8BBFD62D-930A-4601-B0C2-B543EFC7A761}" ShortID="1057390897">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OldTutorial" ID="{4D84C236-582F-41AB-B345-173AAF59D10E}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Obstacles" ID="{B70085B4-454B-4565-A494-B7D4BCAF01A0}" ShortID="546723576">
@@ -473,7 +448,7 @@
 								<Action Name="" ID="{457262B4-9BB1-4714-8F90-EB3117D9483A}" ShortID="421065578">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="ObstacleEmitter" ID="{0E8A4058-9180-4C63-8031-CC735BE4B396}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="ObstacleEmitter" ID="{0E8A4058-9180-4C63-8031-CC735BE4B396}" WorkUnitID="{FFAF676E-D48A-47AD-96F3-D46239242935}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -565,36 +540,69 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Pause_NewTutorial" ID="{7021B7F0-4F42-4728-8143-719BE97D2360}">
+				<Folder Name="PlayerSounds" ID="{5C1E379B-C8D5-4590-BF6D-E198E8B3036E}" ShortID="354107395">
 					<ChildrenList>
-						<Action Name="" ID="{6ADBE0A8-9F28-4EBA-B66A-DE57DB746992}" ShortID="313568611">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="NewTutorial" ID="{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_Footsteps" ID="{1E1AF629-B0C2-4DA3-8D13-0ECC4347584B}">
+							<ChildrenList>
+								<Action Name="" ID="{1359F058-8F2B-47BF-8BC1-3CECADABB49B}" ShortID="758742863">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{BA54F0F0-C059-4599-A51F-532813713BB3}" WorkUnitID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Collision" ID="{6B681C0B-6064-4B4D-A34D-4DAE0FA6D9D5}">
+							<ChildrenList>
+								<Action Name="" ID="{5D24A312-5214-4365-BCEE-54087649CB19}" ShortID="161268105">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Collision" ID="{6738C066-A92B-4D4F-9008-2D7BE48E94C2}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_HumanClick" ID="{044D7B23-E026-499A-806F-B8BE29CEF09D}">
+							<ChildrenList>
+								<Action Name="" ID="{867DAA78-4369-489A-898C-11DE97EDA2AA}" ShortID="365877199">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HumanClick" ID="{13FA7D23-846F-4B00-8C0A-AF601752B4B4}" WorkUnitID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Resume_NewTutorial" ID="{3AB7DE9F-2B54-48B9-AC87-7FD1FD0EFECF}">
+				</Folder>
+				<Folder Name="SpawnPositions" ID="{0B6AEC6C-C54A-440D-9FCE-4118C2887E00}" ShortID="292079699">
 					<ChildrenList>
-						<Action Name="" ID="{974012CB-0BEA-4E65-B525-4E74F302AC31}" ShortID="276220848">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="9"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="NewTutorial" ID="{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_StartingPositionNotification" ID="{A6E38A81-6490-4969-A5B9-C8AC57C7A2D0}">
+							<ChildrenList>
+								<Action Name="" ID="{F14D77BF-BCC2-428E-B51A-47C3F456E312}" ShortID="796935259">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StartingPositionNotification" ID="{EC490A30-A361-46BE-8378-6C1FBCEE4293}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MainChamberNotification" ID="{464F3B29-3A26-434B-9B0F-32311574E6DF}">
+							<ChildrenList>
+								<Action Name="" ID="{220B6044-7A52-4B99-9F49-2ECA6D630D34}" ShortID="583436870">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainChamberNotification" ID="{47B5DBF0-CC21-49CD-9B97-CF14D0A42156}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

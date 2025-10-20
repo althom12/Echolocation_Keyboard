@@ -32,19 +32,6 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Tutorial_Bank" ID="{5FEF39A8-436C-4F9F-9930-B17E0B4387BF}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Play_06_AdvancedMechanics" ID="{BE08CA2F-5ACB-4236-832D-C8CC1372B342}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_07_MainGame" ID="{745CEBA6-A3C5-4428-B55E-1597479A26CD}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_03_RotationAndSonicCompass" ID="{9C060430-7356-4987-B2F9-F0FBA8F6EF01}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_04_SpawnPositions" ID="{88DBD3AB-3E2D-4A17-9AAC-C7EE4C957981}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_01_Intro" ID="{C0F6A7BF-6A77-4C83-AC0A-B6857B389196}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_02_BasicMechanics" ID="{98432684-208D-4ECF-9D90-9EA54FA9C4D1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_05_Obstacles" ID="{82F4CBA9-C59E-4F06-8E36-E27F3174D815}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 				<SoundBank Name="New_Tutorial" ID="{50B2033B-70B5-4C82-9AD3-BD9C5972BE76}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_16_ObstacleFeedback_EQ" ID="{B5E56007-CA3F-41BD-8456-E3B0E96D882E}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
@@ -72,6 +59,11 @@
 						<ObjectRef Name="Play_06_MovementPractice_Script" ID="{C5406529-9C7A-4F3A-9894-2441CAD0DBD1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_14_ActivatingObstacles_FULL" ID="{82FDD523-2752-4F57-96E3-94AD0B1B683F}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="ObstaclesAdvanced" ID="{612927CD-B066-4873-A5A8-9E147FBEB101}">
+					<ObjectInclusionList/>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

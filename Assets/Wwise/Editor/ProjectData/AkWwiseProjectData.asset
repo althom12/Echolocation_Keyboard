@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7b608fe74c76ed4da6fc102f3ae55110
     GuidInternal: 
-    m_lastTime: -8584414448415145534
+    m_lastTime: -8584406076781560744
     List:
     - name: Ambisonic_Main_Mix
       guid: b40c653b9dd74a488330a92f518af95c
@@ -490,23 +490,6 @@ MonoBehaviour:
         ObjectType: 1
         guid: 2189f69ecfba384989c99ba749ecdd53
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\StereoVerb
-    - name: Tutorial
-      guid: 36c2844d2f58ab41b345173aaf59d10e
-      id: 3762955427
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7b608fe74c76ed4da6fc102f3ae55110
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Tutorial
-        ObjectType: 2
-        guid: 36c2844d2f58ab41b345173aaf59d10e
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tutorial
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -519,7 +502,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584414448411584218
+    m_lastTime: -8584406076781550740
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -549,9 +532,9 @@ MonoBehaviour:
         ObjectType: 7
         guid: 3b03b250b570824c9ad3bd9c5972be76
       Path: SoundBanks\Default Work Unit\New_Tutorial
-    - name: Tutorial_Bank
-      guid: a839ef5f6c439f4f9930b17e0b4387bf
-      id: 651994684
+    - name: ObstaclesAdvanced
+      guid: cd27296166b07348a5a89e147fbeb101
+      id: 3749543171
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -559,10 +542,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 85233671dd39aa41ae29cacfb165c806
-      - ElementName: Tutorial_Bank
+      - ElementName: ObstaclesAdvanced
         ObjectType: 7
-        guid: a839ef5f6c439f4f9930b17e0b4387bf
-      Path: SoundBanks\Default Work Unit\Tutorial_Bank
+        guid: cd27296166b07348a5a89e147fbeb101
+      Path: SoundBanks\Default Work Unit\ObstaclesAdvanced
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -575,7 +558,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584414448420330530
+    m_lastTime: -8584406076781580778
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -655,10 +638,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: NewTutorial
+        ObjectType: 4
+        guid: f42bad6abfa98f438fcb732e892b384d
       - ElementName: Pause_NewTutorial
         ObjectType: 3
         guid: f0b72170424f28478143719be97d2360
-      Path: Events\Default Work Unit\Pause_NewTutorial
+      Path: Events\Default Work Unit\NewTutorial\Pause_NewTutorial
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -672,10 +658,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: OldTutorial
+        ObjectType: 4
+        guid: e48fc5e67afec84482661ec187df6e2a
       - ElementName: Pause_Tutorial
         ObjectType: 3
         guid: 3a81f1930953d441be3b841f52200d60
-      Path: Events\Default Work Unit\Pause_Tutorial
+      Path: Events\Default Work Unit\OldTutorial\Pause_Tutorial
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1269,10 +1258,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 9b371e5cd5c89045bf6de198e8b3036e
       - ElementName: Play_Collision
         ObjectType: 3
         guid: 0b1c686b64604d4ba34d4dae0fa6d9d5
-      Path: Events\Default Work Unit\Play_Collision
+      Path: Events\Default Work Unit\PlayerSounds\Play_Collision
       maxAttenuation: 0
       maxDuration: 0.35526142
       minDuration: 0.35526142
@@ -1326,10 +1318,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 9b371e5cd5c89045bf6de198e8b3036e
       - ElementName: Play_Footsteps
         ObjectType: 3
         guid: 29f61a1ec2b0a34d8d130ecc4347584b
-      Path: Events\Default Work Unit\Play_Footsteps
+      Path: Events\Default Work Unit\PlayerSounds\Play_Footsteps
       maxAttenuation: 20
       maxDuration: 0.06000256
       minDuration: 0.038023513
@@ -1343,10 +1338,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 9b371e5cd5c89045bf6de198e8b3036e
       - ElementName: Play_HumanClick
         ObjectType: 3
         guid: 237b4d0426e09a49806fb8be29cef09d
-      Path: Events\Default Work Unit\Play_HumanClick
+      Path: Events\Default Work Unit\PlayerSounds\Play_HumanClick
       maxAttenuation: 20
       maxDuration: 0.21191256
       minDuration: 0.21191256
@@ -1380,10 +1378,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: SpawnPositions
+        ObjectType: 4
+        guid: 6cec6a0b4ac50d449fce4118c2887e00
       - ElementName: Play_MainChamberNotification
         ObjectType: 3
         guid: 293b4f46263a4b439b0f32311574e6df
-      Path: Events\Default Work Unit\Play_MainChamberNotification
+      Path: Events\Default Work Unit\SpawnPositions\Play_MainChamberNotification
       maxAttenuation: 0
       maxDuration: 1.776
       minDuration: 1.776
@@ -1551,10 +1552,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: SpawnPositions
+        ObjectType: 4
+        guid: 6cec6a0b4ac50d449fce4118c2887e00
       - ElementName: Play_StartingPositionNotification
         ObjectType: 3
         guid: 818ae3a690646949a5b9c8ac57c7a2d0
-      Path: Events\Default Work Unit\Play_StartingPositionNotification
+      Path: Events\Default Work Unit\SpawnPositions\Play_StartingPositionNotification
       maxAttenuation: 0
       maxDuration: 2.472
       minDuration: 2.472
@@ -1598,6 +1602,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.289602
       minDuration: 1.289602
+    - name: PlayerSounds
+      guid: 9b371e5cd5c89045bf6de198e8b3036e
+      id: 1327972334
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: PlayerSounds
+        ObjectType: 4
+        guid: 9b371e5cd5c89045bf6de198e8b3036e
+      Path: Events\Default Work Unit\PlayerSounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Resume_NewTutorial
       guid: 9fdeb73a542bb948ac877fd1fd0efecf
       id: 1647568189
@@ -1608,13 +1629,33 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: NewTutorial
+        ObjectType: 4
+        guid: f42bad6abfa98f438fcb732e892b384d
       - ElementName: Resume_NewTutorial
         ObjectType: 3
         guid: 9fdeb73a542bb948ac877fd1fd0efecf
-      Path: Events\Default Work Unit\Resume_NewTutorial
+      Path: Events\Default Work Unit\NewTutorial\Resume_NewTutorial
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: SpawnPositions
+      guid: 6cec6a0b4ac50d449fce4118c2887e00
+      id: 2311575222
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: SpawnPositions
+        ObjectType: 4
+        guid: 6cec6a0b4ac50d449fce4118c2887e00
+      Path: Events\Default Work Unit\SpawnPositions
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Compass_Synth
       guid: 20ec07bde7fedf459e8f82e57c8e177e
       id: 3787876787
@@ -1733,7 +1774,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584424684189015458
     List: []
-  ExpandedFileSystemItemIds: 01000000020000000300000005000000080000002200000023000000
+  ExpandedFileSystemItemIds: 01000000020000000300000005000000080000002200000023000000510000005400000055000000
   ExpandedWaapiItemIds: 010000000200000004000000050000000600000007000000080000000a0000000c0000000d0000000f0000001000000011000000130000001400000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002200000023000000f7010000f8010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
