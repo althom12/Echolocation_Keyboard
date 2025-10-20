@@ -1,0 +1,51 @@
+{
+    "name": "NVDAInputs",
+    "maps": [
+        {
+            "name": "NVDA",
+            "id": "0f8f082e-faa7-4cdf-b1be-2c8e1fb04ca8",
+            "actions": [
+                {
+                    "name": "TabNavigation",
+                    "type": "Button",
+                    "id": "0eb8a1c4-9262-4bbd-945c-39e162300ba0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "824760c1-be6c-4099-b4f4-73c0b707f0cd",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard/Mouse",
+                    "action": "TabNavigation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard/Mouse",
+            "bindingGroup": "Keyboard/Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
