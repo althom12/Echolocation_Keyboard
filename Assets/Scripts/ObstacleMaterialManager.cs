@@ -46,20 +46,5 @@ public class ObstacleMaterialManager : MonoBehaviour
         }
     }
 
-    // --- NEW ---
-    // 5. LISTEN FOR KEYBOARD INPUT
-    private void Update()
-    {
-        // Check if the '9' key on the top row of the keyboard was pressed
-        if (Input.GetKeyDown(KeyCode.Alpha9))
-        {
-            SetAllMaterialsToCarpet();
-        }
-
-        // Check if the '0' key on the top row of the keyboard was pressed
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            SetAllMaterialsToConcrete();
-        }
-    }
 }
+    

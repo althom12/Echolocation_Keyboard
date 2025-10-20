@@ -12871,6 +12871,7 @@ MonoBehaviour:
   - {fileID: 7663998450393654364}
   - {fileID: 4006154016659107818}
   - {fileID: 1601755616}
+  materialManager: {fileID: 414702490}
   activationSounds:
   - idInternal: 0
     valueGuidInternal: 

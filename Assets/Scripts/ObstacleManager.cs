@@ -6,6 +6,11 @@ public class ObstacleManager : MonoBehaviour
     [Tooltip("Assign your 5 obstacle set parent objects here.")]
     public GameObject[] obstacleSets;
 
+    // --- ADD THIS LINE ---
+    [Header("Material Manager")]
+    [Tooltip("Drag the GameObject with the ObstacleMaterialManager script here.")]
+    public ObstacleMaterialManager materialManager; // <-- ADD THIS
+
     [Header("Wwise Events")]
     [Tooltip("Assign 6 Wwise events. Index 0 is for 'no obstacles', Index 1 is for the first set, etc.")]
     public AK.Wwise.Event[] activationSounds;
@@ -16,6 +21,7 @@ public class ObstacleManager : MonoBehaviour
         ActivateObstacleSet(-1);
     }
 
+    // --- REPLACE YOUR ENTIRE UPDATE METHOD WITH THIS ---
     void Update()
     {
         // Listen for number key presses and call our new controller function.
@@ -35,13 +41,29 @@ public class ObstacleManager : MonoBehaviour
         {
             SelectLayout(2, 3);  // Obstacle: Index 2, Sound: Index 3
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        else if (Input.GetKeyDown(KeyCode.Alpha9))
         {
-            SelectLayout(3, 4);  // Obstacle: Index 3, Sound: Index 4
+            // --- THIS LOGIC IS NEW ---
+            // Activate customizable set (e.g., index 3)
+            SelectLayout(3, 4);
+
+            // Tell the material manager to set carpet
+            if (materialManager != null)
+            {
+                materialManager.SetAllMaterialsToCarpet();
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        else if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            SelectLayout(4, 5);  // Obstacle: Index 4, Sound: Index 5
+            // --- THIS LOGIC IS NEW ---
+            // Activate the *SAME* customizable set (index 3)
+            SelectLayout(3, 5); // Note: We use 3 again, not 4!
+
+            // Tell the material manager to set concrete
+            if (materialManager != null)
+            {
+                materialManager.SetAllMaterialsToConcrete();
+            }
         }
     }
 
