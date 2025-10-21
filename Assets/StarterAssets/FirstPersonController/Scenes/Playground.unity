@@ -20333,6 +20333,11 @@ MonoBehaviour:
   - {fileID: 4006154016659107818}
   - {fileID: 1601755616}
   materialManager: {fileID: 414702490}
+  sizePrefabs:
+  - {fileID: 1530279197}
+  - {fileID: 172570480}
+  - {fileID: 1903184102}
+  - {fileID: 1524718522}
   activationSounds:
   - idInternal: 0
     valueGuidInternal: 

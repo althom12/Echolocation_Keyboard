@@ -11,9 +11,15 @@ public class ObstacleManager : MonoBehaviour
     [Tooltip("Drag the GameObject with the ObstacleMaterialManager script here.")]
     public ObstacleMaterialManager materialManager; // <-- ADD THIS
 
+    [Header("Size Prefabs")]
+    [Tooltip("Assign your size prefabs here (e.g., verysmall, small, medium, large)")]
+    public GameObject[] sizePrefabs;
+
     [Header("Wwise Events")]
     [Tooltip("Assign 6 Wwise events. Index 0 is for 'no obstacles', Index 1 is for the first set, etc.")]
     public AK.Wwise.Event[] activationSounds;
+
+    private int currentSizeIndex = -1;
 
     void Start()
     {
@@ -53,6 +59,11 @@ public class ObstacleManager : MonoBehaviour
                 materialManager.SetAllMaterialsToCarpet();
             }
         }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            CycleObstacleSize();
+        }
         else if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             // --- THIS LOGIC IS NEW ---
@@ -65,6 +76,61 @@ public class ObstacleManager : MonoBehaviour
                 materialManager.SetAllMaterialsToConcrete();
             }
         }
+    }
+    void CycleObstacleSize()
+    {
+        // 1. Make sure we have prefabs to use
+        if (sizePrefabs.Length == 0)
+        {
+            Debug.LogWarning("No size prefabs assigned to ObstacleManager.");
+            return;
+        }
+
+        // 2. Increment and wrap the index. 
+        // Starts at -1, so first press becomes 0.
+        currentSizeIndex++;
+        if (currentSizeIndex >= sizePrefabs.Length)
+        {
+            currentSizeIndex = 0;
+        }
+
+        // 3. Get the source prefab and target obstacle set
+        GameObject sourceSizePrefab = sizePrefabs[currentSizeIndex];
+        GameObject targetObstacleSet = obstacleSets[3];
+
+        if (sourceSizePrefab == null || targetObstacleSet == null)
+        {
+            Debug.LogError("A size prefab or obstacleSets[3] is not assigned.");
+            return;
+        }
+
+        // 4. Activate the customizable set (index 3)
+        // We'll use sound index 4 (from key '9') as the sound
+        SelectLayout(3, 4);
+
+        // 5. Get the parent transforms
+        Transform sourceParent = sourceSizePrefab.transform;
+        Transform targetParent = targetObstacleSet.transform;
+
+        // 6. Safety Check: Ensure they have the same number of children
+        if (sourceParent.childCount != targetParent.childCount)
+        {
+            Debug.LogError("Size prefab '" + sourceSizePrefab.name +
+                           "' and 'obstacleSets[3]' have a different number of children. Cannot apply scale.");
+            return;
+        }
+
+        // 7. Loop through and apply the scale from each source child to each target child
+        for (int i = 0; i < targetParent.childCount; i++)
+        {
+            Transform targetChild = targetParent.GetChild(i);
+            Transform sourceChild = sourceParent.GetChild(i);
+
+            // This applies just the scale (dimensions)
+            targetChild.localScale = sourceChild.localScale;
+        }
+
+        Debug.Log("Set obstacle size to: " + sourceSizePrefab.name);
     }
 
     /// <summary>
