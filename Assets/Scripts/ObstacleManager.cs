@@ -6,11 +6,11 @@ public class ObstacleManager : MonoBehaviour
     [Tooltip("Assign your 5 obstacle set parent objects here.")]
     public GameObject[] obstacleSets;
 
-    // --- ADD THIS LINE ---
     [Header("Material Manager")]
     [Tooltip("Drag the GameObject with the ObstacleMaterialManager script here.")]
-    public ObstacleMaterialManager materialManager; // <-- ADD THIS
+    public ObstacleMaterialManager materialManager;
 
+    // --- ADD THIS ---
     [Header("Size Prefabs")]
     [Tooltip("Assign your size prefabs here (e.g., verysmall, small, medium, large)")]
     public GameObject[] sizePrefabs;
@@ -19,6 +19,8 @@ public class ObstacleManager : MonoBehaviour
     [Tooltip("Assign 6 Wwise events. Index 0 is for 'no obstacles', Index 1 is for the first set, etc.")]
     public AK.Wwise.Event[] activationSounds;
 
+    // --- ADD THIS ---
+    // This will keep track of which size we are currently using
     private int currentSizeIndex = -1;
 
     void Start()
@@ -27,7 +29,6 @@ public class ObstacleManager : MonoBehaviour
         ActivateObstacleSet(-1);
     }
 
-    // --- REPLACE YOUR ENTIRE UPDATE METHOD WITH THIS ---
     void Update()
     {
         // Listen for number key presses and call our new controller function.
@@ -47,9 +48,13 @@ public class ObstacleManager : MonoBehaviour
         {
             SelectLayout(2, 3);  // Obstacle: Index 2, Sound: Index 3
         }
+        // --- ADD THIS NEW 'ELSE IF' BLOCK ---
+        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            CycleObstacleSize();
+        }
         else if (Input.GetKeyDown(KeyCode.Alpha9))
         {
-            // --- THIS LOGIC IS NEW ---
             // Activate customizable set (e.g., index 3)
             SelectLayout(3, 4);
 
@@ -59,14 +64,8 @@ public class ObstacleManager : MonoBehaviour
                 materialManager.SetAllMaterialsToCarpet();
             }
         }
-
-        else if (Input.GetKeyDown(KeyCode.Alpha8))
-        {
-            CycleObstacleSize();
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            // --- THIS LOGIC IS NEW ---
             // Activate the *SAME* customizable set (index 3)
             SelectLayout(3, 5); // Note: We use 3 again, not 4!
 
@@ -77,6 +76,45 @@ public class ObstacleManager : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// A new controller function to activate a layout AND play a sound.
+    /// </summary>
+    void SelectLayout(int obstacleIndex, int soundIndex)
+    {
+        // Stop any sounds that were previously played by this object.
+        AkSoundEngine.StopAll(gameObject);
+
+        // First, play the sound. Check if the index is valid for the array.
+        if (soundIndex >= 0 && soundIndex < activationSounds.Length)
+        {
+            activationSounds[soundIndex]?.Post(gameObject);
+        }
+
+        // Then, activate the correct obstacle set.
+        ActivateObstacleSet(obstacleIndex);
+    }
+
+    /// <summary>
+    /// This function is now just for activating/deactivating the GameObjects.
+    /// </summary>
+    public void ActivateObstacleSet(int indexToActivate)
+    {
+        for (int i = 0; i < obstacleSets.Length; i++)
+        {
+            bool shouldBeActive = (i == indexToActivate);
+            if (obstacleSets[i] != null)
+            {
+                obstacleSets[i].SetActive(shouldBeActive);
+            }
+        }
+    }
+
+    // --- ADD THIS ENTIRE NEW FUNCTION ---
+    /// <summary>
+    /// Cycles through the size prefabs and applies their scale to the children
+    /// of the customizable obstacle set (obstacleSets[3]).
+    /// </summary>
     void CycleObstacleSize()
     {
         // 1. Make sure we have prefabs to use
@@ -131,40 +169,5 @@ public class ObstacleManager : MonoBehaviour
         }
 
         Debug.Log("Set obstacle size to: " + sourceSizePrefab.name);
-    }
-
-    /// <summary>
-    /// A new controller function to activate a layout AND play a sound.
-    /// </summary>
-    void SelectLayout(int obstacleIndex, int soundIndex)
-    {
-        // --- THIS IS THE NEW LINE ---
-        // Stop any sounds that were previously played by this object.
-        AkSoundEngine.StopAll(gameObject);
-
-        // First, play the sound. Check if the index is valid for the array.
-        if (soundIndex >= 0 && soundIndex < activationSounds.Length)
-        {
-            // The '?' prevents errors if a slot is empty.
-            activationSounds[soundIndex]?.Post(gameObject);
-        }
-
-        // Then, activate the correct obstacle set.
-        ActivateObstacleSet(obstacleIndex);
-    }
-
-    /// <summary>
-    /// This function is now just for activating/deactivating the GameObjects.
-    /// </summary>
-    public void ActivateObstacleSet(int indexToActivate)
-    {
-        for (int i = 0; i < obstacleSets.Length; i++)
-        {
-            bool shouldBeActive = (i == indexToActivate);
-            if (obstacleSets[i] != null)
-            {
-                obstacleSets[i].SetActive(shouldBeActive);
-            }
-        }
     }
 }
