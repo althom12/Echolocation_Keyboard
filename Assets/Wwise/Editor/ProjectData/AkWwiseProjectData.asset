@@ -558,7 +558,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584406076781580778
+    m_lastTime: -8584405992635128128
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -611,23 +611,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: OldTutorial
-      guid: e48fc5e67afec84482661ec187df6e2a
-      id: 1016535830
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: OldTutorial
-        ObjectType: 4
-        guid: e48fc5e67afec84482661ec187df6e2a
-      Path: Events\Default Work Unit\OldTutorial
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Pause_NewTutorial
       guid: f0b72170424f28478143719be97d2360
       id: 914525656
@@ -648,46 +631,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Pause_Tutorial
-      guid: 3a81f1930953d441be3b841f52200d60
-      id: 1193160806
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: OldTutorial
-        ObjectType: 4
-        guid: e48fc5e67afec84482661ec187df6e2a
-      - ElementName: Pause_Tutorial
-        ObjectType: 3
-        guid: 3a81f1930953d441be3b841f52200d60
-      Path: Events\Default Work Unit\OldTutorial\Pause_Tutorial
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_01_Intro
-      guid: bfa7f6c0776a834cac0ab6857b389196
-      id: 1159590420
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: OldTutorial
-        ObjectType: 4
-        guid: e48fc5e67afec84482661ec187df6e2a
-      - ElementName: Play_01_Intro
-        ObjectType: 3
-        guid: bfa7f6c0776a834cac0ab6857b389196
-      Path: Events\Default Work Unit\OldTutorial\Play_01_Intro
-      maxAttenuation: 0
-      maxDuration: 48.72
-      minDuration: 48.72
     - name: Play_01_TheEcholocationClick2_EQ
       guid: f50418e8b3ecd8418d1953c762c4a06d
       id: 3703251308
@@ -708,26 +651,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 33.6225
       minDuration: 33.6225
-    - name: Play_02_BasicMechanics
-      guid: 842643988d20cf4e9d909ea54fa9c4d1
-      id: 2826305660
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: OldTutorial
-        ObjectType: 4
-        guid: e48fc5e67afec84482661ec187df6e2a
-      - ElementName: Play_02_BasicMechanics
-        ObjectType: 3
-        guid: 842643988d20cf4e9d909ea54fa9c4d1
-      Path: Events\Default Work Unit\OldTutorial\Play_02_BasicMechanics
-      maxAttenuation: 0
-      maxDuration: 25.008
-      minDuration: 25.008
     - name: Play_02_ForwardMovement_EQ
       guid: f5f8aba84cd0ba44960eaa6581e0ffb0
       id: 4090907250
@@ -788,26 +711,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 53.376
       minDuration: 53.376
-    - name: Play_03_RotationAndSonicCompass
-      guid: 3004069c56738749b2f9f0fba8f6ef01
-      id: 3663181753
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: OldTutorial
-        ObjectType: 4
-        guid: e48fc5e67afec84482661ec187df6e2a
-      - ElementName: Play_03_RotationAndSonicCompass
-        ObjectType: 3
-        guid: 3004069c56738749b2f9f0fba8f6ef01
-      Path: Events\Default Work Unit\OldTutorial\Play_03_RotationAndSonicCompass
-      maxAttenuation: 0
-      maxDuration: 37.101856
-      minDuration: 37.101856
     - name: Play_04_BackwardMovement_Script
       guid: 6b53be262153614aa045fbec027c02f8
       id: 3857492957
@@ -828,46 +731,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 33.456
       minDuration: 33.456
-    - name: Play_04_SpawnPositions
-      guid: abd3db882d3e174a9aacc7ee4c957981
-      id: 2924510430
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: OldTutorial
-        ObjectType: 4
-        guid: e48fc5e67afec84482661ec187df6e2a
-      - ElementName: Play_04_SpawnPositions
-        ObjectType: 3
-        guid: abd3db882d3e174a9aacc7ee4c957981
-      Path: Events\Default Work Unit\OldTutorial\Play_04_SpawnPositions
-      maxAttenuation: 0
-      maxDuration: 28.252743
-      minDuration: 28.252743
-    - name: Play_05_Obstacles
-      guid: a9cbf4829ec5064f8e36e27f3174d815
-      id: 4004824028
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: OldTutorial
-        ObjectType: 4
-        guid: e48fc5e67afec84482661ec187df6e2a
-      - ElementName: Play_05_Obstacles
-        ObjectType: 3
-        guid: a9cbf4829ec5064f8e36e27f3174d815
-      Path: Events\Default Work Unit\OldTutorial\Play_05_Obstacles
-      maxAttenuation: 0
-      maxDuration: 67.03312
-      minDuration: 67.03312
     - name: Play_05_SidewaysMovement_Script
       guid: 622a8e1e4ee300479be2a08316857b2e
       id: 2183594182
@@ -888,26 +751,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 42.048
       minDuration: 42.048
-    - name: Play_06_AdvancedMechanics
-      guid: 2fca08becb5a3642832dc8cc1372b342
-      id: 2793081246
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: OldTutorial
-        ObjectType: 4
-        guid: e48fc5e67afec84482661ec187df6e2a
-      - ElementName: Play_06_AdvancedMechanics
-        ObjectType: 3
-        guid: 2fca08becb5a3642832dc8cc1372b342
-      Path: Events\Default Work Unit\OldTutorial\Play_06_AdvancedMechanics
-      maxAttenuation: 0
-      maxDuration: 31.690338
-      minDuration: 31.690338
     - name: Play_06_MovementPractice_Script
       guid: 296540c57a9c3a4f98942441cad0dbd1
       id: 4073819487
@@ -928,26 +771,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 38.736
       minDuration: 38.736
-    - name: Play_07_MainGame
-      guid: a6eb5c74c5a32844b55e1597479a26cd
-      id: 1817525157
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: OldTutorial
-        ObjectType: 4
-        guid: e48fc5e67afec84482661ec187df6e2a
-      - ElementName: Play_07_MainGame
-        ObjectType: 3
-        guid: a6eb5c74c5a32844b55e1597479a26cd
-      Path: Events\Default Work Unit\OldTutorial\Play_07_MainGame
-      maxAttenuation: 0
-      maxDuration: 1.5471251
-      minDuration: 1.5471251
     - name: Play_07_Rotation_FULL
       guid: 7ccd8309d9c4fe4cbed22a07850cf945
       id: 1146828738
