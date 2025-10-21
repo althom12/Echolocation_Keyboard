@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="User" ID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}" PersistMode="Standalone">
+		<WorkUnit Name="Player" ID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Clicks" ID="{277247D7-5B97-42AD-B836-DCE43C2A30F8}" ShortID="258996812">
 					<PropertyList>
@@ -473,6 +473,68 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<Sound Name="Collision" ID="{6738C066-A92B-4D4F-9008-2D7BE48E94C2}" ShortID="37439876">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="OverrideEffect" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-19</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Collision" ID="{23577183-7F01-4C90-94CC-D782FE1BAFFD}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.119978605547772"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.355261426607556"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0327214378766651"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.387982864484221"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Collision.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="556476513"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{488CD51E-244C-41B0-8639-67FCFAB2E0A7}" ShortID="305519698">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Parametric EQ (Custom)" ID="{40FE6AD2-174E-4F4D-B38A-B78B78455BBD}" ShortID="222388465" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<PropertyList>
+															<Property Name="FrequencyBand1" Type="Real32" Value="569"/>
+															<Property Name="FrequencyBand3" Type="Real32" Value="6252"/>
+															<Property Name="GainBand1" Type="Real32" Value="-6.5"/>
+															<Property Name="GainBand3" Type="Real32" Value="-3"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Collision" ID="{23577183-7F01-4C90-94CC-D782FE1BAFFD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{765E5AE1-EBF1-BCFD-57B9-B01D58913C11}",
+    "Hash": "{9538BFB7-F32C-3E0E-D10F-258607FCF2D4}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -147,12 +147,6 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs",
       "GUID": "{794C00D1-33D0-4144-9B46-E7F3EA8CC6C3}",
       "Color": "4"
-     },
-     {
-      "Id": "3762955427",
-      "Name": "Tutorial",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Tutorial",
-      "GUID": "{4D84C236-582F-41AB-B345-173AAF59D10E}"
      },
      {
       "Id": "3803692087",
@@ -766,6 +760,6 @@
     ]
    }
   ],
-  "FileHash": "{056D1533-9A28-B53B-6CE1-F1CC09A8AA34}"
+  "FileHash": "{FF81B854-0C38-518C-2CE1-D226D7B2FC4F}"
  }
 }

@@ -17,8 +17,8 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	846920411	Ambisonic_Main_Mix			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix	
+	2583787875	NewTutorial			\Default Work Unit\Master Audio Bus\NewTutorial	
 	3587466022	Ambisonic_Reverbs			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs	
-	3762955427	Tutorial			\Default Work Unit\Master Audio Bus\Tutorial	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes

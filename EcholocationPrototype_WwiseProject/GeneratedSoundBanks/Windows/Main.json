@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{A537FD31-FA34-DCD4-F488-12ABD423655B}",
+    "Hash": "{6AC1A462-EC3E-0121-0505-01202292486B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -176,6 +176,14 @@
       "CachePath": "81/{811B7B63-2E63-C1F2-D7FD-4DF84D11343B}.wem"
      },
      {
+      "Id": "897877778",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment_HVAC.wav",
+      "CachePath": "D1/{D1AED7DB-2858-BCB6-23DF-80CE41B96653}.wem"
+     },
+     {
       "Id": "905814100",
       "Language": "SFX",
       "Streaming": "false",
@@ -214,6 +222,14 @@
       "Location": "Memory",
       "ShortName": "North.wav",
       "CachePath": "86/{861EBDD4-BB94-CA95-0D99-750493246E07}.wem"
+     },
+     {
+      "Id": "1061567854",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment_Clock.wav",
+      "CachePath": "F8/{F85C1BA8-CD51-9A5F-3E09-828EEF244919}.wem"
      }
     ],
     "Plugins": {
@@ -221,7 +237,7 @@
       {
        "Id": "222388465",
        "Name": "Parametric EQ (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Environment\\Collision\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Player\\Collision\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
        "GUID": "{40FE6AD2-174E-4F4D-B38A-B78B78455BBD}",
        "LibName": "Wwise Parametric EQ",
        "LibId": "6881283"
@@ -342,7 +358,7 @@
      {
       "Id": "1553219250",
       "Name": "Play_Collision",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Collision",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\Play_Collision",
       "GUID": "{6B681C0B-6064-4B4D-A34D-4DAE0FA6D9D5}",
       "DurationType": "OneShot",
       "DurationMin": "0.35526142",
@@ -397,9 +413,39 @@
       ]
      },
      {
+      "Id": "3798832598",
+      "Name": "Play_Environment_Clock",
+      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Play_Environment_Clock",
+      "GUID": "{A456340E-6D06-4295-AF7C-7A1666BB3E7E}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "30.84",
+      "DurationMax": "30.84",
+      "MediaRefs": [
+       {
+        "Id": "1061567854"
+       }
+      ]
+     },
+     {
+      "Id": "3548695574",
+      "Name": "Play_Environment_HVAC",
+      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Play_Environment_HVAC",
+      "GUID": "{427A2CCE-FB02-4A18-88F8-11C4EE0DBA45}",
+      "MaxAttenuation": "30",
+      "DurationType": "OneShot",
+      "DurationMin": "11.232",
+      "DurationMax": "11.232",
+      "MediaRefs": [
+       {
+        "Id": "897877778"
+       }
+      ]
+     },
+     {
       "Id": "3854155799",
       "Name": "Play_Footsteps",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\Play_Footsteps",
       "GUID": "{1E1AF629-B0C2-4DA3-8D13-0ECC4347584B}",
       "MaxAttenuation": "20",
       "DurationType": "OneShot",
@@ -435,7 +481,7 @@
      {
       "Id": "3559566211",
       "Name": "Play_HumanClick",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_HumanClick",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\Play_HumanClick",
       "GUID": "{044D7B23-E026-499A-806F-B8BE29CEF09D}",
       "MaxAttenuation": "20",
       "DurationType": "OneShot",
@@ -473,7 +519,7 @@
      {
       "Id": "1839782124",
       "Name": "Play_MainChamberNotification",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_MainChamberNotification",
+      "ObjectPath": "\\Events\\Default Work Unit\\SpawnPositions\\Play_MainChamberNotification",
       "GUID": "{464F3B29-3A26-434B-9B0F-32311574E6DF}",
       "DurationType": "OneShot",
       "DurationMin": "1.776",
@@ -607,7 +653,7 @@
      {
       "Id": "2531445826",
       "Name": "Play_StartingPositionNotification",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_StartingPositionNotification",
+      "ObjectPath": "\\Events\\Default Work Unit\\SpawnPositions\\Play_StartingPositionNotification",
       "GUID": "{A6E38A81-6490-4969-A5B9-C8AC57C7A2D0}",
       "DurationType": "OneShot",
       "DurationMin": "2.472",
@@ -637,6 +683,26 @@
       "Name": "Stop_Compass_Synth",
       "ObjectPath": "\\Events\\Default Work Unit\\Compass\\Stop_Compass_Synth",
       "GUID": "{BD07EC20-FEE7-45DF-9E8F-82E57C8E177E}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4245418516",
+      "Name": "Stop_Environment_Clock",
+      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Stop_Environment_Clock",
+      "GUID": "{577E215C-DCD2-497C-8035-104E3739D2E4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1789780216",
+      "Name": "Stop_Environment_HVAC",
+      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Stop_Environment_HVAC",
+      "GUID": "{70C73DDF-A6DD-4489-AA21-0A658E220232}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
@@ -767,6 +833,6 @@
     ]
    }
   ],
-  "FileHash": "{58A0D624-F136-9823-FD0F-683FB8A8BE40}"
+  "FileHash": "{8E632185-BDBF-7963-F914-885AAE92AB14}"
  }
 }

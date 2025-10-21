@@ -1,0 +1,21 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3749543171",
+    "Type": "User",
+    "GUID": "{612927CD-B066-4873-A5A8-9E147FBEB101}",
+    "Language": "SFX",
+    "Hash": "{9E486A83-96AC-55CD-2B62-0A0BCAF564C5}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\ObstaclesAdvanced",
+    "ShortName": "ObstaclesAdvanced",
+    "Path": "ObstaclesAdvanced.bnk"
+   }
+  ],
+  "FileHash": "{27AADBF0-80C4-9F90-B130-A0DD6AB75886}"
+ }
+}

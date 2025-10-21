@@ -25,7 +25,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Folder Name="NewTutorial" ID="{6AAD2BF4-A9BF-438F-8FCB-732E892B384D}" ShortID="392182808">
+				<Folder Name="Tutorial" ID="{6AAD2BF4-A9BF-438F-8FCB-732E892B384D}" ShortID="392182808">
 					<ChildrenList>
 						<Event Name="Play_01_TheEcholocationClick2_EQ" ID="{E81804F5-ECB3-41D8-8D19-53C762C4A06D}">
 							<ChildrenList>
@@ -462,7 +462,7 @@
 								<Action Name="" ID="{5D24A312-5214-4365-BCEE-54087649CB19}" ShortID="161268105">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Collision" ID="{6738C066-A92B-4D4F-9008-2D7BE48E94C2}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="Collision" ID="{6738C066-A92B-4D4F-9008-2D7BE48E94C2}" WorkUnitID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -500,6 +500,60 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MainChamberNotification" ID="{47B5DBF0-CC21-49CD-9B97-CF14D0A42156}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Landmarks" ID="{BA019874-2FDE-4689-AABD-24F180B82DED}" ShortID="865968233">
+					<ChildrenList>
+						<Event Name="Stop_Environment_HVAC" ID="{70C73DDF-A6DD-4489-AA21-0A658E220232}">
+							<ChildrenList>
+								<Action Name="" ID="{03A70AF0-2D34-4807-A854-E4EBA2982C9E}" ShortID="149923076">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Environment_Clock" ID="{577E215C-DCD2-497C-8035-104E3739D2E4}">
+							<ChildrenList>
+								<Action Name="" ID="{9B560061-11A2-4CC3-8E5B-4F89C5B682A3}" ShortID="960714644">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Environment_Clock" ID="{62806A25-C805-4B2D-BEC5-534FF92D8587}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Environment_HVAC" ID="{427A2CCE-FB02-4A18-88F8-11C4EE0DBA45}">
+							<ChildrenList>
+								<Action Name="" ID="{E9329C00-2369-4501-BF24-D0EE9B385C58}" ShortID="494608074">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Environment_Clock" ID="{A456340E-6D06-4295-AF7C-7A1666BB3E7E}">
+							<ChildrenList>
+								<Action Name="" ID="{36B69A9A-9402-4AB7-A118-42EC7CFE7208}" ShortID="487344772">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Environment_Clock" ID="{62806A25-C805-4B2D-BEC5-534FF92D8587}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

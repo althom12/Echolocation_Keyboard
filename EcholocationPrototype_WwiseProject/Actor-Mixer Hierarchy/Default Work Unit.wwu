@@ -745,28 +745,29 @@
 				<ActorMixer Name="Environment" ID="{433E8187-1DAA-4396-AD49-6950D27F7804}" ShortID="332485659">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="Color" Type="int16" Value="3"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-18</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+							<ObjectRef Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Collision" ID="{6738C066-A92B-4D4F-9008-2D7BE48E94C2}" ShortID="37439876">
-							<PropertyList>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-							</PropertyList>
+						<Sound Name="Environment_Clock" ID="{62806A25-C805-4B2D-BEC5-534FF92D8587}" ShortID="814444631">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -776,47 +777,38 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Collision" ID="{23577183-7F01-4C90-94CC-D782FE1BAFFD}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.119978605547772"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.355261426607556"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.0327214378766651"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.387982864484221"/>
-									</PropertyList>
+								<AudioFileSource Name="Environment_Clock" ID="{FCCCD53D-0F52-421A-BF5A-2FFBF67D526D}">
 									<Language>SFX</Language>
-									<AudioFile>Collision.wav</AudioFile>
+									<AudioFile>Environment_Clock.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="556476513"/>
+										<MediaID ID="1061567854"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{488CD51E-244C-41B0-8639-67FCFAB2E0A7}" ShortID="305519698">
-												<ReferenceList>
-													<Reference Name="Effect">
-														<Custom>
-															<Effect Name="Parametric EQ (Custom)" ID="{40FE6AD2-174E-4F4D-B38A-B78B78455BBD}" ShortID="222388465" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-																<PropertyList>
-																	<Property Name="FrequencyBand1" Type="Real32" Value="569"/>
-																	<Property Name="FrequencyBand3" Type="Real32" Value="6252"/>
-																	<Property Name="GainBand1" Type="Real32" Value="-6.5"/>
-																	<Property Name="GainBand3" Type="Real32" Value="-3"/>
-																</PropertyList>
-															</Effect>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
 							<ActiveSourceList>
-								<ActiveSource Name="Collision" ID="{23577183-7F01-4C90-94CC-D782FE1BAFFD}" Platform="Linked"/>
+								<ActiveSource Name="Environment_Clock" ID="{FCCCD53D-0F52-421A-BF5A-2FFBF67D526D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" ShortID="306518907">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Environment_HVAC" ID="{9772C667-D1AF-4078-9F17-F0C6181E1626}">
+									<Language>SFX</Language>
+									<AudioFile>Environment_HVAC.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="897877778"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Environment_HVAC" ID="{9772C667-D1AF-4078-9F17-F0C6181E1626}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
