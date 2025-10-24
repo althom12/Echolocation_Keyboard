@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7b608fe74c76ed4da6fc102f3ae55110
     GuidInternal: 
-    m_lastTime: -8584406076781560744
+    m_lastTime: -8584402779785523713
     List:
     - name: Ambisonic_Main_Mix
       guid: b40c653b9dd74a488330a92f518af95c
@@ -502,7 +502,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584405954136863984
+    m_lastTime: -8584402779785218280
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -558,7 +558,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584405955385944342
+    m_lastTime: -8584402779788431260
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -1608,10 +1608,10 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ccf16443b3e388408a8153c2fb94031d
     GuidInternal: 
-    m_lastTime: -8584424684194662599
+    m_lastTime: -8584402667004311708
     List:
     - name: Click_Amplitude
-      guid: ba1fbe0f90616847bdd5f176f2df9f21
+      guid: 6bf51a34325cf2488cf42af84fe82a31
       id: 250675185
       PathAndIcons:
       - ElementName: Game Parameters
@@ -1622,7 +1622,7 @@ MonoBehaviour:
         guid: ccf16443b3e388408a8153c2fb94031d
       - ElementName: Click_Amplitude
         ObjectType: 13
-        guid: ba1fbe0f90616847bdd5f176f2df9f21
+        guid: 6bf51a34325cf2488cf42af84fe82a31
       Path: Game Parameters\Default Work Unit\Click_Amplitude
     - name: Click_Pitch
       guid: 3f0c8793b99f384f932ce5c5e1507190
@@ -1694,9 +1694,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584424684189015458
     List: []
-  ExpandedFileSystemItemIds: 010000000200000003000000080000002200000023000000510000005400000055000000
-  ExpandedWaapiItemIds: 010000000200000004000000050000000600000007000000080000000a0000000c0000000d0000000f0000001000000011000000130000001400000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002200000023000000f7010000f8010000
+  ExpandedFileSystemItemIds: 010000000200000003000000080000001f0000002200000023000000510000005400000055000000610000006200000063000000
+  ExpandedWaapiItemIds: 01000000020000000300000006000000070000000d0000001f000000200000002100000022000000230000005100000054000000550000006100000062000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{9538BFB7-F32C-3E0E-D10F-258607FCF2D4}",
+    "Hash": "{9C40B964-03B9-A694-AB21-77292C1DFC94}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -233,7 +233,7 @@
       "Id": "250675185",
       "Name": "Click_Amplitude",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Click_Amplitude",
-      "GUID": "{0FBE1FBA-6190-4768-BDD5-F176F2DF9F21}"
+      "GUID": "{341AF56B-5C32-48F2-8CF4-2AF84FE82A31}"
      },
      {
       "Id": "1741542810",
@@ -760,6 +760,6 @@
     ]
    }
   ],
-  "FileHash": "{FF81B854-0C38-518C-2CE1-D226D7B2FC4F}"
+  "FileHash": "{7D413965-463C-83EC-D71E-B57A2F9D6FD7}"
  }
 }

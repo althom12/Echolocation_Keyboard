@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{FC00F786-1BCA-71ED-146F-5D00D0799BDD}",
+    "Hash": "{F1E29D99-48C5-C52C-8261-527943D19546}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -852,7 +852,7 @@
       "Id": "250675185",
       "Name": "Click_Amplitude",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Click_Amplitude",
-      "GUID": "{0FBE1FBA-6190-4768-BDD5-F176F2DF9F21}"
+      "GUID": "{341AF56B-5C32-48F2-8CF4-2AF84FE82A31}"
      },
      {
       "Id": "1741542810",
@@ -869,6 +869,6 @@
     ]
    }
   ],
-  "FileHash": "{0A0315B7-F233-F0C7-5277-2CAEC5DC63E3}"
+  "FileHash": "{C1A9C2EB-596A-166C-10A9-DAC7DFF70878}"
  }
 }

@@ -75,43 +75,6 @@
 										</Local>
 									</Reference>
 								</ObjectList>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{02A29DCA-4900-4ECE-BD6D-CE0007ADE290}" ShortID="852018718">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Pitch"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Click_Amplitude" ID="{0FBE1FBA-6190-4768-BDD5-F176F2DF9F21}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{BC385CFF-B422-4C9D-BED7-B27ABF4C763E}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>-30</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="EcholocationClick" ID="{601F14F0-1BCA-4A49-9513-63462C1E0450}" Platform="Linked"/>
@@ -151,41 +114,6 @@
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{98B8A905-4B31-4AFF-913C-DE8A63241A10}" ShortID="276356112">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Click_Amplitude" ID="{0FBE1FBA-6190-4768-BDD5-F176F2DF9F21}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{32852407-6802-4854-BC3B-EEF6EB0AAB22}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>-30</XPos>
-																		<YPos>-12.66937</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
 									<Reference>
 										<Local>
 											<RTPC Name="" ID="{35BC4436-B15E-4BE6-95B7-F7044BEBEA11}" ShortID="302886099">
@@ -228,6 +156,45 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{9B90EF9E-8000-4537-ADDC-8D65D987BD8B}" ShortID="645194457">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Click_Amplitude" ID="{341AF56B-5C32-48F2-8CF4-2AF84FE82A31}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{CCA7F73D-90B9-480B-BE8C-6CBACC3DDA76}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</ActorMixer>
 				<ActorMixer Name="FootstepContainer" ID="{B0F2AF16-D794-4A84-9739-BAE2DC5A5913}" ShortID="250671550">
 					<PropertyList>

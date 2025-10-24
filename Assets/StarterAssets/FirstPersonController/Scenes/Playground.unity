@@ -15962,6 +15962,37 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1208838405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208838406}
+  m_Layer: 0
+  m_Name: WwiseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208838406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208838405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1873197148}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1250374203
 GameObject:
   m_ObjectHideFlags: 0
@@ -23335,6 +23366,7 @@ Transform:
   - {fileID: 1952309206}
   - {fileID: 360123816}
   - {fileID: 466815303}
+  - {fileID: 1208838406}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1873197149
@@ -32868,9 +32900,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 9114360488842594064}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -33999,6 +34031,7 @@ GameObject:
   - component: {fileID: 3423041585649324553}
   - component: {fileID: 7446129419929293036}
   - component: {fileID: 6894842658803025115}
+  - component: {fileID: 7446129419929293037}
   m_Layer: 5
   m_Name: Volume
   m_TagString: Untagged
@@ -42476,7 +42509,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7521266571743748252}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -57272,6 +57305,7 @@ GameObject:
   - component: {fileID: 540510080257759025}
   - component: {fileID: 9114360488842594064}
   - component: {fileID: 8335223395485478524}
+  - component: {fileID: 9114360488842594065}
   m_Layer: 5
   m_Name: Pitch
   m_TagString: Untagged
@@ -63009,12 +63043,34 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4682047054579833984}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 150
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7446129419929293037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856892873369857690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c2047cdc073d8468908fbec3e69952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rtpcToControl:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 753e18d3918e229488068d1319991bb8, type: 2}
+  feedbackSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 194dcbce74497304e8d17afbce638bd4, type: 2}
+  soundEmitter: {fileID: 2114380299}
+  defaultValue: 50
 --- !u!33 &7446304815519235544
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74022,13 +74078,35 @@ MonoBehaviour:
   m_FillRect: {fileID: 3759650711381586617}
   m_HandleRect: {fileID: 3854856415895323815}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -1200
+  m_MaxValue: 1200
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9114360488842594065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6045129167396385987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c2047cdc073d8468908fbec3e69952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rtpcToControl:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 939bec30f847ea245be1c773b3ecc2a8, type: 2}
+  feedbackSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 194dcbce74497304e8d17afbce638bd4, type: 2}
+  soundEmitter: {fileID: 2114380299}
+  defaultValue: 0
 --- !u!114 &9120187933150954451
 MonoBehaviour:
   m_ObjectHideFlags: 0
