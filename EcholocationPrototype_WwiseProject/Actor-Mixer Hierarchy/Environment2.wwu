@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}" SchemaVersion="123" RootDocumentID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}" ParentDocumentID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}">
+	<AudioObjects>
+		<WorkUnit Name="Environment2" ID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}" OwnerID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Landmarks" ID="{433E8187-1DAA-4396-AD49-6950D27F7804}" ShortID="332485659">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="3"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" ShortID="306518907">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Environment_HVAC" ID="{9772C667-D1AF-4078-9F17-F0C6181E1626}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="789.75"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2.21142864052629"/>
+										<Property Name="LoopEnd" Type="Real64" Value="5.9039998335227"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.648000020247239"/>
+										<Property Name="TrimEnd" Type="Real64" Value="10.820571415716"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Environment_HVAC.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="897877778"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Environment_HVAC" ID="{9772C667-D1AF-4078-9F17-F0C6181E1626}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Environment_BetterClock" ID="{F7BDFF43-3EE6-4FA7-9165-C2C3FA811596}" ShortID="249468391">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Landmark_BetterClock" ID="{A2DC09A7-9ED9-4E9F-9454-B305B35972F1}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1301.769"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2.74658873841003"/>
+										<Property Name="LoopEnd" Type="Real64" Value="24.261535936133"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Landmark_BetterClock.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="49676745"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Landmark_BetterClock" ID="{A2DC09A7-9ED9-4E9F-9454-B305B35972F1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{03FF5197-9E5F-44F1-9817-B66C39E23D18}" ShortID="32658342">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Parametric EQ (Custom)" ID="{E3E17B52-3907-43F9-98D3-BE93B36F5B7C}" ShortID="196788001" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<PropertyList>
+															<Property Name="FrequencyBand1" Type="Real32" Value="526"/>
+															<Property Name="FrequencyBand2" Type="Real32" Value="574"/>
+															<Property Name="FrequencyBand3" Type="Real32" Value="7956"/>
+															<Property Name="GainBand1" Type="Real32" Value="-24"/>
+															<Property Name="GainBand2" Type="Real32" Value="-24"/>
+															<Property Name="GainBand3" Type="Real32" Value="-24"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

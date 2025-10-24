@@ -517,21 +517,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_Environment_Clock" ID="{577E215C-DCD2-497C-8035-104E3739D2E4}">
-							<ChildrenList>
-								<Action Name="" ID="{9B560061-11A2-4CC3-8E5B-4F89C5B682A3}" ShortID="960714644">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Environment_Clock" ID="{62806A25-C805-4B2D-BEC5-534FF92D8587}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -542,18 +528,32 @@
 								<Action Name="" ID="{E9329C00-2369-4501-BF24-D0EE9B385C58}" ShortID="494608074">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Environment_Clock" ID="{A456340E-6D06-4295-AF7C-7A1666BB3E7E}">
+						<Event Name="Stop_Landmark_BetterClock" ID="{31C8AB91-6F79-40C1-9DA0-17696BE0FA09}">
 							<ChildrenList>
-								<Action Name="" ID="{36B69A9A-9402-4AB7-A118-42EC7CFE7208}" ShortID="487344772">
+								<Action Name="" ID="{3442A0AF-CBF9-468E-9C73-C0CACFDA040F}" ShortID="964077276">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Environment_Clock" ID="{62806A25-C805-4B2D-BEC5-534FF92D8587}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="Environment_BetterClock" ID="{F7BDFF43-3EE6-4FA7-9165-C2C3FA811596}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Landmark_BetterClock" ID="{6748CAB6-E210-44E4-A893-47087456F0F9}">
+							<ChildrenList>
+								<Action Name="" ID="{81913E75-0D35-42EF-B1B3-3DE4F3D7D596}" ShortID="635773648">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Environment_BetterClock" ID="{F7BDFF43-3EE6-4FA7-9165-C2C3FA811596}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

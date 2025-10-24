@@ -1,7 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	872174764	Play_MegaAbsorbObstaclesActivated			\Default Work Unit\Obstacles\Play_MegaAbsorbObstaclesActivated	
 	1103419735	Play_West			\Default Work Unit\Compass\Play_West	
+	1227575027	Play_Landmark_BetterClock			\Default Work Unit\Landmarks\Play_Landmark_BetterClock	
 	1228161944	Play_LesserAbsorbObstaclesActivated			\Default Work Unit\Obstacles\Play_LesserAbsorbObstaclesActivated	
+	1318905049	Stop_Landmark_BetterClock			\Default Work Unit\Landmarks\Stop_Landmark_BetterClock	
 	1553219250	Play_Collision			\Default Work Unit\PlayerSounds\Play_Collision	
 	1578180715	Play_PA_Settings_Opened			\Default Work Unit\Play_PA_Settings_Opened	
 	1789780216	Stop_Environment_HVAC			\Default Work Unit\Landmarks\Stop_Environment_HVAC	
@@ -18,10 +20,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	3548695574	Play_Environment_HVAC			\Default Work Unit\Landmarks\Play_Environment_HVAC	
 	3559566211	Play_HumanClick			\Default Work Unit\PlayerSounds\Play_HumanClick	
 	3787876787	Stop_Compass_Synth			\Default Work Unit\Compass\Stop_Compass_Synth	
-	3798832598	Play_Environment_Clock			\Default Work Unit\Landmarks\Play_Environment_Clock	
 	3854155799	Play_Footsteps			\Default Work Unit\PlayerSounds\Play_Footsteps	
 	4162345221	Play_East			\Default Work Unit\Compass\Play_East	
-	4245418516	Stop_Environment_Clock			\Default Work Unit\Landmarks\Stop_Environment_Clock	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	250675185	Click_Amplitude			\Default Work Unit\Click_Amplitude	
@@ -41,6 +41,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3311067494	Hallway01_Ambi_Verb			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway01_Ambi_Verb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	196788001	Parametric EQ (Custom)	Wwise Parametric EQ			
 	222388465	Parametric EQ (Custom)	Wwise Parametric EQ			
 	468583253	Parametric EQ (Custom)	Wwise Parametric EQ			
 	617097675	Tremolo (Custom)	Wwise Tremolo			
@@ -50,6 +51,7 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	2033835	Footstep01	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C4\{C49C2844-31E8-C405-C7A4-525EDA00034B}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep01		7340
+	49676745	Environment_BetterClock	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\61\{6129A859-D9EA-9531-E553-97D6EA6D24CB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment2\Landmarks\Environment_BetterClock		2755728
 	88841646	ObstacleEmitter	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\FC\{FCC7B1FB-CE01-4152-537F-E11CA17200D8}.wem		\Actor-Mixer Hierarchy\Obstacles\ObstacleEmitter		234440
 	114198763	MegaReflectObstaclesActivated	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\A5\{A5E03BF7-481E-196A-5E93-E06F36A66004}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MegaReflectObstaclesActivated		171744
 	230135971	45_Angle_Indicator	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AA\{AA4D1716-76C6-97B2-7C2B-AF3803C41279}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\45_Angle_Indicator		45452
@@ -66,11 +68,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	714290107	Footstep02	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\74\{74AB8055-2FDC-D746-E76E-46AFFC863E1D}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep02		9004
 	763360263	West	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\77\{77BCEC7E-7166-25C1-8049-D4CB783D5F34}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\West		247700
 	875313660	Footstep05	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\81\{811B7B63-2E63-C1F2-D7FD-4DF84D11343B}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep05		6800
-	897877778	Environment_HVAC	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\D1\{D1AED7DB-2858-BCB6-23DF-80CE41B96653}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Environment_HVAC		1078368
+	897877778	Environment_HVAC	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\58\{58ED552F-28C9-4FD0-1A4C-384BD3F43DAE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment2\Landmarks\Environment_HVAC		976712
 	905814100	PA_Settings_Confirmed	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\F8\{F84ABC2B-7B33-D353-24F5-9903792540E1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\PA_Settings_Confirmed		53728
 	908350307	HumanClick	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\55\{5562B044-4AE1-DBB0-6252-35B8AB3ECED3}.wem		\Actor-Mixer Hierarchy\Player\Clicks\HumanClick		40784
 	932884221	MainChamberNotification	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\47\{4720930C-DA88-B7E4-80D6-B59F98AF82EA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainChamberNotification		85344
 	964506797	South	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\4A\{4A5A8D4D-D7B1-CF26-92E3-7D12C96F1B28}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\South		202524
 	970935376	North	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\86\{861EBDD4-BB94-CA95-0D99-750493246E07}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\North		147348
-	1061567854	Environment_Clock	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\F8\{F85C1BA8-CD51-9A5F-3E09-828EEF244919}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Environment_Clock		2960736
 
