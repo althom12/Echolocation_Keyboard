@@ -27,6 +27,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	250675185	Click_Amplitude			\Default Work Unit\Click_Amplitude	
 	732487008	Footsteps_Amplitude			\Default Work Unit\Footsteps_Amplitude	
 	1741542810	Player_Yaw			\Default Work Unit\Player_Yaw	
+	2809259425	Footsteps_Pitch			\Default Work Unit\Footsteps_Pitch	
 	4151021112	Click_Pitch			\Default Work Unit\Click_Pitch	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes

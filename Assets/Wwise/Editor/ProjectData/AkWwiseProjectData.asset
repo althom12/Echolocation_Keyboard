@@ -1608,7 +1608,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ccf16443b3e388408a8153c2fb94031d
     GuidInternal: 
-    m_lastTime: -8584402643210803341
+    m_lastTime: -8584402640086307396
     List:
     - name: Click_Amplitude
       guid: 6bf51a34325cf2488cf42af84fe82a31
@@ -1652,6 +1652,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 68a13eb0af051c4ab6df0e26c50cf2b4
       Path: Game Parameters\Default Work Unit\Footsteps_Amplitude
+    - name: Footsteps_Pitch
+      guid: 30e6ae34714a1e4989df1ba360f31716
+      id: 2809259425
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccf16443b3e388408a8153c2fb94031d
+      - ElementName: Footsteps_Pitch
+        ObjectType: 13
+        guid: 30e6ae34714a1e4989df1ba360f31716
+      Path: Game Parameters\Default Work Unit\Footsteps_Pitch
     - name: Player_Yaw
       guid: 966b48cb8414e7409cd93f320af21649
       id: 1741542810

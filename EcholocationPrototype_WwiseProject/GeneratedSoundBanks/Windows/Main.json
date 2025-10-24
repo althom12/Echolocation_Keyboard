@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{923B3429-BB27-D294-C3E7-276E9CA066F2}",
+    "Hash": "{F40AAB11-A0F1-827F-F32C-42B2BB627046}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -867,6 +867,12 @@
       "GUID": "{CB486B96-1484-40E7-9CD9-3F320AF21649}"
      },
      {
+      "Id": "2809259425",
+      "Name": "Footsteps_Pitch",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Footsteps_Pitch",
+      "GUID": "{34AEE630-4A71-491E-89DF-1BA360F31716}"
+     },
+     {
       "Id": "4151021112",
       "Name": "Click_Pitch",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Click_Pitch",
@@ -875,6 +881,6 @@
     ]
    }
   ],
-  "FileHash": "{736D8239-F575-A99D-1326-D26677FAED11}"
+  "FileHash": "{D295D56D-8C3C-952B-8278-9BBEB40898F9}"
  }
 }

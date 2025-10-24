@@ -476,6 +476,76 @@
 									</RTPC>
 								</Local>
 							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{BDD8BB5F-46BC-4555-95FA-CC5A62CC496B}" ShortID="320786958">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Click_Pitch" ID="{93870C3F-9FB9-4F38-932C-E5C5E1507190}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{35523256-E765-4CC4-A769-FE9749E553DB}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-1200</XPos>
+																<YPos>-1211</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1200</XPos>
+																<YPos>1210</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{9FBC96DD-ED51-4AAC-92D3-DABA34AE1B97}" ShortID="1048438731">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Footsteps_Pitch" ID="{34AEE630-4A71-491E-89DF-1BA360F31716}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{7B7A3190-0CE9-4A32-965B-D313114037C5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-1200</XPos>
+																<YPos>-1236</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1200</XPos>
+																<YPos>1237</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
 						</ObjectList>
 					</ObjectLists>
 				</ActorMixer>

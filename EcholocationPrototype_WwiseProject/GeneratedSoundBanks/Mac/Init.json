@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E8798D6D-7B27-D288-2891-EC17AF1BDFCE}",
+    "Hash": "{5EDECC94-211F-9DAB-465A-26468BAEE7F3}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -143,6 +143,12 @@
       "Name": "Player_Yaw",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Player_Yaw",
       "GUID": "{CB486B96-1484-40E7-9CD9-3F320AF21649}"
+     },
+     {
+      "Id": "2809259425",
+      "Name": "Footsteps_Pitch",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Footsteps_Pitch",
+      "GUID": "{34AEE630-4A71-491E-89DF-1BA360F31716}"
      },
      {
       "Id": "4151021112",
@@ -663,6 +669,6 @@
     ]
    }
   ],
-  "FileHash": "{E708E4FB-76E0-064B-252D-95AFCEDE93B6}"
+  "FileHash": "{962A6506-6D1B-898A-6E57-539A25406338}"
  }
 }
