@@ -110,6 +110,12 @@ public class PlayerAudio : MonoBehaviour
     // ... (HandleFootsteps is unchanged) ...
     public void HandleFootsteps(bool isMoving)
     {
+        if (SettingsManager.Instance != null && !SettingsManager.Instance.IsFootstepsEnabled)
+        {
+            _footstepTimer = FootstepInterval; // Reset timer to prevent immediate step if re-enabled while moving
+            return; // Stop processing footsteps for this frame
+        }
+
         if (isMoving)
         {
             _footstepTimer += Time.deltaTime;

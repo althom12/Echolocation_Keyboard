@@ -6235,6 +6235,7 @@ GameObject:
   - component: {fileID: 466815303}
   - component: {fileID: 466815304}
   - component: {fileID: 466815305}
+  - component: {fileID: 466815306}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -6290,6 +6291,18 @@ MonoBehaviour:
   - {fileID: 5652305062038471916}
   - {fileID: 6411609141085444873}
   - {fileID: 5304274683222139133}
+--- !u!114 &466815306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466815302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b18b1b1bb90c6d4c9525ca426193bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &483151337
 Mesh:
   m_ObjectHideFlags: 0
@@ -46976,6 +46989,7 @@ GameObject:
   - component: {fileID: 4974876294823347848}
   - component: {fileID: 3022024349467019631}
   - component: {fileID: 414891919809236135}
+  - component: {fileID: 4974876294823347849}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -53019,6 +53033,18 @@ RectTransform:
   m_AnchoredPosition: {x: 141, y: -75}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4974876294823347849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3699387115130609180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95893b4717fb5dc42aee9b6044d9caad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &5002079773735742099
 RectTransform:
   m_ObjectHideFlags: 0
