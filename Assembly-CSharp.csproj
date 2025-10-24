@@ -68,13 +68,17 @@
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Scripts\ProximityController.cs" />
+    <Compile Include="Assets\Scripts\SubWindowInputHandler.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\Scripts\PlayerAudio.cs" />
+    <Compile Include="Assets\Inputs\CustomInputActions.cs" />
     <Compile Include="Assets\Scripts\TutorialManager.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\Scripts\CustomUISubmitHandler.cs" />
     <Compile Include="Assets\Scripts\InputDebugger.cs" />
     <Compile Include="Assets\Scripts\CompassController.cs" />
+    <Compile Include="Assets\Scripts\MenuNavigationManager.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Scripts\ObstacleMaterialManager.cs" />
