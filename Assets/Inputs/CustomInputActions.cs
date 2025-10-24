@@ -275,7 +275,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""One Modifier"",
-                    ""id"": ""683e1fdc-f8d5-4558-94a8-5c59e812de18"",
+                    ""id"": ""a8e9e3ce-b084-418e-a183-825171009b29"",
                     ""path"": ""OneModifier"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -286,8 +286,8 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""modifier"",
-                    ""id"": ""680532db-fb44-4459-b121-7e8df22643d8"",
-                    ""path"": ""<Keyboard>/tab"",
+                    ""id"": ""0dd4f890-61de-4ed5-8914-818d5616e154"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -297,11 +297,11 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""binding"",
-                    ""id"": ""84f6ee8a-90d3-4e01-b6a6-45b3ec53a90f"",
-                    ""path"": ""<Keyboard>/shift"",
+                    ""id"": ""675726f9-a810-44ab-be7b-a9ec754d9119"",
+                    ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";KeyboardMouse"",
+                    ""groups"": """",
                     ""action"": ""NavigateBack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
