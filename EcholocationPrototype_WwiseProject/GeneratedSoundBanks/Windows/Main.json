@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{F1E29D99-48C5-C52C-8261-527943D19546}",
+    "Hash": "{923B3429-BB27-D294-C3E7-276E9CA066F2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -855,6 +855,12 @@
       "GUID": "{341AF56B-5C32-48F2-8CF4-2AF84FE82A31}"
      },
      {
+      "Id": "732487008",
+      "Name": "Footsteps_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Footsteps_Amplitude",
+      "GUID": "{B03EA168-05AF-4A1C-B6DF-0E26C50CF2B4}"
+     },
+     {
       "Id": "1741542810",
       "Name": "Player_Yaw",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Player_Yaw",
@@ -869,6 +875,6 @@
     ]
    }
   ],
-  "FileHash": "{C1A9C2EB-596A-166C-10A9-DAC7DFF70878}"
+  "FileHash": "{736D8239-F575-A99D-1326-D26677FAED11}"
  }
 }

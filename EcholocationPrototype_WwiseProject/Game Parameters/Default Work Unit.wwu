@@ -17,6 +17,11 @@
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Click_Amplitude" ID="{341AF56B-5C32-48F2-8CF4-2AF84FE82A31}"/>
+				<GameParameter Name="Footsteps_Amplitude" ID="{B03EA168-05AF-4A1C-B6DF-0E26C50CF2B4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

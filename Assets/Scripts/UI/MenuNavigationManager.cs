@@ -9,7 +9,7 @@ public class MenuNavigationManager : MonoBehaviour
     public CustomUISubmitHandler customTabSubmitHandler;
 
     // Assign ALL sub-panels in the Inspector
-    public GameObject [] subWindowPanels;
+    public GameObject[] subWindowPanels;
 
     private CustomInputActions _input;
     private GameObject _lastSelectedMainSettingsButton;
@@ -35,12 +35,22 @@ public class MenuNavigationManager : MonoBehaviour
     private void OnEnable()
     {
         // The "UI" map must always be enabled for this system
+        // to detect the initial button presses.
         _input.UI.Enable();
     }
 
     private void OnDisable()
     {
         _input.UI.Disable();
+
+        // --- CLEANUP ---
+        // Just in case the menu is disabled while a sub-window is open,
+        // ensure player input is re-enabled and time is resumed.
+        if (_activeSubWindow != null)
+        {
+            Time.timeScale = 1f;
+            _input.Player.Enable();
+        }
     }
 
     /// <summary>
@@ -49,14 +59,25 @@ public class MenuNavigationManager : MonoBehaviour
     public void OpenSubWindow(GameObject subWindowToShow)
     {
         // 1. Store the button we just pressed
-        _lastSelectedMainSettingsButton = EventSystem.current.currentSelectedGameObject; 
+        _lastSelectedMainSettingsButton = EventSystem.current.currentSelectedGameObject;
 
         // 2. Hide main panel, show sub-panel
         mainSettingsPanel.SetActive(false);
         subWindowToShow.SetActive(true);
         _activeSubWindow = subWindowToShow;
 
-        // 3. SWAP THE INPUT LOGIC:
+        // --- NEW ---
+        // 3. PAUSE GAME & SWAP INPUT MAPS
+        Time.timeScale = 0f; // Pause all game physics and Update logic
+
+        // *** IMPORTANT ***
+        // Replace "Player" if your movement Action Map is named differently
+        _input.Player.Disable(); // Disable the "Player" map
+                                 // The "UI" map is already enabled from this script's OnEnable()
+
+        // --- END NEW ---
+
+        // 4. SWAP THE UI-INTERNAL INPUT LOGIC:
         // Disable "Tab as Submit" logic
         customTabSubmitHandler.enabled = false;
 
@@ -67,7 +88,7 @@ public class MenuNavigationManager : MonoBehaviour
             handler.enabled = true;
         }
 
-        // 4. Set focus to the first item in the new window
+        // 5. Set focus to the first item in the new window
         Selectable firstElement = subWindowToShow.GetComponentInChildren<Selectable>();
         if (firstElement != null)
         {
@@ -85,7 +106,17 @@ public class MenuNavigationManager : MonoBehaviour
         // 1. Get the handler on the sub-window
         SubWindowInputHandler handler = _activeSubWindow.GetComponent<SubWindowInputHandler>();
 
-        // 2. SWAP THE INPUT LOGIC:
+        // --- NEW ---
+        // 2. RESUME GAME & SWAP INPUT MAPS
+        Time.timeScale = 1f; // Resume the game
+
+        // *** IMPORTANT ***
+        // Replace "Player" if your movement Action Map is named differently
+        _input.Player.Enable(); // Re-enable the "Player" map
+
+        // --- END NEW ---
+
+        // 3. SWAP THE UI-INTERNAL INPUT LOGIC:
         // Disable "Tab as Navigate" logic
         if (handler != null)
         {
@@ -95,12 +126,12 @@ public class MenuNavigationManager : MonoBehaviour
         // Enable "Tab as Submit" logic
         customTabSubmitHandler.enabled = true;
 
-        // 3. Hide sub-panel, show main panel
+        // 4. Hide sub-panel, show main panel
         _activeSubWindow.SetActive(false);
         mainSettingsPanel.SetActive(true);
         _activeSubWindow = null;
 
-        // 4. Restore focus to the main menu button
+        // 5. Restore focus to the main menu button
         if (_lastSelectedMainSettingsButton != null)
         {
             EventSystem.current.SetSelectedGameObject(_lastSelectedMainSettingsButton);

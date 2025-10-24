@@ -48265,6 +48265,7 @@ GameObject:
   - component: {fileID: 2312530237865227288}
   - component: {fileID: 4915808467967134638}
   - component: {fileID: 5565945368722621192}
+  - component: {fileID: 5565945368722621193}
   m_Layer: 5
   m_Name: Volume
   m_TagString: Untagged
@@ -52195,7 +52196,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 504158241643765380}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -55639,6 +55640,28 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &5565945368722621193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4073583541434749491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c2047cdc073d8468908fbec3e69952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rtpcToControl:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2b5d1a7b9ffb8e148b8ea6799f5ff5b7, type: 2}
+  feedbackSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: acf6b9ed2d6b1664b98b7f86b964b0f4, type: 2}
+  soundEmitter: {fileID: 548537818}
+  defaultValue: 50
 --- !u!222 &5579844504634880610
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -63043,7 +63066,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4682047054579833984}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 150
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
