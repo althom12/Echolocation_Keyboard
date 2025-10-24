@@ -443,76 +443,6 @@
 						<ObjectList Name="RTPC">
 							<Reference>
 								<Local>
-									<RTPC Name="" ID="{1845AFFE-060A-434B-A020-70AAA80EFD1B}" ShortID="530781077">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Volume"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Footsteps_Amplitude" ID="{B03EA168-05AF-4A1C-B6DF-0E26C50CF2B4}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{227D40A0-F4F4-4138-800F-973022289C91}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-200</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>200</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{BDD8BB5F-46BC-4555-95FA-CC5A62CC496B}" ShortID="320786958">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Pitch"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Click_Pitch" ID="{93870C3F-9FB9-4F38-932C-E5C5E1507190}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{35523256-E765-4CC4-A769-FE9749E553DB}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>-1200</XPos>
-																<YPos>-1211</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1200</XPos>
-																<YPos>1210</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
 									<RTPC Name="" ID="{9FBC96DD-ED51-4AAC-92D3-DABA34AE1B97}" ShortID="1048438731">
 										<PropertyList>
 											<Property Name="PropertyName" Type="string" Value="Pitch"/>
@@ -536,6 +466,41 @@
 															<Point>
 																<XPos>1200</XPos>
 																<YPos>1237</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{917C058F-F61D-40D8-BEC9-24ECD0D5FCAD}" ShortID="213938555">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Footsteps_Amplitude" ID="{B03EA168-05AF-4A1C-B6DF-0E26C50CF2B4}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{F2AF5E4E-A143-4C6E-9CC2-9C520C77C4DF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>11.73425</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
