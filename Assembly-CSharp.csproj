@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\WwiseUI\WwiseRtpcSlider.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
+    <Compile Include="Assets\Scripts\ObstacleToggleHelper.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Scripts\ProximityController.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
@@ -85,7 +86,6 @@
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Scripts\ObstacleMaterialManager.cs" />
     <Compile Include="Assets\Scripts\EmitterTrigger.cs" />
-    <Compile Include="Assets\Scripts\ObstaclesSettingsHandler.cs" />
     <Compile Include="Assets\Scripts\UI\MenuNavigationManager.cs" />
   </ItemGroup>
   <ItemGroup>

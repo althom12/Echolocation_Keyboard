@@ -115,7 +115,7 @@ public class ObstacleManager : MonoBehaviour
     /// Cycles through the size prefabs and applies their scale to the children
     /// of the customizable obstacle set (obstacleSets[3]).
     /// </summary>
-    void CycleObstacleSize()
+    public void CycleObstacleSize()
     {
         // 1. Make sure we have prefabs to use
         if (sizePrefabs.Length == 0)
@@ -169,5 +169,25 @@ public class ObstacleManager : MonoBehaviour
         }
 
         Debug.Log("Set obstacle size to: " + sourceSizePrefab.name);
+    }
+
+    public void SelectCarpetLayout()
+    {
+        // This is your logic from KeyCode.Alpha9
+        SelectLayout(3, 4);
+        if (materialManager != null)
+        {
+            materialManager.SetAllMaterialsToCarpet();
+        }
+    }
+
+    public void SelectConcreteLayout()
+    {
+        // This is your logic from KeyCode.Alpha0
+        SelectLayout(3, 5);
+        if (materialManager != null)
+        {
+            materialManager.SetAllMaterialsToConcrete();
+        }
     }
 }
