@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="NVDA" ID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="MainSettings" ID="{3E68B730-15B1-41B1-BEE6-CD80C21A18E6}" ShortID="257300483">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="MainSettingsInitialOpen" ID="{7CF9BCD9-F4CE-4C9F-8D5A-2D2B1FB798C7}" ShortID="813805942">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MainSettingsInitialOpen" ID="{1CC289D9-DE04-4754-A13B-8C21981BAF07}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.167216877094715"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.1503452884175"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="80375455"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MainSettingsInitialOpen" ID="{1CC289D9-DE04-4754-A13B-8C21981BAF07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CAG_ECProperties1of6" ID="{7A9F203A-6C5B-4FFC-BE41-AEACAB2C13D2}" ShortID="18669655">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MainSettingsInitialOpen" ID="{D4D1EB83-A8D9-4BF9-B86E-FE8FA0CDE8E3}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="11.706375802895"/>
+										<Property Name="TrimEnd" Type="Real64" Value="15.0593133674434"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="949425015"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MainSettingsInitialOpen" ID="{D4D1EB83-A8D9-4BF9-B86E-FE8FA0CDE8E3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CAG_ObstaclesProperties2of6" ID="{6094A108-587B-4A3E-8CB6-C1F3F40FB897}" ShortID="512221417">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{6D6A1C22-3D46-49FF-AACC-B18137D8330D}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="77.7784142927936"/>
+										<Property Name="TrimEnd" Type="Real64" Value="80.8171066181743"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="948731885"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{6D6A1C22-3D46-49FF-AACC-B18137D8330D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CAG_FootstepProperties3of6" ID="{BBD9F6B3-86B6-49AE-BBEF-06B3C8C46E84}" ShortID="766309209">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{BEC921B2-D896-48A3-82C7-906911D9E7DB}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="16.7308798341244"/>
+										<Property Name="TrimEnd" Type="Real64" Value="19.0051601330223"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="853681551"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{BEC921B2-D896-48A3-82C7-906911D9E7DB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ECProperties1of6" ID="{E291E3A9-71F7-4A67-B15D-5E4A05E525AE}" ShortID="395062640">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MainSettingsInitialOpen" ID="{5319D6AB-A127-48EB-9AAA-21B6BE5BE346}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.78929695056635"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.10166777707965"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="782058364"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MainSettingsInitialOpen" ID="{5319D6AB-A127-48EB-9AAA-21B6BE5BE346}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ObstaclesProperties2of6" ID="{90369111-6350-486C-AACA-C1ABF3EACBDA}" ShortID="497068181">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{19B6DEC6-A71F-4C8B-B593-C6AF5E08C3F8}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.222343340881514"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.18167839307884"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="487716921"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{19B6DEC6-A71F-4C8B-B593-C6AF5E08C3F8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LMProperties4of6" ID="{074C2FB1-80F3-4DAD-B2C8-5DBDE63227CB}" ShortID="875454634">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{DC0B0BB9-E979-4B76-ABB4-A822F6E32113}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="19.6560876692132"/>
+										<Property Name="TrimEnd" Type="Real64" Value="21.5479460256301"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="157375601"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{DC0B0BB9-E979-4B76-ABB4-A822F6E32113}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CAG_LMProperties4of6" ID="{60EDBA2F-1C09-4CCE-8904-A186D66B53D8}" ShortID="50432307">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{F9A6F4C1-BE02-4BA0-B66B-E7AC1C18E2B0}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="32.0653958714734"/>
+										<Property Name="TrimEnd" Type="Real64" Value="34.4061697700909"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="871747322"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{F9A6F4C1-BE02-4BA0-B66B-E7AC1C18E2B0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="EcholocatorClickProperties" ID="{1639812E-F997-4C9B-BA8E-F322C8EA40AB}" ShortID="3009628">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ECP_VolumeSlider" ID="{8D22191B-5FE9-43FA-91A4-01AD2F468271}" ShortID="617948938">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MainSettingsInitialOpen" ID="{D273276F-4E0B-4DBB-8C08-3E0B4D2D7CF7}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.65085548016291"/>
+										<Property Name="TrimEnd" Type="Real64" Value="9.76976578243163"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="708576832"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MainSettingsInitialOpen" ID="{D273276F-4E0B-4DBB-8C08-3E0B4D2D7CF7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ECP_PitchSlider" ID="{C87158A0-51D4-40C4-B92E-651171F3AC58}" ShortID="879158064">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MainSettingsInitialOpen" ID="{0106EC49-3D6E-40EE-8C53-AD29192FA754}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="10.015454853588"/>
+										<Property Name="TrimEnd" Type="Real64" Value="11.1282834681997"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="799752433"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MainSettingsInitialOpen" ID="{0106EC49-3D6E-40EE-8C53-AD29192FA754}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="ObstaclesProperties" ID="{F3DED338-0832-4185-8052-42C924317B6E}" ShortID="846204985">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="OPPage_plus_1stCheckbox" ID="{7FC1F985-BEEC-4E30-854A-E7A2B515725F}" ShortID="128449841">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{F5FF96F7-5B64-447C-9664-5F85604A6AF3}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.66812009057817"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.76289702866014"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="116445779"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{F5FF96F7-5B64-447C-9664-5F85604A6AF3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Default_Checked" ID="{D16F1F45-4119-437A-BA47-D9CF11915760}" ShortID="655246561">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{9ED144FC-8412-4E9C-AB05-F4F1EDDD114E}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.8174390524328"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.70789638037687"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="492348012"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{9ED144FC-8412-4E9C-AB05-F4F1EDDD114E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Default_NotChecked" ID="{1EBC543A-E6F0-4054-920F-39B562BADDA0}" ShortID="969604190">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{B30F4203-47F0-43C1-AFFD-736C4F4D5011}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="7.782016930853"/>
+										<Property Name="TrimEnd" Type="Real64" Value="10.8207031527181"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="854220616"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{B30F4203-47F0-43C1-AFFD-736C4F4D5011}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MA_Checked" ID="{B4C8BDE1-8893-4525-8B10-4B7B199BD55F}" ShortID="411937362">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{2A53DEA7-F5BF-4334-83E3-A2B44CBD150E}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="10.8948237031942"/>
+										<Property Name="TrimEnd" Type="Real64" Value="13.4888232432962"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="386993553"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{2A53DEA7-F5BF-4334-83E3-A2B44CBD150E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MA_NotChecked" ID="{E351E100-40E5-42DA-97FB-C99A0D80D325}" ShortID="638545873">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{C6A38C7B-016D-42A9-8EF9-B005893E6F72}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="13.6370582407329"/>
+										<Property Name="TrimEnd" Type="Real64" Value="16.5275155686769"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="294881427"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{C6A38C7B-016D-42A9-8EF9-B005893E6F72}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LA_Checked" ID="{E9D89CEB-915F-452C-A78C-2770D230DB13}" ShortID="551076067">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{C154F498-D2FC-454B-AE1C-54703D761A69}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="16.888164759023"/>
+										<Property Name="TrimEnd" Type="Real64" Value="19.2697501062156"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="76726961"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{C154F498-D2FC-454B-AE1C-54703D761A69}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LA_NotChecked" ID="{EFAD8678-771F-44B1-9A80-E8DBFF658570}" ShortID="770520032">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{062E9E7D-EACB-429C-BAA3-C7080F1DB1BD}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="19.5662139975732"/>
+										<Property Name="TrimEnd" Type="Real64" Value="22.1602135376752"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="324694115"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{062E9E7D-EACB-429C-BAA3-C7080F1DB1BD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MR_Checked" ID="{91B3E98B-9546-450B-9605-78624EE41746}" ShortID="161109251">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{F7FF2209-3AF1-4443-8FD6-996C4A7544B6}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="22.4566774290329"/>
+										<Property Name="TrimEnd" Type="Real64" Value="24.8283336282534"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="406400979"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{F7FF2209-3AF1-4443-8FD6-996C4A7544B6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MR_NotChecked" ID="{8F628610-BF95-4D90-A7E0-64A3B2DE75A8}" ShortID="921608780">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{AF05B11C-4AB5-4B31-A384-751E97B80D00}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="25.2808280667778"/>
+										<Property Name="TrimEnd" Type="Real64" Value="27.9411404005946"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="796453627"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{AF05B11C-4AB5-4B31-A384-751E97B80D00}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CT_Checked" ID="{91DF4D22-7134-4718-A531-756B781B5F8D}" ShortID="496227407">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{DDFE9F8D-44A9-48DF-B753-105C8EEEF2FA}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="28.269976056505"/>
+										<Property Name="TrimEnd" Type="Real64" Value="30.1563832064879"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="241675009"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{DDFE9F8D-44A9-48DF-B753-105C8EEEF2FA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CT_NotChecked" ID="{24F48A74-C1FE-47BC-B4D5-069D2BA4DCBD}" ShortID="159333471">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{8C4BEAE5-68CD-4F46-9B0F-B7171928AB6B}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="30.6880584372497"/>
+										<Property Name="TrimEnd" Type="Real64" Value="32.9942633943619"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="723034658"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{8C4BEAE5-68CD-4F46-9B0F-B7171928AB6B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MAS_Checked" ID="{5E2B88D8-1BE9-4624-9B29-0E46653CAAB4}" ShortID="774040317">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{3D27D857-6B49-4E32-A37D-3B6379193809}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="33.4675488359465"/>
+										<Property Name="TrimEnd" Type="Real64" Value="36.1900783472989"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="528073085"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{3D27D857-6B49-4E32-A37D-3B6379193809}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MAS_NotChecked" ID="{F0388891-5CCC-4011-8306-BD5705AAEC1B}" ShortID="998651171">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{E94E961F-D9E0-4762-951A-3B8A8B9D18F0}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="36.6866512454499"/>
+										<Property Name="TrimEnd" Type="Real64" Value="39.7253374673148"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="779656530"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{E94E961F-D9E0-4762-951A-3B8A8B9D18F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VSS_Checked" ID="{3C165C32-A67A-4DE8-8E49-2A4B9CFB166B}" ShortID="399730600">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{F80C737E-D7C3-4634-BF26-4F9CC33C7DDD}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="40.1700302525935"/>
+										<Property Name="TrimEnd" Type="Real64" Value="42.6158008987746"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="768625759"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{F80C737E-D7C3-4634-BF26-4F9CC33C7DDD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VSS_NotChecked" ID="{71DF181A-CA25-4987-9E8E-9A72637A3C46}" ShortID="442387708">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{A142DF36-3973-4C06-9004-73861060A6AB}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="42.9863792370927"/>
+										<Property Name="TrimEnd" Type="Real64" Value="45.8222387683565"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="270920287"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{A142DF36-3973-4C06-9004-73861060A6AB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SS_Checked" ID="{345693DC-F525-4C07-956A-6DA164D3DCC8}" ShortID="1033137117">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{30CC0F5B-12C0-4266-B10D-6AEA410A6073}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="46.3956437972759"/>
+										<Property Name="TrimEnd" Type="Real64" Value="48.6635397707517"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1043859987"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{30CC0F5B-12C0-4266-B10D-6AEA410A6073}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SS_NotChecked" ID="{39DE0ABE-769A-47C1-AE1E-C30E6C0C8F7D}" ShortID="964476641">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{4EB786DD-F756-4AA4-87F8-3998ECB97C63}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="48.767306100012"/>
+										<Property Name="TrimEnd" Type="Real64" Value="51.5095345340351"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="833531261"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{4EB786DD-F756-4AA4-87F8-3998ECB97C63}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Checkeed" ID="{B05CF1FF-5303-4A6F-95E2-92523E346202}" ShortID="151962850">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{5CD46CB8-D59A-4F9E-8687-FFD67037D239}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="51.8530670215696"/>
+										<Property Name="TrimEnd" Type="Real64" Value="53.7171590606914"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="840753990"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{5CD46CB8-D59A-4F9E-8687-FFD67037D239}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_NotChecked" ID="{44943C58-683F-4296-BC12-97FD79FF349D}" ShortID="860223652">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{D1F22681-DA2D-472F-BD08-D532B8475C75}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="54.1776607281289"/>
+										<Property Name="TrimEnd" Type="Real64" Value="56.7716602682309"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="91310230"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{D1F22681-DA2D-472F-BD08-D532B8475C75}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LS_Checked" ID="{C70BB503-0F5F-4196-8DFA-2BE724733EEF}" ShortID="1047058735">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{AD98BB20-182F-48B2-A04F-2C43B87ED544}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="57.1422386065491"/>
+										<Property Name="TrimEnd" Type="Real64" Value="59.1089254896819"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="799733562"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{AD98BB20-182F-48B2-A04F-2C43B87ED544}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LS_NotChecked" ID="{A544A351-969C-4F58-B08F-8B8492CEE8D2}" ShortID="797542439">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{AB7EF157-303E-4F41-A071-EABB0ADC0556}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="59.4397864623247"/>
+										<Property Name="TrimEnd" Type="Real64" Value="61.9604126999359"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="428930576"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{AB7EF157-303E-4F41-A071-EABB0ADC0556}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Carpet_NotChecked" ID="{CC413139-17D6-40B4-948F-C2EEC7765A01}" ShortID="682685912">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{5CF03B24-7DB0-499A-BA6E-090A3ACE11A9}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="62.3302498937844"/>
+										<Property Name="TrimEnd" Type="Real64" Value="65.887737244373"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="447298062"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{5CF03B24-7DB0-499A-BA6E-090A3ACE11A9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Carpet_Checked" ID="{6B02A40B-446D-4283-92B5-C344D688496D}" ShortID="592285069">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{469B3584-33E6-4D3E-8C91-DA54F06BC5EF}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="66.1842011357306"/>
+										<Property Name="TrimEnd" Type="Real64" Value="69.4452306984772"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="652999967"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{469B3584-33E6-4D3E-8C91-DA54F06BC5EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Concrete_NotChecked" ID="{426EC015-A63F-4B78-9902-8444E0632EC9}" ShortID="762020270">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{E101623E-17F8-4097-9460-A1E2E5795A0B}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="69.9640379307164"/>
+										<Property Name="TrimEnd" Type="Real64" Value="73.669754175226"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="424194077"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{E101623E-17F8-4097-9460-A1E2E5795A0B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Concrete_Checked" ID="{9302A788-1364-40E9-8B11-C0392AA01E6B}" ShortID="73368153">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{7E4CB902-464B-4590-8835-36A5AC80431D}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="73.9662180665837"/>
+										<Property Name="TrimEnd" Type="Real64" Value="77.4495909702117"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="694333973"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{7E4CB902-464B-4590-8835-36A5AC80431D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Multipurpose" ID="{031AA7E8-6DE1-4B80-BC20-981F5AC8B677}" ShortID="33968401">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Checked" ID="{97A32EBC-532C-4CEB-9916-D20B7B4F9B5A}" ShortID="737806496">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{10A425FF-71C0-485D-BBCA-95BC82C78019}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="12.8329030312405"/>
+										<Property Name="TrimEnd" Type="Real64" Value="13.2370387344951"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="208156602"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{10A425FF-71C0-485D-BBCA-95BC82C78019}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="NotChecked" ID="{86E9E05F-1AAF-41BF-8150-9AC37CEB370D}" ShortID="849137005">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ObstaclesProperties" ID="{87D923F9-2026-47F2-A0FE-B47C452B57DF}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="15.6005225174703"/>
+										<Property Name="TrimEnd" Type="Real64" Value="16.3998762773545"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ObstaclesProperties.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="934781681"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ObstaclesProperties" ID="{87D923F9-2026-47F2-A0FE-B47C452B57DF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="FootstepsProperties" ID="{B7BC7565-4DAA-4977-97D0-D9A97DA621A8}" ShortID="912053833">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="FSP_plusCheckbox" ID="{7A74CC5B-859B-481F-A446-ADC7FEB3DA2C}" ShortID="189024430">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{89110392-59DF-405A-8C40-9ACD819595F5}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.82175483668966"/>
+										<Property Name="TrimEnd" Type="Real64" Value="6.8619938620031"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="145126387"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{89110392-59DF-405A-8C40-9ACD819595F5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FS_On_Checked" ID="{1BF2F4CF-1E9F-44AC-9132-47B130A043E8}" ShortID="116271906">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{8BB08176-1D61-43EA-B265-D52E7190ABD5}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="7.43917184218182"/>
+										<Property Name="TrimEnd" Type="Real64" Value="9.58755251107834"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="962978108"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{8BB08176-1D61-43EA-B265-D52E7190ABD5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FS_On_NotChecked" ID="{4C1C7E09-C512-44DC-BB24-8B39D67B5FE1}" ShortID="68208339">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{0B3AA962-3B88-4ECF-8C1B-7451C8D27F98}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="10.1326650953856"/>
+										<Property Name="TrimEnd" Type="Real64" Value="12.6978959106113"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="921094931"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{0B3AA962-3B88-4ECF-8C1B-7451C8D27F98}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FS_VolumeSlider" ID="{15E31332-0E52-40AE-93AD-1DC18881320C}" ShortID="591619071">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{05739D4A-741B-4A00-AAF7-D6F958F34C6F}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="13.3712700784044"/>
+										<Property Name="TrimEnd" Type="Real64" Value="14.5576888711567"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="613226445"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{05739D4A-741B-4A00-AAF7-D6F958F34C6F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FS_PitchSlider" ID="{3B47D1D0-D733-4503-830F-30B39604FCC9}" ShortID="928923420">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{BB873AB7-3F84-4684-B334-6C083A7BAE72}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="15.0707360595925"/>
+										<Property Name="TrimEnd" Type="Real64" Value="16.1288932688589"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="725780992"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{BB873AB7-3F84-4684-B334-6C083A7BAE72}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FS_PitchSlider_02" ID="{97650F68-F540-48D3-9E7C-E04924869C4F}" ShortID="973748354">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{7C2C99FB-1125-4848-83DD-C95EBA6A256E}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="15.0707360595925"/>
+										<Property Name="TrimEnd" Type="Real64" Value="16.1288932688589"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="725780992"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{7C2C99FB-1125-4848-83DD-C95EBA6A256E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Landmarks" ID="{FE060D47-EF93-4FFD-983B-67352A8B7DEC}" ShortID="93602746">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="LM_On_NotChecked" ID="{C7713C95-3E3F-47CD-938E-0E6DC97F1839}" ShortID="985540793">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{E392C471-DDDB-44ED-A2C8-F27C320A02AF}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="24.4979624458056"/>
+										<Property Name="TrimEnd" Type="Real64" Value="26.8387363444232"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1031784608"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{E392C471-DDDB-44ED-A2C8-F27C320A02AF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LMP_plusCheckbox" ID="{31BAB6EF-8F1C-426A-B448-74D522F831C0}" ShortID="583898638">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{3D47878F-2B09-48E8-A0F1-F4A970C3D2B2}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="22.2213193389311"/>
+										<Property Name="TrimEnd" Type="Real64" Value="26.7746046981881"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="386641915"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{3D47878F-2B09-48E8-A0F1-F4A970C3D2B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LM_On_Checked" ID="{9B9A5AC4-15B1-48F4-90FA-9D3E2452453E}" ShortID="576646770">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{5AD2D52E-D277-4DD2-B860-BB8C56AB86A3}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="27.4800442618527"/>
+										<Property Name="TrimEnd" Type="Real64" Value="29.6284257852414"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="162430116"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{5AD2D52E-D277-4DD2-B860-BB8C56AB86A3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LM_VolumeSlider" ID="{30F0ED41-CB81-4B49-8B8B-3254B4E96EF5}" ShortID="273517317">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FSandLM" ID="{349E5903-902F-4246-986E-CC32773628B3}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="30.2056029109279"/>
+										<Property Name="TrimEnd" Type="Real64" Value="31.3920225581724"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>FSandLM.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="756724688"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FSandLM" ID="{349E5903-902F-4246-986E-CC32773628B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

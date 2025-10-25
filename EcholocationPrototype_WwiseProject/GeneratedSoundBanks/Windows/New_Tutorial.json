@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{50B2033B-70B5-4C82-9AD3-BD9C5972BE76}",
     "Language": "SFX",
-    "Hash": "{2192B407-8B20-C428-A6E4-6369440A6508}",
+    "Hash": "{E59D3B3E-12BE-8A5E-B549-1E21FE437416}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\New_Tutorial",
     "ShortName": "New_Tutorial",
     "Path": "New_Tutorial.bnk",
@@ -524,6 +524,6 @@
     ]
    }
   ],
-  "FileHash": "{8117CD98-6C9E-8B33-E21F-D1409154B68C}"
+  "FileHash": "{A90C8566-2DB4-5990-CEDF-0F4E22EF8A99}"
  }
 }

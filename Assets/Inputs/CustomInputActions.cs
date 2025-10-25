@@ -205,17 +205,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""d83693e9-ff4e-4d36-a881-c308ae9723ff"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";KeyboardMouse"",
-                    ""action"": ""Submit"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""ab4bccec-2c3b-4701-aa54-bf132e2dbdfe"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
