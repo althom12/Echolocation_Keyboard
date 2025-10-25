@@ -1,6 +1,6 @@
 using UnityEngine;
 using AK.Wwise; // Make sure this is here for your Wwise Events
-
+using UnityEngine.UI;
 public class ObstacleManager : MonoBehaviour
 {
     [Header("Game Objects")]
@@ -84,21 +84,72 @@ public class ObstacleManager : MonoBehaviour
     // --- THESE FUNCTIONS ARE NOW DECOUPLED ---
     // They ONLY change the material on the *currently active* set.
 
-    public void SelectCarpetLayout()
+    /// <summary>
+    /// This is the function called by the UI Toggle for CARPET.
+    /// It must take a boolean, which represents the new state of the toggle.
+    /// </summary>
+    public void HandleCarpetToggle(bool isOn)
     {
-        // This function NO LONGER calls SelectLayout.
+        // CRITICAL GUARD: We only care when the toggle is turned ON.
+        if (!isOn)
+        {
+            // When a Preset calls ClearCustomizations, this function runs with isOn=false.
+            // We immediately RETURN to prevent the toggle from re-asserting its selection,
+            // which is what was causing the checkmark to stay.
+            return;
+        }
+
         if (materialManager != null)
         {
+            // 1. Set the material
             materialManager.SetAllMaterialsToCarpet();
+
+            // 2. Set indicators/sync toggles.
+            // We call this function on the material manager (which handles indicator logic)
+            materialManager.SetIndicatorActive(true, false);
         }
     }
 
-    public void SelectConcreteLayout()
+    /// <summary>
+    /// This is the function called by the UI Toggle for CONCRETE.
+    /// </summary>
+    public void HandleConcreteToggle(bool isOn)
     {
-        // This function NO LONGER calls SelectLayout.
+        // CRITICAL GUARD: We only care when the toggle is turned ON.
+        if (!isOn)
+        {
+            return;
+        }
+
         if (materialManager != null)
         {
+            // 1. Set the material
             materialManager.SetAllMaterialsToConcrete();
+
+            // 2. Set indicators/sync toggles.
+            materialManager.SetIndicatorActive(false, true);
         }
+    }
+
+    /// <summary>
+    /// Clears all visual material indicators and resets the material toggles.
+    /// This is called when a non-custom preset (Index 0-4) is selected.
+    /// </summary>
+    public void ClearCustomizations()
+    {
+        if (materialManager != null)
+        {
+            // 1. Clear Material Visuals
+            materialManager.SetIndicatorActive(false, false);
+
+            // 2. Clear Material Toggles (We need a way to reference them)
+            // Since Toggles don't clear themselves easily from a separate script,
+            // we need to access them via the ObstacleMaterialManager.
+            // We will implement a function for this next.
+        }
+
+        // You may also want to set the actual AkAcousticTexture to 'None' or 'Default' 
+        // here if that's an option in your Wwise project, but usually, the presets 
+        // handle their own materials.
     }
 }
