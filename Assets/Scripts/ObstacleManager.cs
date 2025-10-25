@@ -80,7 +80,7 @@ public class ObstacleManager : MonoBehaviour
     /// <summary>
     /// A new controller function to activate a layout AND play a sound.
     /// </summary>
-    void SelectLayout(int obstacleIndex, int soundIndex)
+    public void SelectLayout(int obstacleIndex, int soundIndex)
     {
         // Stop any sounds that were previously played by this object.
         AkSoundEngine.StopAll(gameObject);
