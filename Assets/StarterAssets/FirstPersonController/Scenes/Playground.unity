@@ -27348,6 +27348,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f0254124c5930d34bbaa95194b002280, type: 2}
+  woodTexture:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   ObstacleReflectors: []
 --- !u!1 &1955729013
 GameObject:
@@ -47879,7 +47883,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!64 &3034750636507525825
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57554,7 +57558,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 47.3
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
