@@ -85,6 +85,7 @@
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Scripts\ObstacleMaterialManager.cs" />
     <Compile Include="Assets\Scripts\EmitterTrigger.cs" />
+    <Compile Include="Assets\Scripts\ObstaclesSettingsHandler.cs" />
     <Compile Include="Assets\Scripts\UI\MenuNavigationManager.cs" />
   </ItemGroup>
   <ItemGroup>
