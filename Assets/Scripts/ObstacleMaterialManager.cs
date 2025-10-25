@@ -46,5 +46,27 @@ public class ObstacleMaterialManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Clears the old list and finds all AkSurfaceReflectors
+    /// in the children of the newly activated obstacle set.
+    /// </summary>
+    public void FindReflectorsInSet(GameObject obstacleSetParent)
+    {
+        // 1. Clear the old list of reflectors
+        ObstacleReflectors.Clear();
+
+        // 2. If the new set is null (e.g., "None" was selected), we're done.
+        if (obstacleSetParent == null)
+        {
+            return;
+        }
+
+        // 3. Find all reflectors in the new set and add them to our list
+        // We use GetComponentsInChildren(true) to find them even if they are inactive
+        ObstacleReflectors.AddRange(obstacleSetParent.GetComponentsInChildren<AkSurfaceReflector>(true));
+
+        Debug.Log("MaterialManager found " + ObstacleReflectors.Count + " reflectors in " + obstacleSetParent.name);
+    }
+
 }
     
