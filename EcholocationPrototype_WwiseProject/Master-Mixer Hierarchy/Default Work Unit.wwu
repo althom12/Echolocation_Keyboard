@@ -204,6 +204,7 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</Bus>
+						<Bus Name="UI_Dialogue" ID="{6BF29EBF-A00D-4F4B-804E-755BD899FBD5}"/>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">

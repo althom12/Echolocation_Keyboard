@@ -16,6 +16,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	95799204	UI_Dialogue			\Default Work Unit\Master Audio Bus\UI_Dialogue	
 	846920411	Ambisonic_Main_Mix			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix	
 	2583787875	NewTutorial			\Default Work Unit\Master Audio Bus\NewTutorial	
 	3587466022	Ambisonic_Reverbs			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs	

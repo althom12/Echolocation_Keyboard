@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{EFB82DE6-2BBD-4AAB-82C5-2998E27B3E9B}",
+    "Hash": "{8579844A-5E7C-C9C7-A98E-79310F0EA77A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -120,6 +120,12 @@
      ]
     },
     "Busses": [
+     {
+      "Id": "95799204",
+      "Name": "UI_Dialogue",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI_Dialogue",
+      "GUID": "{6BF29EBF-A00D-4F4B-804E-755BD899FBD5}"
+     },
      {
       "Id": "846920411",
       "Name": "Ambisonic_Main_Mix",
@@ -772,6 +778,6 @@
     ]
    }
   ],
-  "FileHash": "{07F64B8E-638C-1D64-9B07-69FAC00B7D04}"
+  "FileHash": "{4CB95D9F-61B6-173C-ED68-6FF468C4F4FD}"
  }
 }

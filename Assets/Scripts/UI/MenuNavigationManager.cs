@@ -77,10 +77,15 @@ public class MenuNavigationManager : MonoBehaviour
     /// </summary>
     private void ToggleSettingsPanel(InputAction.CallbackContext context)
     {
+        // Check if ANY UI is open (main panel OR a sub-window)
         if (mainSettingsPanel.activeSelf || _activeSubWindow != null)
         {
             // --- CLOSE EVERYTHING ---
+
+            // 1. Hide main panel
             mainSettingsPanel.SetActive(false);
+
+            // 2. Hide active sub-window (if any)
             if (_activeSubWindow != null)
             {
                 SubWindowInputHandler handler = _activeSubWindow.GetComponent<SubWindowInputHandler>();
@@ -88,18 +93,46 @@ public class MenuNavigationManager : MonoBehaviour
                 _activeSubWindow.SetActive(false);
                 _activeSubWindow = null;
             }
+
+            // 3. Disable UI navigation logic
             if (customTabSubmitHandler != null) customTabSubmitHandler.enabled = false;
+
+            // 4. Resume game & enable player input
             Time.timeScale = 1f;
             _input.Player.Enable();
             EventSystem.current.SetSelectedGameObject(null);
+
+            // --- AUDIO FIX: Use Singleton for closing sound ---
+            if (UIAudioManager.Instance != null)
+            {
+                // Pass the manager's own GameObject as the emitter
+                UIAudioManager.Instance.PlayMenuCloseToGameSound(gameObject);
+            }
+            // --- END AUDIO FIX ---
         }
         else
         {
-            // --- OPEN THE MAIN MENU ---
+            // --- OPEN THE MAIN MENU (Called only by N key from gameplay) ---
             mainSettingsPanel.SetActive(true);
+
+            // --- AUDIO FIX: Use Singleton for opening sound ---
+            if (UIAudioManager.Instance != null)
+            {
+                // Pass the manager's own GameObject as the emitter
+                UIAudioManager.Instance.PlayMenuOpenFromGameSound(gameObject);
+            }
+            // --- END AUDIO FIX ---
+
+            // 2. Set focus to the first selectable element
             Selectable firstElement = mainSettingsPanel.GetComponentInChildren<Selectable>();
-            if (firstElement != null) EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
+            if (firstElement != null)
+            {
+                EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
+            }
+            // 3. Enable main panel navigation
             if (customTabSubmitHandler != null) customTabSubmitHandler.enabled = true;
+
+            // 4. Pause game & disable player movement
             Time.timeScale = 0f;
             _input.Player.Disable();
         }
@@ -118,6 +151,15 @@ public class MenuNavigationManager : MonoBehaviour
         subWindowToShow.SetActive(true);
         _activeSubWindow = subWindowToShow;
 
+        // Audio Call (using GetComponentInChildren for modularity)
+        // --- AUDIO FIX: USE GetComponentInChildren ONCE ---
+        // This is the robust way to find the script, even if it's on the root or a child.
+        UIAudioTrigger_SubWindow windowAudio = subWindowToShow.GetComponentInChildren<UIAudioTrigger_SubWindow>();
+        if (windowAudio != null)
+        {
+            windowAudio.PlayOpenSound(); // Plays this window's unique sound
+        }
+
         // 3. Pause & Disable Player Input (should already be disabled)
         Time.timeScale = 0f;
         _input.Player.Disable();
@@ -128,28 +170,35 @@ public class MenuNavigationManager : MonoBehaviour
             customTabSubmitHandler.enabled = false;
         }
 
-        // --- MODIFIED SECTION ---
-        // 5. Set focus IMMEDIATELY
+        // --- NEW CRITICAL STEP: Reset Flag on the First Selectable ---
         Selectable firstElement = subWindowToShow.GetComponentInChildren<Selectable>();
         if (firstElement != null)
         {
+            // Find the audio trigger on the first selectable item
+            UIAkSelectTrigger firstItemTrigger = firstElement.GetComponent<UIAkSelectTrigger>();
+            if (firstItemTrigger != null)
+            {
+                firstItemTrigger.ResetSelectionState(); // Reset the local _hasBeenSelected flag
+            }
+
+            // Set focus immediately
             EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
         }
+        // --- END NEW STEP ---
 
-        // 6. DELAY enabling the SubWindowInputHandler
+        // 5. DELAY enabling the SubWindowInputHandler
         SubWindowInputHandler handler = subWindowToShow.GetComponent<SubWindowInputHandler>();
         if (handler != null)
         {
-            // IMPORTANT: Ensure it's currently disabled before starting coroutine
             handler.enabled = false;
-            StartCoroutine(EnableSubHandlerAfterFrame(handler));
+            StartCoroutine(EnableSubHandlerAfterFrame(handler)); // Now references the function below
         }
-        // --- END MODIFIED SECTION ---
     }
 
-    // --- NEW COROUTINE ---
+    // --- COROUTINE FUNCTION RE-INSERTED HERE (Fixes CS0103) ---
     /// <summary>
     /// Waits until the end of the current frame before enabling the sub-window handler.
+    /// This prevents the 'Tab' (Submit) press from causing a double-jump (input bleed).
     /// </summary>
     private IEnumerator EnableSubHandlerAfterFrame(SubWindowInputHandler handlerToEnable)
     {
@@ -162,7 +211,7 @@ public class MenuNavigationManager : MonoBehaviour
             handlerToEnable.enabled = true;
         }
     }
-    // --- END NEW COROUTINE ---
+    // --- END COROUTINE RE-INSERTION ---
 
 
     /// <summary>

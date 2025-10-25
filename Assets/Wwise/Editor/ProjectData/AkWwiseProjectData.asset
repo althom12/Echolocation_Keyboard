@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7b608fe74c76ed4da6fc102f3ae55110
     GuidInternal: 
-    m_lastTime: -8584402779785523713
+    m_lastTime: -8584402302833293901
     List:
     - name: Ambisonic_Main_Mix
       guid: b40c653b9dd74a488330a92f518af95c
@@ -490,6 +490,23 @@ MonoBehaviour:
         ObjectType: 1
         guid: 2189f69ecfba384989c99ba749ecdd53
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\StereoVerb
+    - name: UI_Dialogue
+      guid: bf9ef26b0da04b4f804e755bd899fbd5
+      id: 95799204
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7b608fe74c76ed4da6fc102f3ae55110
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: UI_Dialogue
+        ObjectType: 2
+        guid: bf9ef26b0da04b4f804e755bd899fbd5
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UI_Dialogue
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -502,7 +519,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584402779785218280
+    m_lastTime: -8584402302833268815
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -546,6 +563,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: cd27296166b07348a5a89e147fbeb101
       Path: SoundBanks\Default Work Unit\ObstaclesAdvanced
+    - name: UI_SOundbank
+      guid: cf76b321d4be724988bc7b2d9ea75253
+      id: 2454045173
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 85233671dd39aa41ae29cacfb165c806
+      - ElementName: UI_SOundbank
+        ObjectType: 7
+        guid: cf76b321d4be724988bc7b2d9ea75253
+      Path: SoundBanks\Default Work Unit\UI_SOundbank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -1723,7 +1754,7 @@ MonoBehaviour:
     m_lastTime: -8584424684189015458
     List: []
   ExpandedFileSystemItemIds: 010000000200000003000000080000001f0000002200000023000000510000005400000055000000610000006200000063000000
-  ExpandedWaapiItemIds: 01000000020000000300000006000000070000000d0000001f000000200000002100000022000000230000005100000054000000550000006100000062000000
+  ExpandedWaapiItemIds: 0100000002000000030000000500000006000000070000000d000000180000001b0000001c0000001f000000200000002100000022000000230000005100000054000000550000006100000062000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
