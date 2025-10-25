@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems; // Required for EventSystem
 using UnityEngine.InputSystem;
 using UnityEngine.UI; // Required for Selectable
+using System.Collections;
 
 public class MenuNavigationManager : MonoBehaviour
 {

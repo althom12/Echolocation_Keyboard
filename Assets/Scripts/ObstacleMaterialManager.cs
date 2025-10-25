@@ -8,6 +8,7 @@ public class ObstacleMaterialManager : MonoBehaviour
     [Header("Wwise Acoustic Textures")]
     public AcousticTexture carpetTexture;
     public AcousticTexture ConcreteTexture;
+    public AcousticTexture woodTexture;
 
     // 2. DRAG YOUR 6 OBSTACLES HERE
     [Header("Target Obstacles")]
@@ -24,6 +25,12 @@ public class ObstacleMaterialManager : MonoBehaviour
     {
         Debug.Log("Setting " + ObstacleReflectors.Count + " obstacles to CONCRETE");
         UpdateMaterials(ConcreteTexture);
+    }
+
+    public void SetAllMaterialsToWood()
+    {
+        Debug.Log("Setting " + ObstacleReflectors.Count + " obstacles to WOOD");
+        UpdateMaterials(woodTexture);
     }
 
     // 4. THE LOGIC - Fixed parameter type
