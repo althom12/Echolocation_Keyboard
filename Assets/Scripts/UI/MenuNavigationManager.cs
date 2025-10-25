@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems; // Required for EventSystem
+using UnityEngine.InputSystem;
 using UnityEngine.UI; // Required for Selectable
 
 public class MenuNavigationManager : MonoBehaviour
@@ -37,11 +38,32 @@ public class MenuNavigationManager : MonoBehaviour
         // The "UI" map must always be enabled for this system
         // to detect the initial button presses.
         _input.UI.Enable();
+
+        // --- NEW ---
+        // Enable Player map to listen for the "Open" command
+       _input.Player.Disable(); // Disable player map
+
+        // Subscribe to your new "ToggleSettingsMenu" action from BOTH maps.
+        // Make sure the name matches what you created in the Input Action Asset.
+        _input.Player.ToggleSettingsMenu.performed += ToggleSettingsPanel;
+        _input.UI.ToggleSettingsMenu.performed += ToggleSettingsPanel;
+        // --- END NEW ---
     }
 
     private void OnDisable()
     {
         _input.UI.Disable();
+
+        // --- MODIFIED ---
+        _input.Player.Disable(); // Disable player map
+
+        // Unsubscribe to prevent errors
+        if (_input != null)
+        {
+            _input.Player.ToggleSettingsMenu.performed -= ToggleSettingsPanel;
+            _input.UI.ToggleSettingsMenu.performed -= ToggleSettingsPanel;
+        }
+        // --- END MODIFIED ---
 
         // --- CLEANUP ---
         // Just in case the menu is disabled while a sub-window is open,
@@ -49,7 +71,68 @@ public class MenuNavigationManager : MonoBehaviour
         if (_activeSubWindow != null)
         {
             Time.timeScale = 1f;
+            // _input.Player.Enable(); // This is handled by the logic above
+        }
+    }
+
+    // --- NEW FUNCTION ---
+    /// <summary>
+    /// This function is called by the 'N' key from either Player or UI map.
+    /// It opens the main menu if all UI is closed, or closes all UI if any is open.
+    /// </summary>
+    private void ToggleSettingsPanel(InputAction.CallbackContext context)
+    {
+        // Check if ANY UI is open (main panel OR a sub-window)
+        if (mainSettingsPanel.activeSelf || _activeSubWindow != null)
+        {
+            // --- CLOSE EVERYTHING ---
+
+            // 1. Hide main panel
+            mainSettingsPanel.SetActive(false);
+
+            // 2. Hide active sub-window (if any)
+            if (_activeSubWindow != null)
+            {
+                // Disable its specific handler
+                SubWindowInputHandler handler = _activeSubWindow.GetComponent<SubWindowInputHandler>();
+                if (handler != null)
+                {
+                    handler.enabled = false;
+                }
+                _activeSubWindow.SetActive(false);
+                _activeSubWindow = null;
+            }
+
+            // 3. Disable all UI navigation logic
+            customTabSubmitHandler.enabled = false;
+
+            // 4. Resume game & enable player input
+            Time.timeScale = 1f;
             _input.Player.Enable();
+
+            // 5. Clear selection from EventSystem
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+        else
+        {
+            // --- OPEN THE MAIN MENU ---
+
+            // 1. Show main panel
+            mainSettingsPanel.SetActive(true);
+
+            // 2. Set focus
+            Selectable firstElement = mainSettingsPanel.GetComponentInChildren<Selectable>();
+            if (firstElement != null)
+            {
+                EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
+            }
+
+            // 3. Enable main panel navigation
+            customTabSubmitHandler.enabled = true;
+
+            // 4. Pause game & disable player movement
+            Time.timeScale = 0f;
+            _input.Player.Disable();
         }
     }
 

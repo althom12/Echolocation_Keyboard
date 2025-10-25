@@ -103,6 +103,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "ToggleSettingsMenu",
+                    "type": "Button",
+                    "id": "0d344fbf-6d7c-43ce-9164-66398abc8466",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -314,6 +323,17 @@
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "346f59ad-0a7b-4600-95ec-b437faac9e82",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleSettingsMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -343,6 +363,15 @@
                     "name": "Fire",
                     "type": "Button",
                     "id": "b4d4d458-441d-4540-bd4d-0d8e05687fbe",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ToggleSettingsMenu",
+                    "type": "Button",
+                    "id": "1b6751e5-4b4d-4632-9634-7475b47afdaf",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -501,6 +530,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b05b6f65-a40b-4c53-b688-a6bde77a5c60",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleSettingsMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

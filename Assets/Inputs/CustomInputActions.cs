@@ -125,6 +125,15 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""ToggleSettingsMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""0d344fbf-6d7c-43ce-9164-66398abc8466"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -336,6 +345,17 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""346f59ad-0a7b-4600-95ec-b437faac9e82"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleSettingsMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -365,6 +385,15 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""name"": ""Fire"",
                     ""type"": ""Button"",
                     ""id"": ""b4d4d458-441d-4540-bd4d-0d8e05687fbe"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ToggleSettingsMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""1b6751e5-4b4d-4632-9634-7475b47afdaf"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -525,6 +554,17 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Fire"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b05b6f65-a40b-4c53-b688-a6bde77a5c60"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleSettingsMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -561,11 +601,13 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         m_UI_RightClick = m_UI.FindAction("RightClick", throwIfNotFound: true);
         m_UI_NavigateBack = m_UI.FindAction("NavigateBack", throwIfNotFound: true);
         m_UI_Look = m_UI.FindAction("Look", throwIfNotFound: true);
+        m_UI_ToggleSettingsMenu = m_UI.FindAction("ToggleSettingsMenu", throwIfNotFound: true);
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
+        m_Player_ToggleSettingsMenu = m_Player.FindAction("ToggleSettingsMenu", throwIfNotFound: true);
     }
 
     ~@CustomInputActions()
@@ -644,6 +686,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_RightClick;
     private readonly InputAction m_UI_NavigateBack;
     private readonly InputAction m_UI_Look;
+    private readonly InputAction m_UI_ToggleSettingsMenu;
     public struct UIActions
     {
         private @CustomInputActions m_Wrapper;
@@ -659,6 +702,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         public InputAction @RightClick => m_Wrapper.m_UI_RightClick;
         public InputAction @NavigateBack => m_Wrapper.m_UI_NavigateBack;
         public InputAction @Look => m_Wrapper.m_UI_Look;
+        public InputAction @ToggleSettingsMenu => m_Wrapper.m_UI_ToggleSettingsMenu;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -701,6 +745,9 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
+            @ToggleSettingsMenu.started += instance.OnToggleSettingsMenu;
+            @ToggleSettingsMenu.performed += instance.OnToggleSettingsMenu;
+            @ToggleSettingsMenu.canceled += instance.OnToggleSettingsMenu;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -738,6 +785,9 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
+            @ToggleSettingsMenu.started -= instance.OnToggleSettingsMenu;
+            @ToggleSettingsMenu.performed -= instance.OnToggleSettingsMenu;
+            @ToggleSettingsMenu.canceled -= instance.OnToggleSettingsMenu;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -762,6 +812,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Fire;
+    private readonly InputAction m_Player_ToggleSettingsMenu;
     public struct PlayerActions
     {
         private @CustomInputActions m_Wrapper;
@@ -769,6 +820,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Fire => m_Wrapper.m_Player_Fire;
+        public InputAction @ToggleSettingsMenu => m_Wrapper.m_Player_ToggleSettingsMenu;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -787,6 +839,9 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @Fire.started += instance.OnFire;
             @Fire.performed += instance.OnFire;
             @Fire.canceled += instance.OnFire;
+            @ToggleSettingsMenu.started += instance.OnToggleSettingsMenu;
+            @ToggleSettingsMenu.performed += instance.OnToggleSettingsMenu;
+            @ToggleSettingsMenu.canceled += instance.OnToggleSettingsMenu;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -800,6 +855,9 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @Fire.started -= instance.OnFire;
             @Fire.performed -= instance.OnFire;
             @Fire.canceled -= instance.OnFire;
+            @ToggleSettingsMenu.started -= instance.OnToggleSettingsMenu;
+            @ToggleSettingsMenu.performed -= instance.OnToggleSettingsMenu;
+            @ToggleSettingsMenu.canceled -= instance.OnToggleSettingsMenu;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -839,11 +897,13 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         void OnRightClick(InputAction.CallbackContext context);
         void OnNavigateBack(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnToggleSettingsMenu(InputAction.CallbackContext context);
     }
     public interface IPlayerActions
     {
         void OnLook(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnFire(InputAction.CallbackContext context);
+        void OnToggleSettingsMenu(InputAction.CallbackContext context);
     }
 }
