@@ -242,6 +242,15 @@ public class MenuNavigationManager : MonoBehaviour
         // 1. Store button
         _lastSelectedMainSettingsButton = EventSystem.current.currentSelectedGameObject;
 
+        // NEW: Stop any playing main menu selection audio
+        AudioManager audioManager = AudioManager.Instance;
+        if (audioManager != null)
+        {
+            // Post a stop event to the UI_Selection_Bus or stop all audio on AudioManager
+            AkSoundEngine.StopAll(audioManager.gameObject);
+            Debug.Log($"---> Stopped all audio on AudioManager");
+        }
+
         // 2. Hide main panel
         mainSettingsPanel.SetActive(false);
         _activeSubWindow = subWindowToShow;
@@ -257,12 +266,12 @@ public class MenuNavigationManager : MonoBehaviour
             customTabSubmitHandler.enabled = false;
         }
 
-        // 5. NEW: Use BaseSubwindow's OpenWindow method
+        // 5. Use BaseSubwindow's OpenWindow method
         BaseSubwindow subwindow = subWindowToShow.GetComponent<BaseSubwindow>();
         if (subwindow != null)
         {
             Debug.Log($"---> Found BaseSubwindow, calling OpenWindow()");
-            subwindow.OpenWindow();  // This handles activation, audio, and first element selection
+            subwindow.OpenWindow();
         }
         else
         {
