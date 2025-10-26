@@ -11,7 +11,7 @@ public class MenuNavigationManager : MonoBehaviour
     public CustomUISubmitHandler customTabSubmitHandler;
 
     // Assign ALL sub-panels in the Inspector
-    public GameObject[] subWindowPanels;
+    public GameObject[] subWindowPanels; // Changed back to array if needed, adjust if not
 
     private CustomInputActions _input;
     private GameObject _lastSelectedMainSettingsButton;
@@ -30,62 +30,54 @@ public class MenuNavigationManager : MonoBehaviour
             if (handler != null)
             {
                 handler.Initialize(_input, panel);
-                handler.enabled = false; // --- NEW: Ensure handlers start disabled ---
+                handler.enabled = false;
             }
         }
     }
 
-    // --- YOUR WORKING OnEnable FUNCTION ---
     private void OnEnable()
     {
-        // The "UI" map must always be enabled for this system
-        // to detect the initial button presses.
         _input.UI.Enable();
-
-        // Enable Player map to listen for the "Open" command when the menu is closed
-        _input.Player.Enable(); // ENABLE player map
-
-        // Subscribe to your new "ToggleSettingsMenu" action from BOTH maps.
+        _input.Player.Enable();
         _input.Player.ToggleSettingsMenu.performed += ToggleSettingsPanel;
         _input.UI.ToggleSettingsMenu.performed += ToggleSettingsPanel;
+
+        // Make sure the main submit handler is enabled when the menu opens
+        if (customTabSubmitHandler != null)
+        {
+            customTabSubmitHandler.enabled = true; // Enable the component
+        }
     }
-    // --- END YOUR WORKING OnEnable FUNCTION ---
 
     private void OnDisable()
     {
-        // --- Need to disable both maps ---
         _input.UI.Disable();
         _input.Player.Disable();
 
-        // Unsubscribe to prevent errors if _input exists
         if (_input != null)
         {
             _input.Player.ToggleSettingsMenu.performed -= ToggleSettingsPanel;
             _input.UI.ToggleSettingsMenu.performed -= ToggleSettingsPanel;
         }
 
-
-        // --- CLEANUP ---
         if (_activeSubWindow != null)
         {
             Time.timeScale = 1f;
         }
+        // Ensure the main submit handler is disabled when the menu closes entirely
+        if (customTabSubmitHandler != null)
+        {
+            customTabSubmitHandler.enabled = false; // Disable the component
+        }
     }
 
-    /// <summary>
-    /// This function is called by the 'N' key from either Player or UI map.
-    /// </summary>
     private void ToggleSettingsPanel(InputAction.CallbackContext context)
     {
-        // Check if ANY UI is open (main panel OR a sub-window)
-        if (mainSettingsPanel.activeSelf || _activeSubWindow != null)
+        Debug.Log($"ToggleSettingsPanel CALLED at Time: {Time.unscaledTime}");
+        if (mainSettingsPanel.activeSelf | _activeSubWindow != null)
         {
             // --- CLOSE EVERYTHING ---
-
-            // 1. Hide main panel
             mainSettingsPanel.SetActive(false);
-
-            // 2. Hide active sub-window (if any)
             if (_activeSubWindow != null)
             {
                 SubWindowInputHandler handler = _activeSubWindow.GetComponent<SubWindowInputHandler>();
@@ -93,55 +85,41 @@ public class MenuNavigationManager : MonoBehaviour
                 _activeSubWindow.SetActive(false);
                 _activeSubWindow = null;
             }
-
-            // 3. Disable UI navigation logic
             if (customTabSubmitHandler != null) customTabSubmitHandler.enabled = false;
-
-            // 4. Resume game & enable player input
             Time.timeScale = 1f;
             _input.Player.Enable();
             EventSystem.current.SetSelectedGameObject(null);
-
-            // --- ---
         }
         else
         {
-            // --- OPEN THE MAIN MENU (Called only by N key from gameplay) ---
+            // --- OPEN THE MAIN MENU ---
             mainSettingsPanel.SetActive(true);
-
-            // --- ---
-
-            // 2. Set focus to the first selectable element
             Selectable firstElement = mainSettingsPanel.GetComponentInChildren<Selectable>();
             if (firstElement != null)
             {
                 EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
             }
-            // 3. Enable main panel navigation
             if (customTabSubmitHandler != null) customTabSubmitHandler.enabled = true;
-
-            // 4. Pause game & disable player movement
             Time.timeScale = 0f;
             _input.Player.Disable();
         }
-
-
     }
 
     /// <summary>
-    /// Called by buttons on MainSettings panel. Now delays enabling sub-window nav.
+    /// Called by buttons on MainSettings panel.
+    /// *** REVERTED VERSION - DOES NOT CHECK FOR ObstaclesSubwindow ***
     /// </summary>
     public void OpenSubWindow(GameObject subWindowToShow)
     {
+        Debug.Log($"OpenSubWindow STARTED (REVERTED VERSION) for {subWindowToShow.name} at Time: {Time.unscaledTime}");
+
         // 1. Store button
         _lastSelectedMainSettingsButton = EventSystem.current.currentSelectedGameObject;
 
         // 2. Swap Panels
         mainSettingsPanel.SetActive(false);
-        subWindowToShow.SetActive(true);
+        subWindowToShow.SetActive(true); // Directly activate here
         _activeSubWindow = subWindowToShow;
-
-        // --- ---
 
         // 3. Pause & Disable Player Input (should already be disabled)
         Time.timeScale = 0f;
@@ -150,48 +128,47 @@ public class MenuNavigationManager : MonoBehaviour
         // 4. Disable Main Panel Submit Logic
         if (customTabSubmitHandler != null)
         {
-            customTabSubmitHandler.enabled = false;
+            Debug.Log($"---> Disabling customTabSubmitHandler component at Time: {Time.unscaledTime}");
+            customTabSubmitHandler.enabled = false; // Disable component
         }
 
-        // --- NEW CRITICAL STEP: Reset Flag on the First Selectable ---
+        // --- OLD LOGIC: Directly select first element ---
         Selectable firstElement = subWindowToShow.GetComponentInChildren<Selectable>();
         if (firstElement != null)
         {
-            // --- ---
-
-            // Set focus immediately
             EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
+            Debug.Log($"---> Directly selected: {firstElement.gameObject.name}");
         }
-        // --- END NEW STEP ---
+        else
+        {
+            Debug.LogWarning($"---> NO selectable found in {subWindowToShow.name}");
+        }
+        // --- END OLD LOGIC ---
 
         // 5. DELAY enabling the SubWindowInputHandler
         SubWindowInputHandler handler = subWindowToShow.GetComponent<SubWindowInputHandler>();
         if (handler != null)
         {
+            Debug.Log($"---> Starting Coroutine EnableSubHandlerAfterFrame at Time: {Time.unscaledTime}");
             handler.enabled = false;
-            StartCoroutine(EnableSubHandlerAfterFrame(handler)); // Now references the function below
+            StartCoroutine(EnableSubHandlerAfterFrame(handler));
         }
-
-
+        Debug.Log($"OpenSubWindow (REVERTED VERSION) FINISHED at Time: {Time.unscaledTime}");
     }
 
-    // --- COROUTINE FUNCTION RE-INSERTED HERE (Fixes CS0103) ---
-    /// <summary>
-    /// Waits until the end of the current frame before enabling the sub-window handler.
-    /// This prevents the 'Tab' (Submit) press from causing a double-jump (input bleed).
-    /// </summary>
+    // --- COROUTINE FUNCTION ---
     private IEnumerator EnableSubHandlerAfterFrame(SubWindowInputHandler handlerToEnable)
     {
-        // Wait until all rendering and input processing for the current frame is done
+        Debug.Log($"---> Coroutine WAITING for EndOfFrame at Time: {Time.unscaledTime}");
         yield return new WaitForEndOfFrame();
-
-        // Now enable the handler. The 'Tab' press from the previous context should be gone.
+        Debug.Log($"---> Coroutine RESUMED after EndOfFrame at Time: {Time.unscaledTime}");
         if (handlerToEnable != null)
         {
+            Debug.Log($"---> Enabling handler {handlerToEnable.gameObject.name} at Time: {Time.unscaledTime}");
             handlerToEnable.enabled = true;
         }
     }
-    // --- END COROUTINE RE-INSERTION ---
+    // --- END COROUTINE ---
 
 
     /// <summary>
@@ -199,6 +176,8 @@ public class MenuNavigationManager : MonoBehaviour
     /// </summary>
     public void CloseActiveSubWindow()
     {
+        Debug.Log($"CloseActiveSubWindow CALLED at Time: {Time.unscaledTime}");
+
         if (_activeSubWindow == null) return;
 
         // 1. Disable Sub Handler
@@ -208,7 +187,12 @@ public class MenuNavigationManager : MonoBehaviour
         // 2. Don't resume time/player input yet
 
         // 3. Enable Main Handler
-        if (customTabSubmitHandler != null) customTabSubmitHandler.enabled = true;
+        if (customTabSubmitHandler != null)
+        {
+            Debug.Log($"---> Re-enabling customTabSubmitHandler component at Time: {Time.unscaledTime}");
+            customTabSubmitHandler.enabled = true; // Re-enable component
+        }
+
 
         // 4. Swap Panels
         _activeSubWindow.SetActive(false);
