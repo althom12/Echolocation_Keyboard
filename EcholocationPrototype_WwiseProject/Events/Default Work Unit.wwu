@@ -585,6 +585,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Event_UI_Select_EcholocatorClickProperties" ID="{02E05CC2-058E-4391-9813-78FF4343673D}">
+							<ChildrenList>
+								<Action Name="" ID="{95A3644A-9024-4FDF-8540-66AA1608F916}" ShortID="427933101">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EC247506-343E-4897-A903-5AE22E60F1E0}" ShortID="1040397">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SC_UI_EcholocatorClickProperties" ID="{C15E8728-9BA2-4CB0-871F-424B2D262E4B}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_ObstaclesPropertiesPage" ID="{17D44698-563D-417B-9ED7-18E813209BA6}">
@@ -604,6 +626,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MainSettingsInitialOpen" ID="{7CF9BCD9-F4CE-4C9F-8D5A-2D2B1FB798C7}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EcholocatorClickPropertiesPage" ID="{7D2F1AF8-10BF-4B11-929E-D1F74FC8F5FB}">
+					<ChildrenList>
+						<Action Name="" ID="{30B8CE67-A548-48B2-9B47-FB142D47FB65}" ShortID="466820224">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EcholocatorClickPropertiesPage" ID="{58F49615-E040-4D7B-A87D-9D84D1EBE629}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

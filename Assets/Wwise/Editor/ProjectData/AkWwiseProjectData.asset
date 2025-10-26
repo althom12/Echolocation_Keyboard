@@ -559,7 +559,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584400992838918947
+    m_lastTime: -8584400970833628286
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -629,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584400992838933977
+    m_lastTime: -8584400970833638289
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -648,6 +648,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Event_UI_Select_EcholocatorClickProperties
+      guid: c25ce0028e059143981378ff4343673d
+      id: 2040130348
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: UI
+        ObjectType: 4
+        guid: 77bddc935b3b8f4c99965c7f4a5157bd
+      - ElementName: Event_UI_Select_EcholocatorClickProperties
+        ObjectType: 3
+        guid: c25ce0028e059143981378ff4343673d
+      Path: Events\Default Work Unit\UI\Event_UI_Select_EcholocatorClickProperties
+      maxAttenuation: 0
+      maxDuration: 1.2336491
+      minDuration: 1.1128286
     - name: Event_UI_Select_MainSettings
       guid: f997d04563687f49919e622c655db666
       id: 3833221374
@@ -1242,6 +1262,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.66173506
       minDuration: 0.66173506
+    - name: Play_EcholocatorClickPropertiesPage
+      guid: f81a2f7dbf10114b929ed1f74fc8f5fb
+      id: 3738316925
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_EcholocatorClickPropertiesPage
+        ObjectType: 3
+        guid: f81a2f7dbf10114b929ed1f74fc8f5fb
+      Path: Events\Default Work Unit\Play_EcholocatorClickPropertiesPage
+      maxAttenuation: 0
+      maxDuration: 2.0970528
+      minDuration: 2.0970528
     - name: Play_Environment_HVAC
       guid: ce2c7a4202fb184a88f811c4ee0dba45
       id: 3548695574
@@ -1900,8 +1937,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 70154adbe1b6c64bb555beead6d8d31f
     GuidInternal: 
-    m_lastTime: -8584401003580301240
+    m_lastTime: -8584400971654857880
     List:
+    - name: SG_UI_EcholocatorClickSelections
+      guid: 656a9aa3288df74392648aa54ca8b859
+      id: 3225717335
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 70154adbe1b6c64bb555beead6d8d31f
+      - ElementName: SG_UI_EcholocatorClickSelections
+        ObjectType: 11
+        guid: 656a9aa3288df74392648aa54ca8b859
+      Path: Switches\Default Work Unit\SG_UI_EcholocatorClickSelections
+      values:
+      - name: PitchSlider
+        guid: 1b365f9bbfb4b646ad45eec1663bae04
+        id: 948093630
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_EcholocatorClickSelections
+          ObjectType: 11
+          guid: 656a9aa3288df74392648aa54ca8b859
+        - ElementName: PitchSlider
+          ObjectType: 10
+          guid: 1b365f9bbfb4b646ad45eec1663bae04
+      - name: VolumeSlider
+        guid: a5b9afc9fe1d044e8497dcdbd3a706b6
+        id: 2955768760
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_EcholocatorClickSelections
+          ObjectType: 11
+          guid: 656a9aa3288df74392648aa54ca8b859
+        - ElementName: VolumeSlider
+          ObjectType: 10
+          guid: a5b9afc9fe1d044e8497dcdbd3a706b6
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: SG_UI_MainSettings
       guid: 1e9d2bd222a26748818a5cee84bff1a1
       id: 3198805459
@@ -2497,7 +2584,7 @@ MonoBehaviour:
     m_lastTime: -8584424684189015458
     List: []
   ExpandedFileSystemItemIds: 010000000200000003000000080000001f0000002200000023000000510000005400000055000000610000006200000063000000
-  ExpandedWaapiItemIds: 010000000200000005000000060000000700000010000000110000001200000018000000190000001a0000001b0000001c0000002000000021000000230000005100000054000000550000006100000062000000f5000000f6000000fe0000007f01000080010000410200004202000043020000
+  ExpandedWaapiItemIds: 010000000200000005000000060000000700000010000000110000001200000018000000190000001a0000001b0000001c0000002000000021000000230000002c0000002d000000370000005100000054000000550000006100000062000000bc000000bd000000be000000f5000000f6000000fe0000007f01000080010000410200004202000043020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\ObstaclesSubwindow.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\Scripts\WwiseUI\WwiseUIElement.cs" />
     <Compile Include="Assets\Scripts\UI\SubWindowInputHandler.cs" />
     <Compile Include="Assets\Scripts\InputDebugger.cs" />
     <Compile Include="Assets\Scripts\CompassController.cs" />

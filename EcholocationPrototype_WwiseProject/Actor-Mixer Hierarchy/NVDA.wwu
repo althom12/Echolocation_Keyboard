@@ -17,7 +17,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="ECP_VolumeSlider" ID="{8D22191B-5FE9-43FA-91A4-01AD2F468271}" ShortID="617948938">
+						<SwitchContainer Name="SC_UI_EcholocatorClickProperties" ID="{C15E8728-9BA2-4CB0-871F-424B2D262E4B}" ShortID="58989248">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -25,52 +25,91 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
 								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="MainSettingsInitialOpen" ID="{D273276F-4E0B-4DBB-8C08-3E0B4D2D7CF7}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="5.65085548016291"/>
-										<Property Name="TrimEnd" Type="Real64" Value="9.76976578243163"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="708576832"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="MainSettingsInitialOpen" ID="{D273276F-4E0B-4DBB-8C08-3E0B4D2D7CF7}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="ECP_PitchSlider" ID="{C87158A0-51D4-40C4-B92E-651171F3AC58}" ShortID="879158064">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SG_UI_EcholocatorClickSelections" ID="{A39A6A65-8D28-43F7-9264-8AA54CA8B859}" WorkUnitID="{DB4A1570-B6E1-4BC6-B555-BEEAD6D8D31F}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="MainSettingsInitialOpen" ID="{0106EC49-3D6E-40EE-8C53-AD29192FA754}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="10.015454853588"/>
-										<Property Name="TrimEnd" Type="Real64" Value="11.1282834681997"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="799752433"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="ECP_VolumeSlider" ID="{8D22191B-5FE9-43FA-91A4-01AD2F468271}" ShortID="617948938">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MainSettingsInitialOpen" ID="{D273276F-4E0B-4DBB-8C08-3E0B4D2D7CF7}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.34233039600419"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.57597958849106"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="708576832"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MainSettingsInitialOpen" ID="{D273276F-4E0B-4DBB-8C08-3E0B4D2D7CF7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ECP_PitchSlider" ID="{C87158A0-51D4-40C4-B92E-651171F3AC58}" ShortID="879158064">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MainSettingsInitialOpen" ID="{0106EC49-3D6E-40EE-8C53-AD29192FA754}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="10.015454853588"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.1282834681997"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="799752433"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MainSettingsInitialOpen" ID="{0106EC49-3D6E-40EE-8C53-AD29192FA754}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="MainSettingsInitialOpen" ID="{0106EC49-3D6E-40EE-8C53-AD29192FA754}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="ECP_VolumeSlider" ID="{8D22191B-5FE9-43FA-91A4-01AD2F468271}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="ECP_PitchSlider" ID="{C87158A0-51D4-40C4-B92E-651171F3AC58}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="PitchSlider" ID="{9B5F361B-B4BF-46B6-AD45-EEC1663BAE04}"/>
+										<ItemList>
+											<ItemRef Name="ECP_PitchSlider" ID="{C87158A0-51D4-40C4-B92E-651171F3AC58}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="VolumeSlider" ID="{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"/>
+										<ItemList>
+											<ItemRef Name="ECP_VolumeSlider" ID="{8D22191B-5FE9-43FA-91A4-01AD2F468271}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="ObstaclesProperties" ID="{F3DED338-0832-4185-8052-42C924317B6E}" ShortID="846204985">
@@ -1342,6 +1381,33 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="MainSettingsInitialOpen" ID="{1CC289D9-DE04-4754-A13B-8C21981BAF07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EcholocatorClickPropertiesPage" ID="{58F49615-E040-4D7B-A87D-9D84D1EBE629}" ShortID="1026922735">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MainSettingsInitialOpen" ID="{64EF94FD-C13B-47EF-8403-400A97BA75CC}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.71762165900166"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.81467449224765"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="724415821"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MainSettingsInitialOpen" ID="{64EF94FD-C13B-47EF-8403-400A97BA75CC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

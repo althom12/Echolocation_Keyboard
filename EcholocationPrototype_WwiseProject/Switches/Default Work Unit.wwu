@@ -45,6 +45,12 @@
 						<Switch Name="ACP_Cag_5of6" ID="{6FFE4173-703E-4C1A-8C25-A3EC6275AC11}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="SG_UI_EcholocatorClickSelections" ID="{A39A6A65-8D28-43F7-9264-8AA54CA8B859}">
+					<ChildrenList>
+						<Switch Name="VolumeSlider" ID="{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"/>
+						<Switch Name="PitchSlider" ID="{9B5F361B-B4BF-46B6-AD45-EEC1663BAE04}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

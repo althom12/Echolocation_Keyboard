@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{CA57483F-EB6C-954A-94B3-6E4FE3CEDDE6}",
+    "Hash": "{6A0D8E28-EF83-5AAF-8C0E-C6EC11D15058}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -176,12 +176,28 @@
       "CachePath": "88/{88AF7532-E44B-5CF1-8EC7-334B20F4D739}.wem"
      },
      {
+      "Id": "708576832",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MainSettingsInitialOpen.wav",
+      "CachePath": "00/{00C5EE2F-E5BF-466B-560B-691A33C7764C}.wem"
+     },
+     {
       "Id": "723034658",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ObstaclesProperties.wav",
       "CachePath": "92/{92C7B6CF-B915-5138-EE27-6251E0866FA8}.wem"
+     },
+     {
+      "Id": "724415821",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MainSettingsInitialOpen.wav",
+      "CachePath": "3D/{3DE91C01-AB0C-E305-6198-4064F11534BF}.wem"
      },
      {
       "Id": "768625759",
@@ -222,6 +238,14 @@
       "Location": "Memory",
       "ShortName": "ObstaclesProperties.wav",
       "CachePath": "12/{125EFA0A-C318-FBC9-A9A2-3C7889733D8A}.wem"
+     },
+     {
+      "Id": "799752433",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MainSettingsInitialOpen.wav",
+      "CachePath": "00/{00542773-64B5-983C-1806-063E5FADA090}.wem"
      },
      {
       "Id": "833531261",
@@ -273,6 +297,43 @@
      }
     ],
     "Events": [
+     {
+      "Id": "2040130348",
+      "Name": "Event_UI_Select_EcholocatorClickProperties",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_EcholocatorClickProperties",
+      "GUID": "{02E05CC2-058E-4391-9813-78FF4343673D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.1128286",
+      "DurationMax": "1.2336491",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3225717335",
+         "Id": "948093630",
+         "GUID": "{9B5F361B-B4BF-46B6-AD45-EEC1663BAE04}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "799752433"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3225717335",
+         "Id": "2955768760",
+         "GUID": "{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "708576832"
+         }
+        ]
+       }
+      ]
+     },
      {
       "Id": "3833221374",
       "Name": "Event_UI_Select_MainSettings",
@@ -699,6 +760,20 @@
       ]
      },
      {
+      "Id": "3738316925",
+      "Name": "Play_EcholocatorClickPropertiesPage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_EcholocatorClickPropertiesPage",
+      "GUID": "{7D2F1AF8-10BF-4B11-929E-D1F74FC8F5FB}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0970528",
+      "DurationMax": "2.0970528",
+      "MediaRefs": [
+       {
+        "Id": "724415821"
+       }
+      ]
+     },
+     {
       "Id": "2142858666",
       "Name": "Play_MainSettingsInitialOpen",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_MainSettingsInitialOpen",
@@ -793,6 +868,26 @@
         "Name": "FSP_Cag_3of6",
         "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\FSP_Cag_3of6",
         "GUID": "{E68712DB-AE7E-46E1-BDBD-BC12DE99650C}"
+       }
+      ]
+     },
+     {
+      "Id": "3225717335",
+      "Name": "SG_UI_EcholocatorClickSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections",
+      "GUID": "{A39A6A65-8D28-43F7-9264-8AA54CA8B859}",
+      "Switches": [
+       {
+        "Id": "948093630",
+        "Name": "PitchSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections\\PitchSlider",
+        "GUID": "{9B5F361B-B4BF-46B6-AD45-EEC1663BAE04}"
+       },
+       {
+        "Id": "2955768760",
+        "Name": "VolumeSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections\\VolumeSlider",
+        "GUID": "{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"
        }
       ]
      },
@@ -951,6 +1046,6 @@
     ]
    }
   ],
-  "FileHash": "{EF3EBF83-845A-0E18-2C97-1000EE994E89}"
+  "FileHash": "{5E01CBB9-01A6-0F70-C8AD-8CF673FB42CD}"
  }
 }

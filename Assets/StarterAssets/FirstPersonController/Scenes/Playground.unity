@@ -62984,6 +62984,7 @@ GameObject:
   - component: {fileID: 5717961692067262093}
   - component: {fileID: 5717961692067262094}
   - component: {fileID: 5717961692067262097}
+  - component: {fileID: 5717961692067262098}
   m_Layer: 5
   m_Name: ClickSettings
   m_TagString: Untagged
@@ -63040,6 +63041,23 @@ MonoBehaviour:
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &5717961692067262098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5717961692067262092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7474abdb3b0132a4db02c967f5bb327e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstSelectedElement: {fileID: 856892873369857690}
+  windowOpenEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 85b2981a6ebc0194ab9842a8bb811076, type: 2}
 --- !u!114 &5719433499437754332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70585,9 +70603,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 856892873369857690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d802c66d50aebf45b391877467ed76f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7684e136d2c4a3b449953f2491be5823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
+  selectionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 05c16478b9b456d438e5bf4c482ca047, type: 2}
+  toggleOnSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  toggleOffSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  simpleSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0113f660a9226c34eacd540d7f356363, type: 2}
 --- !u!33 &7446304815519235544
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -82935,9 +82976,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 6045129167396385987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d802c66d50aebf45b391877467ed76f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7684e136d2c4a3b449953f2491be5823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
+  selectionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 05c16478b9b456d438e5bf4c482ca047, type: 2}
+  toggleOnSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  toggleOffSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  simpleSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8d4ccf5cb09198a438b491152b1c1201, type: 2}
 --- !u!114 &9120187933150954451
 MonoBehaviour:
   m_ObjectHideFlags: 0

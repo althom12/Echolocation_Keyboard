@@ -376,6 +376,26 @@
       ]
      },
      {
+      "Id": "3225717335",
+      "Name": "SG_UI_EcholocatorClickSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections",
+      "GUID": "{A39A6A65-8D28-43F7-9264-8AA54CA8B859}",
+      "Switches": [
+       {
+        "Id": "948093630",
+        "Name": "PitchSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections\\PitchSlider",
+        "GUID": "{9B5F361B-B4BF-46B6-AD45-EEC1663BAE04}"
+       },
+       {
+        "Id": "2955768760",
+        "Name": "VolumeSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections\\VolumeSlider",
+        "GUID": "{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"
+       }
+      ]
+     },
+     {
       "Id": "3969249293",
       "Name": "SG_UI_ObstacleSelections",
       "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections",
@@ -1040,6 +1060,6 @@
     ]
    }
   ],
-  "FileHash": "{CE8A3BA6-9470-E5F8-89AE-CDBCBB0A0B56}"
+  "FileHash": "{3B636EC2-4F1B-3044-C435-71E3BB4E9C5F}"
  }
 }
