@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: SS_NotChecked
   id: 4001707100
   guid: AA485A90-432C-4EF6-8C75-DAFDFC022CB6
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 2eb6999d51bc67e40b97d233b119d34e, type: 2}

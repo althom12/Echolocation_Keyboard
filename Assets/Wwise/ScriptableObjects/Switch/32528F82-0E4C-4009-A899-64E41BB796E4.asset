@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: MS_Checked
   id: 2857123331
   guid: 32528F82-0E4C-4009-A899-64E41BB796E4
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 2eb6999d51bc67e40b97d233b119d34e, type: 2}

@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: MAS_Checked
   id: 3883336016
   guid: 8693D697-B540-437C-A488-AFE41003BBDC
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 2eb6999d51bc67e40b97d233b119d34e, type: 2}

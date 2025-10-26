@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: VSS_Checked
   id: 1564979737
   guid: 30BB0563-229F-4DF8-A02F-089B0BF4D7F3
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 2eb6999d51bc67e40b97d233b119d34e, type: 2}

@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Carpet_Checked
   id: 3357802622
   guid: 472E8F63-0225-410D-8795-C00C434C7D40
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 2eb6999d51bc67e40b97d233b119d34e, type: 2}

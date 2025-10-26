@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: CT_NotChecked
   id: 3934324673
   guid: ACAFF1D0-FB37-4583-862A-023910273D9B
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 2eb6999d51bc67e40b97d233b119d34e, type: 2}

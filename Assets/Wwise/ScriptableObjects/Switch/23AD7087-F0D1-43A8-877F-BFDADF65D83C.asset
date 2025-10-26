@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Concrete_Checked
   id: 3708900630
   guid: 23AD7087-F0D1-43A8-877F-BFDADF65D83C
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 2eb6999d51bc67e40b97d233b119d34e, type: 2}

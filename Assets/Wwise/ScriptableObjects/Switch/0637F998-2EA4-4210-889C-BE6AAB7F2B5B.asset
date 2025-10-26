@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: LA_Checked
   id: 3468833026
   guid: 0637F998-2EA4-4210-889C-BE6AAB7F2B5B
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 2eb6999d51bc67e40b97d233b119d34e, type: 2}
