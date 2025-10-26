@@ -720,7 +720,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="UI_Window_Bus" ID="{0C82FAA9-79D4-42E0-90E1-C1AAFBA16B17}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+							<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="SG_UI_Selection" ID="{25E5C8F3-0336-453F-8EF3-0C0314DF9D06}" WorkUnitID="{DB4A1570-B6E1-4BC6-B555-BEEAD6D8D31F}"/>

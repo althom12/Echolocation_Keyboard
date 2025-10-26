@@ -97,13 +97,12 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // 1. Set the Switch (e.g., "Obstacle_1_Checked") on the emitter
-        packet.WwiseSwitch.SetValue(packet.Emitter);
+        // 1. Set the Switch on THIS AudioManager, not the original emitter
+        packet.WwiseSwitch.SetValue(this.gameObject);
 
-        // 2. Post the master selection event (e.g., "Event_UI_Select").
-        // This event contains the "Stop UI_Selection_Bus" action,
-        // which handles the interruption of other selection sounds.
-        packet.WwiseEvent.Post(packet.Emitter);
+        // 2. Post the event from THIS AudioManager
+        // All selection sounds now come from one source, automatically replacing each other
+        packet.WwiseEvent.Post(this.gameObject);
     }
 
     // --- PUBLIC METHODS (Called by SubwindowController) --- //
@@ -148,4 +147,6 @@ public class AudioManager : MonoBehaviour
                 break;
         }
     }
+
+
 }
