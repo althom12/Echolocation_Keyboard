@@ -17,6 +17,9 @@ public class MenuNavigationManager : MonoBehaviour
     private GameObject _lastSelectedMainSettingsButton;
     private GameObject _activeSubWindow;
 
+    [Header("Main Menu Audio")]
+    public AK.Wwise.Event mainMenuOpenEvent;
+
     private void Awake()
     {
         // Initialize the Input Actions class
@@ -74,6 +77,7 @@ public class MenuNavigationManager : MonoBehaviour
     private void ToggleSettingsPanel(InputAction.CallbackContext context)
     {
         Debug.Log($"ToggleSettingsPanel CALLED at Time: {Time.unscaledTime}");
+
         if (mainSettingsPanel.activeSelf | _activeSubWindow != null)
         {
             // --- CLOSE EVERYTHING ---
@@ -92,16 +96,138 @@ public class MenuNavigationManager : MonoBehaviour
         }
         else
         {
-            // --- OPEN THE MAIN MENU ---
-            mainSettingsPanel.SetActive(true);
-            Selectable firstElement = mainSettingsPanel.GetComponentInChildren<Selectable>();
+            // --- OPEN THE MAIN MENU WITH AUDIO ORCHESTRATION ---
+            OpenMainMenuWithAudio(); // ? CHANGED: Call the orchestration method
+        }
+    }
+
+    /// <summary>
+    /// Opens the main menu with proper audio sequencing.
+    /// Window open sound plays first, then first element selection sound.
+    /// </summary>
+    private void OpenMainMenuWithAudio()
+    {
+        Debug.Log($"[MenuNavManager] OpenMainMenuWithAudio CALLED at Time: {Time.unscaledTime}");
+
+        // Get references
+        AudioManager audioManager = AudioManager.Instance;
+        Selectable firstElement = mainSettingsPanel.GetComponentInChildren<Selectable>();
+
+        // Activate the panel
+        mainSettingsPanel.SetActive(true);
+
+        if (customTabSubmitHandler != null)
+            customTabSubmitHandler.enabled = true;
+
+        Time.timeScale = 0f;
+        _input.Player.Disable();
+
+        // Check if we have everything needed for audio orchestration
+        if (audioManager != null && mainMenuOpenEvent != null && firstElement != null)
+        {
+            Debug.Log($"[MenuNavManager] All references valid, starting audio orchestration");
+
+            // Use the audio state machine
+            audioManager.ClearPendingSelectionAudio();
+            audioManager.SetAudioState(UIAudioState.Window_Opening);
+
+            // Post window open event with callback
+            uint flags = (uint)AkCallbackType.AK_EndOfEvent;
+            uint playingID = mainMenuOpenEvent.Post(
+                this.gameObject,
+                flags,
+                OnMainMenuAudioFinished,
+                null
+            );
+
+            Debug.Log($"[MenuNavManager] Posted mainMenuOpenEvent, PlayingID: {playingID}");
+
+            // Select first element
+            EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
+            Debug.Log($"[MenuNavManager] Selected first element: {firstElement.name}");
+
+            // MANUALLY cache the button's audio since OnSelect won't fire
+            WwiseMainMenuButton buttonScript = firstElement.GetComponent<WwiseMainMenuButton>();
+            if (buttonScript != null)
+            {
+                Debug.Log($"[MenuNavManager] Manually caching button audio");
+                ManuallyTriggerButtonAudio(buttonScript, audioManager);
+            }
+        }
+        else
+        {
+            // Fallback
+            Debug.LogWarning($"[MenuNavManager] Missing references for audio orchestration:");
+            Debug.LogWarning($"  - AudioManager: {(audioManager != null ? "OK" : "NULL")}");
+            Debug.LogWarning($"  - mainMenuOpenEvent: {(mainMenuOpenEvent != null ? "OK" : "NULL")}");
+            Debug.LogWarning($"  - firstElement: {(firstElement != null ? "OK" : "NULL")}");
+
             if (firstElement != null)
             {
                 EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
             }
-            if (customTabSubmitHandler != null) customTabSubmitHandler.enabled = true;
-            Time.timeScale = 0f;
-            _input.Player.Disable();
+        }
+    }
+
+    /// <summary>
+    /// Manually triggers the button audio and caches it in the AudioManager.
+    /// This is needed because OnSelect doesn't fire for initial menu opening.
+    /// </summary>
+    private void ManuallyTriggerButtonAudio(WwiseMainMenuButton button, AudioManager audioManager)
+    {
+        // Create the packet manually (same logic as button's OnSelect)
+        AudioEventChannelSO.WwiseEventPacket packet = new AudioEventChannelSO.WwiseEventPacket
+        {
+            WwiseEvent = button.selectionEvent,
+            WwiseSwitch = button.normalSwitch, // Always use normal switch for initial open
+            Emitter = button.gameObject
+        };
+
+        // Raise it through the audio channel (will get cached since gate is closed)
+        if (button.audioChannel != null)
+        {
+            button.audioChannel.RaiseEvent(packet);
+        }
+    }
+
+    /// <summary>
+    /// Callback when main menu window open sound finishes.
+    /// </summary>
+    /// <summary>
+    /// Callback when main menu window open sound finishes.
+    /// </summary>
+
+    private void OnMainMenuAudioFinished(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        Debug.Log($"[MenuNavManager] OnMainMenuAudioFinished callback received, type: {in_type}");
+
+        if (in_type == AkCallbackType.AK_EndOfEvent)
+        {
+            Debug.Log($"[MenuNavManager] Window audio finished, playing pending selection audio");
+
+            AudioManager audioManager = AudioManager.Instance;
+            if (audioManager != null)
+            {
+                audioManager.PlayPendingSelectionAudio();
+                audioManager.SetAudioState(UIAudioState.Idle);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Waits one frame to ensure OnSelect has been called, then plays pending audio.
+    /// </summary>
+    private IEnumerator PlayPendingAudioAfterFrame()
+    {
+        yield return null; // Wait one frame for OnSelect to fire
+
+        Debug.Log($"[MenuNavManager] Coroutine: Playing pending audio and releasing lock");
+
+        AudioManager audioManager = AudioManager.Instance;
+        if (audioManager != null)
+        {
+            audioManager.PlayPendingSelectionAudio();
+            audioManager.SetAudioState(UIAudioState.Idle);
         }
     }
 
@@ -213,16 +339,22 @@ public class MenuNavigationManager : MonoBehaviour
         if (customTabSubmitHandler != null)
         {
             Debug.Log($"---> Re-enabling customTabSubmitHandler component at Time: {Time.unscaledTime}");
-            customTabSubmitHandler.enabled = true; // Re-enable component
+            customTabSubmitHandler.enabled = true;
         }
-
 
         // 4. Swap Panels
         _activeSubWindow.SetActive(false);
         mainSettingsPanel.SetActive(true);
         _activeSubWindow = null;
 
-        // 5. Restore focus
+        // 5. NEW: Set return context flag
+        AudioManager audioManager = AudioManager.Instance;
+        if (audioManager != null)
+        {
+            audioManager.SetReturningToMainMenu(true);
+        }
+
+        // 6. Restore focus (will trigger audio with return context)
         if (_lastSelectedMainSettingsButton != null)
         {
             EventSystem.current.SetSelectedGameObject(_lastSelectedMainSettingsButton);

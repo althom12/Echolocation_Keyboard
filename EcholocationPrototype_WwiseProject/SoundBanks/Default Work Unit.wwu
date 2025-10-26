@@ -71,8 +71,10 @@
 				</SoundBank>
 				<SoundBank Name="UI_Soundbank" ID="{21B376CF-BED4-4972-88BC-7B2D9EA75253}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Event_UI_Select" ID="{C75AB7A1-18D6-40FC-BB5B-DF65EE160967}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_UI_Select_Obstacles" ID="{C75AB7A1-18D6-40FC-BB5B-DF65EE160967}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ObstaclesPropertiesPage" ID="{17D44698-563D-417B-9ED7-18E813209BA6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_UI_Select_MainSettings" ID="{45D097F9-6863-497F-919E-622C655DB666}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MainSettingsInitialOpen" ID="{45A92EE8-5717-4B51-9EA9-0E4311820804}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

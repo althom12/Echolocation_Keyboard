@@ -541,7 +541,7 @@
 				</Folder>
 				<Folder Name="UI" ID="{93DCBD77-3B5B-4C8F-9996-5C7F4A5157BD}" ShortID="857252911">
 					<ChildrenList>
-						<Event Name="Event_UI_Select" ID="{C75AB7A1-18D6-40FC-BB5B-DF65EE160967}">
+						<Event Name="Event_UI_Select_Obstacles" ID="{C75AB7A1-18D6-40FC-BB5B-DF65EE160967}">
 							<ChildrenList>
 								<Action Name="" ID="{09923721-31D0-442B-B135-11D6F8308486}" ShortID="847224913">
 									<PropertyList>
@@ -557,7 +557,29 @@
 								<Action Name="" ID="{DABC399F-058B-4D31-9E22-D78902F6DE00}" ShortID="166434560">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SS_UI_Selection" ID="{8BC0566B-E007-4D71-B415-A4BEDB40FDFA}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+											<ObjectRef Name="SC_UI_Obstacles" ID="{8BC0566B-E007-4D71-B415-A4BEDB40FDFA}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Event_UI_Select_MainSettings" ID="{45D097F9-6863-497F-919E-622C655DB666}">
+							<ChildrenList>
+								<Action Name="" ID="{1A51702E-2BC2-4C95-A7F6-2958017739C8}" ShortID="490724784">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FFE7B273-E520-4AC2-B450-003DCBCEA41E}" ShortID="140730312">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SC_UI_MainSettings" ID="{ED96F817-3AA4-4F7A-95A4-59A42BD9264A}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -571,6 +593,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="ObstaclesPropertiesPage" ID="{7FC1F985-BEEC-4E30-854A-E7A2B515725F}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MainSettingsInitialOpen" ID="{45A92EE8-5717-4B51-9EA9-0E4311820804}">
+					<ChildrenList>
+						<Action Name="" ID="{CE12FD1C-632B-4F95-AC2F-F410F8D32A66}" ShortID="1034287863">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainSettingsInitialOpen" ID="{7CF9BCD9-F4CE-4C9F-8D5A-2D2B1FB798C7}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

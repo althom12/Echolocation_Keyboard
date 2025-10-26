@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
   m_Name: C75AB7A1-18D6-40FC-BB5B-DF65EE160967
   m_EditorClassIdentifier: 
-  objectName: Event_UI_Select
-  id: 1039604199
+  objectName: Event_UI_Select_Obstacles
+  id: 1944309244
   guid: C75AB7A1-18D6-40FC-BB5B-DF65EE160967
   IsInUserDefinedSoundBank: 1

@@ -3,7 +3,7 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{DB4A1570-B6E1-4BC6-B555-BEEAD6D8D31F}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="SG_UI_Selection" ID="{25E5C8F3-0336-453F-8EF3-0C0314DF9D06}">
+				<SwitchGroup Name="SG_UI_ObstacleSelections" ID="{25E5C8F3-0336-453F-8EF3-0C0314DF9D06}">
 					<ChildrenList>
 						<Switch Name="Default_NotChecked" ID="{59EF8CFE-A474-4B75-9B1C-28CF72E0021D}"/>
 						<Switch Name="Default_Checked" ID="{0E108A73-794E-41D9-B1E5-51D24B5A7378}"/>
@@ -29,6 +29,20 @@
 						<Switch Name="Carpet_Checked" ID="{472E8F63-0225-410D-8795-C00C434C7D40}"/>
 						<Switch Name="Concrete_NotChecked" ID="{92A607F7-1607-471B-9E3C-419B930C9D57}"/>
 						<Switch Name="Concrete_Checked" ID="{23AD7087-F0D1-43A8-877F-BFDADF65D83C}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SG_UI_MainSettings" ID="{D22B9D1E-A222-4867-818A-5CEE84BFF1A1}">
+					<ChildrenList>
+						<Switch Name="ECP_1of6" ID="{6A8D549E-2630-46C0-8EFB-D9AD5A3D961C}"/>
+						<Switch Name="ECP_Cag_1of6" ID="{20AC4750-4081-4BB8-B8A8-822566FC1180}"/>
+						<Switch Name="OBS_2of6" ID="{2A0B34C4-0148-4EFE-B1AE-7FCE6549EBBC}"/>
+						<Switch Name="OBS_Cag_2of6" ID="{38DC1B9B-B325-4A23-A215-E8DA359C0BF5}"/>
+						<Switch Name="FSP_3of6" ID="{D3AC7B30-798B-423E-9DF3-D43485E3FD83}"/>
+						<Switch Name="FSP_Cag_3of6" ID="{E68712DB-AE7E-46E1-BDBD-BC12DE99650C}"/>
+						<Switch Name="LMP_4of6" ID="{20526BF9-8C01-43F9-82D4-A73F8C91B104}"/>
+						<Switch Name="LMP_Cag_4of6" ID="{D6F9771D-BACB-4403-A709-6DBAB948F26D}"/>
+						<Switch Name="ACP_5of6" ID="{A23516DE-4A06-4568-9AED-2DAE02E97D9E}"/>
+						<Switch Name="ACP_Cag_5of6" ID="{6FFE4173-703E-4C1A-8C25-A3EC6275AC11}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

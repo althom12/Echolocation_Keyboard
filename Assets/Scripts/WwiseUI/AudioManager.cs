@@ -39,6 +39,8 @@ public class AudioManager : MonoBehaviour
     // The cached audio request that is deferred during the Window_Opening state
     public AudioEventChannelSO.WwiseEventPacket? m_PendingSelectionAudio = null;
 
+    private bool m_IsReturningToMainMenu = false;
+
     private void Awake()
     {
         // Setup Singleton
@@ -72,17 +74,20 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     private void OnAudioEventReceived(AudioEventChannelSO.WwiseEventPacket packet)
     {
+        Debug.Log($"[AudioManager] OnAudioEventReceived - Current State: {m_CurrentAudioState}");
+
         if (m_CurrentAudioState == UIAudioState.Window_Opening)
         {
             // STATE: Window_Opening (Gate is CLOSED)
             // Do NOT play the sound. Cache it.
-            // This catches the autoselect sound from SetSelectedGameObject.
+            Debug.Log($"[AudioManager] Gate CLOSED - Caching audio packet");
             m_PendingSelectionAudio = packet;
         }
         else // m_CurrentAudioState == UIAudioState.Idle
         {
             // STATE: Idle (Gate is OPEN)
             // Play the sound immediately.
+            Debug.Log($"[AudioManager] Gate OPEN - Playing audio immediately");
             PlaySelectionAudio(packet);
         }
     }
@@ -113,10 +118,17 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public void PlayPendingSelectionAudio()
     {
+        Debug.Log($"[AudioManager] PlayPendingSelectionAudio called. Has pending audio: {m_PendingSelectionAudio.HasValue}");
+
         if (m_PendingSelectionAudio.HasValue)
         {
+            Debug.Log($"[AudioManager] Playing cached selection audio");
             PlaySelectionAudio(m_PendingSelectionAudio.Value);
             m_PendingSelectionAudio = null; // Clear the cache
+        }
+        else
+        {
+            Debug.LogWarning($"[AudioManager] No pending audio to play!");
         }
     }
 
@@ -134,9 +146,10 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public void SetAudioState(UIAudioState newState)
     {
+        Debug.Log($"[AudioManager] SetAudioState: {m_CurrentAudioState} ? {newState}");
         m_CurrentAudioState = newState;
 
-        // Set the state in Wwise [2, 3]
+        // Set the state in Wwise
         switch (newState)
         {
             case UIAudioState.Idle:
@@ -146,6 +159,16 @@ public class AudioManager : MonoBehaviour
                 stateWindowOpening?.SetValue();
                 break;
         }
+    }
+
+    public void SetReturningToMainMenu(bool isReturning)
+    {
+        m_IsReturningToMainMenu = isReturning;
+    }
+
+    public bool IsReturningToMainMenu()
+    {
+        return m_IsReturningToMainMenu;
     }
 
 

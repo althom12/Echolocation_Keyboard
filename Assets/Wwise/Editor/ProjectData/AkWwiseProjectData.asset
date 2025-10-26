@@ -559,7 +559,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584401207047757066
+    m_lastTime: -8584400992838918947
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -629,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584401194410726633
+    m_lastTime: -8584400992838933977
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -648,9 +648,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Event_UI_Select
-      guid: a1b75ac7d618fc40bb5bdf65ee160967
-      id: 1039604199
+    - name: Event_UI_Select_MainSettings
+      guid: f997d04563687f49919e622c655db666
+      id: 3833221374
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -661,10 +661,30 @@ MonoBehaviour:
       - ElementName: UI
         ObjectType: 4
         guid: 77bddc935b3b8f4c99965c7f4a5157bd
-      - ElementName: Event_UI_Select
+      - ElementName: Event_UI_Select_MainSettings
+        ObjectType: 3
+        guid: f997d04563687f49919e622c655db666
+      Path: Events\Default Work Unit\UI\Event_UI_Select_MainSettings
+      maxAttenuation: 0
+      maxDuration: 3.3529375
+      minDuration: 1.8918583
+    - name: Event_UI_Select_Obstacles
+      guid: a1b75ac7d618fc40bb5bdf65ee160967
+      id: 1944309244
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: UI
+        ObjectType: 4
+        guid: 77bddc935b3b8f4c99965c7f4a5157bd
+      - ElementName: Event_UI_Select_Obstacles
         ObjectType: 3
         guid: a1b75ac7d618fc40bb5bdf65ee160967
-      Path: Events\Default Work Unit\UI\Event_UI_Select
+      Path: Events\Default Work Unit\UI\Event_UI_Select_Obstacles
       maxAttenuation: 0
       maxDuration: 3.7057161
       minDuration: 1.864092
@@ -1342,6 +1362,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.776
       minDuration: 1.776
+    - name: Play_MainSettingsInitialOpen
+      guid: e82ea9451757514b9ea90e4311820804
+      id: 2142858666
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_MainSettingsInitialOpen
+        ObjectType: 3
+        guid: e82ea9451757514b9ea90e4311820804
+      Path: Events\Default Work Unit\Play_MainSettingsInitialOpen
+      maxAttenuation: 0
+      maxDuration: 2.5069716
+      minDuration: 2.5069716
     - name: Play_MegaAbsorbObstaclesActivated
       guid: dbfa265ab889f344ab14054faa33182c
       id: 872174764
@@ -1863,11 +1900,11 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 70154adbe1b6c64bb555beead6d8d31f
     GuidInternal: 
-    m_lastTime: -8584401214316158560
+    m_lastTime: -8584401003580301240
     List:
-    - name: SG_UI_Selection
-      guid: f3c8e52536033f458ef30c0314df9d06
-      id: 1843346691
+    - name: SG_UI_MainSettings
+      guid: 1e9d2bd222a26748818a5cee84bff1a1
+      id: 3198805459
       PathAndIcons:
       - ElementName: Switches
         ObjectType: 5
@@ -1875,10 +1912,188 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 70154adbe1b6c64bb555beead6d8d31f
-      - ElementName: SG_UI_Selection
+      - ElementName: SG_UI_MainSettings
+        ObjectType: 11
+        guid: 1e9d2bd222a26748818a5cee84bff1a1
+      Path: Switches\Default Work Unit\SG_UI_MainSettings
+      values:
+      - name: ACP_5of6
+        guid: de1635a2064a68459aed2dae02e97d9e
+        id: 1110678646
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: ACP_5of6
+          ObjectType: 10
+          guid: de1635a2064a68459aed2dae02e97d9e
+      - name: ACP_Cag_5of6
+        guid: 7341fe6f3e701a4c8c25a3ec6275ac11
+        id: 3635598136
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: ACP_Cag_5of6
+          ObjectType: 10
+          guid: 7341fe6f3e701a4c8c25a3ec6275ac11
+      - name: ECP_1of6
+        guid: 9e548d6a3026c0468efbd9ad5a3d961c
+        id: 1332976950
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: ECP_1of6
+          ObjectType: 10
+          guid: 9e548d6a3026c0468efbd9ad5a3d961c
+      - name: ECP_Cag_1of6
+        guid: 5047ac208140b84bb8a8822566fc1180
+        id: 1311420848
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: ECP_Cag_1of6
+          ObjectType: 10
+          guid: 5047ac208140b84bb8a8822566fc1180
+      - name: FSP_3of6
+        guid: 307bacd38b793e429df3d43485e3fd83
+        id: 1083307317
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: FSP_3of6
+          ObjectType: 10
+          guid: 307bacd38b793e429df3d43485e3fd83
+      - name: FSP_Cag_3of6
+        guid: db1287e67eaee146bdbdbc12de99650c
+        id: 3823066771
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: FSP_Cag_3of6
+          ObjectType: 10
+          guid: db1287e67eaee146bdbdbc12de99650c
+      - name: LMP_4of6
+        guid: f96b5220018cf94382d4a73f8c91b104
+        id: 3051212308
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: LMP_4of6
+          ObjectType: 10
+          guid: f96b5220018cf94382d4a73f8c91b104
+      - name: LMP_Cag_4of6
+        guid: 1d77f9d6cbba0344a7096dbab948f26d
+        id: 1710388822
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: LMP_Cag_4of6
+          ObjectType: 10
+          guid: 1d77f9d6cbba0344a7096dbab948f26d
+      - name: OBS_2of6
+        guid: c4340b2a4801fe4eb1ae7fce6549ebbc
+        id: 1853522097
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: OBS_2of6
+          ObjectType: 10
+          guid: c4340b2a4801fe4eb1ae7fce6549ebbc
+      - name: OBS_Cag_2of6
+        guid: 9b1bdc3825b3234aa215e8da359c0bf5
+        id: 1570397931
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: OBS_Cag_2of6
+          ObjectType: 10
+          guid: 9b1bdc3825b3234aa215e8da359c0bf5
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: SG_UI_ObstacleSelections
+      guid: f3c8e52536033f458ef30c0314df9d06
+      id: 3969249293
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 70154adbe1b6c64bb555beead6d8d31f
+      - ElementName: SG_UI_ObstacleSelections
         ObjectType: 11
         guid: f3c8e52536033f458ef30c0314df9d06
-      Path: Switches\Default Work Unit\SG_UI_Selection
+      Path: Switches\Default Work Unit\SG_UI_ObstacleSelections
       values:
       - name: Carpet_Checked
         guid: 638f2e4725020d418795c00c434c7d40
@@ -1890,7 +2105,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: Carpet_Checked
@@ -1906,7 +2121,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: Carpet_NotChecked
@@ -1922,7 +2137,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: Concrete_Checked
@@ -1938,7 +2153,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: Concrete_NotChecked
@@ -1954,7 +2169,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: CT_Checked
@@ -1970,7 +2185,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: CT_NotChecked
@@ -1986,7 +2201,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: Default_Checked
@@ -2002,7 +2217,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: Default_NotChecked
@@ -2018,7 +2233,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: LA_Checked
@@ -2034,7 +2249,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: LA_NotChecked
@@ -2050,7 +2265,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: LS_Checked
@@ -2066,7 +2281,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: LS_NotChecked
@@ -2082,7 +2297,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: MA_Checked
@@ -2098,7 +2313,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: MA_NotChecked
@@ -2114,7 +2329,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: MAS_Checked
@@ -2130,7 +2345,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: MAS_NotChecked
@@ -2146,7 +2361,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: MR_Checked
@@ -2162,7 +2377,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: MR_NotChecked
@@ -2178,7 +2393,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: MS_Checked
@@ -2194,7 +2409,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: MS_NotChecked
@@ -2210,7 +2425,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: SS_Checked
@@ -2226,7 +2441,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: SS_NotChecked
@@ -2242,7 +2457,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: VSS_Checked
@@ -2258,7 +2473,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 70154adbe1b6c64bb555beead6d8d31f
-        - ElementName: SG_UI_Selection
+        - ElementName: SG_UI_ObstacleSelections
           ObjectType: 11
           guid: f3c8e52536033f458ef30c0314df9d06
         - ElementName: VSS_NotChecked
@@ -2282,7 +2497,7 @@ MonoBehaviour:
     m_lastTime: -8584424684189015458
     List: []
   ExpandedFileSystemItemIds: 010000000200000003000000080000001f0000002200000023000000510000005400000055000000610000006200000063000000
-  ExpandedWaapiItemIds: 010000000200000005000000060000000e0000000f00000010000000110000001200000018000000190000001a0000001b0000001c00000020000000210000002300000051000000540000005500000061000000620000007f01000080010000
+  ExpandedWaapiItemIds: 010000000200000005000000060000000700000010000000110000001200000018000000190000001a0000001b0000001c0000002000000021000000230000005100000054000000550000006100000062000000f5000000f6000000fe0000007f01000080010000410200004202000043020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
