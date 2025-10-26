@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{14FF86C9-5BCB-4A9D-A67C-FBB724946620}" SchemaVersion="123">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{14FF86C9-5BCB-4A9D-A67C-FBB724946620}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{14FF86C9-5BCB-4A9D-A67C-FBB724946620}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="UI_Audio_State" ID="{51D6EA2D-9F08-4B66-A5E6-B6C2475A0DB4}">
+					<ChildrenList>
+						<State Name="None" ID="{F3164487-A0E2-4912-972F-D4E47CC4588F}"/>
+						<State Name="Idle" ID="{A06004BE-468F-421E-A00E-F3D0E974345F}"/>
+						<State Name="Window_Opening" ID="{8AF36761-F7BC-4812-8A0D-9EE83770B819}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

@@ -102,26 +102,14 @@ public class MenuNavigationManager : MonoBehaviour
             _input.Player.Enable();
             EventSystem.current.SetSelectedGameObject(null);
 
-            // --- AUDIO FIX: Use Singleton for closing sound ---
-            if (UIAudioManager.Instance != null)
-            {
-                // Pass the manager's own GameObject as the emitter
-                UIAudioManager.Instance.PlayMenuCloseToGameSound(gameObject);
-            }
-            // --- END AUDIO FIX ---
+            // --- ---
         }
         else
         {
             // --- OPEN THE MAIN MENU (Called only by N key from gameplay) ---
             mainSettingsPanel.SetActive(true);
 
-            // --- AUDIO FIX: Use Singleton for opening sound ---
-            if (UIAudioManager.Instance != null)
-            {
-                // Pass the manager's own GameObject as the emitter
-                UIAudioManager.Instance.PlayMenuOpenFromGameSound(gameObject);
-            }
-            // --- END AUDIO FIX ---
+            // --- ---
 
             // 2. Set focus to the first selectable element
             Selectable firstElement = mainSettingsPanel.GetComponentInChildren<Selectable>();
@@ -151,14 +139,7 @@ public class MenuNavigationManager : MonoBehaviour
         subWindowToShow.SetActive(true);
         _activeSubWindow = subWindowToShow;
 
-        // Audio Call (using GetComponentInChildren for modularity)
-        // --- AUDIO FIX: USE GetComponentInChildren ONCE ---
-        // This is the robust way to find the script, even if it's on the root or a child.
-        UIAudioTrigger_SubWindow windowAudio = subWindowToShow.GetComponentInChildren<UIAudioTrigger_SubWindow>();
-        if (windowAudio != null)
-        {
-            windowAudio.PlayOpenSound(); // Plays this window's unique sound
-        }
+        // --- ---
 
         // 3. Pause & Disable Player Input (should already be disabled)
         Time.timeScale = 0f;
@@ -174,12 +155,7 @@ public class MenuNavigationManager : MonoBehaviour
         Selectable firstElement = subWindowToShow.GetComponentInChildren<Selectable>();
         if (firstElement != null)
         {
-            // Find the audio trigger on the first selectable item
-            UIAkSelectTrigger firstItemTrigger = firstElement.GetComponent<UIAkSelectTrigger>();
-            if (firstItemTrigger != null)
-            {
-                firstItemTrigger.ResetSelectionState(); // Reset the local _hasBeenSelected flag
-            }
+            // --- ---
 
             // Set focus immediately
             EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
