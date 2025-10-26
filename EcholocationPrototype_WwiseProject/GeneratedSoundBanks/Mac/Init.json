@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{896F9AB0-2477-BC20-2D55-9CA1DE4D59D4}",
+    "Hash": "{92D40FB2-84A2-F4FD-5A38-D32266514A2D}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -46,12 +46,6 @@
     },
     "Busses": [
      {
-      "Id": "95799204",
-      "Name": "UI_Dialogue",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI_Dialogue",
-      "GUID": "{6BF29EBF-A00D-4F4B-804E-755BD899FBD5}"
-     },
-     {
       "Id": "846920411",
       "Name": "Ambisonic_Main_Mix",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix",
@@ -66,11 +60,29 @@
       }
      },
      {
+      "Id": "1350803667",
+      "Name": "UI_Selection_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI_Bus\\UI_Selection_Bus",
+      "GUID": "{9321C0AF-8DE5-467D-B260-0F31A914E322}"
+     },
+     {
+      "Id": "1991884269",
+      "Name": "UI_Window_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI_Bus\\UI_Window_Bus",
+      "GUID": "{0C82FAA9-79D4-42E0-90E1-C1AAFBA16B17}"
+     },
+     {
       "Id": "2583787875",
       "Name": "NewTutorial",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\NewTutorial",
       "GUID": "{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}",
       "Color": "4"
+     },
+     {
+      "Id": "3247222208",
+      "Name": "UI_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI_Bus",
+      "GUID": "{6BF29EBF-A00D-4F4B-804E-755BD899FBD5}"
      },
      {
       "Id": "3587466022",
@@ -161,6 +173,188 @@
       "Name": "Click_Pitch",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Click_Pitch",
       "GUID": "{93870C3F-9FB9-4F38-932C-E5C5E1507190}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1875554370",
+      "Name": "UI_Audio_State",
+      "ObjectPath": "\\States\\Default Work Unit\\UI_Audio_State",
+      "GUID": "{51D6EA2D-9F08-4B66-A5E6-B6C2475A0DB4}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\UI_Audio_State\\None",
+        "GUID": "{F3164487-A0E2-4912-972F-D4E47CC4588F}"
+       },
+       {
+        "Id": "1592121920",
+        "Name": "Window_Opening",
+        "ObjectPath": "\\States\\Default Work Unit\\UI_Audio_State\\Window_Opening",
+        "GUID": "{8AF36761-F7BC-4812-8A0D-9EE83770B819}"
+       },
+       {
+        "Id": "1874288895",
+        "Name": "Idle",
+        "ObjectPath": "\\States\\Default Work Unit\\UI_Audio_State\\Idle",
+        "GUID": "{A06004BE-468F-421E-A00E-F3D0E974345F}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1843346691",
+      "Name": "SG_UI_Selection",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection",
+      "GUID": "{25E5C8F3-0336-453F-8EF3-0C0314DF9D06}",
+      "Switches": [
+       {
+        "Id": "106420105",
+        "Name": "LA_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\LA_NotChecked",
+        "GUID": "{49A8DD51-F743-47E4-92AC-8D70AB730518}"
+       },
+       {
+        "Id": "234490334",
+        "Name": "MR_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\MR_Checked",
+        "GUID": "{6B270BD8-0D4F-4C29-B19A-4E6775085BA6}"
+       },
+       {
+        "Id": "702030869",
+        "Name": "Carpet_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\Carpet_NotChecked",
+        "GUID": "{9BEC53D8-D6AA-4035-A96B-0FC0726E78F8}"
+       },
+       {
+        "Id": "1048812117",
+        "Name": "SS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\SS_Checked",
+        "GUID": "{3A68861D-848F-4136-A5DC-A1AFFFAF2253}"
+       },
+       {
+        "Id": "1197290428",
+        "Name": "MA_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\MA_NotChecked",
+        "GUID": "{351F7339-E698-4A34-8007-E7707B8F2990}"
+       },
+       {
+        "Id": "1564979737",
+        "Name": "VSS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\VSS_Checked",
+        "GUID": "{30BB0563-229F-4DF8-A02F-089B0BF4D7F3}"
+       },
+       {
+        "Id": "1998357529",
+        "Name": "Default_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\Default_NotChecked",
+        "GUID": "{59EF8CFE-A474-4B75-9B1C-28CF72E0021D}"
+       },
+       {
+        "Id": "2033501439",
+        "Name": "LS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\LS_NotChecked",
+        "GUID": "{A4D3176E-7765-4094-94A4-65C74B1E3D6B}"
+       },
+       {
+        "Id": "2249676422",
+        "Name": "MS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\MS_NotChecked",
+        "GUID": "{C94E3842-2677-4697-8DAE-2CB3D23ACDDF}"
+       },
+       {
+        "Id": "2366001860",
+        "Name": "LS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\LS_Checked",
+        "GUID": "{784B85D9-84D9-48CC-A984-DC85AF2FB2EE}"
+       },
+       {
+        "Id": "2618201234",
+        "Name": "Default_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\Default_Checked",
+        "GUID": "{0E108A73-794E-41D9-B1E5-51D24B5A7378}"
+       },
+       {
+        "Id": "2857123331",
+        "Name": "MS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\MS_Checked",
+        "GUID": "{32528F82-0E4C-4009-A899-64E41BB796E4}"
+       },
+       {
+        "Id": "3073952096",
+        "Name": "VSS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\VSS_NotChecked",
+        "GUID": "{713D91D1-E11D-49BB-8D9C-D18FDA306B56}"
+       },
+       {
+        "Id": "3092067370",
+        "Name": "CT_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\CT_Checked",
+        "GUID": "{2013D2DA-E0CA-48C6-AB8C-AEE38ACFDE86}"
+       },
+       {
+        "Id": "3357802622",
+        "Name": "Carpet_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\Carpet_Checked",
+        "GUID": "{472E8F63-0225-410D-8795-C00C434C7D40}"
+       },
+       {
+        "Id": "3468833026",
+        "Name": "LA_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\LA_Checked",
+        "GUID": "{0637F998-2EA4-4210-889C-BE6AAB7F2B5B}"
+       },
+       {
+        "Id": "3547507741",
+        "Name": "Concrete_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\Concrete_NotChecked",
+        "GUID": "{92A607F7-1607-471B-9E3C-419B930C9D57}"
+       },
+       {
+        "Id": "3612480955",
+        "Name": "MAS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\MAS_NotChecked",
+        "GUID": "{55F5937F-CC59-45A9-8DD3-614AE703E592}"
+       },
+       {
+        "Id": "3708900630",
+        "Name": "Concrete_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\Concrete_Checked",
+        "GUID": "{23AD7087-F0D1-43A8-877F-BFDADF65D83C}"
+       },
+       {
+        "Id": "3763739957",
+        "Name": "MA_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\MA_Checked",
+        "GUID": "{458DFC62-6ABD-4959-B21A-D58D6C6F9D82}"
+       },
+       {
+        "Id": "3883336016",
+        "Name": "MAS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\MAS_Checked",
+        "GUID": "{8693D697-B540-437C-A488-AFE41003BBDC}"
+       },
+       {
+        "Id": "3934324673",
+        "Name": "CT_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\CT_NotChecked",
+        "GUID": "{ACAFF1D0-FB37-4583-862A-023910273D9B}"
+       },
+       {
+        "Id": "3990053621",
+        "Name": "MR_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\MR_NotChecked",
+        "GUID": "{8BDF7D38-29EC-4298-A23D-341A8FE346B8}"
+       },
+       {
+        "Id": "4001707100",
+        "Name": "SS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Selection\\SS_NotChecked",
+        "GUID": "{AA485A90-432C-4EF6-8C75-DAFDFC022CB6}"
+       }
+      ]
      }
     ],
     "AcousticTextures": [
@@ -675,6 +869,6 @@
     ]
    }
   ],
-  "FileHash": "{36509A80-855F-0DCC-0898-A62673B1BAC0}"
+  "FileHash": "{FF65D47E-7456-F101-AA09-49E632886437}"
  }
 }

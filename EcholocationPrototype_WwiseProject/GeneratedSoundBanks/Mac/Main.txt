@@ -5,11 +5,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1228161944	Play_LesserAbsorbObstaclesActivated			\Default Work Unit\Obstacles\Play_LesserAbsorbObstaclesActivated	
 	1318905049	Stop_Landmark_BetterClock			\Default Work Unit\Landmarks\Stop_Landmark_BetterClock	
 	1553219250	Play_Collision			\Default Work Unit\PlayerSounds\Play_Collision	
-	1578180715	Play_PA_Settings_Opened			\Default Work Unit\Play_PA_Settings_Opened	
 	1789780216	Stop_Environment_HVAC			\Default Work Unit\Landmarks\Stop_Environment_HVAC	
 	1839782124	Play_MainChamberNotification			\Default Work Unit\SpawnPositions\Play_MainChamberNotification	
 	1850732987	Play_North			\Default Work Unit\Compass\Play_North	
-	1884537203	Play_PA_Settings_Confirmed			\Default Work Unit\Play_PA_Settings_Confirmed	
 	1921606916	Play_MegaReflectObstaclesActivated			\Default Work Unit\Obstacles\Play_MegaReflectObstaclesActivated	
 	2173823837	Play_ObstacleEmitter			\Default Work Unit\Obstacles\Play_ObstacleEmitter	
 	2245461924	Play_NoObstaclesActivated			\Default Work Unit\Obstacles\Play_NoObstaclesActivated	
@@ -64,14 +62,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	398837345	MegaAbsorbObstaclesActivated	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AF\{AFF124AE-F3F6-209A-8BCC-44DC075A8050}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MegaAbsorbObstaclesActivated		165984
 	442760386	NoObstaclesActivated	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C6\{C6A72F12-C434-9A4D-8CD8-A0EEDEE421B6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\NoObstaclesActivated		95712
 	556476513	Collision	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\03\{0339539D-B4A4-DE01-61A1-86982B9D2C67}.wem		\Actor-Mixer Hierarchy\Player\Collision		68304
-	641815117	PA_Settings_Opened	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\6E\{6E26DD8D-EA58-705B-9A5E-0ECA428612E1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\PA_Settings_Opened		45280
 	696266850	Footstep04	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C3\{C3962221-8A60-AA0C-9E32-DC6D2FE66A21}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep04		7084
 	701429478	LesserAbsorbObstaclesActivated	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\3C\{3C946C75-9138-A306-9BA6-3FBDCB2EE49D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\LesserAbsorbObstaclesActivated		167136
 	714290107	Footstep02	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\74\{74AB8055-2FDC-D746-E76E-46AFFC863E1D}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep02		9004
 	763360263	West	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\77\{77BCEC7E-7166-25C1-8049-D4CB783D5F34}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\West		247700
 	875313660	Footstep05	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\81\{811B7B63-2E63-C1F2-D7FD-4DF84D11343B}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep05		6800
 	897877778	Environment_HVAC	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\58\{58ED552F-28C9-4FD0-1A4C-384BD3F43DAE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment2\Landmarks\Environment_HVAC		976712
-	905814100	PA_Settings_Confirmed	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\F8\{F84ABC2B-7B33-D353-24F5-9903792540E1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\PA_Settings_Confirmed		53728
 	908350307	HumanClick	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\55\{5562B044-4AE1-DBB0-6252-35B8AB3ECED3}.wem		\Actor-Mixer Hierarchy\Player\Clicks\HumanClick		40784
 	932884221	MainChamberNotification	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\47\{4720930C-DA88-B7E4-80D6-B59F98AF82EA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MainChamberNotification		85344
 	964506797	South	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\4A\{4A5A8D4D-D7B1-CF26-92E3-7D12C96F1B28}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\South		202524

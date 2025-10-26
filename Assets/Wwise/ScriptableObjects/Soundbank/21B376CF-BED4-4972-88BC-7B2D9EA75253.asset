@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
-  m_Name: 0D5C929F-43CA-4DDA-B704-F9428D7185E5
+  m_Script: {fileID: 11500000, guid: c4c6b7ad0a64ad94ba36ec55b99e67ce, type: 3}
+  m_Name: 21B376CF-BED4-4972-88BC-7B2D9EA75253
   m_EditorClassIdentifier: 
-  objectName: Play_PA_Settings_Confirmed
-  id: 1884537203
-  guid: 0D5C929F-43CA-4DDA-B704-F9428D7185E5
-  IsInUserDefinedSoundBank: 1
+  objectName: UI_Soundbank
+  id: 2454045173
+  guid: 21B376CF-BED4-4972-88BC-7B2D9EA75253

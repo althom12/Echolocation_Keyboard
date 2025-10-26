@@ -17942,6 +17942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1208838406}
+  - component: {fileID: 1208838407}
   m_Layer: 0
   m_Name: WwiseManager
   m_TagString: Untagged
@@ -17964,6 +17965,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1873197148}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1208838407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208838405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ca10434130c5842a1ef8505f4d24b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
+  stateIdle:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e5c067bc4ece4f247a40c81c7943d803, type: 2}
+  stateWindowOpening:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ac300f3213044034390d2d19a09811aa, type: 2}
+  m_CurrentAudioState: 0
 --- !u!43 &1243387785
 Mesh:
   m_ObjectHideFlags: 0
@@ -19799,12 +19826,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnMenuOpenFromGame:
     idInternal: 0
-    valueGuidInternal: 
+    valueGuidInternal: []
     WwiseObjectReference: {fileID: 11400000, guid: eb359e72bc6fa4e4f9bb72c346ad9dc2, type: 2}
+    m_playingId: 0
   OnMenuCloseToGame:
     idInternal: 0
-    valueGuidInternal: 
+    valueGuidInternal: []
     WwiseObjectReference: {fileID: 0}
+    m_playingId: 0
 --- !u!43 &1390623099
 Mesh:
   m_ObjectHideFlags: 0
@@ -24264,6 +24293,8 @@ GameObject:
   - component: {fileID: 1717186880}
   - component: {fileID: 1717186879}
   - component: {fileID: 1717186882}
+  - component: {fileID: 1717186884}
+  - component: {fileID: 1717186883}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -24361,6 +24392,55 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1717186883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717186878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9e37c5f16cf4d4388e2569ad72aa28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9d38f63802fb4d74dbe7d5fafb5d5c1b, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &1717186884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717186878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a81759a695b684aade60d5aa3a6bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &1722076559
 GameObject:
   m_ObjectHideFlags: 0
@@ -44243,6 +44323,7 @@ GameObject:
   - component: {fileID: 1878910553035586491}
   - component: {fileID: 7664204266056555437}
   - component: {fileID: 7932841210277701707}
+  - component: {fileID: 7932841210277701708}
   m_Layer: 5
   m_Name: DefaultNone
   m_TagString: Untagged
@@ -62959,8 +63040,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnWindowOpen:
     idInternal: 0
-    valueGuidInternal: 
+    valueGuidInternal: []
     WwiseObjectReference: {fileID: 11400000, guid: a8e2443fcb493af4c82faf6a7a491273, type: 2}
+    m_playingId: 0
 --- !u!114 &5717961692067262097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70504,14 +70586,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ElementIndex: 0
+  _hasBeenSelected: 0
   OnStandardFocus:
     idInternal: 0
-    valueGuidInternal: 
+    valueGuidInternal: []
     WwiseObjectReference: {fileID: 0}
+    m_playingId: 0
   OnReturnFocus:
     idInternal: 0
-    valueGuidInternal: 
+    valueGuidInternal: []
     WwiseObjectReference: {fileID: 11400000, guid: a8e2443fcb493af4c82faf6a7a491273, type: 2}
+    m_playingId: 0
 --- !u!33 &7446304815519235544
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -72689,6 +72774,7 @@ GameObject:
   - component: {fileID: 2577126984566100155}
   - component: {fileID: 3470790763686025552}
   - component: {fileID: 1156503370493308794}
+  - component: {fileID: 7940580343003329840}
   m_Layer: 5
   m_Name: ObstaclesAlternative
   m_TagString: Untagged
@@ -72899,6 +72985,35 @@ MonoBehaviour:
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: -1
   soundIndex: 0
+--- !u!114 &7932841210277701708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942630346208403287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4df4da7da604c4b8e88d5289083dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
+  selectionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d83b732a45066014f83929a28cbf66ea, type: 2}
+  checkedSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6a11ee4475cbc2040b1b2976de106426, type: 2}
+  notCheckedSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4bb269f444b48394b8bb3e5cd84e8146, type: 2}
 --- !u!222 &7939230492617217782
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -72915,6 +73030,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7858016258583101904}
   m_CullTransparentMesh: 1
+--- !u!114 &7940580343003329840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7858016258583101904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f2ecea62e0983642b27ad0ad26af647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstSelectedElement: {fileID: 1942630346208403287}
+  windowOpenEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 09632bf127a8ec549965d095b043cbd2, type: 2}
 --- !u!1 &7946387750988952045
 GameObject:
   m_ObjectHideFlags: 0
@@ -82506,14 +82638,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ElementIndex: 0
+  _hasBeenSelected: 0
   OnStandardFocus:
     idInternal: 0
-    valueGuidInternal: 
+    valueGuidInternal: []
     WwiseObjectReference: {fileID: 0}
+    m_playingId: 0
   OnReturnFocus:
     idInternal: 0
-    valueGuidInternal: 
+    valueGuidInternal: []
     WwiseObjectReference: {fileID: 11400000, guid: 1cb54d72d66ef1941bcbedb8540a0404, type: 2}
+    m_playingId: 0
 --- !u!114 &9120187933150954451
 MonoBehaviour:
   m_ObjectHideFlags: 0

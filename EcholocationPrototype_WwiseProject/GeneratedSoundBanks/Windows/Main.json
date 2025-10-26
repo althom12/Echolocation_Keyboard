@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{40E05790-A7E7-2731-70B8-764B1CBFFDF8}",
+    "Hash": "{CA0DC036-5970-EC9D-7ADC-254FE73BB1F6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -128,14 +128,6 @@
       "CachePath": "03/{0339539D-B4A4-DE01-61A1-86982B9D2C67}.wem"
      },
      {
-      "Id": "641815117",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PA_Settings_Opened.wav",
-      "CachePath": "6E/{6E26DD8D-EA58-705B-9A5E-0ECA428612E1}.wem"
-     },
-     {
       "Id": "685116775",
       "Language": "SFX",
       "Streaming": "false",
@@ -190,14 +182,6 @@
       "Location": "Memory",
       "ShortName": "Environment_HVAC.wav",
       "CachePath": "58/{58ED552F-28C9-4FD0-1A4C-384BD3F43DAE}.wem"
-     },
-     {
-      "Id": "905814100",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PA_Settings_Confirmed.wav",
-      "CachePath": "F8/{F84ABC2B-7B33-D353-24F5-9903792540E1}.wem"
      },
      {
       "Id": "908350307",
@@ -645,34 +629,6 @@
       }
      },
      {
-      "Id": "1884537203",
-      "Name": "Play_PA_Settings_Confirmed",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_PA_Settings_Confirmed",
-      "GUID": "{0D5C929F-43CA-4DDA-B704-F9428D7185E5}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.838",
-      "DurationMax": "0.838",
-      "MediaRefs": [
-       {
-        "Id": "905814100"
-       }
-      ]
-     },
-     {
-      "Id": "1578180715",
-      "Name": "Play_PA_Settings_Opened",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_PA_Settings_Opened",
-      "GUID": "{B2F0387E-682B-4EFA-9B96-143B776BB4F7}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.706",
-      "DurationMax": "0.706",
-      "MediaRefs": [
-       {
-        "Id": "641815117"
-       }
-      ]
-     },
-     {
       "Id": "3187449017",
       "Name": "Play_South",
       "ObjectPath": "\\Events\\Default Work Unit\\Compass\\Play_South",
@@ -881,6 +837,6 @@
     ]
    }
   ],
-  "FileHash": "{72992743-D1FC-FD56-3901-72265F40048A}"
+  "FileHash": "{E29ECB54-2787-553E-50B5-2085D92B8102}"
  }
 }

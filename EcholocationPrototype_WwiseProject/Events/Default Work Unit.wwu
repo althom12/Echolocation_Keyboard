@@ -3,28 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_PA_Settings_Confirmed" ID="{0D5C929F-43CA-4DDA-B704-F9428D7185E5}">
-					<ChildrenList>
-						<Action Name="" ID="{EFED656B-37C2-4CCC-B700-7198666B1104}" ShortID="1069255591">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PA_Settings_Confirmed" ID="{DFFECF06-9ADD-49FE-A748-E73D3858043F}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_PA_Settings_Opened" ID="{B2F0387E-682B-4EFA-9B96-143B776BB4F7}">
-					<ChildrenList>
-						<Action Name="" ID="{10CB615D-2E94-47D4-A19D-02E9856465A0}" ShortID="660247360">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PA_Settings_Opened" ID="{3770E24B-7963-4A4F-8105-9FCC7BF1A3FB}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Tutorial" ID="{6AAD2BF4-A9BF-438F-8FCB-732E892B384D}" ShortID="392182808">
 					<ChildrenList>
 						<Event Name="Play_01_TheEcholocationClick2_EQ" ID="{E81804F5-ECB3-41D8-8D19-53C762C4A06D}">
@@ -561,6 +539,43 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="UI" ID="{93DCBD77-3B5B-4C8F-9996-5C7F4A5157BD}" ShortID="857252911">
+					<ChildrenList>
+						<Event Name="Event_UI_Select" ID="{C75AB7A1-18D6-40FC-BB5B-DF65EE160967}">
+							<ChildrenList>
+								<Action Name="" ID="{09923721-31D0-442B-B135-11D6F8308486}" ShortID="847224913">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DABC399F-058B-4D31-9E22-D78902F6DE00}" ShortID="166434560">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SS_UI_Selection" ID="{8BC0566B-E007-4D71-B415-A4BEDB40FDFA}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_ObstaclesPropertiesPage" ID="{17D44698-563D-417B-9ED7-18E813209BA6}">
+					<ChildrenList>
+						<Action Name="" ID="{22F65E1E-49E2-4D7A-94B0-5306077D0496}" ShortID="1057095135">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ObstaclesPropertiesPage" ID="{7FC1F985-BEEC-4E30-854A-E7A2B515725F}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

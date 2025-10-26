@@ -124,6 +124,8 @@ public class MenuNavigationManager : MonoBehaviour
             Time.timeScale = 0f;
             _input.Player.Disable();
         }
+
+
     }
 
     /// <summary>
@@ -169,6 +171,8 @@ public class MenuNavigationManager : MonoBehaviour
             handler.enabled = false;
             StartCoroutine(EnableSubHandlerAfterFrame(handler)); // Now references the function below
         }
+
+
     }
 
     // --- COROUTINE FUNCTION RE-INSERTED HERE (Fixes CS0103) ---

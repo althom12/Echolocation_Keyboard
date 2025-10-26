@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
-  m_Name: B2F0387E-682B-4EFA-9B96-143B776BB4F7
+  m_Name: C75AB7A1-18D6-40FC-BB5B-DF65EE160967
   m_EditorClassIdentifier: 
-  objectName: Play_PA_Settings_Opened
-  id: 1578180715
-  guid: B2F0387E-682B-4EFA-9B96-143B776BB4F7
+  objectName: Event_UI_Select
+  id: 1039604199
+  guid: C75AB7A1-18D6-40FC-BB5B-DF65EE160967
   IsInUserDefinedSoundBank: 1

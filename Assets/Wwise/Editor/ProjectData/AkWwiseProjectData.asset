@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7b608fe74c76ed4da6fc102f3ae55110
     GuidInternal: 
-    m_lastTime: -8584402302833293901
+    m_lastTime: -8584401255081945578
     List:
     - name: Ambisonic_Main_Mix
       guid: b40c653b9dd74a488330a92f518af95c
@@ -490,9 +490,9 @@ MonoBehaviour:
         ObjectType: 1
         guid: 2189f69ecfba384989c99ba749ecdd53
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\StereoVerb
-    - name: UI_Dialogue
+    - name: UI_Bus
       guid: bf9ef26b0da04b4f804e755bd899fbd5
-      id: 95799204
+      id: 3247222208
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -503,10 +503,50 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: UI_Dialogue
+      - ElementName: UI_Bus
         ObjectType: 2
         guid: bf9ef26b0da04b4f804e755bd899fbd5
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UI_Dialogue
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UI_Bus
+    - name: UI_Selection_Bus
+      guid: afc02193e58d7d46b2600f31a914e322
+      id: 1350803667
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7b608fe74c76ed4da6fc102f3ae55110
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: UI_Bus
+        ObjectType: 2
+        guid: bf9ef26b0da04b4f804e755bd899fbd5
+      - ElementName: UI_Selection_Bus
+        ObjectType: 2
+        guid: afc02193e58d7d46b2600f31a914e322
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UI_Bus\UI_Selection_Bus
+    - name: UI_Window_Bus
+      guid: a9fa820cd479e04290e1c1aafba16b17
+      id: 1991884269
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7b608fe74c76ed4da6fc102f3ae55110
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: UI_Bus
+        ObjectType: 2
+        guid: bf9ef26b0da04b4f804e755bd899fbd5
+      - ElementName: UI_Window_Bus
+        ObjectType: 2
+        guid: a9fa820cd479e04290e1c1aafba16b17
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UI_Bus\UI_Window_Bus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -519,7 +559,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584402302833268815
+    m_lastTime: -8584401207047757066
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -563,7 +603,7 @@ MonoBehaviour:
         ObjectType: 7
         guid: cd27296166b07348a5a89e147fbeb101
       Path: SoundBanks\Default Work Unit\ObstaclesAdvanced
-    - name: UI_SOundbank
+    - name: UI_Soundbank
       guid: cf76b321d4be724988bc7b2d9ea75253
       id: 2454045173
       PathAndIcons:
@@ -573,10 +613,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 85233671dd39aa41ae29cacfb165c806
-      - ElementName: UI_SOundbank
+      - ElementName: UI_Soundbank
         ObjectType: 7
         guid: cf76b321d4be724988bc7b2d9ea75253
-      Path: SoundBanks\Default Work Unit\UI_SOundbank
+      Path: SoundBanks\Default Work Unit\UI_Soundbank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -589,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584402779788431260
+    m_lastTime: -8584401207047772102
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -608,6 +648,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Event_UI_Select
+      guid: a1b75ac7d618fc40bb5bdf65ee160967
+      id: 1039604199
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: UI
+        ObjectType: 4
+        guid: 77bddc935b3b8f4c99965c7f4a5157bd
+      - ElementName: Event_UI_Select
+        ObjectType: 3
+        guid: a1b75ac7d618fc40bb5bdf65ee160967
+      Path: Events\Default Work Unit\UI\Event_UI_Select
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Landmarks
       guid: 749801bade2f8946aabd24f180b82ded
       id: 1061412920
@@ -1382,9 +1442,9 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 2.441093
       minDuration: 2.441093
-    - name: Play_PA_Settings_Confirmed
-      guid: 9f925c0dca43da4db704f9428d7185e5
-      id: 1884537203
+    - name: Play_ObstaclesPropertiesPage
+      guid: 9846d4173d567b419ed718e813209ba6
+      id: 3953798054
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1392,30 +1452,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Play_PA_Settings_Confirmed
+      - ElementName: Play_ObstaclesPropertiesPage
         ObjectType: 3
-        guid: 9f925c0dca43da4db704f9428d7185e5
-      Path: Events\Default Work Unit\Play_PA_Settings_Confirmed
+        guid: 9846d4173d567b419ed718e813209ba6
+      Path: Events\Default Work Unit\Play_ObstaclesPropertiesPage
       maxAttenuation: 0
-      maxDuration: 0.838
-      minDuration: 0.838
-    - name: Play_PA_Settings_Opened
-      guid: 7e38f0b22b68fa4e9b96143b776bb4f7
-      id: 1578180715
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Play_PA_Settings_Opened
-        ObjectType: 3
-        guid: 7e38f0b22b68fa4e9b96143b776bb4f7
-      Path: Events\Default Work Unit\Play_PA_Settings_Opened
-      maxAttenuation: 0
-      maxDuration: 0.706
-      minDuration: 0.706
+      maxDuration: 1.9264619
+      minDuration: 1.9264619
     - name: Play_South
       guid: c9b828360da6cb4bba9da7f1a4a00ea1
       id: 3187449017
@@ -1627,6 +1670,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: UI
+      guid: 77bddc935b3b8f4c99965c7f4a5157bd
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: UI
+        ObjectType: 4
+        guid: 77bddc935b3b8f4c99965c7f4a5157bd
+      Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1723,8 +1783,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c986ff14cb5b9d4aa67cfbb724946620
     GuidInternal: 
-    m_lastTime: -8584424684189015458
-    List: []
+    m_lastTime: -8584401243042862900
+    List:
+    - name: UI_Audio_State
+      guid: 2dead651089f664ba5e6b6c2475a0db4
+      id: 1875554370
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c986ff14cb5b9d4aa67cfbb724946620
+      - ElementName: UI_Audio_State
+        ObjectType: 9
+        guid: 2dead651089f664ba5e6b6c2475a0db4
+      Path: States\Default Work Unit\UI_Audio_State
+      values:
+      - name: Idle
+        guid: be0460a08f461e42a00ef3d0e974345f
+        id: 1874288895
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c986ff14cb5b9d4aa67cfbb724946620
+        - ElementName: UI_Audio_State
+          ObjectType: 9
+          guid: 2dead651089f664ba5e6b6c2475a0db4
+        - ElementName: Idle
+          ObjectType: 8
+          guid: be0460a08f461e42a00ef3d0e974345f
+      - name: None
+        guid: 874416f3e2a01249972fd4e47cc4588f
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c986ff14cb5b9d4aa67cfbb724946620
+        - ElementName: UI_Audio_State
+          ObjectType: 9
+          guid: 2dead651089f664ba5e6b6c2475a0db4
+        - ElementName: None
+          ObjectType: 8
+          guid: 874416f3e2a01249972fd4e47cc4588f
+      - name: Window_Opening
+        guid: 6167f38abcf712488a0d9ee83770b819
+        id: 1592121920
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c986ff14cb5b9d4aa67cfbb724946620
+        - ElementName: UI_Audio_State
+          ObjectType: 9
+          guid: 2dead651089f664ba5e6b6c2475a0db4
+        - ElementName: Window_Opening
+          ObjectType: 8
+          guid: 6167f38abcf712488a0d9ee83770b819
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -1737,8 +1863,410 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 70154adbe1b6c64bb555beead6d8d31f
     GuidInternal: 
-    m_lastTime: -8584424684189015458
-    List: []
+    m_lastTime: -8584401214316158560
+    List:
+    - name: SG_UI_Selection
+      guid: f3c8e52536033f458ef30c0314df9d06
+      id: 1843346691
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 70154adbe1b6c64bb555beead6d8d31f
+      - ElementName: SG_UI_Selection
+        ObjectType: 11
+        guid: f3c8e52536033f458ef30c0314df9d06
+      Path: Switches\Default Work Unit\SG_UI_Selection
+      values:
+      - name: Carpet_Checked
+        guid: 638f2e4725020d418795c00c434c7d40
+        id: 3357802622
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: Carpet_Checked
+          ObjectType: 10
+          guid: 638f2e4725020d418795c00c434c7d40
+      - name: Carpet_NotChecked
+        guid: d853ec9baad63540a96b0fc0726e78f8
+        id: 702030869
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: Carpet_NotChecked
+          ObjectType: 10
+          guid: d853ec9baad63540a96b0fc0726e78f8
+      - name: Concrete_Checked
+        guid: 8770ad23d1f0a843877fbfdadf65d83c
+        id: 3708900630
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: Concrete_Checked
+          ObjectType: 10
+          guid: 8770ad23d1f0a843877fbfdadf65d83c
+      - name: Concrete_NotChecked
+        guid: f707a69207161b479e3c419b930c9d57
+        id: 3547507741
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: Concrete_NotChecked
+          ObjectType: 10
+          guid: f707a69207161b479e3c419b930c9d57
+      - name: CT_Checked
+        guid: dad21320cae0c648ab8caee38acfde86
+        id: 3092067370
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: CT_Checked
+          ObjectType: 10
+          guid: dad21320cae0c648ab8caee38acfde86
+      - name: CT_NotChecked
+        guid: d0f1afac37fb8345862a023910273d9b
+        id: 3934324673
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: CT_NotChecked
+          ObjectType: 10
+          guid: d0f1afac37fb8345862a023910273d9b
+      - name: Default_Checked
+        guid: 738a100e4e79d941b1e551d24b5a7378
+        id: 2618201234
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: Default_Checked
+          ObjectType: 10
+          guid: 738a100e4e79d941b1e551d24b5a7378
+      - name: Default_NotChecked
+        guid: fe8cef5974a4754b9b1c28cf72e0021d
+        id: 1998357529
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: Default_NotChecked
+          ObjectType: 10
+          guid: fe8cef5974a4754b9b1c28cf72e0021d
+      - name: LA_Checked
+        guid: 98f93706a42e1042889cbe6aab7f2b5b
+        id: 3468833026
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: LA_Checked
+          ObjectType: 10
+          guid: 98f93706a42e1042889cbe6aab7f2b5b
+      - name: LA_NotChecked
+        guid: 51dda84943f7e44792ac8d70ab730518
+        id: 106420105
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: LA_NotChecked
+          ObjectType: 10
+          guid: 51dda84943f7e44792ac8d70ab730518
+      - name: LS_Checked
+        guid: d9854b78d984cc48a984dc85af2fb2ee
+        id: 2366001860
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: LS_Checked
+          ObjectType: 10
+          guid: d9854b78d984cc48a984dc85af2fb2ee
+      - name: LS_NotChecked
+        guid: 6e17d3a46577944094a465c74b1e3d6b
+        id: 2033501439
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: LS_NotChecked
+          ObjectType: 10
+          guid: 6e17d3a46577944094a465c74b1e3d6b
+      - name: MA_Checked
+        guid: 62fc8d45bd6a5949b21ad58d6c6f9d82
+        id: 3763739957
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: MA_Checked
+          ObjectType: 10
+          guid: 62fc8d45bd6a5949b21ad58d6c6f9d82
+      - name: MA_NotChecked
+        guid: 39731f3598e6344a8007e7707b8f2990
+        id: 1197290428
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: MA_NotChecked
+          ObjectType: 10
+          guid: 39731f3598e6344a8007e7707b8f2990
+      - name: MAS_Checked
+        guid: 97d6938640b57c43a488afe41003bbdc
+        id: 3883336016
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: MAS_Checked
+          ObjectType: 10
+          guid: 97d6938640b57c43a488afe41003bbdc
+      - name: MAS_NotChecked
+        guid: 7f93f55559cca9458dd3614ae703e592
+        id: 3612480955
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: MAS_NotChecked
+          ObjectType: 10
+          guid: 7f93f55559cca9458dd3614ae703e592
+      - name: MR_Checked
+        guid: d80b276b4f0d294cb19a4e6775085ba6
+        id: 234490334
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: MR_Checked
+          ObjectType: 10
+          guid: d80b276b4f0d294cb19a4e6775085ba6
+      - name: MR_NotChecked
+        guid: 387ddf8bec299842a23d341a8fe346b8
+        id: 3990053621
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: MR_NotChecked
+          ObjectType: 10
+          guid: 387ddf8bec299842a23d341a8fe346b8
+      - name: MS_Checked
+        guid: 828f52324c0e0940a89964e41bb796e4
+        id: 2857123331
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: MS_Checked
+          ObjectType: 10
+          guid: 828f52324c0e0940a89964e41bb796e4
+      - name: MS_NotChecked
+        guid: 42384ec9772697468dae2cb3d23acddf
+        id: 2249676422
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: MS_NotChecked
+          ObjectType: 10
+          guid: 42384ec9772697468dae2cb3d23acddf
+      - name: SS_Checked
+        guid: 1d86683a8f843641a5dca1afffaf2253
+        id: 1048812117
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: SS_Checked
+          ObjectType: 10
+          guid: 1d86683a8f843641a5dca1afffaf2253
+      - name: SS_NotChecked
+        guid: 905a48aa2c43f64e8c75dafdfc022cb6
+        id: 4001707100
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: SS_NotChecked
+          ObjectType: 10
+          guid: 905a48aa2c43f64e8c75dafdfc022cb6
+      - name: VSS_Checked
+        guid: 6305bb309f22f84da02f089b0bf4d7f3
+        id: 1564979737
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: VSS_Checked
+          ObjectType: 10
+          guid: 6305bb309f22f84da02f089b0bf4d7f3
+      - name: VSS_NotChecked
+        guid: d1913d711de1bb498d9cd18fda306b56
+        id: 3073952096
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_Selection
+          ObjectType: 11
+          guid: f3c8e52536033f458ef30c0314df9d06
+        - ElementName: VSS_NotChecked
+          ObjectType: 10
+          guid: d1913d711de1bb498d9cd18fda306b56
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -1754,7 +2282,7 @@ MonoBehaviour:
     m_lastTime: -8584424684189015458
     List: []
   ExpandedFileSystemItemIds: 010000000200000003000000080000001f0000002200000023000000510000005400000055000000610000006200000063000000
-  ExpandedWaapiItemIds: 0100000002000000030000000500000006000000070000000d000000180000001b0000001c0000001f000000200000002100000022000000230000005100000054000000550000006100000062000000
+  ExpandedWaapiItemIds: 010000000200000005000000060000000e0000000f00000010000000110000001200000018000000190000001a0000001b0000001c00000020000000210000002300000051000000540000005500000061000000620000007f01000080010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
