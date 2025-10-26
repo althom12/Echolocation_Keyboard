@@ -642,6 +642,22 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_UI_Selection_Bus" ID="{07CEEBEE-7D81-4EB8-86EC-B187B409FFAF}">
+					<ChildrenList>
+						<Action Name="" ID="{025C6480-799F-4419-BAE4-732E47AA73F9}" ShortID="1067819554">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C7DF8922-8360-493F-B38E-5E8BF509B5FA}" ShortID="575701095"/>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

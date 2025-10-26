@@ -51,6 +51,27 @@
 						<Switch Name="PitchSlider" ID="{9B5F361B-B4BF-46B6-AD45-EEC1663BAE04}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="SG_UI_LandmarksSelections" ID="{706EC372-B501-444A-90BC-39AEC6A7A0E2}">
+					<ChildrenList>
+						<Switch Name="Landmarks_On_Checked" ID="{470A8929-901E-4A6E-935B-7221ACBEC591}"/>
+						<Switch Name="Landmarks_On_NotChecked" ID="{2D758859-3CC8-44A0-9915-5CF62611DF77}"/>
+						<Switch Name="Volume" ID="{9D22A5A6-02B6-42B4-B99A-A635741C8828}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SG_UI_AudioCrumbsSelections" ID="{021D7A51-E13C-49BF-A93B-3BBF2B0323AA}">
+					<ChildrenList>
+						<Switch Name="AudioCrumbs_On_Checked" ID="{430886AF-5CC5-4E75-8AE7-09173BEE7DFB}"/>
+						<Switch Name="AudioCrumbs_On_NotChecked" ID="{7FD5304D-6E32-4EC0-B342-41D46A256DD3}"/>
+						<Switch Name="AudioCrumbs_VolumeSlider" ID="{60C1EC7B-BA06-42BD-B6D2-224DE905BEF4}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SG_UI_FootstepsSelection" ID="{8ED89DF9-BF28-4058-A4C7-F2905BB47412}">
+					<ChildrenList>
+						<Switch Name="Footsteps_On_Checked" ID="{9B33E078-641A-4A3F-B0E9-211C878AF502}"/>
+						<Switch Name="Footsteps_On_NotChecked" ID="{61A3138C-D87F-4217-84F8-D744CA70F2E4}"/>
+						<Switch Name="Footsteps_VolumeSlider" ID="{47BC5BB8-80F6-4B91-B51D-515662C32417}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
