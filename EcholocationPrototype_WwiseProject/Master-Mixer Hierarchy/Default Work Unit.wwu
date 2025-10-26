@@ -204,7 +204,12 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</Bus>
-						<Bus Name="UI_Dialogue" ID="{6BF29EBF-A00D-4F4B-804E-755BD899FBD5}"/>
+						<Bus Name="UI_Bus" ID="{6BF29EBF-A00D-4F4B-804E-755BD899FBD5}">
+							<ChildrenList>
+								<Bus Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}"/>
+								<Bus Name="UI_Window_Bus" ID="{0C82FAA9-79D4-42E0-90E1-C1AAFBA16B17}"/>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">
