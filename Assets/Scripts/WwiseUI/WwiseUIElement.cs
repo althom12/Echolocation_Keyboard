@@ -24,7 +24,14 @@ public class WwiseUIElement : MonoBehaviour, ISelectHandler
     [Tooltip("Use this for sliders, buttons, or any element that always uses the same switch")]
     public AK.Wwise.Switch simpleSwitch;
 
+    [Header("Toggle Action Audio (Optional)")]
+    [Tooltip("Only for toggles - plays when value changes")]
+    public AK.Wwise.Event toggleActionEvent;
+    public AK.Wwise.Switch actionCheckedSwitch;
+    public AK.Wwise.Switch actionUncheckedSwitch;
+
     private Toggle myToggle;
+    private bool isCurrentlySelected = false;
 
     private void Awake()
     {
@@ -32,11 +39,41 @@ public class WwiseUIElement : MonoBehaviour, ISelectHandler
         myToggle = GetComponent<Toggle>();
     }
 
+    private void OnEnable()
+    {
+        // Subscribe to toggle value changes if this is a toggle
+        if (myToggle != null)
+        {
+            myToggle.onValueChanged.AddListener(OnToggleValueChanged);
+        }
+    }
+
+    private void OnDisable()
+    {
+        // Unsubscribe to prevent memory leaks
+        if (myToggle != null)
+        {
+            myToggle.onValueChanged.RemoveListener(OnToggleValueChanged);
+        }
+        isCurrentlySelected = false;
+    }
+
+    private void Update()
+    {
+        // Check if we're no longer the selected object
+        if (isCurrentlySelected && EventSystem.current.currentSelectedGameObject != this.gameObject)
+        {
+            isCurrentlySelected = false;
+        }
+    }
+
     /// <summary>
     /// Called by Unity's EventSystem when this element is selected.
     /// </summary>
     public void OnSelect(BaseEventData eventData)
     {
+        isCurrentlySelected = true;
+
         if (audioChannel == null || selectionEvent == null) return;
 
         // Determine which switch to use based on element type
@@ -53,6 +90,30 @@ public class WwiseUIElement : MonoBehaviour, ISelectHandler
         };
 
         // Raise the event through the audio channel
+        audioChannel.RaiseEvent(packet);
+    }
+
+    /// <summary>
+    /// Called when the toggle value changes.
+    /// Only plays audio if THIS toggle is currently selected (user-initiated).
+    /// </summary>
+    private void OnToggleValueChanged(bool isOn)
+    {
+        // Only play action audio if this toggle is currently selected
+        if (!isCurrentlySelected) return;
+
+        if (audioChannel == null || toggleActionEvent == null) return;
+
+        AK.Wwise.Switch actionSwitch = isOn ? actionCheckedSwitch : actionUncheckedSwitch;
+        if (actionSwitch == null) return;
+
+        AudioEventChannelSO.WwiseEventPacket packet = new AudioEventChannelSO.WwiseEventPacket
+        {
+            WwiseEvent = toggleActionEvent,
+            WwiseSwitch = actionSwitch,
+            Emitter = this.gameObject
+        };
+
         audioChannel.RaiseEvent(packet);
     }
 
