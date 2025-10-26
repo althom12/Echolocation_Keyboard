@@ -308,6 +308,58 @@
     ],
     "SwitchGroups": [
      {
+      "Id": "2201101635",
+      "Name": "SG_UI_LandmarksSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections",
+      "GUID": "{706EC372-B501-444A-90BC-39AEC6A7A0E2}",
+      "Switches": [
+       {
+        "Id": "36854881",
+        "Name": "Landmarks_On_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Landmarks_On_NotChecked",
+        "GUID": "{2D758859-3CC8-44A0-9915-5CF62611DF77}"
+       },
+       {
+        "Id": "2415836739",
+        "Name": "Volume",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Volume",
+        "GUID": "{9D22A5A6-02B6-42B4-B99A-A635741C8828}"
+       },
+       {
+        "Id": "3948044106",
+        "Name": "Landmarks_On_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Landmarks_On_Checked",
+        "GUID": "{470A8929-901E-4A6E-935B-7221ACBEC591}"
+       }
+      ]
+     },
+     {
+      "Id": "2355358046",
+      "Name": "SG_UI_AudioCrumbsSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections",
+      "GUID": "{021D7A51-E13C-49BF-A93B-3BBF2B0323AA}",
+      "Switches": [
+       {
+        "Id": "756878500",
+        "Name": "AudioCrumbs_On_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections\\AudioCrumbs_On_NotChecked",
+        "GUID": "{7FD5304D-6E32-4EC0-B342-41D46A256DD3}"
+       },
+       {
+        "Id": "1663067993",
+        "Name": "AudioCrumbs_VolumeSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections\\AudioCrumbs_VolumeSlider",
+        "GUID": "{60C1EC7B-BA06-42BD-B6D2-224DE905BEF4}"
+       },
+       {
+        "Id": "2929736493",
+        "Name": "AudioCrumbs_On_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections\\AudioCrumbs_On_Checked",
+        "GUID": "{430886AF-5CC5-4E75-8AE7-09173BEE7DFB}"
+       }
+      ]
+     },
+     {
       "Id": "3198805459",
       "Name": "SG_UI_MainSettings",
       "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings",
@@ -544,6 +596,38 @@
         "Name": "SS_NotChecked",
         "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\SS_NotChecked",
         "GUID": "{AA485A90-432C-4EF6-8C75-DAFDFC022CB6}"
+       }
+      ]
+     },
+     {
+      "Id": "4172979502",
+      "Name": "SG_UI_FootstepsSelection",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection",
+      "GUID": "{8ED89DF9-BF28-4058-A4C7-F2905BB47412}",
+      "Switches": [
+       {
+        "Id": "616568539",
+        "Name": "Footsteps_On_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_On_NotChecked",
+        "GUID": "{61A3138C-D87F-4217-84F8-D744CA70F2E4}"
+       },
+       {
+        "Id": "1668538352",
+        "Name": "Footsteps_On_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_On_Checked",
+        "GUID": "{9B33E078-641A-4A3F-B0E9-211C878AF502}"
+       },
+       {
+        "Id": "1792357110",
+        "Name": "Footsteps_PitchSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_PitchSlider",
+        "GUID": "{EF59F069-0F9B-4385-A6E4-DB559CDD3397}"
+       },
+       {
+        "Id": "3880767216",
+        "Name": "Footsteps_VolumeSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_VolumeSlider",
+        "GUID": "{47BC5BB8-80F6-4B91-B51D-515662C32417}"
        }
       ]
      }
@@ -1060,6 +1144,6 @@
     ]
    }
   ],
-  "FileHash": "{3B636EC2-4F1B-3044-C435-71E3BB4E9C5F}"
+  "FileHash": "{A49C85D2-1027-F4DE-967C-DD5DD1FE078D}"
  }
 }

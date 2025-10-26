@@ -559,7 +559,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584400970833628286
+    m_lastTime: -8584400907061573707
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -629,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584400970833638289
+    m_lastTime: -8584400907061584862
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -648,6 +648,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Event_UI_Select_AudioCrumbsProperties
+      guid: ce08cfa8e1612040a12659fa2a0acc6d
+      id: 3831725167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: UI
+        ObjectType: 4
+        guid: 77bddc935b3b8f4c99965c7f4a5157bd
+      - ElementName: Event_UI_Select_AudioCrumbsProperties
+        ObjectType: 3
+        guid: ce08cfa8e1612040a12659fa2a0acc6d
+      Path: Events\Default Work Unit\UI\Event_UI_Select_AudioCrumbsProperties
+      maxAttenuation: 0
+      maxDuration: 2.2661386
+      minDuration: 1.0161976
     - name: Event_UI_Select_EcholocatorClickProperties
       guid: c25ce0028e059143981378ff4343673d
       id: 2040130348
@@ -666,8 +686,48 @@ MonoBehaviour:
         guid: c25ce0028e059143981378ff4343673d
       Path: Events\Default Work Unit\UI\Event_UI_Select_EcholocatorClickProperties
       maxAttenuation: 0
-      maxDuration: 1.2336491
-      minDuration: 1.1128286
+      maxDuration: 0.93792903
+      minDuration: 0.93792903
+    - name: Event_UI_Select_FootstepsProperties
+      guid: eeebce07817db84e86ecb187b409ffaf
+      id: 2286525692
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: UI
+        ObjectType: 4
+        guid: 77bddc935b3b8f4c99965c7f4a5157bd
+      - ElementName: Event_UI_Select_FootstepsProperties
+        ObjectType: 3
+        guid: eeebce07817db84e86ecb187b409ffaf
+      Path: Events\Default Work Unit\UI\Event_UI_Select_FootstepsProperties
+      maxAttenuation: 0
+      maxDuration: 1.4728608
+      minDuration: 1.0161976
+    - name: Event_UI_Select_LandmarksProperties
+      guid: 3676954121f40340931366c0be573617
+      id: 1132456374
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: UI
+        ObjectType: 4
+        guid: 77bddc935b3b8f4c99965c7f4a5157bd
+      - ElementName: Event_UI_Select_LandmarksProperties
+        ObjectType: 3
+        guid: 3676954121f40340931366c0be573617
+      Path: Events\Default Work Unit\UI\Event_UI_Select_LandmarksProperties
+      maxAttenuation: 0
+      maxDuration: 2.0678341
+      minDuration: 1.0161976
     - name: Event_UI_Select_MainSettings
       guid: f997d04563687f49919e622c655db666
       id: 3833221374
@@ -686,11 +746,11 @@ MonoBehaviour:
         guid: f997d04563687f49919e622c655db666
       Path: Events\Default Work Unit\UI\Event_UI_Select_MainSettings
       maxAttenuation: 0
-      maxDuration: 3.3529375
-      minDuration: 1.8918583
-    - name: Event_UI_Select_Obstacles
+      maxDuration: 2.9084642
+      minDuration: 1.5720732
+    - name: Event_UI_Select_ObstaclesProperties
       guid: a1b75ac7d618fc40bb5bdf65ee160967
-      id: 1944309244
+      id: 2953026179
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -701,13 +761,13 @@ MonoBehaviour:
       - ElementName: UI
         ObjectType: 4
         guid: 77bddc935b3b8f4c99965c7f4a5157bd
-      - ElementName: Event_UI_Select_Obstacles
+      - ElementName: Event_UI_Select_ObstaclesProperties
         ObjectType: 3
         guid: a1b75ac7d618fc40bb5bdf65ee160967
-      Path: Events\Default Work Unit\UI\Event_UI_Select_Obstacles
+      Path: Events\Default Work Unit\UI\Event_UI_Select_ObstaclesProperties
       maxAttenuation: 0
-      maxDuration: 3.7057161
-      minDuration: 1.864092
+      maxDuration: 2.4417548
+      minDuration: 1.1381366
     - name: Landmarks
       guid: 749801bade2f8946aabd24f180b82ded
       id: 1061412920
@@ -1202,6 +1262,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.354329
       minDuration: 0.354329
+    - name: Play_AudioCrumbsPropertiesPage
+      guid: 6455cb18822b144fa891e080b0c52ca6
+      id: 847023378
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_AudioCrumbsPropertiesPage
+        ObjectType: 3
+        guid: 6455cb18822b144fa891e080b0c52ca6
+      Path: Events\Default Work Unit\Play_AudioCrumbsPropertiesPage
+      maxAttenuation: 0
+      maxDuration: 1.5203334
+      minDuration: 1.5203334
     - name: Play_Collision
       guid: 0b1c686b64604d4ba34d4dae0fa6d9d5
       id: 1553219250
@@ -1277,8 +1354,8 @@ MonoBehaviour:
         guid: f81a2f7dbf10114b929ed1f74fc8f5fb
       Path: Events\Default Work Unit\Play_EcholocatorClickPropertiesPage
       maxAttenuation: 0
-      maxDuration: 2.0970528
-      minDuration: 2.0970528
+      maxDuration: 1.7810922
+      minDuration: 1.7810922
     - name: Play_Environment_HVAC
       guid: ce2c7a4202fb184a88f811c4ee0dba45
       id: 3548695574
@@ -1319,6 +1396,23 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 0.06000256
       minDuration: 0.038023513
+    - name: Play_FootstsepsPropertiesPage
+      guid: 957dbb8c5f4bcc458025eaed0e3a0c29
+      id: 587051210
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_FootstsepsPropertiesPage
+        ObjectType: 3
+        guid: 957dbb8c5f4bcc458025eaed0e3a0c29
+      Path: Events\Default Work Unit\Play_FootstsepsPropertiesPage
+      maxAttenuation: 0
+      maxDuration: 1.2658737
+      minDuration: 1.2658737
     - name: Play_HumanClick
       guid: 237b4d0426e09a49806fb8be29cef09d
       id: 3559566211
@@ -1359,6 +1453,23 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
+    - name: Play_LandmarksPropertiesPage
+      guid: 43b3beb37241cf48941a15aa1f3fd859
+      id: 3772977147
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_LandmarksPropertiesPage
+        ObjectType: 3
+        guid: 43b3beb37241cf48941a15aa1f3fd859
+      Path: Events\Default Work Unit\Play_LandmarksPropertiesPage
+      maxAttenuation: 0
+      maxDuration: 1.4623435
+      minDuration: 1.4623435
     - name: Play_LesserAbsorbObstaclesActivated
       guid: d49a277ab4c58a4c89822d7cd1cd5e35
       id: 1228161944
@@ -1414,8 +1525,8 @@ MonoBehaviour:
         guid: e82ea9451757514b9ea90e4311820804
       Path: Events\Default Work Unit\Play_MainSettingsInitialOpen
       maxAttenuation: 0
-      maxDuration: 2.5069716
-      minDuration: 2.5069716
+      maxDuration: 1.7098714
+      minDuration: 1.7098714
     - name: Play_MegaAbsorbObstaclesActivated
       guid: dbfa265ab889f344ab14054faa33182c
       id: 872174764
@@ -1531,8 +1642,8 @@ MonoBehaviour:
         guid: 9846d4173d567b419ed718e813209ba6
       Path: Events\Default Work Unit\Play_ObstaclesPropertiesPage
       maxAttenuation: 0
-      maxDuration: 1.9264619
-      minDuration: 1.9264619
+      maxDuration: 1.5627207
+      minDuration: 1.5627207
     - name: Play_South
       guid: c9b828360da6cb4bba9da7f1a4a00ea1
       id: 3187449017
@@ -1937,8 +2048,74 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 70154adbe1b6c64bb555beead6d8d31f
     GuidInternal: 
-    m_lastTime: -8584400971654857880
+    m_lastTime: -8584400901741724013
     List:
+    - name: SG_UI_AudioCrumbsSelections
+      guid: 517a1d023ce1bf49a93b3bbf2b0323aa
+      id: 2355358046
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 70154adbe1b6c64bb555beead6d8d31f
+      - ElementName: SG_UI_AudioCrumbsSelections
+        ObjectType: 11
+        guid: 517a1d023ce1bf49a93b3bbf2b0323aa
+      Path: Switches\Default Work Unit\SG_UI_AudioCrumbsSelections
+      values:
+      - name: AudioCrumbs_On_Checked
+        guid: af860843c55c754e8ae709173bee7dfb
+        id: 2929736493
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_AudioCrumbsSelections
+          ObjectType: 11
+          guid: 517a1d023ce1bf49a93b3bbf2b0323aa
+        - ElementName: AudioCrumbs_On_Checked
+          ObjectType: 10
+          guid: af860843c55c754e8ae709173bee7dfb
+      - name: AudioCrumbs_On_NotChecked
+        guid: 4d30d57f326ec04eb34241d46a256dd3
+        id: 756878500
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_AudioCrumbsSelections
+          ObjectType: 11
+          guid: 517a1d023ce1bf49a93b3bbf2b0323aa
+        - ElementName: AudioCrumbs_On_NotChecked
+          ObjectType: 10
+          guid: 4d30d57f326ec04eb34241d46a256dd3
+      - name: AudioCrumbs_VolumeSlider
+        guid: 7becc16006babd42b6d2224de905bef4
+        id: 1663067993
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_AudioCrumbsSelections
+          ObjectType: 11
+          guid: 517a1d023ce1bf49a93b3bbf2b0323aa
+        - ElementName: AudioCrumbs_VolumeSlider
+          ObjectType: 10
+          guid: 7becc16006babd42b6d2224de905bef4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: SG_UI_EcholocatorClickSelections
       guid: 656a9aa3288df74392648aa54ca8b859
       id: 3225717335
@@ -1986,6 +2163,154 @@ MonoBehaviour:
         - ElementName: VolumeSlider
           ObjectType: 10
           guid: a5b9afc9fe1d044e8497dcdbd3a706b6
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: SG_UI_FootstepsSelection
+      guid: f99dd88e28bf5840a4c7f2905bb47412
+      id: 4172979502
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 70154adbe1b6c64bb555beead6d8d31f
+      - ElementName: SG_UI_FootstepsSelection
+        ObjectType: 11
+        guid: f99dd88e28bf5840a4c7f2905bb47412
+      Path: Switches\Default Work Unit\SG_UI_FootstepsSelection
+      values:
+      - name: Footsteps_On_Checked
+        guid: 78e0339b1a643f4ab0e9211c878af502
+        id: 1668538352
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_FootstepsSelection
+          ObjectType: 11
+          guid: f99dd88e28bf5840a4c7f2905bb47412
+        - ElementName: Footsteps_On_Checked
+          ObjectType: 10
+          guid: 78e0339b1a643f4ab0e9211c878af502
+      - name: Footsteps_On_NotChecked
+        guid: 8c13a3617fd8174284f8d744ca70f2e4
+        id: 616568539
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_FootstepsSelection
+          ObjectType: 11
+          guid: f99dd88e28bf5840a4c7f2905bb47412
+        - ElementName: Footsteps_On_NotChecked
+          ObjectType: 10
+          guid: 8c13a3617fd8174284f8d744ca70f2e4
+      - name: Footsteps_PitchSlider
+        guid: 69f059ef9b0f8543a6e4db559cdd3397
+        id: 1792357110
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_FootstepsSelection
+          ObjectType: 11
+          guid: f99dd88e28bf5840a4c7f2905bb47412
+        - ElementName: Footsteps_PitchSlider
+          ObjectType: 10
+          guid: 69f059ef9b0f8543a6e4db559cdd3397
+      - name: Footsteps_VolumeSlider
+        guid: b85bbc47f680914bb51d515662c32417
+        id: 3880767216
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_FootstepsSelection
+          ObjectType: 11
+          guid: f99dd88e28bf5840a4c7f2905bb47412
+        - ElementName: Footsteps_VolumeSlider
+          ObjectType: 10
+          guid: b85bbc47f680914bb51d515662c32417
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: SG_UI_LandmarksSelections
+      guid: 72c36e7001b54a4490bc39aec6a7a0e2
+      id: 2201101635
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 70154adbe1b6c64bb555beead6d8d31f
+      - ElementName: SG_UI_LandmarksSelections
+        ObjectType: 11
+        guid: 72c36e7001b54a4490bc39aec6a7a0e2
+      Path: Switches\Default Work Unit\SG_UI_LandmarksSelections
+      values:
+      - name: Landmarks_On_Checked
+        guid: 29890a471e906e4a935b7221acbec591
+        id: 3948044106
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_LandmarksSelections
+          ObjectType: 11
+          guid: 72c36e7001b54a4490bc39aec6a7a0e2
+        - ElementName: Landmarks_On_Checked
+          ObjectType: 10
+          guid: 29890a471e906e4a935b7221acbec591
+      - name: Landmarks_On_NotChecked
+        guid: 5988752dc83ca04499155cf62611df77
+        id: 36854881
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_LandmarksSelections
+          ObjectType: 11
+          guid: 72c36e7001b54a4490bc39aec6a7a0e2
+        - ElementName: Landmarks_On_NotChecked
+          ObjectType: 10
+          guid: 5988752dc83ca04499155cf62611df77
+      - name: Volume
+        guid: a6a5229db602b442b99aa635741c8828
+        id: 2415836739
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_LandmarksSelections
+          ObjectType: 11
+          guid: 72c36e7001b54a4490bc39aec6a7a0e2
+        - ElementName: Volume
+          ObjectType: 10
+          guid: a6a5229db602b442b99aa635741c8828
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2584,7 +2909,7 @@ MonoBehaviour:
     m_lastTime: -8584424684189015458
     List: []
   ExpandedFileSystemItemIds: 010000000200000003000000080000001f0000002200000023000000510000005400000055000000610000006200000063000000
-  ExpandedWaapiItemIds: 010000000200000005000000060000000700000010000000110000001200000018000000190000001a0000001b0000001c0000002000000021000000230000002c0000002d000000370000005100000054000000550000006100000062000000bc000000bd000000be000000f5000000f6000000fe0000007f01000080010000410200004202000043020000
+  ExpandedWaapiItemIds: 0100000002000000050000000600000007000000100000001400000018000000190000001a0000001b0000001c0000001e0000001f000000200000002100000022000000230000002c0000002d000000370000005100000054000000550000006100000062000000bc000000bd000000be000000f5000000f6000000fe00000061010000620100007f01000080010000410200004202000043020000ba020000bb020000bc020000bf020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -541,7 +541,7 @@
 				</Folder>
 				<Folder Name="UI" ID="{93DCBD77-3B5B-4C8F-9996-5C7F4A5157BD}" ShortID="857252911">
 					<ChildrenList>
-						<Event Name="Event_UI_Select_Obstacles" ID="{C75AB7A1-18D6-40FC-BB5B-DF65EE160967}">
+						<Event Name="Event_UI_Select_ObstaclesProperties" ID="{C75AB7A1-18D6-40FC-BB5B-DF65EE160967}">
 							<ChildrenList>
 								<Action Name="" ID="{09923721-31D0-442B-B135-11D6F8308486}" ShortID="847224913">
 									<PropertyList>
@@ -607,6 +607,72 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Event_UI_Select_FootstepsProperties" ID="{07CEEBEE-7D81-4EB8-86EC-B187B409FFAF}">
+							<ChildrenList>
+								<Action Name="" ID="{025C6480-799F-4419-BAE4-732E47AA73F9}" ShortID="1067819554">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C7DF8922-8360-493F-B38E-5E8BF509B5FA}" ShortID="575701095">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SC_UI_FootstepsSelections" ID="{BA00570B-1AF5-4BC4-B35E-619C7C64BB62}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Event_UI_Select_LandmarksProperties" ID="{41957636-F421-4003-9313-66C0BE573617}">
+							<ChildrenList>
+								<Action Name="" ID="{829EA6C4-A680-4AF5-96A0-F1739D950D8F}" ShortID="412989414">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9A6763DA-5EF1-468C-93D1-99B158CDF144}" ShortID="965296453">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SC_UI_Landmarks" ID="{F9BCF7D7-7745-4BBC-A4D5-A8A6EE74C1F1}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Event_UI_Select_AudioCrumbsProperties" ID="{A8CF08CE-61E1-4020-A126-59FA2A0ACC6D}">
+							<ChildrenList>
+								<Action Name="" ID="{F637BE02-0D6A-40C7-B50C-DDD8F8966A0D}" ShortID="633360845">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{19A84264-1198-4CA1-ACBA-E0D06540303C}" ShortID="187447846">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SC_UI_AudioCrumbsSelections" ID="{72B7BA24-F453-4E6B-AA29-4C573CC8CADA}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_ObstaclesPropertiesPage" ID="{17D44698-563D-417B-9ED7-18E813209BA6}">
@@ -642,20 +708,37 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_UI_Selection_Bus" ID="{07CEEBEE-7D81-4EB8-86EC-B187B409FFAF}">
+				<Event Name="Play_FootstsepsPropertiesPage" ID="{8CBB7D95-4B5F-45CC-8025-EAED0E3A0C29}">
 					<ChildrenList>
-						<Action Name="" ID="{025C6480-799F-4419-BAE4-732E47AA73F9}" ShortID="1067819554">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
+						<Action Name="" ID="{8AAA997A-6677-4931-8949-A812BDC75D9A}" ShortID="77492740">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+									<ObjectRef Name="FootstsepsPropertiesPage" ID="{9BB8CFC1-E8C9-4B11-A6E9-01439356FE9C}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{C7DF8922-8360-493F-B38E-5E8BF509B5FA}" ShortID="575701095"/>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LandmarksPropertiesPage" ID="{B3BEB343-4172-48CF-941A-15AA1F3FD859}">
+					<ChildrenList>
+						<Action Name="" ID="{23308231-55F5-4ADF-BA71-B39EF7D037A0}" ShortID="763129244">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LandmarksPropertiesPage" ID="{162C420D-9B5F-4AAB-871E-E6A87BDCE63C}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AudioCrumbsPropertiesPage" ID="{18CB5564-2B82-4F14-A891-E080B0C52CA6}">
+					<ChildrenList>
+						<Action Name="" ID="{2D9655EF-1FF6-4DCE-981B-575F891676B1}" ShortID="610366487">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AudioCrumbsPropertiesPage" ID="{513DF0E0-97B9-4A0D-8978-6BA96A812F5A}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

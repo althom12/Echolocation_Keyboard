@@ -10,301 +10,463 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{6A0D8E28-EF83-5AAF-8C0E-C6EC11D15058}",
+    "Hash": "{E8CC2162-D653-B53B-8A22-F14F6544C908}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
     "Media": [
      {
-      "Id": "76726961",
+      "Id": "1955219",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "40/{40ED4FF6-A7C5-446E-0311-6A5FB8D20EC7}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "7C/{7C6B71C6-26FB-B869-3EBF-FFA17D31AE23}.wem"
      },
      {
-      "Id": "80375455",
+      "Id": "6878239",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MainSettingsInitialOpen.wav",
-      "CachePath": "36/{368A5312-D4AE-C698-F365-9C5CA3B20FA5}.wem"
+      "ShortName": "Landmarks_AudioCrumbs.wav",
+      "CachePath": "8F/{8FC95DEC-1552-335A-CAE0-225AC7B6E19F}.wem"
      },
      {
-      "Id": "91310230",
+      "Id": "22721028",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "3C/{3C027B52-F99E-81E2-16B2-2FD37742BF15}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "49/{49F542B5-F4DB-0693-3F36-DD8B5675FC93}.wem"
      },
      {
-      "Id": "116445779",
+      "Id": "34630388",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "87/{87678BDD-39EE-F586-C529-F7AFEAB33355}.wem"
+      "ShortName": "Landmarks_AudioCrumbs.wav",
+      "CachePath": "96/{96E9A9CA-1ED5-D357-369F-EB8482848951}.wem"
      },
      {
-      "Id": "157375601",
+      "Id": "42878679",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "FSandLM.wav",
-      "CachePath": "B0/{B09E981C-FC9E-E46C-FD38-25911CD91D3C}.wem"
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "0E/{0E6BD364-13F6-4A5D-34E6-A1A4339DADF0}.wem"
      },
      {
-      "Id": "241675009",
+      "Id": "47991179",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "F2/{F25490EA-66B0-85B1-47FC-FBA0F35CB53D}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "25/{25A791F1-5D06-FA6F-D34B-3F1396D18049}.wem"
      },
      {
-      "Id": "270920287",
+      "Id": "107610551",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "84/{84DBB9C5-FFE0-24CD-6300-ACB8322F912A}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "B8/{B84255B5-5F9B-D261-1401-E01A9996EB50}.wem"
      },
      {
-      "Id": "294881427",
+      "Id": "131166006",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "E0/{E0DFFF64-C0BF-4BF3-1F18-D65E7703A400}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "3E/{3E55473A-BE66-8EFD-1C51-A4F270A98305}.wem"
      },
      {
-      "Id": "324694115",
+      "Id": "132630163",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "38/{380A44D9-6C91-ABCE-954C-17C4A395DB4F}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "E9/{E9107DD9-4958-6910-E68C-5BF3CD59D7A0}.wem"
      },
      {
-      "Id": "353660160",
+      "Id": "134192184",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "FSandLM.wav",
-      "CachePath": "BB/{BB52A25D-43AA-F7B7-D603-009566D14364}.wem"
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "D5/{D55179BC-62FA-A59A-09EF-C91669EA87B7}.wem"
      },
      {
-      "Id": "386993553",
+      "Id": "145784847",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "AB/{ABB95EFC-5E06-40DD-924C-7BDE304E338E}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "35/{35DA492A-104B-002A-5807-D437BE934F43}.wem"
      },
      {
-      "Id": "406400979",
+      "Id": "158372090",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "FE/{FEFEE443-C99F-198C-BF6D-A3A3EE77E378}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "34/{3472A044-75DC-98D9-8292-85ABAB6389C4}.wem"
      },
      {
-      "Id": "424194077",
+      "Id": "161180161",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "78/{783B7D50-CCCA-9826-E044-F28E1BEE84CC}.wem"
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "78/{78A77BDC-D483-857D-0495-679B25283071}.wem"
      },
      {
-      "Id": "428930576",
+      "Id": "201145207",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "E2/{E2AC956A-DC65-41AE-CB43-AF8BC3F32745}.wem"
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "C6/{C6B868AC-DE61-4007-51FF-22C73FB43C65}.wem"
      },
      {
-      "Id": "447298062",
+      "Id": "201842306",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "C2/{C2B15466-620E-B7E3-4EBB-7997F20A2A15}.wem"
+      "ShortName": "Landmarks_AudioCrumbs.wav",
+      "CachePath": "D0/{D0D06348-D0F6-3793-9D7D-A79D07ECE5B2}.wem"
      },
      {
-      "Id": "487716921",
+      "Id": "213185631",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "10/{105E8D74-B62D-9986-174F-EFF63F97A330}.wem"
+      "ShortName": "Landmarks_AudioCrumbs.wav",
+      "CachePath": "F7/{F717C866-6B58-9923-7FF0-33DB7B39FBF3}.wem"
      },
      {
-      "Id": "492348012",
+      "Id": "214466807",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "5B/{5B18B82A-D608-6B0A-DF61-4866F5772E39}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "5F/{5F5C921C-5216-D453-F67C-2FEC4DE8BD07}.wem"
      },
      {
-      "Id": "528073085",
+      "Id": "228587733",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "29/{2920EE2F-C142-EFD6-3D6D-515039A30644}.wem"
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "5A/{5AD40FAA-82ED-6478-49CE-C52B47EA11B7}.wem"
      },
      {
-      "Id": "652999967",
+      "Id": "253872595",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "EB/{EB393624-CFAC-4EB2-F681-EF3C6BB02CD0}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "F0/{F0D34F63-6F99-49D2-03E4-AACAFF4CA1EF}.wem"
      },
      {
-      "Id": "694333973",
+      "Id": "254319231",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "88/{88AF7532-E44B-5CF1-8EC7-334B20F4D739}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "B9/{B9FDCAFA-D44D-5885-E408-59517C3F9C3F}.wem"
      },
      {
-      "Id": "708576832",
+      "Id": "293845445",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MainSettingsInitialOpen.wav",
-      "CachePath": "00/{00C5EE2F-E5BF-466B-560B-691A33C7764C}.wem"
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "84/{840A0B3B-BE91-1257-9910-E81FE71AEA6F}.wem"
      },
      {
-      "Id": "723034658",
+      "Id": "295736662",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "92/{92C7B6CF-B915-5138-EE27-6251E0866FA8}.wem"
+      "ShortName": "Landmarks_AudioCrumbs.wav",
+      "CachePath": "83/{83461BD0-0921-4A3D-474A-948A4D0D7F31}.wem"
      },
      {
-      "Id": "724415821",
+      "Id": "359571687",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MainSettingsInitialOpen.wav",
-      "CachePath": "3D/{3DE91C01-AB0C-E305-6198-4064F11534BF}.wem"
+      "ShortName": "MainSettings_Fast.wav",
+      "CachePath": "3E/{3E2AD710-2C55-5515-4E06-C814B1DB0849}.wem"
      },
      {
-      "Id": "768625759",
+      "Id": "384794627",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "69/{69B37434-91BD-A8BF-58D6-C170BA4EFDE2}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "A6/{A6A83767-05AC-1930-039E-0C14E9A4D0CF}.wem"
      },
      {
-      "Id": "779656530",
+      "Id": "401855238",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "6E/{6E4EEDDA-C7A9-B792-93F8-F4EF867E77E2}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "B6/{B618066B-37E7-5444-5C9A-D1F7FE5A36C3}.wem"
      },
      {
-      "Id": "782058364",
+      "Id": "413023350",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MainSettingsInitialOpen.wav",
-      "CachePath": "65/{650933E9-B356-FB5E-9516-FCAC39FC1FEE}.wem"
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "B6/{B68AFFBF-2A9F-6AFF-D419-2ABDF0A7B5A7}.wem"
      },
      {
-      "Id": "796453627",
+      "Id": "414759638",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "CA/{CAA78225-F309-1B21-C7C8-496DFB6A2686}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "4F/{4F7FB22B-AE63-E99F-4004-E9D65F5FE282}.wem"
      },
      {
-      "Id": "799733562",
+      "Id": "421401333",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "12/{125EFA0A-C318-FBC9-A9A2-3C7889733D8A}.wem"
+      "ShortName": "Landmarks_AudioCrumbs.wav",
+      "CachePath": "B5/{B5DFD852-9E85-DEF2-D977-49CC0D42D9F7}.wem"
      },
      {
-      "Id": "799752433",
+      "Id": "429090071",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MainSettingsInitialOpen.wav",
-      "CachePath": "00/{00542773-64B5-983C-1806-063E5FADA090}.wem"
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "7C/{7CBF50A9-38C0-1A5D-0855-D37EAC9902C9}.wem"
      },
      {
-      "Id": "833531261",
+      "Id": "441129784",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "4E/{4EB162EF-08D1-9977-059D-E42FCBEC75EE}.wem"
+      "ShortName": "Landmarks_AudioCrumbs.wav",
+      "CachePath": "3F/{3F382EF6-F24A-E5C2-FE6C-33315AC68C83}.wem"
      },
      {
-      "Id": "840753990",
+      "Id": "464826980",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "94/{94417991-8FEF-6680-94E9-D992CCCD7D9E}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "42/{42EBF1C6-ABE6-52C2-E395-6142D660946E}.wem"
      },
      {
-      "Id": "854220616",
+      "Id": "497751886",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "ED/{ED8E8F76-7258-2CF2-4BE8-987CFE52D1A1}.wem"
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "E8/{E8C2E837-14C0-2DBF-8B18-F7F8ED011F07}.wem"
      },
      {
-      "Id": "948731885",
+      "Id": "539665997",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "59/{59B37B64-38EB-C904-4EAC-E7581B862E78}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "01/{0175EAC1-CB84-A39A-DD8B-7F7C9DF8A921}.wem"
      },
      {
-      "Id": "949425015",
+      "Id": "555664578",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "MainSettingsInitialOpen.wav",
-      "CachePath": "20/{206CB3C9-D4E3-A150-D70E-F5087048F21B}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "C5/{C5CB9AD5-293F-B2D5-CE0B-255EDD2EAF1E}.wem"
      },
      {
-      "Id": "1043859987",
+      "Id": "583941812",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ObstaclesProperties.wav",
-      "CachePath": "9D/{9D85B724-4994-EE68-7E98-2F9CC7DD8FE4}.wem"
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "A7/{A703DF70-C996-6804-33AF-24A1D701992C}.wem"
+     },
+     {
+      "Id": "585542538",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Landmarks_AudioCrumbs.wav",
+      "CachePath": "28/{28B37BF9-296B-C26A-4808-254A4C61016E}.wem"
+     },
+     {
+      "Id": "596277267",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FootstepsOnOff.wav",
+      "CachePath": "62/{62AEC8F6-5FD5-E753-4800-FB1C05838A7D}.wem"
+     },
+     {
+      "Id": "617440873",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "41/{4184147F-FA8D-7CE4-3D22-73D6D0CB9B22}.wem"
+     },
+     {
+      "Id": "733384295",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "5B/{5BD764C3-6953-690E-A82D-A36366F7CD14}.wem"
+     },
+     {
+      "Id": "736787991",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "BC/{BC23DFE1-8888-7BE1-B516-507DCEC50970}.wem"
+     },
+     {
+      "Id": "797368153",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "73/{7386058A-401C-05ED-2D0F-3CA378AE0577}.wem"
+     },
+     {
+      "Id": "846412087",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "AD/{AD500334-67DF-DEC9-13D1-A52AAFF52DDE}.wem"
+     },
+     {
+      "Id": "856058141",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "54/{54001706-497D-1343-7796-1DC3F8ABE16E}.wem"
+     },
+     {
+      "Id": "904943463",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
+      "CachePath": "7B/{7B08985D-ACD7-7601-7B73-32E895E42C41}.wem"
+     },
+     {
+      "Id": "947026548",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FootstepsOnOff.wav",
+      "CachePath": "43/{4326419B-53D7-FAE1-0759-598537F928D6}.wem"
+     },
+     {
+      "Id": "966420853",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "6A/{6A98C64B-8D0F-FC33-953F-E6AB613F35E9}.wem"
+     },
+     {
+      "Id": "999711823",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "FF/{FF99083D-C5DC-90C6-E32F-98D5B989F44E}.wem"
+     },
+     {
+      "Id": "1051897348",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Landmarks_AudioCrumbs.wav",
+      "CachePath": "2D/{2D63D16A-D6D8-6B6C-0A55-101651A11C5C}.wem"
+     },
+     {
+      "Id": "1054457352",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Obstacles_Fast.wav",
+      "CachePath": "36/{36F81C60-494F-BF39-F6EE-004A1A33FCEE}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "3831725167",
+      "Name": "Event_UI_Select_AudioCrumbsProperties",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_AudioCrumbsProperties",
+      "GUID": "{A8CF08CE-61E1-4020-A126-59FA2A0ACC6D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0161976",
+      "DurationMax": "2.2661386",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2355358046",
+         "Id": "756878500",
+         "GUID": "{7FD5304D-6E32-4EC0-B342-41D46A256DD3}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "34630388"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2355358046",
+         "Id": "1663067993",
+         "GUID": "{60C1EC7B-BA06-42BD-B6D2-224DE905BEF4}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "293845445"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2355358046",
+         "Id": "2929736493",
+         "GUID": "{430886AF-5CC5-4E75-8AE7-09173BEE7DFB}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "213185631"
+         }
+        ]
+       }
+      ]
+     },
      {
       "Id": "2040130348",
       "Name": "Event_UI_Select_EcholocatorClickProperties",
       "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_EcholocatorClickProperties",
       "GUID": "{02E05CC2-058E-4391-9813-78FF4343673D}",
       "DurationType": "OneShot",
-      "DurationMin": "1.1128286",
-      "DurationMax": "1.2336491",
+      "DurationMin": "0.93792903",
+      "DurationMax": "0.93792903",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -315,20 +477,120 @@
         },
         "MediaRefs": [
          {
-          "Id": "799752433"
+          "Id": "413023350"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2286525692",
+      "Name": "Event_UI_Select_FootstepsProperties",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_FootstepsProperties",
+      "GUID": "{07CEEBEE-7D81-4EB8-86EC-B187B409FFAF}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0161976",
+      "DurationMax": "1.4728608",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4172979502",
+         "Id": "1792357110",
+         "GUID": "{EF59F069-0F9B-4385-A6E4-DB559CDD3397}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "497751886"
          }
         ]
        },
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "3225717335",
-         "Id": "2955768760",
-         "GUID": "{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"
+         "GroupId": "4172979502",
+         "Id": "1668538352",
+         "GUID": "{9B33E078-641A-4A3F-B0E9-211C878AF502}"
         },
         "MediaRefs": [
          {
-          "Id": "708576832"
+          "Id": "596277267"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4172979502",
+         "Id": "616568539",
+         "GUID": "{61A3138C-D87F-4217-84F8-D744CA70F2E4}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "947026548"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4172979502",
+         "Id": "3880767216",
+         "GUID": "{47BC5BB8-80F6-4B91-B51D-515662C32417}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "293845445"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1132456374",
+      "Name": "Event_UI_Select_LandmarksProperties",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_LandmarksProperties",
+      "GUID": "{41957636-F421-4003-9313-66C0BE573617}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0161976",
+      "DurationMax": "2.0678341",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2201101635",
+         "Id": "3948044106",
+         "GUID": "{470A8929-901E-4A6E-935B-7221ACBEC591}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "441129784"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2201101635",
+         "Id": "36854881",
+         "GUID": "{2D758859-3CC8-44A0-9915-5CF62611DF77}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "585542538"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2201101635",
+         "Id": "2415836739",
+         "GUID": "{9D22A5A6-02B6-42B4-B99A-A635741C8828}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "293845445"
          }
         ]
        }
@@ -340,8 +602,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_MainSettings",
       "GUID": "{45D097F9-6863-497F-919E-622C655DB666}",
       "DurationType": "OneShot",
-      "DurationMin": "1.8918583",
-      "DurationMax": "3.3529375",
+      "DurationMin": "1.5720732",
+      "DurationMax": "2.9084642",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -352,7 +614,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "157375601"
+          "Id": "295736662"
          }
         ]
        },
@@ -365,7 +627,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "353660160"
+          "Id": "161180161"
          }
         ]
        },
@@ -378,7 +640,20 @@
         },
         "MediaRefs": [
          {
-          "Id": "949425015"
+          "Id": "201145207"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3198805459",
+         "Id": "3635598136",
+         "GUID": "{6FFE4173-703E-4C1A-8C25-A3EC6275AC11}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "1051897348"
          }
         ]
        },
@@ -391,7 +666,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "948731885"
+          "Id": "253872595"
          }
         ]
        },
@@ -404,7 +679,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "782058364"
+          "Id": "134192184"
          }
         ]
        },
@@ -417,7 +692,33 @@
         },
         "MediaRefs": [
          {
-          "Id": "487716921"
+          "Id": "214466807"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3198805459",
+         "Id": "3823066771",
+         "GUID": "{E68712DB-AE7E-46E1-BDBD-BC12DE99650C}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "904943463"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3198805459",
+         "Id": "1110678646",
+         "GUID": "{A23516DE-4A06-4568-9AED-2DAE02E97D9E}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "421401333"
          }
         ]
        },
@@ -430,20 +731,20 @@
         },
         "MediaRefs": [
          {
-          "Id": "157375601"
+          "Id": "201842306"
          }
         ]
        }
       ]
      },
      {
-      "Id": "1944309244",
-      "Name": "Event_UI_Select_Obstacles",
-      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_Obstacles",
+      "Id": "2953026179",
+      "Name": "Event_UI_Select_ObstaclesProperties",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_ObstaclesProperties",
       "GUID": "{C75AB7A1-18D6-40FC-BB5B-DF65EE160967}",
       "DurationType": "OneShot",
-      "DurationMin": "1.864092",
-      "DurationMax": "3.7057161",
+      "DurationMin": "1.1381366",
+      "DurationMax": "2.4417548",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -454,7 +755,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "1043859987"
+          "Id": "107610551"
          }
         ]
        },
@@ -467,7 +768,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "796453627"
+          "Id": "736787991"
          }
         ]
        },
@@ -480,7 +781,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "294881427"
+          "Id": "856058141"
          }
         ]
        },
@@ -493,7 +794,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "91310230"
+          "Id": "617440873"
          }
         ]
        },
@@ -506,7 +807,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "324694115"
+          "Id": "401855238"
          }
         ]
        },
@@ -519,7 +820,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "386993553"
+          "Id": "145784847"
          }
         ]
        },
@@ -532,7 +833,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "768625759"
+          "Id": "583941812"
          }
         ]
        },
@@ -545,7 +846,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "652999967"
+          "Id": "464826980"
          }
         ]
        },
@@ -558,7 +859,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "428930576"
+          "Id": "1054457352"
          }
         ]
        },
@@ -571,7 +872,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "492348012"
+          "Id": "999711823"
          }
         ]
        },
@@ -584,7 +885,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "779656530"
+          "Id": "966420853"
          }
         ]
        },
@@ -597,7 +898,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "840753990"
+          "Id": "47991179"
          }
         ]
        },
@@ -610,7 +911,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "694333973"
+          "Id": "555664578"
          }
         ]
        },
@@ -623,7 +924,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "833531261"
+          "Id": "132630163"
          }
         ]
        },
@@ -636,7 +937,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "528073085"
+          "Id": "797368153"
          }
         ]
        },
@@ -649,7 +950,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "76726961"
+          "Id": "846412087"
          }
         ]
        },
@@ -662,7 +963,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "723034658"
+          "Id": "539665997"
          }
         ]
        },
@@ -675,7 +976,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "270920287"
+          "Id": "158372090"
          }
         ]
        },
@@ -688,7 +989,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "406400979"
+          "Id": "384794627"
          }
         ]
        },
@@ -701,7 +1002,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "447298062"
+          "Id": "254319231"
          }
         ]
        },
@@ -714,7 +1015,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "799733562"
+          "Id": "414759638"
          }
         ]
        },
@@ -727,7 +1028,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "241675009"
+          "Id": "22721028"
          }
         ]
        },
@@ -740,7 +1041,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "424194077"
+          "Id": "733384295"
          }
         ]
        },
@@ -753,9 +1054,23 @@
         },
         "MediaRefs": [
          {
-          "Id": "854220616"
+          "Id": "131166006"
          }
         ]
+       }
+      ]
+     },
+     {
+      "Id": "847023378",
+      "Name": "Play_AudioCrumbsPropertiesPage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_AudioCrumbsPropertiesPage",
+      "GUID": "{18CB5564-2B82-4F14-A891-E080B0C52CA6}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5203334",
+      "DurationMax": "1.5203334",
+      "MediaRefs": [
+       {
+        "Id": "6878239"
        }
       ]
      },
@@ -765,11 +1080,39 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_EcholocatorClickPropertiesPage",
       "GUID": "{7D2F1AF8-10BF-4B11-929E-D1F74FC8F5FB}",
       "DurationType": "OneShot",
-      "DurationMin": "2.0970528",
-      "DurationMax": "2.0970528",
+      "DurationMin": "1.7810922",
+      "DurationMax": "1.7810922",
       "MediaRefs": [
        {
-        "Id": "724415821"
+        "Id": "228587733"
+       }
+      ]
+     },
+     {
+      "Id": "587051210",
+      "Name": "Play_FootstsepsPropertiesPage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_FootstsepsPropertiesPage",
+      "GUID": "{8CBB7D95-4B5F-45CC-8025-EAED0E3A0C29}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2658737",
+      "DurationMax": "1.2658737",
+      "MediaRefs": [
+       {
+        "Id": "42878679"
+       }
+      ]
+     },
+     {
+      "Id": "3772977147",
+      "Name": "Play_LandmarksPropertiesPage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_LandmarksPropertiesPage",
+      "GUID": "{B3BEB343-4172-48CF-941A-15AA1F3FD859}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.4623435",
+      "DurationMax": "1.4623435",
+      "MediaRefs": [
+       {
+        "Id": "429090071"
        }
       ]
      },
@@ -779,11 +1122,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_MainSettingsInitialOpen",
       "GUID": "{45A92EE8-5717-4B51-9EA9-0E4311820804}",
       "DurationType": "OneShot",
-      "DurationMin": "2.5069716",
-      "DurationMax": "2.5069716",
+      "DurationMin": "1.7098714",
+      "DurationMax": "1.7098714",
       "MediaRefs": [
        {
-        "Id": "80375455"
+        "Id": "359571687"
        }
       ]
      },
@@ -793,16 +1136,68 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_ObstaclesPropertiesPage",
       "GUID": "{17D44698-563D-417B-9ED7-18E813209BA6}",
       "DurationType": "OneShot",
-      "DurationMin": "1.9264619",
-      "DurationMax": "1.9264619",
+      "DurationMin": "1.5627207",
+      "DurationMax": "1.5627207",
       "MediaRefs": [
        {
-        "Id": "116445779"
+        "Id": "1955219"
        }
       ]
      }
     ],
     "SwitchGroups": [
+     {
+      "Id": "2201101635",
+      "Name": "SG_UI_LandmarksSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections",
+      "GUID": "{706EC372-B501-444A-90BC-39AEC6A7A0E2}",
+      "Switches": [
+       {
+        "Id": "36854881",
+        "Name": "Landmarks_On_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Landmarks_On_NotChecked",
+        "GUID": "{2D758859-3CC8-44A0-9915-5CF62611DF77}"
+       },
+       {
+        "Id": "2415836739",
+        "Name": "Volume",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Volume",
+        "GUID": "{9D22A5A6-02B6-42B4-B99A-A635741C8828}"
+       },
+       {
+        "Id": "3948044106",
+        "Name": "Landmarks_On_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Landmarks_On_Checked",
+        "GUID": "{470A8929-901E-4A6E-935B-7221ACBEC591}"
+       }
+      ]
+     },
+     {
+      "Id": "2355358046",
+      "Name": "SG_UI_AudioCrumbsSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections",
+      "GUID": "{021D7A51-E13C-49BF-A93B-3BBF2B0323AA}",
+      "Switches": [
+       {
+        "Id": "756878500",
+        "Name": "AudioCrumbs_On_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections\\AudioCrumbs_On_NotChecked",
+        "GUID": "{7FD5304D-6E32-4EC0-B342-41D46A256DD3}"
+       },
+       {
+        "Id": "1663067993",
+        "Name": "AudioCrumbs_VolumeSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections\\AudioCrumbs_VolumeSlider",
+        "GUID": "{60C1EC7B-BA06-42BD-B6D2-224DE905BEF4}"
+       },
+       {
+        "Id": "2929736493",
+        "Name": "AudioCrumbs_On_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections\\AudioCrumbs_On_Checked",
+        "GUID": "{430886AF-5CC5-4E75-8AE7-09173BEE7DFB}"
+       }
+      ]
+     },
      {
       "Id": "3198805459",
       "Name": "SG_UI_MainSettings",
@@ -1042,10 +1437,42 @@
         "GUID": "{AA485A90-432C-4EF6-8C75-DAFDFC022CB6}"
        }
       ]
+     },
+     {
+      "Id": "4172979502",
+      "Name": "SG_UI_FootstepsSelection",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection",
+      "GUID": "{8ED89DF9-BF28-4058-A4C7-F2905BB47412}",
+      "Switches": [
+       {
+        "Id": "616568539",
+        "Name": "Footsteps_On_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_On_NotChecked",
+        "GUID": "{61A3138C-D87F-4217-84F8-D744CA70F2E4}"
+       },
+       {
+        "Id": "1668538352",
+        "Name": "Footsteps_On_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_On_Checked",
+        "GUID": "{9B33E078-641A-4A3F-B0E9-211C878AF502}"
+       },
+       {
+        "Id": "1792357110",
+        "Name": "Footsteps_PitchSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_PitchSlider",
+        "GUID": "{EF59F069-0F9B-4385-A6E4-DB559CDD3397}"
+       },
+       {
+        "Id": "3880767216",
+        "Name": "Footsteps_VolumeSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_VolumeSlider",
+        "GUID": "{47BC5BB8-80F6-4B91-B51D-515662C32417}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{5E01CBB9-01A6-0F70-C8AD-8CF673FB42CD}"
+  "FileHash": "{85B9A60E-5207-E758-D40E-052FB3518EDE}"
  }
 }

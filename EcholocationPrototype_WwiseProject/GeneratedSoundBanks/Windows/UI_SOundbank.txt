@@ -1,17 +1,32 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1944309244	Event_UI_Select_Obstacles			\Default Work Unit\UI\Event_UI_Select_Obstacles	
+	587051210	Play_FootstsepsPropertiesPage			\Default Work Unit\Play_FootstsepsPropertiesPage	
+	847023378	Play_AudioCrumbsPropertiesPage			\Default Work Unit\Play_AudioCrumbsPropertiesPage	
+	1132456374	Event_UI_Select_LandmarksProperties			\Default Work Unit\UI\Event_UI_Select_LandmarksProperties	
 	2040130348	Event_UI_Select_EcholocatorClickProperties			\Default Work Unit\UI\Event_UI_Select_EcholocatorClickProperties	
 	2142858666	Play_MainSettingsInitialOpen			\Default Work Unit\Play_MainSettingsInitialOpen	
+	2286525692	Event_UI_Select_FootstepsProperties			\Default Work Unit\UI\Event_UI_Select_FootstepsProperties	
+	2953026179	Event_UI_Select_ObstaclesProperties			\Default Work Unit\UI\Event_UI_Select_ObstaclesProperties	
 	3738316925	Play_EcholocatorClickPropertiesPage			\Default Work Unit\Play_EcholocatorClickPropertiesPage	
+	3772977147	Play_LandmarksPropertiesPage			\Default Work Unit\Play_LandmarksPropertiesPage	
+	3831725167	Event_UI_Select_AudioCrumbsProperties			\Default Work Unit\UI\Event_UI_Select_AudioCrumbsProperties	
 	3833221374	Event_UI_Select_MainSettings			\Default Work Unit\UI\Event_UI_Select_MainSettings	
 	3953798054	Play_ObstaclesPropertiesPage			\Default Work Unit\Play_ObstaclesPropertiesPage	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	2201101635	SG_UI_LandmarksSelections			\Default Work Unit\SG_UI_LandmarksSelections	
+	2355358046	SG_UI_AudioCrumbsSelections			\Default Work Unit\SG_UI_AudioCrumbsSelections	
 	3198805459	SG_UI_MainSettings			\Default Work Unit\SG_UI_MainSettings	
 	3225717335	SG_UI_EcholocatorClickSelections			\Default Work Unit\SG_UI_EcholocatorClickSelections	
 	3969249293	SG_UI_ObstacleSelections			\Default Work Unit\SG_UI_ObstacleSelections	
+	4172979502	SG_UI_FootstepsSelection			\Default Work Unit\SG_UI_FootstepsSelection	
 
 Switch	ID	Name	Switch Group			Notes
+	36854881	Landmarks_On_NotChecked	SG_UI_LandmarksSelections			
+	2415836739	Volume	SG_UI_LandmarksSelections			
+	3948044106	Landmarks_On_Checked	SG_UI_LandmarksSelections			
+	756878500	AudioCrumbs_On_NotChecked	SG_UI_AudioCrumbsSelections			
+	1663067993	AudioCrumbs_VolumeSlider	SG_UI_AudioCrumbsSelections			
+	2929736493	AudioCrumbs_On_Checked	SG_UI_AudioCrumbsSelections			
 	1083307317	FSP_3of6	SG_UI_MainSettings			
 	1110678646	ACP_5of6	SG_UI_MainSettings			
 	1311420848	ECP_Cag_1of6	SG_UI_MainSettings			
@@ -48,41 +63,59 @@ Switch	ID	Name	Switch Group			Notes
 	3934324673	CT_NotChecked	SG_UI_ObstacleSelections			
 	3990053621	MR_NotChecked	SG_UI_ObstacleSelections			
 	4001707100	SS_NotChecked	SG_UI_ObstacleSelections			
+	616568539	Footsteps_On_NotChecked	SG_UI_FootstepsSelection			
+	1668538352	Footsteps_On_Checked	SG_UI_FootstepsSelection			
+	1792357110	Footsteps_PitchSlider	SG_UI_FootstepsSelection			
+	3880767216	Footsteps_VolumeSlider	SG_UI_FootstepsSelection			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	76726961	LA_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\40\{40ED4FF6-A7C5-446E-0311-6A5FB8D20EC7}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\LA_Checked		114412
-	80375455	MainSettingsInitialOpen	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\36\{368A5312-D4AE-C698-F365-9C5CA3B20FA5}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\MainSettingsInitialOpen		120430
-	91310230	MS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\3C\{3C027B52-F99E-81E2-16B2-2FD37742BF15}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MS_NotChecked		124608
-	116445779	ObstaclesPropertiesPage	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\87\{87678BDD-39EE-F586-C529-F7AFEAB33355}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\ObstaclesPropertiesPage		92566
-	157375601	LMProperties4of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\B0\{B09E981C-FC9E-E46C-FD38-25911CD91D3C}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\LMProperties4of6		90906
-	241675009	CT_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\F2\{F25490EA-66B0-85B1-47FC-FBA0F35CB53D}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\CT_Checked		90644
-	270920287	VSS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\84\{84DBB9C5-FFE0-24CD-6300-ACB8322F912A}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\VSS_NotChecked		136218
-	294881427	MA_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\E0\{E0DFFF64-C0BF-4BF3-1F18-D65E7703A400}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MA_NotChecked		138838
-	324694115	LA_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\38\{380A44D9-6C91-ABCE-954C-17C4A395DB4F}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\LA_NotChecked		124608
-	353660160	FSProperties3of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\BB\{BB52A25D-43AA-F7B7-D603-009566D14364}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\FSProperties3of6		97224
-	386993553	MA_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AB\{ABB95EFC-5E06-40DD-924C-7BDE304E338E}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MA_Checked		124608
-	406400979	MR_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\FE\{FEFEE443-C99F-198C-BF6D-A3A3EE77E378}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MR_Checked		113936
-	424194077	Concrete_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\78\{783B7D50-CCCA-9826-E044-F28E1BEE84CC}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Concrete_NotChecked		177970
-	428930576	LS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\E2\{E2AC956A-DC65-41AE-CB43-AF8BC3F32745}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\LS_NotChecked		121086
-	447298062	Carpet_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C2\{C2B15466-620E-B7E3-4EBB-7997F20A2A15}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Carpet_NotChecked		170856
-	487716921	ObsProperties2of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\10\{105E8D74-B62D-9986-174F-EFF63F97A330}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\ObsProperties2of6		94144
-	492348012	Default_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\5B\{5B18B82A-D608-6B0A-DF61-4866F5772E39}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Default_Checked		138836
-	528073085	MAS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\29\{2920EE2F-C142-EFD6-3D6D-515039A30644}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MAS_Checked		130778
-	652999967	Carpet_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\EB\{EB393624-CFAC-4EB2-F681-EF3C6BB02CD0}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Carpet_Checked		156626
-	694333973	Concrete_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\88\{88AF7532-E44B-5CF1-8EC7-334B20F4D739}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Concrete_Checked		167298
-	708576832	ECP_VolumeSlider	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\00\{00C5EE2F-E5BF-466B-560B-691A33C7764C}.wem		\Actor-Mixer Hierarchy\NVDA\EcholocatorClickProperties\SC_UI_EcholocatorClickProperties\ECP_VolumeSlider		59312
-	723034658	CT_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\92\{92C7B6CF-B915-5138-EE27-6251E0866FA8}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\CT_NotChecked		110794
-	724415821	EcholocatorClickPropertiesPage	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\3D\{3DE91C01-AB0C-E305-6198-4064F11534BF}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\EcholocatorClickPropertiesPage		100754
-	768625759	VSS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\69\{69B37434-91BD-A8BF-58D6-C170BA4EFDE2}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\VSS_Checked		117492
-	779656530	MAS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\6E\{6E4EEDDA-C7A9-B792-93F8-F4EF867E77E2}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MAS_NotChecked		145952
-	782058364	ECProperties1of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\65\{650933E9-B356-FB5E-9516-FCAC39FC1FEE}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\ECProperties1of6		111090
-	796453627	MR_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\CA\{CAA78225-F309-1B21-C7C8-496DFB6A2686}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MR_NotChecked		127790
-	799733562	LS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\12\{125EFA0A-C318-FBC9-A9A2-3C7889733D8A}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\LS_Checked		94496
-	799752433	ECP_PitchSlider	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\00\{00542773-64B5-983C-1806-063E5FADA090}.wem		\Actor-Mixer Hierarchy\NVDA\EcholocatorClickProperties\SC_UI_EcholocatorClickProperties\ECP_PitchSlider		53512
-	833531261	SS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\4E\{4EB162EF-08D1-9977-059D-E42FCBEC75EE}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\SS_NotChecked		131724
-	840753990	MS_Checkeed	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\94\{94417991-8FEF-6680-94E9-D992CCCD7D9E}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MS_Checkeed		89572
-	854220616	Default_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\ED\{ED8E8F76-7258-2CF2-4BE8-987CFE52D1A1}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Default_NotChecked		145954
-	948731885	CAG_ObstaclesProperties2of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\59\{59B37B64-38EB-C904-4EAC-E7581B862E78}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\CAG_ObstaclesProperties2of6		145954
-	949425015	CAG_ECProperties1of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\20\{206CB3C9-D4E3-A150-D70E-F5087048F21B}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\CAG_ECProperties1of6		161038
-	1043859987	SS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\9D\{9D85B724-4994-EE68-7E98-2F9CC7DD8FE4}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\SS_Checked		108954
+	1955219	ObstaclesPropertiesPage	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\7C\{7C6B71C6-26FB-B869-3EBF-FFA17D31AE23}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\ObstaclesPropertiesPage		137928
+	6878239	AudioCrumbsPropertiesPage	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\8F\{8FC95DEC-1552-335A-CAE0-225AC7B6E19F}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\AudioCrumbsPropertiesPage		134190
+	22721028	CT_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\49\{49F542B5-F4DB-0693-3F36-DD8B5675FC93}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\CT_Checked		122276
+	34630388	AudioCrumbs_On_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\96\{96E9A9CA-1ED5-D357-369F-EB8482848951}.wem		\Actor-Mixer Hierarchy\NVDA\AudioCrumbsProperties\SC_UI_AudioCrumbsSelections\AudioCrumbs_On_NotChecked		199970
+	42878679	FootstsepsPropertiesPage	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\0E\{0E6BD364-13F6-4A5D-34E6-A1A4339DADF0}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\FootstsepsPropertiesPage		111746
+	47991179	MS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\25\{25A791F1-5D06-FA6F-D34B-3F1396D18049}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MS_Checked		142336
+	107610551	SS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\B8\{B84255B5-5F9B-D261-1401-E01A9996EB50}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\SS_Checked		130372
+	131166006	DefaultNone_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\3E\{3E55473A-BE66-8EFD-1C51-A4F270A98305}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\DefaultNone_NotChecked		198024
+	132630163	SS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\E9\{E9107DD9-4958-6910-E68C-5BF3CD59D7A0}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\SS_NotChecked		126514
+	134192184	EcholocatorClickProperties_1of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\D5\{D55179BC-62FA-A59A-09EF-C91669EA87B7}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\EcholocatorClickProperties_1of6		200216
+	145784847	MA_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\35\{35DA492A-104B-002A-5807-D437BE934F43}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MA_Checked		132718
+	158372090	VSS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\34\{3472A044-75DC-98D9-8292-85ABAB6389C4}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\VSS_NotChecked		142336
+	161180161	FootstsepsProperties_3of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\78\{78A77BDC-D483-857D-0495-679B25283071}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\FootstsepsProperties_3of6		177980
+	201145207	EcholocatorClick_Cag_1of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C6\{C6B868AC-DE61-4007-51FF-22C73FB43C65}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\EcholocatorClick_Cag_1of6		244688
+	201842306	LandmarksProperties_4of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\D0\{D0D06348-D0F6-3793-9D7D-A79D07ECE5B2}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\LandmarksProperties_4of6		138752
+	213185631	AudioCrumbs_On_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\F7\{F717C866-6B58-9923-7FF0-33DB7B39FBF3}.wem		\Actor-Mixer Hierarchy\NVDA\AudioCrumbsProperties\SC_UI_AudioCrumbsSelections\AudioCrumbs_On_Checked		176648
+	214466807	ObstaclesProperties_2of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\5F\{5F5C921C-5216-D453-F67C-2FEC4DE8BD07}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\ObstaclesProperties_2of6		152814
+	228587733	EcholocatorClickPropertiesPage	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\5A\{5AD40FAA-82ED-6478-49CE-C52B47EA11B7}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\EcholocatorClickPropertiesPage		157236
+	253872595	ObstaclesProperties_Cag_2of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\F0\{F0D34F63-6F99-49D2-03E4-AACAFF4CA1EF}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\ObstaclesProperties_Cag_2of6		145056
+	254319231	Carpet_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\B9\{B9FDCAFA-D44D-5885-E408-59517C3F9C3F}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Carpet_NotChecked		195794
+	293845445	Landmarks_VolumeSlider	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\84\{840A0B3B-BE91-1257-9910-E81FE71AEA6F}.wem		\Actor-Mixer Hierarchy\NVDA\LandmarksProperties\SC_UI_Landmarks\Landmarks_VolumeSlider		89724
+	295736662	LandmarksProperties_Cag_4of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\83\{83461BD0-0921-4A3D-474A-948A4D0D7F31}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\LandmarksProperties_Cag_4of6		195406
+	359571687	MainSettingsInitialOpen	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\3E\{3E2AD710-2C55-5515-4E06-C814B1DB0849}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\MainSettingsInitialOpen		150906
+	384794627	MR_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\A6\{A6A83767-05AC-1930-039E-0C14E9A4D0CF}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MR_Checked		122666
+	401855238	LA_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\B6\{B618066B-37E7-5444-5C9A-D1F7FE5A36C3}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\LA_NotChecked		122646
+	413023350	ECP_PitchSlider	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\B6\{B68AFFBF-2A9F-6AFF-D419-2ABDF0A7B5A7}.wem		\Actor-Mixer Hierarchy\NVDA\EcholocatorClickProperties\SC_UI_EcholocatorClickProperties\ECP_PitchSlider		82822
+	414759638	LS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\4F\{4F7FB22B-AE63-E99F-4004-E9D65F5FE282}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\LS_Checked		100478
+	421401333	AudioCrumbsProperties_5of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\B5\{B5DFD852-9E85-DEF2-D977-49CC0D42D9F7}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\AudioCrumbsProperties_5of6		175000
+	429090071	LandmarksPropertiesPage	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\7C\{7CBF50A9-38C0-1A5D-0855-D37EAC9902C9}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\LandmarksPropertiesPage		129076
+	441129784	Landmarks_On_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\3F\{3F382EF6-F24A-E5C2-FE6C-33315AC68C83}.wem		\Actor-Mixer Hierarchy\NVDA\LandmarksProperties\SC_UI_Landmarks\Landmarks_On_Checked		167904
+	464826980	Carpet_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\42\{42EBF1C6-ABE6-52C2-E395-6142D660946E}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Carpet_Checked		209420
+	497751886	FS_PitchSlider	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\E8\{E8C2E837-14C0-2DBF-8B18-F7F8ED011F07}.wem		\Actor-Mixer Hierarchy\NVDA\FootstepsProperties\SC_UI_FootstepsSelections\FS_PitchSlider		100356
+	539665997	CT_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\01\{0175EAC1-CB84-A39A-DD8B-7F7C9DF8A921}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\CT_NotChecked		137112
+	555664578	Concrete_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C5\{C5CB9AD5-293F-B2D5-CE0B-255EDD2EAF1E}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Concrete_Checked		215458
+	583941812	VSS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\A7\{A703DF70-C996-6804-33AF-24A1D701992C}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\VSS_Checked		145486
+	585542538	Landmarks_On_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\28\{28B37BF9-296B-C26A-4808-254A4C61016E}.wem		\Actor-Mixer Hierarchy\NVDA\LandmarksProperties\SC_UI_Landmarks\Landmarks_On_NotChecked		182480
+	596277267	FS_On_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\62\{62AEC8F6-5FD5-E753-4800-FB1C05838A7D}.wem		\Actor-Mixer Hierarchy\NVDA\FootstepsProperties\SC_UI_FootstepsSelections\FS_On_Checked		114720
+	617440873	MS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\41\{4184147F-FA8D-7CE4-3D22-73D6D0CB9B22}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MS_NotChecked		140624
+	733384295	Concrete_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\5B\{5BD764C3-6953-690E-A82D-A36366F7CD14}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Concrete_NotChecked		211822
+	736787991	MR_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\BC\{BC23DFE1-8888-7BE1-B516-507DCEC50970}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MR_NotChecked		133426
+	797368153	MAS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\73\{7386058A-401C-05ED-2D0F-3CA378AE0577}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MAS_Checked		181350
+	846412087	LA_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AD\{AD500334-67DF-DEC9-13D1-A52AAFF52DDE}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\LA_Checked		140536
+	856058141	MA_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\54\{54001706-497D-1343-7796-1DC3F8ABE16E}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MA_NotChecked		165086
+	904943463	FootstepsProperties_Cag_3of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\7B\{7B08985D-ACD7-7601-7B73-32E895E42C41}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\FootstepsProperties_Cag_3of6		180242
+	947026548	FS_On_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\43\{4326419B-53D7-FAE1-0759-598537F928D6}.wem		\Actor-Mixer Hierarchy\NVDA\FootstepsProperties\SC_UI_FootstepsSelections\FS_On_NotChecked		130002
+	966420853	MAS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\6A\{6A98C64B-8D0F-FC33-953F-E6AB613F35E9}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MAS_NotChecked		210222
+	999711823	DefaultNone_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\FF\{FF99083D-C5DC-90C6-E32F-98D5B989F44E}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\DefaultNone_Checked		142728
+	1051897348	AudioCrumbsProperties_Cag_5of6	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\2D\{2D63D16A-D6D8-6B6C-0A55-101651A11C5C}.wem		\Actor-Mixer Hierarchy\NVDA\MainSettings\SC_UI_MainSettings\AudioCrumbsProperties_Cag_5of6		256622
+	1054457352	LS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\36\{36F81C60-494F-BF39-F6EE-004A1A33FCEE}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\LS_NotChecked		133070
 

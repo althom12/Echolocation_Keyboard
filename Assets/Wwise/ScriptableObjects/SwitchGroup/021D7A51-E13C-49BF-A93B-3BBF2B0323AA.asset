@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
-  m_Name: C75AB7A1-18D6-40FC-BB5B-DF65EE160967
+  m_Script: {fileID: 11500000, guid: 13441aeec2269fc478a25c9cdf54414c, type: 3}
+  m_Name: 021D7A51-E13C-49BF-A93B-3BBF2B0323AA
   m_EditorClassIdentifier: 
-  objectName: Event_UI_Select_ObstaclesProperties
-  id: 2953026179
-  guid: C75AB7A1-18D6-40FC-BB5B-DF65EE160967
-  IsInUserDefinedSoundBank: 1
+  objectName: SG_UI_AudioCrumbsSelections
+  id: 2355358046
+  guid: 021D7A51-E13C-49BF-A93B-3BBF2B0323AA

@@ -1188,6 +1188,9 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
 								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SG_UI_FootstepsSelection" ID="{8ED89DF9-BF28-4058-A4C7-F2905BB47412}" WorkUnitID="{DB4A1570-B6E1-4BC6-B555-BEEAD6D8D31F}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="FS_On_Checked" ID="{8F2F6D61-C5EA-4559-84F6-76EF6D36FC6E}" ShortID="987332232">
@@ -1244,7 +1247,7 @@
 										<ActiveSource Name="FootstepsOnOff" ID="{AAAE1B5D-18C4-449B-BD48-D3D64969F05D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FS_VolumeSlider" ID="{15E31332-0E52-40AE-93AD-1DC18881320C}" ShortID="591619071">
+								<Sound Name="FS_PitchSlider" ID="{7DEB4F7E-8BD9-4D11-ADEF-0850BEA8F091}" ShortID="769546608">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -1254,24 +1257,36 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="FSandLM" ID="{05739D4A-741B-4A00-AAF7-D6F958F34C6F}">
+										<AudioFileSource Name="MainSettingsInitialOpen" ID="{E12883D4-C054-47EA-A4D3-FFF38FA27543}">
 											<PropertyList>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="13.3712700784044"/>
-												<Property Name="TrimEnd" Type="Real64" Value="14.5576888711567"/>
+												<Property Name="TrimBegin" Type="Real64" Value="10.015454853588"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.1282834681997"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>FSandLM.wav</AudioFile>
+											<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="613226445"/>
+												<MediaID ID="799752433"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="ECP_LM_AC_TT_FS_Fast" ID="{3C7BF8FC-4317-42DE-AFD9-A79823201C79}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.1500259423517"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.28676749811557"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ECP_LM_AC_TT_FS_Fast.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="497751886"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="FSandLM" ID="{05739D4A-741B-4A00-AAF7-D6F958F34C6F}" Platform="Linked"/>
+										<ActiveSource Name="ECP_LM_AC_TT_FS_Fast" ID="{3C7BF8FC-4317-42DE-AFD9-A79823201C79}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="FS_PitchSlider" ID="{3B47D1D0-D733-4503-830F-30B39604FCC9}" ShortID="928923420">
+								<Sound Name="FS_VolumeSlider" ID="{B1CD4FCB-98BC-45BD-B940-B7E0803715E1}" ShortID="22233053">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -1281,39 +1296,77 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="FSandLM" ID="{BB873AB7-3F84-4684-B334-6C083A7BAE72}">
+										<AudioFileSource Name="MainSettingsInitialOpen" ID="{D508247C-A627-4CB3-9E05-615BB9E769C0}">
 											<PropertyList>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="15.0707360595925"/>
-												<Property Name="TrimEnd" Type="Real64" Value="16.1288932688589"/>
+												<Property Name="TrimBegin" Type="Real64" Value="10.015454853588"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.1282834681997"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>FSandLM.wav</AudioFile>
+											<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="725780992"/>
+												<MediaID ID="799752433"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="ECP_LM_AC_TT_FS_Fast" ID="{AB8363CF-B26A-4E19-AC0A-7DB739F208F3}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.81946041826938"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.83565800618057"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ECP_LM_AC_TT_FS_Fast.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="293845445"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="FSandLM" ID="{BB873AB7-3F84-4684-B334-6C083A7BAE72}" Platform="Linked"/>
+										<ActiveSource Name="ECP_LM_AC_TT_FS_Fast" ID="{AB8363CF-B26A-4E19-AC0A-7DB739F208F3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="FS_VolumeSlider" ID="{15E31332-0E52-40AE-93AD-1DC18881320C}"/>
+										<ItemRef Name="FS_On_Checked" ID="{8F2F6D61-C5EA-4559-84F6-76EF6D36FC6E}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="FS_On_Checked" ID="{8F2F6D61-C5EA-4559-84F6-76EF6D36FC6E}"/>
+										<ItemRef Name="FS_PitchSlider" ID="{7DEB4F7E-8BD9-4D11-ADEF-0850BEA8F091}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="FS_On_NotChecked" ID="{1BCAF097-99D3-412E-B8E2-AB1352E86286}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="FS_PitchSlider" ID="{3B47D1D0-D733-4503-830F-30B39604FCC9}"/>
+										<ItemRef Name="FS_VolumeSlider" ID="{B1CD4FCB-98BC-45BD-B940-B7E0803715E1}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Footsteps_PitchSlider" ID="{EF59F069-0F9B-4385-A6E4-DB559CDD3397}"/>
+										<ItemList>
+											<ItemRef Name="FS_PitchSlider" ID="{7DEB4F7E-8BD9-4D11-ADEF-0850BEA8F091}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Footsteps_On_Checked" ID="{9B33E078-641A-4A3F-B0E9-211C878AF502}"/>
+										<ItemList>
+											<ItemRef Name="FS_On_Checked" ID="{8F2F6D61-C5EA-4559-84F6-76EF6D36FC6E}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Footsteps_On_NotChecked" ID="{61A3138C-D87F-4217-84F8-D744CA70F2E4}"/>
+										<ItemList>
+											<ItemRef Name="FS_On_NotChecked" ID="{1BCAF097-99D3-412E-B8E2-AB1352E86286}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Footsteps_VolumeSlider" ID="{47BC5BB8-80F6-4B91-B51D-515662C32417}"/>
+										<ItemList>
+											<ItemRef Name="FS_VolumeSlider" ID="{B1CD4FCB-98BC-45BD-B940-B7E0803715E1}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>

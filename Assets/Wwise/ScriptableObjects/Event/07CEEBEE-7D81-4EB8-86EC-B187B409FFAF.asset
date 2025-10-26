@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
-  m_Name: C75AB7A1-18D6-40FC-BB5B-DF65EE160967
+  m_Name: 07CEEBEE-7D81-4EB8-86EC-B187B409FFAF
   m_EditorClassIdentifier: 
-  objectName: Event_UI_Select_ObstaclesProperties
-  id: 2953026179
-  guid: C75AB7A1-18D6-40FC-BB5B-DF65EE160967
+  objectName: Event_UI_Select_FootstepsProperties
+  id: 2286525692
+  guid: 07CEEBEE-7D81-4EB8-86EC-B187B409FFAF
   IsInUserDefinedSoundBank: 1

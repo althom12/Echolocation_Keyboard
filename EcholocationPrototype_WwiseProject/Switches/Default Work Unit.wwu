@@ -70,6 +70,7 @@
 						<Switch Name="Footsteps_On_Checked" ID="{9B33E078-641A-4A3F-B0E9-211C878AF502}"/>
 						<Switch Name="Footsteps_On_NotChecked" ID="{61A3138C-D87F-4217-84F8-D744CA70F2E4}"/>
 						<Switch Name="Footsteps_VolumeSlider" ID="{47BC5BB8-80F6-4B91-B51D-515662C32417}"/>
+						<Switch Name="Footsteps_PitchSlider" ID="{EF59F069-0F9B-4385-A6E4-DB559CDD3397}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
