@@ -629,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584401207047772102
+    m_lastTime: -8584401194410726633
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -666,8 +666,8 @@ MonoBehaviour:
         guid: a1b75ac7d618fc40bb5bdf65ee160967
       Path: Events\Default Work Unit\UI\Event_UI_Select
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 3.7057161
+      minDuration: 1.864092
     - name: Landmarks
       guid: 749801bade2f8946aabd24f180b82ded
       id: 1061412920

@@ -111,17 +111,16 @@ public class MenuNavigationManager : MonoBehaviour
     /// </summary>
     public void OpenSubWindow(GameObject subWindowToShow)
     {
-        Debug.Log($"OpenSubWindow STARTED (REVERTED VERSION) for {subWindowToShow.name} at Time: {Time.unscaledTime}");
+        Debug.Log($"OpenSubWindow STARTED for {subWindowToShow.name} at Time: {Time.unscaledTime}");
 
         // 1. Store button
         _lastSelectedMainSettingsButton = EventSystem.current.currentSelectedGameObject;
 
-        // 2. Swap Panels
+        // 2. Hide main panel
         mainSettingsPanel.SetActive(false);
-        subWindowToShow.SetActive(true); // Directly activate here
         _activeSubWindow = subWindowToShow;
 
-        // 3. Pause & Disable Player Input (should already be disabled)
+        // 3. Pause & Disable Player Input
         Time.timeScale = 0f;
         _input.Player.Disable();
 
@@ -129,23 +128,29 @@ public class MenuNavigationManager : MonoBehaviour
         if (customTabSubmitHandler != null)
         {
             Debug.Log($"---> Disabling customTabSubmitHandler component at Time: {Time.unscaledTime}");
-            customTabSubmitHandler.enabled = false; // Disable component
+            customTabSubmitHandler.enabled = false;
         }
 
-        // --- OLD LOGIC: Directly select first element ---
-        Selectable firstElement = subWindowToShow.GetComponentInChildren<Selectable>();
-        if (firstElement != null)
+        // 5. NEW: Use BaseSubwindow's OpenWindow method
+        BaseSubwindow subwindow = subWindowToShow.GetComponent<BaseSubwindow>();
+        if (subwindow != null)
         {
-            EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
-            Debug.Log($"---> Directly selected: {firstElement.gameObject.name}");
+            Debug.Log($"---> Found BaseSubwindow, calling OpenWindow()");
+            subwindow.OpenWindow();  // This handles activation, audio, and first element selection
         }
         else
         {
-            Debug.LogWarning($"---> NO selectable found in {subWindowToShow.name}");
+            // Fallback for panels without BaseSubwindow
+            Debug.LogWarning($"---> No BaseSubwindow found on {subWindowToShow.name}, using fallback");
+            subWindowToShow.SetActive(true);
+            Selectable firstElement = subWindowToShow.GetComponentInChildren<Selectable>();
+            if (firstElement != null)
+            {
+                EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
+            }
         }
-        // --- END OLD LOGIC ---
 
-        // 5. DELAY enabling the SubWindowInputHandler
+        // 6. Enable SubWindowInputHandler after a frame
         SubWindowInputHandler handler = subWindowToShow.GetComponent<SubWindowInputHandler>();
         if (handler != null)
         {
@@ -153,7 +158,25 @@ public class MenuNavigationManager : MonoBehaviour
             handler.enabled = false;
             StartCoroutine(EnableSubHandlerAfterFrame(handler));
         }
-        Debug.Log($"OpenSubWindow (REVERTED VERSION) FINISHED at Time: {Time.unscaledTime}");
+
+        Debug.Log($"OpenSubWindow FINISHED at Time: {Time.unscaledTime}");
+    }
+
+    // Coroutine to check selection slightly later (moved here from ObstaclesSubwindow)
+    private IEnumerator CheckSelectionAfterFrame(GameObject expectedSelection)
+    {
+        yield return null; // Wait one frame
+        GameObject currentlySelected = EventSystem.current?.currentSelectedGameObject;
+        if (currentlySelected == expectedSelection)
+        {
+            Debug.Log($"--> MenuNavManager.CheckSelectionAfterFrame: Selection SUCCESSFUL. Current selection: {currentlySelected.name}");
+        }
+        else
+        {
+            Debug.LogWarning($"--> MenuNavManager.CheckSelectionAfterFrame: Selection FAILED or CHANGED. Expected '{expectedSelection.name}', but current is '{(currentlySelected == null ? "null" : currentlySelected.name)}'");
+            // If selection failed, maybe try setting it again? Or log more info.
+            // EventSystem.current.SetSelectedGameObject(expectedSelection);
+        }
     }
 
     // --- COROUTINE FUNCTION ---

@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\WwiseUI\AudioManager.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+    <Compile Include="Assets\Scripts\WwiseUI\BaseSubwindow.cs" />
     <Compile Include="Assets\Scripts\PlayerAudio.cs" />
     <Compile Include="Assets\Scripts\UI\CustomUISubmitHandler.cs" />
     <Compile Include="Assets\Inputs\CustomInputActions.cs" />
