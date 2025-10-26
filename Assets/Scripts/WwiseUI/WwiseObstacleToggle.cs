@@ -1,63 +1,100 @@
 using UnityEngine;
-using UnityEngine.UI; // Required for Toggle
-using UnityEngine.EventSystems; // Required for ISelectHandler [12, 13]
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-/// <summary>
-/// This script is attached to EACH of the 13 obstacle toggles.
-/// It implements ISelectHandler to know when it's been selected. [12]
-/// It holds references to its two specific Wwise Switches.
-/// </summary>
 public class WwiseObstacleToggle : MonoBehaviour, ISelectHandler
 {
     [Header("Audio Channel")]
+    public AudioEventChannelSO audioChannel;
 
+    [Header("Selection Audio (Navigation)")]
+    public AK.Wwise.Event selectionEvent;
+    public AK.Wwise.Switch checkedSwitch;
+    public AK.Wwise.Switch notCheckedSwitch;
 
-    public AudioEventChannelSO audioChannel; // Drag your 'UIAudioChannel' asset here
+    [Header("Action Audio (Toggle Changed)")]
+    public AK.Wwise.Event toggleActionEvent;
+    public AK.Wwise.Switch actionCheckedSwitch;
+    public AK.Wwise.Switch actionUncheckedSwitch;
 
-
-
-
-    public AK.Wwise.Event selectionEvent; // Drag 'Event_UI_Select' here
-
-
-
-
-    public AK.Wwise.Switch checkedSwitch; // Drag 'Obstacle_1_Checked', etc. here
-
-
-
-
-    public AK.Wwise.Switch notCheckedSwitch; // Drag 'Obstacle_1_NotChecked', etc. here
-
-    // Internal reference to the Toggle component
     private Toggle myToggle;
+    private bool isCurrentlySelected = false; // NEW: Track if this toggle is selected
 
     private void Awake()
     {
         myToggle = GetComponent<Toggle>();
     }
 
-    /// <summary>
-    /// Called by Unity's EventSystem when this object is selected. [14]
-    /// </summary>
+    private void OnEnable()
+    {
+        if (myToggle != null)
+        {
+            myToggle.onValueChanged.AddListener(OnToggleValueChanged);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (myToggle != null)
+        {
+            myToggle.onValueChanged.RemoveListener(OnToggleValueChanged);
+        }
+        isCurrentlySelected = false; // NEW: Clear selection state
+    }
+
     public void OnSelect(BaseEventData eventData)
     {
-        // 1. DETERMINE STATE: Check if the toggle is currently on or off
-        bool isToggleOn = myToggle.isOn;
+        isCurrentlySelected = true; // NEW: Mark as selected
 
-        // 2. CHOOSE THE SWITCH: Select the correct Wwise Switch to send
+        if (audioChannel == null || selectionEvent == null) return;
+
+        bool isToggleOn = myToggle.isOn;
         AK.Wwise.Switch switchToSend = isToggleOn ? checkedSwitch : notCheckedSwitch;
 
-        // 3. CREATE THE PACKET:
         AudioEventChannelSO.WwiseEventPacket packet = new AudioEventChannelSO.WwiseEventPacket
         {
-            WwiseEvent = this.selectionEvent,
-            WwiseSwitch = switchToSend, // We send the *specific* switch
+            WwiseEvent = selectionEvent,
+            WwiseSwitch = switchToSend,
             Emitter = this.gameObject
         };
 
-        // 4. RAISE THE EVENT:
-        // The AudioManager will receive this packet and handle all logic. [3]
+        audioChannel.RaiseEvent(packet);
+    }
+
+    /// <summary>
+    /// Called when another object is selected (Unity doesn't have OnDeselect callback).
+    /// We detect this in Update.
+    /// </summary>
+    private void Update()
+    {
+        // Check if we're no longer the selected object
+        if (isCurrentlySelected && EventSystem.current.currentSelectedGameObject != this.gameObject)
+        {
+            isCurrentlySelected = false;
+        }
+    }
+
+    /// <summary>
+    /// Called when the toggle value changes.
+    /// Only plays audio if THIS toggle is currently selected (user-initiated).
+    /// </summary>
+    private void OnToggleValueChanged(bool isOn)
+    {
+        // NEW: Only play action audio if this toggle is currently selected
+        if (!isCurrentlySelected) return;
+
+        if (audioChannel == null || toggleActionEvent == null) return;
+
+        AK.Wwise.Switch actionSwitch = isOn ? actionCheckedSwitch : actionUncheckedSwitch;
+        if (actionSwitch == null) return;
+
+        AudioEventChannelSO.WwiseEventPacket packet = new AudioEventChannelSO.WwiseEventPacket
+        {
+            WwiseEvent = toggleActionEvent,
+            WwiseSwitch = actionSwitch,
+            Emitter = this.gameObject
+        };
+
         audioChannel.RaiseEvent(packet);
     }
 }

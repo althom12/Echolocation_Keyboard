@@ -73,6 +73,12 @@
 						<Switch Name="Footsteps_PitchSlider" ID="{EF59F069-0F9B-4385-A6E4-DB559CDD3397}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="SG_UI_Multipurpose" ID="{EA86EBBE-212F-43C5-9BB9-615B960DF1A4}">
+					<ChildrenList>
+						<Switch Name="Toggle_Checked" ID="{060860FD-9638-4D08-AD83-15D328299A4E}"/>
+						<Switch Name="Toggle_NotChecked" ID="{54468300-2CA0-4D49-BE13-37DA4BE7CB8F}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

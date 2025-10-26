@@ -78,6 +78,7 @@
 						<ObjectRef Name="Event_UI_Select_EcholocatorClickProperties" ID="{02E05CC2-058E-4391-9813-78FF4343673D}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_FootstsepsPropertiesPage" ID="{8CBB7D95-4B5F-45CC-8025-EAED0E3A0C29}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_LandmarksPropertiesPage" ID="{B3BEB343-4172-48CF-941A-15AA1F3FD859}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_UI_Select_Multipurpose" ID="{0C1154B5-77D1-4923-A678-65636A972893}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_MainSettings" ID="{45D097F9-6863-497F-919E-622C655DB666}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EcholocatorClickPropertiesPage" ID="{7D2F1AF8-10BF-4B11-929E-D1F74FC8F5FB}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MainSettingsInitialOpen" ID="{45A92EE8-5717-4B51-9EA9-0E4311820804}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>

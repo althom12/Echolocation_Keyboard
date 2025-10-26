@@ -308,6 +308,26 @@
     ],
     "SwitchGroups": [
      {
+      "Id": "2014534092",
+      "Name": "SG_UI_Multipurpose",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Multipurpose",
+      "GUID": "{EA86EBBE-212F-43C5-9BB9-615B960DF1A4}",
+      "Switches": [
+       {
+        "Id": "1767045039",
+        "Name": "Toggle_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Multipurpose\\Toggle_Checked",
+        "GUID": "{060860FD-9638-4D08-AD83-15D328299A4E}"
+       },
+       {
+        "Id": "4150790098",
+        "Name": "Toggle_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Multipurpose\\Toggle_NotChecked",
+        "GUID": "{54468300-2CA0-4D49-BE13-37DA4BE7CB8F}"
+       }
+      ]
+     },
+     {
       "Id": "2201101635",
       "Name": "SG_UI_LandmarksSelections",
       "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections",
@@ -1144,6 +1164,6 @@
     ]
    }
   ],
-  "FileHash": "{A49C85D2-1027-F4DE-967C-DD5DD1FE078D}"
+  "FileHash": "{FDB1F68B-40FE-6AAD-3D4C-32CE1A3F76BD}"
  }
 }

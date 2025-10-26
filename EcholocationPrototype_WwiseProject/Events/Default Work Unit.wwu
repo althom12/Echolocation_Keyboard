@@ -673,6 +673,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Event_UI_Select_Multipurpose" ID="{0C1154B5-77D1-4923-A678-65636A972893}">
+							<ChildrenList>
+								<Action Name="" ID="{6CBC6D2C-E761-45CD-A3D4-1FCC517E1E15}" ShortID="418101372">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{70E48FAB-214B-4D9E-B70C-2496428D7604}" ShortID="698339273">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SC_UI_Multipurpose" ID="{A4E0DDE7-32DF-413D-BF45-F97F90920C60}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_ObstaclesPropertiesPage" ID="{17D44698-563D-417B-9ED7-18E813209BA6}">

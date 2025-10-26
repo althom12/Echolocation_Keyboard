@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{E8CC2162-D653-B53B-8A22-F14F6544C908}",
+    "Hash": "{8C9E809E-A934-256E-A3CD-919304BE197D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -94,6 +94,14 @@
       "Location": "Memory",
       "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
       "CachePath": "D5/{D55179BC-62FA-A59A-09EF-C91669EA87B7}.wem"
+     },
+     {
+      "Id": "135268327",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FootstepsOnOff.wav",
+      "CachePath": "CF/{CF0C2265-8C0A-E278-318D-4F1F4318A3DD}.wem"
      },
      {
       "Id": "145784847",
@@ -270,6 +278,14 @@
       "Location": "Memory",
       "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
       "CachePath": "E8/{E8C2E837-14C0-2DBF-8B18-F7F8ED011F07}.wem"
+     },
+     {
+      "Id": "515255237",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FootstepsOnOff.wav",
+      "CachePath": "8E/{8E29CDD3-CC85-A093-F740-116AA34D5F3B}.wem"
      },
      {
       "Id": "539665997",
@@ -738,6 +754,43 @@
       ]
      },
      {
+      "Id": "222667337",
+      "Name": "Event_UI_Select_Multipurpose",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_Multipurpose",
+      "GUID": "{0C1154B5-77D1-4923-A678-65636A972893}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.31007606",
+      "DurationMax": "0.4742339",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2014534092",
+         "Id": "4150790098",
+         "GUID": "{54468300-2CA0-4D49-BE13-37DA4BE7CB8F}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "515255237"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2014534092",
+         "Id": "1767045039",
+         "GUID": "{060860FD-9638-4D08-AD83-15D328299A4E}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "135268327"
+         }
+        ]
+       }
+      ]
+     },
+     {
       "Id": "2953026179",
       "Name": "Event_UI_Select_ObstaclesProperties",
       "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_ObstaclesProperties",
@@ -1147,6 +1200,26 @@
     ],
     "SwitchGroups": [
      {
+      "Id": "2014534092",
+      "Name": "SG_UI_Multipurpose",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Multipurpose",
+      "GUID": "{EA86EBBE-212F-43C5-9BB9-615B960DF1A4}",
+      "Switches": [
+       {
+        "Id": "1767045039",
+        "Name": "Toggle_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Multipurpose\\Toggle_Checked",
+        "GUID": "{060860FD-9638-4D08-AD83-15D328299A4E}"
+       },
+       {
+        "Id": "4150790098",
+        "Name": "Toggle_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Multipurpose\\Toggle_NotChecked",
+        "GUID": "{54468300-2CA0-4D49-BE13-37DA4BE7CB8F}"
+       }
+      ]
+     },
+     {
       "Id": "2201101635",
       "Name": "SG_UI_LandmarksSelections",
       "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections",
@@ -1473,6 +1546,6 @@
     ]
    }
   ],
-  "FileHash": "{EF96BF4D-013F-C562-9376-839937E9384A}"
+  "FileHash": "{47D39573-8154-FFEC-9CF4-B3B72E070855}"
  }
 }
