@@ -7841,11 +7841,11 @@ MonoBehaviour:
   pauseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 20048cbde797d534f982d8b6c0d9fa6b, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: dc37a13edc51d7347bd1dae9499f64e1, type: 2}
   resumeEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f837f3482cfba714c9775420f751c5bf, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 7f3b06f35988b7e40b9a94193dadf3db, type: 2}
   spawnPoints:
   - {fileID: 1635637651}
   - {fileID: 1635637651}

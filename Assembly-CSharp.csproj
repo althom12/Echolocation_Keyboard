@@ -74,6 +74,7 @@
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Scripts\ObstacleToggleHelper.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\TutorialButtonHandler.cs" />
+    <Compile Include="Assets\Scripts\WwiseUI\TutorialAudioController.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Scripts\ProximityController.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\AudioManager.cs" />

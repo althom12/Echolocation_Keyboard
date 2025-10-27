@@ -69,6 +69,7 @@
 						<ObjectRef Name="Play_13_NV_MainChamberSpawn_PT" ID="{117B36BB-12B5-4667-A1B6-DF9E2A811814}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_01_NV_Welcome" ID="{816B813A-5147-46AD-BE3E-2B00245F5C73}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_16_NV_UIIntro_PT" ID="{4B728490-8496-46BC-9BE1-85ABD2B3E9B5}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Tutorial" ID="{EE58A574-C4B1-4721-A65E-B3E2C9AC9F34}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_24_NV_ObstaclesNavigation" ID="{2F405B46-9C80-4867-A256-5C33BC1D09F7}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_27_NV_ObstaclesReview" ID="{5EEA9C80-DD9C-4881-8538-5D561A781F7E}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_28_NV_AudioLandmarks_PT" ID="{98FF8471-35D1-4928-B503-8B263ED175C1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
@@ -80,6 +81,7 @@
 						<ObjectRef Name="Play_22_NV_ObstaclesPresets" ID="{BDD26A42-346F-4B68-A5B9-A6F0ED812641}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_18_NV_EnteringACategory" ID="{43F5290A-0BD9-4C9A-B747-D4411BEAEB1B}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_05_NV_ContinuedCollisions" ID="{37BFB9E9-F729-4D11-8765-DAE0CACFEAC1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Tutorial" ID="{C4779CEC-94EE-4D85-A667-FD41B000EDBD}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_25_NV_HearingTheObstacles_PT" ID="{40E02F62-8433-4DAA-B626-427AE9DA7C55}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_08_NV_MovementPractice_PT" ID="{F332E7FE-EEF7-4DBE-97F0-46765B25E3F1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_11_NV_RotationAndMovementPractice" ID="{F2383BF0-DC9C-4E05-903F-2AC48A093382}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>

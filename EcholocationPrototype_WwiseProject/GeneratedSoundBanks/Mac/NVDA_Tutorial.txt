@@ -1,34 +1,36 @@
 Event	ID	Name			Wwise Object Path	Notes
 	164403860	Event_UI_Select_TutorialItems			\Default Work Unit\UI\Event_UI_Select_TutorialItems	
-	460292358	Play_12_NV_SpawnAtStart_PT			\Default Work Unit\Play_12_NV_SpawnAtStart_PT	
-	506850176	Play_03_NV_ForwardMovement_PT			\Default Work Unit\Play_03_NV_ForwardMovement_PT	
-	584364295	Play_11_NV_RotationAndMovementPractice			\Default Work Unit\Play_11_NV_RotationAndMovementPractice	
-	693311155	Play_26_NV_ObstaclePresetDescriptions			\Default Work Unit\Play_26_NV_ObstaclePresetDescriptions	
-	774137046	Play_22_NV_ObstaclesPresets			\Default Work Unit\Play_22_NV_ObstaclesPresets	
-	805288807	Play_17_NV_UIMainMenuNav			\Default Work Unit\Play_17_NV_UIMainMenuNav	
-	1113817490	Play_04_NV_Collisions_PT			\Default Work Unit\Play_04_NV_Collisions_PT	
-	1257884420	Play_23_NV_ObstaclesCustomization			\Default Work Unit\Play_23_NV_ObstaclesCustomization	
-	1344036906	Play_15_NV_Review			\Default Work Unit\Play_15_NV_Review	
-	1517633171	Play_02_NV_EchoClick			\Default Work Unit\Play_02_NV_EchoClick	
-	1602792029	Play_05_NV_ContinuedCollisions			\Default Work Unit\Play_05_NV_ContinuedCollisions	
-	1784930419	Play_01_NV_Welcome			\Default Work Unit\Play_01_NV_Welcome	
-	1835230543	Play_25_NV_HearingTheObstacles_PT			\Default Work Unit\Play_25_NV_HearingTheObstacles_PT	
-	1904249682	Play_07_NV_Sideways			\Default Work Unit\Play_07_NV_Sideways	
-	1944555383	Play_14_NV_SpawnPointsAndMovement			\Default Work Unit\Play_14_NV_SpawnPointsAndMovement	
-	1959403158	Play_28_NV_AudioLandmarks_PT			\Default Work Unit\Play_28_NV_AudioLandmarks_PT	
-	2220317695	Play_13_NV_MainChamberSpawn_PT			\Default Work Unit\Play_13_NV_MainChamberSpawn_PT	
-	2496975038	Play_18_NV_EnteringACategory			\Default Work Unit\Play_18_NV_EnteringACategory	
-	2552998629	Play_21_NV_UIReview			\Default Work Unit\Play_21_NV_UIReview	
-	2828457565	Play_19_NV_NavigatingUISubmenus_PT			\Default Work Unit\Play_19_NV_NavigatingUISubmenus_PT	
-	2944014995	Play_09_NV_RotationIntro			\Default Work Unit\Play_09_NV_RotationIntro	
-	2975437661	Play_20_NV_AdjustingSliders			\Default Work Unit\Play_20_NV_AdjustingSliders	
-	3168081155	Play_29_NV_TutorialItemsAndConclusion			\Default Work Unit\Play_29_NV_TutorialItemsAndConclusion	
-	3224347966	Play_16_NV_UIIntro_PT			\Default Work Unit\Play_16_NV_UIIntro_PT	
-	3411623047	Play_08_NV_MovementPractice_PT			\Default Work Unit\Play_08_NV_MovementPractice_PT	
-	3644984316	Play_06_NV_Backwards			\Default Work Unit\Play_06_NV_Backwards	
-	3789614610	Play_24_NV_ObstaclesNavigation			\Default Work Unit\Play_24_NV_ObstaclesNavigation	
-	3863533881	Play_27_NV_ObstaclesReview			\Default Work Unit\Play_27_NV_ObstaclesReview	
-	3902747138	Play_10_NV_SonicCompass_PT			\Default Work Unit\Play_10_NV_SonicCompass_PT	
+	460292358	Play_12_NV_SpawnAtStart_PT			\Default Work Unit\Tutorial\Play_12_NV_SpawnAtStart_PT	
+	506850176	Play_03_NV_ForwardMovement_PT			\Default Work Unit\Tutorial\Play_03_NV_ForwardMovement_PT	
+	584364295	Play_11_NV_RotationAndMovementPractice			\Default Work Unit\Tutorial\Play_11_NV_RotationAndMovementPractice	
+	693311155	Play_26_NV_ObstaclePresetDescriptions			\Default Work Unit\Tutorial\Play_26_NV_ObstaclePresetDescriptions	
+	774137046	Play_22_NV_ObstaclesPresets			\Default Work Unit\Tutorial\Play_22_NV_ObstaclesPresets	
+	805288807	Play_17_NV_UIMainMenuNav			\Default Work Unit\Tutorial\Play_17_NV_UIMainMenuNav	
+	1113817490	Play_04_NV_Collisions_PT			\Default Work Unit\Tutorial\Play_04_NV_Collisions_PT	
+	1193160806	Pause_Tutorial			\Default Work Unit\Pause_Tutorial	
+	1257884420	Play_23_NV_ObstaclesCustomization			\Default Work Unit\Tutorial\Play_23_NV_ObstaclesCustomization	
+	1344036906	Play_15_NV_Review			\Default Work Unit\Tutorial\Play_15_NV_Review	
+	1517633171	Play_02_NV_EchoClick			\Default Work Unit\Tutorial\Play_02_NV_EchoClick	
+	1602792029	Play_05_NV_ContinuedCollisions			\Default Work Unit\Tutorial\Play_05_NV_ContinuedCollisions	
+	1784930419	Play_01_NV_Welcome			\Default Work Unit\Tutorial\Play_01_NV_Welcome	
+	1835230543	Play_25_NV_HearingTheObstacles_PT			\Default Work Unit\Tutorial\Play_25_NV_HearingTheObstacles_PT	
+	1904249682	Play_07_NV_Sideways			\Default Work Unit\Tutorial\Play_07_NV_Sideways	
+	1944555383	Play_14_NV_SpawnPointsAndMovement			\Default Work Unit\Tutorial\Play_14_NV_SpawnPointsAndMovement	
+	1959403158	Play_28_NV_AudioLandmarks_PT			\Default Work Unit\Tutorial\Play_28_NV_AudioLandmarks_PT	
+	2220317695	Play_13_NV_MainChamberSpawn_PT			\Default Work Unit\Tutorial\Play_13_NV_MainChamberSpawn_PT	
+	2496975038	Play_18_NV_EnteringACategory			\Default Work Unit\Tutorial\Play_18_NV_EnteringACategory	
+	2552998629	Play_21_NV_UIReview			\Default Work Unit\Tutorial\Play_21_NV_UIReview	
+	2828457565	Play_19_NV_NavigatingUISubmenus_PT			\Default Work Unit\Tutorial\Play_19_NV_NavigatingUISubmenus_PT	
+	2944014995	Play_09_NV_RotationIntro			\Default Work Unit\Tutorial\Play_09_NV_RotationIntro	
+	2975437661	Play_20_NV_AdjustingSliders			\Default Work Unit\Tutorial\Play_20_NV_AdjustingSliders	
+	3168081155	Play_29_NV_TutorialItemsAndConclusion			\Default Work Unit\Tutorial\Play_29_NV_TutorialItemsAndConclusion	
+	3224347966	Play_16_NV_UIIntro_PT			\Default Work Unit\Tutorial\Play_16_NV_UIIntro_PT	
+	3411623047	Play_08_NV_MovementPractice_PT			\Default Work Unit\Tutorial\Play_08_NV_MovementPractice_PT	
+	3644984316	Play_06_NV_Backwards			\Default Work Unit\Tutorial\Play_06_NV_Backwards	
+	3789614610	Play_24_NV_ObstaclesNavigation			\Default Work Unit\Tutorial\Play_24_NV_ObstaclesNavigation	
+	3863533881	Play_27_NV_ObstaclesReview			\Default Work Unit\Tutorial\Play_27_NV_ObstaclesReview	
+	3902747138	Play_10_NV_SonicCompass_PT			\Default Work Unit\Tutorial\Play_10_NV_SonicCompass_PT	
+	4041214897	Resume_Tutorial			\Default Work Unit\Resume_Tutorial	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	864818103	SG_UI_TutorialItems			\Default Work Unit\SG_UI_TutorialItems	

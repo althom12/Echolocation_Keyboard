@@ -1,23 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
 	222667337	Event_UI_Select_Multipurpose			\Default Work Unit\UI\Event_UI_Select_Multipurpose	
-	355366375	Play_Landmarks_ClockOn_Checked			\Default Work Unit\Play_Landmarks_ClockOn_Checked	
 	514607133	Play_SettingsClosed			\Default Work Unit\Play_SettingsClosed	
 	587051210	Play_FootstsepsPropertiesPage			\Default Work Unit\Play_FootstsepsPropertiesPage	
 	847023378	Play_AudioCrumbsPropertiesPage			\Default Work Unit\Play_AudioCrumbsPropertiesPage	
 	1132456374	Event_UI_Select_LandmarksProperties			\Default Work Unit\UI\Event_UI_Select_LandmarksProperties	
-	1227681308	Play_Landmarks_ClockVolume			\Default Work Unit\Play_Landmarks_ClockVolume	
 	1504398712	Play_Environment_BetterClock			\Default Work Unit\Landmarks\Play_Environment_BetterClock	
-	1940788890	Play_Landmarks_HVACOn_NotChecked			\Default Work Unit\Play_Landmarks_HVACOn_NotChecked	
 	2040130348	Event_UI_Select_EcholocatorClickProperties			\Default Work Unit\UI\Event_UI_Select_EcholocatorClickProperties	
 	2142858666	Play_MainSettingsInitialOpen			\Default Work Unit\Play_MainSettingsInitialOpen	
 	2256606490	Event_UI_Select_SimpleTutorial			\Default Work Unit\UI\Event_UI_Select_SimpleTutorial	
 	2286525692	Event_UI_Select_FootstepsProperties			\Default Work Unit\UI\Event_UI_Select_FootstepsProperties	
 	2321440389	Play_TutorialItemsPage			\Default Work Unit\Play_TutorialItemsPage	
-	2394065306	Play_Landmarks_ClockOn_NotChecked			\Default Work Unit\Play_Landmarks_ClockOn_NotChecked	
 	2953026179	Event_UI_Select_ObstaclesProperties			\Default Work Unit\UI\Event_UI_Select_ObstaclesProperties	
-	3527410972	Play_Landmarks_HVACVolume			\Default Work Unit\Play_Landmarks_HVACVolume	
 	3548695574	Play_Environment_HVAC			\Default Work Unit\Landmarks\Play_Environment_HVAC	
-	3592158439	Play_Landmarks_HVACOn_Checked			\Default Work Unit\Play_Landmarks_HVACOn_Checked	
 	3738316925	Play_EcholocatorClickPropertiesPage			\Default Work Unit\Play_EcholocatorClickPropertiesPage	
 	3772977147	Play_LandmarksPropertiesPage			\Default Work Unit\Play_LandmarksPropertiesPage	
 	3831725167	Event_UI_Select_AudioCrumbsProperties			\Default Work Unit\UI\Event_UI_Select_AudioCrumbsProperties	

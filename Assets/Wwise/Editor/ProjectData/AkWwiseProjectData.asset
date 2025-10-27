@@ -559,7 +559,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584400526093185532
+    m_lastTime: -8584400509460307982
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -615,7 +615,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584400526093205538
+    m_lastTime: -8584400509460323020
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -848,6 +848,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Pause_Tutorial
+      guid: 74a558eeb1c42147a65eb3e2c9ac9f34
+      id: 1193160806
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Pause_Tutorial
+        ObjectType: 3
+        guid: 74a558eeb1c42147a65eb3e2c9ac9f34
+      Path: Events\Default Work Unit\Pause_Tutorial
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_01_NV_Welcome
       guid: 3a816b814751ad46be3e2b00245f5c73
       id: 1784930419
@@ -1639,108 +1656,6 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 0.21191256
       minDuration: 0.21191256
-    - name: Play_Landmarks_ClockOn_Checked
-      guid: 44631653a1516a45b5e57451e5a0bd4e
-      id: 355366375
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Play_Landmarks_ClockOn_Checked
-        ObjectType: 3
-        guid: 44631653a1516a45b5e57451e5a0bd4e
-      Path: Events\Default Work Unit\Play_Landmarks_ClockOn_Checked
-      maxAttenuation: 0
-      maxDuration: 1.5889337
-      minDuration: 1.5889337
-    - name: Play_Landmarks_ClockOn_NotChecked
-      guid: 5f8cbf4acb7c5543b9e9b0f580764bf5
-      id: 2394065306
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Play_Landmarks_ClockOn_NotChecked
-        ObjectType: 3
-        guid: 5f8cbf4acb7c5543b9e9b0f580764bf5
-      Path: Events\Default Work Unit\Play_Landmarks_ClockOn_NotChecked
-      maxAttenuation: 0
-      maxDuration: 1.6354765
-      minDuration: 1.6354765
-    - name: Play_Landmarks_ClockVolume
-      guid: 2cc49d260479ec468b393fcb8e52b117
-      id: 1227681308
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Play_Landmarks_ClockVolume
-        ObjectType: 3
-        guid: 2cc49d260479ec468b393fcb8e52b117
-      Path: Events\Default Work Unit\Play_Landmarks_ClockVolume
-      maxAttenuation: 0
-      maxDuration: 1.317065
-      minDuration: 1.317065
-    - name: Play_Landmarks_HVACOn_Checked
-      guid: 62118eb211b8fd419798370d116c366e
-      id: 3592158439
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Play_Landmarks_HVACOn_Checked
-        ObjectType: 3
-        guid: 62118eb211b8fd419798370d116c366e
-      Path: Events\Default Work Unit\Play_Landmarks_HVACOn_Checked
-      maxAttenuation: 0
-      maxDuration: 1.8670485
-      minDuration: 1.8670485
-    - name: Play_Landmarks_HVACOn_NotChecked
-      guid: c349840c002c1747b1059b06965ce26a
-      id: 1940788890
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Play_Landmarks_HVACOn_NotChecked
-        ObjectType: 3
-        guid: c349840c002c1747b1059b06965ce26a
-      Path: Events\Default Work Unit\Play_Landmarks_HVACOn_NotChecked
-      maxAttenuation: 0
-      maxDuration: 2.18546
-      minDuration: 2.18546
-    - name: Play_Landmarks_HVACVolume
-      guid: c069fcfd8423af4881bdbaa897ee020c
-      id: 3527410972
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Play_Landmarks_HVACVolume
-        ObjectType: 3
-        guid: c069fcfd8423af4881bdbaa897ee020c
-      Path: Events\Default Work Unit\Play_Landmarks_HVACVolume
-      maxAttenuation: 0
-      maxDuration: 1.664423
-      minDuration: 1.664423
     - name: Play_LandmarksPropertiesPage
       guid: 43b3beb37241cf48941a15aa1f3fd859
       id: 3772977147
@@ -2043,6 +1958,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Resume_Tutorial
+      guid: ec9c77c4ee94854da667fd41b000edbd
+      id: 4041214897
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Resume_Tutorial
+        ObjectType: 3
+        guid: ec9c77c4ee94854da667fd41b000edbd
+      Path: Events\Default Work Unit\Resume_Tutorial
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: SpawnPositions
       guid: 6cec6a0b4ac50d449fce4118c2887e00
       id: 2311575222
@@ -3859,7 +3791,7 @@ MonoBehaviour:
     m_lastTime: -8584424684189015458
     List: []
   ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000060000000e0000000f000000100000001300000018000000190000001a0000001b0000001c0000001d0000001e00000024000000290000002c0000002d00000035000000370000005100000054000000550000006100000062000000bc000000bd000000be000000f5000000f6000000fd000000fe0000007f01000080010000410200004202000043020000720200007302000079020000
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000130000001500000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000270000002c0000002d0000003000000031000000320000003300000037000000380000003b0000003c0000003f000000400000004d0000004e0000004f00000051000000540000005500000061000000620000006f0000008f0000009000000091000000bc000000bd000000be000000ea000000eb000000ec000000f5000000f6000000fd000000fe00000032010000330100003d0100003e0100003f01000040010000410100004a0100004b0100004c0100004d0100007f01000080010000890100008a0100008b0100008c0100008d0100008e0100008f0100009001000091010000920100009e0100009f010000a0010000c3010000c4010000c5010000c6010000c7010000d0010000d1010000d2010000d3010000340200003502000037020000380200003f020000400200004102000042020000430200005b0200005c02000061020000640200007202000073020000790200008602000092020000930200009402000095020000960200009702000098020000990200009a0200009b020000d6020000d70200003503000036030000380300003903000085030000ce030000cf030000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000130000001500000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000270000002c0000002d0000003000000031000000320000003300000037000000380000003b0000003c0000003f000000400000004d0000004e0000004f00000051000000540000005500000061000000620000006f0000008f0000009000000091000000bc000000bd000000be000000ea000000eb000000ec000000f5000000f6000000fd000000fe00000032010000330100003d0100003e0100003f01000040010000410100004a0100004b0100004c0100004d0100007f01000080010000890100008a0100008b0100008c0100008d0100008e0100008f0100009001000091010000920100009e0100009f010000a0010000340200003502000037020000380200003f020000400200004102000042020000430200005b0200005c02000061020000640200007202000073020000790200008602000092020000930200009402000095020000960200009702000098020000990200009a0200009b020000d6020000d70200003503000036030000380300003903000085030000ce030000cf030000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

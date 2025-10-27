@@ -858,6 +858,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Pause_Tutorial" ID="{EE58A574-C4B1-4721-A65E-B3E2C9AC9F34}">
+					<ChildrenList>
+						<Action Name="" ID="{8E10D790-AA71-4638-9CE9-2499F84345C0}" ShortID="903845119">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tutorial" ID="{2CCDF6E1-8A40-4E5B-9A82-57511501469D}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Resume_Tutorial" ID="{C4779CEC-94EE-4D85-A667-FD41B000EDBD}">
+					<ChildrenList>
+						<Action Name="" ID="{CFFE719F-6F3B-4408-BE39-D34ADE6CFD7C}" ShortID="922446460">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tutorial" ID="{2CCDF6E1-8A40-4E5B-9A82-57511501469D}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

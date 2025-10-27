@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{554B0646-3922-83EA-6F70-D4A848628699}",
+    "Hash": "{49420944-9566-3F01-01F7-D1BAF4195E2D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -1424,90 +1424,6 @@
       ]
      },
      {
-      "Id": "355366375",
-      "Name": "Play_Landmarks_ClockOn_Checked",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_ClockOn_Checked",
-      "GUID": "{53166344-51A1-456A-B5E5-7451E5A0BD4E}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.5889337",
-      "DurationMax": "1.5889337",
-      "MediaRefs": [
-       {
-        "Id": "690550287"
-       }
-      ]
-     },
-     {
-      "Id": "2394065306",
-      "Name": "Play_Landmarks_ClockOn_NotChecked",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_ClockOn_NotChecked",
-      "GUID": "{4ABF8C5F-7CCB-4355-B9E9-B0F580764BF5}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.6354765",
-      "DurationMax": "1.6354765",
-      "MediaRefs": [
-       {
-        "Id": "66783371"
-       }
-      ]
-     },
-     {
-      "Id": "1227681308",
-      "Name": "Play_Landmarks_ClockVolume",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_ClockVolume",
-      "GUID": "{269DC42C-7904-46EC-8B39-3FCB8E52B117}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.317065",
-      "DurationMax": "1.317065",
-      "MediaRefs": [
-       {
-        "Id": "98132064"
-       }
-      ]
-     },
-     {
-      "Id": "3592158439",
-      "Name": "Play_Landmarks_HVACOn_Checked",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_HVACOn_Checked",
-      "GUID": "{B28E1162-B811-41FD-9798-370D116C366E}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.8670485",
-      "DurationMax": "1.8670485",
-      "MediaRefs": [
-       {
-        "Id": "505702076"
-       }
-      ]
-     },
-     {
-      "Id": "1940788890",
-      "Name": "Play_Landmarks_HVACOn_NotChecked",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_HVACOn_NotChecked",
-      "GUID": "{0C8449C3-2C00-4717-B105-9B06965CE26A}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.18546",
-      "DurationMax": "2.18546",
-      "MediaRefs": [
-       {
-        "Id": "363050506"
-       }
-      ]
-     },
-     {
-      "Id": "3527410972",
-      "Name": "Play_Landmarks_HVACVolume",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_HVACVolume",
-      "GUID": "{FDFC69C0-2384-48AF-81BD-BAA897EE020C}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.664423",
-      "DurationMax": "1.664423",
-      "MediaRefs": [
-       {
-        "Id": "280454049"
-       }
-      ]
-     },
-     {
       "Id": "3772977147",
       "Name": "Play_LandmarksPropertiesPage",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_LandmarksPropertiesPage",
@@ -1984,6 +1900,6 @@
     ]
    }
   ],
-  "FileHash": "{EFE1A87D-18A5-8945-1CA2-7099091839B9}"
+  "FileHash": "{868A5EB4-E900-1B86-11B3-138DA1395E9A}"
  }
 }

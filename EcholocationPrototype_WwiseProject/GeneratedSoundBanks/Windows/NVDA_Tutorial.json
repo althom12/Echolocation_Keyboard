@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C330E82C-4620-4661-A8C1-04F9E338EB42}",
     "Language": "SFX",
-    "Hash": "{C571A547-77DE-48DB-37EE-71CEB5BD7ABF}",
+    "Hash": "{ECC9ED62-02DD-1839-79D1-024DCF69214A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\NVDA_Tutorial",
     "ShortName": "NVDA_Tutorial",
     "Path": "NVDA_Tutorial.bnk",
@@ -625,6 +625,16 @@
       ]
      },
      {
+      "Id": "1193160806",
+      "Name": "Pause_Tutorial",
+      "ObjectPath": "\\Events\\Default Work Unit\\Pause_Tutorial",
+      "GUID": "{EE58A574-C4B1-4721-A65E-B3E2C9AC9F34}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "1784930419",
       "Name": "Play_01_NV_Welcome",
       "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_01_NV_Welcome",
@@ -1029,6 +1039,16 @@
         "Id": "318647524"
        }
       ]
+     },
+     {
+      "Id": "4041214897",
+      "Name": "Resume_Tutorial",
+      "ObjectPath": "\\Events\\Default Work Unit\\Resume_Tutorial",
+      "GUID": "{C4779CEC-94EE-4D85-A667-FD41B000EDBD}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ],
     "SwitchGroups": [
@@ -1229,6 +1249,6 @@
     ]
    }
   ],
-  "FileHash": "{BB807FF6-8A03-2992-1B6E-AC06B108D635}"
+  "FileHash": "{3867FF12-4639-E0C8-5F4A-0E9D8C0DB562}"
  }
 }

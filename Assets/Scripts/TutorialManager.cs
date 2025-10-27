@@ -106,7 +106,7 @@ public class TutorialManager : MonoBehaviour
         introductoryAudio?.Post(gameObject);
         Debug.Log("Game started. Tutorial auto-playing intro audio. Press BackQuote (`) to progress.");
 
-        Debug.Log("Tutorial Manager ready. Use Tutorial Properties window to start.");
+       
     }
 
     void Update()
@@ -119,6 +119,12 @@ public class TutorialManager : MonoBehaviour
         if (currentState == TutorialState.Chapter30_Complete && Input.GetKeyDown(KeyCode.Tab))
         {
             CycleInstructionReplay();
+        }
+
+        // ADD THIS: Numpad 0 for pause/resume
+        if (isTutorialActive && Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            ToggleAudioPause();
         }
     }
 
