@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 10575198}
   - component: {fileID: 10575197}
   - component: {fileID: 10575196}
+  - component: {fileID: 10575201}
   m_Layer: 5
   m_Name: StartTutorial
   m_TagString: Untagged
@@ -402,9 +403,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1951476562}
-        m_TargetAssemblyTypeName: TutorialPropertiesSubwindow, Assembly-CSharp
-        m_MethodName: OnStartTutorialPressed
+      - m_Target: {fileID: 10575201}
+        m_TargetAssemblyTypeName: StartTutorialButton, Assembly-CSharp
+        m_MethodName: OnButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -472,6 +473,18 @@ RectTransform:
   m_AnchoredPosition: {x: -297, y: 148}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &10575201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10575195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0bf08415b878849afa1a0d1d134f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &16858882
 GameObject:
   m_ObjectHideFlags: 0
@@ -5353,7 +5366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &252346403
@@ -10334,6 +10347,21 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  OnMenuFullyClosed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &466815306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40587,6 +40615,7 @@ GameObject:
   - component: {fileID: 1929924893}
   - component: {fileID: 1929924892}
   - component: {fileID: 1929924894}
+  - component: {fileID: 1929924897}
   m_Layer: 5
   m_Name: EndTutorial
   m_TagString: Untagged
@@ -40638,9 +40667,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1951476562}
-        m_TargetAssemblyTypeName: TutorialPropertiesSubwindow, Assembly-CSharp
-        m_MethodName: OnEndTutorialPressed
+      - m_Target: {fileID: 1929924897}
+        m_TargetAssemblyTypeName: EndTutorialButton, Assembly-CSharp
+        m_MethodName: OnButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40759,6 +40788,18 @@ RectTransform:
   m_AnchoredPosition: {x: -297, y: 96}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1929924897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929924891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8231e545ccada841885d3499f6bd313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1939598689
 GameObject:
   m_ObjectHideFlags: 0
@@ -41104,8 +41145,8 @@ GameObject:
   - component: {fileID: 1951476565}
   - component: {fileID: 1951476564}
   - component: {fileID: 1951476563}
-  - component: {fileID: 1951476562}
   - component: {fileID: 1951476561}
+  - component: {fileID: 1951476568}
   m_Layer: 5
   m_Name: TutorialProperties
   m_TagString: Untagged
@@ -41125,24 +41166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f00094b4ca53e22458129821eb8c41d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1951476562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951476560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d5fdd7329d09946bf815be0d01b02a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstSelectedElement: {fileID: 10575195}
-  windowOpenEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 88a0d4625899fc3489f1ab88f9535c18, type: 2}
-  tutorialManager: {fileID: 360123817}
 --- !u!114 &1951476563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41242,6 +41265,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1951476568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951476560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21790fc9f11cc44aa0e6fe88f255a6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstSelectedElement: {fileID: 10575195}
+  windowOpenEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 88a0d4625899fc3489f1ab88f9535c18, type: 2}
 --- !u!1 &1952309204
 GameObject:
   m_ObjectHideFlags: 0

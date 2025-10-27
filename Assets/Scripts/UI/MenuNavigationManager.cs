@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Events; // <-- 1. ADD THIS NAMESPACE
 
 public class MenuNavigationManager : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class MenuNavigationManager : MonoBehaviour
     public AK.Wwise.Event mainMenuOpenEvent;
     public AK.Wwise.Event mainMenuCloseEvent;
     public AK.Wwise.Event stopUISelectionEvent;
+
+    // 2. ADD THE UNITY EVENT
+    [Header("Menu Events")]
+    public UnityEvent OnMenuFullyClosed;
 
     private CustomInputActions _input;
     private GameObject _lastSelectedMainSettingsButton;
@@ -38,6 +43,10 @@ public class MenuNavigationManager : MonoBehaviour
                 handler.enabled = false;
             }
         }
+
+        // Initialize the event
+        if (OnMenuFullyClosed == null)
+            OnMenuFullyClosed = new UnityEvent();
     }
 
     private void OnEnable()
@@ -82,8 +91,6 @@ public class MenuNavigationManager : MonoBehaviour
         if (mainSettingsPanel.activeSelf | _activeSubWindow != null)
         {
             // --- CLOSE EVERYTHING (NOW A COROUTINE) ---
-            // This is the primary change: we start the coroutine
-            // instead of running the logic synchronously.
             StartCoroutine(CloseMenuWithAudio());
         }
         else
@@ -93,7 +100,6 @@ public class MenuNavigationManager : MonoBehaviour
         }
     }
 
-    // --- NEW COROUTINE TO HANDLE CLOSING LOGIC ---
     private IEnumerator CloseMenuWithAudio()
     {
         Debug.Log($" Coroutine STARTED at Time: {Time.unscaledTime}");
@@ -122,14 +128,10 @@ public class MenuNavigationManager : MonoBehaviour
         }
 
         // --- STEP 2: CRITICAL DECOUPLING ---
-        // Wait for the end of the current frame. This allows Wwise's audio thread
-        // to process all the "Stop" commands we just queued.
         yield return new WaitForEndOfFrame();
         Debug.Log($" EndOfFrame reached. Posting close event at Time: {Time.unscaledTime}");
 
         // --- STEP 3: POST THE CLOSE EVENT ---
-        // Now, in a new frame, the audio engine is "clean" and
-        // ready to accept a new event.
         if (mainMenuCloseEvent != null)
         {
             mainMenuCloseEvent.Post(this.gameObject);
@@ -137,7 +139,6 @@ public class MenuNavigationManager : MonoBehaviour
         }
 
         // --- STEP 4: DEACTIVATE PANELS & CLEAN UP (IMMEDIATE) ---
-        // We can do all the logic cleanup right away, EXCEPT Time.timeScale.
         mainSettingsPanel.SetActive(false);
         if (_activeSubWindow != null)
         {
@@ -159,15 +160,17 @@ public class MenuNavigationManager : MonoBehaviour
         }
 
         // --- STEP 5: WAIT FOR SOUND TO PLAY BEFORE UNPAUSING ---
-        // ** IMPORTANT: **
-        // You MUST use WaitForSecondsRealtime because Time.timeScale is still 0.
         // Adjust "0.5f" to be the length of your mainMenuCloseEvent sound.
         yield return new WaitForSecondsRealtime(0.5f);
         Debug.Log($" Unscaled wait finished. Resuming game time at Time: {Time.unscaledTime}");
 
         // --- STEP 6: UNPAUSE THE GAME (LAST) ---
-        // Now that the sound has had time to play, we resume the game.
         Time.timeScale = 1f;
+
+        // --- 3. STEP 7: INVOKE EVENT ---
+        // Notify any listeners that the menu is now fully closed and game is un-paused.
+        Debug.Log("Menu fully closed, invoking OnMenuFullyClosed event.");
+        OnMenuFullyClosed?.Invoke();
     }
 
     private void OpenMainMenuWithAudio()
@@ -264,7 +267,6 @@ public class MenuNavigationManager : MonoBehaviour
 
         _lastSelectedMainSettingsButton = EventSystem.current.currentSelectedGameObject;
 
-        // Stop main menu opening event to prevent callback interference
         if (mainMenuOpenEventPlayingID != AkSoundEngine.AK_INVALID_PLAYING_ID)
         {
             AkSoundEngine.StopPlayingID(mainMenuOpenEventPlayingID);
@@ -372,5 +374,19 @@ public class MenuNavigationManager : MonoBehaviour
         {
             EventSystem.current.SetSelectedGameObject(_lastSelectedMainSettingsButton);
         }
+    }
+
+    /// <summary>
+    /// Closes both subwindow and main menu entirely. Now starts the audio coroutine.
+    /// </summary>
+    public void CloseEntireMenu()
+    {
+        // 4. --- REPLACED LOGIC ---
+        // Instead of synchronous, silent closing, just call the
+        // same coroutine that the "Esc" key uses.
+        // This will play the audio, wait, un-pause, and fire the
+        // OnMenuFullyClosed event, all in the correct order.
+        Debug.Log("CloseEntireMenu called - starting CloseMenuWithAudio coroutine...");
+        StartCoroutine(CloseMenuWithAudio());
     }
 }
