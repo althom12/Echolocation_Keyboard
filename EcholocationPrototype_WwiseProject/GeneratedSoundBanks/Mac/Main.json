@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{F7D22D76-E08E-3FCB-C55A-585589B4CC7A}",
+    "Hash": "{90F9CAE7-A986-C6B9-0626-371E238CEC21}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -471,12 +471,6 @@
     ],
     "AuxBusses": [
      {
-      "Id": "459160926",
-      "Name": "StereoVerb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
-      "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
-     },
-     {
       "Id": "867873073",
       "Name": "Hallway02_Ambi_Verb",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs\\Hallway02_Ambi_Verb",
@@ -490,20 +484,6 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
       "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
       "Color": "4"
-     },
-     {
-      "Id": "2018380841",
-      "Name": "LateReverb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb\\LateReverb",
-      "GUID": "{F02E6885-FC95-47CA-AB5D-FF9298F1B276}",
-      "AuxBusRefs": [
-       {
-        "Id": "459160926",
-        "Name": "StereoVerb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
-        "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
-       }
-      ]
      },
      {
       "Id": "3311067494",
@@ -548,6 +528,6 @@
     ]
    }
   ],
-  "FileHash": "{C0DF171A-E77A-9AC5-64F6-DAF30BFC601B}"
+  "FileHash": "{92A04809-B9F2-DC40-EA77-FCEFD43041CD}"
  }
 }

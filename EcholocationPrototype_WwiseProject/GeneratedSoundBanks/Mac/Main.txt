@@ -26,10 +26,8 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	459160926	StereoVerb			\Default Work Unit\Master Audio Bus\StereoVerb	
 	867873073	Hallway02_Ambi_Verb			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway02_Ambi_Verb	
 	903073294	SimpleReflect			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\SimpleReflect	
-	2018380841	LateReverb			\Default Work Unit\Master Audio Bus\StereoVerb\LateReverb	
 	3311067494	Hallway01_Ambi_Verb			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway01_Ambi_Verb	
 
 Effect plug-ins	ID	Name	Type				Notes

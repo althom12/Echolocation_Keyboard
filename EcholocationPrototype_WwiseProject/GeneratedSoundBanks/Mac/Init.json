@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{962A7F15-F693-719A-FF5C-9FC36CFB3C50}",
+    "Hash": "{B15B6B08-81D8-F1ED-ADD6-64F3E0776DA5}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -46,6 +46,13 @@
     },
     "Busses": [
      {
+      "Id": "796032403",
+      "Name": "Tutorial_Contents_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Tutorial_Contents_Bus",
+      "GUID": "{E8229EFC-5572-4396-8D1D-A152EDB2DBC1}",
+      "Color": "17"
+     },
+     {
       "Id": "846920411",
       "Name": "Ambisonic_Main_Mix",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix",
@@ -76,7 +83,7 @@
       "Name": "NewTutorial",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\NewTutorial",
       "GUID": "{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}",
-      "Color": "4"
+      "Color": "26"
      },
      {
       "Id": "3247222208",
@@ -100,12 +107,6 @@
     ],
     "AuxBusses": [
      {
-      "Id": "459160926",
-      "Name": "StereoVerb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
-      "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
-     },
-     {
       "Id": "867873073",
       "Name": "Hallway02_Ambi_Verb",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs\\Hallway02_Ambi_Verb",
@@ -119,20 +120,6 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
       "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
       "Color": "4"
-     },
-     {
-      "Id": "2018380841",
-      "Name": "LateReverb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb\\LateReverb",
-      "GUID": "{F02E6885-FC95-47CA-AB5D-FF9298F1B276}",
-      "AuxBusRefs": [
-       {
-        "Id": "459160926",
-        "Name": "StereoVerb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
-        "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
-       }
-      ]
      },
      {
       "Id": "3311067494",
@@ -188,6 +175,32 @@
      }
     ],
     "StateGroups": [
+     {
+      "Id": "587064525",
+      "Name": "Tutorial_State",
+      "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State",
+      "GUID": "{A971E536-ACE1-4AD3-BB90-0C3B372B47F3}",
+      "States": [
+       {
+        "Id": "126890676",
+        "Name": "Tutorial_Playing",
+        "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State\\Tutorial_Playing",
+        "GUID": "{6B42AB7A-7512-4DCA-8641-7E4AA73BB8B0}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State\\None",
+        "GUID": "{D0D244D0-4CA4-4161-9119-8B389AE2F950}"
+       },
+       {
+        "Id": "3625923408",
+        "Name": "Tutorial_Paused",
+        "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State\\Tutorial_Paused",
+        "GUID": "{D4E0F7C7-9E59-479B-AEF1-83B002EDA863}"
+       }
+      ]
+     },
      {
       "Id": "1875554370",
       "Name": "UI_Audio_State",
@@ -1317,6 +1330,6 @@
     ]
    }
   ],
-  "FileHash": "{49C3553C-D3C9-E54B-2582-54F276412784}"
+  "FileHash": "{2351A30B-4ADD-499A-2FB1-C33F0CAE8E4D}"
  }
 }

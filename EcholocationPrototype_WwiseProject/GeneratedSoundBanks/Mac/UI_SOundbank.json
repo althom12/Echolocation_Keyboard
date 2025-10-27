@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{B08F31D6-8D0E-5F41-F845-C98DF606A667}",
+    "Hash": "{2E667567-C14F-9B40-1644-72E2E24DC751}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -525,7 +525,7 @@
       {
        "Id": "196788001",
        "Name": "Parametric EQ (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Environment\\Landmarks\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Landmarks\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
        "GUID": "{E3E17B52-3907-43F9-98D3-BE93B36F5B7C}",
        "LibName": "Wwise Parametric EQ",
        "LibId": "6881283"
@@ -1931,6 +1931,6 @@
     ]
    }
   ],
-  "FileHash": "{715613E3-1005-A651-EF14-AB3514E3ACCC}"
+  "FileHash": "{B2AFACE9-FA0F-6E9D-CD2E-1A34687D011E}"
  }
 }

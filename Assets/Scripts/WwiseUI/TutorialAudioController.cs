@@ -1,150 +1,229 @@
 /*
- * TutorialAudioController.cs
+ * TutorialAudioController.cs (DEBUG VERSION WITH EXTENSIVE LOGGING)
  * 
- * This script manages the global pause/resume state for all tutorial-related audio
- * by listening for the Numpad 0 key. It functions as a persistent singleton
- * to ensure it is always available.
- * 
- * REPORT DATE: Monday, October 27, 2025
- * LOCATION: Patchway, England
- *
- * REQUIRES:
- * 1. This script must be placed on a GameObject that persists between scenes
- *    (see Awake() method).
- * 2. The GameObject MUST also have an 'AkGameObj' component attached.
- * 3. Two Wwise Events named "Tutorial_Pause" and "Tutorial_Resume" must exist.
- * 4. Those Events must be included in a loaded SoundBank (e.g., Init.bnk).
- * 5. The 'Pause' and 'Resume' actions within those Events must have their
- *    'Scope' property set to 'Global' in Wwise.
+ * This version has comprehensive debug logging to troubleshoot issues.
+ * Every action logs to the console with clear markers.
  */
 
 using UnityEngine;
 
-// We do not need to import the AK.Wwise namespace if only
-// using AkSoundEngine static methods with string names.
 public class TutorialAudioController : MonoBehaviour
 {
-    // --- Singleton Pattern ---
-
-    // Public static reference to this instance.
     public static TutorialAudioController Instance { get; private set; }
 
-    // --- State Management ---
-
-    // This boolean tracks the current state of the tutorial audio system.
     private bool isTutorialPaused = false;
 
-    // --- Wwise Event Definitions ---
+    // State Group and State names (must match Wwise exactly)
+    private const string STATE_GROUP = "Tutorial_State";
+    private const string STATE_PLAYING = "Playing";
+    private const string STATE_PAUSED = "Paused";
 
-    // Using const strings for Event names is safer than typing string literals.
-    // These names MUST exactly match the names of the Events in the Wwise project.
-    private const string PAUSE_EVENT = "{Pause_Tutorial}";
-    private const string RESUME_EVENT = "Resume_Tutorial";
-
-    /// <summary>
-    /// Awake is called when the script instance is being loaded.
-    /// Used here to implement the singleton pattern.
-    /// </summary>
     void Awake()
     {
-        // Implement the singleton pattern
+        Debug.Log("========================================");
+        Debug.Log("TutorialAudioController: Awake() called");
+        Debug.Log($"GameObject name: {gameObject.name}");
+        Debug.Log($"Scene: {UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}");
+
         if (Instance == null)
         {
-            // This is the first and only instance.
             Instance = this;
-
-            // Make this GameObject persistent across all scene loads.
             DontDestroyOnLoad(gameObject);
+            Debug.Log("? TutorialAudioController: Singleton created and marked DontDestroyOnLoad");
+            Debug.Log($"? Instance reference set: {Instance != null}");
         }
         else
         {
-            // A duplicate instance was created (e.g., reloading the init scene).
-            // Destroy the duplicate to enforce the singleton rule.
+            Debug.Log("? TutorialAudioController: Duplicate instance found, destroying this one");
             Destroy(gameObject);
             return;
         }
 
-        // We assume the AkGameObj component is on this same GameObject.
-        // Wwise will automatically register it.
+        Debug.Log("========================================");
     }
 
-    /// <summary>
-    /// Update is called once per frame.
-    /// Used here to listen for user input.
-    /// </summary>
-    void Update()
+    void Start()
     {
-        // Listen for the Numpad 0 key.
-        // Input.GetKeyDown() fires only on the single frame the key is pressed down,
-        // which is correct for a toggle.
-        if (Input.GetKeyDown(KeyCode.Keypad0))
+        Debug.Log("========================================");
+        Debug.Log("TutorialAudioController: Start() called");
+        Debug.Log($"Current pause state: {isTutorialPaused}");
+        Debug.Log($"State Group Name: '{STATE_GROUP}'");
+        Debug.Log($"State Names: '{STATE_PLAYING}', '{STATE_PAUSED}'");
+
+        // Test if Wwise is initialized
+        if (AkSoundEngine.IsInitialized())
         {
-            // Call our toggle logic method.
-            ToggleTutorialPause();
-        }
-    }
-
-    /// <summary>
-    /// Toggles the tutorial audio pause state and posts the relevant Wwise Event.
-    /// This can be called from Update() or from any other system (e.g., a UI button).
-    /// </summary>
-    public void ToggleTutorialPause()
-    {
-        // 1. Invert the state boolean
-        isTutorialPaused = !isTutorialPaused;
-
-        // 2. Post the corresponding Wwise Event based on the new state
-        if (isTutorialPaused)
-        {
-            // --- PAUSE THE AUDIO ---
-
-            // Post the "Tutorial_Pause" Event to the Wwise sound engine.
-            // We post it on 'this.gameObject', which is our singleton controller.
-            // Because the Event's Action Scope was set to 'Global' in Wwise,
-            // it will correctly pause all playing instances of the
-            // 'Tutorial_Audio' mixer, regardless of which GameObject
-            // is posting this Event or which GameObject is playing the sound.
-            AkSoundEngine.PostEvent(PAUSE_EVENT, this.gameObject); // 
-
-            // Log to the console for debugging confirmation.
-            Debug.Log(" TUTORIAL AUDIO PAUSED");
+            Debug.Log("? Wwise is initialized");
         }
         else
         {
-            // --- RESUME THE AUDIO ---
+            Debug.LogError("? WWISE IS NOT INITIALIZED! This is a critical error.");
+        }
 
-            // Post the "Tutorial_Resume" Event.
-            AkSoundEngine.PostEvent(RESUME_EVENT, this.gameObject); // 
+        // Set initial state to Playing
+        Debug.Log("Attempting to set initial state to Playing...");
+        AKRESULT result = AkSoundEngine.SetState(STATE_GROUP, STATE_PLAYING);
+        Debug.Log($"Initial state set result: {result}");
 
-            // Log to the console for debugging confirmation.
-            Debug.Log(" TUTORIAL AUDIO RESUMED");
+        if (result == AKRESULT.AK_Success)
+        {
+            Debug.Log("? Successfully set initial Tutorial_State to Playing");
+        }
+        else
+        {
+            Debug.LogError($"? FAILED to set initial state. Error: {result}");
+            Debug.LogError("Check that 'Tutorial_State' State Group exists in Wwise!");
+        }
+
+        Debug.Log("========================================");
+    }
+
+    void Update()
+    {
+        // Check for Numpad 0 input
+        if (Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            Debug.Log("========================================");
+            Debug.Log($"? NUMPAD 0 PRESSED at Time: {Time.time}");
+            Debug.Log($"? Unscaled Time: {Time.unscaledTime}");
+            Debug.Log($"? Time.timeScale: {Time.timeScale}");
+            Debug.Log($"Current pause state BEFORE toggle: {isTutorialPaused}");
+
+            ToggleTutorialPause();
+
+            Debug.Log($"Current pause state AFTER toggle: {isTutorialPaused}");
+            Debug.Log("========================================");
         }
     }
 
-    // --- Public Utility Methods ---
-
-    /// <summary>
-    /// Forcibly pauses tutorial audio.
-    /// Useful for other game systems (e.g., opening the main pause menu).
-    /// </summary>
-    public void ForcePause()
+    public void ToggleTutorialPause()
     {
-        if (isTutorialPaused) return; // Already paused, do nothing.
+        Debug.Log(">>> ToggleTutorialPause() method called");
+        Debug.Log($">>> State before toggle: {(isTutorialPaused ? "PAUSED" : "PLAYING")}");
 
-        isTutorialPaused = true;
-        AkSoundEngine.PostEvent(PAUSE_EVENT, this.gameObject);
-        Debug.Log(" TUTORIAL AUDIO FORCED PAUSE");
+        // Toggle the state
+        isTutorialPaused = !isTutorialPaused;
+
+        string targetState = isTutorialPaused ? STATE_PAUSED : STATE_PLAYING;
+        Debug.Log($">>> Attempting to set Wwise state to: '{targetState}'");
+
+        // Check if Wwise is still initialized
+        if (!AkSoundEngine.IsInitialized())
+        {
+            Debug.LogError(">>> ? Wwise is NOT initialized! Cannot set state.");
+            return;
+        }
+
+        // Set the state
+        AKRESULT result = AkSoundEngine.SetState(STATE_GROUP, targetState);
+
+        Debug.Log($">>> AkSoundEngine.SetState result: {result}");
+
+        if (result == AKRESULT.AK_Success)
+        {
+            Debug.Log($">>> ??? SUCCESS! Tutorial State set to: {targetState}");
+
+            if (isTutorialPaused)
+            {
+                Debug.Log(">>> ?? TUTORIAL AUDIO IS NOW PAUSED");
+            }
+            else
+            {
+                Debug.Log(">>> ?? TUTORIAL AUDIO IS NOW PLAYING");
+            }
+        }
+        else
+        {
+            Debug.LogError($">>> ??? FAILED to set state! Error code: {result}");
+            Debug.LogError($">>> Possible reasons:");
+            Debug.LogError($">>>   1. State Group '{STATE_GROUP}' doesn't exist in Wwise");
+            Debug.LogError($">>>   2. State '{targetState}' doesn't exist in the State Group");
+            Debug.LogError($">>>   3. SoundBank not loaded");
+            Debug.LogError($">>>   4. State names don't match exactly (case-sensitive!)");
+        }
     }
 
-    /// <summary>
-    /// Forcibly resumes tutorial audio.
-    /// </summary>
+    public void ForcePause()
+    {
+        Debug.Log("========================================");
+        Debug.Log("ForcePause() called");
+        Debug.Log($"Current state: {(isTutorialPaused ? "Already Paused" : "Playing")}");
+
+        if (isTutorialPaused)
+        {
+            Debug.Log("Already paused, no action taken");
+            Debug.Log("========================================");
+            return;
+        }
+
+        isTutorialPaused = true;
+        AKRESULT result = AkSoundEngine.SetState(STATE_GROUP, STATE_PAUSED);
+
+        Debug.Log($"ForcePause SetState result: {result}");
+
+        if (result == AKRESULT.AK_Success)
+        {
+            Debug.Log("? Tutorial State FORCE PAUSED");
+        }
+        else
+        {
+            Debug.LogError($"? ForcePause FAILED: {result}");
+        }
+
+        Debug.Log("========================================");
+    }
+
     public void ForceResume()
     {
-        if (!isTutorialPaused) return; // Already playing, do nothing.
+        Debug.Log("========================================");
+        Debug.Log("ForceResume() called");
+        Debug.Log($"Current state: {(isTutorialPaused ? "Paused" : "Already Playing")}");
+
+        if (!isTutorialPaused)
+        {
+            Debug.Log("Already playing, no action taken");
+            Debug.Log("========================================");
+            return;
+        }
 
         isTutorialPaused = false;
-        AkSoundEngine.PostEvent(RESUME_EVENT, this.gameObject);
-        Debug.Log(" TUTORIAL AUDIO FORCED RESUME");
+        AKRESULT result = AkSoundEngine.SetState(STATE_GROUP, STATE_PLAYING);
+
+        Debug.Log($"ForceResume SetState result: {result}");
+
+        if (result == AKRESULT.AK_Success)
+        {
+            Debug.Log("? Tutorial State FORCE RESUMED");
+        }
+        else
+        {
+            Debug.LogError($"? ForceResume FAILED: {result}");
+        }
+
+        Debug.Log("========================================");
+    }
+
+    public bool IsPaused()
+    {
+        Debug.Log($"IsPaused() called, returning: {isTutorialPaused}");
+        return isTutorialPaused;
+    }
+
+    // Add this to check the state from Inspector or other scripts
+    void OnGUI()
+    {
+        // Display current state in top-left corner of screen
+        GUI.color = Color.white;
+        GUIStyle style = new GUIStyle();
+        style.fontSize = 20;
+        style.normal.textColor = isTutorialPaused ? Color.red : Color.green;
+
+        GUI.Label(new Rect(10, 10, 400, 30),
+            $"Tutorial Audio: {(isTutorialPaused ? "PAUSED ??" : "PLAYING ??")}",
+            style);
+
+        GUI.Label(new Rect(10, 40, 400, 30),
+            $"Time.timeScale: {Time.timeScale}",
+            style);
     }
 }

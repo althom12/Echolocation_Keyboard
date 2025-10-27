@@ -2838,7 +2838,7 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="Tutorial" ID="{2CCDF6E1-8A40-4E5B-9A82-57511501469D}" ShortID="587117625">
+				<ActorMixer Name="TutorialProperties" ID="{2CCDF6E1-8A40-4E5B-9A82-57511501469D}" ShortID="587117625">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="18"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -3594,6 +3594,27 @@
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Tutorial_State" ID="{A971E536-ACE1-4AD3-BB90-0C3B372B47F3}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Tutorial_Paused" ID="{D4E0F7C7-9E59-479B-AEF1-83B002EDA863}"/>
+								<CustomState Name="" ID="{B4B72EB3-9640-46DB-8C20-C0C8E60E655C}" ShortID="497974715">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Tutorial_Playing" ID="{6B42AB7A-7512-4DCA-8641-7E4AA73BB8B0}"/>
+								<CustomState Name="" ID="{DD05EB42-9D56-48D4-BFF9-FB22A1022BB0}" ShortID="896919705"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

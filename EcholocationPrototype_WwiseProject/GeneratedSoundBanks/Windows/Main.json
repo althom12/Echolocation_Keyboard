@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{94F32C14-99E5-A418-B5AC-B3EFF439AC79}",
+    "Hash": "{786E0C5B-890F-05ED-9359-8758B2530B53}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -72,14 +72,6 @@
       "CachePath": "1C/{1C6928D6-A8D4-FF59-29D3-42AB7B9796EC}.wem"
      },
      {
-      "Id": "522077337",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AudioEase\\Altiverb - Outdoor and More\\Domestic\\AE_SchoolHall.wav",
-      "CachePath": "10/{100CA1C1-2AEE-C63A-F808-168B33264EC7}.wem"
-     },
-     {
       "Id": "556476513",
       "Language": "SFX",
       "Streaming": "false",
@@ -109,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ReturnToStart_MainChamber.wav",
-      "CachePath": "07/{0718336A-A06D-DEFA-564F-AC1183A62E86}.wem"
+      "CachePath": "20/{20CB4343-619B-6673-721D-A685D4905384}.wem"
      },
      {
       "Id": "714290107",
@@ -165,7 +157,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ReturnToStart_MainChamber.wav",
-      "CachePath": "26/{268FDF14-26BA-9935-ACAD-3AC05869EB0A}.wem"
+      "CachePath": "EA/{EA369A80-D404-2815-F94E-CBBF60138DDF}.wem"
      }
     ],
     "Plugins": {
@@ -253,19 +245,6 @@
        "GUID": "{F9627628-0B10-4272-BC30-D4C20423CB38}",
        "LibName": "Wwise Parametric EQ",
        "LibId": "6881283"
-      },
-      {
-       "Id": "4213309952",
-       "Name": "SchoolHall",
-       "ObjectPath": "\\Effects\\Factory Altiverb - Outdoor and More\\Altiverb - Outdoor and More\\Domestic\\SchoolHall",
-       "GUID": "{BB0D7BD2-44E6-4818-AC96-C0216B54E854}",
-       "LibName": "Wwise Convolution Reverb",
-       "LibId": "8323075",
-       "MediaRefs": [
-        {
-         "Id": "522077337"
-        }
-       ]
       }
      ]
     },
@@ -542,12 +521,6 @@
     ],
     "AuxBusses": [
      {
-      "Id": "459160926",
-      "Name": "StereoVerb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
-      "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
-     },
-     {
       "Id": "867873073",
       "Name": "Hallway02_Ambi_Verb",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs\\Hallway02_Ambi_Verb",
@@ -575,27 +548,6 @@
         }
        ]
       }
-     },
-     {
-      "Id": "2018380841",
-      "Name": "LateReverb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb\\LateReverb",
-      "GUID": "{F02E6885-FC95-47CA-AB5D-FF9298F1B276}",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "4213309952"
-        }
-       ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "459160926",
-        "Name": "StereoVerb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
-        "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
-       }
-      ]
      },
      {
       "Id": "3311067494",
@@ -647,6 +599,6 @@
     ]
    }
   ],
-  "FileHash": "{187C7374-1977-C102-E8D9-CE776EAFA936}"
+  "FileHash": "{BBF9769F-D027-0507-B064-E090FCE0AE66}"
  }
 }

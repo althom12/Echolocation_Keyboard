@@ -179,7 +179,7 @@
 						</Bus>
 						<Bus Name="NewTutorial" ID="{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="Color" Type="int16" Value="26"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</Bus>

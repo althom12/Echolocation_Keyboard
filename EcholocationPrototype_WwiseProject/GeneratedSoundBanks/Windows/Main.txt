@@ -26,10 +26,8 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	459160926	StereoVerb			\Default Work Unit\Master Audio Bus\StereoVerb	
 	867873073	Hallway02_Ambi_Verb			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway02_Ambi_Verb	
 	903073294	SimpleReflect			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\SimpleReflect	
-	2018380841	LateReverb			\Default Work Unit\Master Audio Bus\StereoVerb\LateReverb	
 	3311067494	Hallway01_Ambi_Verb			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway01_Ambi_Verb	
 
 Effect plug-ins	ID	Name	Type				Notes
@@ -42,7 +40,6 @@ Effect plug-ins	ID	Name	Type				Notes
 	3399505373	Reflect_Physically_Based	Wwise Reflect			
 	3421951496	Garage1_6m_Ambix_o3	Wwise Convolution Reverb			Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
-	4213309952	SchoolHall	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	2033835	Footstep01	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C4\{C49C2844-31E8-C405-C7A4-525EDA00034B}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep01		7340
@@ -53,17 +50,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	369476291	Footstep03	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\1C\{1C6928D6-A8D4-FF59-29D3-42AB7B9796EC}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep03		10680
 	556476513	Collision	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\03\{0339539D-B4A4-DE01-61A1-86982B9D2C67}.wem		\Actor-Mixer Hierarchy\Player\Collision		68304
 	696266850	Footstep04	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C3\{C3962221-8A60-AA0C-9E32-DC6D2FE66A21}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep04		7084
-	701906917	MainChamber	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\07\{0718336A-A06D-DEFA-564F-AC1183A62E86}.wem		\Actor-Mixer Hierarchy\Player\MainChamber		90244
+	701906917	MainChamber	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\20\{20CB4343-619B-6673-721D-A685D4905384}.wem		\Actor-Mixer Hierarchy\Player\MainChamber		90244
 	714290107	Footstep02	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\74\{74AB8055-2FDC-D746-E76E-46AFFC863E1D}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep02		9004
 	763360263	West	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\77\{77BCEC7E-7166-25C1-8049-D4CB783D5F34}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\West		247700
 	875313660	Footstep05	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\81\{811B7B63-2E63-C1F2-D7FD-4DF84D11343B}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep05		6800
 	908350307	HumanClick	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\55\{5562B044-4AE1-DBB0-6252-35B8AB3ECED3}.wem		\Actor-Mixer Hierarchy\Player\Clicks\HumanClick		40784
 	964506797	South	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\4A\{4A5A8D4D-D7B1-CF26-92E3-7D12C96F1B28}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\South		202524
 	970935376	North	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\86\{861EBDD4-BB94-CA95-0D99-750493246E07}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\North		147348
-	1005675724	ReturnToStart	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\26\{268FDF14-26BA-9935-ACAD-3AC05869EB0A}.wem		\Actor-Mixer Hierarchy\Player\ReturnToStart		119704
+	1005675724	ReturnToStart	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\EA\{EA369A80-D404-2815-F94E-CBBF60138DDF}.wem		\Actor-Mixer Hierarchy\Player\ReturnToStart		119704
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	300588143	Garage1_6m_Ambix_o3	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\41\{41E3540B-6581-2688-844B-1C6834273462}.wem	Wwise Convolution Reverb (Shared)	\Effects\BOOM Library IR - R&S - HOA\BOOM Library IR - R&S\HOA\Garage 01\Garage1_6m_Ambix_o3	Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.	1855680
-	522077337	SchoolHall	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\10\{100CA1C1-2AEE-C63A-F808-168B33264EC7}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\SchoolHall	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	570576
 	685116775	Mausoleum1_Gallery_Ambix_o3	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\2E\{2E54E46C-25F2-35D4-4C0C-EF75C3699968}.wem	Wwise Convolution Reverb (Shared)	\Effects\BOOM Library IR - R&S - HOA\BOOM Library IR - R&S\HOA\Mausoleum\Mausoleum1_Gallery_Ambix_o3	Impulse responses created by BOOM Library. © 2021 BOOM Library. All rights reserved.	3978560
 

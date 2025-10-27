@@ -11,7 +11,6 @@
 						<ObjectRef Name="Play_East" ID="{160459A9-48AA-44EA-A295-765751BF09FA}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_45_Angle_Indicator" ID="{A5A63898-3C74-4510-8D1C-BF46D87A9EA1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Compass_Synth" ID="{BD07EC20-FEE7-45DF-9E8F-82E57C8E177E}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="LateReverb" ID="{F02E6885-FC95-47CA-AB5D-FF9298F1B276}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_West" ID="{FB135816-E131-4813-B4B0-D0C8A7F03E0F}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hallway02_Ambi_Verb" ID="{A99E3B76-79C5-482E-A7C1-01943ED52D06}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" Origin="Manual" Filter="7"/>

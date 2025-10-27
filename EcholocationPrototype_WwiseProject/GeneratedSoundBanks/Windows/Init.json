@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{3092683C-74EA-9A8D-0FBB-45941A279911}",
+    "Hash": "{571DB2A7-E218-F29C-2DD1-CFAB29FDDFB6}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -22,14 +22,6 @@
       "Location": "OtherBank",
       "ShortName": "BOOM Library IR - R&S\\Garage1_6m_Ambix_o3.wav",
       "CachePath": "41/{41E3540B-6581-2688-844B-1C6834273462}.wem"
-     },
-     {
-      "Id": "522077337",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "OtherBank",
-      "ShortName": "AudioEase\\Altiverb - Outdoor and More\\Domestic\\AE_SchoolHall.wav",
-      "CachePath": "10/{100CA1C1-2AEE-C63A-F808-168B33264EC7}.wem"
      },
      {
       "Id": "685116775",
@@ -85,19 +77,6 @@
          "Id": "300588143"
         }
        ]
-      },
-      {
-       "Id": "4213309952",
-       "Name": "SchoolHall",
-       "ObjectPath": "\\Effects\\Factory Altiverb - Outdoor and More\\Altiverb - Outdoor and More\\Domestic\\SchoolHall",
-       "GUID": "{BB0D7BD2-44E6-4818-AC96-C0216B54E854}",
-       "LibName": "Wwise Convolution Reverb",
-       "LibId": "8323075",
-       "MediaRefs": [
-        {
-         "Id": "522077337"
-        }
-       ]
       }
      ],
      "AudioDevices": [
@@ -120,6 +99,13 @@
      ]
     },
     "Busses": [
+     {
+      "Id": "796032403",
+      "Name": "Tutorial_Contents_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Tutorial_Contents_Bus",
+      "GUID": "{E8229EFC-5572-4396-8D1D-A152EDB2DBC1}",
+      "Color": "17"
+     },
      {
       "Id": "846920411",
       "Name": "Ambisonic_Main_Mix",
@@ -151,7 +137,7 @@
       "Name": "NewTutorial",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\NewTutorial",
       "GUID": "{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}",
-      "Color": "4"
+      "Color": "26"
      },
      {
       "Id": "3247222208",
@@ -174,12 +160,6 @@
      }
     ],
     "AuxBusses": [
-     {
-      "Id": "459160926",
-      "Name": "StereoVerb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
-      "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
-     },
      {
       "Id": "867873073",
       "Name": "Hallway02_Ambi_Verb",
@@ -208,27 +188,6 @@
         }
        ]
       }
-     },
-     {
-      "Id": "2018380841",
-      "Name": "LateReverb",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb\\LateReverb",
-      "GUID": "{F02E6885-FC95-47CA-AB5D-FF9298F1B276}",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "4213309952"
-        }
-       ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "459160926",
-        "Name": "StereoVerb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\StereoVerb",
-        "GUID": "{9EF68921-BACF-4938-89C9-9BA749ECDD53}"
-       }
-      ]
      },
      {
       "Id": "3311067494",
@@ -291,6 +250,32 @@
      }
     ],
     "StateGroups": [
+     {
+      "Id": "587064525",
+      "Name": "Tutorial_State",
+      "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State",
+      "GUID": "{A971E536-ACE1-4AD3-BB90-0C3B372B47F3}",
+      "States": [
+       {
+        "Id": "126890676",
+        "Name": "Tutorial_Playing",
+        "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State\\Tutorial_Playing",
+        "GUID": "{6B42AB7A-7512-4DCA-8641-7E4AA73BB8B0}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State\\None",
+        "GUID": "{D0D244D0-4CA4-4161-9119-8B389AE2F950}"
+       },
+       {
+        "Id": "3625923408",
+        "Name": "Tutorial_Paused",
+        "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State\\Tutorial_Paused",
+        "GUID": "{D4E0F7C7-9E59-479B-AEF1-83B002EDA863}"
+       }
+      ]
+     },
      {
       "Id": "1875554370",
       "Name": "UI_Audio_State",
@@ -1420,6 +1405,6 @@
     ]
    }
   ],
-  "FileHash": "{368691CD-F765-EDDD-7245-DD348C128E2E}"
+  "FileHash": "{1C28DE7F-E39C-B1A7-3F62-5741383341E0}"
  }
 }

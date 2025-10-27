@@ -495,7 +495,7 @@
 								<Action Name="" ID="{56B8694D-7E18-4C53-8A59-D1D48E5D6C2E}" ShortID="59074351">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Environment_BetterClock" ID="{F7BDFF43-3EE6-4FA7-9165-C2C3FA811596}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
+											<ObjectRef Name="Landmarks_Clock" ID="{F7BDFF43-3EE6-4FA7-9165-C2C3FA811596}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -506,7 +506,7 @@
 								<Action Name="" ID="{30094C11-572E-4E1A-BD39-C621E9E9D67A}" ShortID="158215276">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
+											<ObjectRef Name="Landmarks_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

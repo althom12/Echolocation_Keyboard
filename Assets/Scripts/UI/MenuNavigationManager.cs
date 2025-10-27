@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.Events; // <-- 1. ADD THIS NAMESPACE
+using UnityEngine.Events;
 
 public class MenuNavigationManager : MonoBehaviour
 {
@@ -19,17 +19,25 @@ public class MenuNavigationManager : MonoBehaviour
     public AK.Wwise.Event mainMenuCloseEvent;
     public AK.Wwise.Event stopUISelectionEvent;
 
-    // 2. ADD THE UNITY EVENT
     [Header("Menu Events")]
     public UnityEvent OnMenuFullyClosed;
+
+    [Header("Tutorial Audio Settings")]
+    [Tooltip("Should tutorial audio pause when menus open?")]
+    public bool pauseTutorialWhenMenuOpens = true;
 
     private CustomInputActions _input;
     private GameObject _lastSelectedMainSettingsButton;
     private GameObject _activeSubWindow;
     private uint mainMenuOpenEventPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
 
+    // Track if we paused tutorial audio
+    private bool didPauseTutorial = false;
+
     private void Awake()
     {
+        Debug.Log("[MenuNavManager] Awake() called");
+
         // Initialize the Input Actions class
         _input = new CustomInputActions();
 
@@ -47,6 +55,8 @@ public class MenuNavigationManager : MonoBehaviour
         // Initialize the event
         if (OnMenuFullyClosed == null)
             OnMenuFullyClosed = new UnityEvent();
+
+        Debug.Log($"[MenuNavManager] pauseTutorialWhenMenuOpens setting: {pauseTutorialWhenMenuOpens}");
     }
 
     private void OnEnable()
@@ -86,30 +96,30 @@ public class MenuNavigationManager : MonoBehaviour
 
     private void ToggleSettingsPanel(InputAction.CallbackContext context)
     {
-        Debug.Log($"ToggleSettingsPanel CALLED at Time: {Time.unscaledTime}");
+        Debug.Log($"[MenuNavManager] ToggleSettingsPanel CALLED at Time: {Time.unscaledTime}");
 
         if (mainSettingsPanel.activeSelf | _activeSubWindow != null)
         {
-            // --- CLOSE EVERYTHING (NOW A COROUTINE) ---
+            Debug.Log("[MenuNavManager] Menu is open, starting CloseMenuWithAudio...");
             StartCoroutine(CloseMenuWithAudio());
         }
         else
         {
-            // --- OPEN THE MAIN MENU WITH AUDIO ORCHESTRATION ---
+            Debug.Log("[MenuNavManager] Menu is closed, calling OpenMainMenuWithAudio...");
             OpenMainMenuWithAudio();
         }
     }
 
     private IEnumerator CloseMenuWithAudio()
     {
-        Debug.Log($" Coroutine STARTED at Time: {Time.unscaledTime}");
+        Debug.Log($"[MenuNavManager] ??? CloseMenuWithAudio Coroutine STARTED ???");
 
         // --- STEP 1: STOP ALL EXISTING AUDIO ---
         AudioManager audioManager = AudioManager.Instance;
         if (audioManager != null)
         {
             AkSoundEngine.StopAll(audioManager.gameObject);
-            Debug.Log($"---> Stopped all audio on AudioManager");
+            Debug.Log($"[MenuNavManager] Stopped all audio on AudioManager");
         }
 
         if (mainMenuOpenEventPlayingID != AkSoundEngine.AK_INVALID_PLAYING_ID)
@@ -129,13 +139,13 @@ public class MenuNavigationManager : MonoBehaviour
 
         // --- STEP 2: CRITICAL DECOUPLING ---
         yield return new WaitForEndOfFrame();
-        Debug.Log($" EndOfFrame reached. Posting close event at Time: {Time.unscaledTime}");
+        Debug.Log($"[MenuNavManager] EndOfFrame reached. Posting close event at Time: {Time.unscaledTime}");
 
         // --- STEP 3: POST THE CLOSE EVENT ---
         if (mainMenuCloseEvent != null)
         {
             mainMenuCloseEvent.Post(this.gameObject);
-            Debug.Log($"---> Posted main menu close event");
+            Debug.Log($"[MenuNavManager] Posted main menu close event");
         }
 
         // --- STEP 4: DEACTIVATE PANELS & CLEAN UP (IMMEDIATE) ---
@@ -160,32 +170,80 @@ public class MenuNavigationManager : MonoBehaviour
         }
 
         // --- STEP 5: WAIT FOR SOUND TO PLAY BEFORE UNPAUSING ---
-        // Adjust "0.5f" to be the length of your mainMenuCloseEvent sound.
         yield return new WaitForSecondsRealtime(0.5f);
-        Debug.Log($" Unscaled wait finished. Resuming game time at Time: {Time.unscaledTime}");
+        Debug.Log($"[MenuNavManager] Unscaled wait finished. Resuming game time at Time: {Time.unscaledTime}");
 
         // --- STEP 6: UNPAUSE THE GAME (LAST) ---
         Time.timeScale = 1f;
+        Debug.Log($"[MenuNavManager] Time.timeScale set to 1");
 
-        // --- 3. STEP 7: INVOKE EVENT ---
-        // Notify any listeners that the menu is now fully closed and game is un-paused.
-        Debug.Log("Menu fully closed, invoking OnMenuFullyClosed event.");
+        // --- STEP 6.5: RESUME TUTORIAL AUDIO IF WE PAUSED IT ---
+        Debug.Log($"[MenuNavManager] Checking tutorial audio resume...");
+        Debug.Log($"[MenuNavManager]   didPauseTutorial: {didPauseTutorial}");
+        Debug.Log($"[MenuNavManager]   TutorialAudioController.Instance exists: {TutorialAudioController.Instance != null}");
+
+        if (didPauseTutorial && TutorialAudioController.Instance != null)
+        {
+            Debug.Log("[MenuNavManager] >>> Calling TutorialAudioController.ForceResume()");
+            TutorialAudioController.Instance.ForceResume();
+            didPauseTutorial = false;
+            Debug.Log("[MenuNavManager] >>> Tutorial audio resume complete");
+        }
+        else
+        {
+            Debug.Log("[MenuNavManager] >>> Not resuming tutorial audio (either we didn't pause it, or controller doesn't exist)");
+        }
+
+        // --- STEP 7: INVOKE EVENT ---
+        Debug.Log("[MenuNavManager] Menu fully closed, invoking OnMenuFullyClosed event");
         OnMenuFullyClosed?.Invoke();
+
+        Debug.Log($"[MenuNavManager] ??? CloseMenuWithAudio Coroutine COMPLETE ???");
     }
 
     private void OpenMainMenuWithAudio()
     {
-        Debug.Log($"[MenuNavManager] OpenMainMenuWithAudio CALLED at Time: {Time.unscaledTime}");
+        Debug.Log($"[MenuNavManager] ??? OpenMainMenuWithAudio CALLED ???");
+
+        // --- PAUSE TUTORIAL AUDIO WHEN MENU OPENS ---
+        Debug.Log($"[MenuNavManager] Checking if should pause tutorial audio...");
+        Debug.Log($"[MenuNavManager]   pauseTutorialWhenMenuOpens: {pauseTutorialWhenMenuOpens}");
+        Debug.Log($"[MenuNavManager]   TutorialAudioController.Instance exists: {TutorialAudioController.Instance != null}");
+
+        if (pauseTutorialWhenMenuOpens && TutorialAudioController.Instance != null)
+        {
+            bool isPaused = TutorialAudioController.Instance.IsPaused();
+            Debug.Log($"[MenuNavManager]   Tutorial is currently paused: {isPaused}");
+
+            if (!isPaused)
+            {
+                Debug.Log("[MenuNavManager] >>> Calling TutorialAudioController.ForcePause()");
+                TutorialAudioController.Instance.ForcePause();
+                didPauseTutorial = true;
+                Debug.Log($"[MenuNavManager] >>> Tutorial audio paused, didPauseTutorial set to: {didPauseTutorial}");
+            }
+            else
+            {
+                Debug.Log("[MenuNavManager] >>> Tutorial already paused, not setting didPauseTutorial flag");
+            }
+        }
+        else
+        {
+            Debug.Log("[MenuNavManager] >>> Not pausing tutorial audio (setting disabled or controller doesn't exist)");
+        }
 
         AudioManager audioManager = AudioManager.Instance;
         Selectable firstElement = mainSettingsPanel.GetComponentInChildren<Selectable>();
 
         mainSettingsPanel.SetActive(true);
+        Debug.Log("[MenuNavManager] Main settings panel activated");
 
         if (customTabSubmitHandler != null)
             customTabSubmitHandler.enabled = true;
 
         Time.timeScale = 0f;
+        Debug.Log("[MenuNavManager] Time.timeScale set to 0");
+
         _input.Player.Disable();
 
         if (audioManager != null && mainMenuOpenEvent != null && firstElement != null)
@@ -227,6 +285,8 @@ public class MenuNavigationManager : MonoBehaviour
                 EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
             }
         }
+
+        Debug.Log($"[MenuNavManager] ??? OpenMainMenuWithAudio COMPLETE ???");
     }
 
     private void ManuallyTriggerButtonAudio(WwiseMainMenuButton button, AudioManager audioManager)
@@ -376,16 +436,8 @@ public class MenuNavigationManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Closes both subwindow and main menu entirely. Now starts the audio coroutine.
-    /// </summary>
     public void CloseEntireMenu()
     {
-        // 4. --- REPLACED LOGIC ---
-        // Instead of synchronous, silent closing, just call the
-        // same coroutine that the "Esc" key uses.
-        // This will play the audio, wait, un-pause, and fire the
-        // OnMenuFullyClosed event, all in the correct order.
         Debug.Log("CloseEntireMenu called - starting CloseMenuWithAudio coroutine...");
         StartCoroutine(CloseMenuWithAudio());
     }
