@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\ObstacleLocatorAudio.cs" />
     <Compile Include="Assets\Scripts\QuitOnEscape.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\WwiseMainMenuButton.cs" />
+    <Compile Include="Assets\Scripts\WwiseUI\TutorialsPropertiesSubwindow.cs" />
     <Compile Include="Assets\Scripts\ObstacleManager.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\WwiseObstacleToggle.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />

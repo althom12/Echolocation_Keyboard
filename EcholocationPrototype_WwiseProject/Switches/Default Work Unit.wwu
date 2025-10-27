@@ -112,7 +112,14 @@
 						<Switch Name="ObsReview" ID="{BFA7DAEB-A41C-4C7A-97CA-61988BF7C4C1}"/>
 						<Switch Name="AudioLandmarks" ID="{1EC0BA79-4DB9-4AF1-B58C-75E545292F09}"/>
 						<Switch Name="TutorialItems" ID="{1F7963AF-BE01-4B55-9DB6-D09E8C2ED263}"/>
-						<Switch Name="New_Switch_30" ID="{F61F4552-B73C-48F9-BF74-2A6152A6F301}"/>
+						<Switch Name="StartTutorial" ID="{3579411C-194A-424A-B7B0-BC327B895BAE}"/>
+						<Switch Name="EndTutorial" ID="{9F52281D-C452-4CF5-B008-6967AEAE27FA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SG_UI_SimpleTutorial" ID="{855926B5-9C50-4857-B57D-353D1118CD1C}">
+					<ChildrenList>
+						<Switch Name="Start" ID="{92532D0B-5AEB-4582-B47E-5D8F92FB3775}"/>
+						<Switch Name="End" ID="{70F9944C-A291-4287-B6F5-9A2AE69EF367}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

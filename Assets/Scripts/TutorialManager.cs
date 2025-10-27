@@ -3,38 +3,38 @@ using StarterAssets;
 
 public class TutorialManager : MonoBehaviour
 {
-    // --- MODIFIED: Expanded for 20+ stages. Add as many as you need! ---
     public enum TutorialState
     {
-        Intro, // State 0
-        TheEcholocationClick, // State 1
-        ForwardMovement, // State 2
-        //Collision, // State 3
-        ForwardMovementAndCollision, // State 4
-        ContinuedCollisions, // State 5
-        BackwardMovement,
-        SidewaysMovement,
-        MovementPractice,
-        RotationIntro,
-        SonicCompass,
-        RotationAndMovementPractice,
-        SpawnAtStart,
-        MainChamberSpawn,
-        SpawnPointsAndMovement,
-        Section01Review,
-        ActivatingObstacles,
-        NavigatingObstacles,
-        ObstacleFeedback,
-        ObstacleReview,
-        ClickPitch,
-        Outro,
-        Complete
-        // Add your new tutorial parts here, for example:
-        // Part6_NewConcept,
-        // Part7_AnotherOne,
-        // ... up to Part 20
-        // This should be the last instruction before 'Complete'
-        // The final state
+        Chapter01_Intro,
+        Chapter02_EcholocationClick,
+        Chapter03_ForwardMovement,
+        Chapter04_ForwardMovementAndCollision,
+        Chapter05_ContinuedCollisions,
+        Chapter06_BackwardMovement,
+        Chapter07_SidewaysMovement,
+        Chapter08_MovementPractice,
+        Chapter09_RotationIntro,
+        Chapter10_SonicCompass,
+        Chapter11_RotationAndMovementPractice,
+        Chapter12_SpawnAtStart,
+        Chapter13_MainChamberSpawn,
+        Chapter14_SpawnPointsAndMovement,
+        Chapter15_Section01Review,
+        Chapter16_UIIntro,
+        Chapter17_UIMainMenuNav,
+        Chapter18_EnteringACategory,
+        Chapter19_NavigatingSubmenus,
+        Chapter20_AdjustingSliders,
+        Chapter21_UIReview,
+        Chapter22_ObsPresets,
+        Chapter23_ObsCustom,
+        Chapter24_ObsNavigation,
+        Chapter25_HearObs,
+        Chapter26_ObsPresetDesc,
+        Chapter27_ObsReview,
+        Chapter28_AudioLandmarks,
+        Chapter29_Outro,
+        Chapter30_Complete
     }
 
     [Header("Core References")]
@@ -43,9 +43,7 @@ public class TutorialManager : MonoBehaviour
     public PlayerAudio playerAudio;
 
     [Header("Audio Events")]
-    [Tooltip("Plays when the game opens (e.g., Play_01_Intro)")]
     public AK.Wwise.Event introductoryAudio;
-    [Tooltip("Assign all instructional sounds in order, matching the TutorialState enum order.")]
     public AK.Wwise.Event[] instructionSounds;
 
     [Header("Pause/Resume Events")]
@@ -53,21 +51,34 @@ public class TutorialManager : MonoBehaviour
     public AK.Wwise.Event resumeEvent;
 
     [Header("Tutorial Settings")]
-    [Tooltip("Assign all spawn points in order, matching the TutorialState enum order.")]
     public Transform[] spawnPoints;
-
-    [Tooltip("Plays once when the tutorial enters the 'Complete' state.")]
     public AK.Wwise.Event tutorialCompleteSound;
+
+    [Header("Start Point")]
+    [Tooltip("Where to teleport player when ending tutorial")]
+    public Transform startPoint;
 
     private TutorialState currentState;
     private bool isAudioPaused = false;
+    private int replayIndex = -1;
+    private bool isTutorialActive = false;
 
-    // --- REFACTORED: Replaced ReplayState enum with a simple index ---
-    private int replayIndex = -1; // -1 means replay is off
+    public static TutorialManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
-        // --- VALIDATION: Added checks for array lengths ---
         if (playerAudio == null || obstacleManager == null || playerController == null)
         {
             Debug.LogError("TUTORIAL MANAGER ERROR: Core references are not assigned!", this.gameObject);
@@ -75,43 +86,97 @@ public class TutorialManager : MonoBehaviour
             return;
         }
 
-        // The number of states (minus Intro and Complete) must match the number of sounds/spawns
         int instructionalStateCount = System.Enum.GetNames(typeof(TutorialState)).Length - 2;
         if (instructionSounds.Length != instructionalStateCount || spawnPoints.Length != instructionalStateCount)
         {
-            Debug.LogError($"TUTORIAL MANAGER ERROR: Mismatch between array sizes and TutorialState enum count. Expecting {instructionalStateCount} items in each array.", this.gameObject);
+            Debug.LogError($"TUTORIAL MANAGER ERROR: Mismatch between array sizes and TutorialState enum count. Expecting {instructionalStateCount} items in each array. Got {instructionSounds.Length} sounds and {spawnPoints.Length} spawns.", this.gameObject);
             this.enabled = false;
             return;
         }
 
-        currentState = TutorialState.Intro;
+        // AUTO-START TUTORIAL - Add these lines:
+        isTutorialActive = true;
+        currentState = TutorialState.Chapter01_Intro;
+
+        if (obstacleManager != null)
+        {
+            obstacleManager.enabled = false;
+        }
+
         introductoryAudio?.Post(gameObject);
-        Debug.Log("Game started. Playing intro audio. Waiting for key press to begin tutorial...");
+        Debug.Log("Game started. Tutorial auto-playing intro audio. Press BackQuote (`) to progress.");
+
+        Debug.Log("Tutorial Manager ready. Use Tutorial Properties window to start.");
     }
 
     void Update()
     {
-        // Progresses the tutorial with BackQuote key
-        if (currentState != TutorialState.Complete && Input.GetKeyDown(KeyCode.BackQuote))
+        if (isTutorialActive && currentState != TutorialState.Chapter30_Complete && Input.GetKeyDown(KeyCode.BackQuote))
         {
             GoToNextState();
         }
 
-        // Handles replaying instructions with Tab key
-        if (currentState == TutorialState.Complete && Input.GetKeyDown(KeyCode.Tab))
+        if (currentState == TutorialState.Chapter30_Complete && Input.GetKeyDown(KeyCode.Tab))
         {
             CycleInstructionReplay();
         }
     }
 
-    // --- REFACTORED: Simplified replay logic using an index ---
+    public void StartTutorial()
+    {
+        Debug.Log("Starting Tutorial from beginning...");
+
+        isTutorialActive = true;
+        currentState = TutorialState.Chapter01_Intro;
+        replayIndex = -1;
+
+        if (obstacleManager != null)
+        {
+            obstacleManager.enabled = false;
+        }
+
+        introductoryAudio?.Post(gameObject);
+
+        Debug.Log("Tutorial started. Press BackQuote (`) to progress.");
+    }
+
+    public void EndTutorial()
+    {
+        if (!isTutorialActive)
+        {
+            Debug.Log("Tutorial is not active.");
+            return;
+        }
+
+        Debug.Log("Ending Tutorial...");
+
+        isTutorialActive = false;
+        AkSoundEngine.StopAll(gameObject);
+
+        if (obstacleManager != null)
+        {
+            obstacleManager.enabled = true;
+        }
+
+        if (playerAudio != null)
+        {
+            playerAudio.ResetPitchRTPC();
+        }
+
+        if (startPoint != null)
+        {
+            playerController.Teleport(startPoint.position, startPoint.rotation);
+        }
+
+        Debug.Log("Tutorial ended. Returned to start point.");
+    }
+
     void CycleInstructionReplay()
     {
         StopAndResumeAudio();
 
-        replayIndex++; // Move to the next instruction
+        replayIndex++;
 
-        // If index goes past the last sound, turn replay off
         if (replayIndex >= instructionSounds.Length)
         {
             replayIndex = -1;
@@ -119,51 +184,38 @@ public class TutorialManager : MonoBehaviour
             return;
         }
 
-        // Play the sound at the current index
         instructionSounds[replayIndex]?.Post(gameObject);
-        // Get the name of the state from the enum value for a clear debug message
         string stateName = ((TutorialState)(replayIndex + 1)).ToString();
         Debug.Log($"Replaying: {stateName}");
     }
 
-    // --- REFACTORED: Simplified state progression ---
     void GoToNextState()
     {
         StopAndResumeAudio();
-        replayIndex = -1; // Reset replay when progressing
+        replayIndex = -1;
 
-        // Increment the current state to the next one in the enum
         currentState++;
 
         Debug.Log($"Proceeding to: {currentState}");
 
-        // Check if the tutorial is now complete
-        if (currentState == TutorialState.Complete)
+        if (currentState == TutorialState.Chapter30_Complete)
         {
-            // --- FINAL STAGE LOGIC ---
-            // This logic now only runs once when entering the 'Complete' state.
+            isTutorialActive = false;
             obstacleManager.enabled = true;
             playerAudio.ResetPitchRTPC();
             Debug.Log("Tutorial Complete! Starting Main Game.");
-            // Note: The final instruction and teleport are handled below, just like any other stage.
-
             tutorialCompleteSound?.Post(gameObject);
         }
 
-        // Use the enum's integer value to get the correct array index
-        // We subtract 1 because 'Intro' is state 0, but the arrays are for states 1 onwards.
         int currentIndex = (int)currentState - 1;
 
         if (currentIndex < 0 || currentIndex >= instructionSounds.Length)
         {
-            // This case handles the transition from Intro to the first state, or if something goes wrong.
-            // The first state (e.g., BasicMechanics) is handled correctly as (1-1) = index 0.
-            if (currentState == TutorialState.Intro) return; // Should not happen with current logic
+            if (currentState == TutorialState.Chapter01_Intro) return;
             Debug.LogWarning($"Tutorial Manager: No instruction/spawn for state {currentState}.");
             return;
         }
 
-        // Teleport player and play the corresponding instruction sound
         playerController.Teleport(spawnPoints[currentIndex].position, spawnPoints[currentIndex].rotation);
         instructionSounds[currentIndex]?.Post(gameObject);
     }
@@ -171,8 +223,6 @@ public class TutorialManager : MonoBehaviour
     public void ToggleAudioPause()
     {
         Debug.Log("ToggleAudioPause method was successfully called!");
-
-    
 
         isAudioPaused = !isAudioPaused;
         if (isAudioPaused)
@@ -187,7 +237,6 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
-    // --- NEW: Helper function to reduce code duplication ---
     private void StopAndResumeAudio()
     {
         AkSoundEngine.StopAll(gameObject);
@@ -196,5 +245,10 @@ public class TutorialManager : MonoBehaviour
             resumeEvent?.Post(gameObject);
             isAudioPaused = false;
         }
+    }
+
+    public bool IsTutorialActive()
+    {
+        return isTutorialActive;
     }
 }

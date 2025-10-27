@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
+  m_Name: 1A3D8C50-D1C2-4AF4-975E-0CD589C9B4A7
+  m_EditorClassIdentifier: 
+  objectName: Play_14_NV_SpawnPointsAndMovement
+  id: 1944555383
+  guid: 1A3D8C50-D1C2-4AF4-975E-0CD589C9B4A7
+  IsInUserDefinedSoundBank: 1

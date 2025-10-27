@@ -416,6 +416,12 @@
         "GUID": "{2A47DEF6-2EF9-43B4-B0EF-665FDDDCED27}"
        },
        {
+        "Id": "2907714354",
+        "Name": "EndTutorial",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\EndTutorial",
+        "GUID": "{9F52281D-C452-4CF5-B008-6967AEAE27FA}"
+       },
+       {
         "Id": "3193406139",
         "Name": "UIIntro",
         "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\UIIntro",
@@ -476,12 +482,6 @@
         "GUID": "{331C3015-5E05-4A75-86E8-322F79939324}"
        },
        {
-        "Id": "3969228062",
-        "Name": "New_Switch_30",
-        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\New_Switch_30",
-        "GUID": "{F61F4552-B73C-48F9-BF74-2A6152A6F301}"
-       },
-       {
         "Id": "4042290811",
         "Name": "ObsNavigation",
         "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\ObsNavigation",
@@ -492,6 +492,12 @@
         "Name": "SpawnAndMove",
         "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\SpawnAndMove",
         "GUID": "{92DB1E2D-14C8-4F2F-A0F1-942E09895802}"
+       },
+       {
+        "Id": "4186867365",
+        "Name": "StartTutorial",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\StartTutorial",
+        "GUID": "{3579411C-194A-424A-B7B0-BC327B895BAE}"
        }
       ]
      },
@@ -664,6 +670,26 @@
         "Name": "VolumeSlider",
         "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections\\VolumeSlider",
         "GUID": "{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"
+       }
+      ]
+     },
+     {
+      "Id": "3723283095",
+      "Name": "SG_UI_SimpleTutorial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_SimpleTutorial",
+      "GUID": "{855926B5-9C50-4857-B57D-353D1118CD1C}",
+      "Switches": [
+       {
+        "Id": "529726532",
+        "Name": "End",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_SimpleTutorial\\End",
+        "GUID": "{70F9944C-A291-4287-B6F5-9A2AE69EF367}"
+       },
+       {
+        "Id": "1281810935",
+        "Name": "Start",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_SimpleTutorial\\Start",
+        "GUID": "{92532D0B-5AEB-4582-B47E-5D8F92FB3775}"
        }
       ]
      },
@@ -1364,6 +1390,6 @@
     ]
    }
   ],
-  "FileHash": "{42E8C888-EACE-F489-046B-D730DE8F79AF}"
+  "FileHash": "{CFA0D46D-E741-0411-2626-E11DACB0AD16}"
  }
 }

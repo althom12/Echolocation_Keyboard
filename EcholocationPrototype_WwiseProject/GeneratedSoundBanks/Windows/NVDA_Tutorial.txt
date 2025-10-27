@@ -1,5 +1,34 @@
 Event	ID	Name			Wwise Object Path	Notes
 	164403860	Event_UI_Select_TutorialItems			\Default Work Unit\UI\Event_UI_Select_TutorialItems	
+	460292358	Play_12_NV_SpawnAtStart_PT			\Default Work Unit\Play_12_NV_SpawnAtStart_PT	
+	506850176	Play_03_NV_ForwardMovement_PT			\Default Work Unit\Play_03_NV_ForwardMovement_PT	
+	584364295	Play_11_NV_RotationAndMovementPractice			\Default Work Unit\Play_11_NV_RotationAndMovementPractice	
+	693311155	Play_26_NV_ObstaclePresetDescriptions			\Default Work Unit\Play_26_NV_ObstaclePresetDescriptions	
+	774137046	Play_22_NV_ObstaclesPresets			\Default Work Unit\Play_22_NV_ObstaclesPresets	
+	805288807	Play_17_NV_UIMainMenuNav			\Default Work Unit\Play_17_NV_UIMainMenuNav	
+	1113817490	Play_04_NV_Collisions_PT			\Default Work Unit\Play_04_NV_Collisions_PT	
+	1257884420	Play_23_NV_ObstaclesCustomization			\Default Work Unit\Play_23_NV_ObstaclesCustomization	
+	1344036906	Play_15_NV_Review			\Default Work Unit\Play_15_NV_Review	
+	1517633171	Play_02_NV_EchoClick			\Default Work Unit\Play_02_NV_EchoClick	
+	1602792029	Play_05_NV_ContinuedCollisions			\Default Work Unit\Play_05_NV_ContinuedCollisions	
+	1784930419	Play_01_NV_Welcome			\Default Work Unit\Play_01_NV_Welcome	
+	1835230543	Play_25_NV_HearingTheObstacles_PT			\Default Work Unit\Play_25_NV_HearingTheObstacles_PT	
+	1904249682	Play_07_NV_Sideways			\Default Work Unit\Play_07_NV_Sideways	
+	1944555383	Play_14_NV_SpawnPointsAndMovement			\Default Work Unit\Play_14_NV_SpawnPointsAndMovement	
+	1959403158	Play_28_NV_AudioLandmarks_PT			\Default Work Unit\Play_28_NV_AudioLandmarks_PT	
+	2220317695	Play_13_NV_MainChamberSpawn_PT			\Default Work Unit\Play_13_NV_MainChamberSpawn_PT	
+	2496975038	Play_18_NV_EnteringACategory			\Default Work Unit\Play_18_NV_EnteringACategory	
+	2552998629	Play_21_NV_UIReview			\Default Work Unit\Play_21_NV_UIReview	
+	2828457565	Play_19_NV_NavigatingUISubmenus_PT			\Default Work Unit\Play_19_NV_NavigatingUISubmenus_PT	
+	2944014995	Play_09_NV_RotationIntro			\Default Work Unit\Play_09_NV_RotationIntro	
+	2975437661	Play_20_NV_AdjustingSliders			\Default Work Unit\Play_20_NV_AdjustingSliders	
+	3168081155	Play_29_NV_TutorialItemsAndConclusion			\Default Work Unit\Play_29_NV_TutorialItemsAndConclusion	
+	3224347966	Play_16_NV_UIIntro_PT			\Default Work Unit\Play_16_NV_UIIntro_PT	
+	3411623047	Play_08_NV_MovementPractice_PT			\Default Work Unit\Play_08_NV_MovementPractice_PT	
+	3644984316	Play_06_NV_Backwards			\Default Work Unit\Play_06_NV_Backwards	
+	3789614610	Play_24_NV_ObstaclesNavigation			\Default Work Unit\Play_24_NV_ObstaclesNavigation	
+	3863533881	Play_27_NV_ObstaclesReview			\Default Work Unit\Play_27_NV_ObstaclesReview	
+	3902747138	Play_10_NV_SonicCompass_PT			\Default Work Unit\Play_10_NV_SonicCompass_PT	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	864818103	SG_UI_TutorialItems			\Default Work Unit\SG_UI_TutorialItems	
@@ -22,6 +51,7 @@ Switch	ID	Name	Switch Group			Notes
 	2315122162	HearingTheObs	SG_UI_TutorialItems			
 	2421980327	Welcome	SG_UI_TutorialItems			
 	2818475040	Sideways	SG_UI_TutorialItems			
+	2907714354	EndTutorial	SG_UI_TutorialItems			
 	3193406139	UIIntro	SG_UI_TutorialItems			
 	3211240269	SonicCompass	SG_UI_TutorialItems			
 	3345188236	MvmtPractice	SG_UI_TutorialItems			
@@ -32,9 +62,9 @@ Switch	ID	Name	Switch Group			Notes
 	3754331821	MainChamberSpawn	SG_UI_TutorialItems			
 	3765040673	UIMenuNav	SG_UI_TutorialItems			
 	3876169137	Backwards	SG_UI_TutorialItems			
-	3969228062	New_Switch_30	SG_UI_TutorialItems			
 	4042290811	ObsNavigation	SG_UI_TutorialItems			
 	4054219830	SpawnAndMove	SG_UI_TutorialItems			
+	4186867365	StartTutorial	SG_UI_TutorialItems			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	958017	07_NV_Sideways	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\37\{37FFDE49-F4C3-A251-A637-D7C6F81830D6}.wem		\Actor-Mixer Hierarchy\NVDA\Tutorial\SC_UI_Tutorial\07_NV_Sideways		3366240
@@ -49,7 +79,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	449251472	12_NV_SpawnAtStart_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\24\{249CE959-0B96-A977-8A53-2BBB43FD6A75}.wem		\Actor-Mixer Hierarchy\NVDA\Tutorial\SC_UI_Tutorial\12_NV_SpawnAtStart_PT		3111096
 	465401487	15_NV_Review	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\D2\{D27EF9CD-4F19-FD76-A261-05E66714C6D5}.wem		\Actor-Mixer Hierarchy\NVDA\Tutorial\SC_UI_Tutorial\15_NV_Review		2361696
 	478480686	26_NV_ObstaclePresetDescriptions	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\10\{1034D9AF-ECEA-3DAE-82D3-1A171983E448}.wem		\Actor-Mixer Hierarchy\NVDA\Tutorial\SC_UI_Tutorial\26_NV_ObstaclePresetDescriptions		11335776
-	493112154	01_NV_Welcome	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\20\{20385402-9689-99AA-524A-0F4832D813EA}.wem		\Actor-Mixer Hierarchy\NVDA\Tutorial\SC_UI_Tutorial\01_NV_Welcome		2476896
+	493112154	01_NV_Welcome	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\20\{20385402-9689-99AA-524A-0F4832D813EA}.wem		\Actor-Mixer Hierarchy\NVDA\Tutorial\01_NV_Welcome		2476896
 	495879198	19_NV_NavigatingUISubmenus_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\72\{72F990F1-DACB-5C48-CF81-A6C22E3A630E}.wem		\Actor-Mixer Hierarchy\NVDA\Tutorial\SC_UI_Tutorial\19_NV_NavigatingUISubmenus_PT		5733096
 	572890406	27_NV_ObstaclesReview	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\79\{79586585-E658-292F-68BD-2C84766C1FB1}.wem		\Actor-Mixer Hierarchy\NVDA\Tutorial\SC_UI_Tutorial\27_NV_ObstaclesReview		5773920
 	583962554	25_NV_HearingTheObstacles_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\49\{49D8EA91-B520-1E62-A216-E794CD9CA16C}.wem		\Actor-Mixer Hierarchy\NVDA\Tutorial\SC_UI_Tutorial\25_NV_HearingTheObstacles_PT		11646096

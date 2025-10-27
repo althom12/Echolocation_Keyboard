@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{CD69EFEA-CF28-9238-3707-6DDA98361648}",
+    "Hash": "{86B53A0D-32F7-BBC8-9709-90FB83AB86A6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -320,6 +320,14 @@
       "CachePath": "C5/{C5CB9AD5-293F-B2D5-CE0B-255EDD2EAF1E}.wem"
      },
      {
+      "Id": "572648932",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StartEnd_Tutorial.wav",
+      "CachePath": "4C/{4C1F3BB3-D9C2-66E9-BF34-BBFB9ED44554}.wem"
+     },
+     {
       "Id": "583941812",
       "Language": "SFX",
       "Streaming": "false",
@@ -382,6 +390,14 @@
       "Location": "Memory",
       "ShortName": "UI_TutorialItems.wav",
       "CachePath": "60/{60F5E8D9-9DC3-8D55-8D8D-7BF6ABC43727}.wem"
+     },
+     {
+      "Id": "792495452",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StartEnd_Tutorial.wav",
+      "CachePath": "90/{90E34F0B-E27C-2016-F1BF-99134EE42E59}.wem"
      },
      {
       "Id": "797368153",
@@ -1172,6 +1188,43 @@
       ]
      },
      {
+      "Id": "2256606490",
+      "Name": "Event_UI_Select_SimpleTutorial",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_SimpleTutorial",
+      "GUID": "{8BB5F2A1-BB1C-4938-8E57-2C314DCD6FEE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.718577",
+      "DurationMax": "0.92495036",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3723283095",
+         "Id": "1281810935",
+         "GUID": "{92532D0B-5AEB-4582-B47E-5D8F92FB3775}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "572648932"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3723283095",
+         "Id": "529726532",
+         "GUID": "{70F9944C-A291-4287-B6F5-9A2AE69EF367}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "792495452"
+         }
+        ]
+       }
+      ]
+     },
+     {
       "Id": "847023378",
       "Name": "Play_AudioCrumbsPropertiesPage",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_AudioCrumbsPropertiesPage",
@@ -1458,6 +1511,26 @@
       ]
      },
      {
+      "Id": "3723283095",
+      "Name": "SG_UI_SimpleTutorial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_SimpleTutorial",
+      "GUID": "{855926B5-9C50-4857-B57D-353D1118CD1C}",
+      "Switches": [
+       {
+        "Id": "529726532",
+        "Name": "End",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_SimpleTutorial\\End",
+        "GUID": "{70F9944C-A291-4287-B6F5-9A2AE69EF367}"
+       },
+       {
+        "Id": "1281810935",
+        "Name": "Start",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_SimpleTutorial\\Start",
+        "GUID": "{92532D0B-5AEB-4582-B47E-5D8F92FB3775}"
+       }
+      ]
+     },
+     {
       "Id": "3969249293",
       "Name": "SG_UI_ObstacleSelections",
       "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections",
@@ -1644,6 +1717,6 @@
     ]
    }
   ],
-  "FileHash": "{6102DE90-3357-8A27-C6E5-52A0E32F3B16}"
+  "FileHash": "{B51F5D5E-9E64-8CD4-D8D9-2B26D79F2390}"
  }
 }
