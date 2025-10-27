@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{2E667567-C14F-9B40-1644-72E2E24DC751}",
+    "Hash": "{897EBFEE-CCD8-5748-1816-B4DB18637568}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -312,6 +312,14 @@
       "CachePath": "7C/{7CBF50A9-38C0-1A5D-0855-D37EAC9902C9}.wem"
      },
      {
+      "Id": "444788119",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Landmark_BetterClock.wav",
+      "CachePath": "35/{35E8B7FC-CCD0-75E7-A2CD-EBADA61B56C3}.wem"
+     },
+     {
       "Id": "464826980",
       "Language": "SFX",
       "Streaming": "false",
@@ -358,6 +366,14 @@
       "Location": "Memory",
       "ShortName": "Obstacles_Fast.wav",
       "CachePath": "C5/{C5CB9AD5-293F-B2D5-CE0B-255EDD2EAF1E}.wem"
+     },
+     {
+      "Id": "570167937",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Landmarks_DefinitelyNotSameClock.wav",
+      "CachePath": "3F/{3F7DBDDF-B2B0-26EA-D53F-9E79E756B544}.wem"
      },
      {
       "Id": "572648932",
@@ -1386,10 +1402,12 @@
       "Name": "Play_Environment_BetterClock_2D",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Environment_BetterClock_2D",
       "GUID": "{081E6C0C-DC7B-4486-943C-A1C4CF8F26AA}",
-      "DurationType": "Infinite",
+      "DurationType": "OneShot",
+      "DurationMin": "31.242449",
+      "DurationMax": "31.242449",
       "MediaRefs": [
        {
-        "Id": "49676745"
+        "Id": "444788119"
        }
       ]
      },
@@ -1473,6 +1491,20 @@
       "MediaRefs": [
        {
         "Id": "359571687"
+       }
+      ]
+     },
+     {
+      "Id": "431205792",
+      "Name": "Play_New_Sound_SFX",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_New_Sound_SFX",
+      "GUID": "{47F196E3-225B-4C77-B453-4A0999B104A7}",
+      "DurationType": "OneShot",
+      "DurationMin": "23.338667",
+      "DurationMax": "23.338667",
+      "MediaRefs": [
+       {
+        "Id": "570167937"
        }
       ]
      },
@@ -1931,6 +1963,6 @@
     ]
    }
   ],
-  "FileHash": "{13A1A994-16AF-0C91-C317-332C76CC073B}"
+  "FileHash": "{FAF6576A-0BEA-A974-AF1F-8F02B93BA8B5}"
  }
 }

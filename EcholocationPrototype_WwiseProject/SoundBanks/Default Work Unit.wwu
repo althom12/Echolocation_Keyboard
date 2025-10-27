@@ -43,6 +43,7 @@
 						<ObjectRef Name="Play_TutorialItemsPage" ID="{6527ED02-13C2-4A80-B94E-E8AF62F591C6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EcholocatorClickPropertiesPage" ID="{7D2F1AF8-10BF-4B11-929E-D1F74FC8F5FB}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MainSettingsInitialOpen" ID="{45A92EE8-5717-4B51-9EA9-0E4311820804}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_New_Sound_SFX" ID="{47F196E3-225B-4C77-B453-4A0999B104A7}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Environment_HVAC_2D" ID="{F72E2CAA-B9A2-4E84-8856-68EE2323CE92}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_FootstepsProperties" ID="{07CEEBEE-7D81-4EB8-86EC-B187B409FFAF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_AudioCrumbsPropertiesPage" ID="{18CB5564-2B82-4F14-A891-E080B0C52CA6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
@@ -82,7 +83,6 @@
 						<ObjectRef Name="Play_25_NV_HearingTheObstacles_PT" ID="{40E02F62-8433-4DAA-B626-427AE9DA7C55}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_08_NV_MovementPractice_PT" ID="{F332E7FE-EEF7-4DBE-97F0-46765B25E3F1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_11_NV_RotationAndMovementPractice" ID="{F2383BF0-DC9C-4E05-903F-2AC48A093382}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Event_UI_Select_TutorialItems" ID="{75616669-17CD-4E77-AA8F-D2D573D1B827}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_02_NV_EchoClick" ID="{5C1E9062-30C4-4EB4-9124-E7FCAFD90F67}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_20_NV_AdjustingSliders" ID="{1C8664B3-3488-4FF2-B373-1CEC23B327FD}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

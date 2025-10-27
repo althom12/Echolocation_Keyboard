@@ -24,8 +24,8 @@ public class LandmarksManager : MonoBehaviour
     public float defaultClockVolume = 50f;
     public float defaultHVACVolume = 50f;
 
-    private bool isClockEnabled = true;
-    private bool isHVACEnabled = true;
+    private bool isClockEnabled = false;  // Was: true
+    private bool isHVACEnabled = false;   // Was: true
     private uint clockPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
     private uint hvacPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
 
@@ -57,8 +57,8 @@ public class LandmarksManager : MonoBehaviour
         }
 
         // Start both sounds playing
-        StartClockSound();
-        StartHVACSound();
+        //StartClockSound();
+        //StartHVACSound();
     }
 
     // ==================== CLOCK CONTROLS ====================

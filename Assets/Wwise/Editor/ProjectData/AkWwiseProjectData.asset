@@ -539,7 +539,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584400018355348709
+    m_lastTime: -8584399987230197908
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -595,7 +595,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584400018369845027
+    m_lastTime: -8584399981301383167
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -1574,8 +1574,8 @@ MonoBehaviour:
         guid: 0c6c1e087bdc8644943ca1c4cf8f26aa
       Path: Events\Default Work Unit\Play_Environment_BetterClock_2D
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 31.242449
+      minDuration: 31.242449
     - name: Play_Environment_HVAC
       guid: c68b7cbe5dc8ff4fa77b15a026ac1122
       id: 3548695574
@@ -1724,6 +1724,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.7098714
       minDuration: 1.7098714
+    - name: Play_New_Sound_SFX
+      guid: e396f1475b22774cb4534a0999b104a7
+      id: 431205792
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_New_Sound_SFX
+        ObjectType: 3
+        guid: e396f1475b22774cb4534a0999b104a7
+      Path: Events\Default Work Unit\Play_New_Sound_SFX
+      maxAttenuation: 0
+      maxDuration: 23.338667
+      minDuration: 23.338667
     - name: Play_North
       guid: a0391932a7930a4bb74edf86596918a7
       id: 1850732987

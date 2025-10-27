@@ -2143,6 +2143,78 @@
 								<ActiveSource Name="UI_TutorialItems" ID="{00FD2677-B211-462F-893E-628C837BA481}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Landmarks_DefinitelyNotSameClock" ID="{83F7EF37-5907-40F9-9BF2-6A6D648D94A8}" ShortID="354782850">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="26"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EmotionalGuitarLoop" ID="{9C9C5C3F-BF54-43F8-BBAD-AD4B16A1B12F}">
+									<Language>SFX</Language>
+									<AudioFile>EmotionalGuitarLoop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="715574856"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Landmarks_DefinitelyNotSameClock" ID="{13A2B045-3365-42FE-B394-3F08F08F2FF9}">
+									<Language>SFX</Language>
+									<AudioFile>Landmarks_DefinitelyNotSameClock.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="570167937"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{B436659D-EFD5-4F68-B2B3-895CC91F4737}" ShortID="118908316">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Landmarks_Clock_Amplitude" ID="{553CF8D1-775E-4343-8CD7-89C5E8D0041B}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{B0547A98-DEB9-4FA0-A31A-F1FB8400F57C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Landmarks_DefinitelyNotSameClock" ID="{13A2B045-3365-42FE-B394-3F08F08F2FF9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="MainSettings" ID="{010AEF18-A7B1-4163-B996-7A26E309C539}" ShortID="951377424">

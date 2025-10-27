@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
-  m_Name: 75616669-17CD-4E77-AA8F-D2D573D1B827
+  m_Name: 47F196E3-225B-4C77-B453-4A0999B104A7
   m_EditorClassIdentifier: 
-  objectName: Event_UI_Select_TutorialItems
-  id: 164403860
-  guid: 75616669-17CD-4E77-AA8F-D2D573D1B827
+  objectName: Play_New_Sound_SFX
+  id: 431205792
+  guid: 47F196E3-225B-4C77-B453-4A0999B104A7
   IsInUserDefinedSoundBank: 1
