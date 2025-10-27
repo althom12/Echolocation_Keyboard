@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3953798054	Play_ObstaclesPropertiesPage			\Default Work Unit\Play_ObstaclesPropertiesPage	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1955219	ObstaclesPropertiesPage	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\7C\{7C6B71C6-26FB-B869-3EBF-FFA17D31AE23}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\ObstaclesPropertiesPage		137928
+

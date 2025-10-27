@@ -7056,6 +7056,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 67646ca6a4e85ff43a2e723f28210e2c, type: 2}
+  mainMenuCloseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a995ee2bc48e9fb4486d143d7cd59f55, type: 2}
   stopUISelectionEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -23991,7 +23995,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717186878}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d9e37c5f16cf4d4388e2569ad72aa28, type: 3}
   m_Name: 
@@ -72662,7 +72666,6 @@ GameObject:
   - component: {fileID: 3470790763686025552}
   - component: {fileID: 1156503370493308794}
   - component: {fileID: 7940580343003329840}
-  - component: {fileID: 7940580343003329841}
   m_Layer: 5
   m_Name: ObstaclesAlternative
   m_TagString: Untagged
@@ -72951,23 +72954,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 09632bf127a8ec549965d095b043cbd2, type: 2}
---- !u!114 &7940580343003329841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7858016258583101904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7474abdb3b0132a4db02c967f5bb327e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstSelectedElement: {fileID: 1942630346208403287}
-  windowOpenEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a8e2443fcb493af4c82faf6a7a491273, type: 2}
 --- !u!1 &7946387750988952045
 GameObject:
   m_ObjectHideFlags: 0
