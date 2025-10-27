@@ -34,41 +34,6 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="New_Tutorial" ID="{50B2033B-70B5-4C82-9AD3-BD9C5972BE76}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Play_16_ObstacleFeedback_EQ" ID="{B5E56007-CA3F-41BD-8456-E3B0E96D882E}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_01_TheEcholocationClick2_EQ" ID="{E81804F5-ECB3-41D8-8D19-53C762C4A06D}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_17_ObstacleReview_EQ" ID="{4F36FE1A-6958-4313-A2C4-956BC5DAC5CC}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Welcome_Intro" ID="{82C8AD1C-F7E7-4430-A199-EEDBBDC671B2}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_02_ForwardMovement_EQ" ID="{A8ABF8F5-D04C-44BA-960E-AA6581E0FFB0}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_12_SpawnPointsAndMovementPractice_Script" ID="{317A7599-EA42-455E-8E53-EF7954CA9DBF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_18_ClickPitch_EQ" ID="{8DDB911A-D608-4584-9401-B5FE0FBBB3D5}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_05_SidewaysMovement_Script" ID="{1E8E2A62-E34E-4700-9BE2-A08316857B2E}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_03_2_ContinuedCollision_Script" ID="{F8631E81-A18A-4706-9B85-3FF5BA24DAC7}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Pause_NewTutorial" ID="{7021B7F0-4F42-4728-8143-719BE97D2360}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_19_FinalNotes_Script" ID="{57E084C3-A233-4741-AB70-341FF987F73C}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_10_SpawnAtStart_FULL" ID="{A8ED2153-3347-481A-B81D-CC696DDF8B24}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_09_RotationAndMovementPractice_Script" ID="{4E660332-00BA-484D-9A77-7B44100B1772}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Resume_NewTutorial" ID="{3AB7DE9F-2B54-48B9-AC87-7FD1FD0EFECF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_04_BackwardMovement_Script" ID="{26BE536B-5321-4A61-A045-FBEC027C02F8}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_15_NavigatingObstacles_FULL" ID="{604BEA2C-2ABE-4ACA-94FE-B1C7F486B2F0}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_11_MainChamberSpawn_FULL" ID="{C50C92FA-0DE4-4B7D-BAA6-4C02B4445286}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_13_Section1Review_Script" ID="{2F58EE5D-C0B9-4C44-B8D5-8CE1F0D67AC8}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_03_1_ForwardMovementAndCollision_EQ" ID="{2B944243-3904-4C67-88DE-D9A2764DC6C9}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_07_Rotation_FULL" ID="{0983CD7C-C4D9-4CFE-BED2-2A07850CF945}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_08_SonicCompass_FULL" ID="{D942D0C1-F8F7-4D67-99F7-96E8BEF5CC73}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_20_MainGame" ID="{7D6B1663-B7F7-4DE3-AEFC-6D94EF774B84}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_06_MovementPractice_Script" ID="{C5406529-9C7A-4F3A-9894-2441CAD0DBD1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_14_ActivatingObstacles_FULL" ID="{82FDD523-2752-4F57-96E3-94AD0B1B683F}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="ObstaclesAdvanced" ID="{612927CD-B066-4873-A5A8-9E147FBEB101}">
-					<ObjectInclusionList/>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 				<SoundBank Name="UI_Soundbank" ID="{21B376CF-BED4-4972-88BC-7B2D9EA75253}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Event_UI_Select_LandmarksProperties" ID="{41957636-F421-4003-9313-66C0BE573617}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
@@ -81,10 +46,18 @@
 						<ObjectRef Name="Play_LandmarksPropertiesPage" ID="{B3BEB343-4172-48CF-941A-15AA1F3FD859}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_Multipurpose" ID="{0C1154B5-77D1-4923-A678-65636A972893}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_MainSettings" ID="{45D097F9-6863-497F-919E-622C655DB666}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TutorialItemsPage" ID="{6527ED02-13C2-4A80-B94E-E8AF62F591C6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EcholocatorClickPropertiesPage" ID="{7D2F1AF8-10BF-4B11-929E-D1F74FC8F5FB}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MainSettingsInitialOpen" ID="{45A92EE8-5717-4B51-9EA9-0E4311820804}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_FootstepsProperties" ID="{07CEEBEE-7D81-4EB8-86EC-B187B409FFAF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_AudioCrumbsPropertiesPage" ID="{18CB5564-2B82-4F14-A891-E080B0C52CA6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="NVDA_Tutorial" ID="{C330E82C-4620-4661-A8C1-04F9E338EB42}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Event_UI_Select_TutorialItems" ID="{75616669-17CD-4E77-AA8F-D2D573D1B827}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

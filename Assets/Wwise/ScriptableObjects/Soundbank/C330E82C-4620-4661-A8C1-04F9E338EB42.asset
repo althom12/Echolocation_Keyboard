@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4c6b7ad0a64ad94ba36ec55b99e67ce, type: 3}
-  m_Name: 50B2033B-70B5-4C82-9AD3-BD9C5972BE76
+  m_Name: C330E82C-4620-4661-A8C1-04F9E338EB42
   m_EditorClassIdentifier: 
-  objectName: New_Tutorial
-  id: 2565639494
-  guid: 50B2033B-70B5-4C82-9AD3-BD9C5972BE76
+  objectName: NVDA_Tutorial
+  id: 3676215661
+  guid: C330E82C-4620-4661-A8C1-04F9E338EB42

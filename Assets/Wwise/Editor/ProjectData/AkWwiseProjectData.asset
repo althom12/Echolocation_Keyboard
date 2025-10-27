@@ -559,7 +559,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584400660862407442
+    m_lastTime: -8584400634217314370
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -575,9 +575,9 @@ MonoBehaviour:
         ObjectType: 7
         guid: 53f591b4f4de6e4e9d2477784102cf9e
       Path: SoundBanks\Default Work Unit\Main
-    - name: New_Tutorial
-      guid: 3b03b250b570824c9ad3bd9c5972be76
-      id: 2565639494
+    - name: NVDA_Tutorial
+      guid: 2ce830c320466146a8c104f9e338eb42
+      id: 3676215661
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -585,24 +585,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 85233671dd39aa41ae29cacfb165c806
-      - ElementName: New_Tutorial
+      - ElementName: NVDA_Tutorial
         ObjectType: 7
-        guid: 3b03b250b570824c9ad3bd9c5972be76
-      Path: SoundBanks\Default Work Unit\New_Tutorial
-    - name: ObstaclesAdvanced
-      guid: cd27296166b07348a5a89e147fbeb101
-      id: 3749543171
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 85233671dd39aa41ae29cacfb165c806
-      - ElementName: ObstaclesAdvanced
-        ObjectType: 7
-        guid: cd27296166b07348a5a89e147fbeb101
-      Path: SoundBanks\Default Work Unit\ObstaclesAdvanced
+        guid: 2ce830c320466146a8c104f9e338eb42
+      Path: SoundBanks\Default Work Unit\NVDA_Tutorial
     - name: UI_Soundbank
       guid: cf76b321d4be724988bc7b2d9ea75253
       id: 2454045173
@@ -629,7 +615,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584400668410020420
+    m_lastTime: -8584400626588265329
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -747,7 +733,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\UI\Event_UI_Select_MainSettings
       maxAttenuation: 0
       maxDuration: 2.9084642
-      minDuration: 1.5720732
+      minDuration: 1.5628535
     - name: Event_UI_Select_Multipurpose
       guid: b554110cd1772349a67865636a972893
       id: 222667337
@@ -788,6 +774,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.4417548
       minDuration: 1.1381366
+    - name: Event_UI_Select_TutorialItems
+      guid: 69666175cd17774eaa8fd2d573d1b827
+      id: 164403860
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: UI
+        ObjectType: 4
+        guid: 77bddc935b3b8f4c99965c7f4a5157bd
+      - ElementName: Event_UI_Select_TutorialItems
+        ObjectType: 3
+        guid: 69666175cd17774eaa8fd2d573d1b827
+      Path: Events\Default Work Unit\UI\Event_UI_Select_TutorialItems
+      maxAttenuation: 0
+      maxDuration: 99.9375
+      minDuration: 18.520817
     - name: Landmarks
       guid: 749801bade2f8946aabd24f180b82ded
       id: 1061412920
@@ -840,8 +846,8 @@ MonoBehaviour:
         guid: f0b72170424f28478143719be97d2360
       Path: Events\Default Work Unit\Tutorial\Pause_NewTutorial
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_01_TheEcholocationClick2_EQ
       guid: f50418e8b3ecd8418d1953c762c4a06d
       id: 3703251308
@@ -860,8 +866,8 @@ MonoBehaviour:
         guid: f50418e8b3ecd8418d1953c762c4a06d
       Path: Events\Default Work Unit\Tutorial\Play_01_TheEcholocationClick2_EQ
       maxAttenuation: 0
-      maxDuration: 33.6225
-      minDuration: 33.6225
+      maxDuration: -1
+      minDuration: -1
     - name: Play_02_ForwardMovement_EQ
       guid: f5f8aba84cd0ba44960eaa6581e0ffb0
       id: 4090907250
@@ -880,8 +886,8 @@ MonoBehaviour:
         guid: f5f8aba84cd0ba44960eaa6581e0ffb0
       Path: Events\Default Work Unit\Tutorial\Play_02_ForwardMovement_EQ
       maxAttenuation: 0
-      maxDuration: 45.325356
-      minDuration: 45.325356
+      maxDuration: -1
+      minDuration: -1
     - name: Play_03_1_ForwardMovementAndCollision_EQ
       guid: 4342942b0439674c88ded9a2764dc6c9
       id: 4275180162
@@ -900,8 +906,8 @@ MonoBehaviour:
         guid: 4342942b0439674c88ded9a2764dc6c9
       Path: Events\Default Work Unit\Tutorial\Play_03_1_ForwardMovementAndCollision_EQ
       maxAttenuation: 0
-      maxDuration: 35.758728
-      minDuration: 35.758728
+      maxDuration: -1
+      minDuration: -1
     - name: Play_03_2_ContinuedCollision_Script
       guid: 811e63f88aa106479b853ff5ba24dac7
       id: 1270779724
@@ -920,8 +926,8 @@ MonoBehaviour:
         guid: 811e63f88aa106479b853ff5ba24dac7
       Path: Events\Default Work Unit\Tutorial\Play_03_2_ContinuedCollision_Script
       maxAttenuation: 0
-      maxDuration: 53.376
-      minDuration: 53.376
+      maxDuration: -1
+      minDuration: -1
     - name: Play_04_BackwardMovement_Script
       guid: 6b53be262153614aa045fbec027c02f8
       id: 3857492957
@@ -940,8 +946,8 @@ MonoBehaviour:
         guid: 6b53be262153614aa045fbec027c02f8
       Path: Events\Default Work Unit\Tutorial\Play_04_BackwardMovement_Script
       maxAttenuation: 0
-      maxDuration: 33.456
-      minDuration: 33.456
+      maxDuration: -1
+      minDuration: -1
     - name: Play_05_SidewaysMovement_Script
       guid: 622a8e1e4ee300479be2a08316857b2e
       id: 2183594182
@@ -960,8 +966,8 @@ MonoBehaviour:
         guid: 622a8e1e4ee300479be2a08316857b2e
       Path: Events\Default Work Unit\Tutorial\Play_05_SidewaysMovement_Script
       maxAttenuation: 0
-      maxDuration: 42.048
-      minDuration: 42.048
+      maxDuration: -1
+      minDuration: -1
     - name: Play_06_MovementPractice_Script
       guid: 296540c57a9c3a4f98942441cad0dbd1
       id: 4073819487
@@ -980,8 +986,8 @@ MonoBehaviour:
         guid: 296540c57a9c3a4f98942441cad0dbd1
       Path: Events\Default Work Unit\Tutorial\Play_06_MovementPractice_Script
       maxAttenuation: 0
-      maxDuration: 38.736
-      minDuration: 38.736
+      maxDuration: -1
+      minDuration: -1
     - name: Play_07_Rotation_FULL
       guid: 7ccd8309d9c4fe4cbed22a07850cf945
       id: 1146828738
@@ -1000,8 +1006,8 @@ MonoBehaviour:
         guid: 7ccd8309d9c4fe4cbed22a07850cf945
       Path: Events\Default Work Unit\Tutorial\Play_07_Rotation_FULL
       maxAttenuation: 0
-      maxDuration: 64.272835
-      minDuration: 64.272835
+      maxDuration: -1
+      minDuration: -1
     - name: Play_08_SonicCompass_FULL
       guid: c1d042d9f7f8674d99f796e8bef5cc73
       id: 3227459707
@@ -1020,8 +1026,8 @@ MonoBehaviour:
         guid: c1d042d9f7f8674d99f796e8bef5cc73
       Path: Events\Default Work Unit\Tutorial\Play_08_SonicCompass_FULL
       maxAttenuation: 0
-      maxDuration: 54.89198
-      minDuration: 54.89198
+      maxDuration: -1
+      minDuration: -1
     - name: Play_09_RotationAndMovementPractice_Script
       guid: 3203664eba004d489a777b44100b1772
       id: 3152927959
@@ -1040,8 +1046,8 @@ MonoBehaviour:
         guid: 3203664eba004d489a777b44100b1772
       Path: Events\Default Work Unit\Tutorial\Play_09_RotationAndMovementPractice_Script
       maxAttenuation: 0
-      maxDuration: 21.696
-      minDuration: 21.696
+      maxDuration: -1
+      minDuration: -1
     - name: Play_10_SpawnAtStart_FULL
       guid: 5321eda847331a48b81dcc696ddf8b24
       id: 3498038182
@@ -1060,8 +1066,8 @@ MonoBehaviour:
         guid: 5321eda847331a48b81dcc696ddf8b24
       Path: Events\Default Work Unit\Tutorial\Play_10_SpawnAtStart_FULL
       maxAttenuation: 0
-      maxDuration: 38.08073
-      minDuration: 38.08073
+      maxDuration: -1
+      minDuration: -1
     - name: Play_11_MainChamberSpawn_FULL
       guid: fa920cc5e40d7d4bbaa64c02b4445286
       id: 2105156477
@@ -1080,8 +1086,8 @@ MonoBehaviour:
         guid: fa920cc5e40d7d4bbaa64c02b4445286
       Path: Events\Default Work Unit\Tutorial\Play_11_MainChamberSpawn_FULL
       maxAttenuation: 0
-      maxDuration: 27.724625
-      minDuration: 27.724625
+      maxDuration: -1
+      minDuration: -1
     - name: Play_12_SpawnPointsAndMovementPractice_Script
       guid: 99757a3142ea5e458e53ef7954ca9dbf
       id: 2205939773
@@ -1100,8 +1106,8 @@ MonoBehaviour:
         guid: 99757a3142ea5e458e53ef7954ca9dbf
       Path: Events\Default Work Unit\Tutorial\Play_12_SpawnPointsAndMovementPractice_Script
       maxAttenuation: 0
-      maxDuration: 18.144
-      minDuration: 18.144
+      maxDuration: -1
+      minDuration: -1
     - name: Play_13_Section1Review_Script
       guid: 5dee582fb9c0444cb8d58ce1f0d67ac8
       id: 1927997407
@@ -1120,8 +1126,8 @@ MonoBehaviour:
         guid: 5dee582fb9c0444cb8d58ce1f0d67ac8
       Path: Events\Default Work Unit\Tutorial\Play_13_Section1Review_Script
       maxAttenuation: 0
-      maxDuration: 28.68
-      minDuration: 28.68
+      maxDuration: -1
+      minDuration: -1
     - name: Play_14_ActivatingObstacles_FULL
       guid: 23d5fd825227574f96e394ad0b1b683f
       id: 180411800
@@ -1140,8 +1146,8 @@ MonoBehaviour:
         guid: 23d5fd825227574f96e394ad0b1b683f
       Path: Events\Default Work Unit\Tutorial\Play_14_ActivatingObstacles_FULL
       maxAttenuation: 0
-      maxDuration: 64.16812
-      minDuration: 64.16812
+      maxDuration: -1
+      minDuration: -1
     - name: Play_15_NavigatingObstacles_FULL
       guid: 2cea4b60be2aca4a94feb1c7f486b2f0
       id: 2932099217
@@ -1160,8 +1166,8 @@ MonoBehaviour:
         guid: 2cea4b60be2aca4a94feb1c7f486b2f0
       Path: Events\Default Work Unit\Tutorial\Play_15_NavigatingObstacles_FULL
       maxAttenuation: 0
-      maxDuration: 76.81161
-      minDuration: 76.81161
+      maxDuration: -1
+      minDuration: -1
     - name: Play_16_ObstacleFeedback_EQ
       guid: 0760e5b53fcabd418456e3b0e96d882e
       id: 41179137
@@ -1180,8 +1186,8 @@ MonoBehaviour:
         guid: 0760e5b53fcabd418456e3b0e96d882e
       Path: Events\Default Work Unit\Tutorial\Play_16_ObstacleFeedback_EQ
       maxAttenuation: 0
-      maxDuration: 28.235458
-      minDuration: 28.235458
+      maxDuration: -1
+      minDuration: -1
     - name: Play_17_ObstacleReview_EQ
       guid: 1afe364f58691343a2c4956bc5dac5cc
       id: 285928759
@@ -1200,8 +1206,8 @@ MonoBehaviour:
         guid: 1afe364f58691343a2c4956bc5dac5cc
       Path: Events\Default Work Unit\Tutorial\Play_17_ObstacleReview_EQ
       maxAttenuation: 0
-      maxDuration: 38.173603
-      minDuration: 38.173603
+      maxDuration: -1
+      minDuration: -1
     - name: Play_18_ClickPitch_EQ
       guid: 1a91db8d08d684459401b5fe0fbbb3d5
       id: 2049499323
@@ -1220,8 +1226,8 @@ MonoBehaviour:
         guid: 1a91db8d08d684459401b5fe0fbbb3d5
       Path: Events\Default Work Unit\Tutorial\Play_18_ClickPitch_EQ
       maxAttenuation: 0
-      maxDuration: 45.882626
-      minDuration: 45.882626
+      maxDuration: -1
+      minDuration: -1
     - name: Play_19_FinalNotes_Script
       guid: c384e05733a24147ab70341ff987f73c
       id: 1554164582
@@ -1240,8 +1246,8 @@ MonoBehaviour:
         guid: c384e05733a24147ab70341ff987f73c
       Path: Events\Default Work Unit\Tutorial\Play_19_FinalNotes_Script
       maxAttenuation: 0
-      maxDuration: 42
-      minDuration: 42
+      maxDuration: -1
+      minDuration: -1
     - name: Play_20_MainGame
       guid: 63166b7df7b7e34daefc6d94ef774b84
       id: 1835021098
@@ -1260,8 +1266,8 @@ MonoBehaviour:
         guid: 63166b7df7b7e34daefc6d94ef774b84
       Path: Events\Default Work Unit\Tutorial\Play_20_MainGame
       maxAttenuation: 0
-      maxDuration: 6.456
-      minDuration: 6.456
+      maxDuration: -1
+      minDuration: -1
     - name: Play_45_Angle_Indicator
       guid: 9838a6a5743c10458d1cbf46d87a9ea1
       id: 2248556949
@@ -1721,6 +1727,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.472
       minDuration: 2.472
+    - name: Play_TutorialItemsPage
+      guid: 02ed2765c213804ab94ee8af62f591c6
+      id: 2321440389
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_TutorialItemsPage
+        ObjectType: 3
+        guid: 02ed2765c213804ab94ee8af62f591c6
+      Path: Events\Default Work Unit\Play_TutorialItemsPage
+      maxAttenuation: 0
+      maxDuration: 1.1638271
+      minDuration: 1.1638271
     - name: Play_Welcome_Intro
       guid: 1cadc882e7f73044a199eedbbdc671b2
       id: 672691329
@@ -1739,8 +1762,8 @@ MonoBehaviour:
         guid: 1cadc882e7f73044a199eedbbdc671b2
       Path: Events\Default Work Unit\Tutorial\Play_Welcome_Intro
       maxAttenuation: 0
-      maxDuration: 31.32
-      minDuration: 31.32
+      maxDuration: -1
+      minDuration: -1
     - name: Play_West
       guid: 165813fb31e11348b4b0d0c8a7f03e0f
       id: 1103419735
@@ -1796,8 +1819,8 @@ MonoBehaviour:
         guid: 9fdeb73a542bb948ac877fd1fd0efecf
       Path: Events\Default Work Unit\Tutorial\Resume_NewTutorial
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SpawnPositions
       guid: 6cec6a0b4ac50d449fce4118c2887e00
       id: 2311575222
@@ -2085,7 +2108,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 70154adbe1b6c64bb555beead6d8d31f
     GuidInternal: 
-    m_lastTime: -8584400879169154394
+    m_lastTime: -8584400645319544697
     List:
     - name: SG_UI_AudioCrumbsSelections
       guid: 517a1d023ce1bf49a93b3bbf2b0323aa
@@ -2526,6 +2549,38 @@ MonoBehaviour:
         - ElementName: OBS_Cag_2of6
           ObjectType: 10
           guid: 9b1bdc3825b3234aa215e8da359c0bf5
+      - name: TTI_6of6
+        guid: 7c979b40611f4d4f9b7c8bea9ebda3d8
+        id: 1830141040
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: TTI_6of6
+          ObjectType: 10
+          guid: 7c979b40611f4d4f9b7c8bea9ebda3d8
+      - name: TTI_Cag_6of6
+        guid: 7b2ce3ed8c903a478e21e927985c8db0
+        id: 1312921442
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_MainSettings
+          ObjectType: 11
+          guid: 1e9d2bd222a26748818a5cee84bff1a1
+        - ElementName: TTI_Cag_6of6
+          ObjectType: 10
+          guid: 7b2ce3ed8c903a478e21e927985c8db0
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2981,6 +3036,504 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: SG_UI_TutorialItems
+      guid: 8d084fcec7785946aa04ee4531b6d9cf
+      id: 864818103
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 70154adbe1b6c64bb555beead6d8d31f
+      - ElementName: SG_UI_TutorialItems
+        ObjectType: 11
+        guid: 8d084fcec7785946aa04ee4531b6d9cf
+      Path: Switches\Default Work Unit\SG_UI_TutorialItems
+      values:
+      - name: AdjustingSliders
+        guid: e27ccc392df81a42939056075ef8fe2c
+        id: 3537363534
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: AdjustingSliders
+          ObjectType: 10
+          guid: e27ccc392df81a42939056075ef8fe2c
+      - name: AudioLandmarks
+        guid: 79bac01eb94df14ab58c75e545292f09
+        id: 3587124628
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: AudioLandmarks
+          ObjectType: 10
+          guid: 79bac01eb94df14ab58c75e545292f09
+      - name: Backwards
+        guid: 15301c33055e754a86e8322f79939324
+        id: 3876169137
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: Backwards
+          ObjectType: 10
+          guid: 15301c33055e754a86e8322f79939324
+      - name: Collisions
+        guid: aefd89dbb663d6469c33f4010da2ec93
+        id: 824618274
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: Collisions
+          ObjectType: 10
+          guid: aefd89dbb663d6469c33f4010da2ec93
+      - name: ContCollisions
+        guid: 9556fc82438d1a4194b7d71c30b6f741
+        id: 1010793822
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: ContCollisions
+          ObjectType: 10
+          guid: 9556fc82438d1a4194b7d71c30b6f741
+      - name: EchoClick
+        guid: a1653aa18a87a8439c6f463574ae7996
+        id: 3357006482
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: EchoClick
+          ObjectType: 10
+          guid: a1653aa18a87a8439c6f463574ae7996
+      - name: EnteringCategory
+        guid: e984b10d2d452946b64832c93f121639
+        id: 2202139043
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: EnteringCategory
+          ObjectType: 10
+          guid: e984b10d2d452946b64832c93f121639
+      - name: ForwardMovement
+        guid: 93fcca704b470a49992d026202264592
+        id: 21835643
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: ForwardMovement
+          ObjectType: 10
+          guid: 93fcca704b470a49992d026202264592
+      - name: HearingTheObs
+        guid: 79d7c49884ad4e4c83b3f41cbbf62141
+        id: 2315122162
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: HearingTheObs
+          ObjectType: 10
+          guid: 79d7c49884ad4e4c83b3f41cbbf62141
+      - name: MainChamberSpawn
+        guid: 25730e90e0a12f4dbbdd88115819d652
+        id: 3754331821
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: MainChamberSpawn
+          ObjectType: 10
+          guid: 25730e90e0a12f4dbbdd88115819d652
+      - name: MvmtPractice
+        guid: 2910ddf42330dc4a9418f95dd489cbb8
+        id: 3345188236
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: MvmtPractice
+          ObjectType: 10
+          guid: 2910ddf42330dc4a9418f95dd489cbb8
+      - name: NavigatingSubmenus
+        guid: 50efe939f3393d439b30452426f3fd6d
+        id: 809063863
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: NavigatingSubmenus
+          ObjectType: 10
+          guid: 50efe939f3393d439b30452426f3fd6d
+      - name: New_Switch_30
+        guid: 52451ff63cb7f948bf742a6152a6f301
+        id: 3969228062
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: New_Switch_30
+          ObjectType: 10
+          guid: 52451ff63cb7f948bf742a6152a6f301
+      - name: ObsCustom
+        guid: 1149c5c2a9b93b47994a9786c3e2bd72
+        id: 2131676804
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: ObsCustom
+          ObjectType: 10
+          guid: 1149c5c2a9b93b47994a9786c3e2bd72
+      - name: ObsNavigation
+        guid: e084d40a106da04cac0877429a2930e5
+        id: 4042290811
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: ObsNavigation
+          ObjectType: 10
+          guid: e084d40a106da04cac0877429a2930e5
+      - name: ObsPresetDesc
+        guid: d60f1384cc39654b92505f653c05c5a0
+        id: 3519150243
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: ObsPresetDesc
+          ObjectType: 10
+          guid: d60f1384cc39654b92505f653c05c5a0
+      - name: ObsPresets
+        guid: 50d6bc4936fdf047971164a091d1e98a
+        id: 2312210939
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: ObsPresets
+          ObjectType: 10
+          guid: 50d6bc4936fdf047971164a091d1e98a
+      - name: ObsReview
+        guid: ebdaa7bf1ca47a4c97ca61988bf7c4c1
+        id: 2115823773
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: ObsReview
+          ObjectType: 10
+          guid: ebdaa7bf1ca47a4c97ca61988bf7c4c1
+      - name: Review
+        guid: 66dfc1a88db5f04785782b3628c8b095
+        id: 30880413
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: Review
+          ObjectType: 10
+          guid: 66dfc1a88db5f04785782b3628c8b095
+      - name: RotationAndMvmtPractice
+        guid: 97d505ab6f969e4dad9b3c09d08d5c06
+        id: 2110140363
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: RotationAndMvmtPractice
+          ObjectType: 10
+          guid: 97d505ab6f969e4dad9b3c09d08d5c06
+      - name: RotationIntro
+        guid: 32adae68b28c364c81ef7425304ea532
+        id: 1521432287
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: RotationIntro
+          ObjectType: 10
+          guid: 32adae68b28c364c81ef7425304ea532
+      - name: Sideways
+        guid: f6de472af92eb443b0ef665fdddced27
+        id: 2818475040
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: Sideways
+          ObjectType: 10
+          guid: f6de472af92eb443b0ef665fdddced27
+      - name: SonicCompass
+        guid: cc2b485a0c526249a81f222e43027818
+        id: 3211240269
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: SonicCompass
+          ObjectType: 10
+          guid: cc2b485a0c526249a81f222e43027818
+      - name: SpawnAndMove
+        guid: 2d1edb92c8142f4fa0f1942e09895802
+        id: 4054219830
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: SpawnAndMove
+          ObjectType: 10
+          guid: 2d1edb92c8142f4fa0f1942e09895802
+      - name: SpawnStart
+        guid: 45da8b1f6a40084b83d353819c4a3b4a
+        id: 359097558
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: SpawnStart
+          ObjectType: 10
+          guid: 45da8b1f6a40084b83d353819c4a3b4a
+      - name: TutorialItems
+        guid: af63791f01be554b9db6d09e8c2ed263
+        id: 966916481
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: TutorialItems
+          ObjectType: 10
+          guid: af63791f01be554b9db6d09e8c2ed263
+      - name: UIIntro
+        guid: 508fd36fd9dcfd42896a39d94448a61d
+        id: 3193406139
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: UIIntro
+          ObjectType: 10
+          guid: 508fd36fd9dcfd42896a39d94448a61d
+      - name: UIMenuNav
+        guid: ba1daf677814064f94897010e76d51d1
+        id: 3765040673
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: UIMenuNav
+          ObjectType: 10
+          guid: ba1daf677814064f94897010e76d51d1
+      - name: UIReview
+        guid: 29256d4858279243b2f54d90254da9fe
+        id: 1527458955
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: UIReview
+          ObjectType: 10
+          guid: 29256d4858279243b2f54d90254da9fe
+      - name: Welcome
+        guid: 19ac2ebca5fba744a77bf7d256aaf881
+        id: 2421980327
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 70154adbe1b6c64bb555beead6d8d31f
+        - ElementName: SG_UI_TutorialItems
+          ObjectType: 11
+          guid: 8d084fcec7785946aa04ee4531b6d9cf
+        - ElementName: Welcome
+          ObjectType: 10
+          guid: 19ac2ebca5fba744a77bf7d256aaf881
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -2995,8 +3548,8 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584424684189015458
     List: []
-  ExpandedFileSystemItemIds: 010000000200000003000000080000001f0000002200000023000000510000005400000055000000610000006200000063000000
-  ExpandedWaapiItemIds: 010000000200000005000000060000001300000018000000190000001a0000001b0000001c0000001d0000001e000000240000002c0000002d000000370000005100000054000000550000006100000062000000bc000000bd000000be000000f5000000f6000000fd000000fe0000007f01000080010000410200004202000043020000720200007302000079020000
+  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000060000000e0000000f000000100000001300000018000000190000001a0000001b0000001c0000001d0000001e00000024000000290000002c0000002d00000035000000370000005100000054000000550000006100000062000000bc000000bd000000be000000f5000000f6000000fd000000fe0000007f01000080010000410200004202000043020000720200007302000079020000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000001300000018000000190000001a0000001b0000001c0000001d0000001e000000240000002c0000002d000000370000003f000000400000004f00000051000000540000005500000061000000620000008f0000009000000091000000bc000000bd000000be000000ea000000eb000000ec000000f5000000f6000000fd000000fe00000032010000330100003d0100003e0100003f01000040010000410100004a0100004b0100004c0100004d0100007f01000080010000890100008a0100008b0100008c0100008d0100008e0100008f0100009001000091010000920100009e0100009f010000a0010000340200003502000037020000380200003f020000400200004102000042020000430200007202000073020000790200008602000092020000930200009402000095020000960200009702000098020000990200009a0200009b020000d6020000d70200003503000036030000380300003903000085030000ce030000cf030000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

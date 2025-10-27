@@ -695,6 +695,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Event_UI_Select_TutorialItems" ID="{75616669-17CD-4E77-AA8F-D2D573D1B827}">
+							<ChildrenList>
+								<Action Name="" ID="{43653D01-1E13-4378-9B22-1E9AFD9C093E}" ShortID="936556978">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{99D75857-8D3E-4B0F-8632-D5FE691DB585}" ShortID="179959121">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SC_UI_Tutorial" ID="{E08B636C-0A24-4E16-AAAC-1AFB08CC1704}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_ObstaclesPropertiesPage" ID="{17D44698-563D-417B-9ED7-18E813209BA6}">
@@ -769,6 +791,27 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SettingsClosed" ID="{8FE0016B-0B0D-4806-9018-6075FF78D4EB}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TutorialItemsPage" ID="{6527ED02-13C2-4A80-B94E-E8AF62F591C6}">
+					<ChildrenList>
+						<Action Name="" ID="{D3B00B37-A702-4683-AC50-B8A034802DA2}" ShortID="484173653">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialItemsPage" ID="{31E08BCC-C9DC-457B-8C6D-9F43CB2A1B3D}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6A911E70-BB6A-4489-AB5D-F9909C1044B9}" ShortID="889370830">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

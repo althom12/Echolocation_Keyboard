@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{8C9E809E-A934-256E-A3CD-919304BE197D}",
+    "Hash": "{CD69EFEA-CF28-9238-3707-6DDA98361648}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "Landmarks_AudioCrumbs.wav",
       "CachePath": "8F/{8FC95DEC-1552-335A-CAE0-225AC7B6E19F}.wem"
+     },
+     {
+      "Id": "19072049",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_TutorialItems.wav",
+      "CachePath": "88/{88FB5B6B-6721-04EB-FE2C-134C2A7EA9F6}.wem"
      },
      {
       "Id": "22721028",
@@ -166,6 +174,14 @@
       "Location": "Memory",
       "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
       "CachePath": "5A/{5AD40FAA-82ED-6478-49CE-C52B47EA11B7}.wem"
+     },
+     {
+      "Id": "233983559",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_TutorialItems.wav",
+      "CachePath": "BA/{BA0B0D94-72D4-53BA-2788-FF34D7F8B7C6}.wem"
      },
      {
       "Id": "253872595",
@@ -336,6 +352,14 @@
       "CachePath": "41/{4184147F-FA8D-7CE4-3D22-73D6D0CB9B22}.wem"
      },
      {
+      "Id": "670808924",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NV_SettingsClosed_TutorialExited.wav",
+      "CachePath": "0A/{0A41E397-6178-9281-A5F0-CB1A4BE8935E}.wem"
+     },
+     {
       "Id": "733384295",
       "Language": "SFX",
       "Streaming": "false",
@@ -350,6 +374,14 @@
       "Location": "Memory",
       "ShortName": "Obstacles_Fast.wav",
       "CachePath": "BC/{BC23DFE1-8888-7BE1-B516-507DCEC50970}.wem"
+     },
+     {
+      "Id": "745205618",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_TutorialItems.wav",
+      "CachePath": "60/{60F5E8D9-9DC3-8D55-8D8D-7BF6ABC43727}.wem"
      },
      {
       "Id": "797368153",
@@ -618,7 +650,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_MainSettings",
       "GUID": "{45D097F9-6863-497F-919E-622C655DB666}",
       "DurationType": "OneShot",
-      "DurationMin": "1.5720732",
+      "DurationMin": "1.5628535",
       "DurationMax": "2.9084642",
       "SwitchContainers": [
        {
@@ -670,6 +702,32 @@
         "MediaRefs": [
          {
           "Id": "1051897348"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3198805459",
+         "Id": "1312921442",
+         "GUID": "{EDE32C7B-908C-473A-8E21-E927985C8DB0}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "233983559"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3198805459",
+         "Id": "1830141040",
+         "GUID": "{409B977C-1F61-4F4D-9B7C-8BEA9EBDA3D8}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "745205618"
          }
         ]
        },
@@ -1196,6 +1254,34 @@
         "Id": "1955219"
        }
       ]
+     },
+     {
+      "Id": "514607133",
+      "Name": "Play_SettingsClosed",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SettingsClosed",
+      "GUID": "{2C13F456-0CE0-47E9-ADB3-E49622E3C946}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8871735",
+      "DurationMax": "0.8871735",
+      "MediaRefs": [
+       {
+        "Id": "670808924"
+       }
+      ]
+     },
+     {
+      "Id": "2321440389",
+      "Name": "Play_TutorialItemsPage",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_TutorialItemsPage",
+      "GUID": "{6527ED02-13C2-4A80-B94E-E8AF62F591C6}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.1638271",
+      "DurationMax": "1.1638271",
+      "MediaRefs": [
+       {
+        "Id": "19072049"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -1296,6 +1382,12 @@
         "GUID": "{20AC4750-4081-4BB8-B8A8-822566FC1180}"
        },
        {
+        "Id": "1312921442",
+        "Name": "TTI_Cag_6of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\TTI_Cag_6of6",
+        "GUID": "{EDE32C7B-908C-473A-8E21-E927985C8DB0}"
+       },
+       {
         "Id": "1332976950",
         "Name": "ECP_1of6",
         "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\ECP_1of6",
@@ -1312,6 +1404,12 @@
         "Name": "LMP_Cag_4of6",
         "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\LMP_Cag_4of6",
         "GUID": "{D6F9771D-BACB-4403-A709-6DBAB948F26D}"
+       },
+       {
+        "Id": "1830141040",
+        "Name": "TTI_6of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\TTI_6of6",
+        "GUID": "{409B977C-1F61-4F4D-9B7C-8BEA9EBDA3D8}"
        },
        {
         "Id": "1853522097",
@@ -1546,6 +1644,6 @@
     ]
    }
   ],
-  "FileHash": "{47D39573-8154-FFEC-9CF4-B3B72E070855}"
+  "FileHash": "{C122C5E7-2679-32C8-50DE-8FA4006D514C}"
  }
 }

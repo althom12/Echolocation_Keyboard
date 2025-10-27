@@ -43,6 +43,8 @@
 						<Switch Name="LMP_Cag_4of6" ID="{D6F9771D-BACB-4403-A709-6DBAB948F26D}"/>
 						<Switch Name="ACP_5of6" ID="{A23516DE-4A06-4568-9AED-2DAE02E97D9E}"/>
 						<Switch Name="ACP_Cag_5of6" ID="{6FFE4173-703E-4C1A-8C25-A3EC6275AC11}"/>
+						<Switch Name="TTI_Cag_6of6" ID="{EDE32C7B-908C-473A-8E21-E927985C8DB0}"/>
+						<Switch Name="TTI_6of6" ID="{409B977C-1F61-4F4D-9B7C-8BEA9EBDA3D8}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="SG_UI_EcholocatorClickSelections" ID="{A39A6A65-8D28-43F7-9264-8AA54CA8B859}">
@@ -77,6 +79,40 @@
 					<ChildrenList>
 						<Switch Name="Toggle_Checked" ID="{060860FD-9638-4D08-AD83-15D328299A4E}"/>
 						<Switch Name="Toggle_NotChecked" ID="{54468300-2CA0-4D49-BE13-37DA4BE7CB8F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SG_UI_TutorialItems" ID="{CE4F088D-78C7-4659-AA04-EE4531B6D9CF}">
+					<ChildrenList>
+						<Switch Name="Welcome" ID="{BC2EAC19-FBA5-44A7-A77B-F7D256AAF881}"/>
+						<Switch Name="EchoClick" ID="{A13A65A1-878A-43A8-9C6F-463574AE7996}"/>
+						<Switch Name="ForwardMovement" ID="{70CAFC93-474B-490A-992D-026202264592}"/>
+						<Switch Name="Collisions" ID="{DB89FDAE-63B6-46D6-9C33-F4010DA2EC93}"/>
+						<Switch Name="ContCollisions" ID="{82FC5695-8D43-411A-94B7-D71C30B6F741}"/>
+						<Switch Name="Backwards" ID="{331C3015-5E05-4A75-86E8-322F79939324}"/>
+						<Switch Name="Sideways" ID="{2A47DEF6-2EF9-43B4-B0EF-665FDDDCED27}"/>
+						<Switch Name="MvmtPractice" ID="{F4DD1029-3023-4ADC-9418-F95DD489CBB8}"/>
+						<Switch Name="RotationIntro" ID="{68AEAD32-8CB2-4C36-81EF-7425304EA532}"/>
+						<Switch Name="SonicCompass" ID="{5A482BCC-520C-4962-A81F-222E43027818}"/>
+						<Switch Name="RotationAndMvmtPractice" ID="{AB05D597-966F-4D9E-AD9B-3C09D08D5C06}"/>
+						<Switch Name="SpawnStart" ID="{1F8BDA45-406A-4B08-83D3-53819C4A3B4A}"/>
+						<Switch Name="MainChamberSpawn" ID="{900E7325-A1E0-4D2F-BBDD-88115819D652}"/>
+						<Switch Name="SpawnAndMove" ID="{92DB1E2D-14C8-4F2F-A0F1-942E09895802}"/>
+						<Switch Name="Review" ID="{A8C1DF66-B58D-47F0-8578-2B3628C8B095}"/>
+						<Switch Name="UIIntro" ID="{6FD38F50-DCD9-42FD-896A-39D94448A61D}"/>
+						<Switch Name="UIMenuNav" ID="{67AF1DBA-1478-4F06-9489-7010E76D51D1}"/>
+						<Switch Name="EnteringCategory" ID="{0DB184E9-452D-4629-B648-32C93F121639}"/>
+						<Switch Name="NavigatingSubmenus" ID="{39E9EF50-39F3-433D-9B30-452426F3FD6D}"/>
+						<Switch Name="AdjustingSliders" ID="{39CC7CE2-F82D-421A-9390-56075EF8FE2C}"/>
+						<Switch Name="UIReview" ID="{486D2529-2758-4392-B2F5-4D90254DA9FE}"/>
+						<Switch Name="ObsPresets" ID="{49BCD650-FD36-47F0-9711-64A091D1E98A}"/>
+						<Switch Name="ObsCustom" ID="{C2C54911-B9A9-473B-994A-9786C3E2BD72}"/>
+						<Switch Name="ObsNavigation" ID="{0AD484E0-6D10-4CA0-AC08-77429A2930E5}"/>
+						<Switch Name="HearingTheObs" ID="{98C4D779-AD84-4C4E-83B3-F41CBBF62141}"/>
+						<Switch Name="ObsPresetDesc" ID="{84130FD6-39CC-4B65-9250-5F653C05C5A0}"/>
+						<Switch Name="ObsReview" ID="{BFA7DAEB-A41C-4C7A-97CA-61988BF7C4C1}"/>
+						<Switch Name="AudioLandmarks" ID="{1EC0BA79-4DB9-4AF1-B58C-75E545292F09}"/>
+						<Switch Name="TutorialItems" ID="{1F7963AF-BE01-4B55-9DB6-D09E8C2ED263}"/>
+						<Switch Name="New_Switch_30" ID="{F61F4552-B73C-48F9-BF74-2A6152A6F301}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
