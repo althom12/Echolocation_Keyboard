@@ -1532,36 +1532,300 @@
 										<ActiveSource Name="ECP_LM_AC_TT_FS_Fast" ID="{5CE3BF4B-ACB0-4660-BA45-21E38477E4D5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Landmarks_ClockOn_Checked" ID="{9D3BD3C0-0A8E-4A7D-A5A0-24C44CDB5FC5}" ShortID="155776762">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_LandmarksClockOn" ID="{88091298-0FA3-4585-9DE4-8575ED71993D}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.130487600032501"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.71942134219642"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI_LandmarksClockOn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="690550287"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_LandmarksClockOn" ID="{88091298-0FA3-4585-9DE4-8575ED71993D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Landmarks_ClockOn_NotChecked" ID="{382B5E2D-BEEB-4835-9830-216BB956B40D}" ShortID="511980243">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_LandmarksClockOn" ID="{9D1AF226-3B81-462E-A60B-0D53CB6E22BD}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.76573645570647"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.40121295000865"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI_LandmarksClockOn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="66783371"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_LandmarksClockOn" ID="{9D1AF226-3B81-462E-A60B-0D53CB6E22BD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Landmarks_ClockVolume" ID="{33C4F225-9E9A-4ECC-B073-7FC81D54AA86}" ShortID="642173244">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_LandmarksClockOn" ID="{352D5E2A-5C21-44F6-A094-063F9DD48357}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.33659179087647"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.65365679316598"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI_LandmarksClockOn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="98132064"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_LandmarksClockOn" ID="{352D5E2A-5C21-44F6-A094-063F9DD48357}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Landmarks_HVACOn_Checked" ID="{1D9E63AC-0EA8-46BA-A23E-559D6EB8DF47}" ShortID="156217546">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_LandmarksClockOn" ID="{443FC219-4AAF-42DF-B1D2-3232594E7527}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.69067865741927"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.55772714591245"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI_LandmarksClockOn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="505702076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_LandmarksClockOn" ID="{443FC219-4AAF-42DF-B1D2-3232594E7527}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Landmarks_HVACOn_NotChecked" ID="{BEC90AF8-8F94-4D16-96BE-179B24F62032}" ShortID="1017110140">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_LandmarksClockOn" ID="{C605C6DE-F71E-4DDA-9D4B-9650ACBEEDEF}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.78929985477532"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.97475983528114"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI_LandmarksClockOn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="363050506"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_LandmarksClockOn" ID="{C605C6DE-F71E-4DDA-9D4B-9650ACBEEDEF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Landmarks_HVACVolume" ID="{1BD12C43-0583-4C41-8B69-A921F358CA30}" ShortID="1029392113">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambisonic_Main_Mix" ID="{3B650CB4-D79D-484A-8330-A92F518AF95C}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_LandmarksClockOn" ID="{A882490E-A979-43E3-9EA5-5995501CE7C9}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.92864925093967"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.5930722445157"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI_LandmarksClockOn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="280454049"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_LandmarksClockOn" ID="{A882490E-A979-43E3-9EA5-5995501CE7C9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
+										<ItemRef Name="Landmarks_ClockVolume" ID="{33C4F225-9E9A-4ECC-B073-7FC81D54AA86}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="Landmarks_VolumeSlider" ID="{991B3128-C12C-43FF-A154-20FDF4F0CF44}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Landmarks_ClockOn_NotChecked" ID="{382B5E2D-BEEB-4835-9830-216BB956B40D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Landmarks_HVACVolume" ID="{1BD12C43-0583-4C41-8B69-A921F358CA30}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Landmarks_On_Checked" ID="{C9EEAC7F-E90E-4706-A8AA-F4394D0FC4E8}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="Landmarks_HVACOn_Checked" ID="{1D9E63AC-0EA8-46BA-A23E-559D6EB8DF47}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Landmarks_ClockOn_Checked" ID="{9D3BD3C0-0A8E-4A7D-A5A0-24C44CDB5FC5}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="Landmarks_On_NotChecked" ID="{CBDDB1CA-9AB3-4AE0-AC71-E0F64B6B3BAD}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Landmarks_HVACOn_NotChecked" ID="{BEC90AF8-8F94-4D16-96BE-179B24F62032}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Landmarks_On_Checked" ID="{470A8929-901E-4A6E-935B-7221ACBEC591}"/>
+										<SwitchRef Name="HVACOn_Checked" ID="{6A420109-083D-49E8-BFF5-65296C828B09}"/>
 										<ItemList>
-											<ItemRef Name="Landmarks_On_Checked" ID="{C9EEAC7F-E90E-4706-A8AA-F4394D0FC4E8}"/>
+											<ItemRef Name="Landmarks_HVACOn_Checked" ID="{1D9E63AC-0EA8-46BA-A23E-559D6EB8DF47}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Landmarks_On_NotChecked" ID="{2D758859-3CC8-44A0-9915-5CF62611DF77}"/>
+										<SwitchRef Name="ClockOn_Checked" ID="{D3999C91-B66F-40D5-99BA-5E3FA2BFB931}"/>
 										<ItemList>
-											<ItemRef Name="Landmarks_On_NotChecked" ID="{CBDDB1CA-9AB3-4AE0-AC71-E0F64B6B3BAD}"/>
+											<ItemRef Name="Landmarks_ClockOn_Checked" ID="{9D3BD3C0-0A8E-4A7D-A5A0-24C44CDB5FC5}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Volume" ID="{9D22A5A6-02B6-42B4-B99A-A635741C8828}"/>
+										<SwitchRef Name="ClockOn_NotChecked" ID="{A7B6979E-E58B-486C-B35C-BBC731D06D32}"/>
 										<ItemList>
-											<ItemRef Name="Landmarks_VolumeSlider" ID="{991B3128-C12C-43FF-A154-20FDF4F0CF44}"/>
+											<ItemRef Name="Landmarks_ClockOn_NotChecked" ID="{382B5E2D-BEEB-4835-9830-216BB956B40D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="HVACVolume_Slider" ID="{EF37E69F-7CCB-4DC3-A99B-EB56A6CE49E9}"/>
+										<ItemList>
+											<ItemRef Name="Landmarks_HVACVolume" ID="{1BD12C43-0583-4C41-8B69-A921F358CA30}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="ClockVolume_Slider" ID="{59FE3FB1-623F-4BA8-9AE4-DFC3CE0416E4}"/>
+										<ItemList>
+											<ItemRef Name="Landmarks_ClockVolume" ID="{33C4F225-9E9A-4ECC-B073-7FC81D54AA86}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="HVACOn_NotChecked" ID="{BA19DCEB-3444-4454-9AA6-995443E8DD4B}"/>
+										<ItemList>
+											<ItemRef Name="Landmarks_HVACOn_NotChecked" ID="{BEC90AF8-8F94-4D16-96BE-179B24F62032}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

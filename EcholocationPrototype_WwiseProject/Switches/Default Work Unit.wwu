@@ -55,9 +55,12 @@
 				</SwitchGroup>
 				<SwitchGroup Name="SG_UI_LandmarksSelections" ID="{706EC372-B501-444A-90BC-39AEC6A7A0E2}">
 					<ChildrenList>
-						<Switch Name="Landmarks_On_Checked" ID="{470A8929-901E-4A6E-935B-7221ACBEC591}"/>
-						<Switch Name="Landmarks_On_NotChecked" ID="{2D758859-3CC8-44A0-9915-5CF62611DF77}"/>
-						<Switch Name="Volume" ID="{9D22A5A6-02B6-42B4-B99A-A635741C8828}"/>
+						<Switch Name="ClockOn_Checked" ID="{D3999C91-B66F-40D5-99BA-5E3FA2BFB931}"/>
+						<Switch Name="ClockOn_NotChecked" ID="{A7B6979E-E58B-486C-B35C-BBC731D06D32}"/>
+						<Switch Name="HVACOn_Checked" ID="{6A420109-083D-49E8-BFF5-65296C828B09}"/>
+						<Switch Name="HVACOn_NotChecked" ID="{BA19DCEB-3444-4454-9AA6-995443E8DD4B}"/>
+						<Switch Name="ClockVolume_Slider" ID="{59FE3FB1-623F-4BA8-9AE4-DFC3CE0416E4}"/>
+						<Switch Name="HVACVolume_Slider" ID="{EF37E69F-7CCB-4DC3-A99B-EB56A6CE49E9}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="SG_UI_AudioCrumbsSelections" ID="{021D7A51-E13C-49BF-A93B-3BBF2B0323AA}">

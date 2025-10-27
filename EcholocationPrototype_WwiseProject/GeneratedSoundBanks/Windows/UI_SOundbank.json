@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{86B53A0D-32F7-BBC8-9709-90FB83AB86A6}",
+    "Hash": "{554B0646-3922-83EA-6F70-D4A848628699}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -70,6 +70,30 @@
       "Location": "Memory",
       "ShortName": "Obstacles_Fast.wav",
       "CachePath": "25/{25A791F1-5D06-FA6F-D34B-3F1396D18049}.wem"
+     },
+     {
+      "Id": "49676745",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Landmark_BetterClock.wav",
+      "CachePath": "61/{6129A859-D9EA-9531-E553-97D6EA6D24CB}.wem"
+     },
+     {
+      "Id": "66783371",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_LandmarksClockOn.wav",
+      "CachePath": "7C/{7C97098B-8BEE-50B3-ED9C-663BAF464A00}.wem"
+     },
+     {
+      "Id": "98132064",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_LandmarksClockOn.wav",
+      "CachePath": "B2/{B27CA1FA-941C-91C3-D8E1-1578D01CF3E8}.wem"
      },
      {
       "Id": "107610551",
@@ -200,6 +224,14 @@
       "CachePath": "B9/{B9FDCAFA-D44D-5885-E408-59517C3F9C3F}.wem"
      },
      {
+      "Id": "280454049",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_LandmarksClockOn.wav",
+      "CachePath": "D5/{D529B9CC-3F44-CD7E-D345-8E95A42E1369}.wem"
+     },
+     {
       "Id": "293845445",
       "Language": "SFX",
       "Streaming": "false",
@@ -222,6 +254,14 @@
       "Location": "Memory",
       "ShortName": "MainSettings_Fast.wav",
       "CachePath": "3E/{3E2AD710-2C55-5515-4E06-C814B1DB0849}.wem"
+     },
+     {
+      "Id": "363050506",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_LandmarksClockOn.wav",
+      "CachePath": "30/{30122292-77BD-4F19-0B4D-DD34B1FFEACD}.wem"
      },
      {
       "Id": "384794627",
@@ -272,14 +312,6 @@
       "CachePath": "7C/{7CBF50A9-38C0-1A5D-0855-D37EAC9902C9}.wem"
      },
      {
-      "Id": "441129784",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Landmarks_AudioCrumbs.wav",
-      "CachePath": "3F/{3F382EF6-F24A-E5C2-FE6C-33315AC68C83}.wem"
-     },
-     {
       "Id": "464826980",
       "Language": "SFX",
       "Streaming": "false",
@@ -294,6 +326,14 @@
       "Location": "Memory",
       "ShortName": "ECP_LM_AC_TT_FS_Fast.wav",
       "CachePath": "E8/{E8C2E837-14C0-2DBF-8B18-F7F8ED011F07}.wem"
+     },
+     {
+      "Id": "505702076",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_LandmarksClockOn.wav",
+      "CachePath": "1E/{1EB9365F-636F-A3D8-FFCC-B2A39119F42C}.wem"
      },
      {
       "Id": "515255237",
@@ -336,14 +376,6 @@
       "CachePath": "A7/{A703DF70-C996-6804-33AF-24A1D701992C}.wem"
      },
      {
-      "Id": "585542538",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Landmarks_AudioCrumbs.wav",
-      "CachePath": "28/{28B37BF9-296B-C26A-4808-254A4C61016E}.wem"
-     },
-     {
       "Id": "596277267",
       "Language": "SFX",
       "Streaming": "false",
@@ -366,6 +398,14 @@
       "Location": "Memory",
       "ShortName": "NV_SettingsClosed_TutorialExited.wav",
       "CachePath": "0A/{0A41E397-6178-9281-A5F0-CB1A4BE8935E}.wem"
+     },
+     {
+      "Id": "690550287",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_LandmarksClockOn.wav",
+      "CachePath": "D1/{D13866BC-8F0A-6A98-7002-AE756FB6F9E9}.wem"
      },
      {
       "Id": "733384295",
@@ -424,6 +464,14 @@
       "CachePath": "54/{54001706-497D-1343-7796-1DC3F8ABE16E}.wem"
      },
      {
+      "Id": "897877778",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Environment_HVAC.wav",
+      "CachePath": "58/{58ED552F-28C9-4FD0-1A4C-384BD3F43DAE}.wem"
+     },
+     {
       "Id": "904943463",
       "Language": "SFX",
       "Streaming": "false",
@@ -472,6 +520,18 @@
       "CachePath": "36/{36F81C60-494F-BF39-F6EE-004A1A33FCEE}.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "196788001",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Environment\\Landmarks\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{E3E17B52-3907-43F9-98D3-BE93B36F5B7C}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "3831725167",
@@ -616,19 +676,19 @@
       "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_LandmarksProperties",
       "GUID": "{41957636-F421-4003-9313-66C0BE573617}",
       "DurationType": "OneShot",
-      "DurationMin": "1.0161976",
-      "DurationMax": "2.0678341",
+      "DurationMin": "1.317065",
+      "DurationMax": "2.18546",
       "SwitchContainers": [
        {
         "SwitchValue": {
          "GroupType": "Switch",
          "GroupId": "2201101635",
-         "Id": "3948044106",
-         "GUID": "{470A8929-901E-4A6E-935B-7221ACBEC591}"
+         "Id": "3394946734",
+         "GUID": "{6A420109-083D-49E8-BFF5-65296C828B09}"
         },
         "MediaRefs": [
          {
-          "Id": "441129784"
+          "Id": "505702076"
          }
         ]
        },
@@ -636,12 +696,12 @@
         "SwitchValue": {
          "GroupType": "Switch",
          "GroupId": "2201101635",
-         "Id": "36854881",
-         "GUID": "{2D758859-3CC8-44A0-9915-5CF62611DF77}"
+         "Id": "4145643500",
+         "GUID": "{D3999C91-B66F-40D5-99BA-5E3FA2BFB931}"
         },
         "MediaRefs": [
          {
-          "Id": "585542538"
+          "Id": "690550287"
          }
         ]
        },
@@ -649,12 +709,51 @@
         "SwitchValue": {
          "GroupType": "Switch",
          "GroupId": "2201101635",
-         "Id": "2415836739",
-         "GUID": "{9D22A5A6-02B6-42B4-B99A-A635741C8828}"
+         "Id": "4105537559",
+         "GUID": "{A7B6979E-E58B-486C-B35C-BBC731D06D32}"
         },
         "MediaRefs": [
          {
-          "Id": "293845445"
+          "Id": "66783371"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2201101635",
+         "Id": "3003445939",
+         "GUID": "{EF37E69F-7CCB-4DC3-A99B-EB56A6CE49E9}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "280454049"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2201101635",
+         "Id": "202463777",
+         "GUID": "{59FE3FB1-623F-4BA8-9AE4-DFC3CE0416E4}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "98132064"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2201101635",
+         "Id": "2726150469",
+         "GUID": "{BA19DCEB-3444-4454-9AA6-995443E8DD4B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "363050506"
          }
         ]
        }
@@ -1253,6 +1352,64 @@
       ]
      },
      {
+      "Id": "1504398712",
+      "Name": "Play_Environment_BetterClock",
+      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Play_Environment_BetterClock",
+      "GUID": "{70DCE676-94AD-4799-AA21-F6652CD23124}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "49676745"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "196788001"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "903073294",
+        "Name": "SimpleReflect",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
+        "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "3548695574",
+      "Name": "Play_Environment_HVAC",
+      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Play_Environment_HVAC",
+      "GUID": "{BE7C8BC6-C85D-4FFF-A77B-15A026AC1122}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "897877778"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "196788001"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "903073294",
+        "Name": "SimpleReflect",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
+        "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
       "Id": "587051210",
       "Name": "Play_FootstsepsPropertiesPage",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_FootstsepsPropertiesPage",
@@ -1263,6 +1420,90 @@
       "MediaRefs": [
        {
         "Id": "42878679"
+       }
+      ]
+     },
+     {
+      "Id": "355366375",
+      "Name": "Play_Landmarks_ClockOn_Checked",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_ClockOn_Checked",
+      "GUID": "{53166344-51A1-456A-B5E5-7451E5A0BD4E}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5889337",
+      "DurationMax": "1.5889337",
+      "MediaRefs": [
+       {
+        "Id": "690550287"
+       }
+      ]
+     },
+     {
+      "Id": "2394065306",
+      "Name": "Play_Landmarks_ClockOn_NotChecked",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_ClockOn_NotChecked",
+      "GUID": "{4ABF8C5F-7CCB-4355-B9E9-B0F580764BF5}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.6354765",
+      "DurationMax": "1.6354765",
+      "MediaRefs": [
+       {
+        "Id": "66783371"
+       }
+      ]
+     },
+     {
+      "Id": "1227681308",
+      "Name": "Play_Landmarks_ClockVolume",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_ClockVolume",
+      "GUID": "{269DC42C-7904-46EC-8B39-3FCB8E52B117}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.317065",
+      "DurationMax": "1.317065",
+      "MediaRefs": [
+       {
+        "Id": "98132064"
+       }
+      ]
+     },
+     {
+      "Id": "3592158439",
+      "Name": "Play_Landmarks_HVACOn_Checked",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_HVACOn_Checked",
+      "GUID": "{B28E1162-B811-41FD-9798-370D116C366E}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8670485",
+      "DurationMax": "1.8670485",
+      "MediaRefs": [
+       {
+        "Id": "505702076"
+       }
+      ]
+     },
+     {
+      "Id": "1940788890",
+      "Name": "Play_Landmarks_HVACOn_NotChecked",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_HVACOn_NotChecked",
+      "GUID": "{0C8449C3-2C00-4717-B105-9B06965CE26A}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.18546",
+      "DurationMax": "2.18546",
+      "MediaRefs": [
+       {
+        "Id": "363050506"
+       }
+      ]
+     },
+     {
+      "Id": "3527410972",
+      "Name": "Play_Landmarks_HVACVolume",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Landmarks_HVACVolume",
+      "GUID": "{FDFC69C0-2384-48AF-81BD-BAA897EE020C}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.664423",
+      "DurationMax": "1.664423",
+      "MediaRefs": [
+       {
+        "Id": "280454049"
        }
       ]
      },
@@ -1337,6 +1578,14 @@
       ]
      }
     ],
+    "GameParameters": [
+     {
+      "Id": "3164164166",
+      "Name": "Landmarks_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Landmarks_Amplitude",
+      "GUID": "{553CF8D1-775E-4343-8CD7-89C5E8D0041B}"
+     }
+    ],
     "SwitchGroups": [
      {
       "Id": "2014534092",
@@ -1365,22 +1614,40 @@
       "GUID": "{706EC372-B501-444A-90BC-39AEC6A7A0E2}",
       "Switches": [
        {
-        "Id": "36854881",
-        "Name": "Landmarks_On_NotChecked",
-        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Landmarks_On_NotChecked",
-        "GUID": "{2D758859-3CC8-44A0-9915-5CF62611DF77}"
+        "Id": "202463777",
+        "Name": "ClockVolume_Slider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\ClockVolume_Slider",
+        "GUID": "{59FE3FB1-623F-4BA8-9AE4-DFC3CE0416E4}"
        },
        {
-        "Id": "2415836739",
-        "Name": "Volume",
-        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Volume",
-        "GUID": "{9D22A5A6-02B6-42B4-B99A-A635741C8828}"
+        "Id": "2726150469",
+        "Name": "HVACOn_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\HVACOn_NotChecked",
+        "GUID": "{BA19DCEB-3444-4454-9AA6-995443E8DD4B}"
        },
        {
-        "Id": "3948044106",
-        "Name": "Landmarks_On_Checked",
-        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Landmarks_On_Checked",
-        "GUID": "{470A8929-901E-4A6E-935B-7221ACBEC591}"
+        "Id": "3003445939",
+        "Name": "HVACVolume_Slider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\HVACVolume_Slider",
+        "GUID": "{EF37E69F-7CCB-4DC3-A99B-EB56A6CE49E9}"
+       },
+       {
+        "Id": "3394946734",
+        "Name": "HVACOn_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\HVACOn_Checked",
+        "GUID": "{6A420109-083D-49E8-BFF5-65296C828B09}"
+       },
+       {
+        "Id": "4105537559",
+        "Name": "ClockOn_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\ClockOn_NotChecked",
+        "GUID": "{A7B6979E-E58B-486C-B35C-BBC731D06D32}"
+       },
+       {
+        "Id": "4145643500",
+        "Name": "ClockOn_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\ClockOn_Checked",
+        "GUID": "{D3999C91-B66F-40D5-99BA-5E3FA2BFB931}"
        }
       ]
      },
@@ -1717,6 +1984,6 @@
     ]
    }
   ],
-  "FileHash": "{B51F5D5E-9E64-8CD4-D8D9-2B26D79F2390}"
+  "FileHash": "{EFE1A87D-18A5-8945-1CA2-7099091839B9}"
  }
 }

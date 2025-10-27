@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{49BDBA85-BC2F-BFD4-13B4-F85FC164D9E9}",
+    "Hash": "{08579786-5E8C-6688-EC38-A0A413DE1255}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -272,6 +272,12 @@
       "GUID": "{34AEE630-4A71-491E-89DF-1BA360F31716}"
      },
      {
+      "Id": "3164164166",
+      "Name": "Landmarks_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Landmarks_Amplitude",
+      "GUID": "{553CF8D1-775E-4343-8CD7-89C5E8D0041B}"
+     },
+     {
       "Id": "4151021112",
       "Name": "Click_Pitch",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Click_Pitch",
@@ -528,22 +534,40 @@
       "GUID": "{706EC372-B501-444A-90BC-39AEC6A7A0E2}",
       "Switches": [
        {
-        "Id": "36854881",
-        "Name": "Landmarks_On_NotChecked",
-        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Landmarks_On_NotChecked",
-        "GUID": "{2D758859-3CC8-44A0-9915-5CF62611DF77}"
+        "Id": "202463777",
+        "Name": "ClockVolume_Slider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\ClockVolume_Slider",
+        "GUID": "{59FE3FB1-623F-4BA8-9AE4-DFC3CE0416E4}"
        },
        {
-        "Id": "2415836739",
-        "Name": "Volume",
-        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Volume",
-        "GUID": "{9D22A5A6-02B6-42B4-B99A-A635741C8828}"
+        "Id": "2726150469",
+        "Name": "HVACOn_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\HVACOn_NotChecked",
+        "GUID": "{BA19DCEB-3444-4454-9AA6-995443E8DD4B}"
        },
        {
-        "Id": "3948044106",
-        "Name": "Landmarks_On_Checked",
-        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\Landmarks_On_Checked",
-        "GUID": "{470A8929-901E-4A6E-935B-7221ACBEC591}"
+        "Id": "3003445939",
+        "Name": "HVACVolume_Slider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\HVACVolume_Slider",
+        "GUID": "{EF37E69F-7CCB-4DC3-A99B-EB56A6CE49E9}"
+       },
+       {
+        "Id": "3394946734",
+        "Name": "HVACOn_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\HVACOn_Checked",
+        "GUID": "{6A420109-083D-49E8-BFF5-65296C828B09}"
+       },
+       {
+        "Id": "4105537559",
+        "Name": "ClockOn_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\ClockOn_NotChecked",
+        "GUID": "{A7B6979E-E58B-486C-B35C-BBC731D06D32}"
+       },
+       {
+        "Id": "4145643500",
+        "Name": "ClockOn_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\ClockOn_Checked",
+        "GUID": "{D3999C91-B66F-40D5-99BA-5E3FA2BFB931}"
        }
       ]
      },
@@ -1390,6 +1414,6 @@
     ]
    }
   ],
-  "FileHash": "{CFA0D46D-E741-0411-2626-E11DACB0AD16}"
+  "FileHash": "{241099F6-BE1E-C155-E983-81073A2842B9}"
  }
 }

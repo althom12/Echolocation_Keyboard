@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}" SchemaVersion="123" RootDocumentID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}" ParentDocumentID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}">
 	<AudioObjects>
-		<WorkUnit Name="Environment2" ID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}" OwnerID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}" PersistMode="Nested">
+		<WorkUnit Name="Environment" ID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}" OwnerID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Landmarks" ID="{433E8187-1DAA-4396-AD49-6950D27F7804}" ShortID="332485659">
 					<PropertyList>
@@ -29,7 +29,11 @@
 					<ChildrenList>
 						<Sound Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" ShortID="306518907">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>20</Value>
@@ -37,6 +41,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
 								</Reference>
@@ -61,13 +68,56 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{5AAE0466-761C-421B-A621-B20814440A64}" ShortID="399669460">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Landmarks_Amplitude" ID="{553CF8D1-775E-4343-8CD7-89C5E8D0041B}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{D075647E-39B3-464A-8EF6-0C2C4D0EF7D3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="Environment_HVAC" ID="{9772C667-D1AF-4078-9F17-F0C6181E1626}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Environment_BetterClock" ID="{F7BDFF43-3EE6-4FA7-9165-C2C3FA811596}" ShortID="249468391">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-5</Value>
@@ -75,6 +125,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Landmark_Attenuation" ID="{720D9142-1256-4FB9-932F-369476812A54}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
 								</Reference>
@@ -97,6 +150,45 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{DD50E3DF-0023-47DB-AE25-5BC98C2C550D}" ShortID="421000608">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Landmarks_Amplitude" ID="{553CF8D1-775E-4343-8CD7-89C5E8D0041B}" WorkUnitID="{4364F1CC-E3B3-4088-8A81-53C2FB94031D}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{329143F1-3C79-48E5-99B0-A88687CA7599}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="Landmark_BetterClock" ID="{A2DC09A7-9ED9-4E9F-9454-B305B35972F1}" Platform="Linked"/>
 							</ActiveSourceList>

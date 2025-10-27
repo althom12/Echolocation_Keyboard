@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{0402A310-E6BF-5E29-482D-A890B5A2D811}",
+    "Hash": "{B5E3C69D-A28A-E5D2-514E-E906391D4689}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -22,14 +22,6 @@
       "Location": "Memory",
       "ShortName": "Footstep01.wav",
       "CachePath": "C4/{C49C2844-31E8-C405-C7A4-525EDA00034B}.wem"
-     },
-     {
-      "Id": "49676745",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Landmark_BetterClock.wav",
-      "CachePath": "61/{6129A859-D9EA-9531-E553-97D6EA6D24CB}.wem"
      },
      {
       "Id": "88841646",
@@ -152,14 +144,6 @@
       "CachePath": "81/{811B7B63-2E63-C1F2-D7FD-4DF84D11343B}.wem"
      },
      {
-      "Id": "897877778",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Environment_HVAC.wav",
-      "CachePath": "58/{58ED552F-28C9-4FD0-1A4C-384BD3F43DAE}.wem"
-     },
-     {
       "Id": "908350307",
       "Language": "SFX",
       "Streaming": "false",
@@ -194,14 +178,6 @@
     ],
     "Plugins": {
      "Custom": [
-      {
-       "Id": "196788001",
-       "Name": "Parametric EQ (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Environment2\\Landmarks\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
-       "GUID": "{E3E17B52-3907-43F9-98D3-BE93B36F5B7C}",
-       "LibName": "Wwise Parametric EQ",
-       "LibId": "6881283"
-      },
       {
        "Id": "222388465",
        "Name": "Parametric EQ (Custom)",
@@ -334,35 +310,6 @@
       ]
      },
      {
-      "Id": "3548695574",
-      "Name": "Play_Environment_HVAC",
-      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Play_Environment_HVAC",
-      "GUID": "{427A2CCE-FB02-4A18-88F8-11C4EE0DBA45}",
-      "MaxAttenuation": "30",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "897877778"
-       }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "196788001"
-        }
-       ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "903073294",
-        "Name": "SimpleReflect",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
-        "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
-        "Color": "4"
-       }
-      ]
-     },
-     {
       "Id": "3854155799",
       "Name": "Play_Footsteps",
       "ObjectPath": "\\Events\\Default Work Unit\\PlayerSounds\\Play_Footsteps",
@@ -412,35 +359,6 @@
         "Id": "908350307"
        }
       ],
-      "AuxBusRefs": [
-       {
-        "Id": "903073294",
-        "Name": "SimpleReflect",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
-        "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
-        "Color": "4"
-       }
-      ]
-     },
-     {
-      "Id": "1227575027",
-      "Name": "Play_Landmark_BetterClock",
-      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Play_Landmark_BetterClock",
-      "GUID": "{6748CAB6-E210-44E4-A893-47087456F0F9}",
-      "MaxAttenuation": "30",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "49676745"
-       }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "196788001"
-        }
-       ]
-      },
       "AuxBusRefs": [
        {
         "Id": "903073294",
@@ -608,26 +526,6 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
-     },
-     {
-      "Id": "1789780216",
-      "Name": "Stop_Environment_HVAC",
-      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Stop_Environment_HVAC",
-      "GUID": "{70C73DDF-A6DD-4489-AA21-0A658E220232}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "1318905049",
-      "Name": "Stop_Landmark_BetterClock",
-      "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Stop_Landmark_BetterClock",
-      "GUID": "{31C8AB91-6F79-40C1-9DA0-17696BE0FA09}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
      }
     ],
     "Busses": [
@@ -738,6 +636,6 @@
     ]
    }
   ],
-  "FileHash": "{985A38C1-D969-6105-A5EB-B8DB3693D94B}"
+  "FileHash": "{9A28FCD2-D3B4-C01D-8C9F-AB1D132F366E}"
  }
 }

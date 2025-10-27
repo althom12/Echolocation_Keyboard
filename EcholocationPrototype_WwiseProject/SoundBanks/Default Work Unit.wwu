@@ -5,12 +5,9 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{B491F553-DEF4-4E6E-9D24-77784102CF9E}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Stop_Landmark_BetterClock" ID="{31C8AB91-6F79-40C1-9DA0-17696BE0FA09}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MainChamberNotification" ID="{464F3B29-3A26-434B-9B0F-32311574E6DF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hallway01_Ambi_Verb" ID="{7EEA5551-616A-43E4-950C-0C1277D1B60B}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Environment_HVAC" ID="{70C73DDF-A6DD-4489-AA21-0A658E220232}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Compass_Synth" ID="{609C5A8B-0EBE-4490-8A28-550DF89B9FAF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Landmark_BetterClock" ID="{6748CAB6-E210-44E4-A893-47087456F0F9}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_East" ID="{160459A9-48AA-44EA-A295-765751BF09FA}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MegaAbsorbObstaclesActivated" ID="{5A26FADB-89B8-44F3-AB14-054FAA33182C}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_45_Angle_Indicator" ID="{A5A63898-3C74-4510-8D1C-BF46D87A9EA1}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
@@ -22,7 +19,6 @@
 						<ObjectRef Name="SimpleReflect" ID="{A834FFA5-6A50-486B-AADD-D440FB138642}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_StartingPositionNotification" ID="{A6E38A81-6490-4969-A5B9-C8AC57C7A2D0}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HumanClick" ID="{044D7B23-E026-499A-806F-B8BE29CEF09D}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Environment_HVAC" ID="{427A2CCE-FB02-4A18-88F8-11C4EE0DBA45}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ObstacleEmitter" ID="{F9539CF8-66C1-4A27-8361-8A2DBDDD8271}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_North" ID="{321939A0-93A7-4B0A-B74E-DF86596918A7}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Collision" ID="{6B681C0B-6064-4B4D-A34D-4DAE0FA6D9D5}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
@@ -42,6 +38,7 @@
 						<ObjectRef Name="Play_ObstaclesPropertiesPage" ID="{17D44698-563D-417B-9ED7-18E813209BA6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_EcholocatorClickProperties" ID="{02E05CC2-058E-4391-9813-78FF4343673D}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_FootstsepsPropertiesPage" ID="{8CBB7D95-4B5F-45CC-8025-EAED0E3A0C29}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Environment_BetterClock" ID="{70DCE676-94AD-4799-AA21-F6652CD23124}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SettingsClosed" ID="{2C13F456-0CE0-47E9-ADB3-E49622E3C946}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_LandmarksPropertiesPage" ID="{B3BEB343-4172-48CF-941A-15AA1F3FD859}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_Multipurpose" ID="{0C1154B5-77D1-4923-A678-65636A972893}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
@@ -52,6 +49,7 @@
 						<ObjectRef Name="Play_MainSettingsInitialOpen" ID="{45A92EE8-5717-4B51-9EA9-0E4311820804}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_FootstepsProperties" ID="{07CEEBEE-7D81-4EB8-86EC-B187B409FFAF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_AudioCrumbsPropertiesPage" ID="{18CB5564-2B82-4F14-A891-E080B0C52CA6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Environment_HVAC" ID="{BE7C8BC6-C85D-4FFF-A77B-15A026AC1122}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

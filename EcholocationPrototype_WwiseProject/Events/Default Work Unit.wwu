@@ -5,273 +5,320 @@
 			<ChildrenList>
 				<Folder Name="Tutorial" ID="{6AAD2BF4-A9BF-438F-8FCB-732E892B384D}" ShortID="392182808">
 					<ChildrenList>
-						<Event Name="Play_01_TheEcholocationClick2_EQ" ID="{E81804F5-ECB3-41D8-8D19-53C762C4A06D}">
+						<Event Name="Play_19_NV_NavigatingUISubmenus_PT" ID="{888C8FCD-AFC2-4A84-9B54-560CE7C3D6A5}">
 							<ChildrenList>
-								<Action Name="" ID="{D856C397-9BF7-415C-A18D-48C71AEDE75A}" ShortID="652830672">
+								<Action Name="" ID="{383B5F93-4271-435C-895F-0C155DCC5937}" ShortID="1035060295">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="01_TheEcholocationClick2_EQ" ID="{F28FD946-1C50-4E2E-8DF2-D46CD33FED8E}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="19_NV_NavigatingUISubmenus_PT" ID="{3C6CCCC2-3724-4B60-9502-417336476D26}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_03_2_ContinuedCollision_Script" ID="{F8631E81-A18A-4706-9B85-3FF5BA24DAC7}">
+						<Event Name="Play_09_NV_RotationIntro" ID="{BE9C597E-A148-41D8-A73A-52E5EBDC79F0}">
 							<ChildrenList>
-								<Action Name="" ID="{7F01E3CA-117E-48B3-97B9-62386BC4F8BE}" ShortID="466752600">
+								<Action Name="" ID="{0F5E6405-3C59-4CFF-8E58-AAA75352E4E4}" ShortID="768800783">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="03_2_ContinuedCollision_Script" ID="{6658FFC9-119D-41F8-9135-0B76BAC4C4B8}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="09_NV_RotationIntro" ID="{A28EAE70-A8E2-4B16-BBBB-3BF10D1AF273}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_03_1_ForwardMovementAndCollision_EQ" ID="{2B944243-3904-4C67-88DE-D9A2764DC6C9}">
+						<Event Name="Play_04_NV_Collisions_PT" ID="{287A637B-662D-4656-A156-718B1D4BA2ED}">
 							<ChildrenList>
-								<Action Name="" ID="{48604876-5646-48FF-ADD8-B5605343890C}" ShortID="978651346">
+								<Action Name="" ID="{8D6F3B13-3CF2-4DC9-8685-9D92F7D5017E}" ShortID="101235489">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="03_1_ForwardMovementAndCollision_EQ" ID="{BF9BC906-8666-4146-85F8-7A4C86CCF8D5}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="04_NV_Collisions_PT" ID="{89BD058A-5C8D-4902-B3F2-57153AB47DB8}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_02_ForwardMovement_EQ" ID="{A8ABF8F5-D04C-44BA-960E-AA6581E0FFB0}">
+						<Event Name="Play_27_NV_ObstaclesReview" ID="{5EEA9C80-DD9C-4881-8538-5D561A781F7E}">
 							<ChildrenList>
-								<Action Name="" ID="{99C9B6A6-06DE-42F8-BAB3-34C9FA3B5CDB}" ShortID="323248786">
+								<Action Name="" ID="{332A0901-5E70-4DD5-9BBC-A83D71355D30}" ShortID="670508893">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="02_ForwardMovement_EQ" ID="{DF42C30A-9D18-4470-8503-EE09C1DE9451}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="27_NV_ObstaclesReview" ID="{D340DDF0-0ECC-45AB-8056-72AD26CD1A02}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_04_BackwardMovement_Script" ID="{26BE536B-5321-4A61-A045-FBEC027C02F8}">
+						<Event Name="Play_29_NV_TutorialItemsAndConclusion" ID="{2858E8BF-D828-456B-99FB-97B83C5011A0}">
 							<ChildrenList>
-								<Action Name="" ID="{50C9621B-E20F-4718-A58B-F7CA7B6E1D84}" ShortID="714259803">
+								<Action Name="" ID="{2006BA96-F197-4DD3-AE00-C0B36AEB4628}" ShortID="592671664">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="04_BackwardMovement_Script" ID="{5B5EDF9E-5934-4B94-A3C0-6A8DA7F712C6}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="29_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_05_SidewaysMovement_Script" ID="{1E8E2A62-E34E-4700-9BE2-A08316857B2E}">
+						<Event Name="Play_13_NV_MainChamberSpawn_PT" ID="{117B36BB-12B5-4667-A1B6-DF9E2A811814}">
 							<ChildrenList>
-								<Action Name="" ID="{5242A840-D948-4DB2-9CB4-540574E7E57B}" ShortID="703106935">
+								<Action Name="" ID="{0A6D4CB1-9186-43C7-A79B-27878ED9919E}" ShortID="683250294">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="05_SidewaysMovement_Script" ID="{B89F2EB0-33E4-4DFF-A499-11C486706188}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="13_NV_MainChamberSpawn_PT" ID="{E8F7ACF7-09F6-4964-B8B8-013033B68215}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_06_MovementPractice_Script" ID="{C5406529-9C7A-4F3A-9894-2441CAD0DBD1}">
+						<Event Name="Play_08_NV_MovementPractice_PT" ID="{F332E7FE-EEF7-4DBE-97F0-46765B25E3F1}">
 							<ChildrenList>
-								<Action Name="" ID="{4E716410-06C2-4027-BE93-B6EED76FF86B}" ShortID="755404615">
+								<Action Name="" ID="{DEE6C1E8-4B69-4F01-AF1D-88649860CC6F}" ShortID="534866704">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="06_MovementPractice_Script" ID="{F9EAA563-64B4-43D7-A1AF-FBAED0621D4F}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="08_NV_MovementPractice_PT" ID="{6BFFC73C-40FB-4F02-B5DD-D1DB96F86437}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_07_Rotation_FULL" ID="{0983CD7C-C4D9-4CFE-BED2-2A07850CF945}">
+						<Event Name="Play_21_NV_UIReview" ID="{862CB6E1-89A6-4B57-848A-9134E7752507}">
 							<ChildrenList>
-								<Action Name="" ID="{F71B673A-C4CF-4AB8-AE7A-B7206224ABAC}" ShortID="401206154">
+								<Action Name="" ID="{FB712B4C-1BED-486A-8E95-97820B606E66}" ShortID="577521812">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="07_Rotation_FULL" ID="{F0299740-C4A1-4A6E-999B-FEBD57A8F86D}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="21_NV_UIReview" ID="{C5DC4774-2A88-4850-84A8-E825BDFFE63D}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_08_SonicCompass_FULL" ID="{D942D0C1-F8F7-4D67-99F7-96E8BEF5CC73}">
+						<Event Name="Play_06_NV_Backwards" ID="{3CA2EE3C-281E-4658-9D88-D9D675B72876}">
 							<ChildrenList>
-								<Action Name="" ID="{5981758B-EC7E-4F67-8B75-0B45164907DB}" ShortID="796940196">
+								<Action Name="" ID="{A1351CE9-6FB2-4977-B791-A4B4C32EEF7E}" ShortID="897558958">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="08_SonicCompass_FULL" ID="{057663CB-BE6A-497E-A925-18AF28625BE9}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="06_NV_Backwards" ID="{7789A2E1-ED70-4294-A207-665B77BC3DF9}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_09_RotationAndMovementPractice_Script" ID="{4E660332-00BA-484D-9A77-7B44100B1772}">
+						<Event Name="Play_26_NV_ObstaclePresetDescriptions" ID="{B099A6AB-D6CB-49A6-862F-AE2CB9E107D1}">
 							<ChildrenList>
-								<Action Name="" ID="{7059CBC0-F02B-4FBF-8FF6-723862CF8CAB}" ShortID="748014839">
+								<Action Name="" ID="{278CD38E-3732-43D2-86D9-1802EC4BB2FC}" ShortID="248201893">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="09_RotationAndMovementPractice_Script" ID="{E639D5BC-4624-4107-A7E9-DC063332CDD7}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="26_NV_ObstaclePresetDescriptions" ID="{7C6E3644-2ED6-4D48-95E0-7D00498238BF}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_10_SpawnAtStart_FULL" ID="{A8ED2153-3347-481A-B81D-CC696DDF8B24}">
+						<Event Name="Play_02_NV_EchoClick" ID="{5C1E9062-30C4-4EB4-9124-E7FCAFD90F67}">
 							<ChildrenList>
-								<Action Name="" ID="{BFE82C58-8682-4ED8-A321-FB69E9A6501B}" ShortID="186014013">
+								<Action Name="" ID="{DBB0B77C-F841-4B5B-897D-433228C1D4A6}" ShortID="887925533">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="10_SpawnAtStart_FULL" ID="{0C1ABDAC-3DC3-4A90-88B4-0C2CA9EF4CEF}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="02_NV_EchoClick" ID="{CFAA19B6-48FB-4225-A755-120BBC475511}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_11_MainChamberSpawn_FULL" ID="{C50C92FA-0DE4-4B7D-BAA6-4C02B4445286}">
+						<Event Name="Play_14_NV_SpawnPointsAndMovement" ID="{1A3D8C50-D1C2-4AF4-975E-0CD589C9B4A7}">
 							<ChildrenList>
-								<Action Name="" ID="{BF25FDC6-A8D2-43AF-8415-6DFDDD191ADE}" ShortID="165588885">
+								<Action Name="" ID="{9BA7D579-9D37-4EF3-BCCA-620162A3A6CD}" ShortID="135250887">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="11_MainChamberSpawn_FULL" ID="{88F3309A-3231-4249-9B66-F071BA634CE9}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="14_NV_SpawnPointsAndMovement" ID="{4FA9C19F-1113-43F8-A36F-E72CDDB5F55E}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_12_SpawnPointsAndMovementPractice_Script" ID="{317A7599-EA42-455E-8E53-EF7954CA9DBF}">
+						<Event Name="Play_16_NV_UIIntro_PT" ID="{4B728490-8496-46BC-9BE1-85ABD2B3E9B5}">
 							<ChildrenList>
-								<Action Name="" ID="{B8E01410-13D6-4791-834E-24F2210180D6}" ShortID="320993848">
+								<Action Name="" ID="{7264B66C-E0DF-4E55-AF15-B77C2379A0BC}" ShortID="540698688">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="12_SpawnPointsAndMovementPractice_Script" ID="{343A9D02-502B-4626-8203-3825F28E24B4}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="16_NV_UIIntro_PT" ID="{BE043CDB-C365-46AF-AFE9-63498CE85CF8}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_13_Section1Review_Script" ID="{2F58EE5D-C0B9-4C44-B8D5-8CE1F0D67AC8}">
+						<Event Name="Play_05_NV_ContinuedCollisions" ID="{37BFB9E9-F729-4D11-8765-DAE0CACFEAC1}">
 							<ChildrenList>
-								<Action Name="" ID="{44FAC7F9-E578-4945-8725-D5DB82407814}" ShortID="1047489482">
+								<Action Name="" ID="{ED018D18-6026-4898-AB9E-00D19D125BBF}" ShortID="514966035">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="13_Section1Review_Script" ID="{1070BFE1-69CC-4701-ABBF-A04E182C0329}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="05_NV_ContinuedCollisions" ID="{FA44F651-F97D-4369-9487-7674CC14DB1F}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_14_ActivatingObstacles_FULL" ID="{82FDD523-2752-4F57-96E3-94AD0B1B683F}">
+						<Event Name="Play_03_NV_ForwardMovement_PT" ID="{E42DC1DD-52C5-42E0-95F7-EC28185A643C}">
 							<ChildrenList>
-								<Action Name="" ID="{D3A9DD68-3EAA-41CC-9BAF-1B384D7B4A43}" ShortID="214105266">
+								<Action Name="" ID="{1AA92260-64EC-4EC0-B457-419DDE79DB66}" ShortID="872425811">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="14_ActivatingObstacles_FULL" ID="{3AB3E475-5031-4150-8B6D-C504C9B5EC55}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="03_NV_ForwardMovement_PT" ID="{221ECFE4-731A-4BE7-90AD-E291CA802700}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_15_NavigatingObstacles_FULL" ID="{604BEA2C-2ABE-4ACA-94FE-B1C7F486B2F0}">
+						<Event Name="Play_01_NV_Welcome" ID="{816B813A-5147-46AD-BE3E-2B00245F5C73}">
 							<ChildrenList>
-								<Action Name="" ID="{54FC39E9-750D-4427-A30B-C77CE8CC7C6F}" ShortID="699291376">
+								<Action Name="" ID="{143F9E67-5F3A-4C5C-A354-4A0455E65AED}" ShortID="102743159">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="15_NavigatingObstacles_FULL" ID="{5D7B7E78-F5D6-4188-9AD5-2F5D80D7B5C5}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="01_NV_Welcome" ID="{025AC815-D616-4F86-AAB6-61DE861B4420}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_16_ObstacleFeedback_EQ" ID="{B5E56007-CA3F-41BD-8456-E3B0E96D882E}">
+						<Event Name="Play_15_NV_Review" ID="{7ED4A28D-E73F-49BD-8A06-B9834BA8D9F9}">
 							<ChildrenList>
-								<Action Name="" ID="{49B0A129-F21C-40B1-BE55-A91BFFDB21B3}" ShortID="779884767">
+								<Action Name="" ID="{5F1C4915-8310-4FDC-BBC0-B7559315A877}" ShortID="1062950046">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="16_ObstacleFeedback_EQ" ID="{945A8A44-5DD9-4DD4-BD61-D49D6B0991A9}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="15_NV_Review" ID="{5E02D133-593A-4E56-A964-09053535547B}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_17_ObstacleReview_EQ" ID="{4F36FE1A-6958-4313-A2C4-956BC5DAC5CC}">
+						<Event Name="Play_17_NV_UIMainMenuNav" ID="{665A6028-4847-4236-B7D5-969BB41A9D1D}">
 							<ChildrenList>
-								<Action Name="" ID="{E3E9510D-90CB-412B-98E2-13E2C10C04F2}" ShortID="1054673012">
+								<Action Name="" ID="{B0BB12AB-986A-4EEA-881C-EE73AEE21CB1}" ShortID="446393081">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="17_ObstacleReview_EQ" ID="{78D62EB4-03A0-4077-8D58-842AD8F8FA6E}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="17_NV_UIMainMenuNav" ID="{C336B9B6-6EE4-46D2-A937-F80CFF1E26C3}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_19_FinalNotes_Script" ID="{57E084C3-A233-4741-AB70-341FF987F73C}">
+						<Event Name="Play_07_NV_Sideways" ID="{21D41B2B-0E95-43F3-8227-11727F9572A2}">
 							<ChildrenList>
-								<Action Name="" ID="{FA33DC93-3E50-4DF2-A465-B394B1CAAE2D}" ShortID="936402383">
+								<Action Name="" ID="{1BD52D1F-6504-410B-AD27-B7EADA7847F3}" ShortID="541496044">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="19_FinalNotes_Script" ID="{C6958E1A-C9ED-4461-8764-877515FC68FB}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="07_NV_Sideways" ID="{F6F9D167-BC9A-41D8-80AD-07A845D6BEB6}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_18_ClickPitch_EQ" ID="{8DDB911A-D608-4584-9401-B5FE0FBBB3D5}">
+						<Event Name="Play_12_NV_SpawnAtStart_PT" ID="{ED4644F6-71BA-40B1-9157-11AF7FD33545}">
 							<ChildrenList>
-								<Action Name="" ID="{609594A7-3F50-426E-821D-AFB6F7D7627C}" ShortID="417197946">
+								<Action Name="" ID="{A063EBA0-7AD6-48CA-BF9C-F2536BA92BE3}" ShortID="32424472">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="18_ClickPitch_EQ" ID="{46CBD206-31DA-47E7-916D-0C5F26018896}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="12_NV_SpawnAtStart_PT" ID="{6AFEED72-0CAB-4579-B8B5-1AF00BE00CB3}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Welcome_Intro" ID="{82C8AD1C-F7E7-4430-A199-EEDBBDC671B2}">
+						<Event Name="Play_10_NV_SonicCompass_PT" ID="{17680917-EDB4-455B-BBA4-4FBE9F981123}">
 							<ChildrenList>
-								<Action Name="" ID="{59246791-B8A6-45BA-A323-98B9D89374D8}" ShortID="551337221">
+								<Action Name="" ID="{A6F572F7-D9AE-4418-8E08-7F9BBABD145D}" ShortID="1005443270">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Welcome&amp;Intro" ID="{07A55DA8-F38C-4D5A-98D7-BFFE402A002B}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="10_NV_SonicCompass_PT" ID="{FA23ED9D-06E7-49A0-BDA7-C44C3A8FDD72}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_20_MainGame" ID="{7D6B1663-B7F7-4DE3-AEFC-6D94EF774B84}">
+						<Event Name="Play_11_NV_RotationAndMovementPractice" ID="{F2383BF0-DC9C-4E05-903F-2AC48A093382}">
 							<ChildrenList>
-								<Action Name="" ID="{F083D7EA-7E5C-4E54-8BEA-02ACE1B2ECE6}" ShortID="930755683">
+								<Action Name="" ID="{DDE3A7A1-D240-49A0-8CCD-0B709DE65347}" ShortID="29677067">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="20_MainGame" ID="{826B915C-D046-48D4-9F2B-691E28EE0DB7}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="11_NV_RotationAndMovementPractice" ID="{A437D16B-C5BB-4D4B-94BC-BD8DBA70B0D7}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Pause_NewTutorial" ID="{7021B7F0-4F42-4728-8143-719BE97D2360}">
+						<Event Name="Play_18_NV_EnteringACategory" ID="{43F5290A-0BD9-4C9A-B747-D4411BEAEB1B}">
 							<ChildrenList>
-								<Action Name="" ID="{6ADBE0A8-9F28-4EBA-B66A-DE57DB746992}" ShortID="313568611">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="7"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
+								<Action Name="" ID="{9A9AB4EA-D514-416C-9678-34E46E6B8E32}" ShortID="826779582">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="NewTutorial" ID="{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+											<ObjectRef Name="18_NV_EnteringACategory" ID="{1265E541-3E8A-4656-8225-804B6BC720D1}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Resume_NewTutorial" ID="{3AB7DE9F-2B54-48B9-AC87-7FD1FD0EFECF}">
+						<Event Name="Play_20_NV_AdjustingSliders" ID="{1C8664B3-3488-4FF2-B373-1CEC23B327FD}">
 							<ChildrenList>
-								<Action Name="" ID="{974012CB-0BEA-4E65-B525-4E74F302AC31}" ShortID="276220848">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="9"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
+								<Action Name="" ID="{4D23797E-9D21-4E4D-AA20-23C15CE87592}" ShortID="518811518">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="NewTutorial" ID="{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+											<ObjectRef Name="20_NV_AdjustingSliders" ID="{4ADAC5D1-03F5-434A-A4AD-363741B6CD08}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_22_NV_ObstaclesPresets" ID="{BDD26A42-346F-4B68-A5B9-A6F0ED812641}">
+							<ChildrenList>
+								<Action Name="" ID="{7B3C0CDD-D83A-4FA0-87CA-7FBFBBC6967C}" ShortID="1012624219">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="22_NV_ObstaclesPresets" ID="{ED769D9C-3898-45EF-8096-DBF450A3C393}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_23_NV_ObstaclesCustomization" ID="{9C84B36F-EC7B-4535-A031-A1039CD48783}">
+							<ChildrenList>
+								<Action Name="" ID="{2D344BEC-B3DB-4A8B-B412-52D6FAEE0093}" ShortID="771152186">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="23_NV_ObstaclesCustomization" ID="{3178129E-7761-4E80-B1BE-A042ACABC2DD}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_24_NV_ObstaclesNavigation" ID="{2F405B46-9C80-4867-A256-5C33BC1D09F7}">
+							<ChildrenList>
+								<Action Name="" ID="{FDF17FF2-DBF8-4BD0-84EE-E3B14382048F}" ShortID="597238807">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="24_NV_ObstaclesNavigation" ID="{82FF98D4-3A28-4640-8D96-8EAE08EB0ED7}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_25_NV_HearingTheObstacles_PT" ID="{40E02F62-8433-4DAA-B626-427AE9DA7C55}">
+							<ChildrenList>
+								<Action Name="" ID="{CD44A509-CE17-4438-9B49-DF40EFA9A155}" ShortID="506321818">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="25_NV_HearingTheObstacles_PT" ID="{C4B21113-322C-4D83-BDA8-0682C76358C3}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_28_NV_AudioLandmarks_PT" ID="{98FF8471-35D1-4928-B503-8B263ED175C1}">
+							<ChildrenList>
+								<Action Name="" ID="{50189F3C-5F06-464D-B2D6-75FE84C72B9E}" ShortID="729606323">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="28_NV_AudioLandmarks_PT" ID="{4D559EF3-EAD9-4ECC-AD0E-229E9941F834}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -487,37 +534,9 @@
 				</Folder>
 				<Folder Name="Landmarks" ID="{BA019874-2FDE-4689-AABD-24F180B82DED}" ShortID="865968233">
 					<ChildrenList>
-						<Event Name="Stop_Environment_HVAC" ID="{70C73DDF-A6DD-4489-AA21-0A658E220232}">
+						<Event Name="Play_Environment_BetterClock" ID="{70DCE676-94AD-4799-AA21-F6652CD23124}">
 							<ChildrenList>
-								<Action Name="" ID="{03A70AF0-2D34-4807-A854-E4EBA2982C9E}" ShortID="149923076">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Environment_HVAC" ID="{427A2CCE-FB02-4A18-88F8-11C4EE0DBA45}">
-							<ChildrenList>
-								<Action Name="" ID="{E9329C00-2369-4501-BF24-D0EE9B385C58}" ShortID="494608074">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_Landmark_BetterClock" ID="{31C8AB91-6F79-40C1-9DA0-17696BE0FA09}">
-							<ChildrenList>
-								<Action Name="" ID="{3442A0AF-CBF9-468E-9C73-C0CACFDA040F}" ShortID="964077276">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
+								<Action Name="" ID="{56B8694D-7E18-4C53-8A59-D1D48E5D6C2E}" ShortID="59074351">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Environment_BetterClock" ID="{F7BDFF43-3EE6-4FA7-9165-C2C3FA811596}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
@@ -526,12 +545,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Landmark_BetterClock" ID="{6748CAB6-E210-44E4-A893-47087456F0F9}">
+						<Event Name="Play_Environment_HVAC" ID="{BE7C8BC6-C85D-4FFF-A77B-15A026AC1122}">
 							<ChildrenList>
-								<Action Name="" ID="{81913E75-0D35-42EF-B1B3-3DE4F3D7D596}" ShortID="635773648">
+								<Action Name="" ID="{30094C11-572E-4E1A-BD39-C621E9E9D67A}" ShortID="158215276">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Environment_BetterClock" ID="{F7BDFF43-3EE6-4FA7-9165-C2C3FA811596}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
+											<ObjectRef Name="Environment_HVAC" ID="{79F47929-BB85-4CA9-A518-446DA7723D62}" WorkUnitID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -834,325 +853,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_01_NV_Welcome" ID="{816B813A-5147-46AD-BE3E-2B00245F5C73}">
-					<ChildrenList>
-						<Action Name="" ID="{143F9E67-5F3A-4C5C-A354-4A0455E65AED}" ShortID="102743159">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="01_NV_Welcome" ID="{025AC815-D616-4F86-AAB6-61DE861B4420}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_02_NV_EchoClick" ID="{5C1E9062-30C4-4EB4-9124-E7FCAFD90F67}">
-					<ChildrenList>
-						<Action Name="" ID="{DBB0B77C-F841-4B5B-897D-433228C1D4A6}" ShortID="887925533">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="02_NV_EchoClick" ID="{CFAA19B6-48FB-4225-A755-120BBC475511}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_03_NV_ForwardMovement_PT" ID="{E42DC1DD-52C5-42E0-95F7-EC28185A643C}">
-					<ChildrenList>
-						<Action Name="" ID="{1AA92260-64EC-4EC0-B457-419DDE79DB66}" ShortID="872425811">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="03_NV_ForwardMovement_PT" ID="{221ECFE4-731A-4BE7-90AD-E291CA802700}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_04_NV_Collisions_PT" ID="{287A637B-662D-4656-A156-718B1D4BA2ED}">
-					<ChildrenList>
-						<Action Name="" ID="{8D6F3B13-3CF2-4DC9-8685-9D92F7D5017E}" ShortID="101235489">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="04_NV_Collisions_PT" ID="{89BD058A-5C8D-4902-B3F2-57153AB47DB8}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_05_NV_ContinuedCollisions" ID="{37BFB9E9-F729-4D11-8765-DAE0CACFEAC1}">
-					<ChildrenList>
-						<Action Name="" ID="{ED018D18-6026-4898-AB9E-00D19D125BBF}" ShortID="514966035">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="05_NV_ContinuedCollisions" ID="{FA44F651-F97D-4369-9487-7674CC14DB1F}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_06_NV_Backwards" ID="{3CA2EE3C-281E-4658-9D88-D9D675B72876}">
-					<ChildrenList>
-						<Action Name="" ID="{A1351CE9-6FB2-4977-B791-A4B4C32EEF7E}" ShortID="897558958">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="06_NV_Backwards" ID="{7789A2E1-ED70-4294-A207-665B77BC3DF9}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_07_NV_Sideways" ID="{21D41B2B-0E95-43F3-8227-11727F9572A2}">
-					<ChildrenList>
-						<Action Name="" ID="{1BD52D1F-6504-410B-AD27-B7EADA7847F3}" ShortID="541496044">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="07_NV_Sideways" ID="{F6F9D167-BC9A-41D8-80AD-07A845D6BEB6}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_08_NV_MovementPractice_PT" ID="{F332E7FE-EEF7-4DBE-97F0-46765B25E3F1}">
-					<ChildrenList>
-						<Action Name="" ID="{DEE6C1E8-4B69-4F01-AF1D-88649860CC6F}" ShortID="534866704">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="08_NV_MovementPractice_PT" ID="{6BFFC73C-40FB-4F02-B5DD-D1DB96F86437}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_09_NV_RotationIntro" ID="{BE9C597E-A148-41D8-A73A-52E5EBDC79F0}">
-					<ChildrenList>
-						<Action Name="" ID="{0F5E6405-3C59-4CFF-8E58-AAA75352E4E4}" ShortID="768800783">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="09_NV_RotationIntro" ID="{A28EAE70-A8E2-4B16-BBBB-3BF10D1AF273}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_10_NV_SonicCompass_PT" ID="{17680917-EDB4-455B-BBA4-4FBE9F981123}">
-					<ChildrenList>
-						<Action Name="" ID="{A6F572F7-D9AE-4418-8E08-7F9BBABD145D}" ShortID="1005443270">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="10_NV_SonicCompass_PT" ID="{FA23ED9D-06E7-49A0-BDA7-C44C3A8FDD72}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_11_NV_RotationAndMovementPractice" ID="{F2383BF0-DC9C-4E05-903F-2AC48A093382}">
-					<ChildrenList>
-						<Action Name="" ID="{DDE3A7A1-D240-49A0-8CCD-0B709DE65347}" ShortID="29677067">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="11_NV_RotationAndMovementPractice" ID="{A437D16B-C5BB-4D4B-94BC-BD8DBA70B0D7}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_12_NV_SpawnAtStart_PT" ID="{ED4644F6-71BA-40B1-9157-11AF7FD33545}">
-					<ChildrenList>
-						<Action Name="" ID="{A063EBA0-7AD6-48CA-BF9C-F2536BA92BE3}" ShortID="32424472">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12_NV_SpawnAtStart_PT" ID="{6AFEED72-0CAB-4579-B8B5-1AF00BE00CB3}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_13_NV_MainChamberSpawn_PT" ID="{117B36BB-12B5-4667-A1B6-DF9E2A811814}">
-					<ChildrenList>
-						<Action Name="" ID="{0A6D4CB1-9186-43C7-A79B-27878ED9919E}" ShortID="683250294">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="13_NV_MainChamberSpawn_PT" ID="{E8F7ACF7-09F6-4964-B8B8-013033B68215}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_14_NV_SpawnPointsAndMovement" ID="{1A3D8C50-D1C2-4AF4-975E-0CD589C9B4A7}">
-					<ChildrenList>
-						<Action Name="" ID="{9BA7D579-9D37-4EF3-BCCA-620162A3A6CD}" ShortID="135250887">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="14_NV_SpawnPointsAndMovement" ID="{4FA9C19F-1113-43F8-A36F-E72CDDB5F55E}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_15_NV_Review" ID="{7ED4A28D-E73F-49BD-8A06-B9834BA8D9F9}">
-					<ChildrenList>
-						<Action Name="" ID="{5F1C4915-8310-4FDC-BBC0-B7559315A877}" ShortID="1062950046">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="15_NV_Review" ID="{5E02D133-593A-4E56-A964-09053535547B}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_16_NV_UIIntro_PT" ID="{4B728490-8496-46BC-9BE1-85ABD2B3E9B5}">
-					<ChildrenList>
-						<Action Name="" ID="{7264B66C-E0DF-4E55-AF15-B77C2379A0BC}" ShortID="540698688">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="16_NV_UIIntro_PT" ID="{BE043CDB-C365-46AF-AFE9-63498CE85CF8}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_17_NV_UIMainMenuNav" ID="{665A6028-4847-4236-B7D5-969BB41A9D1D}">
-					<ChildrenList>
-						<Action Name="" ID="{B0BB12AB-986A-4EEA-881C-EE73AEE21CB1}" ShortID="446393081">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="17_NV_UIMainMenuNav" ID="{C336B9B6-6EE4-46D2-A937-F80CFF1E26C3}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_18_NV_EnteringACategory" ID="{43F5290A-0BD9-4C9A-B747-D4411BEAEB1B}">
-					<ChildrenList>
-						<Action Name="" ID="{9A9AB4EA-D514-416C-9678-34E46E6B8E32}" ShortID="826779582">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="18_NV_EnteringACategory" ID="{1265E541-3E8A-4656-8225-804B6BC720D1}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_19_NV_NavigatingUISubmenus_PT" ID="{888C8FCD-AFC2-4A84-9B54-560CE7C3D6A5}">
-					<ChildrenList>
-						<Action Name="" ID="{383B5F93-4271-435C-895F-0C155DCC5937}" ShortID="1035060295">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="19_NV_NavigatingUISubmenus_PT" ID="{3C6CCCC2-3724-4B60-9502-417336476D26}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_20_NV_AdjustingSliders" ID="{1C8664B3-3488-4FF2-B373-1CEC23B327FD}">
-					<ChildrenList>
-						<Action Name="" ID="{4D23797E-9D21-4E4D-AA20-23C15CE87592}" ShortID="518811518">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="20_NV_AdjustingSliders" ID="{4ADAC5D1-03F5-434A-A4AD-363741B6CD08}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_21_NV_UIReview" ID="{862CB6E1-89A6-4B57-848A-9134E7752507}">
-					<ChildrenList>
-						<Action Name="" ID="{FB712B4C-1BED-486A-8E95-97820B606E66}" ShortID="577521812">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="21_NV_UIReview" ID="{C5DC4774-2A88-4850-84A8-E825BDFFE63D}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_22_NV_ObstaclesPresets" ID="{BDD26A42-346F-4B68-A5B9-A6F0ED812641}">
-					<ChildrenList>
-						<Action Name="" ID="{7B3C0CDD-D83A-4FA0-87CA-7FBFBBC6967C}" ShortID="1012624219">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="22_NV_ObstaclesPresets" ID="{ED769D9C-3898-45EF-8096-DBF450A3C393}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_23_NV_ObstaclesCustomization" ID="{9C84B36F-EC7B-4535-A031-A1039CD48783}">
-					<ChildrenList>
-						<Action Name="" ID="{2D344BEC-B3DB-4A8B-B412-52D6FAEE0093}" ShortID="771152186">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="23_NV_ObstaclesCustomization" ID="{3178129E-7761-4E80-B1BE-A042ACABC2DD}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_24_NV_ObstaclesNavigation" ID="{2F405B46-9C80-4867-A256-5C33BC1D09F7}">
-					<ChildrenList>
-						<Action Name="" ID="{FDF17FF2-DBF8-4BD0-84EE-E3B14382048F}" ShortID="597238807">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="24_NV_ObstaclesNavigation" ID="{82FF98D4-3A28-4640-8D96-8EAE08EB0ED7}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_25_NV_HearingTheObstacles_PT" ID="{40E02F62-8433-4DAA-B626-427AE9DA7C55}">
-					<ChildrenList>
-						<Action Name="" ID="{CD44A509-CE17-4438-9B49-DF40EFA9A155}" ShortID="506321818">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="25_NV_HearingTheObstacles_PT" ID="{C4B21113-322C-4D83-BDA8-0682C76358C3}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_26_NV_ObstaclePresetDescriptions" ID="{B099A6AB-D6CB-49A6-862F-AE2CB9E107D1}">
-					<ChildrenList>
-						<Action Name="" ID="{278CD38E-3732-43D2-86D9-1802EC4BB2FC}" ShortID="248201893">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="26_NV_ObstaclePresetDescriptions" ID="{7C6E3644-2ED6-4D48-95E0-7D00498238BF}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_27_NV_ObstaclesReview" ID="{5EEA9C80-DD9C-4881-8538-5D561A781F7E}">
-					<ChildrenList>
-						<Action Name="" ID="{332A0901-5E70-4DD5-9BBC-A83D71355D30}" ShortID="670508893">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="27_NV_ObstaclesReview" ID="{D340DDF0-0ECC-45AB-8056-72AD26CD1A02}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_28_NV_AudioLandmarks_PT" ID="{98FF8471-35D1-4928-B503-8B263ED175C1}">
-					<ChildrenList>
-						<Action Name="" ID="{50189F3C-5F06-464D-B2D6-75FE84C72B9E}" ShortID="729606323">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="28_NV_AudioLandmarks_PT" ID="{4D559EF3-EAD9-4ECC-AD0E-229E9941F834}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_29_NV_TutorialItemsAndConclusion" ID="{2858E8BF-D828-456B-99FB-97B83C5011A0}">
-					<ChildrenList>
-						<Action Name="" ID="{2006BA96-F197-4DD3-AE00-C0B36AEB4628}" ShortID="592671664">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="29_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

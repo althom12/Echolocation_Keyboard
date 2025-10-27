@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
-  m_Name: 7D6B1663-B7F7-4DE3-AEFC-6D94EF774B84
+  m_Script: {fileID: 11500000, guid: 334d97766c6dec74f9a8f7a94145158b, type: 3}
+  m_Name: 553CF8D1-775E-4343-8CD7-89C5E8D0041B
   m_EditorClassIdentifier: 
-  objectName: Play_20_MainGame
-  id: 1835021098
-  guid: 7D6B1663-B7F7-4DE3-AEFC-6D94EF774B84
-  IsInUserDefinedSoundBank: 1
+  objectName: Landmarks_Amplitude
+  id: 3164164166
+  guid: 553CF8D1-775E-4343-8CD7-89C5E8D0041B

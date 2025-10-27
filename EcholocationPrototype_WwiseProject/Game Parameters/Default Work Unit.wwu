@@ -25,6 +25,7 @@
 						<Property Name="Min" Type="Real64" Value="-1200"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Landmarks_Amplitude" ID="{553CF8D1-775E-4343-8CD7-89C5E8D0041B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

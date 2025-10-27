@@ -1346,7 +1346,7 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
-				<WorkUnit Name="Environment2" ID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}" PersistMode="Reference"/>
+				<WorkUnit Name="Environment" ID="{90CD8D13-0A8F-456D-B8D5-CBCE52B4B4EC}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

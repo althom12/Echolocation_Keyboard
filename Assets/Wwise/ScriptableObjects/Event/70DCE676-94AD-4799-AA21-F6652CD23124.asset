@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
-  m_Name: 3AB7DE9F-2B54-48B9-AC87-7FD1FD0EFECF
+  m_Name: 70DCE676-94AD-4799-AA21-F6652CD23124
   m_EditorClassIdentifier: 
-  objectName: Resume_NewTutorial
-  id: 1647568189
-  guid: 3AB7DE9F-2B54-48B9-AC87-7FD1FD0EFECF
+  objectName: Play_Environment_BetterClock
+  id: 1504398712
+  guid: 70DCE676-94AD-4799-AA21-F6652CD23124
   IsInUserDefinedSoundBank: 1
