@@ -19,7 +19,8 @@ public class MenuNavigationManager : MonoBehaviour
 
     [Header("Main Menu Audio")]
     public AK.Wwise.Event mainMenuOpenEvent;
-    public AK.Wwise.Event stopUISelectionEvent; // ADD THIS
+    public AK.Wwise.Event stopUISelectionEvent; 
+    public AK.Wwise.Event mainMenuCloseEvent;
 
     private uint mainMenuOpenEventPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID; // ADD THIS
 
@@ -83,6 +84,12 @@ public class MenuNavigationManager : MonoBehaviour
 
         if (mainSettingsPanel.activeSelf | _activeSubWindow != null)
         {
+
+            if (mainMenuCloseEvent != null)
+            {
+                mainMenuCloseEvent.Post(this.gameObject);
+                Debug.Log($"---> Posted main menu close event");
+            }
             // --- CLOSE EVERYTHING ---
             mainSettingsPanel.SetActive(false);
             if (_activeSubWindow != null)

@@ -7056,6 +7056,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 67646ca6a4e85ff43a2e723f28210e2c, type: 2}
+  stopUISelectionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  mainMenuCloseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3b302ed366c13e848bee51dbf9ec35b6, type: 2}
 --- !u!114 &466815306
 MonoBehaviour:
   m_ObjectHideFlags: 0
