@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7b608fe74c76ed4da6fc102f3ae55110
     GuidInternal: 
-    m_lastTime: -8584400543388667812
+    m_lastTime: -8584400018355358744
     List:
     - name: Ambisonic_Main_Mix
       guid: b40c653b9dd74a488330a92f518af95c
@@ -402,26 +402,6 @@ MonoBehaviour:
         ObjectType: 1
         guid: 763b9ea9c5792e48a7c101943ed52d06
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway02_Ambi_Verb
-    - name: LateReverb
-      guid: 85682ef095fcca47ab5dff9298f1b276
-      id: 2018380841
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7b608fe74c76ed4da6fc102f3ae55110
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: StereoVerb
-        ObjectType: 1
-        guid: 2189f69ecfba384989c99ba749ecdd53
-      - ElementName: LateReverb
-        ObjectType: 1
-        guid: 85682ef095fcca47ab5dff9298f1b276
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\StereoVerb\LateReverb
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -473,9 +453,9 @@ MonoBehaviour:
         ObjectType: 1
         guid: a5ff34a8506a6b48aaddd440fb138642
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\SimpleReflect
-    - name: StereoVerb
-      guid: 2189f69ecfba384989c99ba749ecdd53
-      id: 459160926
+    - name: Tutorial_Contents_Bus
+      guid: fc9e22e8725596438d1da152edb2dbc1
+      id: 796032403
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -486,10 +466,10 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: StereoVerb
-        ObjectType: 1
-        guid: 2189f69ecfba384989c99ba749ecdd53
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\StereoVerb
+      - ElementName: Tutorial_Contents_Bus
+        ObjectType: 2
+        guid: fc9e22e8725596438d1da152edb2dbc1
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tutorial_Contents_Bus
     - name: UI_Bus
       guid: bf9ef26b0da04b4f804e755bd899fbd5
       id: 3247222208
@@ -559,7 +539,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584400466780359344
+    m_lastTime: -8584400018355348709
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -615,7 +595,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584400469850477503
+    m_lastTime: -8584400018369845027
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -812,8 +792,8 @@ MonoBehaviour:
         guid: 69666175cd17774eaa8fd2d573d1b827
       Path: Events\Default Work Unit\UI\Event_UI_Select_TutorialItems
       maxAttenuation: 0
-      maxDuration: 99.9375
-      minDuration: 18.520817
+      maxDuration: 0
+      minDuration: 0
     - name: Landmarks
       guid: 749801bade2f8946aabd24f180b82ded
       id: 1061412920
@@ -2012,7 +1992,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ccf16443b3e388408a8153c2fb94031d
     GuidInternal: 
-    m_lastTime: -8584400474039267606
+    m_lastTime: -8584400018369835022
     List:
     - name: Click_Amplitude
       guid: 6bf51a34325cf2488cf42af84fe82a31
@@ -2124,8 +2104,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c986ff14cb5b9d4aa67cfbb724946620
     GuidInternal: 
-    m_lastTime: -8584401243042862900
+    m_lastTime: -8584400176831684580
     List:
+    - name: Tutorial_State
+      guid: 36e571a9e1acd34abb900c3b372b47f3
+      id: 587064525
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c986ff14cb5b9d4aa67cfbb724946620
+      - ElementName: Tutorial_State
+        ObjectType: 9
+        guid: 36e571a9e1acd34abb900c3b372b47f3
+      Path: States\Default Work Unit\Tutorial_State
+      values:
+      - name: None
+        guid: d044d2d0a44c614191198b389ae2f950
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c986ff14cb5b9d4aa67cfbb724946620
+        - ElementName: Tutorial_State
+          ObjectType: 9
+          guid: 36e571a9e1acd34abb900c3b372b47f3
+        - ElementName: None
+          ObjectType: 8
+          guid: d044d2d0a44c614191198b389ae2f950
+      - name: Tutorial_Paused
+        guid: c7f7e0d4599e9b47aef183b002eda863
+        id: 3625923408
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c986ff14cb5b9d4aa67cfbb724946620
+        - ElementName: Tutorial_State
+          ObjectType: 9
+          guid: 36e571a9e1acd34abb900c3b372b47f3
+        - ElementName: Tutorial_Paused
+          ObjectType: 8
+          guid: c7f7e0d4599e9b47aef183b002eda863
+      - name: Tutorial_Playing
+        guid: 7aab426b1275ca4d86417e4aa73bb8b0
+        id: 126890676
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c986ff14cb5b9d4aa67cfbb724946620
+        - ElementName: Tutorial_State
+          ObjectType: 9
+          guid: 36e571a9e1acd34abb900c3b372b47f3
+        - ElementName: Tutorial_Playing
+          ObjectType: 8
+          guid: 7aab426b1275ca4d86417e4aa73bb8b0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: UI_Audio_State
       guid: 2dead651089f664ba5e6b6c2475a0db4
       id: 1875554370
@@ -2204,7 +2250,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 70154adbe1b6c64bb555beead6d8d31f
     GuidInternal: 
-    m_lastTime: -8584400526093271499
+    m_lastTime: -8584400176831675393
     List:
     - name: SG_UI_AudioCrumbsSelections
       guid: 517a1d023ce1bf49a93b3bbf2b0323aa
