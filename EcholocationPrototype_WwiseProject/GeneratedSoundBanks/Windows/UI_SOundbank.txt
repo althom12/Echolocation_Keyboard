@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	222667337	Event_UI_Select_Multipurpose			\Default Work Unit\UI\Event_UI_Select_Multipurpose	
+	514607133	Play_SettingsClosed			\Default Work Unit\Play_SettingsClosed	
 	587051210	Play_FootstsepsPropertiesPage			\Default Work Unit\Play_FootstsepsPropertiesPage	
 	847023378	Play_AudioCrumbsPropertiesPage			\Default Work Unit\Play_AudioCrumbsPropertiesPage	
 	1132456374	Event_UI_Select_LandmarksProperties			\Default Work Unit\UI\Event_UI_Select_LandmarksProperties	
@@ -113,6 +114,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	585542538	Landmarks_On_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\28\{28B37BF9-296B-C26A-4808-254A4C61016E}.wem		\Actor-Mixer Hierarchy\NVDA\LandmarksProperties\SC_UI_Landmarks\Landmarks_On_NotChecked		182480
 	596277267	FS_On_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\62\{62AEC8F6-5FD5-E753-4800-FB1C05838A7D}.wem		\Actor-Mixer Hierarchy\NVDA\FootstepsProperties\SC_UI_FootstepsSelections\FS_On_Checked		114720
 	617440873	MS_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\41\{4184147F-FA8D-7CE4-3D22-73D6D0CB9B22}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MS_NotChecked		140624
+	670808924	SettingsClosed	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\21\{218E5FD4-6C77-C098-A159-F23D556DC13B}.wem		\Actor-Mixer Hierarchy\NVDA\WindowsOpening\SettingsClosed		156596
 	733384295	Concrete_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\5B\{5BD764C3-6953-690E-A82D-A36366F7CD14}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\Concrete_NotChecked		211822
 	736787991	MR_NotChecked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\BC\{BC23DFE1-8888-7BE1-B516-507DCEC50970}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MR_NotChecked		133426
 	797368153	MAS_Checked	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\73\{7386058A-401C-05ED-2D0F-3CA378AE0577}.wem		\Actor-Mixer Hierarchy\NVDA\ObstaclesProperties\SC_UI_Obstacles\MAS_Checked		181350

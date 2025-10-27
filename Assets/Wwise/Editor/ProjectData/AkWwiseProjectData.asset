@@ -559,7 +559,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584400879169164658
+    m_lastTime: -8584400668410010376
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -629,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584400879169824719
+    m_lastTime: -8584400668410020420
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -1664,6 +1664,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.5627207
       minDuration: 1.5627207
+    - name: Play_SettingsClosed
+      guid: 56f4132ce00ce947adb3e49622e3c946
+      id: 514607133
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_SettingsClosed
+        ObjectType: 3
+        guid: 56f4132ce00ce947adb3e49622e3c946
+      Path: Events\Default Work Unit\Play_SettingsClosed
+      maxAttenuation: 0
+      maxDuration: 0.8871735
+      minDuration: 0.8871735
     - name: Play_South
       guid: c9b828360da6cb4bba9da7f1a4a00ea1
       id: 3187449017

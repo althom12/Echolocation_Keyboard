@@ -763,6 +763,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SettingsClosed" ID="{2C13F456-0CE0-47E9-ADB3-E49622E3C946}">
+					<ChildrenList>
+						<Action Name="" ID="{5DBA2952-C7CD-44ED-AAEB-92C27C9C7587}" ShortID="514015697">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SettingsClosed" ID="{8FE0016B-0B0D-4806-9018-6075FF78D4EB}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

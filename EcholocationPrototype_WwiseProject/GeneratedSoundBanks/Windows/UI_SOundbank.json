@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{8C9E809E-A934-256E-A3CD-919304BE197D}",
+    "Hash": "{7EF290B8-4377-E63D-0422-CA4FF9C99F4C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -334,6 +334,14 @@
       "Location": "Memory",
       "ShortName": "Obstacles_Fast.wav",
       "CachePath": "41/{4184147F-FA8D-7CE4-3D22-73D6D0CB9B22}.wem"
+     },
+     {
+      "Id": "670808924",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NV_SettingsClosed_TutorialExited.wav",
+      "CachePath": "21/{218E5FD4-6C77-C098-A159-F23D556DC13B}.wem"
      },
      {
       "Id": "733384295",
@@ -1196,6 +1204,20 @@
         "Id": "1955219"
        }
       ]
+     },
+     {
+      "Id": "514607133",
+      "Name": "Play_SettingsClosed",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SettingsClosed",
+      "GUID": "{2C13F456-0CE0-47E9-ADB3-E49622E3C946}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8871735",
+      "DurationMax": "0.8871735",
+      "MediaRefs": [
+       {
+        "Id": "670808924"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -1546,6 +1568,6 @@
     ]
    }
   ],
-  "FileHash": "{EC853B67-1D79-6F89-9EF0-7024418DF752}"
+  "FileHash": "{FDC6B4EA-887C-3929-B4DD-4107BD3595B6}"
  }
 }
