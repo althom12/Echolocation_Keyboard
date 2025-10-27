@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\WwiseUI\AudioManager.cs" />
     <Compile Include="Assets\Scripts\LandmarkVolumeSlider.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
+    <Compile Include="Assets\Scripts\LandmarkToggleController.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\BaseSubwindow.cs" />
     <Compile Include="Assets\Scripts\PlayerAudio.cs" />
@@ -93,7 +94,6 @@
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\TutorialPropertiesSubwindow.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\WwiseUIElement.cs" />
-    <Compile Include="Assets\Scripts\LandmarkToggle.cs" />
     <Compile Include="Assets\Scripts\UI\SubWindowInputHandler.cs" />
     <Compile Include="Assets\Scripts\InputDebugger.cs" />
     <Compile Include="Assets\Scripts\CompassController.cs" />
