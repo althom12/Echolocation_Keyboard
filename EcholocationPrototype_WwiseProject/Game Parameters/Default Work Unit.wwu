@@ -25,7 +25,8 @@
 						<Property Name="Min" Type="Real64" Value="-1200"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="Landmarks_Amplitude" ID="{553CF8D1-775E-4343-8CD7-89C5E8D0041B}"/>
+				<GameParameter Name="Landmarks_Clock_Amplitude" ID="{553CF8D1-775E-4343-8CD7-89C5E8D0041B}"/>
+				<GameParameter Name="Landmarks_HVAC_Amplitude" ID="{CD3A456E-57C7-43D2-9DBF-36BA5D5C3AF0}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

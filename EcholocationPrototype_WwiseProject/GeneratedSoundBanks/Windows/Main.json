@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B491F553-DEF4-4E6E-9D24-77784102CF9E}",
     "Language": "SFX",
-    "Hash": "{C55C48C5-06C2-7982-651F-73B2F5C030FA}",
+    "Hash": "{94F32C14-99E5-A418-B5AC-B3EFF439AC79}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -32,14 +32,6 @@
       "CachePath": "FC/{FCC7B1FB-CE01-4152-537F-E11CA17200D8}.wem"
      },
      {
-      "Id": "114198763",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MegaReflectObstaclesActivated.wav",
-      "CachePath": "A5/{A5E03BF7-481E-196A-5E93-E06F36A66004}.wem"
-     },
-     {
       "Id": "230135971",
       "Language": "SFX",
       "Streaming": "false",
@@ -54,14 +46,6 @@
       "Location": "Memory",
       "ShortName": "Compass_Synth.wav",
       "CachePath": "6D/{6D9CF55A-8E36-6DD8-6BFA-C62F2A654B22}.wem"
-     },
-     {
-      "Id": "269530736",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "StartingPositionNotification.wav",
-      "CachePath": "99/{99DA7A1D-8415-834E-0B51-C9A19B1AB3A2}.wem"
      },
      {
       "Id": "300588143",
@@ -86,22 +70,6 @@
       "Location": "Memory",
       "ShortName": "Footstep03.wav",
       "CachePath": "1C/{1C6928D6-A8D4-FF59-29D3-42AB7B9796EC}.wem"
-     },
-     {
-      "Id": "398837345",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MegaAbsorbObstaclesActivated.wav",
-      "CachePath": "AF/{AFF124AE-F3F6-209A-8BCC-44DC075A8050}.wem"
-     },
-     {
-      "Id": "442760386",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "NoObstaclesActivated.wav",
-      "CachePath": "C6/{C6A72F12-C434-9A4D-8CD8-A0EEDEE421B6}.wem"
      },
      {
       "Id": "522077337",
@@ -136,12 +104,12 @@
       "CachePath": "C3/{C3962221-8A60-AA0C-9E32-DC6D2FE66A21}.wem"
      },
      {
-      "Id": "701429478",
+      "Id": "701906917",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "LesserAbsorbObstaclesActivated.wav",
-      "CachePath": "3C/{3C946C75-9138-A306-9BA6-3FBDCB2EE49D}.wem"
+      "ShortName": "ReturnToStart_MainChamber.wav",
+      "CachePath": "07/{0718336A-A06D-DEFA-564F-AC1183A62E86}.wem"
      },
      {
       "Id": "714290107",
@@ -176,14 +144,6 @@
       "CachePath": "55/{5562B044-4AE1-DBB0-6252-35B8AB3ECED3}.wem"
      },
      {
-      "Id": "932884221",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "ttsmaker-file-2025-9-24-2-2-30.wav",
-      "CachePath": "47/{4720930C-DA88-B7E4-80D6-B59F98AF82EA}.wem"
-     },
-     {
       "Id": "964506797",
       "Language": "SFX",
       "Streaming": "false",
@@ -198,6 +158,14 @@
       "Location": "Memory",
       "ShortName": "North.wav",
       "CachePath": "86/{861EBDD4-BB94-CA95-0D99-750493246E07}.wem"
+     },
+     {
+      "Id": "1005675724",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ReturnToStart_MainChamber.wav",
+      "CachePath": "26/{268FDF14-26BA-9935-ACAD-3AC05869EB0A}.wem"
      }
     ],
     "Plugins": {
@@ -441,72 +409,16 @@
       ]
      },
      {
-      "Id": "1228161944",
-      "Name": "Play_LesserAbsorbObstaclesActivated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Obstacles\\Play_LesserAbsorbObstaclesActivated",
-      "GUID": "{7A279AD4-C5B4-4C8A-8982-2D7CD1CD5E35}",
-      "DurationType": "OneShot",
-      "DurationMin": "3.48",
-      "DurationMax": "3.48",
-      "MediaRefs": [
-       {
-        "Id": "701429478"
-       }
-      ]
-     },
-     {
       "Id": "1839782124",
       "Name": "Play_MainChamberNotification",
       "ObjectPath": "\\Events\\Default Work Unit\\SpawnPositions\\Play_MainChamberNotification",
       "GUID": "{464F3B29-3A26-434B-9B0F-32311574E6DF}",
       "DurationType": "OneShot",
-      "DurationMin": "1.776",
-      "DurationMax": "1.776",
+      "DurationMin": "0.5110329",
+      "DurationMax": "0.5110329",
       "MediaRefs": [
        {
-        "Id": "932884221"
-       }
-      ]
-     },
-     {
-      "Id": "872174764",
-      "Name": "Play_MegaAbsorbObstaclesActivated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Obstacles\\Play_MegaAbsorbObstaclesActivated",
-      "GUID": "{5A26FADB-89B8-44F3-AB14-054FAA33182C}",
-      "DurationType": "OneShot",
-      "DurationMin": "3.456",
-      "DurationMax": "3.456",
-      "MediaRefs": [
-       {
-        "Id": "398837345"
-       }
-      ]
-     },
-     {
-      "Id": "1921606916",
-      "Name": "Play_MegaReflectObstaclesActivated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Obstacles\\Play_MegaReflectObstaclesActivated",
-      "GUID": "{EC88DD70-D988-4572-9032-ACDDAC051E67}",
-      "DurationType": "OneShot",
-      "DurationMin": "3.576",
-      "DurationMax": "3.576",
-      "MediaRefs": [
-       {
-        "Id": "114198763"
-       }
-      ]
-     },
-     {
-      "Id": "2245461924",
-      "Name": "Play_NoObstaclesActivated",
-      "ObjectPath": "\\Events\\Default Work Unit\\Obstacles\\Play_NoObstaclesActivated",
-      "GUID": "{509A8904-B713-4EE8-8ED4-9B2AD2BA3A3F}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.992",
-      "DurationMax": "1.992",
-      "MediaRefs": [
-       {
-        "Id": "442760386"
+        "Id": "701906917"
        }
       ]
      },
@@ -566,11 +478,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SpawnPositions\\Play_StartingPositionNotification",
       "GUID": "{A6E38A81-6490-4969-A5B9-C8AC57C7A2D0}",
       "DurationType": "OneShot",
-      "DurationMin": "2.472",
-      "DurationMax": "2.472",
+      "DurationMin": "0.67803705",
+      "DurationMax": "0.67803705",
       "MediaRefs": [
        {
-        "Id": "269530736"
+        "Id": "1005675724"
        }
       ]
      },
@@ -735,6 +647,6 @@
     ]
    }
   ],
-  "FileHash": "{A0A9A2BF-1B79-2830-C19C-63BA78CBF5A7}"
+  "FileHash": "{187C7374-1977-C102-E8D9-CE776EAFA936}"
  }
 }

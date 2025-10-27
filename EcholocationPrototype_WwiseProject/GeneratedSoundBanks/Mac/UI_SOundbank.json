@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{49420944-9566-3F01-01F7-D1BAF4195E2D}",
+    "Hash": "{B08F31D6-8D0E-5F41-F845-C98DF606A667}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -697,7 +697,8 @@
          "GroupType": "Switch",
          "GroupId": "2201101635",
          "Id": "4145643500",
-         "GUID": "{D3999C91-B66F-40D5-99BA-5E3FA2BFB931}"
+         "GUID": "{D3999C91-B66F-40D5-99BA-5E3FA2BFB931}",
+         "Default": "true"
         },
         "MediaRefs": [
          {
@@ -1381,6 +1382,18 @@
       ]
      },
      {
+      "Id": "2175879169",
+      "Name": "Play_Environment_BetterClock_2D",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Environment_BetterClock_2D",
+      "GUID": "{081E6C0C-DC7B-4486-943C-A1C4CF8F26AA}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "49676745"
+       }
+      ]
+     },
+     {
       "Id": "3548695574",
       "Name": "Play_Environment_HVAC",
       "ObjectPath": "\\Events\\Default Work Unit\\Landmarks\\Play_Environment_HVAC",
@@ -1406,6 +1419,18 @@
         "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
         "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
         "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "859895883",
+      "Name": "Play_Environment_HVAC_2D",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Environment_HVAC_2D",
+      "GUID": "{F72E2CAA-B9A2-4E84-8856-68EE2323CE92}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "897877778"
        }
       ]
      },
@@ -1496,10 +1521,16 @@
     ],
     "GameParameters": [
      {
-      "Id": "3164164166",
-      "Name": "Landmarks_Amplitude",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Landmarks_Amplitude",
+      "Id": "548657501",
+      "Name": "Landmarks_Clock_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Landmarks_Clock_Amplitude",
       "GUID": "{553CF8D1-775E-4343-8CD7-89C5E8D0041B}"
+     },
+     {
+      "Id": "3172790959",
+      "Name": "Landmarks_HVAC_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Landmarks_HVAC_Amplitude",
+      "GUID": "{CD3A456E-57C7-43D2-9DBF-36BA5D5C3AF0}"
      }
     ],
     "SwitchGroups": [
@@ -1900,6 +1931,6 @@
     ]
    }
   ],
-  "FileHash": "{49530273-9C6E-501E-23CE-F9ABCC674562}"
+  "FileHash": "{715613E3-1005-A651-EF14-AB3514E3ACCC}"
  }
 }

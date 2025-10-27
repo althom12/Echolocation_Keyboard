@@ -576,6 +576,60 @@
 						<ActiveSource Name="Collision" ID="{23577183-7F01-4C90-94CC-D782FE1BAFFD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="ReturnToStart" ID="{07313F4B-052D-4C2C-B54E-5E3B6792B3F6}" ShortID="757064414">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ReturnToStart_MainChamber" ID="{0540043E-67B0-4D9F-8290-23F7C5F5BB6A}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.170344290842537"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.848381365407459"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ReturnToStart_MainChamber.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1005675724"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ReturnToStart_MainChamber" ID="{0540043E-67B0-4D9F-8290-23F7C5F5BB6A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MainChamber" ID="{F20E3181-0F3C-4585-BFA5-533E356480C8}" ShortID="302937725">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ReturnToStart_MainChamber" ID="{73E7D6D6-C7D9-4195-AAB4-1FCB02CAD219}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="1.11224801667774"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.62328088453429"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ReturnToStart_MainChamber.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="701906917"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ReturnToStart_MainChamber" ID="{73E7D6D6-C7D9-4195-AAB4-1FCB02CAD219}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -730,7 +730,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -341, y: 0}
+  m_AnchoredPosition: {x: -340, y: -171}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23202294
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23202292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
@@ -17630,7 +17630,7 @@ GameObject:
   - component: {fileID: 790082681}
   - component: {fileID: 790082680}
   - component: {fileID: 790082679}
-  - component: {fileID: 790082678}
+  - component: {fileID: 790082682}
   m_Layer: 5
   m_Name: HVAC_Volume
   m_TagString: Untagged
@@ -17661,28 +17661,6 @@ RectTransform:
   m_AnchoredPosition: {x: 99.035, y: -301.9}
   m_SizeDelta: {x: 178.07, y: 33.77}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &790082678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790082676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c2047cdc073d8468908fbec3e69952, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rtpcToControl:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bbdb3c85226bb784488445e6d57a40cd, type: 2}
-  feedbackSound:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8f4c3cd23cca68e4598981eff8e50937, type: 2}
-  soundEmitter: {fileID: 1110818908}
-  defaultValue: 50
 --- !u!114 &790082679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17805,6 +17783,24 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &790082682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790082676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7eb5644eaafd9419c044ef290aaf5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  landmarkType: 1
+  defaultValue: 50
+  feedbackSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &791740692
 GameObject:
   m_ObjectHideFlags: 0
@@ -23410,6 +23406,7 @@ GameObject:
   - component: {fileID: 1122171248}
   - component: {fileID: 1122171247}
   - component: {fileID: 1122171246}
+  - component: {fileID: 1122171249}
   m_Layer: 5
   m_Name: HVAC_Toggle
   m_TagString: Untagged
@@ -23557,6 +23554,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &1122171249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122171244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02edb0cbdb916694aa51ecbd7295bafd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1129203062
 Mesh:
   m_ObjectHideFlags: 0
@@ -25002,6 +25011,7 @@ GameObject:
   - component: {fileID: 1208838410}
   - component: {fileID: 1208838409}
   - component: {fileID: 1208838408}
+  - component: {fileID: 1208838411}
   m_Layer: 0
   m_Name: WwiseManager
   m_TagString: Untagged
@@ -25130,6 +25140,27 @@ MonoBehaviour:
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!65 &1208838411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208838405}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1221066718
 GameObject:
   m_ObjectHideFlags: 0
@@ -26827,6 +26858,70 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1294781171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294781173}
+  - component: {fileID: 1294781172}
+  m_Layer: 0
+  m_Name: LandmarksManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1294781172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294781171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d9a468ceb5b94f97573d21025d955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clockGameObject: {fileID: 1110818908}
+  hvacGameObject: {fileID: 1057404608}
+  clockEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8f4c3cd23cca68e4598981eff8e50937, type: 2}
+  hvacEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5d409923d384eea4692b83cbca98f2e6, type: 2}
+  clockVolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bbdb3c85226bb784488445e6d57a40cd, type: 2}
+  hvacVolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bbdb3c85226bb784488445e6d57a40cd, type: 2}
+  defaultClockVolume: 50
+  defaultHVACVolume: 50
+--- !u!4 &1294781173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294781171}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 124.85672, y: 217.7549, z: 8.55049}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1297079617
 GameObject:
   m_ObjectHideFlags: 0
@@ -30251,7 +30346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1489373269
 Transform:
   m_ObjectHideFlags: 0
@@ -30414,7 +30509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -60}
+  m_AnchoredPosition: {x: 80, y: -36}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512828232
@@ -71511,6 +71606,7 @@ GameObject:
   - component: {fileID: 1497649123439719990}
   - component: {fileID: 7274372990857939902}
   - component: {fileID: 7274372990857939903}
+  - component: {fileID: 7274372990857939904}
   m_Layer: 5
   m_Name: Clock_Toggle
   m_TagString: Untagged
@@ -79344,6 +79440,18 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9acbcb70e3e24904281bbeafebc72f0c, type: 2}
+--- !u!114 &7274372990857939904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5405920663453999004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02edb0cbdb916694aa51ecbd7295bafd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &7289029312358164244
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -89897,19 +90005,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4897644541686735063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c2047cdc073d8468908fbec3e69952, type: 3}
+  m_Script: {fileID: 11500000, guid: cf7eb5644eaafd9419c044ef290aaf5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rtpcToControl:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bbdb3c85226bb784488445e6d57a40cd, type: 2}
+  landmarkType: 0
+  defaultValue: 50
   feedbackSound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8f4c3cd23cca68e4598981eff8e50937, type: 2}
-  soundEmitter: {fileID: 1110818908}
-  defaultValue: 50
 --- !u!4 &8858808934370770537
 Transform:
   m_ObjectHideFlags: 0
@@ -92616,3 +92720,4 @@ SceneRoots:
   - {fileID: 1873197148}
   - {fileID: 46703481}
   - {fileID: 1489373269}
+  - {fileID: 1294781173}

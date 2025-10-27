@@ -130,7 +130,19 @@ public class TutorialManager : MonoBehaviour
 
     public void StartTutorial()
     {
-        Debug.Log("Starting Tutorial from beginning...");
+        Debug.Log("=== STARTING TUTORIAL ===");
+        Debug.Log($"Tutorial was active: {isTutorialActive}");
+        Debug.Log($"Audio was paused: {isAudioPaused}");
+
+        // Stop everything
+        AkSoundEngine.StopAll(gameObject);
+
+        // Reset pause state
+        if (isAudioPaused)
+        {
+            isAudioPaused = false;
+            resumeEvent?.Post(gameObject);
+        }
 
         isTutorialActive = true;
         currentState = TutorialState.Chapter01_Intro;
@@ -141,9 +153,9 @@ public class TutorialManager : MonoBehaviour
             obstacleManager.enabled = false;
         }
 
-        introductoryAudio?.Post(gameObject);
-
-        Debug.Log("Tutorial started. Press BackQuote (`) to progress.");
+        uint playingID = introductoryAudio.Post(gameObject);
+        Debug.Log($"Posted intro audio, PlayingID: {playingID}");
+        Debug.Log("=== TUTORIAL START COMPLETE ===");
     }
 
     public void EndTutorial()

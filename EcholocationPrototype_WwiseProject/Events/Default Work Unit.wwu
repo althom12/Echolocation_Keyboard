@@ -328,50 +328,6 @@
 				</Folder>
 				<Folder Name="Obstacles" ID="{B70085B4-454B-4565-A494-B7D4BCAF01A0}" ShortID="546723576">
 					<ChildrenList>
-						<Event Name="Play_MegaAbsorbObstaclesActivated" ID="{5A26FADB-89B8-44F3-AB14-054FAA33182C}">
-							<ChildrenList>
-								<Action Name="" ID="{C692CAA7-E364-49DF-8CE4-752EA1644606}" ShortID="249997578">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MegaAbsorbObstaclesActivated" ID="{E32D0F72-512A-4580-92D0-9F13E4904238}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_LesserAbsorbObstaclesActivated" ID="{7A279AD4-C5B4-4C8A-8982-2D7CD1CD5E35}">
-							<ChildrenList>
-								<Action Name="" ID="{38A35674-B8D2-465D-BF24-5028E2040324}" ShortID="509283630">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LesserAbsorbObstaclesActivated" ID="{EF94B611-455C-47B3-A475-1E6F967164A8}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_NoObstaclesActivated" ID="{509A8904-B713-4EE8-8ED4-9B2AD2BA3A3F}">
-							<ChildrenList>
-								<Action Name="" ID="{E0565ACF-023B-4424-8462-935A32D17F51}" ShortID="633770933">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="NoObstaclesActivated" ID="{0A638874-967C-42AE-BD60-468C29A39FB8}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_MegaReflectObstaclesActivated" ID="{EC88DD70-D988-4572-9032-ACDDAC051E67}">
-							<ChildrenList>
-								<Action Name="" ID="{517A1BDB-3153-433F-88FC-BFAF9653D623}" ShortID="290097439">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MegaReflectObstaclesActivated" ID="{8247EEAB-BEC2-4428-B84C-BF90ADCA9E42}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_ObstacleEmitter" ID="{F9539CF8-66C1-4A27-8361-8A2DBDDD8271}">
 							<ChildrenList>
 								<Action Name="" ID="{457262B4-9BB1-4714-8F90-EB3117D9483A}" ShortID="421065578">
@@ -513,7 +469,7 @@
 								<Action Name="" ID="{F14D77BF-BCC2-428E-B51A-47C3F456E312}" ShortID="796935259">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="StartingPositionNotification" ID="{EC490A30-A361-46BE-8378-6C1FBCEE4293}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="ReturnToStart" ID="{07313F4B-052D-4C2C-B54E-5E3B6792B3F6}" WorkUnitID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -524,7 +480,7 @@
 								<Action Name="" ID="{220B6044-7A52-4B99-9F49-2ECA6D630D34}" ShortID="583436870">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="MainChamberNotification" ID="{47B5DBF0-CC21-49CD-9B97-CF14D0A42156}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+											<ObjectRef Name="MainChamber" ID="{F20E3181-0F3C-4585-BFA5-533E356480C8}" WorkUnitID="{7B1585C1-8A7C-489D-BDA6-3296FDE1F668}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -881,6 +837,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Tutorial" ID="{2CCDF6E1-8A40-4E5B-9A82-57511501469D}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Environment_BetterClock_2D" ID="{081E6C0C-DC7B-4486-943C-A1C4CF8F26AA}">
+					<ChildrenList>
+						<Action Name="" ID="{BFA41D45-63C1-47DF-AC32-FF352953C378}" ShortID="352503164">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Environment_BetterClock_2D" ID="{41C6EC14-8DDF-4A0F-AB14-1E689BCBD212}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Environment_HVAC_2D" ID="{F72E2CAA-B9A2-4E84-8856-68EE2323CE92}">
+					<ChildrenList>
+						<Action Name="" ID="{637C41C0-6359-4F09-8582-ED78B7962241}" ShortID="384432285">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Environment_HVAC_2D" ID="{6CD7CD97-C083-43B1-8A6C-50181861980A}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

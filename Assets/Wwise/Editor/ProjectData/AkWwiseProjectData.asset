@@ -559,7 +559,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 85233671dd39aa41ae29cacfb165c806
     GuidInternal: 
-    m_lastTime: -8584400509460307982
+    m_lastTime: -8584400466780359344
     List:
     - name: Main
       guid: 53f591b4f4de6e4e9d2477784102cf9e
@@ -615,7 +615,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 64744ab3adb48145aad816216eb98482
     GuidInternal: 
-    m_lastTime: -8584400509460323020
+    m_lastTime: -8584400469850477503
     List:
     - name: Compass
       guid: 29dd047a13447e4fb0e9c6d28e8eff65
@@ -1579,6 +1579,23 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
+    - name: Play_Environment_BetterClock_2D
+      guid: 0c6c1e087bdc8644943ca1c4cf8f26aa
+      id: 2175879169
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_Environment_BetterClock_2D
+        ObjectType: 3
+        guid: 0c6c1e087bdc8644943ca1c4cf8f26aa
+      Path: Events\Default Work Unit\Play_Environment_BetterClock_2D
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Environment_HVAC
       guid: c68b7cbe5dc8ff4fa77b15a026ac1122
       id: 3548695574
@@ -1597,6 +1614,23 @@ MonoBehaviour:
         guid: c68b7cbe5dc8ff4fa77b15a026ac1122
       Path: Events\Default Work Unit\Landmarks\Play_Environment_HVAC
       maxAttenuation: 30
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Environment_HVAC_2D
+      guid: aa2c2ef7a2b9844e885668ee2323ce92
+      id: 859895883
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 64744ab3adb48145aad816216eb98482
+      - ElementName: Play_Environment_HVAC_2D
+        ObjectType: 3
+        guid: aa2c2ef7a2b9844e885668ee2323ce92
+      Path: Events\Default Work Unit\Play_Environment_HVAC_2D
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - name: Play_Footsteps
@@ -1673,26 +1707,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.4623435
       minDuration: 1.4623435
-    - name: Play_LesserAbsorbObstaclesActivated
-      guid: d49a277ab4c58a4c89822d7cd1cd5e35
-      id: 1228161944
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Obstacles
-        ObjectType: 4
-        guid: b48500b74b456545a494b7d4bcaf01a0
-      - ElementName: Play_LesserAbsorbObstaclesActivated
-        ObjectType: 3
-        guid: d49a277ab4c58a4c89822d7cd1cd5e35
-      Path: Events\Default Work Unit\Obstacles\Play_LesserAbsorbObstaclesActivated
-      maxAttenuation: 0
-      maxDuration: 3.48
-      minDuration: 3.48
     - name: Play_MainChamberNotification
       guid: 293b4f46263a4b439b0f32311574e6df
       id: 1839782124
@@ -1711,8 +1725,8 @@ MonoBehaviour:
         guid: 293b4f46263a4b439b0f32311574e6df
       Path: Events\Default Work Unit\SpawnPositions\Play_MainChamberNotification
       maxAttenuation: 0
-      maxDuration: 1.776
-      minDuration: 1.776
+      maxDuration: 0.5110329
+      minDuration: 0.5110329
     - name: Play_MainSettingsInitialOpen
       guid: e82ea9451757514b9ea90e4311820804
       id: 2142858666
@@ -1730,66 +1744,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.7098714
       minDuration: 1.7098714
-    - name: Play_MegaAbsorbObstaclesActivated
-      guid: dbfa265ab889f344ab14054faa33182c
-      id: 872174764
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Obstacles
-        ObjectType: 4
-        guid: b48500b74b456545a494b7d4bcaf01a0
-      - ElementName: Play_MegaAbsorbObstaclesActivated
-        ObjectType: 3
-        guid: dbfa265ab889f344ab14054faa33182c
-      Path: Events\Default Work Unit\Obstacles\Play_MegaAbsorbObstaclesActivated
-      maxAttenuation: 0
-      maxDuration: 3.456
-      minDuration: 3.456
-    - name: Play_MegaReflectObstaclesActivated
-      guid: 70dd88ec88d972459032acddac051e67
-      id: 1921606916
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Obstacles
-        ObjectType: 4
-        guid: b48500b74b456545a494b7d4bcaf01a0
-      - ElementName: Play_MegaReflectObstaclesActivated
-        ObjectType: 3
-        guid: 70dd88ec88d972459032acddac051e67
-      Path: Events\Default Work Unit\Obstacles\Play_MegaReflectObstaclesActivated
-      maxAttenuation: 0
-      maxDuration: 3.576
-      minDuration: 3.576
-    - name: Play_NoObstaclesActivated
-      guid: 04899a5013b7e84e8ed49b2ad2ba3a3f
-      id: 2245461924
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 64744ab3adb48145aad816216eb98482
-      - ElementName: Obstacles
-        ObjectType: 4
-        guid: b48500b74b456545a494b7d4bcaf01a0
-      - ElementName: Play_NoObstaclesActivated
-        ObjectType: 3
-        guid: 04899a5013b7e84e8ed49b2ad2ba3a3f
-      Path: Events\Default Work Unit\Obstacles\Play_NoObstaclesActivated
-      maxAttenuation: 0
-      maxDuration: 1.992
-      minDuration: 1.992
     - name: Play_North
       guid: a0391932a7930a4bb74edf86596918a7
       id: 1850732987
@@ -1902,8 +1856,8 @@ MonoBehaviour:
         guid: 818ae3a690646949a5b9c8ac57c7a2d0
       Path: Events\Default Work Unit\SpawnPositions\Play_StartingPositionNotification
       maxAttenuation: 0
-      maxDuration: 2.472
-      minDuration: 2.472
+      maxDuration: 0.67803705
+      minDuration: 0.67803705
     - name: Play_TutorialItemsPage
       guid: 02ed2765c213804ab94ee8af62f591c6
       id: 2321440389
@@ -2058,7 +2012,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ccf16443b3e388408a8153c2fb94031d
     GuidInternal: 
-    m_lastTime: -8584400543388620525
+    m_lastTime: -8584400474039267606
     List:
     - name: Click_Amplitude
       guid: 6bf51a34325cf2488cf42af84fe82a31
@@ -2116,9 +2070,9 @@ MonoBehaviour:
         ObjectType: 13
         guid: 30e6ae34714a1e4989df1ba360f31716
       Path: Game Parameters\Default Work Unit\Footsteps_Pitch
-    - name: Landmarks_Amplitude
+    - name: Landmarks_Clock_Amplitude
       guid: d1f83c555e7743438cd789c5e8d0041b
-      id: 3164164166
+      id: 548657501
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -2126,10 +2080,24 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ccf16443b3e388408a8153c2fb94031d
-      - ElementName: Landmarks_Amplitude
+      - ElementName: Landmarks_Clock_Amplitude
         ObjectType: 13
         guid: d1f83c555e7743438cd789c5e8d0041b
-      Path: Game Parameters\Default Work Unit\Landmarks_Amplitude
+      Path: Game Parameters\Default Work Unit\Landmarks_Clock_Amplitude
+    - name: Landmarks_HVAC_Amplitude
+      guid: 6e453acdc757d2439dbf36ba5d5c3af0
+      id: 3172790959
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccf16443b3e388408a8153c2fb94031d
+      - ElementName: Landmarks_HVAC_Amplitude
+        ObjectType: 13
+        guid: 6e453acdc757d2439dbf36ba5d5c3af0
+      Path: Game Parameters\Default Work Unit\Landmarks_HVAC_Amplitude
     - name: Player_Yaw
       guid: 966b48cb8414e7409cd93f320af21649
       id: 1741542810
@@ -3791,7 +3759,7 @@ MonoBehaviour:
     m_lastTime: -8584424684189015458
     List: []
   ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000060000000e0000000f000000100000001300000018000000190000001a0000001b0000001c0000001d0000001e00000024000000290000002c0000002d00000035000000370000005100000054000000550000006100000062000000bc000000bd000000be000000f5000000f6000000fd000000fe0000007f01000080010000410200004202000043020000720200007302000079020000
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000130000001500000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000270000002c0000002d0000003000000031000000320000003300000037000000380000003b0000003c0000003f000000400000004d0000004e0000004f00000051000000540000005500000061000000620000006f0000008f0000009000000091000000bc000000bd000000be000000ea000000eb000000ec000000f5000000f6000000fd000000fe00000032010000330100003d0100003e0100003f01000040010000410100004a0100004b0100004c0100004d0100007f01000080010000890100008a0100008b0100008c0100008d0100008e0100008f0100009001000091010000920100009e0100009f010000a0010000340200003502000037020000380200003f020000400200004102000042020000430200005b0200005c02000061020000640200007202000073020000790200008602000092020000930200009402000095020000960200009702000098020000990200009a0200009b020000d6020000d70200003503000036030000380300003903000085030000ce030000cf030000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000130000001500000016000000180000001a0000001b0000001c0000001d0000001e0000001f000000270000002c0000002d0000003000000031000000320000003300000037000000380000003b0000003c0000003f000000400000004d0000004e0000004f00000051000000540000005500000061000000620000006f0000008f0000009000000091000000bc000000bd000000be000000ea000000eb000000ec000000f5000000f6000000fd000000fe00000032010000330100003d0100003e0100003f01000040010000410100004a0100004b0100004c0100004d0100007f01000080010000890100008a0100008b0100008c0100008d0100008e0100008f0100009001000091010000920100009e0100009f010000a0010000340200003502000037020000380200003f020000400200004102000042020000430200005b0200005c02000061020000640200007202000073020000790200008602000092020000930200009402000095020000960200009702000098020000990200009a0200009b020000d6020000d70200003503000036030000380300003903000085030000ce030000cf030000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

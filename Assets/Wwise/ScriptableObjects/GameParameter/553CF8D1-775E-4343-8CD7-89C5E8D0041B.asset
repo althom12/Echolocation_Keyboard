@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 334d97766c6dec74f9a8f7a94145158b, type: 3}
   m_Name: 553CF8D1-775E-4343-8CD7-89C5E8D0041B
   m_EditorClassIdentifier: 
-  objectName: Landmarks_Amplitude
-  id: 3164164166
+  objectName: Landmarks_Clock_Amplitude
+  id: 548657501
   guid: 553CF8D1-775E-4343-8CD7-89C5E8D0041B

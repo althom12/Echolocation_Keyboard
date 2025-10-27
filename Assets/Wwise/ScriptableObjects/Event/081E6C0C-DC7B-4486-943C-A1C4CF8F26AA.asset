@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cfa821cb822aad43b3b06e837af5a25, type: 3}
-  m_Name: 7A279AD4-C5B4-4C8A-8982-2D7CD1CD5E35
+  m_Name: 081E6C0C-DC7B-4486-943C-A1C4CF8F26AA
   m_EditorClassIdentifier: 
-  objectName: Play_LesserAbsorbObstaclesActivated
-  id: 1228161944
-  guid: 7A279AD4-C5B4-4C8A-8982-2D7CD1CD5E35
+  objectName: Play_Environment_BetterClock_2D
+  id: 2175879169
+  guid: 081E6C0C-DC7B-4486-943C-A1C4CF8F26AA
   IsInUserDefinedSoundBank: 1
