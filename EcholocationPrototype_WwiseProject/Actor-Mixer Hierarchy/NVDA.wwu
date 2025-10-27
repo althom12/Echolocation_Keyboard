@@ -8,6 +8,10 @@
 			</PropertyList>
 			<ChildrenList>
 				<ActorMixer Name="EcholocatorClickProperties" ID="{1639812E-F997-4C9B-BA8E-F322C8EA40AB}" ShortID="3009628">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -131,6 +135,10 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="ObstaclesProperties" ID="{F3DED338-0832-4185-8052-42C924317B6E}" ShortID="846204985">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="8"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -1216,6 +1224,10 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="FootstepsProperties" ID="{B7BC7565-4DAA-4977-97D0-D9A97DA621A8}" ShortID="912053833">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -1417,6 +1429,10 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="LandmarksProperties" ID="{FE060D47-EF93-4FFD-983B-67352A8B7DEC}" ShortID="93602746">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -1838,7 +1854,7 @@
 				</ActorMixer>
 				<ActorMixer Name="WindowsOpening" ID="{2F67C842-CD77-4915-A0C7-264608F53E17}" ShortID="594809638">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="Color" Type="int16" Value="24"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -2666,6 +2682,10 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="AudioCrumbsProperties" ID="{D968C8B8-826F-456C-BD01-00A6EE57898F}" ShortID="456013052">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -2819,911 +2839,29 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Tutorial" ID="{2CCDF6E1-8A40-4E5B-9A82-57511501469D}" ShortID="587117625">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="18"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+							<ObjectRef Name="Tutorial_Contents_Bus" ID="{E8229EFC-5572-4396-8D1D-A152EDB2DBC1}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SwitchContainer Name="SC_UI_Tutorial" ID="{E08B636C-0A24-4E16-AAAC-1AFB08CC1704}" ShortID="629074277">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="SG_UI_TutorialItems" ID="{CE4F088D-78C7-4659-AA04-EE4531B6D9CF}" WorkUnitID="{DB4A1570-B6E1-4BC6-B555-BEEAD6D8D31F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="02_NV_EchoClick" ID="{CFAA19B6-48FB-4225-A755-120BBC475511}" ShortID="885771027">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="02_NV_EchoClick" ID="{99F15810-C22A-41E4-809F-55EE1D297C20}">
-											<Language>SFX</Language>
-											<AudioFile>02_NV_EchoClick.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="862385180"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="02_NV_EchoClick" ID="{99F15810-C22A-41E4-809F-55EE1D297C20}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="03_NV_ForwardMovement_PT" ID="{221ECFE4-731A-4BE7-90AD-E291CA802700}" ShortID="858578206">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="03_NV_ForwardMovement_PT" ID="{FD2990FF-E347-4369-8DB1-2D5763D3617B}">
-											<Language>SFX</Language>
-											<AudioFile>03_NV_ForwardMovement_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="397670216"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="03_NV_ForwardMovement_PT" ID="{FD2990FF-E347-4369-8DB1-2D5763D3617B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="04_NV_Collisions_PT" ID="{89BD058A-5C8D-4902-B3F2-57153AB47DB8}" ShortID="210206664">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="04_NV_Collisions_PT" ID="{798D3EC4-644B-4998-B203-70F749763227}">
-											<Language>SFX</Language>
-											<AudioFile>04_NV_Collisions_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="958281526"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="04_NV_Collisions_PT" ID="{798D3EC4-644B-4998-B203-70F749763227}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="05_NV_ContinuedCollisions" ID="{FA44F651-F97D-4369-9487-7674CC14DB1F}" ShortID="576991636">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="05_NV_ContinuedCollisions" ID="{1BB9631F-A9E7-455B-90D7-D7DBD9BA01A8}">
-											<Language>SFX</Language>
-											<AudioFile>05_NV_ContinuedCollisions.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="612747005"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="05_NV_ContinuedCollisions" ID="{1BB9631F-A9E7-455B-90D7-D7DBD9BA01A8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="06_NV_Backwards" ID="{7789A2E1-ED70-4294-A207-665B77BC3DF9}" ShortID="847481718">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="06_NV_Backwards" ID="{FDFA58CE-BA7D-4651-8BAD-00865FD3F6D6}">
-											<Language>SFX</Language>
-											<AudioFile>06_NV_Backwards.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="803313269"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="06_NV_Backwards" ID="{FDFA58CE-BA7D-4651-8BAD-00865FD3F6D6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="07_NV_Sideways" ID="{F6F9D167-BC9A-41D8-80AD-07A845D6BEB6}" ShortID="269377115">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="07_NV_Sideways" ID="{4E84646D-385A-4622-A963-276AA186F071}">
-											<Language>SFX</Language>
-											<AudioFile>07_NV_Sideways.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="958017"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="07_NV_Sideways" ID="{4E84646D-385A-4622-A963-276AA186F071}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="08_NV_MovementPractice_PT" ID="{6BFFC73C-40FB-4F02-B5DD-D1DB96F86437}" ShortID="968205533">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="08_NV_MovementPractice_PT" ID="{1CEAE95D-BA92-4C8D-A8B5-4ADDDF8218A9}">
-											<Language>SFX</Language>
-											<AudioFile>08_NV_MovementPractice_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="876235115"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="08_NV_MovementPractice_PT" ID="{1CEAE95D-BA92-4C8D-A8B5-4ADDDF8218A9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="09_NV_RotationIntro" ID="{A28EAE70-A8E2-4B16-BBBB-3BF10D1AF273}" ShortID="848478071">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="09_NV_RotationIntro" ID="{9B65A86F-370A-444D-A747-40E5F37BCA16}">
-											<Language>SFX</Language>
-											<AudioFile>09_NV_RotationIntro.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="849891116"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="09_NV_RotationIntro" ID="{9B65A86F-370A-444D-A747-40E5F37BCA16}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="10_NV_SonicCompass_PT" ID="{FA23ED9D-06E7-49A0-BDA7-C44C3A8FDD72}" ShortID="301613020">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="10_NV_SonicCompass_PT" ID="{1DB91879-64E0-4F3F-9200-5FECB2B62B17}">
-											<Language>SFX</Language>
-											<AudioFile>10_NV_SonicCompass_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="607854867"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="10_NV_SonicCompass_PT" ID="{1DB91879-64E0-4F3F-9200-5FECB2B62B17}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="11_NV_RotationAndMovementPractice" ID="{A437D16B-C5BB-4D4B-94BC-BD8DBA70B0D7}" ShortID="334087998">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="11_NV_RotationAndMovementPractice" ID="{D0E1BC38-08EF-4C2A-825F-EE531410AA47}">
-											<Language>SFX</Language>
-											<AudioFile>11_NV_RotationAndMovementPractice.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="960632279"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="11_NV_RotationAndMovementPractice" ID="{D0E1BC38-08EF-4C2A-825F-EE531410AA47}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="12_NV_SpawnAtStart_PT" ID="{6AFEED72-0CAB-4579-B8B5-1AF00BE00CB3}" ShortID="572669055">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="12_NV_SpawnAtStart_PT" ID="{7DD5724D-B569-4A4A-BA77-1E5FC696F05F}">
-											<Language>SFX</Language>
-											<AudioFile>12_NV_SpawnAtStart_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="449251472"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="12_NV_SpawnAtStart_PT" ID="{7DD5724D-B569-4A4A-BA77-1E5FC696F05F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="13_NV_MainChamberSpawn_PT" ID="{E8F7ACF7-09F6-4964-B8B8-013033B68215}" ShortID="99484251">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="13_NV_MainChamberSpawn_PT" ID="{6552E302-CA96-4A7D-B036-B5360494C072}">
-											<Language>SFX</Language>
-											<AudioFile>13_NV_MainChamberSpawn_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="155035976"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="13_NV_MainChamberSpawn_PT" ID="{6552E302-CA96-4A7D-B036-B5360494C072}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="14_NV_SpawnPointsAndMovement" ID="{4FA9C19F-1113-43F8-A36F-E72CDDB5F55E}" ShortID="199993870">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="14_NV_SpawnPointsAndMovement" ID="{46B9B92A-B1B3-4A57-9FCF-097BB5DF430A}">
-											<Language>SFX</Language>
-											<AudioFile>14_NV_SpawnPointsAndMovement.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="298087757"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="14_NV_SpawnPointsAndMovement" ID="{46B9B92A-B1B3-4A57-9FCF-097BB5DF430A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="15_NV_Review" ID="{5E02D133-593A-4E56-A964-09053535547B}" ShortID="488502856">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="15_NV_Review" ID="{3F8CC19B-4F02-4DC9-AAE6-CADEC7841781}">
-											<Language>SFX</Language>
-											<AudioFile>15_NV_Review.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="465401487"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="15_NV_Review" ID="{3F8CC19B-4F02-4DC9-AAE6-CADEC7841781}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="16_NV_UIIntro_PT" ID="{BE043CDB-C365-46AF-AFE9-63498CE85CF8}" ShortID="797243411">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="16_NV_UIIntro_PT" ID="{30A8E246-1A44-4B27-8167-68708BCEC690}">
-											<Language>SFX</Language>
-											<AudioFile>16_NV_UIIntro_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="709143889"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="16_NV_UIIntro_PT" ID="{30A8E246-1A44-4B27-8167-68708BCEC690}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="17_NV_UIMainMenuNav" ID="{C336B9B6-6EE4-46D2-A937-F80CFF1E26C3}" ShortID="416738202">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="17_NV_UIMainMenuNav" ID="{9E5121FA-8EB1-48E1-8F22-6BA376AD6498}">
-											<Language>SFX</Language>
-											<AudioFile>17_NV_UIMainMenuNav.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="263062365"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="17_NV_UIMainMenuNav" ID="{9E5121FA-8EB1-48E1-8F22-6BA376AD6498}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="18_NV_EnteringACategory" ID="{1265E541-3E8A-4656-8225-804B6BC720D1}" ShortID="976062479">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="18_NV_EnteringACategory" ID="{2691D984-C247-4C41-9760-F4062E251911}">
-											<Language>SFX</Language>
-											<AudioFile>18_NV_EnteringACategory.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="147670229"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="18_NV_EnteringACategory" ID="{2691D984-C247-4C41-9760-F4062E251911}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="19_NV_NavigatingUISubmenus_PT" ID="{3C6CCCC2-3724-4B60-9502-417336476D26}" ShortID="218577206">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="19_NV_NavigatingUISubmenus_PT" ID="{BE7E92C1-121C-48FB-B7F6-CF46453474EB}">
-											<Language>SFX</Language>
-											<AudioFile>19_NV_NavigatingUISubmenus_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="495879198"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="19_NV_NavigatingUISubmenus_PT" ID="{BE7E92C1-121C-48FB-B7F6-CF46453474EB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="20_NV_AdjustingSliders" ID="{4ADAC5D1-03F5-434A-A4AD-363741B6CD08}" ShortID="402464229">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="20_NV_AdjustingSliders" ID="{5F658390-06EA-43F7-9BD7-C273AFEC82D4}">
-											<Language>SFX</Language>
-											<AudioFile>20_NV_AdjustingSliders.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="956786447"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="20_NV_AdjustingSliders" ID="{5F658390-06EA-43F7-9BD7-C273AFEC82D4}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="21_NV_UIReview" ID="{C5DC4774-2A88-4850-84A8-E825BDFFE63D}" ShortID="847570194">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="21_NV_UIReview" ID="{6CD74158-8E40-426C-AE2E-86A2C5DCD1DA}">
-											<Language>SFX</Language>
-											<AudioFile>21_NV_UIReview.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="74361562"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="21_NV_UIReview" ID="{6CD74158-8E40-426C-AE2E-86A2C5DCD1DA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="22_NV_ObstaclesPresets" ID="{ED769D9C-3898-45EF-8096-DBF450A3C393}" ShortID="601891131">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="22_NV_ObstaclesPresets" ID="{597FD33B-7112-42BB-A0CC-338EBC27112F}">
-											<Language>SFX</Language>
-											<AudioFile>22_NV_ObstaclesPresets.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="599427855"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="22_NV_ObstaclesPresets" ID="{597FD33B-7112-42BB-A0CC-338EBC27112F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="23_NV_ObstaclesCustomization" ID="{3178129E-7761-4E80-B1BE-A042ACABC2DD}" ShortID="391128599">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="23_NV_ObstaclesCustomization" ID="{87A38C23-73AB-4CAA-A479-3BCA50AF01F9}">
-											<Language>SFX</Language>
-											<AudioFile>23_NV_ObstaclesCustomization.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="881711517"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="23_NV_ObstaclesCustomization" ID="{87A38C23-73AB-4CAA-A479-3BCA50AF01F9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="24_NV_ObstaclesNavigation" ID="{82FF98D4-3A28-4640-8D96-8EAE08EB0ED7}" ShortID="938183627">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="24_NV_ObstaclesNavigation" ID="{8AEEE2E4-ACF7-4946-A3E0-B249C8428405}">
-											<Language>SFX</Language>
-											<AudioFile>24_NV_ObstaclesNavigation.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1071981366"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="24_NV_ObstaclesNavigation" ID="{8AEEE2E4-ACF7-4946-A3E0-B249C8428405}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="25_NV_HearingTheObstacles_PT" ID="{C4B21113-322C-4D83-BDA8-0682C76358C3}" ShortID="277029947">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="25_NV_HearingTheObstacles_PT" ID="{2FC800AC-788F-4E70-91A0-78628DF40CF3}">
-											<Language>SFX</Language>
-											<AudioFile>25_NV_HearingTheObstacles_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="583962554"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="25_NV_HearingTheObstacles_PT" ID="{2FC800AC-788F-4E70-91A0-78628DF40CF3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="26_NV_ObstaclePresetDescriptions" ID="{7C6E3644-2ED6-4D48-95E0-7D00498238BF}" ShortID="302370965">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="26_NV_ObstaclePresetDescriptions" ID="{24521CB1-0E50-49EE-8094-390E9ACE77DC}">
-											<Language>SFX</Language>
-											<AudioFile>26_NV_ObstaclePresetDescriptions.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="478480686"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="26_NV_ObstaclePresetDescriptions" ID="{24521CB1-0E50-49EE-8094-390E9ACE77DC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="27_NV_ObstaclesReview" ID="{D340DDF0-0ECC-45AB-8056-72AD26CD1A02}" ShortID="379300113">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="27_NV_ObstaclesReview" ID="{94B35A86-0664-4041-A1AD-A0D7DD146C6F}">
-											<Language>SFX</Language>
-											<AudioFile>27_NV_ObstaclesReview.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="572890406"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="27_NV_ObstaclesReview" ID="{94B35A86-0664-4041-A1AD-A0D7DD146C6F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="28_NV_AudioLandmarks_PT" ID="{4D559EF3-EAD9-4ECC-AD0E-229E9941F834}" ShortID="717322140">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="28_NV_AudioLandmarks_PT" ID="{5886FDA9-4D72-4E87-848E-5DCC3AF79D02}">
-											<Language>SFX</Language>
-											<AudioFile>28_NV_AudioLandmarks_PT.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="58135224"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="28_NV_AudioLandmarks_PT" ID="{5886FDA9-4D72-4E87-848E-5DCC3AF79D02}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="29_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}" ShortID="479149537">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="29_NV_TutorialItemsAndConclusion" ID="{A3A87B0D-9C74-4B8B-A3BE-FAC3797584A6}">
-											<Language>SFX</Language>
-											<AudioFile>29_NV_TutorialItemsAndConclusion.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="318647524"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="29_NV_TutorialItemsAndConclusion" ID="{A3A87B0D-9C74-4B8B-A3BE-FAC3797584A6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="25_NV_HearingTheObstacles_PT" ID="{C4B21113-322C-4D83-BDA8-0682C76358C3}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="15_NV_Review" ID="{5E02D133-593A-4E56-A964-09053535547B}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="08_NV_MovementPractice_PT" ID="{6BFFC73C-40FB-4F02-B5DD-D1DB96F86437}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="18_NV_EnteringACategory" ID="{1265E541-3E8A-4656-8225-804B6BC720D1}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="26_NV_ObstaclePresetDescriptions" ID="{7C6E3644-2ED6-4D48-95E0-7D00498238BF}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="05_NV_ContinuedCollisions" ID="{FA44F651-F97D-4369-9487-7674CC14DB1F}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="07_NV_Sideways" ID="{F6F9D167-BC9A-41D8-80AD-07A845D6BEB6}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="11_NV_RotationAndMovementPractice" ID="{A437D16B-C5BB-4D4B-94BC-BD8DBA70B0D7}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="09_NV_RotationIntro" ID="{A28EAE70-A8E2-4B16-BBBB-3BF10D1AF273}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="12_NV_SpawnAtStart_PT" ID="{6AFEED72-0CAB-4579-B8B5-1AF00BE00CB3}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="21_NV_UIReview" ID="{C5DC4774-2A88-4850-84A8-E825BDFFE63D}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="04_NV_Collisions_PT" ID="{89BD058A-5C8D-4902-B3F2-57153AB47DB8}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="22_NV_ObstaclesPresets" ID="{ED769D9C-3898-45EF-8096-DBF450A3C393}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="10_NV_SonicCompass_PT" ID="{FA23ED9D-06E7-49A0-BDA7-C44C3A8FDD72}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="23_NV_ObstaclesCustomization" ID="{3178129E-7761-4E80-B1BE-A042ACABC2DD}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="14_NV_SpawnPointsAndMovement" ID="{4FA9C19F-1113-43F8-A36F-E72CDDB5F55E}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="02_NV_EchoClick" ID="{CFAA19B6-48FB-4225-A755-120BBC475511}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="17_NV_UIMainMenuNav" ID="{C336B9B6-6EE4-46D2-A937-F80CFF1E26C3}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="19_NV_NavigatingUISubmenus_PT" ID="{3C6CCCC2-3724-4B60-9502-417336476D26}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="20_NV_AdjustingSliders" ID="{4ADAC5D1-03F5-434A-A4AD-363741B6CD08}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="24_NV_ObstaclesNavigation" ID="{82FF98D4-3A28-4640-8D96-8EAE08EB0ED7}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="16_NV_UIIntro_PT" ID="{BE043CDB-C365-46AF-AFE9-63498CE85CF8}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="06_NV_Backwards" ID="{7789A2E1-ED70-4294-A207-665B77BC3DF9}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="03_NV_ForwardMovement_PT" ID="{221ECFE4-731A-4BE7-90AD-E291CA802700}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="29_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="27_NV_ObstaclesReview" ID="{D340DDF0-0ECC-45AB-8056-72AD26CD1A02}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="28_NV_AudioLandmarks_PT" ID="{4D559EF3-EAD9-4ECC-AD0E-229E9941F834}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="13_NV_MainChamberSpawn_PT" ID="{E8F7ACF7-09F6-4964-B8B8-013033B68215}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="ObsCustom" ID="{C2C54911-B9A9-473B-994A-9786C3E2BD72}"/>
-										<ItemList>
-											<ItemRef Name="23_NV_ObstaclesCustomization" ID="{3178129E-7761-4E80-B1BE-A042ACABC2DD}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Backwards" ID="{331C3015-5E05-4A75-86E8-322F79939324}"/>
-										<ItemList>
-											<ItemRef Name="06_NV_Backwards" ID="{7789A2E1-ED70-4294-A207-665B77BC3DF9}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="MainChamberSpawn" ID="{900E7325-A1E0-4D2F-BBDD-88115819D652}"/>
-										<ItemList>
-											<ItemRef Name="13_NV_MainChamberSpawn_PT" ID="{E8F7ACF7-09F6-4964-B8B8-013033B68215}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="MvmtPractice" ID="{F4DD1029-3023-4ADC-9418-F95DD489CBB8}"/>
-										<ItemList>
-											<ItemRef Name="08_NV_MovementPractice_PT" ID="{6BFFC73C-40FB-4F02-B5DD-D1DB96F86437}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="UIReview" ID="{486D2529-2758-4392-B2F5-4D90254DA9FE}"/>
-										<ItemList>
-											<ItemRef Name="21_NV_UIReview" ID="{C5DC4774-2A88-4850-84A8-E825BDFFE63D}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="SpawnAndMove" ID="{92DB1E2D-14C8-4F2F-A0F1-942E09895802}"/>
-										<ItemList>
-											<ItemRef Name="14_NV_SpawnPointsAndMovement" ID="{4FA9C19F-1113-43F8-A36F-E72CDDB5F55E}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="RotationIntro" ID="{68AEAD32-8CB2-4C36-81EF-7425304EA532}"/>
-										<ItemList>
-											<ItemRef Name="09_NV_RotationIntro" ID="{A28EAE70-A8E2-4B16-BBBB-3BF10D1AF273}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="SpawnStart" ID="{1F8BDA45-406A-4B08-83D3-53819C4A3B4A}"/>
-										<ItemList>
-											<ItemRef Name="12_NV_SpawnAtStart_PT" ID="{6AFEED72-0CAB-4579-B8B5-1AF00BE00CB3}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="UIIntro" ID="{6FD38F50-DCD9-42FD-896A-39D94448A61D}"/>
-										<ItemList>
-											<ItemRef Name="16_NV_UIIntro_PT" ID="{BE043CDB-C365-46AF-AFE9-63498CE85CF8}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="ObsPresets" ID="{49BCD650-FD36-47F0-9711-64A091D1E98A}"/>
-										<ItemList>
-											<ItemRef Name="22_NV_ObstaclesPresets" ID="{ED769D9C-3898-45EF-8096-DBF450A3C393}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="NavigatingSubmenus" ID="{39E9EF50-39F3-433D-9B30-452426F3FD6D}"/>
-										<ItemList>
-											<ItemRef Name="19_NV_NavigatingUISubmenus_PT" ID="{3C6CCCC2-3724-4B60-9502-417336476D26}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Review" ID="{A8C1DF66-B58D-47F0-8578-2B3628C8B095}"/>
-										<ItemList>
-											<ItemRef Name="15_NV_Review" ID="{5E02D133-593A-4E56-A964-09053535547B}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="AudioLandmarks" ID="{1EC0BA79-4DB9-4AF1-B58C-75E545292F09}"/>
-										<ItemList>
-											<ItemRef Name="28_NV_AudioLandmarks_PT" ID="{4D559EF3-EAD9-4ECC-AD0E-229E9941F834}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="HearingTheObs" ID="{98C4D779-AD84-4C4E-83B3-F41CBBF62141}"/>
-										<ItemList>
-											<ItemRef Name="25_NV_HearingTheObstacles_PT" ID="{C4B21113-322C-4D83-BDA8-0682C76358C3}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="ForwardMovement" ID="{70CAFC93-474B-490A-992D-026202264592}"/>
-										<ItemList>
-											<ItemRef Name="03_NV_ForwardMovement_PT" ID="{221ECFE4-731A-4BE7-90AD-E291CA802700}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="ContCollisions" ID="{82FC5695-8D43-411A-94B7-D71C30B6F741}"/>
-										<ItemList>
-											<ItemRef Name="05_NV_ContinuedCollisions" ID="{FA44F651-F97D-4369-9487-7674CC14DB1F}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="RotationAndMvmtPractice" ID="{AB05D597-966F-4D9E-AD9B-3C09D08D5C06}"/>
-										<ItemList>
-											<ItemRef Name="11_NV_RotationAndMovementPractice" ID="{A437D16B-C5BB-4D4B-94BC-BD8DBA70B0D7}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="EchoClick" ID="{A13A65A1-878A-43A8-9C6F-463574AE7996}"/>
-										<ItemList>
-											<ItemRef Name="02_NV_EchoClick" ID="{CFAA19B6-48FB-4225-A755-120BBC475511}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Collisions" ID="{DB89FDAE-63B6-46D6-9C33-F4010DA2EC93}"/>
-										<ItemList>
-											<ItemRef Name="04_NV_Collisions_PT" ID="{89BD058A-5C8D-4902-B3F2-57153AB47DB8}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="TutorialItems" ID="{1F7963AF-BE01-4B55-9DB6-D09E8C2ED263}"/>
-										<ItemList>
-											<ItemRef Name="29_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="UIMenuNav" ID="{67AF1DBA-1478-4F06-9489-7010E76D51D1}"/>
-										<ItemList>
-											<ItemRef Name="17_NV_UIMainMenuNav" ID="{C336B9B6-6EE4-46D2-A937-F80CFF1E26C3}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="SonicCompass" ID="{5A482BCC-520C-4962-A81F-222E43027818}"/>
-										<ItemList>
-											<ItemRef Name="10_NV_SonicCompass_PT" ID="{FA23ED9D-06E7-49A0-BDA7-C44C3A8FDD72}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="ObsPresetDesc" ID="{84130FD6-39CC-4B65-9250-5F653C05C5A0}"/>
-										<ItemList>
-											<ItemRef Name="26_NV_ObstaclePresetDescriptions" ID="{7C6E3644-2ED6-4D48-95E0-7D00498238BF}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="ObsNavigation" ID="{0AD484E0-6D10-4CA0-AC08-77429A2930E5}"/>
-										<ItemList>
-											<ItemRef Name="24_NV_ObstaclesNavigation" ID="{82FF98D4-3A28-4640-8D96-8EAE08EB0ED7}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="AdjustingSliders" ID="{39CC7CE2-F82D-421A-9390-56075EF8FE2C}"/>
-										<ItemList>
-											<ItemRef Name="20_NV_AdjustingSliders" ID="{4ADAC5D1-03F5-434A-A4AD-363741B6CD08}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="EnteringCategory" ID="{0DB184E9-452D-4629-B648-32C93F121639}"/>
-										<ItemList>
-											<ItemRef Name="18_NV_EnteringACategory" ID="{1265E541-3E8A-4656-8225-804B6BC720D1}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="ObsReview" ID="{BFA7DAEB-A41C-4C7A-97CA-61988BF7C4C1}"/>
-										<ItemList>
-											<ItemRef Name="27_NV_ObstaclesReview" ID="{D340DDF0-0ECC-45AB-8056-72AD26CD1A02}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Sideways" ID="{2A47DEF6-2EF9-43B4-B0EF-665FDDDCED27}"/>
-										<ItemList>
-											<ItemRef Name="07_NV_Sideways" ID="{F6F9D167-BC9A-41D8-80AD-07A845D6BEB6}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
 						<SwitchContainer Name="SC_UI_SimpleTutorial" ID="{914D33EA-388C-4EBF-8EDC-FD663DA358FF}" ShortID="664442358">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+									<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="SG_UI_SimpleTutorial" ID="{855926B5-9C50-4857-B57D-353D1118CD1C}" WorkUnitID="{DB4A1570-B6E1-4BC6-B555-BEEAD6D8D31F}"/>
@@ -3813,28 +2951,648 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
-						<Sound Name="01_NV_Welcome" ID="{025AC815-D616-4F86-AAB6-61DE861B4420}" ShortID="118116735">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
-								</Reference>
-							</ReferenceList>
+						<Folder Name="Tutorial_Items" ID="{F853C064-D746-4F43-870D-14DF0CFD7FB7}" ShortID="383468756">
 							<ChildrenList>
-								<AudioFileSource Name="01_NV_Welcome" ID="{3123B34F-5D1E-46AC-9CA4-5F3BA02DAE87}">
-									<Language>SFX</Language>
-									<AudioFile>01_NV_Welcome.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="493112154"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="13_NV_MainChamberSpawn_PT" ID="{E8F7ACF7-09F6-4964-B8B8-013033B68215}" ShortID="99484251">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="13_NV_MainChamberSpawn_PT" ID="{6552E302-CA96-4A7D-B036-B5360494C072}">
+											<Language>SFX</Language>
+											<AudioFile>13_NV_MainChamberSpawn_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="155035976"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="13_NV_MainChamberSpawn_PT" ID="{6552E302-CA96-4A7D-B036-B5360494C072}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="15_NV_Review" ID="{5E02D133-593A-4E56-A964-09053535547B}" ShortID="488502856">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="15_NV_Review" ID="{3F8CC19B-4F02-4DC9-AAE6-CADEC7841781}">
+											<Language>SFX</Language>
+											<AudioFile>15_NV_Review.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="465401487"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="15_NV_Review" ID="{3F8CC19B-4F02-4DC9-AAE6-CADEC7841781}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="04_NV_Collisions_PT" ID="{89BD058A-5C8D-4902-B3F2-57153AB47DB8}" ShortID="210206664">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="04_NV_Collisions_PT" ID="{798D3EC4-644B-4998-B203-70F749763227}">
+											<Language>SFX</Language>
+											<AudioFile>04_NV_Collisions_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="958281526"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="04_NV_Collisions_PT" ID="{798D3EC4-644B-4998-B203-70F749763227}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="10_NV_SonicCompass_PT" ID="{FA23ED9D-06E7-49A0-BDA7-C44C3A8FDD72}" ShortID="301613020">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="10_NV_SonicCompass_PT" ID="{1DB91879-64E0-4F3F-9200-5FECB2B62B17}">
+											<Language>SFX</Language>
+											<AudioFile>10_NV_SonicCompass_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="607854867"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="10_NV_SonicCompass_PT" ID="{1DB91879-64E0-4F3F-9200-5FECB2B62B17}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="16_NV_UIIntro_PT" ID="{BE043CDB-C365-46AF-AFE9-63498CE85CF8}" ShortID="797243411">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="16_NV_UIIntro_PT" ID="{30A8E246-1A44-4B27-8167-68708BCEC690}">
+											<Language>SFX</Language>
+											<AudioFile>16_NV_UIIntro_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="709143889"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="16_NV_UIIntro_PT" ID="{30A8E246-1A44-4B27-8167-68708BCEC690}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="03_NV_ForwardMovement_PT" ID="{221ECFE4-731A-4BE7-90AD-E291CA802700}" ShortID="858578206">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="03_NV_ForwardMovement_PT" ID="{FD2990FF-E347-4369-8DB1-2D5763D3617B}">
+											<Language>SFX</Language>
+											<AudioFile>03_NV_ForwardMovement_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="397670216"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="03_NV_ForwardMovement_PT" ID="{FD2990FF-E347-4369-8DB1-2D5763D3617B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="17_NV_UIMainMenuNav" ID="{C336B9B6-6EE4-46D2-A937-F80CFF1E26C3}" ShortID="416738202">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="17_NV_UIMainMenuNav" ID="{9E5121FA-8EB1-48E1-8F22-6BA376AD6498}">
+											<Language>SFX</Language>
+											<AudioFile>17_NV_UIMainMenuNav.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="263062365"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="17_NV_UIMainMenuNav" ID="{9E5121FA-8EB1-48E1-8F22-6BA376AD6498}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="02_NV_EchoClick" ID="{CFAA19B6-48FB-4225-A755-120BBC475511}" ShortID="885771027">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="02_NV_EchoClick" ID="{99F15810-C22A-41E4-809F-55EE1D297C20}">
+											<Language>SFX</Language>
+											<AudioFile>02_NV_EchoClick.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="862385180"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="02_NV_EchoClick" ID="{99F15810-C22A-41E4-809F-55EE1D297C20}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="05_NV_ContinuedCollisions" ID="{FA44F651-F97D-4369-9487-7674CC14DB1F}" ShortID="576991636">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="05_NV_ContinuedCollisions" ID="{1BB9631F-A9E7-455B-90D7-D7DBD9BA01A8}">
+											<Language>SFX</Language>
+											<AudioFile>05_NV_ContinuedCollisions.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="612747005"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="05_NV_ContinuedCollisions" ID="{1BB9631F-A9E7-455B-90D7-D7DBD9BA01A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="18_NV_EnteringACategory" ID="{1265E541-3E8A-4656-8225-804B6BC720D1}" ShortID="976062479">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="18_NV_EnteringACategory" ID="{2691D984-C247-4C41-9760-F4062E251911}">
+											<Language>SFX</Language>
+											<AudioFile>18_NV_EnteringACategory.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="147670229"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="18_NV_EnteringACategory" ID="{2691D984-C247-4C41-9760-F4062E251911}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="06_NV_Backwards" ID="{7789A2E1-ED70-4294-A207-665B77BC3DF9}" ShortID="847481718">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="06_NV_Backwards" ID="{FDFA58CE-BA7D-4651-8BAD-00865FD3F6D6}">
+											<Language>SFX</Language>
+											<AudioFile>06_NV_Backwards.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="803313269"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="06_NV_Backwards" ID="{FDFA58CE-BA7D-4651-8BAD-00865FD3F6D6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="07_NV_Sideways" ID="{F6F9D167-BC9A-41D8-80AD-07A845D6BEB6}" ShortID="269377115">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07_NV_Sideways" ID="{4E84646D-385A-4622-A963-276AA186F071}">
+											<Language>SFX</Language>
+											<AudioFile>07_NV_Sideways.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="958017"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="07_NV_Sideways" ID="{4E84646D-385A-4622-A963-276AA186F071}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="08_NV_MovementPractice_PT" ID="{6BFFC73C-40FB-4F02-B5DD-D1DB96F86437}" ShortID="968205533">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="08_NV_MovementPractice_PT" ID="{1CEAE95D-BA92-4C8D-A8B5-4ADDDF8218A9}">
+											<Language>SFX</Language>
+											<AudioFile>08_NV_MovementPractice_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="876235115"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="08_NV_MovementPractice_PT" ID="{1CEAE95D-BA92-4C8D-A8B5-4ADDDF8218A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="09_NV_RotationIntro" ID="{A28EAE70-A8E2-4B16-BBBB-3BF10D1AF273}" ShortID="848478071">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="09_NV_RotationIntro" ID="{9B65A86F-370A-444D-A747-40E5F37BCA16}">
+											<Language>SFX</Language>
+											<AudioFile>09_NV_RotationIntro.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="849891116"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="09_NV_RotationIntro" ID="{9B65A86F-370A-444D-A747-40E5F37BCA16}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="12_NV_SpawnAtStart_PT" ID="{6AFEED72-0CAB-4579-B8B5-1AF00BE00CB3}" ShortID="572669055">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="12_NV_SpawnAtStart_PT" ID="{7DD5724D-B569-4A4A-BA77-1E5FC696F05F}">
+											<Language>SFX</Language>
+											<AudioFile>12_NV_SpawnAtStart_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="449251472"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="12_NV_SpawnAtStart_PT" ID="{7DD5724D-B569-4A4A-BA77-1E5FC696F05F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="19_NV_NavigatingUISubmenus_PT" ID="{3C6CCCC2-3724-4B60-9502-417336476D26}" ShortID="218577206">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="19_NV_NavigatingUISubmenus_PT" ID="{BE7E92C1-121C-48FB-B7F6-CF46453474EB}">
+											<Language>SFX</Language>
+											<AudioFile>19_NV_NavigatingUISubmenus_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="495879198"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="19_NV_NavigatingUISubmenus_PT" ID="{BE7E92C1-121C-48FB-B7F6-CF46453474EB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="21_NV_UIReview" ID="{C5DC4774-2A88-4850-84A8-E825BDFFE63D}" ShortID="847570194">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="21_NV_UIReview" ID="{6CD74158-8E40-426C-AE2E-86A2C5DCD1DA}">
+											<Language>SFX</Language>
+											<AudioFile>21_NV_UIReview.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="74361562"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="21_NV_UIReview" ID="{6CD74158-8E40-426C-AE2E-86A2C5DCD1DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="22_NV_ObstaclesPresets" ID="{ED769D9C-3898-45EF-8096-DBF450A3C393}" ShortID="601891131">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="22_NV_ObstaclesPresets" ID="{597FD33B-7112-42BB-A0CC-338EBC27112F}">
+											<Language>SFX</Language>
+											<AudioFile>22_NV_ObstaclesPresets.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="599427855"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="22_NV_ObstaclesPresets" ID="{597FD33B-7112-42BB-A0CC-338EBC27112F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="20_NV_AdjustingSliders" ID="{4ADAC5D1-03F5-434A-A4AD-363741B6CD08}" ShortID="402464229">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="20_NV_AdjustingSliders" ID="{5F658390-06EA-43F7-9BD7-C273AFEC82D4}">
+											<Language>SFX</Language>
+											<AudioFile>20_NV_AdjustingSliders.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="956786447"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="20_NV_AdjustingSliders" ID="{5F658390-06EA-43F7-9BD7-C273AFEC82D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="23_NV_ObstaclesCustomization" ID="{3178129E-7761-4E80-B1BE-A042ACABC2DD}" ShortID="391128599">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="23_NV_ObstaclesCustomization" ID="{87A38C23-73AB-4CAA-A479-3BCA50AF01F9}">
+											<Language>SFX</Language>
+											<AudioFile>23_NV_ObstaclesCustomization.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="881711517"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="23_NV_ObstaclesCustomization" ID="{87A38C23-73AB-4CAA-A479-3BCA50AF01F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="11_NV_RotationAndMovementPractice" ID="{A437D16B-C5BB-4D4B-94BC-BD8DBA70B0D7}" ShortID="334087998">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="11_NV_RotationAndMovementPractice" ID="{D0E1BC38-08EF-4C2A-825F-EE531410AA47}">
+											<Language>SFX</Language>
+											<AudioFile>11_NV_RotationAndMovementPractice.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="960632279"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="11_NV_RotationAndMovementPractice" ID="{D0E1BC38-08EF-4C2A-825F-EE531410AA47}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="14_NV_SpawnPointsAndMovement" ID="{4FA9C19F-1113-43F8-A36F-E72CDDB5F55E}" ShortID="199993870">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="14_NV_SpawnPointsAndMovement" ID="{46B9B92A-B1B3-4A57-9FCF-097BB5DF430A}">
+											<Language>SFX</Language>
+											<AudioFile>14_NV_SpawnPointsAndMovement.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="298087757"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="14_NV_SpawnPointsAndMovement" ID="{46B9B92A-B1B3-4A57-9FCF-097BB5DF430A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="25_NV_HearingTheObstacles_PT" ID="{C4B21113-322C-4D83-BDA8-0682C76358C3}" ShortID="277029947">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="25_NV_HearingTheObstacles_PT" ID="{2FC800AC-788F-4E70-91A0-78628DF40CF3}">
+											<Language>SFX</Language>
+											<AudioFile>25_NV_HearingTheObstacles_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="583962554"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="25_NV_HearingTheObstacles_PT" ID="{2FC800AC-788F-4E70-91A0-78628DF40CF3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="27_NV_ObstaclesReview" ID="{D340DDF0-0ECC-45AB-8056-72AD26CD1A02}" ShortID="379300113">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="27_NV_ObstaclesReview" ID="{94B35A86-0664-4041-A1AD-A0D7DD146C6F}">
+											<Language>SFX</Language>
+											<AudioFile>27_NV_ObstaclesReview.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="572890406"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="27_NV_ObstaclesReview" ID="{94B35A86-0664-4041-A1AD-A0D7DD146C6F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="24_NV_ObstaclesNavigation" ID="{82FF98D4-3A28-4640-8D96-8EAE08EB0ED7}" ShortID="938183627">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="24_NV_ObstaclesNavigation" ID="{8AEEE2E4-ACF7-4946-A3E0-B249C8428405}">
+											<Language>SFX</Language>
+											<AudioFile>24_NV_ObstaclesNavigation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1071981366"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="24_NV_ObstaclesNavigation" ID="{8AEEE2E4-ACF7-4946-A3E0-B249C8428405}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="26_NV_ObstaclePresetDescriptions" ID="{7C6E3644-2ED6-4D48-95E0-7D00498238BF}" ShortID="302370965">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="26_NV_ObstaclePresetDescriptions" ID="{24521CB1-0E50-49EE-8094-390E9ACE77DC}">
+											<Language>SFX</Language>
+											<AudioFile>26_NV_ObstaclePresetDescriptions.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="478480686"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="26_NV_ObstaclePresetDescriptions" ID="{24521CB1-0E50-49EE-8094-390E9ACE77DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="28_NV_AudioLandmarks_PT" ID="{4D559EF3-EAD9-4ECC-AD0E-229E9941F834}" ShortID="717322140">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="28_NV_AudioLandmarks_PT" ID="{5886FDA9-4D72-4E87-848E-5DCC3AF79D02}">
+											<Language>SFX</Language>
+											<AudioFile>28_NV_AudioLandmarks_PT.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="58135224"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="28_NV_AudioLandmarks_PT" ID="{5886FDA9-4D72-4E87-848E-5DCC3AF79D02}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="29_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}" ShortID="479149537">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="29_NV_TutorialItemsAndConclusion" ID="{A3A87B0D-9C74-4B8B-A3BE-FAC3797584A6}">
+											<Language>SFX</Language>
+											<AudioFile>29_NV_TutorialItemsAndConclusion.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="318647524"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="29_NV_TutorialItemsAndConclusion" ID="{A3A87B0D-9C74-4B8B-A3BE-FAC3797584A6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="01_NV_Welcome" ID="{025AC815-D616-4F86-AAB6-61DE861B4420}" ShortID="118116735">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="01_NV_Welcome" ID="{3123B34F-5D1E-46AC-9CA4-5F3BA02DAE87}">
+											<Language>SFX</Language>
+											<AudioFile>01_NV_Welcome.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="493112154"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="01_NV_Welcome" ID="{3123B34F-5D1E-46AC-9CA4-5F3BA02DAE87}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="01_NV_Welcome" ID="{3123B34F-5D1E-46AC-9CA4-5F3BA02DAE87}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</Folder>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

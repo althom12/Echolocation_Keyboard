@@ -177,27 +177,6 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
-						<AuxBus Name="StereoVerb" ID="{9EF68921-BACF-4938-89C9-9BA749ECDD53}">
-							<ChildrenList>
-								<AuxBus Name="LateReverb" ID="{F02E6885-FC95-47CA-AB5D-FF9298F1B276}">
-									<ObjectLists>
-										<ObjectList Name="Effects">
-											<Reference>
-												<Local>
-													<EffectSlot Name="" ID="{CF1E3F5A-2CB0-43C7-BA57-12ED87E1CE32}" ShortID="116079018">
-														<ReferenceList>
-															<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-																<ObjectRef Name="SchoolHall" ID="{BB0D7BD2-44E6-4818-AC96-C0216B54E854}" WorkUnitID="{C0E78DAA-768A-438F-8F7B-3701395185C3}"/>
-															</Reference>
-														</ReferenceList>
-													</EffectSlot>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</AuxBus>
-							</ChildrenList>
-						</AuxBus>
 						<Bus Name="NewTutorial" ID="{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="4"/>
@@ -209,6 +188,12 @@
 								<Bus Name="UI_Selection_Bus" ID="{9321C0AF-8DE5-467D-B260-0F31A914E322}"/>
 								<Bus Name="UI_Window_Bus" ID="{0C82FAA9-79D4-42E0-90E1-C1AAFBA16B17}"/>
 							</ChildrenList>
+						</Bus>
+						<Bus Name="Tutorial_Contents_Bus" ID="{E8229EFC-5572-4396-8D1D-A152EDB2DBC1}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 						</Bus>
 					</ChildrenList>
 					<ObjectLists>

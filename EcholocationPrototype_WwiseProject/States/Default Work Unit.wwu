@@ -10,6 +10,13 @@
 						<State Name="Window_Opening" ID="{8AF36761-F7BC-4812-8A0D-9EE83770B819}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Tutorial_State" ID="{A971E536-ACE1-4AD3-BB90-0C3B372B47F3}">
+					<ChildrenList>
+						<State Name="None" ID="{D0D244D0-4CA4-4161-9119-8B389AE2F950}"/>
+						<State Name="Tutorial_Paused" ID="{D4E0F7C7-9E59-479B-AEF1-83B002EDA863}"/>
+						<State Name="Tutorial_Playing" ID="{6B42AB7A-7512-4DCA-8641-7E4AA73BB8B0}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
