@@ -83,18 +83,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="MainSettingsInitialOpen" ID="{21B521A7-937A-4A8B-BA0A-6F0A0FDD7F67}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="10.015454853588"/>
-												<Property Name="TrimEnd" Type="Real64" Value="11.1282834681997"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MainSettingsInitialOpen.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="799752433"/>
-											</MediaIDList>
-										</AudioFileSource>
 										<AudioFileSource Name="ECP_LM_AC_TT_FS_Fast" ID="{9F8FA6AF-9265-416F-8D64-AC2A71DA82C9}">
 											<PropertyList>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
@@ -127,6 +115,12 @@
 										<SwitchRef Name="PitchSlider" ID="{9B5F361B-B4BF-46B6-AD45-EEC1663BAE04}"/>
 										<ItemList>
 											<ItemRef Name="ECP_PitchSlider" ID="{C87158A0-51D4-40C4-B92E-651171F3AC58}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="VolumeSlider" ID="{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"/>
+										<ItemList>
+											<ItemRef Name="ECP_VolumeSlider" ID="{067539B1-B1FD-4929-9141-2A3BB1F25735}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

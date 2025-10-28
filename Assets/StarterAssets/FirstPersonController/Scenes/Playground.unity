@@ -5032,11 +5032,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7474abdb3b0132a4db02c967f5bb327e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSelectedElement: {fileID: 1939598689}
+  firstSelectedElement: {fileID: 0}
   windowOpenEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 88a0d4625899fc3489f1ab88f9535c18, type: 2}
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &252346404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11791,7 +11791,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544345259}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14678,7 +14678,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644239243}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -24276,7 +24276,7 @@ MonoBehaviour:
   rtpcToControl:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c0f36a254726dc644bd00e92884368d9, type: 2}
+    WwiseObjectReference: {fileID: 0}
   feedbackSound:
     idInternal: 0
     valueGuidInternal: 
@@ -39057,11 +39057,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a21790fc9f11cc44aa0e6fe88f255a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSelectedElement: {fileID: 10575195}
+  firstSelectedElement: {fileID: 0}
   windowOpenEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 88a0d4625899fc3489f1ab88f9535c18, type: 2}
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1952309204
 GameObject:
   m_ObjectHideFlags: 0
@@ -72350,7 +72350,7 @@ MonoBehaviour:
   rtpcToControl:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2b5d1a7b9ffb8e148b8ea6799f5ff5b7, type: 2}
+    WwiseObjectReference: {fileID: 0}
   feedbackSound:
     idInternal: 0
     valueGuidInternal: 
@@ -82853,11 +82853,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f2ecea62e0983642b27ad0ad26af647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSelectedElement: {fileID: 1942630346208403287}
+  firstSelectedElement: {fileID: 0}
   windowOpenEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 09632bf127a8ec549965d095b043cbd2, type: 2}
+    WwiseObjectReference: {fileID: 0}
 --- !u!64 &7955178349433401446
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -83603,11 +83603,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7474abdb3b0132a4db02c967f5bb327e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSelectedElement: {fileID: 3699387115130609180}
+  firstSelectedElement: {fileID: 0}
   windowOpenEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cff3383d7af02da4386313e1a53fa60e, type: 2}
+    WwiseObjectReference: {fileID: 0}
 --- !u!33 &8100193263569530381
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -92157,11 +92157,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7474abdb3b0132a4db02c967f5bb327e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSelectedElement: {fileID: 5843438877885107377}
+  firstSelectedElement: {fileID: 0}
   windowOpenEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a4a374e34acafd0448f846bd63706db1, type: 2}
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &9089449681109925098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92470,8 +92470,8 @@ MonoBehaviour:
   feedbackSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  soundEmitter: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 194dcbce74497304e8d17afbce638bd4, type: 2}
+  soundEmitter: {fileID: 2114380299}
   defaultValue: 50
 --- !u!114 &9114360488842594066
 MonoBehaviour:
@@ -92744,11 +92744,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7474abdb3b0132a4db02c967f5bb327e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSelectedElement: {fileID: 5405920663453999004}
+  firstSelectedElement: {fileID: 0}
   windowOpenEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c11739e8f5c41be4aab85c3e161615af, type: 2}
+    WwiseObjectReference: {fileID: 0}
 --- !u!23 &9198002672740658023
 MeshRenderer:
   m_ObjectHideFlags: 0

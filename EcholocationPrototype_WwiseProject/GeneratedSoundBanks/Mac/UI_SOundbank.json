@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{8C34CEEB-4E56-6789-D2D8-CCFED76BDEB2}",
+    "Hash": "{F9DB12AF-5765-8ED9-3414-7C720D2C24AF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -614,7 +614,7 @@
       "GUID": "{02E05CC2-058E-4391-9813-78FF4343673D}",
       "DurationType": "OneShot",
       "DurationMin": "0.93792903",
-      "DurationMax": "0.93792903",
+      "DurationMax": "1.0161976",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -626,6 +626,19 @@
         "MediaRefs": [
          {
           "Id": "413023350"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3225717335",
+         "Id": "2955768760",
+         "GUID": "{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "293845445"
          }
         ]
        }
@@ -1985,6 +1998,6 @@
     ]
    }
   ],
-  "FileHash": "{6B2E21E2-43CA-9B28-827C-D1D909903C9C}"
+  "FileHash": "{326EAB0F-5B9F-151D-F884-D1315F9AC857}"
  }
 }
