@@ -1,5 +1,4 @@
 Event	ID	Name			Wwise Object Path	Notes
-	164403860	Event_UI_Select_TutorialItems			\Default Work Unit\UI\Event_UI_Select_TutorialItems	
 	460292358	Play_12_NV_SpawnAtStart_PT			\Default Work Unit\Tutorial\Play_12_NV_SpawnAtStart_PT	
 	506850176	Play_03_NV_ForwardMovement_PT			\Default Work Unit\Tutorial\Play_03_NV_ForwardMovement_PT	
 	584364295	Play_11_NV_RotationAndMovementPractice			\Default Work Unit\Tutorial\Play_11_NV_RotationAndMovementPractice	

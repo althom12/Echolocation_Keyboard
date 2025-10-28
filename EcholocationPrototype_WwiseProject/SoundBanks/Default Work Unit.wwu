@@ -30,6 +30,7 @@
 						<ObjectRef Name="Event_UI_Select_LandmarksProperties" ID="{41957636-F421-4003-9313-66C0BE573617}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_AudioCrumbsProperties" ID="{A8CF08CE-61E1-4020-A126-59FA2A0ACC6D}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_ObstaclesProperties" ID="{C75AB7A1-18D6-40FC-BB5B-DF65EE160967}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DefinitelyNotSameHVAC" ID="{38996AF1-2F4A-4176-9F8E-10C5CBFBAF4C}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ObstaclesPropertiesPage" ID="{17D44698-563D-417B-9ED7-18E813209BA6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_EcholocatorClickProperties" ID="{02E05CC2-058E-4391-9813-78FF4343673D}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Environment_BetterClock_2D" ID="{081E6C0C-DC7B-4486-943C-A1C4CF8F26AA}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
@@ -43,7 +44,7 @@
 						<ObjectRef Name="Play_TutorialItemsPage" ID="{6527ED02-13C2-4A80-B94E-E8AF62F591C6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EcholocatorClickPropertiesPage" ID="{7D2F1AF8-10BF-4B11-929E-D1F74FC8F5FB}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MainSettingsInitialOpen" ID="{45A92EE8-5717-4B51-9EA9-0E4311820804}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_New_Sound_SFX" ID="{47F196E3-225B-4C77-B453-4A0999B104A7}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DefinitelyNotSameClock" ID="{47F196E3-225B-4C77-B453-4A0999B104A7}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Environment_HVAC_2D" ID="{F72E2CAA-B9A2-4E84-8856-68EE2323CE92}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Select_FootstepsProperties" ID="{07CEEBEE-7D81-4EB8-86EC-B187B409FFAF}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_AudioCrumbsPropertiesPage" ID="{18CB5564-2B82-4F14-A891-E080B0C52CA6}" WorkUnitID="{B34A7464-B4AD-4581-AAD8-16216EB98482}" Origin="Manual" Filter="7"/>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{897EBFEE-CCD8-5748-1816-B4DB18637568}",
+    "Hash": "{AA3126DC-BD0B-B0BC-D687-D3E2CD8F9D06}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -102,6 +102,14 @@
       "Location": "Memory",
       "ShortName": "Obstacles_Fast.wav",
       "CachePath": "B8/{B84255B5-5F9B-D261-1401-E01A9996EB50}.wem"
+     },
+     {
+      "Id": "130643068",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Landmarks_DefinitelyNotSameHVAC.wav",
+      "CachePath": "E8/{E8CDF33D-523C-3DAC-6478-0CC8C3E72090}.wem"
      },
      {
       "Id": "131166006",
@@ -1355,6 +1363,34 @@
       ]
      },
      {
+      "Id": "481676882",
+      "Name": "Play_DefinitelyNotSameClock",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_DefinitelyNotSameClock",
+      "GUID": "{47F196E3-225B-4C77-B453-4A0999B104A7}",
+      "DurationType": "OneShot",
+      "DurationMin": "23.338667",
+      "DurationMax": "23.338667",
+      "MediaRefs": [
+       {
+        "Id": "570167937"
+       }
+      ]
+     },
+     {
+      "Id": "1269349234",
+      "Name": "Play_DefinitelyNotSameHVAC",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_DefinitelyNotSameHVAC",
+      "GUID": "{38996AF1-2F4A-4176-9F8E-10C5CBFBAF4C}",
+      "DurationType": "OneShot",
+      "DurationMin": "9.472",
+      "DurationMax": "9.472",
+      "MediaRefs": [
+       {
+        "Id": "130643068"
+       }
+      ]
+     },
+     {
       "Id": "3738316925",
       "Name": "Play_EcholocatorClickPropertiesPage",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_EcholocatorClickPropertiesPage",
@@ -1491,20 +1527,6 @@
       "MediaRefs": [
        {
         "Id": "359571687"
-       }
-      ]
-     },
-     {
-      "Id": "431205792",
-      "Name": "Play_New_Sound_SFX",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_New_Sound_SFX",
-      "GUID": "{47F196E3-225B-4C77-B453-4A0999B104A7}",
-      "DurationType": "OneShot",
-      "DurationMin": "23.338667",
-      "DurationMax": "23.338667",
-      "MediaRefs": [
-       {
-        "Id": "570167937"
        }
       ]
      },
@@ -1963,6 +1985,6 @@
     ]
    }
   ],
-  "FileHash": "{48A90B74-23AD-EC0E-252F-F64D11A0FA66}"
+  "FileHash": "{A94B5988-8191-9F41-54D7-3E06422E76B6}"
  }
 }

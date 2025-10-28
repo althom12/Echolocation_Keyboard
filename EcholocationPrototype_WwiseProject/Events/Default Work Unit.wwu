@@ -842,12 +842,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_New_Sound_SFX" ID="{47F196E3-225B-4C77-B453-4A0999B104A7}">
+				<Event Name="Play_DefinitelyNotSameClock" ID="{47F196E3-225B-4C77-B453-4A0999B104A7}">
 					<ChildrenList>
 						<Action Name="" ID="{7E8CA7E4-B7A8-4DD4-8A47-CA2B9D22CA3B}" ShortID="591241905">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Landmarks_DefinitelyNotSameClock" ID="{83F7EF37-5907-40F9-9BF2-6A6D648D94A8}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_DefinitelyNotSameHVAC" ID="{38996AF1-2F4A-4176-9F8E-10C5CBFBAF4C}">
+					<ChildrenList>
+						<Action Name="" ID="{F4E20A2A-1776-4062-8784-819016F51D91}" ShortID="889694909">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Landmarks_DefinitelyNotSameHVAC" ID="{2DF53368-C660-411F-9B87-7FF8F51B6834}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

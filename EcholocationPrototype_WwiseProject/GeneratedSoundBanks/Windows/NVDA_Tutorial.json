@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C330E82C-4620-4661-A8C1-04F9E338EB42}",
     "Language": "SFX",
-    "Hash": "{FB32E6C0-56C4-7BD8-0191-5CF862B44873}",
+    "Hash": "{AA1DDBFF-D691-B0AC-2BB6-315C030D1101}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\NVDA_Tutorial",
     "ShortName": "NVDA_Tutorial",
     "Path": "NVDA_Tutorial.bnk",
@@ -249,16 +249,6 @@
      }
     ],
     "Events": [
-     {
-      "Id": "164403860",
-      "Name": "Event_UI_Select_TutorialItems",
-      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Event_UI_Select_TutorialItems",
-      "GUID": "{75616669-17CD-4E77-AA8F-D2D573D1B827}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
      {
       "Id": "1193160806",
       "Name": "Pause_Tutorial",
@@ -688,6 +678,6 @@
     ]
    }
   ],
-  "FileHash": "{8D604845-6782-4393-E526-4CDF21B8D63F}"
+  "FileHash": "{8FE0F1E4-C636-1CE4-A416-7C320ED9AA15}"
  }
 }
