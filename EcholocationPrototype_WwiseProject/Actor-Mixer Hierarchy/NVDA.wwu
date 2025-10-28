@@ -3722,7 +3722,7 @@
 										<ActiveSource Name="28_NV_AudioLandmarks_PT" ID="{5886FDA9-4D72-4E87-848E-5DCC3AF79D02}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="29_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}" ShortID="479149537">
+								<Sound Name="30_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}" ShortID="479149537">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
@@ -3764,6 +3764,28 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="01_NV_Welcome" ID="{3123B34F-5D1E-46AC-9CA4-5F3BA02DAE87}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="29_NV_Landmarks_VolumeSliders" ID="{01F8C9E2-7379-4991-A098-2DFD44900E12}" ShortID="980164155">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E78F607B-764C-4DED-A6FC-102F3AE55110}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="29_NV_Landmarks_VolumeSliders" ID="{B7BA45C8-FA40-40A9-8687-289F28CC05F2}">
+											<Language>SFX</Language>
+											<AudioFile>29_NV_Landmarks_VolumeSliders.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="143431175"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="29_NV_Landmarks_VolumeSliders" ID="{B7BA45C8-FA40-40A9-8687-289F28CC05F2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

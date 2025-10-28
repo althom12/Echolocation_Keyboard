@@ -49,12 +49,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_29_NV_TutorialItemsAndConclusion" ID="{2858E8BF-D828-456B-99FB-97B83C5011A0}">
+						<Event Name="Play_30_NV_TutorialItemsAndConclusion" ID="{2858E8BF-D828-456B-99FB-97B83C5011A0}">
 							<ChildrenList>
 								<Action Name="" ID="{2006BA96-F197-4DD3-AE00-C0B36AEB4628}" ShortID="592671664">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="29_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+											<ObjectRef Name="30_NV_TutorialItemsAndConclusion" ID="{844671E9-D3C2-4A40-80F0-C2D977CCD598}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -319,6 +319,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="28_NV_AudioLandmarks_PT" ID="{4D559EF3-EAD9-4ECC-AD0E-229E9941F834}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_29_NV_Landmarks_VolumeSliders" ID="{1ABE4933-EEA3-4BA0-A899-1591DE7FB69C}">
+							<ChildrenList>
+								<Action Name="" ID="{DED97C03-A812-4442-AAC0-1C3FDE8301F0}" ShortID="154985751">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="29_NV_Landmarks_VolumeSliders" ID="{01F8C9E2-7379-4991-A098-2DFD44900E12}" WorkUnitID="{A96A7611-2F59-403C-A9C4-F8026A1E75A4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MainGame" ID="{710F06F0-426E-4DCF-B950-D762F69B35D6}">
+							<ChildrenList>
+								<Action Name="" ID="{35A56612-B3ED-4CED-93AA-A432015721B9}" ShortID="535573059">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="20_MainGame" ID="{826B915C-D046-48D4-9F2B-691E28EE0DB7}" WorkUnitID="{AB22F1C9-3975-4FB8-AFFE-5DCFEBF42906}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

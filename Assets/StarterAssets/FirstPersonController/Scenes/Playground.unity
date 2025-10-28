@@ -7837,6 +7837,9 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 6c4c76075d56a8d44a0638e4f36b921c, type: 2}
   - idInternal: 0
     valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 580b8fde72e0ed54fbb4f171b9a13089, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5daeec4a2e7aff043b42af6b750c63a4, type: 2}
   pauseEvent:
     idInternal: 0
@@ -7875,11 +7878,12 @@ MonoBehaviour:
   - {fileID: 1483892129}
   - {fileID: 1483892129}
   - {fileID: 1483892129}
+  - {fileID: 1483892129}
   tutorialCompleteSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 570296401401be94fb0870376e68dbe2, type: 2}
-  startPoint: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: b63586be73d985148ac69baab2d615f6, type: 2}
+  startPoint: {fileID: 1483892129}
 --- !u!65 &360123818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80655,7 +80659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &7525945223842460742
 MonoBehaviour:
   m_ObjectHideFlags: 0

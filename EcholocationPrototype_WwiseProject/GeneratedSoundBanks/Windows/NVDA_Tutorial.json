@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C330E82C-4620-4661-A8C1-04F9E338EB42}",
     "Language": "SFX",
-    "Hash": "{AA1DDBFF-D691-B0AC-2BB6-315C030D1101}",
+    "Hash": "{79B25537-1430-C6DB-3F22-FB4550DCDEF1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\NVDA_Tutorial",
     "ShortName": "NVDA_Tutorial",
     "Path": "NVDA_Tutorial.bnk",
@@ -38,6 +38,14 @@
       "Location": "Memory",
       "ShortName": "21_NV_UIReview.wav",
       "CachePath": "75/{75D23406-6167-482B-C2F5-7DC55A114869}.wem"
+     },
+     {
+      "Id": "143431175",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "29_NV_Landmarks_VolumeSliders.wav",
+      "CachePath": "E9/{E9EBE554-7408-927A-F658-3C728F69A393}.wem"
      },
      {
       "Id": "147670229",
@@ -238,6 +246,14 @@
       "Location": "Memory",
       "ShortName": "11_NV_RotationAndMovementPractice.wav",
       "CachePath": "43/{43DB8819-7EDF-6F39-C756-E99ED235A2D1}.wem"
+     },
+     {
+      "Id": "985907913",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "20_MainGame.wav",
+      "CachePath": "1D/{1DBD240F-80C0-95B8-20A3-6EE8FCAAEFC2}.wem"
      },
      {
       "Id": "1071981366",
@@ -652,9 +668,23 @@
       ]
      },
      {
-      "Id": "3168081155",
-      "Name": "Play_29_NV_TutorialItemsAndConclusion",
-      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_29_NV_TutorialItemsAndConclusion",
+      "Id": "1945207839",
+      "Name": "Play_29_NV_Landmarks_VolumeSliders",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_29_NV_Landmarks_VolumeSliders",
+      "GUID": "{1ABE4933-EEA3-4BA0-A899-1591DE7FB69C}",
+      "DurationType": "OneShot",
+      "DurationMin": "20.741224",
+      "DurationMax": "20.741224",
+      "MediaRefs": [
+       {
+        "Id": "143431175"
+       }
+      ]
+     },
+     {
+      "Id": "2609550161",
+      "Name": "Play_30_NV_TutorialItemsAndConclusion",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_30_NV_TutorialItemsAndConclusion",
       "GUID": "{2858E8BF-D828-456B-99FB-97B83C5011A0}",
       "DurationType": "OneShot",
       "DurationMin": "48.74449",
@@ -662,6 +692,20 @@
       "MediaRefs": [
        {
         "Id": "318647524"
+       }
+      ]
+     },
+     {
+      "Id": "1833603863",
+      "Name": "Play_MainGame",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_MainGame",
+      "GUID": "{710F06F0-426E-4DCF-B950-D762F69B35D6}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.456",
+      "DurationMax": "6.456",
+      "MediaRefs": [
+       {
+        "Id": "985907913"
        }
       ]
      },
@@ -678,6 +722,6 @@
     ]
    }
   ],
-  "FileHash": "{8FE0F1E4-C636-1CE4-A416-7C320ED9AA15}"
+  "FileHash": "{9FEB6FC6-4676-35B6-64E0-64B592D6A721}"
  }
 }
