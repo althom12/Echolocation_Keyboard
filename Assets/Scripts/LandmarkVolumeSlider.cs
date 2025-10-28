@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Specialized slider for controlling landmark volume through LandmarksManager.
 /// The feedback sound will play at the same volume level as the slider value for preview.
+/// Stops the feedback sound when the user navigates away from this slider.
 /// </summary>
-public class LandmarkVolumeSlider : MonoBehaviour
+public class LandmarkVolumeSlider : MonoBehaviour, IDeselectHandler
 {
     public enum LandmarkType
     {
@@ -64,6 +66,16 @@ public class LandmarkVolumeSlider : MonoBehaviour
 
         // Stop any playing feedback sound when disabled
         StopFeedbackSound();
+    }
+
+    /// <summary>
+    /// Called by Unity's EventSystem when this slider is deselected (user navigates away).
+    /// </summary>
+    public void OnDeselect(BaseEventData eventData)
+    {
+        // Stop the feedback sound when user navigates to another UI element
+        StopFeedbackSound();
+        Debug.Log($"LandmarkVolumeSlider: {landmarkType} slider deselected, stopping feedback sound.");
     }
 
     private void OnSliderValueChanged(float value)

@@ -4,6 +4,7 @@ using UnityEngine.UI;
 /// <summary>
 /// Manages the UI Toggle for landmark audio (Clock or HVAC).
 /// Place this script directly on the Toggle GameObject.
+/// IMPORTANT: Make sure to set the correct LandmarkType in the Inspector!
 /// </summary>
 public class LandmarkToggleController : MonoBehaviour
 {
@@ -24,9 +25,12 @@ public class LandmarkToggleController : MonoBehaviour
         m_Toggle = GetComponent<Toggle>();
         if (m_Toggle == null)
         {
-            Debug.LogError("LandmarkToggleController requires a Toggle component on the same GameObject.", this);
+            Debug.LogError($"[{gameObject.name}] LandmarkToggleController requires a Toggle component!", this);
             this.enabled = false;
+            return;
         }
+
+        Debug.Log($"[{gameObject.name}] LandmarkToggleController initialized for {landmarkType}");
     }
 
     /// <summary>
@@ -34,32 +38,39 @@ public class LandmarkToggleController : MonoBehaviour
     /// </summary>
     private void OnEnable()
     {
-        Debug.Log($"LandmarkToggleController.OnEnable: Starting for {landmarkType}.");
+        Debug.Log($"[{gameObject.name}] OnEnable called for {landmarkType} toggle");
 
         if (LandmarksManager.Instance != null && m_Toggle != null)
         {
             // Get the current state from LandmarksManager
-            bool managerValue = (landmarkType == LandmarkType.Clock)
-                ? LandmarksManager.Instance.IsClockEnabled()
-                : LandmarksManager.Instance.IsHVACEnabled();
+            bool managerValue;
 
-            Debug.Log($"LandmarkToggleController.OnEnable: Reading LandmarksManager.Is{landmarkType}Enabled = {managerValue}. Calling SetIsOnWithoutNotify.");
+            if (landmarkType == LandmarkType.Clock)
+            {
+                managerValue = LandmarksManager.Instance.IsClockEnabled();
+                Debug.Log($"[{gameObject.name}] Reading Clock state from manager: {managerValue}");
+            }
+            else
+            {
+                managerValue = LandmarksManager.Instance.IsHVACEnabled();
+                Debug.Log($"[{gameObject.name}] Reading HVAC state from manager: {managerValue}");
+            }
 
             // Set toggle state without triggering the listener
             m_Toggle.SetIsOnWithoutNotify(managerValue);
 
-            Debug.Log($"LandmarkToggleController.OnEnable: SetIsOnWithoutNotify completed. Current toggle isOn = {m_Toggle.isOn}. Adding listener.");
+            Debug.Log($"[{gameObject.name}] Toggle set to: {m_Toggle.isOn}");
         }
         else if (m_Toggle != null)
         {
-            Debug.LogError("LandmarksManager instance not found during OnEnable! Cannot set initial toggle state.");
+            Debug.LogError($"[{gameObject.name}] LandmarksManager instance not found during OnEnable!");
         }
 
         // Subscribe to future user clicks
         if (m_Toggle != null)
         {
             m_Toggle.onValueChanged.AddListener(OnToggleValueChanged);
-            Debug.Log("LandmarkToggleController.OnEnable: Listener added.");
+            Debug.Log($"[{gameObject.name}] Listener added for {landmarkType}");
         }
     }
 
@@ -68,6 +79,8 @@ public class LandmarkToggleController : MonoBehaviour
     /// </summary>
     private void OnDisable()
     {
+        Debug.Log($"[{gameObject.name}] OnDisable called for {landmarkType} toggle");
+
         if (m_Toggle != null)
         {
             m_Toggle.onValueChanged.RemoveListener(OnToggleValueChanged);
@@ -79,26 +92,25 @@ public class LandmarkToggleController : MonoBehaviour
     /// </summary>
     private void OnToggleValueChanged(bool newValue)
     {
+        Debug.Log($"[{gameObject.name}] OnToggleValueChanged called: {landmarkType} = {newValue}");
+
         if (LandmarksManager.Instance != null)
         {
             // Update the landmark state
             if (landmarkType == LandmarkType.Clock)
             {
                 LandmarksManager.Instance.SetClockEnabled(newValue);
-                Debug.Log($"Clock toggled to: {newValue}");
+                Debug.Log($"[{gameObject.name}] Set Clock enabled to: {newValue}");
             }
             else
             {
                 LandmarksManager.Instance.SetHVACEnabled(newValue);
-                Debug.Log($"HVAC toggled to: {newValue}");
+                Debug.Log($"[{gameObject.name}] Set HVAC enabled to: {newValue}");
             }
-
-            // Note: LandmarksManager already handles starting/stopping the sounds,
-            // so we don't need to save settings separately unless you want persistence
         }
         else
         {
-            Debug.LogError("LandmarksManager instance not found when trying to toggle landmark!");
+            Debug.LogError($"[{gameObject.name}] LandmarksManager instance not found when trying to toggle {landmarkType}!");
         }
     }
 }
