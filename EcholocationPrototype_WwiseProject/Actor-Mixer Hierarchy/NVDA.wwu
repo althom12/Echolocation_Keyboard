@@ -2219,6 +2219,7 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="26"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>6</Value>
@@ -2234,14 +2235,10 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="EmotionalGuitarLoop" ID="{16EC4F44-B8EF-4B1B-99BB-A04A9B82B495}">
-									<Language>SFX</Language>
-									<AudioFile>EmotionalGuitarLoop.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="715574856"/>
-									</MediaIDList>
-								</AudioFileSource>
 								<AudioFileSource Name="Landmarks_DefinitelyNotSameHVAC" ID="{1FD257D4-3CD4-4169-A435-D35B3A35755E}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="8589935106"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Landmarks_DefinitelyNotSameHVAC.wav</AudioFile>
 									<MediaIDList>

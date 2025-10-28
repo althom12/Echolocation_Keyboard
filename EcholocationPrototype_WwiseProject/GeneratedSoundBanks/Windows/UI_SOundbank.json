@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{AA3126DC-BD0B-B0BC-D687-D3E2CD8F9D06}",
+    "Hash": "{8C34CEEB-4E56-6789-D2D8-CCFED76BDEB2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Landmarks_DefinitelyNotSameHVAC.wav",
-      "CachePath": "E8/{E8CDF33D-523C-3DAC-6478-0CC8C3E72090}.wem"
+      "CachePath": "E8/{E849DBA0-A28E-7DB5-616E-5C59D9962C33}.wem"
      },
      {
       "Id": "131166006",
@@ -1985,6 +1985,6 @@
     ]
    }
   ],
-  "FileHash": "{DB09E541-E710-2DAE-D4F4-EB7FD11FD083}"
+  "FileHash": "{6B3FF475-B41F-0C40-7B8E-B9A3E51EF9BF}"
  }
 }
