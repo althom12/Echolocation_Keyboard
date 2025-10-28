@@ -33,8 +33,9 @@ public class TutorialManager : MonoBehaviour
         Chapter26_ObsPresetDesc,
         Chapter27_ObsReview,
         Chapter28_AudioLandmarks,
-        Chapter29_Outro,
-        Chapter30_Complete
+        Chapter29_AudioLandmarksSliders,
+        Chapter30_Outro,
+        Chapter31_Complete
     }
 
     [Header("Core References")]
@@ -111,12 +112,12 @@ public class TutorialManager : MonoBehaviour
 
     void Update()
     {
-        if (isTutorialActive && currentState != TutorialState.Chapter30_Complete && Input.GetKeyDown(KeyCode.BackQuote))
+        if (isTutorialActive && currentState != TutorialState.Chapter31_Complete && Input.GetKeyDown(KeyCode.BackQuote))
         {
             GoToNextState();
         }
 
-        if (currentState == TutorialState.Chapter30_Complete && Input.GetKeyDown(KeyCode.Tab))
+        if (currentState == TutorialState.Chapter31_Complete && Input.GetKeyDown(KeyCode.Tab))
         {
             CycleInstructionReplay();
         }
@@ -216,7 +217,7 @@ public class TutorialManager : MonoBehaviour
 
         Debug.Log($"Proceeding to: {currentState}");
 
-        if (currentState == TutorialState.Chapter30_Complete)
+        if (currentState == TutorialState.Chapter31_Complete)
         {
             isTutorialActive = false;
             obstacleManager.enabled = true;
