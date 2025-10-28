@@ -4356,7 +4356,7 @@ GameObject:
   - component: {fileID: 243558148}
   - component: {fileID: 243558147}
   - component: {fileID: 243558146}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (4)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -6535,7 +6535,7 @@ GameObject:
   - component: {fileID: 350841044}
   - component: {fileID: 350841043}
   - component: {fileID: 350841042}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -7241,7 +7241,7 @@ GameObject:
   - component: {fileID: 358645544}
   - component: {fileID: 358645543}
   - component: {fileID: 358645542}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (4)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -18600,7 +18600,7 @@ GameObject:
   - component: {fileID: 858689240}
   - component: {fileID: 858689239}
   - component: {fileID: 858689238}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (5)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -22351,7 +22351,7 @@ GameObject:
   - component: {fileID: 1076327594}
   - component: {fileID: 1076327593}
   - component: {fileID: 1076327592}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -24280,9 +24280,9 @@ MonoBehaviour:
   feedbackSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: acf6b9ed2d6b1664b98b7f86b964b0f4, type: 2}
-  soundEmitter: {fileID: 548537818}
-  defaultValue: 0
+    WwiseObjectReference: {fileID: 0}
+  soundEmitter: {fileID: 0}
+  defaultValue: 50
 --- !u!114 &1147160605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26529,7 +26529,7 @@ GameObject:
   - component: {fileID: 1289678630}
   - component: {fileID: 1289678629}
   - component: {fileID: 1289678628}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -28521,7 +28521,7 @@ GameObject:
   - component: {fileID: 1431461165}
   - component: {fileID: 1431461164}
   - component: {fileID: 1431461163}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (5)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -30969,7 +30969,7 @@ GameObject:
   - component: {fileID: 1530656882}
   - component: {fileID: 1530656881}
   - component: {fileID: 1530656880}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -35107,7 +35107,7 @@ GameObject:
   - component: {fileID: 1760495122}
   - component: {fileID: 1760495121}
   - component: {fileID: 1760495120}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (5)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -37665,7 +37665,7 @@ GameObject:
   - component: {fileID: 1886285829}
   - component: {fileID: 1886285828}
   - component: {fileID: 1886285827}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (7)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -42444,7 +42444,7 @@ GameObject:
   - component: {fileID: 2095673398}
   - component: {fileID: 2095673397}
   - component: {fileID: 2095673396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (6)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -42921,7 +42921,7 @@ GameObject:
   - component: {fileID: 2101548572}
   - component: {fileID: 2101548571}
   - component: {fileID: 2101548570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -50548,7 +50548,7 @@ GameObject:
   - component: {fileID: 4855747935012029587}
   - component: {fileID: 8598106244865332064}
   - component: {fileID: 4043612640305590493}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -51249,7 +51249,7 @@ GameObject:
   - component: {fileID: 1102602707703563010}
   - component: {fileID: 8516334231423047151}
   - component: {fileID: 1999690371226938545}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MegaAbsorbSphere3
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -51833,7 +51833,7 @@ GameObject:
   - component: {fileID: 2697263796047739654}
   - component: {fileID: 8900628033846424847}
   - component: {fileID: 856738918452803236}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -53519,7 +53519,7 @@ GameObject:
   - component: {fileID: 8827105219881182286}
   - component: {fileID: 8506591813858228389}
   - component: {fileID: 8654356700026105885}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CubeTree (4)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -53761,7 +53761,7 @@ GameObject:
   - component: {fileID: 2463702833762634916}
   - component: {fileID: 1940531264015377198}
   - component: {fileID: 5644463917182621904}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53919,7 +53919,7 @@ GameObject:
   - component: {fileID: 4069835643000233255}
   - component: {fileID: 7289857632583494381}
   - component: {fileID: 269251362934875985}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -53935,8 +53935,8 @@ Transform:
   m_GameObject: {fileID: 4488612364545533313}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.49, y: -33.16, z: 13.69}
-  m_LocalScale: {x: 4.2232, y: 4.2232, z: 4.2232}
+  m_LocalPosition: {x: -1.64, y: -33.16, z: 12.87}
+  m_LocalScale: {x: 4.895111, y: 4.895111, z: 4.895111}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4971435613385009132}
@@ -53978,7 +53978,7 @@ GameObject:
   - component: {fileID: 2989027929219218769}
   - component: {fileID: 1927387629820316237}
   - component: {fileID: 5397197864577226864}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -54034,7 +54034,7 @@ GameObject:
   - component: {fileID: 2667672149107459843}
   - component: {fileID: 7470058953839547388}
   - component: {fileID: 421929194741276718}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54050,8 +54050,8 @@ Transform:
   m_GameObject: {fileID: 7091154062039913416}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.49, y: -33.16, z: 13.7}
-  m_LocalScale: {x: 4.2232, y: 4.2232, z: 4.2232}
+  m_LocalPosition: {x: -18.11, y: -33.16, z: 12.51}
+  m_LocalScale: {x: 4.895111, y: 4.895111, z: 4.895111}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4971435613385009132}
@@ -55271,7 +55271,7 @@ GameObject:
   - component: {fileID: 5451235545121406922}
   - component: {fileID: 5351831406817799536}
   - component: {fileID: 169133700421811022}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MegaAbsorbSphere2
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -55658,7 +55658,7 @@ GameObject:
   - component: {fileID: 2241473696264971729}
   - component: {fileID: 3794360771586801822}
   - component: {fileID: 2346280792893904586}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56382,7 +56382,7 @@ GameObject:
   - component: {fileID: 5835906507920556303}
   - component: {fileID: 1429307510847147729}
   - component: {fileID: 5884258563876206955}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57444,7 +57444,7 @@ GameObject:
   - component: {fileID: 6384664191186533062}
   - component: {fileID: 4134410219724323512}
   - component: {fileID: 5199376680957037847}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -60713,7 +60713,7 @@ GameObject:
   - component: {fileID: 4658084191922468312}
   - component: {fileID: 4526645631286773585}
   - component: {fileID: 6616017150189707080}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CubeTree (5)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -64407,7 +64407,7 @@ GameObject:
   - component: {fileID: 4156694613709424364}
   - component: {fileID: 4717861487415532931}
   - component: {fileID: 9030766124486448038}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -65195,7 +65195,7 @@ GameObject:
   - component: {fileID: 1196038104774329952}
   - component: {fileID: 2350274204607887609}
   - component: {fileID: 6526208539381768438}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CubeTree
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -66150,7 +66150,7 @@ GameObject:
   - component: {fileID: 6969845222284373707}
   - component: {fileID: 1347468300359495364}
   - component: {fileID: 5922852302393538470}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MegaAbsorbSphere3 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -68919,8 +68919,8 @@ Transform:
   m_GameObject: {fileID: 4711389073338076401}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 16.598448, y: 16.388798, z: 15.645341}
-  m_LocalScale: {x: 0.6411076, y: 0.46755242, z: 0.6411076}
+  m_LocalPosition: {x: 14.1, y: 12.96, z: 13.73}
+  m_LocalScale: {x: 0.5051094, y: 0.36837053, z: 0.5051094}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1628058094552784730}
@@ -69357,7 +69357,7 @@ GameObject:
   - component: {fileID: 1872548874029029892}
   - component: {fileID: 8947135589253982771}
   - component: {fileID: 4034778794266735354}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70433,7 +70433,7 @@ GameObject:
   - component: {fileID: 5319049994913503634}
   - component: {fileID: 3532988649758311165}
   - component: {fileID: 949482728810056920}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -70572,7 +70572,7 @@ GameObject:
   - component: {fileID: 4670745914453482276}
   - component: {fileID: 7095100794951796027}
   - component: {fileID: 9219546059740981246}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72006,8 +72006,8 @@ Transform:
   m_GameObject: {fileID: 1912071027366005503}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.03, y: -33.16, z: 21.83}
-  m_LocalScale: {x: 4.2232, y: 4.2232, z: 4.2232}
+  m_LocalPosition: {x: -18.61, y: -33.16, z: 22.71}
+  m_LocalScale: {x: 4.9998984, y: 4.9998984, z: 4.9998984}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4971435613385009132}
@@ -72217,7 +72217,7 @@ GameObject:
   - component: {fileID: 769920656310326585}
   - component: {fileID: 138032069470468941}
   - component: {fileID: 3820909644451864195}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72354,8 +72354,8 @@ MonoBehaviour:
   feedbackSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: acf6b9ed2d6b1664b98b7f86b964b0f4, type: 2}
-  soundEmitter: {fileID: 548537818}
+    WwiseObjectReference: {fileID: 0}
+  soundEmitter: {fileID: 0}
   defaultValue: 50
 --- !u!114 &5565945368722621194
 MonoBehaviour:
@@ -73660,7 +73660,7 @@ GameObject:
   - component: {fileID: 135640352799033957}
   - component: {fileID: 5250631173905138728}
   - component: {fileID: 1203065976297646052}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CubeTree (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -73886,7 +73886,7 @@ GameObject:
   - component: {fileID: 6710943519267875938}
   - component: {fileID: 741672897893451011}
   - component: {fileID: 3324682496518323539}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CubeTree (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -73911,7 +73911,7 @@ GameObject:
   - component: {fileID: 6112210399262730616}
   - component: {fileID: 7133501966354282774}
   - component: {fileID: 5131675026207329436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -73983,7 +73983,7 @@ GameObject:
   - component: {fileID: 5770005461382417453}
   - component: {fileID: 6408400102601807433}
   - component: {fileID: 3913647563237681262}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -75169,7 +75169,7 @@ GameObject:
   - component: {fileID: 6421942153548695914}
   - component: {fileID: 2434740826294227461}
   - component: {fileID: 2153670694622977056}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (4)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -77050,7 +77050,7 @@ GameObject:
   - component: {fileID: 1436373789806132867}
   - component: {fileID: 6794091918918026307}
   - component: {fileID: 4362070854955224884}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -77299,7 +77299,7 @@ GameObject:
   - component: {fileID: 3322676656666242535}
   - component: {fileID: 8033519851739569227}
   - component: {fileID: 8738480355482836891}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CubeTree (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -77638,7 +77638,7 @@ GameObject:
   - component: {fileID: 4042250713975144266}
   - component: {fileID: 9221859127260799548}
   - component: {fileID: 7426539130749563822}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78008,7 +78008,7 @@ GameObject:
   - component: {fileID: 4071927230967000102}
   - component: {fileID: 8225883703596162634}
   - component: {fileID: 3370676201206450899}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78470,7 +78470,7 @@ GameObject:
   - component: {fileID: 1803038256532264299}
   - component: {fileID: 465493648036270817}
   - component: {fileID: 6156990515519952988}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MegaAbsorbSphere1
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -80815,7 +80815,7 @@ GameObject:
   - component: {fileID: 7429429400080704782}
   - component: {fileID: 7764847814174270646}
   - component: {fileID: 1236098315568243189}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83625,8 +83625,8 @@ Transform:
   m_GameObject: {fileID: 1112028534228086524}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.4900007, y: -33.16, z: 22.109999}
-  m_LocalScale: {x: 4.2232, y: 4.2232, z: 4.2232}
+  m_LocalPosition: {x: -1.64, y: -33.16, z: 22.52}
+  m_LocalScale: {x: 5.044612, y: 5.044612, z: 5.044612}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4971435613385009132}
@@ -90334,7 +90334,7 @@ GameObject:
   - component: {fileID: 8861685913447291271}
   - component: {fileID: 156981534615913192}
   - component: {fileID: 4469605098733997261}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VerySmall (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -92470,9 +92470,9 @@ MonoBehaviour:
   feedbackSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 194dcbce74497304e8d17afbce638bd4, type: 2}
-  soundEmitter: {fileID: 2114380299}
-  defaultValue: 0
+    WwiseObjectReference: {fileID: 0}
+  soundEmitter: {fileID: 0}
+  defaultValue: 50
 --- !u!114 &9114360488842594066
 MonoBehaviour:
   m_ObjectHideFlags: 0
