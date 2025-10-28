@@ -1,0 +1,58 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1103419735	Play_West			\Default Work Unit\Compass\Play_West	
+	1553219250	Play_Collision			\Default Work Unit\PlayerSounds\Play_Collision	
+	1839782124	Play_MainChamberNotification			\Default Work Unit\SpawnPositions\Play_MainChamberNotification	
+	1850732987	Play_North			\Default Work Unit\Compass\Play_North	
+	2173823837	Play_ObstacleEmitter			\Default Work Unit\Obstacles\Play_ObstacleEmitter	
+	2248556949	Play_45_Angle_Indicator			\Default Work Unit\Compass\Play_45_Angle_Indicator	
+	2531445826	Play_StartingPositionNotification			\Default Work Unit\SpawnPositions\Play_StartingPositionNotification	
+	2570030149	Play_Compass_Synth			\Default Work Unit\Compass\Play_Compass_Synth	
+	3187449017	Play_South			\Default Work Unit\Compass\Play_South	
+	3559566211	Play_HumanClick			\Default Work Unit\PlayerSounds\Play_HumanClick	
+	3787876787	Stop_Compass_Synth			\Default Work Unit\Compass\Stop_Compass_Synth	
+	3854155799	Play_Footsteps			\Default Work Unit\PlayerSounds\Play_Footsteps	
+	4162345221	Play_East			\Default Work Unit\Compass\Play_East	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	250675185	Click_Amplitude			\Default Work Unit\Click_Amplitude	
+	732487008	Footsteps_Amplitude			\Default Work Unit\Footsteps_Amplitude	
+	1741542810	Player_Yaw			\Default Work Unit\Player_Yaw	
+	2809259425	Footsteps_Pitch			\Default Work Unit\Footsteps_Pitch	
+	4151021112	Click_Pitch			\Default Work Unit\Click_Pitch	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	846920411	Ambisonic_Main_Mix			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix	
+	3587466022	Ambisonic_Reverbs			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	867873073	Hallway02_Ambi_Verb			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway02_Ambi_Verb	
+	903073294	SimpleReflect			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\SimpleReflect	
+	3311067494	Hallway01_Ambi_Verb			\Default Work Unit\Master Audio Bus\Ambisonic_Main_Mix\Ambisonic_Reverbs\Hallway01_Ambi_Verb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	222388465	Parametric EQ (Custom)	Wwise Parametric EQ			
+	468583253	Parametric EQ (Custom)	Wwise Parametric EQ			
+	617097675	Tremolo (Custom)	Wwise Tremolo			
+	798867357	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
+	807199837	Parametric EQ (Custom)	Wwise Parametric EQ			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2033835	Footstep01	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C4\{C49C2844-31E8-C405-C7A4-525EDA00034B}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep01		7340
+	88841646	ObstacleEmitter	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\FC\{FCC7B1FB-CE01-4152-537F-E11CA17200D8}.wem		\Actor-Mixer Hierarchy\Obstacles\ObstacleEmitter		234440
+	230135971	45_Angle_Indicator	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AA\{AA4D1716-76C6-97B2-7C2B-AF3803C41279}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\45_Angle_Indicator		45452
+	254450818	Compass_Synth	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\6D\{6D9CF55A-8E36-6DD8-6BFA-C62F2A654B22}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\Compass_Synth		438928
+	345466174	East	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\25\{25D867D3-2B35-AAEC-AF5E-09B3B2DC8A15}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\East		127148
+	369476291	Footstep03	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\1C\{1C6928D6-A8D4-FF59-29D3-42AB7B9796EC}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep03		10680
+	556476513	Collision	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\03\{0339539D-B4A4-DE01-61A1-86982B9D2C67}.wem		\Actor-Mixer Hierarchy\Player\Collision		68304
+	696266850	Footstep04	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C3\{C3962221-8A60-AA0C-9E32-DC6D2FE66A21}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep04		7084
+	701906917	MainChamber	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\20\{20CB4343-619B-6673-721D-A685D4905384}.wem		\Actor-Mixer Hierarchy\Player\MainChamber		90244
+	714290107	Footstep02	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\74\{74AB8055-2FDC-D746-E76E-46AFFC863E1D}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep02		9004
+	763360263	West	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\77\{77BCEC7E-7166-25C1-8049-D4CB783D5F34}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\West		247700
+	875313660	Footstep05	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\81\{811B7B63-2E63-C1F2-D7FD-4DF84D11343B}.wem		\Actor-Mixer Hierarchy\Player\FootstepContainer\Footsteps\Footstep05		6800
+	908350307	HumanClick	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\55\{5562B044-4AE1-DBB0-6252-35B8AB3ECED3}.wem		\Actor-Mixer Hierarchy\Player\Clicks\HumanClick		40784
+	964506797	South	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\4A\{4A5A8D4D-D7B1-CF26-92E3-7D12C96F1B28}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\South		202524
+	970935376	North	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\86\{861EBDD4-BB94-CA95-0D99-750493246E07}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Compass\NSEW\North		147348
+	1005675724	ReturnToStart	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\EA\{EA369A80-D404-2815-F94E-CBBF60138DDF}.wem		\Actor-Mixer Hierarchy\Player\ReturnToStart		119704
+

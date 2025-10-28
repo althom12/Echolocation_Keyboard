@@ -1,0 +1,727 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3676215661",
+    "Type": "User",
+    "GUID": "{C330E82C-4620-4661-A8C1-04F9E338EB42}",
+    "Language": "SFX",
+    "Hash": "{79B25537-1430-C6DB-3F22-FB4550DCDEF1}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\NVDA_Tutorial",
+    "ShortName": "NVDA_Tutorial",
+    "Path": "NVDA_Tutorial.bnk",
+    "Media": [
+     {
+      "Id": "958017",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "07_NV_Sideways.wav",
+      "CachePath": "37/{37FFDE49-F4C3-A251-A637-D7C6F81830D6}.wem"
+     },
+     {
+      "Id": "58135224",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "28_NV_AudioLandmarks_PT.wav",
+      "CachePath": "16/{1665B98B-750A-FFDC-C30B-542930C3E980}.wem"
+     },
+     {
+      "Id": "74361562",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "21_NV_UIReview.wav",
+      "CachePath": "75/{75D23406-6167-482B-C2F5-7DC55A114869}.wem"
+     },
+     {
+      "Id": "143431175",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "29_NV_Landmarks_VolumeSliders.wav",
+      "CachePath": "E9/{E9EBE554-7408-927A-F658-3C728F69A393}.wem"
+     },
+     {
+      "Id": "147670229",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "18_NV_EnteringACategory.wav",
+      "CachePath": "C4/{C46080FD-49C4-96A2-B34D-2BCB01ACD156}.wem"
+     },
+     {
+      "Id": "155035976",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "13_NV_MainChamberSpawn_PT.wav",
+      "CachePath": "AF/{AFE6EEEA-0477-B2B9-74CB-B65B397CB002}.wem"
+     },
+     {
+      "Id": "263062365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "17_NV_UIMainMenuNav.wav",
+      "CachePath": "40/{40EF7171-6364-6599-B571-F3616438C036}.wem"
+     },
+     {
+      "Id": "298087757",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "14_NV_SpawnPointsAndMovement.wav",
+      "CachePath": "27/{270A7837-BBD9-0392-0731-127F52E58448}.wem"
+     },
+     {
+      "Id": "318647524",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "29_NV_TutorialItemsAndConclusion.wav",
+      "CachePath": "41/{41186010-A87B-F9BE-8429-EAD9FE8A01F9}.wem"
+     },
+     {
+      "Id": "397670216",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "03_NV_ForwardMovement_PT.wav",
+      "CachePath": "54/{543691F0-13FA-B4F5-1AA1-B6718F8F869B}.wem"
+     },
+     {
+      "Id": "449251472",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "12_NV_SpawnAtStart_PT.wav",
+      "CachePath": "24/{249CE959-0B96-A977-8A53-2BBB43FD6A75}.wem"
+     },
+     {
+      "Id": "465401487",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "15_NV_Review.wav",
+      "CachePath": "D2/{D27EF9CD-4F19-FD76-A261-05E66714C6D5}.wem"
+     },
+     {
+      "Id": "478480686",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "26_NV_ObstaclePresetDescriptions.wav",
+      "CachePath": "10/{1034D9AF-ECEA-3DAE-82D3-1A171983E448}.wem"
+     },
+     {
+      "Id": "493112154",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "01_NV_Welcome.wav",
+      "CachePath": "20/{20385402-9689-99AA-524A-0F4832D813EA}.wem"
+     },
+     {
+      "Id": "495879198",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "19_NV_NavigatingUISubmenus_PT.wav",
+      "CachePath": "72/{72F990F1-DACB-5C48-CF81-A6C22E3A630E}.wem"
+     },
+     {
+      "Id": "572890406",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "27_NV_ObstaclesReview.wav",
+      "CachePath": "79/{79586585-E658-292F-68BD-2C84766C1FB1}.wem"
+     },
+     {
+      "Id": "583962554",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "25_NV_HearingTheObstacles_PT.wav",
+      "CachePath": "49/{49D8EA91-B520-1E62-A216-E794CD9CA16C}.wem"
+     },
+     {
+      "Id": "599427855",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "22_NV_ObstaclesPresets.wav",
+      "CachePath": "3C/{3C2993D7-E462-0EC9-09E1-ECD0055681B5}.wem"
+     },
+     {
+      "Id": "607854867",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "10_NV_SonicCompass_PT.wav",
+      "CachePath": "BA/{BA428221-C322-72C2-93B6-F4CC4BF51F5A}.wem"
+     },
+     {
+      "Id": "612747005",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "05_NV_ContinuedCollisions.wav",
+      "CachePath": "91/{91CFD65C-58AE-BCE6-FFC7-2C4A20CA8892}.wem"
+     },
+     {
+      "Id": "709143889",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "16_NV_UIIntro_PT.wav",
+      "CachePath": "A4/{A4BA6F43-3BB1-B760-A8F3-58EF0EBB863D}.wem"
+     },
+     {
+      "Id": "803313269",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "06_NV_Backwards.wav",
+      "CachePath": "16/{161F224F-2771-3B8A-7D87-C854213910A4}.wem"
+     },
+     {
+      "Id": "849891116",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "09_NV_RotationIntro.wav",
+      "CachePath": "47/{47C49701-A3B1-C503-6FF4-255CABFDC5BD}.wem"
+     },
+     {
+      "Id": "862385180",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "02_NV_EchoClick.wav",
+      "CachePath": "AC/{ACC63E2A-6A21-E980-82B4-47693CDB6582}.wem"
+     },
+     {
+      "Id": "876235115",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "08_NV_MovementPractice_PT.wav",
+      "CachePath": "3A/{3A6A0176-CB0F-1780-E70C-CAE53E0E73CA}.wem"
+     },
+     {
+      "Id": "881711517",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "23_NV_ObstaclesCustomization.wav",
+      "CachePath": "B8/{B865B856-D04B-AC93-7613-D6C308689DA5}.wem"
+     },
+     {
+      "Id": "956786447",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "20_NV_AdjustingSliders.wav",
+      "CachePath": "FF/{FF25C81D-11F0-D8FF-421E-7764F5028EC3}.wem"
+     },
+     {
+      "Id": "958281526",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "04_NV_Collisions_PT.wav",
+      "CachePath": "AF/{AF1FA54A-CD8C-8B2F-D602-4ACB5DA5BEC2}.wem"
+     },
+     {
+      "Id": "960632279",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "11_NV_RotationAndMovementPractice.wav",
+      "CachePath": "43/{43DB8819-7EDF-6F39-C756-E99ED235A2D1}.wem"
+     },
+     {
+      "Id": "985907913",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "20_MainGame.wav",
+      "CachePath": "1D/{1DBD240F-80C0-95B8-20A3-6EE8FCAAEFC2}.wem"
+     },
+     {
+      "Id": "1071981366",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "24_NV_ObstaclesNavigation.wav",
+      "CachePath": "37/{374B4DD2-E25A-FAAF-7D0C-C4C63CB6DF2B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1193160806",
+      "Name": "Pause_Tutorial",
+      "ObjectPath": "\\Events\\Default Work Unit\\Pause_Tutorial",
+      "GUID": "{EE58A574-C4B1-4721-A65E-B3E2C9AC9F34}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1784930419",
+      "Name": "Play_01_NV_Welcome",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_01_NV_Welcome",
+      "GUID": "{816B813A-5147-46AD-BE3E-2B00245F5C73}",
+      "DurationType": "OneShot",
+      "DurationMin": "28.081633",
+      "DurationMax": "28.081633",
+      "MediaRefs": [
+       {
+        "Id": "493112154"
+       }
+      ]
+     },
+     {
+      "Id": "1517633171",
+      "Name": "Play_02_NV_EchoClick",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_02_NV_EchoClick",
+      "GUID": "{5C1E9062-30C4-4EB4-9124-E7FCAFD90F67}",
+      "DurationType": "OneShot",
+      "DurationMin": "30.51102",
+      "DurationMax": "30.51102",
+      "MediaRefs": [
+       {
+        "Id": "862385180"
+       }
+      ]
+     },
+     {
+      "Id": "506850176",
+      "Name": "Play_03_NV_ForwardMovement_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_03_NV_ForwardMovement_PT",
+      "GUID": "{E42DC1DD-52C5-42E0-95F7-EC28185A643C}",
+      "DurationType": "OneShot",
+      "DurationMin": "47.21875",
+      "DurationMax": "47.21875",
+      "MediaRefs": [
+       {
+        "Id": "397670216"
+       }
+      ]
+     },
+     {
+      "Id": "1113817490",
+      "Name": "Play_04_NV_Collisions_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_04_NV_Collisions_PT",
+      "GUID": "{287A637B-662D-4656-A156-718B1D4BA2ED}",
+      "DurationType": "OneShot",
+      "DurationMin": "35.75",
+      "DurationMax": "35.75",
+      "MediaRefs": [
+       {
+        "Id": "958281526"
+       }
+      ]
+     },
+     {
+      "Id": "1602792029",
+      "Name": "Play_05_NV_ContinuedCollisions",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_05_NV_ContinuedCollisions",
+      "GUID": "{37BFB9E9-F729-4D11-8765-DAE0CACFEAC1}",
+      "DurationType": "OneShot",
+      "DurationMin": "56.424488",
+      "DurationMax": "56.424488",
+      "MediaRefs": [
+       {
+        "Id": "612747005"
+       }
+      ]
+     },
+     {
+      "Id": "3644984316",
+      "Name": "Play_06_NV_Backwards",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_06_NV_Backwards",
+      "GUID": "{3CA2EE3C-281E-4658-9D88-D9D675B72876}",
+      "DurationType": "OneShot",
+      "DurationMin": "34.298775",
+      "DurationMax": "34.298775",
+      "MediaRefs": [
+       {
+        "Id": "803313269"
+       }
+      ]
+     },
+     {
+      "Id": "1904249682",
+      "Name": "Play_07_NV_Sideways",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_07_NV_Sideways",
+      "GUID": "{21D41B2B-0E95-43F3-8227-11727F9572A2}",
+      "DurationType": "OneShot",
+      "DurationMin": "38.164898",
+      "DurationMax": "38.164898",
+      "MediaRefs": [
+       {
+        "Id": "958017"
+       }
+      ]
+     },
+     {
+      "Id": "3411623047",
+      "Name": "Play_08_NV_MovementPractice_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_08_NV_MovementPractice_PT",
+      "GUID": "{F332E7FE-EEF7-4DBE-97F0-46765B25E3F1}",
+      "DurationType": "OneShot",
+      "DurationMin": "33.637",
+      "DurationMax": "33.637",
+      "MediaRefs": [
+       {
+        "Id": "876235115"
+       }
+      ]
+     },
+     {
+      "Id": "2944014995",
+      "Name": "Play_09_NV_RotationIntro",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_09_NV_RotationIntro",
+      "GUID": "{BE9C597E-A148-41D8-A73A-52E5EBDC79F0}",
+      "DurationType": "OneShot",
+      "DurationMin": "52.48",
+      "DurationMax": "52.48",
+      "MediaRefs": [
+       {
+        "Id": "849891116"
+       }
+      ]
+     },
+     {
+      "Id": "3902747138",
+      "Name": "Play_10_NV_SonicCompass_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_10_NV_SonicCompass_PT",
+      "GUID": "{17680917-EDB4-455B-BBA4-4FBE9F981123}",
+      "DurationType": "OneShot",
+      "DurationMin": "90.46875",
+      "DurationMax": "90.46875",
+      "MediaRefs": [
+       {
+        "Id": "607854867"
+       }
+      ]
+     },
+     {
+      "Id": "584364295",
+      "Name": "Play_11_NV_RotationAndMovementPractice",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_11_NV_RotationAndMovementPractice",
+      "GUID": "{F2383BF0-DC9C-4E05-903F-2AC48A093382}",
+      "DurationType": "OneShot",
+      "DurationMin": "21.028572",
+      "DurationMax": "21.028572",
+      "MediaRefs": [
+       {
+        "Id": "960632279"
+       }
+      ]
+     },
+     {
+      "Id": "460292358",
+      "Name": "Play_12_NV_SpawnAtStart_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_12_NV_SpawnAtStart_PT",
+      "GUID": "{ED4644F6-71BA-40B1-9157-11AF7FD33545}",
+      "DurationType": "OneShot",
+      "DurationMin": "32.40625",
+      "DurationMax": "32.40625",
+      "MediaRefs": [
+       {
+        "Id": "449251472"
+       }
+      ]
+     },
+     {
+      "Id": "2220317695",
+      "Name": "Play_13_NV_MainChamberSpawn_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_13_NV_MainChamberSpawn_PT",
+      "GUID": "{117B36BB-12B5-4667-A1B6-DF9E2A811814}",
+      "DurationType": "OneShot",
+      "DurationMin": "25.8125",
+      "DurationMax": "25.8125",
+      "MediaRefs": [
+       {
+        "Id": "155035976"
+       }
+      ]
+     },
+     {
+      "Id": "1944555383",
+      "Name": "Play_14_NV_SpawnPointsAndMovement",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_14_NV_SpawnPointsAndMovement",
+      "GUID": "{1A3D8C50-D1C2-4AF4-975E-0CD589C9B4A7}",
+      "DurationType": "OneShot",
+      "DurationMin": "18.520817",
+      "DurationMax": "18.520817",
+      "MediaRefs": [
+       {
+        "Id": "298087757"
+       }
+      ]
+     },
+     {
+      "Id": "1344036906",
+      "Name": "Play_15_NV_Review",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_15_NV_Review",
+      "GUID": "{7ED4A28D-E73F-49BD-8A06-B9834BA8D9F9}",
+      "DurationType": "OneShot",
+      "DurationMin": "26.77551",
+      "DurationMax": "26.77551",
+      "MediaRefs": [
+       {
+        "Id": "465401487"
+       }
+      ]
+     },
+     {
+      "Id": "3224347966",
+      "Name": "Play_16_NV_UIIntro_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_16_NV_UIIntro_PT",
+      "GUID": "{4B728490-8496-46BC-9BE1-85ABD2B3E9B5}",
+      "DurationType": "OneShot",
+      "DurationMin": "23.59375",
+      "DurationMax": "23.59375",
+      "MediaRefs": [
+       {
+        "Id": "709143889"
+       }
+      ]
+     },
+     {
+      "Id": "805288807",
+      "Name": "Play_17_NV_UIMainMenuNav",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_17_NV_UIMainMenuNav",
+      "GUID": "{665A6028-4847-4236-B7D5-969BB41A9D1D}",
+      "DurationType": "OneShot",
+      "DurationMin": "36.257957",
+      "DurationMax": "36.257957",
+      "MediaRefs": [
+       {
+        "Id": "263062365"
+       }
+      ]
+     },
+     {
+      "Id": "2496975038",
+      "Name": "Play_18_NV_EnteringACategory",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_18_NV_EnteringACategory",
+      "GUID": "{43F5290A-0BD9-4C9A-B747-D4411BEAEB1B}",
+      "DurationType": "OneShot",
+      "DurationMin": "47.36",
+      "DurationMax": "47.36",
+      "MediaRefs": [
+       {
+        "Id": "147670229"
+       }
+      ]
+     },
+     {
+      "Id": "2828457565",
+      "Name": "Play_19_NV_NavigatingUISubmenus_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_19_NV_NavigatingUISubmenus_PT",
+      "GUID": "{888C8FCD-AFC2-4A84-9B54-560CE7C3D6A5}",
+      "DurationType": "OneShot",
+      "DurationMin": "59.71875",
+      "DurationMax": "59.71875",
+      "MediaRefs": [
+       {
+        "Id": "495879198"
+       }
+      ]
+     },
+     {
+      "Id": "2975437661",
+      "Name": "Play_20_NV_AdjustingSliders",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_20_NV_AdjustingSliders",
+      "GUID": "{1C8664B3-3488-4FF2-B373-1CEC23B327FD}",
+      "DurationType": "OneShot",
+      "DurationMin": "46.236736",
+      "DurationMax": "46.236736",
+      "MediaRefs": [
+       {
+        "Id": "956786447"
+       }
+      ]
+     },
+     {
+      "Id": "2552998629",
+      "Name": "Play_21_NV_UIReview",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_21_NV_UIReview",
+      "GUID": "{862CB6E1-89A6-4B57-848A-9134E7752507}",
+      "DurationType": "OneShot",
+      "DurationMin": "20.37551",
+      "DurationMax": "20.37551",
+      "MediaRefs": [
+       {
+        "Id": "74361562"
+       }
+      ]
+     },
+     {
+      "Id": "774137046",
+      "Name": "Play_22_NV_ObstaclesPresets",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_22_NV_ObstaclesPresets",
+      "GUID": "{BDD26A42-346F-4B68-A5B9-A6F0ED812641}",
+      "DurationType": "OneShot",
+      "DurationMin": "47.777958",
+      "DurationMax": "47.777958",
+      "MediaRefs": [
+       {
+        "Id": "599427855"
+       }
+      ]
+     },
+     {
+      "Id": "1257884420",
+      "Name": "Play_23_NV_ObstaclesCustomization",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_23_NV_ObstaclesCustomization",
+      "GUID": "{9C84B36F-EC7B-4535-A031-A1039CD48783}",
+      "DurationType": "OneShot",
+      "DurationMin": "59.898777",
+      "DurationMax": "59.898777",
+      "MediaRefs": [
+       {
+        "Id": "881711517"
+       }
+      ]
+     },
+     {
+      "Id": "3789614610",
+      "Name": "Play_24_NV_ObstaclesNavigation",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_24_NV_ObstaclesNavigation",
+      "GUID": "{2F405B46-9C80-4867-A256-5C33BC1D09F7}",
+      "DurationType": "OneShot",
+      "DurationMin": "48.71837",
+      "DurationMax": "48.71837",
+      "MediaRefs": [
+       {
+        "Id": "1071981366"
+       }
+      ]
+     },
+     {
+      "Id": "1835230543",
+      "Name": "Play_25_NV_HearingTheObstacles_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_25_NV_HearingTheObstacles_PT",
+      "GUID": "{40E02F62-8433-4DAA-B626-427AE9DA7C55}",
+      "DurationType": "OneShot",
+      "DurationMin": "60.65625",
+      "DurationMax": "60.65625",
+      "MediaRefs": [
+       {
+        "Id": "583962554"
+       }
+      ]
+     },
+     {
+      "Id": "693311155",
+      "Name": "Play_26_NV_ObstaclePresetDescriptions",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_26_NV_ObstaclePresetDescriptions",
+      "GUID": "{B099A6AB-D6CB-49A6-862F-AE2CB9E107D1}",
+      "DurationType": "OneShot",
+      "DurationMin": "64.26122",
+      "DurationMax": "64.26122",
+      "MediaRefs": [
+       {
+        "Id": "478480686"
+       }
+      ]
+     },
+     {
+      "Id": "3863533881",
+      "Name": "Play_27_NV_ObstaclesReview",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_27_NV_ObstaclesReview",
+      "GUID": "{5EEA9C80-DD9C-4881-8538-5D561A781F7E}",
+      "DurationType": "OneShot",
+      "DurationMin": "32.73143",
+      "DurationMax": "32.73143",
+      "MediaRefs": [
+       {
+        "Id": "572890406"
+       }
+      ]
+     },
+     {
+      "Id": "1959403158",
+      "Name": "Play_28_NV_AudioLandmarks_PT",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_28_NV_AudioLandmarks_PT",
+      "GUID": "{98FF8471-35D1-4928-B503-8B263ED175C1}",
+      "DurationType": "OneShot",
+      "DurationMin": "99.9375",
+      "DurationMax": "99.9375",
+      "MediaRefs": [
+       {
+        "Id": "58135224"
+       }
+      ]
+     },
+     {
+      "Id": "1945207839",
+      "Name": "Play_29_NV_Landmarks_VolumeSliders",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_29_NV_Landmarks_VolumeSliders",
+      "GUID": "{1ABE4933-EEA3-4BA0-A899-1591DE7FB69C}",
+      "DurationType": "OneShot",
+      "DurationMin": "20.741224",
+      "DurationMax": "20.741224",
+      "MediaRefs": [
+       {
+        "Id": "143431175"
+       }
+      ]
+     },
+     {
+      "Id": "2609550161",
+      "Name": "Play_30_NV_TutorialItemsAndConclusion",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_30_NV_TutorialItemsAndConclusion",
+      "GUID": "{2858E8BF-D828-456B-99FB-97B83C5011A0}",
+      "DurationType": "OneShot",
+      "DurationMin": "48.74449",
+      "DurationMax": "48.74449",
+      "MediaRefs": [
+       {
+        "Id": "318647524"
+       }
+      ]
+     },
+     {
+      "Id": "1833603863",
+      "Name": "Play_MainGame",
+      "ObjectPath": "\\Events\\Default Work Unit\\Tutorial\\Play_MainGame",
+      "GUID": "{710F06F0-426E-4DCF-B950-D762F69B35D6}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.456",
+      "DurationMax": "6.456",
+      "MediaRefs": [
+       {
+        "Id": "985907913"
+       }
+      ]
+     },
+     {
+      "Id": "4041214897",
+      "Name": "Resume_Tutorial",
+      "ObjectPath": "\\Events\\Default Work Unit\\Resume_Tutorial",
+      "GUID": "{C4779CEC-94EE-4D85-A667-FD41B000EDBD}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D333F5D3-B6FC-6283-CB9A-963842286F19}"
+ }
+}

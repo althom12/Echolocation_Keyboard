@@ -1,0 +1,76 @@
+Event	ID	Name			Wwise Object Path	Notes
+	460292358	Play_12_NV_SpawnAtStart_PT			\Default Work Unit\Tutorial\Play_12_NV_SpawnAtStart_PT	
+	506850176	Play_03_NV_ForwardMovement_PT			\Default Work Unit\Tutorial\Play_03_NV_ForwardMovement_PT	
+	584364295	Play_11_NV_RotationAndMovementPractice			\Default Work Unit\Tutorial\Play_11_NV_RotationAndMovementPractice	
+	693311155	Play_26_NV_ObstaclePresetDescriptions			\Default Work Unit\Tutorial\Play_26_NV_ObstaclePresetDescriptions	
+	774137046	Play_22_NV_ObstaclesPresets			\Default Work Unit\Tutorial\Play_22_NV_ObstaclesPresets	
+	805288807	Play_17_NV_UIMainMenuNav			\Default Work Unit\Tutorial\Play_17_NV_UIMainMenuNav	
+	1113817490	Play_04_NV_Collisions_PT			\Default Work Unit\Tutorial\Play_04_NV_Collisions_PT	
+	1193160806	Pause_Tutorial			\Default Work Unit\Pause_Tutorial	
+	1257884420	Play_23_NV_ObstaclesCustomization			\Default Work Unit\Tutorial\Play_23_NV_ObstaclesCustomization	
+	1344036906	Play_15_NV_Review			\Default Work Unit\Tutorial\Play_15_NV_Review	
+	1517633171	Play_02_NV_EchoClick			\Default Work Unit\Tutorial\Play_02_NV_EchoClick	
+	1602792029	Play_05_NV_ContinuedCollisions			\Default Work Unit\Tutorial\Play_05_NV_ContinuedCollisions	
+	1784930419	Play_01_NV_Welcome			\Default Work Unit\Tutorial\Play_01_NV_Welcome	
+	1833603863	Play_MainGame			\Default Work Unit\Tutorial\Play_MainGame	
+	1835230543	Play_25_NV_HearingTheObstacles_PT			\Default Work Unit\Tutorial\Play_25_NV_HearingTheObstacles_PT	
+	1904249682	Play_07_NV_Sideways			\Default Work Unit\Tutorial\Play_07_NV_Sideways	
+	1944555383	Play_14_NV_SpawnPointsAndMovement			\Default Work Unit\Tutorial\Play_14_NV_SpawnPointsAndMovement	
+	1945207839	Play_29_NV_Landmarks_VolumeSliders			\Default Work Unit\Tutorial\Play_29_NV_Landmarks_VolumeSliders	
+	1959403158	Play_28_NV_AudioLandmarks_PT			\Default Work Unit\Tutorial\Play_28_NV_AudioLandmarks_PT	
+	2220317695	Play_13_NV_MainChamberSpawn_PT			\Default Work Unit\Tutorial\Play_13_NV_MainChamberSpawn_PT	
+	2496975038	Play_18_NV_EnteringACategory			\Default Work Unit\Tutorial\Play_18_NV_EnteringACategory	
+	2552998629	Play_21_NV_UIReview			\Default Work Unit\Tutorial\Play_21_NV_UIReview	
+	2609550161	Play_30_NV_TutorialItemsAndConclusion			\Default Work Unit\Tutorial\Play_30_NV_TutorialItemsAndConclusion	
+	2828457565	Play_19_NV_NavigatingUISubmenus_PT			\Default Work Unit\Tutorial\Play_19_NV_NavigatingUISubmenus_PT	
+	2944014995	Play_09_NV_RotationIntro			\Default Work Unit\Tutorial\Play_09_NV_RotationIntro	
+	2975437661	Play_20_NV_AdjustingSliders			\Default Work Unit\Tutorial\Play_20_NV_AdjustingSliders	
+	3224347966	Play_16_NV_UIIntro_PT			\Default Work Unit\Tutorial\Play_16_NV_UIIntro_PT	
+	3411623047	Play_08_NV_MovementPractice_PT			\Default Work Unit\Tutorial\Play_08_NV_MovementPractice_PT	
+	3644984316	Play_06_NV_Backwards			\Default Work Unit\Tutorial\Play_06_NV_Backwards	
+	3789614610	Play_24_NV_ObstaclesNavigation			\Default Work Unit\Tutorial\Play_24_NV_ObstaclesNavigation	
+	3863533881	Play_27_NV_ObstaclesReview			\Default Work Unit\Tutorial\Play_27_NV_ObstaclesReview	
+	3902747138	Play_10_NV_SonicCompass_PT			\Default Work Unit\Tutorial\Play_10_NV_SonicCompass_PT	
+	4041214897	Resume_Tutorial			\Default Work Unit\Resume_Tutorial	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	587064525	Tutorial_State			\Default Work Unit\Tutorial_State	
+
+State	ID	Name	State Group			Notes
+	126890676	Tutorial_Playing	Tutorial_State			
+	748895195	None	Tutorial_State			
+	3625923408	Tutorial_Paused	Tutorial_State			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	958017	07_NV_Sideways	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\37\{37FFDE49-F4C3-A251-A637-D7C6F81830D6}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\07_NV_Sideways		3366240
+	58135224	28_NV_AudioLandmarks_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\16\{1665B98B-750A-FFDC-C30B-542930C3E980}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\28_NV_AudioLandmarks_PT		19188096
+	74361562	21_NV_UIReview	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\75\{75D23406-6167-482B-C2F5-7DC55A114869}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\21_NV_UIReview		3594336
+	143431175	29_NV_Landmarks_VolumeSliders	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\E9\{E9EBE554-7408-927A-F658-3C728F69A393}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\29_NV_Landmarks_VolumeSliders		3658848
+	147670229	18_NV_EnteringACategory	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\C4\{C46080FD-49C4-96A2-B34D-2BCB01ACD156}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\18_NV_EnteringACategory		4177248
+	155035976	13_NV_MainChamberSpawn_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AF\{AFE6EEEA-0477-B2B9-74CB-B65B397CB002}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\13_NV_MainChamberSpawn_PT		2478096
+	263062365	17_NV_UIMainMenuNav	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\40\{40EF7171-6364-6599-B571-F3616438C036}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\17_NV_UIMainMenuNav		3198048
+	298087757	14_NV_SpawnPointsAndMovement	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\27\{270A7837-BBD9-0392-0731-127F52E58448}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\14_NV_SpawnPointsAndMovement		3267168
+	318647524	30_NV_TutorialItemsAndConclusion	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\41\{41186010-A87B-F9BE-8429-EAD9FE8A01F9}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\30_NV_TutorialItemsAndConclusion		8598624
+	397670216	03_NV_ForwardMovement_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\54\{543691F0-13FA-B4F5-1AA1-B6718F8F869B}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\03_NV_ForwardMovement_PT		4533096
+	449251472	12_NV_SpawnAtStart_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\24\{249CE959-0B96-A977-8A53-2BBB43FD6A75}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\12_NV_SpawnAtStart_PT		3111096
+	465401487	15_NV_Review	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\D2\{D27EF9CD-4F19-FD76-A261-05E66714C6D5}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\15_NV_Review		2361696
+	478480686	26_NV_ObstaclePresetDescriptions	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\10\{1034D9AF-ECEA-3DAE-82D3-1A171983E448}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\26_NV_ObstaclePresetDescriptions		11335776
+	493112154	01_NV_Welcome	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\20\{20385402-9689-99AA-524A-0F4832D813EA}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\01_NV_Welcome		2476896
+	495879198	19_NV_NavigatingUISubmenus_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\72\{72F990F1-DACB-5C48-CF81-A6C22E3A630E}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\19_NV_NavigatingUISubmenus_PT		5733096
+	572890406	27_NV_ObstaclesReview	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\79\{79586585-E658-292F-68BD-2C84766C1FB1}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\27_NV_ObstaclesReview		5773920
+	583962554	25_NV_HearingTheObstacles_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\49\{49D8EA91-B520-1E62-A216-E794CD9CA16C}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\25_NV_HearingTheObstacles_PT		11646096
+	599427855	22_NV_ObstaclesPresets	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\3C\{3C2993D7-E462-0EC9-09E1-ECD0055681B5}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\22_NV_ObstaclesPresets		8428128
+	607854867	10_NV_SonicCompass_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\BA\{BA428221-C322-72C2-93B6-F4CC4BF51F5A}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\10_NV_SonicCompass_PT		8685096
+	612747005	05_NV_ContinuedCollisions	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\91\{91CFD65C-58AE-BCE6-FFC7-2C4A20CA8892}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\05_NV_ContinuedCollisions		4976736
+	709143889	16_NV_UIIntro_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\A4\{A4BA6F43-3BB1-B760-A8F3-58EF0EBB863D}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\16_NV_UIIntro_PT		2265096
+	803313269	06_NV_Backwards	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\16\{161F224F-2771-3B8A-7D87-C854213910A4}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\06_NV_Backwards		3025248
+	849891116	09_NV_RotationIntro	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\47\{47C49701-A3B1-C503-6FF4-255CABFDC5BD}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\09_NV_RotationIntro		4628832
+	862385180	02_NV_EchoClick	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AC\{ACC63E2A-6A21-E980-82B4-47693CDB6582}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\02_NV_EchoClick		2691168
+	876235115	08_NV_MovementPractice_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\3A\{3A6A0176-CB0F-1780-E70C-CAE53E0E73CA}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\08_NV_MovementPractice_PT		3229248
+	881711517	23_NV_ObstaclesCustomization	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\B8\{B865B856-D04B-AC93-7613-D6C308689DA5}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\23_NV_ObstaclesCustomization		10566240
+	956786447	20_NV_AdjustingSliders	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\FF\{FF25C81D-11F0-D8FF-421E-7764F5028EC3}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\20_NV_AdjustingSliders		4078176
+	958281526	04_NV_Collisions_PT	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\AF\{AF1FA54A-CD8C-8B2F-D602-4ACB5DA5BEC2}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\04_NV_Collisions_PT		3432096
+	960632279	11_NV_RotationAndMovementPractice	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\43\{43DB8819-7EDF-6F39-C756-E99ED235A2D1}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\11_NV_RotationAndMovementPractice		1854816
+	985907913	20_MainGame	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\1D\{1DBD240F-80C0-95B8-20A3-6EE8FCAAEFC2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UpdatedTutorial\20_MainGame		309984
+	1071981366	24_NV_ObstaclesNavigation	C:\Unity\EcholocationPrototype_Keyboard\EcholocationPrototype_WwiseProject\.cache\37\{374B4DD2-E25A-FAAF-7D0C-C4C63CB6DF2B}.wem		\Actor-Mixer Hierarchy\NVDA\TutorialProperties\Tutorial_Items\24_NV_ObstaclesNavigation		8594016
+

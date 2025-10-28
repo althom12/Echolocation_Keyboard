@@ -1,0 +1,1335 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{B15B6B08-81D8-F1ED-ADD6-64F3E0776DA5}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "798867357",
+       "Name": "Resonance Audio Renderer (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\[Effect Slot [0]: (Resonance Audio Renderer)]\\Resonance Audio Renderer (Custom)",
+       "GUID": "{2CC423DB-F503-4B6E-96B3-1DB376F8629F}",
+       "LibName": "Resonance Audio Renderer",
+       "LibId": "6557955"
+      }
+     ],
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{B4E9E674-5C03-44A2-9F9E-5DC76BBCEF8A}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{CBA10D38-14B2-4C1B-9623-09EBDED56687}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "796032403",
+      "Name": "Tutorial_Contents_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Tutorial_Contents_Bus",
+      "GUID": "{E8229EFC-5572-4396-8D1D-A152EDB2DBC1}",
+      "Color": "17"
+     },
+     {
+      "Id": "846920411",
+      "Name": "Ambisonic_Main_Mix",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix",
+      "GUID": "{3B650CB4-D79D-484A-8330-A92F518AF95C}",
+      "Color": "4",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "798867357"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1350803667",
+      "Name": "UI_Selection_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI_Bus\\UI_Selection_Bus",
+      "GUID": "{9321C0AF-8DE5-467D-B260-0F31A914E322}"
+     },
+     {
+      "Id": "1991884269",
+      "Name": "UI_Window_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI_Bus\\UI_Window_Bus",
+      "GUID": "{0C82FAA9-79D4-42E0-90E1-C1AAFBA16B17}"
+     },
+     {
+      "Id": "2583787875",
+      "Name": "NewTutorial",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\NewTutorial",
+      "GUID": "{2E80CE68-C81C-41E2-AC7B-EE0D5B1F209D}",
+      "Color": "26"
+     },
+     {
+      "Id": "3247222208",
+      "Name": "UI_Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI_Bus",
+      "GUID": "{6BF29EBF-A00D-4F4B-804E-755BD899FBD5}"
+     },
+     {
+      "Id": "3587466022",
+      "Name": "Ambisonic_Reverbs",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs",
+      "GUID": "{794C00D1-33D0-4144-9B46-E7F3EA8CC6C3}",
+      "Color": "4"
+     },
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "867873073",
+      "Name": "Hallway02_Ambi_Verb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs\\Hallway02_Ambi_Verb",
+      "GUID": "{A99E3B76-79C5-482E-A7C1-01943ED52D06}",
+      "Color": "4",
+      "MaxAttenuation": "100"
+     },
+     {
+      "Id": "903073294",
+      "Name": "SimpleReflect",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\SimpleReflect",
+      "GUID": "{A834FFA5-6A50-486B-AADD-D440FB138642}",
+      "Color": "4"
+     },
+     {
+      "Id": "3311067494",
+      "Name": "Hallway01_Ambi_Verb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Ambisonic_Main_Mix\\Ambisonic_Reverbs\\Hallway01_Ambi_Verb",
+      "GUID": "{7EEA5551-616A-43E4-950C-0C1277D1B60B}",
+      "Color": "4",
+      "MaxAttenuation": "100"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "250675185",
+      "Name": "Click_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Click_Amplitude",
+      "GUID": "{341AF56B-5C32-48F2-8CF4-2AF84FE82A31}"
+     },
+     {
+      "Id": "548657501",
+      "Name": "Landmarks_Clock_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Landmarks_Clock_Amplitude",
+      "GUID": "{553CF8D1-775E-4343-8CD7-89C5E8D0041B}"
+     },
+     {
+      "Id": "732487008",
+      "Name": "Footsteps_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Footsteps_Amplitude",
+      "GUID": "{B03EA168-05AF-4A1C-B6DF-0E26C50CF2B4}"
+     },
+     {
+      "Id": "1741542810",
+      "Name": "Player_Yaw",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Player_Yaw",
+      "GUID": "{CB486B96-1484-40E7-9CD9-3F320AF21649}"
+     },
+     {
+      "Id": "2809259425",
+      "Name": "Footsteps_Pitch",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Footsteps_Pitch",
+      "GUID": "{34AEE630-4A71-491E-89DF-1BA360F31716}"
+     },
+     {
+      "Id": "3172790959",
+      "Name": "Landmarks_HVAC_Amplitude",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Landmarks_HVAC_Amplitude",
+      "GUID": "{CD3A456E-57C7-43D2-9DBF-36BA5D5C3AF0}"
+     },
+     {
+      "Id": "4151021112",
+      "Name": "Click_Pitch",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Click_Pitch",
+      "GUID": "{93870C3F-9FB9-4F38-932C-E5C5E1507190}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "587064525",
+      "Name": "Tutorial_State",
+      "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State",
+      "GUID": "{A971E536-ACE1-4AD3-BB90-0C3B372B47F3}",
+      "States": [
+       {
+        "Id": "126890676",
+        "Name": "Tutorial_Playing",
+        "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State\\Tutorial_Playing",
+        "GUID": "{6B42AB7A-7512-4DCA-8641-7E4AA73BB8B0}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State\\None",
+        "GUID": "{D0D244D0-4CA4-4161-9119-8B389AE2F950}"
+       },
+       {
+        "Id": "3625923408",
+        "Name": "Tutorial_Paused",
+        "ObjectPath": "\\States\\Default Work Unit\\Tutorial_State\\Tutorial_Paused",
+        "GUID": "{D4E0F7C7-9E59-479B-AEF1-83B002EDA863}"
+       }
+      ]
+     },
+     {
+      "Id": "1875554370",
+      "Name": "UI_Audio_State",
+      "ObjectPath": "\\States\\Default Work Unit\\UI_Audio_State",
+      "GUID": "{51D6EA2D-9F08-4B66-A5E6-B6C2475A0DB4}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\UI_Audio_State\\None",
+        "GUID": "{F3164487-A0E2-4912-972F-D4E47CC4588F}"
+       },
+       {
+        "Id": "1592121920",
+        "Name": "Window_Opening",
+        "ObjectPath": "\\States\\Default Work Unit\\UI_Audio_State\\Window_Opening",
+        "GUID": "{8AF36761-F7BC-4812-8A0D-9EE83770B819}"
+       },
+       {
+        "Id": "1874288895",
+        "Name": "Idle",
+        "ObjectPath": "\\States\\Default Work Unit\\UI_Audio_State\\Idle",
+        "GUID": "{A06004BE-468F-421E-A00E-F3D0E974345F}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "864818103",
+      "Name": "SG_UI_TutorialItems",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems",
+      "GUID": "{CE4F088D-78C7-4659-AA04-EE4531B6D9CF}",
+      "Switches": [
+       {
+        "Id": "21835643",
+        "Name": "ForwardMovement",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\ForwardMovement",
+        "GUID": "{70CAFC93-474B-490A-992D-026202264592}"
+       },
+       {
+        "Id": "30880413",
+        "Name": "Review",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\Review",
+        "GUID": "{A8C1DF66-B58D-47F0-8578-2B3628C8B095}"
+       },
+       {
+        "Id": "359097558",
+        "Name": "SpawnStart",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\SpawnStart",
+        "GUID": "{1F8BDA45-406A-4B08-83D3-53819C4A3B4A}"
+       },
+       {
+        "Id": "809063863",
+        "Name": "NavigatingSubmenus",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\NavigatingSubmenus",
+        "GUID": "{39E9EF50-39F3-433D-9B30-452426F3FD6D}"
+       },
+       {
+        "Id": "824618274",
+        "Name": "Collisions",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\Collisions",
+        "GUID": "{DB89FDAE-63B6-46D6-9C33-F4010DA2EC93}"
+       },
+       {
+        "Id": "966916481",
+        "Name": "TutorialItems",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\TutorialItems",
+        "GUID": "{1F7963AF-BE01-4B55-9DB6-D09E8C2ED263}"
+       },
+       {
+        "Id": "1010793822",
+        "Name": "ContCollisions",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\ContCollisions",
+        "GUID": "{82FC5695-8D43-411A-94B7-D71C30B6F741}"
+       },
+       {
+        "Id": "1521432287",
+        "Name": "RotationIntro",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\RotationIntro",
+        "GUID": "{68AEAD32-8CB2-4C36-81EF-7425304EA532}"
+       },
+       {
+        "Id": "1527458955",
+        "Name": "UIReview",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\UIReview",
+        "GUID": "{486D2529-2758-4392-B2F5-4D90254DA9FE}"
+       },
+       {
+        "Id": "2110140363",
+        "Name": "RotationAndMvmtPractice",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\RotationAndMvmtPractice",
+        "GUID": "{AB05D597-966F-4D9E-AD9B-3C09D08D5C06}"
+       },
+       {
+        "Id": "2115823773",
+        "Name": "ObsReview",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\ObsReview",
+        "GUID": "{BFA7DAEB-A41C-4C7A-97CA-61988BF7C4C1}"
+       },
+       {
+        "Id": "2131676804",
+        "Name": "ObsCustom",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\ObsCustom",
+        "GUID": "{C2C54911-B9A9-473B-994A-9786C3E2BD72}"
+       },
+       {
+        "Id": "2202139043",
+        "Name": "EnteringCategory",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\EnteringCategory",
+        "GUID": "{0DB184E9-452D-4629-B648-32C93F121639}"
+       },
+       {
+        "Id": "2312210939",
+        "Name": "ObsPresets",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\ObsPresets",
+        "GUID": "{49BCD650-FD36-47F0-9711-64A091D1E98A}"
+       },
+       {
+        "Id": "2315122162",
+        "Name": "HearingTheObs",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\HearingTheObs",
+        "GUID": "{98C4D779-AD84-4C4E-83B3-F41CBBF62141}"
+       },
+       {
+        "Id": "2421980327",
+        "Name": "Welcome",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\Welcome",
+        "GUID": "{BC2EAC19-FBA5-44A7-A77B-F7D256AAF881}"
+       },
+       {
+        "Id": "2818475040",
+        "Name": "Sideways",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\Sideways",
+        "GUID": "{2A47DEF6-2EF9-43B4-B0EF-665FDDDCED27}"
+       },
+       {
+        "Id": "2907714354",
+        "Name": "EndTutorial",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\EndTutorial",
+        "GUID": "{9F52281D-C452-4CF5-B008-6967AEAE27FA}"
+       },
+       {
+        "Id": "3193406139",
+        "Name": "UIIntro",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\UIIntro",
+        "GUID": "{6FD38F50-DCD9-42FD-896A-39D94448A61D}"
+       },
+       {
+        "Id": "3211240269",
+        "Name": "SonicCompass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\SonicCompass",
+        "GUID": "{5A482BCC-520C-4962-A81F-222E43027818}"
+       },
+       {
+        "Id": "3345188236",
+        "Name": "MvmtPractice",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\MvmtPractice",
+        "GUID": "{F4DD1029-3023-4ADC-9418-F95DD489CBB8}"
+       },
+       {
+        "Id": "3357006482",
+        "Name": "EchoClick",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\EchoClick",
+        "GUID": "{A13A65A1-878A-43A8-9C6F-463574AE7996}"
+       },
+       {
+        "Id": "3519150243",
+        "Name": "ObsPresetDesc",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\ObsPresetDesc",
+        "GUID": "{84130FD6-39CC-4B65-9250-5F653C05C5A0}"
+       },
+       {
+        "Id": "3537363534",
+        "Name": "AdjustingSliders",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\AdjustingSliders",
+        "GUID": "{39CC7CE2-F82D-421A-9390-56075EF8FE2C}"
+       },
+       {
+        "Id": "3587124628",
+        "Name": "AudioLandmarks",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\AudioLandmarks",
+        "GUID": "{1EC0BA79-4DB9-4AF1-B58C-75E545292F09}"
+       },
+       {
+        "Id": "3754331821",
+        "Name": "MainChamberSpawn",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\MainChamberSpawn",
+        "GUID": "{900E7325-A1E0-4D2F-BBDD-88115819D652}"
+       },
+       {
+        "Id": "3765040673",
+        "Name": "UIMenuNav",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\UIMenuNav",
+        "GUID": "{67AF1DBA-1478-4F06-9489-7010E76D51D1}"
+       },
+       {
+        "Id": "3876169137",
+        "Name": "Backwards",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\Backwards",
+        "GUID": "{331C3015-5E05-4A75-86E8-322F79939324}"
+       },
+       {
+        "Id": "4042290811",
+        "Name": "ObsNavigation",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\ObsNavigation",
+        "GUID": "{0AD484E0-6D10-4CA0-AC08-77429A2930E5}"
+       },
+       {
+        "Id": "4054219830",
+        "Name": "SpawnAndMove",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\SpawnAndMove",
+        "GUID": "{92DB1E2D-14C8-4F2F-A0F1-942E09895802}"
+       },
+       {
+        "Id": "4186867365",
+        "Name": "StartTutorial",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_TutorialItems\\StartTutorial",
+        "GUID": "{3579411C-194A-424A-B7B0-BC327B895BAE}"
+       }
+      ]
+     },
+     {
+      "Id": "2014534092",
+      "Name": "SG_UI_Multipurpose",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Multipurpose",
+      "GUID": "{EA86EBBE-212F-43C5-9BB9-615B960DF1A4}",
+      "Switches": [
+       {
+        "Id": "1767045039",
+        "Name": "Toggle_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Multipurpose\\Toggle_Checked",
+        "GUID": "{060860FD-9638-4D08-AD83-15D328299A4E}"
+       },
+       {
+        "Id": "4150790098",
+        "Name": "Toggle_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_Multipurpose\\Toggle_NotChecked",
+        "GUID": "{54468300-2CA0-4D49-BE13-37DA4BE7CB8F}"
+       }
+      ]
+     },
+     {
+      "Id": "2201101635",
+      "Name": "SG_UI_LandmarksSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections",
+      "GUID": "{706EC372-B501-444A-90BC-39AEC6A7A0E2}",
+      "Switches": [
+       {
+        "Id": "202463777",
+        "Name": "ClockVolume_Slider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\ClockVolume_Slider",
+        "GUID": "{59FE3FB1-623F-4BA8-9AE4-DFC3CE0416E4}"
+       },
+       {
+        "Id": "2726150469",
+        "Name": "HVACOn_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\HVACOn_NotChecked",
+        "GUID": "{BA19DCEB-3444-4454-9AA6-995443E8DD4B}"
+       },
+       {
+        "Id": "3003445939",
+        "Name": "HVACVolume_Slider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\HVACVolume_Slider",
+        "GUID": "{EF37E69F-7CCB-4DC3-A99B-EB56A6CE49E9}"
+       },
+       {
+        "Id": "3394946734",
+        "Name": "HVACOn_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\HVACOn_Checked",
+        "GUID": "{6A420109-083D-49E8-BFF5-65296C828B09}"
+       },
+       {
+        "Id": "4105537559",
+        "Name": "ClockOn_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\ClockOn_NotChecked",
+        "GUID": "{A7B6979E-E58B-486C-B35C-BBC731D06D32}"
+       },
+       {
+        "Id": "4145643500",
+        "Name": "ClockOn_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_LandmarksSelections\\ClockOn_Checked",
+        "GUID": "{D3999C91-B66F-40D5-99BA-5E3FA2BFB931}"
+       }
+      ]
+     },
+     {
+      "Id": "2355358046",
+      "Name": "SG_UI_AudioCrumbsSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections",
+      "GUID": "{021D7A51-E13C-49BF-A93B-3BBF2B0323AA}",
+      "Switches": [
+       {
+        "Id": "756878500",
+        "Name": "AudioCrumbs_On_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections\\AudioCrumbs_On_NotChecked",
+        "GUID": "{7FD5304D-6E32-4EC0-B342-41D46A256DD3}"
+       },
+       {
+        "Id": "1663067993",
+        "Name": "AudioCrumbs_VolumeSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections\\AudioCrumbs_VolumeSlider",
+        "GUID": "{60C1EC7B-BA06-42BD-B6D2-224DE905BEF4}"
+       },
+       {
+        "Id": "2929736493",
+        "Name": "AudioCrumbs_On_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_AudioCrumbsSelections\\AudioCrumbs_On_Checked",
+        "GUID": "{430886AF-5CC5-4E75-8AE7-09173BEE7DFB}"
+       }
+      ]
+     },
+     {
+      "Id": "3198805459",
+      "Name": "SG_UI_MainSettings",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings",
+      "GUID": "{D22B9D1E-A222-4867-818A-5CEE84BFF1A1}",
+      "Switches": [
+       {
+        "Id": "1083307317",
+        "Name": "FSP_3of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\FSP_3of6",
+        "GUID": "{D3AC7B30-798B-423E-9DF3-D43485E3FD83}"
+       },
+       {
+        "Id": "1110678646",
+        "Name": "ACP_5of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\ACP_5of6",
+        "GUID": "{A23516DE-4A06-4568-9AED-2DAE02E97D9E}"
+       },
+       {
+        "Id": "1311420848",
+        "Name": "ECP_Cag_1of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\ECP_Cag_1of6",
+        "GUID": "{20AC4750-4081-4BB8-B8A8-822566FC1180}"
+       },
+       {
+        "Id": "1312921442",
+        "Name": "TTI_Cag_6of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\TTI_Cag_6of6",
+        "GUID": "{EDE32C7B-908C-473A-8E21-E927985C8DB0}"
+       },
+       {
+        "Id": "1332976950",
+        "Name": "ECP_1of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\ECP_1of6",
+        "GUID": "{6A8D549E-2630-46C0-8EFB-D9AD5A3D961C}"
+       },
+       {
+        "Id": "1570397931",
+        "Name": "OBS_Cag_2of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\OBS_Cag_2of6",
+        "GUID": "{38DC1B9B-B325-4A23-A215-E8DA359C0BF5}"
+       },
+       {
+        "Id": "1710388822",
+        "Name": "LMP_Cag_4of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\LMP_Cag_4of6",
+        "GUID": "{D6F9771D-BACB-4403-A709-6DBAB948F26D}"
+       },
+       {
+        "Id": "1830141040",
+        "Name": "TTI_6of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\TTI_6of6",
+        "GUID": "{409B977C-1F61-4F4D-9B7C-8BEA9EBDA3D8}"
+       },
+       {
+        "Id": "1853522097",
+        "Name": "OBS_2of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\OBS_2of6",
+        "GUID": "{2A0B34C4-0148-4EFE-B1AE-7FCE6549EBBC}"
+       },
+       {
+        "Id": "3051212308",
+        "Name": "LMP_4of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\LMP_4of6",
+        "GUID": "{20526BF9-8C01-43F9-82D4-A73F8C91B104}"
+       },
+       {
+        "Id": "3635598136",
+        "Name": "ACP_Cag_5of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\ACP_Cag_5of6",
+        "GUID": "{6FFE4173-703E-4C1A-8C25-A3EC6275AC11}"
+       },
+       {
+        "Id": "3823066771",
+        "Name": "FSP_Cag_3of6",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_MainSettings\\FSP_Cag_3of6",
+        "GUID": "{E68712DB-AE7E-46E1-BDBD-BC12DE99650C}"
+       }
+      ]
+     },
+     {
+      "Id": "3225717335",
+      "Name": "SG_UI_EcholocatorClickSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections",
+      "GUID": "{A39A6A65-8D28-43F7-9264-8AA54CA8B859}",
+      "Switches": [
+       {
+        "Id": "948093630",
+        "Name": "PitchSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections\\PitchSlider",
+        "GUID": "{9B5F361B-B4BF-46B6-AD45-EEC1663BAE04}"
+       },
+       {
+        "Id": "2955768760",
+        "Name": "VolumeSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_EcholocatorClickSelections\\VolumeSlider",
+        "GUID": "{C9AFB9A5-1DFE-4E04-8497-DCDBD3A706B6}"
+       }
+      ]
+     },
+     {
+      "Id": "3723283095",
+      "Name": "SG_UI_SimpleTutorial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_SimpleTutorial",
+      "GUID": "{855926B5-9C50-4857-B57D-353D1118CD1C}",
+      "Switches": [
+       {
+        "Id": "529726532",
+        "Name": "End",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_SimpleTutorial\\End",
+        "GUID": "{70F9944C-A291-4287-B6F5-9A2AE69EF367}"
+       },
+       {
+        "Id": "1281810935",
+        "Name": "Start",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_SimpleTutorial\\Start",
+        "GUID": "{92532D0B-5AEB-4582-B47E-5D8F92FB3775}"
+       }
+      ]
+     },
+     {
+      "Id": "3969249293",
+      "Name": "SG_UI_ObstacleSelections",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections",
+      "GUID": "{25E5C8F3-0336-453F-8EF3-0C0314DF9D06}",
+      "Switches": [
+       {
+        "Id": "106420105",
+        "Name": "LA_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\LA_NotChecked",
+        "GUID": "{49A8DD51-F743-47E4-92AC-8D70AB730518}"
+       },
+       {
+        "Id": "234490334",
+        "Name": "MR_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\MR_Checked",
+        "GUID": "{6B270BD8-0D4F-4C29-B19A-4E6775085BA6}"
+       },
+       {
+        "Id": "702030869",
+        "Name": "Carpet_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\Carpet_NotChecked",
+        "GUID": "{9BEC53D8-D6AA-4035-A96B-0FC0726E78F8}"
+       },
+       {
+        "Id": "1048812117",
+        "Name": "SS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\SS_Checked",
+        "GUID": "{3A68861D-848F-4136-A5DC-A1AFFFAF2253}"
+       },
+       {
+        "Id": "1197290428",
+        "Name": "MA_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\MA_NotChecked",
+        "GUID": "{351F7339-E698-4A34-8007-E7707B8F2990}"
+       },
+       {
+        "Id": "1564979737",
+        "Name": "VSS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\VSS_Checked",
+        "GUID": "{30BB0563-229F-4DF8-A02F-089B0BF4D7F3}"
+       },
+       {
+        "Id": "1998357529",
+        "Name": "Default_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\Default_NotChecked",
+        "GUID": "{59EF8CFE-A474-4B75-9B1C-28CF72E0021D}"
+       },
+       {
+        "Id": "2033501439",
+        "Name": "LS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\LS_NotChecked",
+        "GUID": "{A4D3176E-7765-4094-94A4-65C74B1E3D6B}"
+       },
+       {
+        "Id": "2249676422",
+        "Name": "MS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\MS_NotChecked",
+        "GUID": "{C94E3842-2677-4697-8DAE-2CB3D23ACDDF}"
+       },
+       {
+        "Id": "2366001860",
+        "Name": "LS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\LS_Checked",
+        "GUID": "{784B85D9-84D9-48CC-A984-DC85AF2FB2EE}"
+       },
+       {
+        "Id": "2618201234",
+        "Name": "Default_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\Default_Checked",
+        "GUID": "{0E108A73-794E-41D9-B1E5-51D24B5A7378}"
+       },
+       {
+        "Id": "2857123331",
+        "Name": "MS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\MS_Checked",
+        "GUID": "{32528F82-0E4C-4009-A899-64E41BB796E4}"
+       },
+       {
+        "Id": "3073952096",
+        "Name": "VSS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\VSS_NotChecked",
+        "GUID": "{713D91D1-E11D-49BB-8D9C-D18FDA306B56}"
+       },
+       {
+        "Id": "3092067370",
+        "Name": "CT_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\CT_Checked",
+        "GUID": "{2013D2DA-E0CA-48C6-AB8C-AEE38ACFDE86}"
+       },
+       {
+        "Id": "3357802622",
+        "Name": "Carpet_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\Carpet_Checked",
+        "GUID": "{472E8F63-0225-410D-8795-C00C434C7D40}"
+       },
+       {
+        "Id": "3468833026",
+        "Name": "LA_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\LA_Checked",
+        "GUID": "{0637F998-2EA4-4210-889C-BE6AAB7F2B5B}"
+       },
+       {
+        "Id": "3547507741",
+        "Name": "Concrete_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\Concrete_NotChecked",
+        "GUID": "{92A607F7-1607-471B-9E3C-419B930C9D57}"
+       },
+       {
+        "Id": "3612480955",
+        "Name": "MAS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\MAS_NotChecked",
+        "GUID": "{55F5937F-CC59-45A9-8DD3-614AE703E592}"
+       },
+       {
+        "Id": "3708900630",
+        "Name": "Concrete_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\Concrete_Checked",
+        "GUID": "{23AD7087-F0D1-43A8-877F-BFDADF65D83C}"
+       },
+       {
+        "Id": "3763739957",
+        "Name": "MA_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\MA_Checked",
+        "GUID": "{458DFC62-6ABD-4959-B21A-D58D6C6F9D82}"
+       },
+       {
+        "Id": "3883336016",
+        "Name": "MAS_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\MAS_Checked",
+        "GUID": "{8693D697-B540-437C-A488-AFE41003BBDC}"
+       },
+       {
+        "Id": "3934324673",
+        "Name": "CT_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\CT_NotChecked",
+        "GUID": "{ACAFF1D0-FB37-4583-862A-023910273D9B}"
+       },
+       {
+        "Id": "3990053621",
+        "Name": "MR_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\MR_NotChecked",
+        "GUID": "{8BDF7D38-29EC-4298-A23D-341A8FE346B8}"
+       },
+       {
+        "Id": "4001707100",
+        "Name": "SS_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_ObstacleSelections\\SS_NotChecked",
+        "GUID": "{AA485A90-432C-4EF6-8C75-DAFDFC022CB6}"
+       }
+      ]
+     },
+     {
+      "Id": "4172979502",
+      "Name": "SG_UI_FootstepsSelection",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection",
+      "GUID": "{8ED89DF9-BF28-4058-A4C7-F2905BB47412}",
+      "Switches": [
+       {
+        "Id": "616568539",
+        "Name": "Footsteps_On_NotChecked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_On_NotChecked",
+        "GUID": "{61A3138C-D87F-4217-84F8-D744CA70F2E4}"
+       },
+       {
+        "Id": "1668538352",
+        "Name": "Footsteps_On_Checked",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_On_Checked",
+        "GUID": "{9B33E078-641A-4A3F-B0E9-211C878AF502}"
+       },
+       {
+        "Id": "1792357110",
+        "Name": "Footsteps_PitchSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_PitchSlider",
+        "GUID": "{EF59F069-0F9B-4385-A6E4-DB559CDD3397}"
+       },
+       {
+        "Id": "3880767216",
+        "Name": "Footsteps_VolumeSlider",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SG_UI_FootstepsSelection\\Footsteps_VolumeSlider",
+        "GUID": "{47BC5BB8-80F6-4B91-B51D-515662C32417}"
+       }
+      ]
+     }
+    ],
+    "AcousticTextures": [
+     {
+      "Id": "504532776",
+      "Name": "Brick",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Brick",
+      "GUID": "{B086A5A9-F204-4C53-A838-BDB18B18F6D6}",
+      "Color": "8",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "12"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "18"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "23"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "35"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "513139656",
+      "Name": "Mountain",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Mountain",
+      "GUID": "{C5933731-001A-4AB4-98DD-9B033A8C8EAB}",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "0"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "0"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "0"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "0"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "841620460",
+      "Name": "Concrete",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Concrete",
+      "GUID": "{5CF81C00-2896-4AE0-AF7C-3080BDABA682}",
+      "Color": "27",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "6"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "6"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "6"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "14"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "1755085759",
+      "Name": "Wood_Deep",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Wood_Deep",
+      "GUID": "{5246478E-C5DA-4E0C-A0DE-C98D1479529A}",
+      "Color": "9",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "1"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "8"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "20"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "35"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "1873957695",
+      "Name": "Anechoic",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Anechoic",
+      "GUID": "{8B0AC232-02E2-4EDE-BEAC-FDD1A900E3ED}",
+      "Color": "13",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "1970351858",
+      "Name": "Fabric",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Fabric",
+      "GUID": "{8381D532-DB6E-4EED-A7A3-BC7B0A0B8BA8}",
+      "Color": "4",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "3"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "13"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "48"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "72"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "2058049674",
+      "Name": "Wood",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Wood",
+      "GUID": "{1FFFBC96-6FE7-489E-BA6C-7C14A71391AE}",
+      "Color": "7",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "32"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "25"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "20"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "35"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "2412606308",
+      "Name": "Carpet",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Carpet",
+      "GUID": "{34227589-DC56-4260-96C4-B9F4B669092B}",
+      "Color": "17",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "46"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "45"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "76"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "2637588553",
+      "Name": "Tile",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Tile",
+      "GUID": "{A882DAC4-132A-47B7-BA9D-B9907BA29CC0}",
+      "Color": "16",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "67"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "41"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "12"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "0"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "2928161104",
+      "Name": "Curtains",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Curtains",
+      "GUID": "{F8E69E33-5C97-4968-B508-A1535F2D66E8}",
+      "Color": "3",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "7"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "60"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "0"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "84"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "3195498748",
+      "Name": "Cork_Tiles",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Cork_Tiles",
+      "GUID": "{30D2C919-925F-4143-8906-3DBB3C4AE5E2}",
+      "Color": "19",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "14"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "30"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "73"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "3507608964",
+      "Name": "MegaAbsorb",
+      "ObjectPath": "\\Virtual Acoustics\\Default Work Unit\\MegaAbsorb",
+      "GUID": "{140FB4B5-162A-44F5-8E35-587DFE65EC4D}",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "3670307564",
+      "Name": "Drywall",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Drywall",
+      "GUID": "{68A4E3F4-4C0B-4687-A8B8-A84DB93DBC8F}",
+      "Color": "15",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "2"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "2"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "2"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "2"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "4168643977",
+      "Name": "Acoustic_Banner",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Acoustic_Banner",
+      "GUID": "{2F2D53F2-DACC-408E-8B88-98B1B52A26D6}",
+      "Color": "10",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "37"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "100"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     },
+     {
+      "Id": "4262522749",
+      "Name": "Wood_Bright",
+      "ObjectPath": "\\Virtual Acoustics\\Factory Acoustic Textures\\Textures\\Wood_Bright",
+      "GUID": "{7B85D1E5-C1A2-4E63-9A13-CEC54B641ADC}",
+      "Color": "20",
+      "Properties": [
+       {
+        "Name": "AbsorptionLow",
+        "Type": "Real32",
+        "Value": "32"
+       },
+       {
+        "Name": "AbsorptionMidLow",
+        "Type": "Real32",
+        "Value": "25"
+       },
+       {
+        "Name": "AbsorptionMidHigh",
+        "Type": "Real32",
+        "Value": "10"
+       },
+       {
+        "Name": "AbsorptionHigh",
+        "Type": "Real32",
+        "Value": "9"
+       },
+       {
+        "Name": "Scattering",
+        "Type": "Real32",
+        "Value": "0"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2351A30B-4ADD-499A-2FB1-C33F0CAE8E4D}"
+ }
+}
