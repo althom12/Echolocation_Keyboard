@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{21B376CF-BED4-4972-88BC-7B2D9EA75253}",
     "Language": "SFX",
-    "Hash": "{F9DB12AF-5765-8ED9-3414-7C720D2C24AF}",
+    "Hash": "{88D2BD2B-CA71-BB63-B95F-6464FEFC79ED}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\UI_Soundbank",
     "ShortName": "UI_Soundbank",
     "Path": "UI_Soundbank.bnk",
@@ -978,7 +978,8 @@
          "GroupType": "Switch",
          "GroupId": "2014534092",
          "Id": "4150790098",
-         "GUID": "{54468300-2CA0-4D49-BE13-37DA4BE7CB8F}"
+         "GUID": "{54468300-2CA0-4D49-BE13-37DA4BE7CB8F}",
+         "Default": "true"
         },
         "MediaRefs": [
          {
@@ -1998,6 +1999,6 @@
     ]
    }
   ],
-  "FileHash": "{43329151-C115-926A-51DE-000D895C7C47}"
+  "FileHash": "{1727CB0A-B7DD-84CA-794D-04759089F9D7}"
  }
 }
