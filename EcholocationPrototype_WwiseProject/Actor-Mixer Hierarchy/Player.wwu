@@ -13,7 +13,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="Maze_Attenuation" ID="{87D1B473-5DCE-49E8-AD19-1D3B042E8AAA}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
+							<ObjectRef Name="Click_Attentuation" ID="{12ADB7B0-9DFA-4280-9509-1492B89C5293}" WorkUnitID="{343E1672-658A-43A5-8718-ED7DD58DD70E}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EA4CC478-8D96-4E7F-AF7D-BBC36EBECA86}"/>
