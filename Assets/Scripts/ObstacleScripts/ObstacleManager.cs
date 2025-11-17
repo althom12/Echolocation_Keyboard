@@ -1,155 +1,207 @@
 using UnityEngine;
 using AK.Wwise; // Make sure this is here for your Wwise Events
 using UnityEngine.UI;
+using System.Collections.Generic; // Required for List
+
 public class ObstacleManager : MonoBehaviour
 {
-    [Header("Game Objects")]
-
+    [Header("Obstacle Layouts")]
     public GameObject[] obstacleSets;
-
-    [Header("Material Manager")]
-
-    public ObstacleMaterialManager materialManager;
-
-
-
     public AK.Wwise.Event[] activationSounds;
 
-    // --- We no longer need sizePrefabs or currentSizeIndex ---
+    [Header("Material Settings")]
+    public AcousticTexture carpetTexture;
+    public AcousticTexture ConcreteTexture;
+
+    [Header("UI References")]
+    public GameObject carpetIndicator;
+    public GameObject concreteIndicator;
+    public Toggle carpetMaterialToggle;
+    public Toggle concreteMaterialToggle;
+
+    // Internal list of active obstacle reflectors
+    private List<AkSurfaceReflector> ObstacleReflectors = new List<AkSurfaceReflector>();
+    private bool isUpdatingToggles = false; // Prevents recursive loops
 
     void Start()
     {
         // When the game starts, set the "no obstacles" state.
-        // This will also correctly tell the MaterialManager that no set is active.
         SelectLayout(-1, 0);
+
+        // --- MOVED FROM ObstacleMaterialManager ---
+        // Subscribe to material toggle events
+        if (carpetMaterialToggle != null)
+        {
+            carpetMaterialToggle.onValueChanged.AddListener(OnCarpetToggleChanged);
+        }
+
+        if (concreteMaterialToggle != null)
+        {
+            concreteMaterialToggle.onValueChanged.AddListener(OnConcreteToggleChanged);
+        }
+        // --- END MOVED SECTION ---
     }
 
-    // --- The Update() function is no longer needed, as the UI handles all input ---
-    // void Update() {... }
+    private void OnDestroy()
+    {
+        // --- MOVED FROM ObstacleMaterialManager ---
+        // Unsubscribe to prevent memory leaks
+        if (carpetMaterialToggle != null)
+        {
+            carpetMaterialToggle.onValueChanged.RemoveListener(OnCarpetToggleChanged);
+        }
 
+        if (concreteMaterialToggle != null)
+        {
+            concreteMaterialToggle.onValueChanged.RemoveListener(OnConcreteToggleChanged);
+        }
+        // --- END MOVED SECTION ---
+    }
 
     /// <summary>
-    /// Activates a layout, plays a sound, AND tells the MaterialManager
-    /// what to look at.
+    /// Activates a layout, plays a sound, AND finds its reflectors.
+    /// This is the main entry point called by ObstacleToggleHelper.
     /// </summary>
     public void SelectLayout(int obstacleIndex, int soundIndex)
     {
-        AkSoundEngine.StopAll(gameObject); 
+        AkSoundEngine.StopAll(gameObject);
 
-        // First, play the sound. Check if the index is valid for the array.
+        // 1. Play the sound
         if (soundIndex >= 0 && soundIndex < activationSounds.Length)
         {
-            // Use the AK.Wwise.Event type to post the event [5]
             activationSounds[soundIndex]?.Post(gameObject);
         }
 
-        // Then, activate the correct obstacle set.
-        ActivateObstacleSet(obstacleIndex);
-
-        // --- THIS IS THE CRITICAL NEW LOGIC ---
-        // After activating the set, tell the MaterialManager to find its reflectors.
-        if (materialManager != null)
-        {
-            GameObject newlyActiveSet = null;
-
-            // Check if the index is valid for our obstacleSets array
-            if (obstacleIndex >= 0 && obstacleIndex < obstacleSets.Length)
-            {
-                newlyActiveSet = obstacleSets[obstacleIndex];
-            }
-
-            // Pass the active set (or null if "None") to the material manager
-            materialManager.FindReflectorsInSet(newlyActiveSet);
-        }
-    }
-
-    /// <summary>
-    /// This function is now just for activating/deactivating the GameObjects.
-    /// </summary>
-    public void ActivateObstacleSet(int indexToActivate)
-    {
+        // 2. Activate the correct obstacle set
+        GameObject newlyActiveSet = null;
         for (int i = 0; i < obstacleSets.Length; i++)
         {
-            bool shouldBeActive = (i == indexToActivate);
+            bool shouldBeActive = (i == obstacleIndex);
             if (obstacleSets[i] != null)
             {
                 obstacleSets[i].SetActive(shouldBeActive);
+                if (shouldBeActive)
+                {
+                    newlyActiveSet = obstacleSets[i];
+                }
+            }
+        }
+
+        // 3. Find reflectors in the new set
+        // (This logic was previously in ObstacleMaterialManager)
+        FindReflectorsInSet(newlyActiveSet);
+    }
+
+    // -------------------------------------------------------------------
+    // --- MATERIAL LOGIC (Moved from ObstacleMaterialManager) ---
+    // -------------------------------------------------------------------
+
+    /// <summary>
+    /// Event handler for when the user clicks the Carpet toggle.
+    /// </summary>
+    private void OnCarpetToggleChanged(bool isOn)
+    {
+        if (isUpdatingToggles) return; // Prevent recursion
+        if (isOn)
+        {
+            SetAllMaterialsToCarpet();
+        }
+    }
+
+    /// <summary>
+    /// Event handler for when the user clicks the Concrete toggle.
+    /// </summary>
+    private void OnConcreteToggleChanged(bool isOn)
+    {
+        if (isUpdatingToggles) return; // Prevent recursion
+        if (isOn)
+        {
+            SetAllMaterialsToConcrete();
+        }
+    }
+
+    /// <summary>
+    /// Public function to set material to Carpet.
+    /// Called by UI events (like the toggle itself) or other scripts.
+    /// </summary>
+    public void SetAllMaterialsToCarpet()
+    {
+        Debug.Log("Setting " + ObstacleReflectors.Count + " obstacles to CARPET");
+        UpdateMaterials(carpetTexture);
+        SetIndicatorActive(true, false); // Carpet is ON, Concrete is OFF
+    }
+
+    /// <summary>
+    /// Public function to set material to Concrete.
+    /// </summary>
+    public void SetAllMaterialsToConcrete()
+    {
+        Debug.Log("Setting " + ObstacleReflectors.Count + " obstacles to CONCRETE");
+        UpdateMaterials(ConcreteTexture);
+        SetIndicatorActive(false, true); // Carpet is OFF, Concrete is ON
+    }
+
+    /// <summary>
+    /// Manages the visibility of the visual indicators and toggle states.
+    /// </summary>
+    public void SetIndicatorActive(bool carpetActive, bool concreteActive)
+    {
+        // Prevent recursion while updating toggles
+        isUpdatingToggles = true;
+
+        if (carpetIndicator != null)
+            carpetIndicator.SetActive(carpetActive);
+
+        if (concreteIndicator != null)
+            concreteIndicator.SetActive(concreteActive);
+
+        if (carpetMaterialToggle != null && carpetMaterialToggle.isOn != carpetActive)
+            carpetMaterialToggle.isOn = carpetActive;
+
+        if (concreteMaterialToggle != null && concreteMaterialToggle.isOn != concreteActive)
+            concreteMaterialToggle.isOn = concreteActive;
+
+        isUpdatingToggles = false;
+    }
+
+    /// <summary>
+    /// Internal logic to apply the texture to all active reflectors.
+    /// </summary>
+    private void UpdateMaterials(AcousticTexture newTexture)
+    {
+        if (newTexture == null)
+        {
+            Debug.LogError("The Acoustic Texture is not assigned in the Inspector!");
+            return;
+        }
+
+        // CORRECT - Use the AcousticTexture property directly
+        foreach (AkSurfaceReflector reflector in ObstacleReflectors)
+        {
+            if (reflector != null)
+            {
+                reflector.AcousticTexture = newTexture; // 
             }
         }
     }
 
-    // --- We no longer need the 'CycleObstacleSize()' function ---
-
-
-    // --- THESE FUNCTIONS ARE NOW DECOUPLED ---
-    // They ONLY change the material on the *currently active* set.
-
     /// <summary>
-    /// This is the function called by the UI Toggle for CARPET.
-    /// It must take a boolean, which represents the new state of the toggle.
+    /// Clears the old list and finds all AkSurfaceReflectors
+    /// in the children of the newly activated obstacle set.
     /// </summary>
-    public void HandleCarpetToggle(bool isOn)
+    private void FindReflectorsInSet(GameObject obstacleSetParent)
     {
-        // CRITICAL GUARD: We only care when the toggle is turned ON.
-        if (!isOn)
+        ObstacleReflectors.Clear();
+
+        if (obstacleSetParent == null)
         {
-            // When a Preset calls ClearCustomizations, this function runs with isOn=false.
-            // We immediately RETURN to prevent the toggle from re-asserting its selection,
-            // which is what was causing the checkmark to stay.
+            // If selecting "None", clear the indicators
+            SetIndicatorActive(false, false);
             return;
         }
 
-        if (materialManager != null)
-        {
-            // 1. Set the material
-            materialManager.SetAllMaterialsToCarpet();
-
-            // 2. Set indicators/sync toggles.
-            // We call this function on the material manager (which handles indicator logic)
-            materialManager.SetIndicatorActive(true, false);
-        }
-    }
-
-    /// <summary>
-    /// This is the function called by the UI Toggle for CONCRETE.
-    /// </summary>
-    public void HandleConcreteToggle(bool isOn)
-    {
-        // CRITICAL GUARD: We only care when the toggle is turned ON.
-        if (!isOn)
-        {
-            return;
-        }
-
-        if (materialManager != null)
-        {
-            // 1. Set the material
-            materialManager.SetAllMaterialsToConcrete();
-
-            // 2. Set indicators/sync toggles.
-            materialManager.SetIndicatorActive(false, true);
-        }
-    }
-
-    /// <summary>
-    /// Clears all visual material indicators and resets the material toggles.
-    /// This is called when a non-custom preset (Index 0-4) is selected.
-    /// </summary>
-    public void ClearCustomizations()
-    {
-        if (materialManager != null)
-        {
-            // 1. Clear Material Visuals
-            materialManager.SetIndicatorActive(false, false);
-
-            // 2. Clear Material Toggles (We need a way to reference them)
-            // Since Toggles don't clear themselves easily from a separate script,
-            // we need to access them via the ObstacleMaterialManager.
-            // We will implement a function for this next.
-        }
-
-        // You may also want to set the actual AkAcousticTexture to 'None' or 'Default' 
-        // here if that's an option in your Wwise project, but usually, the presets 
-        // handle their own materials.
+        // Find all reflectors in the new set
+        ObstacleReflectors.AddRange(obstacleSetParent.GetComponentsInChildren<AkSurfaceReflector>(true));
+        Debug.Log("ObstacleManager found " + ObstacleReflectors.Count + " reflectors in " + obstacleSetParent.name);
     }
 }

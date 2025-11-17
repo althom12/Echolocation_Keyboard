@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\TutorialScripts\TutorialPropertiesSubwindow.cs" />
     <Compile Include="Assets\Scripts\LandmarkScripts\LandmarkVolumeSlider.cs" />
     <Compile Include="Assets\Scripts\ObstacleScripts\ObstacleManager.cs" />
+    <Compile Include="Assets\Scripts\CLAUDE\WwiseSequentialEventPlayer.cs" />
     <Compile Include="Assets\Scripts\TutorialScripts\EndTutorialButton.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\Scripts\FootstepsToggleController.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\CLAUDE\WwiseRtpcSliderV2.cs" />
     <Compile Include="Assets\Scripts\TutorialScripts\TutorialManager.cs" />
+    <Compile Include="Assets\Scripts\CLAUDE\WwiseEventPlayer.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\TutorialScripts\StartTutorialButton.cs" />
@@ -84,12 +86,13 @@
     <Compile Include="Assets\Scripts\UI\CustomUISubmitHandler.cs" />
     <Compile Include="Assets\Inputs\CustomInputActions.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\CLAUDE\WwiseUIElementV2.cs" />
-    <Compile Include="Assets\Scripts\TutorialScripts\TutorialAudioController.cs" />
+    <Compile Include="Assets\Scripts\CLAUDE\WwiseComponentToggler.cs" />
     <Compile Include="Assets\Scripts\ObstacleScripts\ObstacleToggleHelper.cs" />
     <Compile Include="Assets\Scripts\ObstacleScripts\ObstacleMaterialManager.cs" />
     <Compile Include="Assets\Scripts\LandmarkScripts\LandmarksManager.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\Scripts\CLAUDE\WwiseStateManager.cs" />
     <Compile Include="Assets\Scripts\UI\SubWindowInputHandler.cs" />
     <Compile Include="Assets\Scripts\CompassController.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />

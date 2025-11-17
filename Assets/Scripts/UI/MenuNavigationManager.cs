@@ -1,459 +1,286 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
-using System.Collections;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
+using System.Collections;
 
 public class MenuNavigationManager : MonoBehaviour
 {
-    // Assign in Inspector
-    public GameObject mainSettingsPanel;
-    public CustomUISubmitHandler customTabSubmitHandler;
+    [Header("Main Menu")]
+    public GameObject mainMenuPanel;
+    public GameObject firstMainMenuButton;
 
-    // Assign ALL sub-panels in the Inspector
-    public GameObject[] subWindowPanels;
+    [Header("Subwindow Panels")]
+    public GameObject tutorialPropertiesPanel;
+    public GameObject obstaclesPanel;
+    public GameObject landmarksPanel;
 
-    [Header("Main Menu Audio")]
-    public AK.Wwise.Event mainMenuOpenEvent;
-    public AK.Wwise.Event mainMenuCloseEvent;
-    public AK.Wwise.Event stopUISelectionEvent;
+    [Header("First Selectables in Subwindows")]
+    public GameObject tutorialFirstSelectable;
+    public GameObject obstaclesFirstSelectable;
+    public GameObject landmarksFirstSelectable;
 
-    [Header("Menu Events")]
+    [Header("Audio")]
+    public AK.Wwise.Event menuOpenEvent;
+    public AK.Wwise.Event menuCloseEvent;
+
+    [Header("Subwindow Controllers")]
+    public BaseSubwindow tutorialSubwindow;
+    public BaseSubwindow obstaclesSubwindow;
+    public BaseSubwindow landmarksSubwindow;
+
+    [Header("Input Handler")]
+    public SubWindowInputHandler subWindowInputHandler;
+
     public UnityEvent OnMenuFullyClosed;
 
-    [Header("Tutorial Audio Settings")]
-    [Tooltip("Should tutorial audio pause when menus open?")]
-    public bool pauseTutorialWhenMenuOpens = true;
-
     private CustomInputActions _input;
-    private GameObject _lastSelectedMainSettingsButton;
-    private GameObject _activeSubWindow;
-    private uint mainMenuOpenEventPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
+    private GameObject _currentActiveSubwindow;
+    private bool _isMenuOpen = false;
+    private bool _isClosingMenu = false;
 
-    // Track if we paused tutorial audio
-    private bool didPauseTutorial = false;
+    private GameObject _lastSelectedMainMenuButton;
 
     private void Awake()
     {
-        Debug.Log("[MenuNavManager] Awake() called");
-
-        // Initialize the Input Actions class
         _input = new CustomInputActions();
+    }
 
-        // Initialize all sub-window handlers
-        foreach (GameObject panel in subWindowPanels)
-        {
-            SubWindowInputHandler handler = panel.GetComponent<SubWindowInputHandler>();
-            if (handler != null)
-            {
-                handler.Initialize(_input, panel);
-                handler.enabled = false;
-            }
-        }
-
-        // Initialize the event
-        if (OnMenuFullyClosed == null)
-            OnMenuFullyClosed = new UnityEvent();
-
-        Debug.Log($"[MenuNavManager] pauseTutorialWhenMenuOpens setting: {pauseTutorialWhenMenuOpens}");
+    private void Start()
+    {
+        mainMenuPanel.SetActive(false);
+        tutorialPropertiesPanel.SetActive(false);
+        obstaclesPanel.SetActive(false);
+        landmarksPanel.SetActive(false);
     }
 
     private void OnEnable()
     {
+        _input.UI.ToggleSettingsMenu.performed += OnToggleMenuPerformed;
         _input.UI.Enable();
-        _input.Player.Enable();
-        _input.Player.ToggleSettingsMenu.performed += ToggleSettingsPanel;
-        _input.UI.ToggleSettingsMenu.performed += ToggleSettingsPanel;
-
-        if (customTabSubmitHandler != null)
-        {
-            customTabSubmitHandler.enabled = true;
-        }
     }
 
     private void OnDisable()
     {
+        _input.UI.ToggleSettingsMenu.performed -= OnToggleMenuPerformed;
         _input.UI.Disable();
-        _input.Player.Disable();
-
-        if (_input != null)
-        {
-            _input.Player.ToggleSettingsMenu.performed -= ToggleSettingsPanel;
-            _input.UI.ToggleSettingsMenu.performed -= ToggleSettingsPanel;
-        }
-
-        if (_activeSubWindow != null)
-        {
-            Time.timeScale = 1f;
-        }
-
-        if (customTabSubmitHandler != null)
-        {
-            customTabSubmitHandler.enabled = false;
-        }
     }
 
-    private void ToggleSettingsPanel(InputAction.CallbackContext context)
+    private void OnToggleMenuPerformed(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
-        Debug.Log($"[MenuNavManager] ToggleSettingsPanel CALLED at Time: {Time.unscaledTime}");
+        if (_isClosingMenu) return;
 
-        if (mainSettingsPanel.activeSelf | _activeSubWindow != null)
+        if (!_isMenuOpen)
         {
-            Debug.Log("[MenuNavManager] Menu is open, starting CloseMenuWithAudio...");
-            StartCoroutine(CloseMenuWithAudio());
+            OpenMainMenu();
         }
         else
         {
-            Debug.Log("[MenuNavManager] Menu is closed, calling OpenMainMenuWithAudio...");
-            OpenMainMenuWithAudio();
+            CloseEntireMenu();
         }
     }
 
-    private IEnumerator CloseMenuWithAudio()
+    public void OpenMainMenu()
     {
-        Debug.Log($"[MenuNavManager] ??? CloseMenuWithAudio Coroutine STARTED ???");
+        if (_isMenuOpen) return;
 
-        // --- STEP 1: STOP ALL EXISTING AUDIO ---
-        AudioManager audioManager = AudioManager.Instance;
-        if (audioManager != null)
-        {
-            AkSoundEngine.StopAll(audioManager.gameObject);
-            Debug.Log($"[MenuNavManager] Stopped all audio on AudioManager");
-        }
-
-        if (mainMenuOpenEventPlayingID != AkSoundEngine.AK_INVALID_PLAYING_ID)
-        {
-            AkSoundEngine.StopPlayingID(mainMenuOpenEventPlayingID);
-            mainMenuOpenEventPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
-        }
-
-        if (_activeSubWindow != null)
-        {
-            BaseSubwindow subwindow = _activeSubWindow.GetComponent<BaseSubwindow>();
-            if (subwindow != null)
-            {
-                subwindow.StopWindowAudio();
-            }
-        }
-
-        // --- STEP 2: CRITICAL DECOUPLING ---
-        yield return new WaitForEndOfFrame();
-        Debug.Log($"[MenuNavManager] EndOfFrame reached. Posting close event at Time: {Time.unscaledTime}");
-
-        // --- STEP 3: POST THE CLOSE EVENT ---
-        if (mainMenuCloseEvent != null)
-        {
-            mainMenuCloseEvent.Post(this.gameObject);
-            Debug.Log($"[MenuNavManager] Posted main menu close event");
-        }
-
-        // --- STEP 4: DEACTIVATE PANELS & CLEAN UP (IMMEDIATE) ---
-        mainSettingsPanel.SetActive(false);
-        if (_activeSubWindow != null)
-        {
-            SubWindowInputHandler handler = _activeSubWindow.GetComponent<SubWindowInputHandler>();
-            if (handler != null) handler.enabled = false;
-
-            _activeSubWindow.SetActive(false);
-            _activeSubWindow = null;
-        }
-
-        if (customTabSubmitHandler != null) customTabSubmitHandler.enabled = false;
-        _input.Player.Enable();
-        EventSystem.current.SetSelectedGameObject(null);
-
-        if (audioManager != null)
-        {
-            audioManager.ClearPendingSelectionAudio();
-            audioManager.SetAudioState(UIAudioState.Idle);
-        }
-
-        // --- STEP 5: WAIT FOR SOUND TO PLAY BEFORE UNPAUSING ---
-        yield return new WaitForSecondsRealtime(0.5f);
-        Debug.Log($"[MenuNavManager] Unscaled wait finished. Resuming game time at Time: {Time.unscaledTime}");
-
-        // --- STEP 6: UNPAUSE THE GAME (LAST) ---
-        Time.timeScale = 1f;
-        Debug.Log($"[MenuNavManager] Time.timeScale set to 1");
-
-        // --- STEP 6.5: RESUME TUTORIAL AUDIO IF WE PAUSED IT ---
-        Debug.Log($"[MenuNavManager] Checking tutorial audio resume...");
-        Debug.Log($"[MenuNavManager]   didPauseTutorial: {didPauseTutorial}");
-        Debug.Log($"[MenuNavManager]   TutorialAudioController.Instance exists: {TutorialAudioController.Instance != null}");
-
-        if (didPauseTutorial && TutorialAudioController.Instance != null)
-        {
-            Debug.Log("[MenuNavManager] >>> Calling TutorialAudioController.ForceResume()");
-            TutorialAudioController.Instance.ForceResume();
-            didPauseTutorial = false;
-            Debug.Log("[MenuNavManager] >>> Tutorial audio resume complete");
-        }
-        else
-        {
-            Debug.Log("[MenuNavManager] >>> Not resuming tutorial audio (either we didn't pause it, or controller doesn't exist)");
-        }
-
-        // --- STEP 7: INVOKE EVENT ---
-        Debug.Log("[MenuNavManager] Menu fully closed, invoking OnMenuFullyClosed event");
-        OnMenuFullyClosed?.Invoke();
-
-        Debug.Log($"[MenuNavManager] ??? CloseMenuWithAudio Coroutine COMPLETE ???");
-    }
-
-    private void OpenMainMenuWithAudio()
-    {
-        Debug.Log($"[MenuNavManager] ??? OpenMainMenuWithAudio CALLED ???");
-
-        // --- PAUSE TUTORIAL AUDIO WHEN MENU OPENS ---
-        Debug.Log($"[MenuNavManager] Checking if should pause tutorial audio...");
-        Debug.Log($"[MenuNavManager]   pauseTutorialWhenMenuOpens: {pauseTutorialWhenMenuOpens}");
-        Debug.Log($"[MenuNavManager]   TutorialAudioController.Instance exists: {TutorialAudioController.Instance != null}");
-
-        if (pauseTutorialWhenMenuOpens && TutorialAudioController.Instance != null)
-        {
-            bool isPaused = TutorialAudioController.Instance.IsPaused();
-            Debug.Log($"[MenuNavManager]   Tutorial is currently paused: {isPaused}");
-
-            if (!isPaused)
-            {
-                Debug.Log("[MenuNavManager] >>> Calling TutorialAudioController.ForcePause()");
-                TutorialAudioController.Instance.ForcePause();
-                didPauseTutorial = true;
-                Debug.Log($"[MenuNavManager] >>> Tutorial audio paused, didPauseTutorial set to: {didPauseTutorial}");
-            }
-            else
-            {
-                Debug.Log("[MenuNavManager] >>> Tutorial already paused, not setting didPauseTutorial flag");
-            }
-        }
-        else
-        {
-            Debug.Log("[MenuNavManager] >>> Not pausing tutorial audio (setting disabled or controller doesn't exist)");
-        }
-
-        AudioManager audioManager = AudioManager.Instance;
-        Selectable firstElement = mainSettingsPanel.GetComponentInChildren<Selectable>();
-
-        mainSettingsPanel.SetActive(true);
-        Debug.Log("[MenuNavManager] Main settings panel activated");
-
-        if (customTabSubmitHandler != null)
-            customTabSubmitHandler.enabled = true;
+        Debug.Log("[MenuNavigationManager] Opening main menu");
 
         Time.timeScale = 0f;
-        Debug.Log("[MenuNavManager] Time.timeScale set to 0");
+        _isMenuOpen = true;
 
-        _input.Player.Disable();
+        mainMenuPanel.SetActive(true);
 
-        if (audioManager != null && mainMenuOpenEvent != null && firstElement != null)
+        if (firstMainMenuButton != null)
         {
-            Debug.Log($"[MenuNavManager] All references valid, starting audio orchestration");
+            EventSystem.current.SetSelectedGameObject(firstMainMenuButton);
+        }
 
-            audioManager.ClearPendingSelectionAudio();
-            audioManager.SetAudioState(UIAudioState.Window_Opening);
+        if (menuOpenEvent != null && menuOpenEvent.IsValid())
+        {
+            menuOpenEvent.Post(gameObject);
+        }
 
-            uint flags = (uint)AkCallbackType.AK_EndOfEvent;
-            mainMenuOpenEventPlayingID = mainMenuOpenEvent.Post(
-                this.gameObject,
-                flags,
-                OnMainMenuAudioFinished,
-                null
-            );
-
-            Debug.Log($"[MenuNavManager] Posted mainMenuOpenEvent, PlayingID: {mainMenuOpenEventPlayingID}");
-
-            EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
-            Debug.Log($"[MenuNavManager] Selected first element: {firstElement.name}");
-
-            // Check for V2 component first (new standard)
-            WwiseUIElementV2 buttonScriptV2 = firstElement.GetComponent<WwiseUIElementV2>();
-            if (buttonScriptV2 != null)
+        // --- MODIFIED: Tutorial audio pause through new architecture ---
+        // Check if tutorial is active before pausing
+        if (TutorialManager.Instance != null && TutorialManager.Instance.IsTutorialActive())
+        {
+            // Pause tutorial audio through the WwiseStateManager
+            if (TutorialManager.Instance.pauseStateManager != null)
             {
-                Debug.Log($"[MenuNavManager] Manually caching button audio (WwiseUIElementV2)");
-                ManuallyTriggerButtonAudioV2(buttonScriptV2, audioManager);
+                TutorialManager.Instance.pauseStateManager.SetToSecondaryState(); // Paused
+                Debug.Log("[MenuNavigationManager] Tutorial audio paused (menu opened)");
             }
-            // Fallback to legacy component
-            
+        }
+        // --- END MODIFIED SECTION ---
+
+        AudioManager.Instance?.SetReturningToMainMenu(false);
+    }
+
+
+
+    /// <summary>
+    /// Opens a subwindow by direct GameObject reference.
+    /// This is cleaner for Inspector-based button configuration.
+    /// </summary>
+    /// <summary>
+    /// Opens a subwindow by direct GameObject reference.
+    /// This is cleaner for Inspector-based button configuration.
+    /// </summary>
+    public void OpenSubwindowByGameObject(GameObject subwindowPanel)
+    {
+        if (subwindowPanel == null)
+        {
+            Debug.LogError("[MenuNavigationManager] Subwindow panel is null!");
+            return;
+        }
+
+        Debug.Log($"[MenuNavigationManager] OpenSubwindowByGameObject called: {subwindowPanel.name}");
+
+        BaseSubwindow targetSubwindow = subwindowPanel.GetComponent<BaseSubwindow>();
+        if (targetSubwindow == null)
+        {
+            Debug.LogError($"[MenuNavigationManager] Panel '{subwindowPanel.name}' does not have a BaseSubwindow component!");
+            return;
+        }
+
+        // CRITICAL FIX: Remember which button was selected
+        _lastSelectedMainMenuButton = EventSystem.current.currentSelectedGameObject;
+        Debug.Log($"[MenuNavigationManager] Remembering last selected button: {(_lastSelectedMainMenuButton != null ? _lastSelectedMainMenuButton.name : "NULL")}");
+
+        mainMenuPanel.SetActive(false);
+        _currentActiveSubwindow = subwindowPanel;
+
+        if (subWindowInputHandler != null)
+        {
+            Debug.Log($"[MenuNavigationManager] Initializing SubWindowInputHandler for {subwindowPanel.name}");
+            subWindowInputHandler.Initialize(_input, subwindowPanel, targetSubwindow);
         }
         else
         {
-            Debug.LogWarning($"[MenuNavManager] Missing references for audio orchestration:");
-            Debug.LogWarning($"  - AudioManager: {(audioManager != null ? "OK" : "NULL")}");
-            Debug.LogWarning($"  - mainMenuOpenEvent: {(mainMenuOpenEvent != null ? "OK" : "NULL")}");
-            Debug.LogWarning($"  - firstElement: {(firstElement != null ? "OK" : "NULL")}");
-
-            if (firstElement != null)
-            {
-                EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
-            }
+            Debug.LogError("[MenuNavigationManager] SubWindowInputHandler is NULL!");
         }
 
-        Debug.Log($"[MenuNavManager] ??? OpenMainMenuWithAudio COMPLETE ???");
-    }
-
-    
-
-    private void ManuallyTriggerButtonAudioV2(WwiseUIElementV2 button, AudioManager audioManager)
-    {
-        // Determine the correct switch based on button configuration
-        AK.Wwise.Switch switchToUse = button.normalSwitch; // Default to normal (not returning)
-
-        // If context-based mode is enabled, check the return flag
-        if (button.useReturnContext && audioManager != null)
-        {
-            bool isReturning = audioManager.IsReturningToMainMenu();
-            switchToUse = isReturning ? button.returnContextSwitch : button.normalSwitch;
-        }
-
-        AudioEventChannelSO.WwiseEventPacket packet = new AudioEventChannelSO.WwiseEventPacket
-        {
-            WwiseEvent = button.selectionEvent,
-            WwiseSwitch = switchToUse,
-            Emitter = button.gameObject
-        };
-
-        if (button.audioChannel != null)
-        {
-            button.audioChannel.RaiseEvent(packet);
-        }
-    }
-
-    private void OnMainMenuAudioFinished(object in_cookie, AkCallbackType in_type, object in_info)
-    {
-        Debug.Log($"[MenuNavManager] OnMainMenuAudioFinished callback received, type: {in_type}");
-
-        if (in_type == AkCallbackType.AK_EndOfEvent)
-        {
-            Debug.Log($"[MenuNavManager] Window audio finished, playing pending selection audio");
-
-            AudioManager audioManager = AudioManager.Instance;
-            if (audioManager != null)
-            {
-                audioManager.PlayPendingSelectionAudio();
-                audioManager.SetAudioState(UIAudioState.Idle);
-            }
-        }
-    }
-
-    public void OpenSubWindow(GameObject subWindowToShow)
-    {
-        Debug.Log($"OpenSubWindow STARTED for {subWindowToShow.name} at Time: {Time.unscaledTime}");
-
-        _lastSelectedMainSettingsButton = EventSystem.current.currentSelectedGameObject;
-
-        if (mainMenuOpenEventPlayingID != AkSoundEngine.AK_INVALID_PLAYING_ID)
-        {
-            AkSoundEngine.StopPlayingID(mainMenuOpenEventPlayingID);
-            mainMenuOpenEventPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
-            Debug.Log($"---> Stopped main menu opening event");
-        }
-
-        AudioManager audioManager = AudioManager.Instance;
-        if (audioManager != null)
-        {
-            AkSoundEngine.StopAll(audioManager.gameObject);
-            audioManager.ClearPendingSelectionAudio();
-            audioManager.SetAudioState(UIAudioState.Idle);
-            Debug.Log($"---> Cleared main menu audio state");
-        }
-
-        mainSettingsPanel.SetActive(false);
-        _activeSubWindow = subWindowToShow;
-
-        Time.timeScale = 0f;
-        _input.Player.Disable();
-
-        if (customTabSubmitHandler != null)
-        {
-            Debug.Log($"---> Disabling customTabSubmitHandler component at Time: {Time.unscaledTime}");
-            customTabSubmitHandler.enabled = false;
-        }
-
-        BaseSubwindow subwindow = subWindowToShow.GetComponent<BaseSubwindow>();
-        if (subwindow != null)
-        {
-            Debug.Log($"---> Found BaseSubwindow, calling OpenWindow()");
-            subwindow.OpenWindow();
-        }
-        else
-        {
-            Debug.LogWarning($"---> No BaseSubwindow found on {subWindowToShow.name}, using fallback");
-            subWindowToShow.SetActive(true);
-            Selectable firstElement = subWindowToShow.GetComponentInChildren<Selectable>();
-            if (firstElement != null)
-            {
-                EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
-            }
-        }
-
-        SubWindowInputHandler handler = subWindowToShow.GetComponent<SubWindowInputHandler>();
-        if (handler != null)
-        {
-            Debug.Log($"---> Starting Coroutine EnableSubHandlerAfterFrame at Time: {Time.unscaledTime}");
-            handler.enabled = false;
-            StartCoroutine(EnableSubHandlerAfterFrame(handler));
-        }
-
-        Debug.Log($"OpenSubWindow FINISHED at Time: {Time.unscaledTime}");
-    }
-
-    private IEnumerator EnableSubHandlerAfterFrame(SubWindowInputHandler handlerToEnable)
-    {
-        Debug.Log($"---> Coroutine WAITING for EndOfFrame at Time: {Time.unscaledTime}");
-        yield return new WaitForEndOfFrame();
-        Debug.Log($"---> Coroutine RESUMED after EndOfFrame at Time: {Time.unscaledTime}");
-        if (handlerToEnable != null)
-        {
-            Debug.Log($"---> Enabling handler {handlerToEnable.gameObject.name} at Time: {Time.unscaledTime}");
-            handlerToEnable.enabled = true;
-        }
+        targetSubwindow.OpenWindow();
     }
 
     public void CloseActiveSubWindow()
     {
-        Debug.Log($"CloseActiveSubWindow CALLED at Time: {Time.unscaledTime}");
+        if (_currentActiveSubwindow == null)
+        {
+            Debug.LogWarning("[MenuNavigationManager] No active subwindow to close");
+            return;
+        }
 
-        if (_activeSubWindow == null) return;
+        Debug.Log("[MenuNavigationManager] Closing active subwindow");
 
-        SubWindowInputHandler handler = _activeSubWindow.GetComponent<SubWindowInputHandler>();
-        if (handler != null) handler.enabled = false;
-
-        BaseSubwindow subwindow = _activeSubWindow.GetComponent<BaseSubwindow>();
+        // Stop window audio
+        BaseSubwindow subwindow = _currentActiveSubwindow.GetComponent<BaseSubwindow>();
         if (subwindow != null)
         {
             subwindow.StopWindowAudio();
-            Debug.Log($"---> Stopped subwindow audio callbacks");
         }
 
-        if (customTabSubmitHandler != null)
+        _currentActiveSubwindow.SetActive(false);
+        _currentActiveSubwindow = null;
+
+        mainMenuPanel.SetActive(true);
+
+        AudioManager.Instance?.SetReturningToMainMenu(true);
+
+        // CRITICAL FIX: Select the button we came from, or fall back to first button
+        if (_lastSelectedMainMenuButton != null)
         {
-            Debug.Log($"---> Re-enabling customTabSubmitHandler component at Time: {Time.unscaledTime}");
-            customTabSubmitHandler.enabled = true;
+            Debug.Log($"[MenuNavigationManager] Returning to last selected button: {_lastSelectedMainMenuButton.name}");
+            EventSystem.current.SetSelectedGameObject(_lastSelectedMainMenuButton);
         }
-
-        _activeSubWindow.SetActive(false);
-        mainSettingsPanel.SetActive(true);
-        _activeSubWindow = null;
-
-        AudioManager audioManager = AudioManager.Instance;
-        if (audioManager != null)
+        else if (firstMainMenuButton != null)
         {
-            audioManager.ClearPendingSelectionAudio();
-            audioManager.SetAudioState(UIAudioState.Idle);
-            audioManager.SetReturningToMainMenu(true);
-            Debug.Log($"---> Set returning flag, state reset to Idle");
-        }
-
-        if (_lastSelectedMainSettingsButton != null)
-        {
-            EventSystem.current.SetSelectedGameObject(_lastSelectedMainSettingsButton);
+            Debug.Log("[MenuNavigationManager] No last selected button, using first main menu button");
+            EventSystem.current.SetSelectedGameObject(firstMainMenuButton);
         }
     }
 
     public void CloseEntireMenu()
     {
-        Debug.Log("CloseEntireMenu called - starting CloseMenuWithAudio coroutine...");
-        StartCoroutine(CloseMenuWithAudio());
+        if (_isClosingMenu) return;
+        _isClosingMenu = true;
+
+        Debug.Log("[MenuNavigationManager] CloseEntireMenu called");
+
+        if (_currentActiveSubwindow != null)
+        {
+            BaseSubwindow subwindow = _currentActiveSubwindow.GetComponent<BaseSubwindow>();
+            if (subwindow != null)
+            {
+                subwindow.StopWindowAudio();
+            }
+            _currentActiveSubwindow.SetActive(false);
+            _currentActiveSubwindow = null;
+        }
+
+        mainMenuPanel.SetActive(false);
+
+        // --- MODIFIED: Tutorial audio resume through new architecture ---
+        // Check if tutorial is active before resuming
+        if (TutorialManager.Instance != null && TutorialManager.Instance.IsTutorialActive())
+        {
+            // Resume tutorial audio through the WwiseStateManager
+            if (TutorialManager.Instance.pauseStateManager != null)
+            {
+                TutorialManager.Instance.pauseStateManager.SetToPrimaryState(); // Playing
+                Debug.Log("[MenuNavigationManager] Tutorial audio resumed (menu closed)");
+            }
+        }
+        // --- END MODIFIED SECTION ---
+
+        AudioManager.Instance?.SetReturningToMainMenu(false);
+
+        StartCoroutine(PlayCloseAudioAndRestoreTime());
+    }
+
+    private IEnumerator PlayCloseAudioAndRestoreTime()
+    {
+        if (menuCloseEvent != null && menuCloseEvent.IsValid())
+        {
+            uint flags = (uint)AkCallbackType.AK_EndOfEvent;
+            menuCloseEvent.Post(
+                gameObject,
+                flags,
+                OnMenuCloseAudioFinished,
+                null
+            );
+
+            yield return new WaitForSecondsRealtime(0.5f);
+        }
+
+        FinalizeMenuClose();
+    }
+
+    private void OnMenuCloseAudioFinished(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        if (in_type == AkCallbackType.AK_EndOfEvent)
+        {
+            if (gameObject.activeInHierarchy)
+            {
+                StartCoroutine(FinalizeAfterFrame());
+            }
+        }
+    }
+
+    private IEnumerator FinalizeAfterFrame()
+    {
+        yield return null;
+        FinalizeMenuClose();
+    }
+
+    private void FinalizeMenuClose()
+    {
+        Time.timeScale = 1f;
+        _isMenuOpen = false;
+        _isClosingMenu = false;
+
+        OnMenuFullyClosed?.Invoke();
+
+        Debug.Log("[MenuNavigationManager] Menu fully closed, Time.timeScale = 1");
     }
 }

@@ -13,34 +13,28 @@ public class TutorialButtonHandler : MonoBehaviour, ISubmitHandler
 
     public void OnSubmit(BaseEventData eventData)
     {
-        Debug.Log($"==========================================");
         Debug.Log($"{buttonType} BUTTON SUBMITTED!");
-        Debug.Log($"==========================================");
 
         TutorialManager tutorialManager = TutorialManager.Instance;
+        MenuNavigationManager navManager = FindObjectOfType<MenuNavigationManager>();
 
-        if (tutorialManager == null)
+        if (tutorialManager == null || navManager == null)
         {
-            Debug.LogError("TutorialManager.Instance is NULL!");
+            Debug.LogError("TutorialManager or MenuNavigationManager is NULL!");
             return;
         }
 
+        // Use the event pattern for proper timing
         if (buttonType == ButtonType.StartTutorial)
         {
-            Debug.Log("Calling StartTutorial()...");
-            tutorialManager.StartTutorial();
+            navManager.OnMenuFullyClosed.AddListener(tutorialManager.StartTutorial);
         }
         else
         {
-            Debug.Log("Calling EndTutorial()...");
-            tutorialManager.EndTutorial();
+            navManager.OnMenuFullyClosed.AddListener(tutorialManager.EndTutorial);
         }
 
-        // Close the subwindow
-        MenuNavigationManager navManager = FindObjectOfType<MenuNavigationManager>();
-        if (navManager != null)
-        {
-            navManager.CloseActiveSubWindow();
-        }
+        // Close the entire menu (not just subwindow)
+        navManager.CloseEntireMenu();
     }
 }

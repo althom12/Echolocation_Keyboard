@@ -1,8 +1,29 @@
 using UnityEngine;
 using StarterAssets;
 
+/// <summary>
+/// Tutorial Manager - Refactored for Logic/Audio Separation
+/// 
+/// RESPONSIBILITIES (Logic Only):
+/// - Tutorial state machine progression
+/// - Player spawning and teleportation
+/// - Input handling (backtick to advance, Numpad 0 to pause)
+/// - Tutorial activation/deactivation
+/// - Component enabling/disabling (ObstacleManager, PlayerAudio)
+/// 
+/// AUDIO DELEGATION:
+/// - WwiseSequentialEventPlayer: Handles instruction sound playback
+/// - WwiseStateManager: Handles pause/resume states
+/// 
+/// This script no longer contains ANY Wwise event posting.
+/// All audio is delegated to specialized audio components.
+/// </summary>
 public class TutorialManager : MonoBehaviour
 {
+    // ???????????????????????????????????????????????????????????????
+    // TUTORIAL STATE ENUM
+    // ???????????????????????????????????????????????????????????????
+
     public enum TutorialState
     {
         Chapter01_Intro,
@@ -38,36 +59,65 @@ public class TutorialManager : MonoBehaviour
         Chapter31_Complete
     }
 
+    // ???????????????????????????????????????????????????????????????
+    // INSPECTOR FIELDS - CORE REFERENCES
+    // ???????????????????????????????????????????????????????????????
+
     [Header("Core References")]
+    [Tooltip("Reference to the player controller")]
     public FirstPersonController playerController;
+
+    [Tooltip("Reference to the obstacle manager")]
     public ObstacleManager obstacleManager;
+
+    [Tooltip("Reference to the player audio script")]
     public PlayerAudio playerAudio;
 
-    [Header("Audio Events")]
-    public AK.Wwise.Event introductoryAudio;
-    public AK.Wwise.Event[] instructionSounds;
+    [Header("Audio Components")]
+    [Tooltip("Handles sequential instruction playback")]
+    public WwiseSequentialEventPlayer instructionAudioPlayer;
+    [Header("Audio Components")]
+    
+    public WwiseEventPlayer pauseEventPlayer;   // ? ADD THIS
+    public WwiseEventPlayer resumeEventPlayer;  // ? ADD THIS
 
-    [Header("Pause/Resume Events")]
-    public AK.Wwise.Event pauseEvent;
-    public AK.Wwise.Event resumeEvent;
+    [Tooltip("Manages pause/resume audio states")]
+    public WwiseStateManager pauseStateManager;
+
+    [Tooltip("Plays the introductory audio")]
+    public WwiseEventPlayer introAudioPlayer;
+
+    [Tooltip("Plays the tutorial complete sound")]
+    public WwiseEventPlayer completeAudioPlayer;
 
     [Header("Tutorial Settings")]
+    [Tooltip("Spawn points for each tutorial chapter")]
     public Transform[] spawnPoints;
-    public AK.Wwise.Event tutorialCompleteSound;
 
-    [Header("Start Point")]
     [Tooltip("Where to teleport player when ending tutorial")]
     public Transform startPoint;
 
+    [Header("Auto-Start Settings")]
+    [Tooltip("Should the tutorial automatically start when the scene loads?")]
+    public bool autoStartTutorial = true;
+
+    // ???????????????????????????????????????????????????????????????
+    // PRIVATE FIELDS
+    // ???????????????????????????????????????????????????????????????
+
     private TutorialState currentState;
-    private bool isAudioPaused = false;
     private int replayIndex = -1;
     private bool isTutorialActive = false;
 
     public static TutorialManager Instance { get; private set; }
 
+    // ???????????????????????????????????????????????????????????????
+    // UNITY LIFECYCLE
+    // ???????????????????????????????????????????????????????????????
+
     private void Awake()
     {
+        // Singleton setup
         if (Instance == null)
         {
             Instance = this;
@@ -80,6 +130,7 @@ public class TutorialManager : MonoBehaviour
 
     void Start()
     {
+        // Validate core references
         if (playerAudio == null || obstacleManager == null || playerController == null)
         {
             Debug.LogError("TUTORIAL MANAGER ERROR: Core references are not assigned!", this.gameObject);
@@ -87,75 +138,94 @@ public class TutorialManager : MonoBehaviour
             return;
         }
 
-        int instructionalStateCount = System.Enum.GetNames(typeof(TutorialState)).Length - 2;
-        if (instructionSounds.Length != instructionalStateCount || spawnPoints.Length != instructionalStateCount)
+        // Validate audio components
+        if (instructionAudioPlayer == null || pauseStateManager == null ||
+            introAudioPlayer == null || completeAudioPlayer == null)
         {
-            Debug.LogError($"TUTORIAL MANAGER ERROR: Mismatch between array sizes and TutorialState enum count. Expecting {instructionalStateCount} items in each array. Got {instructionSounds.Length} sounds and {spawnPoints.Length} spawns.", this.gameObject);
+            Debug.LogError("TUTORIAL MANAGER ERROR: Audio component references are not assigned!", this.gameObject);
             this.enabled = false;
             return;
         }
 
-        // AUTO-START TUTORIAL - Add these lines:
-        isTutorialActive = true;
-        currentState = TutorialState.Chapter01_Intro;
-
-        if (obstacleManager != null)
+        // Validate array sizes
+        int instructionalStateCount = System.Enum.GetNames(typeof(TutorialState)).Length - 2;
+        if (spawnPoints.Length != instructionalStateCount)
         {
-            obstacleManager.enabled = false;
+            Debug.LogError($"TUTORIAL MANAGER ERROR: spawnPoints array size mismatch. Expected {instructionalStateCount}, got {spawnPoints.Length}", this.gameObject);
+            this.enabled = false;
+            return;
         }
 
-        introductoryAudio?.Post(gameObject);
-        Debug.Log("Game started. Tutorial auto-playing intro audio. Press BackQuote (`) to progress.");
+        // Note: We no longer validate instructionSounds array - that's handled by WwiseSequentialEventPlayer
 
-       
+        // Auto-start tutorial if configured
+        if (autoStartTutorial)
+        {
+            isTutorialActive = true;
+            currentState = TutorialState.Chapter01_Intro;
+
+            if (obstacleManager != null)
+            {
+                obstacleManager.enabled = false;
+            }
+
+            // Play intro audio through the audio component
+            introAudioPlayer.PlayEvent();
+
+            Debug.Log("Tutorial auto-started. Press BackQuote (`) to progress.");
+        }
     }
 
     void Update()
     {
+        // Progression input (backtick key)
         if (isTutorialActive && currentState != TutorialState.Chapter31_Complete && Input.GetKeyDown(KeyCode.BackQuote))
         {
             GoToNextState();
         }
 
+        // Replay input (Tab key) - only in complete state
         if (currentState == TutorialState.Chapter31_Complete && Input.GetKeyDown(KeyCode.Tab))
         {
             CycleInstructionReplay();
         }
 
-        // ADD THIS: Numpad 0 for pause/resume
+        // Pause/Resume input (Numpad 0)
         if (isTutorialActive && Input.GetKeyDown(KeyCode.Keypad0))
         {
             ToggleAudioPause();
         }
     }
 
+    // ???????????????????????????????????????????????????????????????
+    // PUBLIC API - Called by UI Buttons
+    // ???????????????????????????????????????????????????????????????
+
     public void StartTutorial()
     {
         Debug.Log("=== STARTING TUTORIAL ===");
         Debug.Log($"Tutorial was active: {isTutorialActive}");
-        Debug.Log($"Audio was paused: {isAudioPaused}");
 
-        // Stop everything
+        // Stop all audio
         AkSoundEngine.StopAll(gameObject);
 
-        // Reset pause state
-        if (isAudioPaused)
-        {
-            isAudioPaused = false;
-            resumeEvent?.Post(gameObject);
-        }
+        // Reset pause state through the state manager
+        pauseStateManager.SetToPrimaryState(); // Sets to "Playing"
 
+        // Reset tutorial state
         isTutorialActive = true;
         currentState = TutorialState.Chapter01_Intro;
         replayIndex = -1;
 
+        // Disable obstacle manager during tutorial
         if (obstacleManager != null)
         {
             obstacleManager.enabled = false;
         }
 
-        uint playingID = introductoryAudio.Post(gameObject);
-        Debug.Log($"Posted intro audio, PlayingID: {playingID}");
+        // Play intro audio
+        introAudioPlayer.PlayEvent();
+
         Debug.Log("=== TUTORIAL START COMPLETE ===");
     }
 
@@ -172,16 +242,19 @@ public class TutorialManager : MonoBehaviour
         isTutorialActive = false;
         AkSoundEngine.StopAll(gameObject);
 
+        // Re-enable obstacle manager
         if (obstacleManager != null)
         {
             obstacleManager.enabled = true;
         }
 
+        // Reset player pitch
         if (playerAudio != null)
         {
             playerAudio.ResetPitchRTPC();
         }
 
+        // Teleport to start point
         if (startPoint != null)
         {
             playerController.Teleport(startPoint.position, startPoint.rotation);
@@ -190,84 +263,130 @@ public class TutorialManager : MonoBehaviour
         Debug.Log("Tutorial ended. Returned to start point.");
     }
 
-    void CycleInstructionReplay()
-    {
-        StopAndResumeAudio();
-
-        replayIndex++;
-
-        if (replayIndex >= instructionSounds.Length)
-        {
-            replayIndex = -1;
-            Debug.Log("Instruction Replay Stopped.");
-            return;
-        }
-
-        instructionSounds[replayIndex]?.Post(gameObject);
-        string stateName = ((TutorialState)(replayIndex + 1)).ToString();
-        Debug.Log($"Replaying: {stateName}");
-    }
-
-    void GoToNextState()
-    {
-        StopAndResumeAudio();
-        replayIndex = -1;
-
-        currentState++;
-
-        Debug.Log($"Proceeding to: {currentState}");
-
-        if (currentState == TutorialState.Chapter31_Complete)
-        {
-            isTutorialActive = false;
-            obstacleManager.enabled = true;
-            playerAudio.ResetPitchRTPC();
-            Debug.Log("Tutorial Complete! Starting Main Game.");
-            tutorialCompleteSound?.Post(gameObject);
-        }
-
-        int currentIndex = (int)currentState - 1;
-
-        if (currentIndex < 0 || currentIndex >= instructionSounds.Length)
-        {
-            if (currentState == TutorialState.Chapter01_Intro) return;
-            Debug.LogWarning($"Tutorial Manager: No instruction/spawn for state {currentState}.");
-            return;
-        }
-
-        playerController.Teleport(spawnPoints[currentIndex].position, spawnPoints[currentIndex].rotation);
-        instructionSounds[currentIndex]?.Post(gameObject);
-    }
-
     public void ToggleAudioPause()
     {
-        Debug.Log("ToggleAudioPause method was successfully called!");
+        Debug.Log("ToggleAudioPause called - delegating to WwiseStateManager");
 
-        isAudioPaused = !isAudioPaused;
-        if (isAudioPaused)
+        // Toggle the state manager (for tracking)
+        pauseStateManager.ToggleState();
+
+        // CRITICAL: Also post the pause/resume events (for actual Wwise behavior)
+        if (pauseStateManager.IsInPrimaryState())
         {
-            pauseEvent?.Post(gameObject);
-            Debug.Log("Tutorial audio PAUSED.");
+            // We're now in Playing state
+            resumeEventPlayer?.PlayEvent();
+            Debug.Log("Tutorial audio RESUMED (Playing state)");
         }
         else
         {
-            resumeEvent?.Post(gameObject);
-            Debug.Log("Tutorial audio RESUMED.");
-        }
-    }
-
-    private void StopAndResumeAudio()
-    {
-        AkSoundEngine.StopAll(gameObject);
-        if (isAudioPaused)
-        {
-            resumeEvent?.Post(gameObject);
-            isAudioPaused = false;
+            // We're now in Paused state
+            pauseEventPlayer?.PlayEvent();
+            Debug.Log("Tutorial audio PAUSED (Paused state)");
         }
     }
 
     public bool IsTutorialActive()
     {
         return isTutorialActive;
+    }
+
+    // ???????????????????????????????????????????????????????????????
+    // PRIVATE METHODS - Tutorial Flow
+    // ???????????????????????????????????????????????????????????????
+
+    private void GoToNextState()
+    {
+        // Stop and resume audio (clears any paused state)
+        StopAndResumeAudio();
+        replayIndex = -1;
+
+        // Advance state
+        currentState++;
+
+        Debug.Log($"Proceeding to: {currentState}");
+
+        // Check if tutorial is complete
+        if (currentState == TutorialState.Chapter31_Complete)
+        {
+            isTutorialActive = false;
+            obstacleManager.enabled = true;
+            playerAudio.ResetPitchRTPC();
+
+            Debug.Log("Tutorial Complete! Starting Main Game.");
+
+            // Play completion sound
+            completeAudioPlayer.PlayEvent();
+
+            return;
+        }
+
+        // Get the index for arrays (state enum starts at 0 = Intro, but arrays start at Chapter02)
+        int currentIndex = (int)currentState - 1;
+
+        // Validate index
+        if (currentIndex < 0 || currentIndex >= spawnPoints.Length)
+        {
+            if (currentState == TutorialState.Chapter01_Intro) return;
+            Debug.LogWarning($"Tutorial Manager: No spawn point for state {currentState}.");
+            return;
+        }
+
+        // Teleport player
+        playerController.Teleport(spawnPoints[currentIndex].position, spawnPoints[currentIndex].rotation);
+
+        // Play instruction audio through the sequential player
+        instructionAudioPlayer.PlayAtIndex(currentIndex);
+    }
+
+    private void CycleInstructionReplay()
+    {
+        StopAndResumeAudio();
+
+        replayIndex++;
+
+        // Check if we've reached the end of the replay sequence
+        if (replayIndex >= instructionAudioPlayer.GetEventCount())
+        {
+            replayIndex = -1;
+            Debug.Log("Instruction Replay Stopped.");
+            return;
+        }
+
+        // Play the instruction at the current replay index
+        instructionAudioPlayer.PlayAtIndex(replayIndex);
+
+        string stateName = ((TutorialState)(replayIndex + 1)).ToString();
+        Debug.Log($"Replaying: {stateName}");
+    }
+
+    private void StopAndResumeAudio()
+    {
+        // Stop all audio on this GameObject
+        AkSoundEngine.StopAll(gameObject);
+
+        // Ensure we're in the "Playing" state (not paused)
+        if (pauseStateManager.IsInSecondaryState()) // If paused
+        {
+            pauseStateManager.SetToPrimaryState(); // Resume to Playing
+        }
+    }
+
+    void OnGUI()
+    {
+        if (isTutorialActive)
+        {
+            GUIStyle style = new GUIStyle();
+            style.fontSize = 20;
+            style.normal.textColor = Color.yellow;
+
+            string stateText = pauseStateManager.IsInPrimaryState() ? "PLAYING" : "PAUSED";
+            GUI.Label(new Rect(10, 10, 400, 30), $"Tutorial State: {stateText}", style);
+
+            // Test button
+            if (GUI.Button(new Rect(10, 50, 200, 40), "Toggle Pause (Test)"))
+            {
+                ToggleAudioPause();
+            }
+        }
     }
 }

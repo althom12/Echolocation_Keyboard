@@ -1,0 +1,230 @@
+using UnityEngine;
+using UnityEngine.Events;
+
+/// <summary>
+/// Gold Standard Wwise Event Player
+/// 
+/// A reusable component for posting Wwise events with optional switch control.
+/// Replaces scattered AK.Wwise.Event.Post() calls throughout the codebase.
+/// 
+/// DESIGN PHILOSOPHY:
+/// - Single Responsibility: Only plays audio events
+/// - Decoupled: Can be triggered by UnityEvents, other scripts, or the AudioEventChannel
+/// - Flexible: Supports direct posting or routing through AudioEventChannelSO
+/// 
+/// USE CASES:
+/// - Activation sounds (obstacle sets, spawns)
+/// - Collision sounds
+/// - Simple UI feedback
+/// - Any one-off audio event
+/// 
+/// COMPOSITION PATTERN:
+/// Attach this to any GameObject that needs to play audio in response to events.
+/// Connect UnityEvents from logic scripts to trigger audio playback.
+/// </summary>
+public class WwiseEventPlayer : MonoBehaviour
+{
+    // ???????????????????????????????????????????????????????????????
+    // INSPECTOR FIELDS
+    // ???????????????????????????????????????????????????????????????
+
+    [Header("Wwise Configuration")]
+    [Tooltip("The Wwise event to post")]
+    public AK.Wwise.Event wwiseEvent;
+
+    [Tooltip("Optional switch to set before posting the event")]
+    public AK.Wwise.Switch wwiseSwitch;
+
+    [Tooltip("GameObject to emit sound from. If null, uses this GameObject.")]
+    public GameObject soundEmitter;
+
+    [Header("Routing Options")]
+    [Tooltip("If assigned, routes audio through the AudioEventChannelSO for priority handling")]
+    public AudioEventChannelSO audioChannel;
+
+    [Tooltip("If true, posts event directly to Wwise. If false, uses audioChannel (if assigned).")]
+    public bool postDirectly = true;
+
+    [Header("Playback Options")]
+    [Tooltip("Stop all sounds on this emitter before playing")]
+    public bool stopAllBeforePlaying = false;
+
+    [Tooltip("Track the playing ID for manual control")]
+    public bool trackPlayingID = false;
+
+    // ???????????????????????????????????????????????????????????????
+    // PRIVATE FIELDS
+    // ???????????????????????????????????????????????????????????????
+
+    private uint currentPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
+
+    // ???????????????????????????????????????????????????????????????
+    // UNITY LIFECYCLE
+    // ???????????????????????????????????????????????????????????????
+
+    private void Awake()
+    {
+        // Set default emitter if not assigned
+        if (soundEmitter == null)
+        {
+            soundEmitter = this.gameObject;
+        }
+    }
+
+    // ???????????????????????????????????????????????????????????????
+    // PUBLIC API - These methods are called by other scripts/UnityEvents
+    // ???????????????????????????????????????????????????????????????
+
+    /// <summary>
+    /// Plays the configured Wwise event.
+    /// Can be called directly or hooked up to UnityEvents in the Inspector.
+    /// </summary>
+    public void PlayEvent()
+    {
+        if (wwiseEvent == null || !wwiseEvent.IsValid())
+        {
+            Debug.LogWarning($"[WwiseEventPlayer] '{gameObject.name}': wwiseEvent is not assigned or invalid!", this);
+            return;
+        }
+
+        // Stop previous sound if configured
+        if (stopAllBeforePlaying)
+        {
+            AkSoundEngine.StopAll(soundEmitter);
+        }
+
+        // Route through AudioEventChannel or post directly
+        if (!postDirectly && audioChannel != null)
+        {
+            RoutethroughChannel();
+        }
+        else
+        {
+            PostDirect();
+        }
+    }
+
+    /// <summary>
+    /// Plays the event with a specific switch override.
+    /// Useful for dynamic switch selection at runtime.
+    /// </summary>
+    public void PlayEventWithSwitch(AK.Wwise.Switch switchOverride)
+    {
+        if (wwiseEvent == null || !wwiseEvent.IsValid())
+        {
+            Debug.LogWarning($"[WwiseEventPlayer] '{gameObject.name}': wwiseEvent is not assigned!", this);
+            return;
+        }
+
+        if (switchOverride != null && switchOverride.IsValid())
+        {
+            switchOverride.SetValue(soundEmitter);
+        }
+
+        PostDirect();
+    }
+
+    /// <summary>
+    /// Stops the currently playing sound (if tracking is enabled).
+    /// </summary>
+    public void StopEvent()
+    {
+        if (trackPlayingID && currentPlayingID != AkSoundEngine.AK_INVALID_PLAYING_ID)
+        {
+            AkSoundEngine.StopPlayingID(currentPlayingID);
+            currentPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
+            Debug.Log($"[WwiseEventPlayer] '{gameObject.name}': Stopped playing ID {currentPlayingID}");
+        }
+        else
+        {
+            AkSoundEngine.StopAll(soundEmitter);
+        }
+    }
+
+    /// <summary>
+    /// Gets the current playing ID (if tracking is enabled).
+    /// </summary>
+    public uint GetPlayingID()
+    {
+        return currentPlayingID;
+    }
+
+    /// <summary>
+    /// Checks if audio is currently playing (requires tracking to be enabled).
+    /// </summary>
+    public bool IsPlaying()
+    {
+        return trackPlayingID && currentPlayingID != AkSoundEngine.AK_INVALID_PLAYING_ID;
+    }
+
+    // ???????????????????????????????????????????????????????????????
+    // PRIVATE METHODS
+    // ???????????????????????????????????????????????????????????????
+
+    private void PostDirect()
+    {
+        // Set switch if assigned
+        if (wwiseSwitch != null && wwiseSwitch.IsValid())
+        {
+            wwiseSwitch.SetValue(soundEmitter);
+        }
+
+        // Post the event
+        if (trackPlayingID)
+        {
+            currentPlayingID = wwiseEvent.Post(soundEmitter);
+            Debug.Log($"[WwiseEventPlayer] '{gameObject.name}': Posted event '{wwiseEvent.Name}', PlayingID: {currentPlayingID}");
+        }
+        else
+        {
+            wwiseEvent.Post(soundEmitter);
+            Debug.Log($"[WwiseEventPlayer] '{gameObject.name}': Posted event '{wwiseEvent.Name}'");
+        }
+    }
+
+    private void RoutethroughChannel()
+    {
+        if (audioChannel == null)
+        {
+            Debug.LogWarning($"[WwiseEventPlayer] '{gameObject.name}': audioChannel is null, falling back to direct posting");
+            PostDirect();
+            return;
+        }
+
+        // Create packet for AudioEventChannel
+        AudioEventChannelSO.WwiseEventPacket packet = new AudioEventChannelSO.WwiseEventPacket
+        {
+            WwiseEvent = wwiseEvent,
+            WwiseSwitch = wwiseSwitch,
+            Emitter = soundEmitter
+        };
+
+        audioChannel.RaiseEvent(packet);
+        Debug.Log($"[WwiseEventPlayer] '{gameObject.name}': Raised event '{wwiseEvent.Name}' through AudioEventChannel");
+    }
+
+    // ???????????????????????????????????????????????????????????????
+    // DEBUG HELPERS
+    // ???????????????????????????????????????????????????????????????
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (wwiseEvent == null)
+        {
+            Debug.LogWarning($"[WwiseEventPlayer] '{gameObject.name}': wwiseEvent is not assigned!");
+        }
+
+        if (!postDirectly && audioChannel == null)
+        {
+            Debug.LogWarning($"[WwiseEventPlayer] '{gameObject.name}': postDirectly is false but audioChannel is not assigned!");
+        }
+
+        // Auto-assign emitter if null
+        if (soundEmitter == null)
+        {
+            soundEmitter = this.gameObject;
+        }
+    }
+#endif
+}
