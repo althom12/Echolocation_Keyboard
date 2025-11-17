@@ -43,7 +43,7 @@ using AK.Wwise;
 /// - Handle UI toggle listeners (handled by MaterialController)
 /// - Track reflector components (handled by MaterialController)
 /// </summary>
-public class ObstacleManager : MonoBehaviour
+public class ObstacleManager : MonoBehaviour, IObstacleService
 {
     // ???????????????????????????????????????????????????????????
     // INSPECTOR FIELDS
@@ -119,7 +119,12 @@ public class ObstacleManager : MonoBehaviour
     /// </summary>
     /// <param name="obstacleIndex">The index from the UI toggle (0-12)</param>
     /// <param name="soundIndex">DEPRECATED - Not used, will be removed in future</param>
-    public void SelectLayout(int obstacleIndex, int soundIndex = 0)
+    /// <summary>
+    /// Main routing function called by ObstacleToggleHelper.
+    /// Determines the category of the selection and routes to appropriate handler.
+    /// </summary>
+    /// <param name="obstacleIndex">The index from the UI toggle (-1 to 10)</param>
+    public void SelectLayout(int obstacleIndex)
     {
         Debug.Log($"[ObstacleManager] SelectLayout called with index: {obstacleIndex}");
 
@@ -154,14 +159,6 @@ public class ObstacleManager : MonoBehaviour
         {
             Debug.LogWarning($"[ObstacleManager] Index {obstacleIndex} is out of expected ranges. No action taken.");
         }
-    }
-
-    /// <summary>
-    /// Overload for backward compatibility (no soundIndex parameter).
-    /// </summary>
-    public void SelectLayout(int obstacleIndex)
-    {
-        SelectLayout(obstacleIndex, 0);
     }
 
     // ???????????????????????????????????????????????????????????
@@ -272,6 +269,10 @@ public class ObstacleManager : MonoBehaviour
     /// Only applies if a custom column (7-10) is currently active.
     /// If a preset or "None" is active, materials do nothing (silent ignore per requirements).
     /// </summary>
+    /// <summary>
+    /// Handles material selection (indices 9-10).
+    /// Only applies if a custom column (6-8) is currently active.
+    /// </summary>
     private void ApplyMaterial(int materialIndex)
     {
         // Check if a custom column is active
@@ -287,17 +288,20 @@ public class ObstacleManager : MonoBehaviour
             return;
         }
 
-        // Route to appropriate material method
-        if (materialIndex == MATERIAL_CARPET)
+        // Convert obstacle index to material array index
+        // Obstacle indices: 9 = Carpet, 10 = Concrete
+        // Material array: 0 = Carpet, 1 = Concrete
+        int materialArrayIndex = materialIndex - MATERIAL_CARPET;
+
+        if (materialArrayIndex < 0 || materialArrayIndex >= 2)
         {
-            Debug.Log("[ObstacleManager] Applying Carpet material to active custom column");
-            materialController.ApplyCarpet();
+            Debug.LogError($"[ObstacleManager] Invalid material index conversion: {materialIndex} -> {materialArrayIndex}");
+            return;
         }
-        else if (materialIndex == MATERIAL_CONCRETE)
-        {
-            Debug.Log("[ObstacleManager] Applying Concrete material to active custom column");
-            materialController.ApplyConcrete();
-        }
+
+        // Call the new material controller's ApplyMaterial method
+        Debug.Log($"[ObstacleManager] Applying material at array index {materialArrayIndex} to active custom column");
+        materialController.ApplyMaterial(materialArrayIndex);
     }
 
     /// <summary>

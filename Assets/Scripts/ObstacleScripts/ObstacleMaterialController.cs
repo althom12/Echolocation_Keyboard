@@ -4,312 +4,354 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 /// <summary>
-/// Obstacle Material Controller
+/// Links a MaterialDefinition (asset) to UI elements (scene objects).
+/// This solves the ScriptableObject limitation where assets can't reference scene objects.
+/// </summary>
+[System.Serializable]
+public class MaterialUIBinding
+{
+    [Tooltip("The material definition asset")]
+    public MaterialDefinition materialDefinition;
+
+    [Tooltip("The UI Toggle in the Obstacles menu")]
+    public Toggle toggle;
+
+    [Tooltip("Optional visual indicator GameObject")]
+    public GameObject visualIndicator;
+}
+
+/// <summary>
+/// Obstacle Material Controller - REFACTORED for Scalability
 /// 
-/// Manages acoustic material properties for CUSTOM COLUMNS ONLY (obstacle presets 7-10).
-/// Extracted from ObstacleManager to follow Single Responsibility Principle.
-/// 
-/// RESPONSIBILITIES:
-/// - Track AkSurfaceReflector components in active custom columns
-/// - Apply material textures (Carpet/Concrete) to reflectors
-/// - Manage UI toggle listeners and visual indicators
-/// - Handle toggle state synchronization
-/// 
-/// DOES NOT:
-/// - Handle obstacle layout selection (that's ObstacleManager's job)
-/// - Apply materials to baked presets (1-6) - they have fixed materials
+/// Uses MaterialDefinition ScriptableObjects + MaterialUIBinding for data-driven material management.
+/// MaterialDefinition contains material data (name, acoustic texture).
+/// MaterialUIBinding links MaterialDefinition to UI elements (toggles, indicators).
 /// 
 /// USAGE:
-/// 1. Attach to the same GameObject as ObstacleManager
-/// 2. Assign material textures in Inspector
-/// 3. Assign UI toggle and indicator references
-/// 4. ObstacleManager calls UpdateReflectorList() when custom columns change
-/// 5. UI toggles call ApplyCarpet()/ApplyConcrete() via UnityEvents or toggle listeners
+/// 1. Create MaterialDefinition assets for each material (Carpet, Concrete, Wood, etc.)
+/// 2. In Inspector, add MaterialUIBinding entries
+/// 3. For each binding: assign MaterialDefinition + Toggle + Visual Indicator
+/// 4. This script automatically handles toggle subscriptions and material application
+/// 
+/// SCALABILITY:
+/// - 2 materials: Works
+/// - 50 materials: Works exactly the same way
+/// - No per-material methods needed
 /// </summary>
 public class ObstacleMaterialController : MonoBehaviour
 {
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
     // INSPECTOR FIELDS
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
 
-    [Header("Material Assets")]
-    [Tooltip("The Carpet acoustic texture from Wwise")]
-    public AcousticTexture carpetTexture;
+    [Header("Material Bindings")]
+    [Tooltip("Links material definitions to UI elements. Add/remove materials by modifying this array!")]
+    public MaterialUIBinding[] materialBindings;
 
-    [Tooltip("The Concrete acoustic texture from Wwise")]
-    public AcousticTexture concreteTexture;
-
-    [Header("UI References")]
-    [Tooltip("The Carpet toggle in the Obstacles UI")]
-    public Toggle carpetMaterialToggle;
-
-    [Tooltip("The Concrete toggle in the Obstacles UI")]
-    public Toggle concreteMaterialToggle;
-
-    [Header("Visual Indicators")]
-    [Tooltip("Visual indicator GameObject for Carpet (optional)")]
-    public GameObject carpetIndicator;
-
-    [Tooltip("Visual indicator GameObject for Concrete (optional)")]
-    public GameObject concreteIndicator;
-
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
     // PRIVATE FIELDS
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
 
     /// <summary>
-    /// List of AkSurfaceReflector components in the currently active custom column.
-    /// Updated by ObstacleManager when custom column selection changes.
+    /// AkSurfaceReflector components in the currently active custom column.
+    /// Updated when ObstacleManager switches to a custom column (6-8).
     /// </summary>
     private List<AkSurfaceReflector> obstacleReflectors = new List<AkSurfaceReflector>();
 
     /// <summary>
+    /// Tracks which material is currently applied (index into materials array).
+    /// -1 = no material applied.
+    /// </summary>
+    private int activeMaterialIndex = -1;
+
+    /// <summary>
     /// Prevents recursive toggle updates when programmatically setting toggle states.
-    /// Same pattern as original ObstacleManager implementation.
     /// </summary>
     private bool isUpdatingToggles = false;
 
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
     // UNITY LIFECYCLE
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
 
     private void Start()
     {
-        // Subscribe to material toggle events
-        if (carpetMaterialToggle != null)
+        // Validate materialBindings array
+        if (materialBindings == null || materialBindings.Length == 0)
         {
-            carpetMaterialToggle.onValueChanged.AddListener(OnCarpetToggleChanged);
-        }
-        else
-        {
-            Debug.LogWarning("[ObstacleMaterialController] carpetMaterialToggle is not assigned!");
+            Debug.LogError("[ObstacleMaterialController] No material bindings assigned! Please assign MaterialUIBinding entries in Inspector.");
+            this.enabled = false;
+            return;
         }
 
-        if (concreteMaterialToggle != null)
+        // Subscribe to all material toggle events
+        for (int i = 0; i < materialBindings.Length; i++)
         {
-            concreteMaterialToggle.onValueChanged.AddListener(OnConcreteToggleChanged);
-        }
-        else
-        {
-            Debug.LogWarning("[ObstacleMaterialController] concreteMaterialToggle is not assigned!");
+            MaterialUIBinding binding = materialBindings[i];
+
+            // Validate each binding
+            if (binding == null || binding.materialDefinition == null)
+            {
+                Debug.LogWarning($"[ObstacleMaterialController] Binding at index {i} is null or has no material definition! Skipping.");
+                continue;
+            }
+
+            if (binding.toggle == null)
+            {
+                Debug.LogWarning($"[ObstacleMaterialController] Material '{binding.materialDefinition.materialName}' has no toggle assigned! Skipping.");
+                continue;
+            }
+
+            // Subscribe to toggle's onValueChanged event
+            // We capture 'i' in a local variable to avoid closure issues
+            int materialIndex = i;
+            binding.toggle.onValueChanged.AddListener((isOn) => OnMaterialToggleChanged(materialIndex, isOn));
+
+            Debug.Log($"[ObstacleMaterialController] Subscribed to '{binding.materialDefinition.materialName}' toggle");
         }
     }
 
     private void OnDestroy()
     {
-        // Unsubscribe to prevent memory leaks
-        if (carpetMaterialToggle != null)
-        {
-            carpetMaterialToggle.onValueChanged.RemoveListener(OnCarpetToggleChanged);
-        }
+        // Unsubscribe from all toggle events to prevent memory leaks
+        if (materialBindings == null) return;
 
-        if (concreteMaterialToggle != null)
+        for (int i = 0; i < materialBindings.Length; i++)
         {
-            concreteMaterialToggle.onValueChanged.RemoveListener(OnConcreteToggleChanged);
+            MaterialUIBinding binding = materialBindings[i];
+            if (binding != null && binding.toggle != null)
+            {
+                binding.toggle.onValueChanged.RemoveAllListeners();
+            }
         }
     }
 
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
     // PUBLIC API - Called by ObstacleManager
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
 
     /// <summary>
     /// Updates the list of reflectors to match the currently active custom column.
-    /// Called by ObstacleManager whenever custom column selection changes.
+    /// Called by ObstacleManager whenever custom column selection changes (6-8).
     /// 
-    /// IMPORTANT: This clears any existing material assignments!
-    /// When switching columns, materials are NOT remembered (per client requirements).
+    /// IMPORTANT: Clears any active material! User must re-select material after switching columns.
     /// </summary>
-    /// <param name="customColumnObject">The currently active custom column GameObject, or null if none</param>
+    /// <param name="customColumnObject">The active custom column GameObject, or null if none</param>
     public void UpdateReflectorList(GameObject customColumnObject)
     {
         obstacleReflectors.Clear();
+        activeMaterialIndex = -1;
 
         if (customColumnObject == null)
         {
-            // No custom column active - clear indicators and reset toggles
             Debug.Log("[ObstacleMaterialController] No custom column active. Clearing reflector list.");
-            SetIndicatorActive(false, false);
+            ClearAllIndicators();
             return;
         }
 
         // Find all AkSurfaceReflector components in the active custom column
-        // includeInactive = true because some child objects might be disabled
         obstacleReflectors.AddRange(customColumnObject.GetComponentsInChildren<AkSurfaceReflector>(true));
 
         Debug.Log($"[ObstacleMaterialController] Found {obstacleReflectors.Count} reflectors in '{customColumnObject.name}'");
 
-        // Reset material indicators (user must re-select material)
-        SetIndicatorActive(false, false);
+        // Reset material indicators (user must re-select material for this column)
+        ClearAllIndicators();
     }
 
     /// <summary>
     /// Clears all reflectors and resets UI state.
-    /// Called by ObstacleManager when switching to baked presets or "None".
+    /// Called by ObstacleManager when switching to baked presets (0-5) or "None" (-1).
     /// </summary>
     public void ClearReflectors()
     {
         obstacleReflectors.Clear();
-        SetIndicatorActive(false, false);
+        activeMaterialIndex = -1;
+        ClearAllIndicators();
         Debug.Log("[ObstacleMaterialController] Reflectors cleared.");
     }
 
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
     // PUBLIC API - Material Application (can be called externally)
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
 
     /// <summary>
-    /// Applies the Carpet material to all reflectors in the active custom column.
-    /// Can be called directly by other scripts or via UI events.
+    /// Applies a specific material by name.
+    /// Useful for external scripts or UI events.
     /// </summary>
-    public void ApplyCarpet()
+    /// <param name="materialName">Name of the material (e.g., "Carpet", "Concrete")</param>
+    public void ApplyMaterialByName(string materialName)
     {
-        Debug.Log($"[ObstacleMaterialController] Applying CARPET to {obstacleReflectors.Count} reflectors");
-        UpdateMaterials(carpetTexture);
-        SetIndicatorActive(true, false); // Carpet ON, Concrete OFF
-    }
-
-    /// <summary>
-    /// Applies the Concrete material to all reflectors in the active custom column.
-    /// Can be called directly by other scripts or via UI events.
-    /// </summary>
-    public void ApplyConcrete()
-    {
-        Debug.Log($"[ObstacleMaterialController] Applying CONCRETE to {obstacleReflectors.Count} reflectors");
-        UpdateMaterials(concreteTexture);
-        SetIndicatorActive(false, true); // Carpet OFF, Concrete ON
-    }
-
-    // ???????????????????????????????????????????????????????????
-    // PRIVATE METHODS - Toggle Event Handlers
-    // ???????????????????????????????????????????????????????????
-
-    /// <summary>
-    /// Event handler for when the user clicks the Carpet toggle.
-    /// Only triggers when toggle is turned ON (not when programmatically changed).
-    /// </summary>
-    private void OnCarpetToggleChanged(bool isOn)
-    {
-        if (isUpdatingToggles) return; // Prevent recursion
-
-        if (isOn)
+        for (int i = 0; i < materialBindings.Length; i++)
         {
-            ApplyCarpet();
+            if (materialBindings[i] != null &&
+                materialBindings[i].materialDefinition != null &&
+                materialBindings[i].materialDefinition.materialName == materialName)
+            {
+                ApplyMaterial(i);
+                return;
+            }
         }
+
+        Debug.LogWarning($"[ObstacleMaterialController] Material '{materialName}' not found!");
     }
 
     /// <summary>
-    /// Event handler for when the user clicks the Concrete toggle.
-    /// Only triggers when toggle is turned ON (not when programmatically changed).
+    /// Applies a specific material by index.
     /// </summary>
-    private void OnConcreteToggleChanged(bool isOn)
+    /// <param name="materialIndex">Index into the materialBindings array</param>
+    public void ApplyMaterial(int materialIndex)
     {
-        if (isUpdatingToggles) return; // Prevent recursion
-
-        if (isOn)
+        if (materialIndex < 0 || materialIndex >= materialBindings.Length)
         {
-            ApplyConcrete();
-        }
-    }
-
-    // ???????????????????????????????????????????????????????????
-    // PRIVATE METHODS - Internal Logic
-    // ???????????????????????????????????????????????????????????
-
-    /// <summary>
-    /// Internal logic to apply the acoustic texture to all active reflectors.
-    /// Uses Wwise 2024.5 compatible API: reflector.AcousticTexture property.
-    /// </summary>
-    private void UpdateMaterials(AcousticTexture newTexture)
-    {
-        if (newTexture == null)
-        {
-            Debug.LogError("[ObstacleMaterialController] Acoustic Texture is null! Cannot apply material.");
+            Debug.LogError($"[ObstacleMaterialController] Invalid material index: {materialIndex}");
             return;
         }
 
         if (obstacleReflectors.Count == 0)
         {
-            Debug.LogWarning("[ObstacleMaterialController] No reflectors to update. Is a custom column active?");
+            Debug.LogWarning("[ObstacleMaterialController] No reflectors to update. Is a custom column (6-8) active?");
             return;
         }
 
-        // Apply texture to all reflectors in the active custom column
+        MaterialUIBinding binding = materialBindings[materialIndex];
+
+        if (binding == null || binding.materialDefinition == null || binding.materialDefinition.acousticTexture == null)
+        {
+            Debug.LogError($"[ObstacleMaterialController] Material binding at index {materialIndex} is invalid!");
+            return;
+        }
+
+        // Apply acoustic texture to all reflectors
         foreach (AkSurfaceReflector reflector in obstacleReflectors)
         {
             if (reflector != null)
             {
-                // Wwise 2024.5 API: Use the AcousticTexture property directly
-                reflector.AcousticTexture = newTexture;
+                reflector.AcousticTexture = binding.materialDefinition.acousticTexture;
             }
         }
 
-        Debug.Log($"[ObstacleMaterialController] Successfully applied '{newTexture.Name}' to {obstacleReflectors.Count} reflectors");
+        // Update active material tracking
+        activeMaterialIndex = materialIndex;
+
+        // Update visual indicators (only this material should be active)
+        UpdateIndicators(materialIndex);
+
+        Debug.Log($"[ObstacleMaterialController] Applied '{binding.materialDefinition.materialName}' to {obstacleReflectors.Count} reflectors");
     }
 
+    // ???????????????????????????????????????????????????????????????
+    // PRIVATE METHODS - Toggle Event Handlers
+    // ???????????????????????????????????????????????????????????????
+
     /// <summary>
-    /// Manages the visibility of visual indicators and synchronizes toggle states.
-    /// Uses the isUpdatingToggles flag to prevent recursive onValueChanged calls.
+    /// Unified event handler for ALL material toggles.
+    /// Called when any material toggle's value changes.
     /// </summary>
-    /// <param name="carpetActive">Should Carpet indicator be visible?</param>
-    /// <param name="concreteActive">Should Concrete indicator be visible?</param>
-    public void SetIndicatorActive(bool carpetActive, bool concreteActive)
+    /// <param name="materialIndex">Index of the material whose toggle changed</param>
+    /// <param name="isOn">True if toggle was turned ON, false if turned OFF</param>
+    private void OnMaterialToggleChanged(int materialIndex, bool isOn)
     {
-        // Prevent recursion while updating toggles programmatically
+        // Ignore programmatic toggle changes (prevent recursion)
+        if (isUpdatingToggles) return;
+
+        // Only process when toggle is turned ON (prevents double-triggers in toggle groups)
+        if (!isOn) return;
+
+        Debug.Log($"[ObstacleMaterialController] Material toggle changed: {materialBindings[materialIndex].materialDefinition.materialName}");
+
+        // Apply the selected material
+        ApplyMaterial(materialIndex);
+    }
+
+    // ???????????????????????????????????????????????????????????????
+    // PRIVATE METHODS - UI State Management
+    // ???????????????????????????????????????????????????????????????
+
+    /// <summary>
+    /// Updates visual indicators to show only the active material.
+    /// Also synchronizes toggle states.
+    /// </summary>
+    /// <param name="activeIndex">Index of the material that should be active</param>
+    private void UpdateIndicators(int activeIndex)
+    {
         isUpdatingToggles = true;
 
-        // Update visual indicators (if assigned)
-        if (carpetIndicator != null)
+        for (int i = 0; i < materialBindings.Length; i++)
         {
-            carpetIndicator.SetActive(carpetActive);
-        }
+            MaterialUIBinding binding = materialBindings[i];
+            if (binding == null) continue;
 
-        if (concreteIndicator != null)
-        {
-            concreteIndicator.SetActive(concreteActive);
-        }
+            bool isActive = (i == activeIndex);
 
-        // Synchronize toggle states (only if they differ from target state)
-        if (carpetMaterialToggle != null && carpetMaterialToggle.isOn != carpetActive)
-        {
-            carpetMaterialToggle.isOn = carpetActive;
-        }
+            // Update visual indicator
+            if (binding.visualIndicator != null)
+            {
+                binding.visualIndicator.SetActive(isActive);
+            }
 
-        if (concreteMaterialToggle != null && concreteMaterialToggle.isOn != concreteActive)
-        {
-            concreteMaterialToggle.isOn = concreteActive;
+            // Synchronize toggle state (only if different)
+            if (binding.toggle != null && binding.toggle.isOn != isActive)
+            {
+                binding.toggle.isOn = isActive;
+            }
         }
 
         isUpdatingToggles = false;
     }
 
-    // ???????????????????????????????????????????????????????????
+    /// <summary>
+    /// Clears all material indicators.
+    /// Called when no custom column is active or when switching columns.
+    /// </summary>
+    private void ClearAllIndicators()
+    {
+        UpdateIndicators(-1); // -1 = no material active
+    }
+
+    // ???????????????????????????????????????????????????????????????
     // DEBUG HELPERS
-    // ???????????????????????????????????????????????????????????
+    // ???????????????????????????????????????????????????????????????
 
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        // Validation warnings in Inspector
-        if (carpetTexture == null)
+        if (materialBindings == null || materialBindings.Length == 0)
         {
-            Debug.LogWarning($"[ObstacleMaterialController] '{gameObject.name}': carpetTexture is not assigned!");
+            Debug.LogWarning($"[ObstacleMaterialController] '{gameObject.name}': No material bindings assigned!");
+            return;
         }
 
-        if (concreteTexture == null)
+        // Validate each material binding
+        for (int i = 0; i < materialBindings.Length; i++)
         {
-            Debug.LogWarning($"[ObstacleMaterialController] '{gameObject.name}': concreteTexture is not assigned!");
-        }
+            MaterialUIBinding binding = materialBindings[i];
 
-        if (carpetMaterialToggle == null)
-        {
-            Debug.LogWarning($"[ObstacleMaterialController] '{gameObject.name}': carpetMaterialToggle is not assigned!");
-        }
+            if (binding == null || binding.materialDefinition == null)
+            {
+                Debug.LogWarning($"[ObstacleMaterialController] Binding at index {i} is null or has no material definition!");
+                continue;
+            }
 
-        if (concreteMaterialToggle == null)
-        {
-            Debug.LogWarning($"[ObstacleMaterialController] '{gameObject.name}': concreteMaterialToggle is not assigned!");
+            if (binding.materialDefinition.acousticTexture == null)
+            {
+                Debug.LogWarning($"[ObstacleMaterialController] Material '{binding.materialDefinition.materialName}' has no acousticTexture assigned!");
+            }
+
+            if (binding.toggle == null)
+            {
+                Debug.LogWarning($"[ObstacleMaterialController] Material '{binding.materialDefinition.materialName}' has no toggle assigned!");
+            }
         }
+    }
+
+    [ContextMenu("Log Current State")]
+    private void LogCurrentState()
+    {
+        Debug.Log("=== MATERIAL CONTROLLER STATE ===");
+        Debug.Log($"Active Material Index: {activeMaterialIndex}");
+        Debug.Log($"Active Material: {(activeMaterialIndex >= 0 && activeMaterialIndex < materialBindings.Length ? materialBindings[activeMaterialIndex].materialDefinition.materialName : "None")}");
+        Debug.Log($"Reflector Count: {obstacleReflectors.Count}");
+        Debug.Log($"Total Materials Configured: {materialBindings.Length}");
+        Debug.Log("=================================");
     }
 #endif
 }

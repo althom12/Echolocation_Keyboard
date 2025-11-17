@@ -34873,18 +34873,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fae216102f9ef448a49fd44b6d97372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carpetTexture:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a574d57379befe644b08d3ca3fff1c46, type: 2}
-  concreteTexture:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f0254124c5930d34bbaa95194b002280, type: 2}
-  carpetMaterialToggle: {fileID: 1159409848}
-  concreteMaterialToggle: {fileID: 1512828233}
-  carpetIndicator: {fileID: 0}
-  concreteIndicator: {fileID: 0}
+  materialBindings:
+  - materialDefinition: {fileID: 11400000, guid: cba9c47a71cdaef479a6c5a2bd733d08, type: 2}
+    toggle: {fileID: 1159409848}
+    visualIndicator: {fileID: 0}
+  - materialDefinition: {fileID: 11400000, guid: 8d3634882cb47e4439051423586a4080, type: 2}
+    toggle: {fileID: 1512828233}
+    visualIndicator: {fileID: 0}
 --- !u!1 &1955729013
 GameObject:
   m_ObjectHideFlags: 0
