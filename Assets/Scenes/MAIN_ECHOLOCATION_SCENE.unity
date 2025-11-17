@@ -489,6 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0bf08415b878849afa1a0d1d134f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myButton: {fileID: 0}
 --- !u!1 &19662997
 GameObject:
   m_ObjectHideFlags: 0
@@ -33497,7 +33498,6 @@ GameObject:
   - component: {fileID: 1823348508}
   - component: {fileID: 1823348511}
   - component: {fileID: 1823348509}
-  - component: {fileID: 1823348513}
   - component: {fileID: 1823348514}
   m_Layer: 5
   m_Name: MediumSet
@@ -33622,55 +33622,6 @@ RectTransform:
   m_AnchoredPosition: {x: 87.05, y: -190.14499}
   m_SizeDelta: {x: 174.1, y: 22.37}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1823348513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823348507}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec4df4da7da604c4b8e88d5289083dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: d83b732a45066014f83929a28cbf66ea, type: 2}
-    m_playingId: 0
-  checkedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: ca580604c6456d44aa10c3dcddbd1ba1, type: 2}
-  notCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 9ecf86205d7414d489e9868ea8a6865a, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!114 &1823348514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35013,6 +34964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8231e545ccada841885d3499f6bd313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myButton: {fileID: 0}
 --- !u!1 &1939598689
 GameObject:
   m_ObjectHideFlags: 0
@@ -35595,17 +35547,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carpetTexture:
     idInternal: 0
-    valueGuidInternal: 
+    valueGuidInternal: []
     WwiseObjectReference: {fileID: 11400000, guid: a574d57379befe644b08d3ca3fff1c46, type: 2}
   ConcreteTexture:
     idInternal: 0
-    valueGuidInternal: 
+    valueGuidInternal: []
     WwiseObjectReference: {fileID: 11400000, guid: f0254124c5930d34bbaa95194b002280, type: 2}
   carpetIndicator: {fileID: 0}
   concreteIndicator: {fileID: 0}
   carpetMaterialToggle: {fileID: 1159409848}
   concreteMaterialToggle: {fileID: 1512828233}
   ObstacleReflectors: []
+  isUpdatingToggles: 0
 --- !u!1 &1955729013
 GameObject:
   m_ObjectHideFlags: 0

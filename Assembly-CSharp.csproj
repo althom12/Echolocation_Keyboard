@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\LandmarkScripts\LandmarkVolumeSlider.cs" />
     <Compile Include="Assets\Scripts\ObstacleScripts\ObstacleManager.cs" />
     <Compile Include="Assets\Scripts\CLAUDE\WwiseSequentialEventPlayer.cs" />
-    <Compile Include="Assets\Scripts\TutorialScripts\EndTutorialButton.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\Scripts\FootstepsToggleController.cs" />
     <Compile Include="Assets\Scripts\ObstacleScripts\ObstaclesSubwindow.cs" />
@@ -76,8 +75,8 @@
     <Compile Include="Assets\Scripts\TutorialScripts\TutorialManager.cs" />
     <Compile Include="Assets\Scripts\CLAUDE\WwiseEventPlayer.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
+    <Compile Include="Assets\Scripts\ObstacleScripts\ObstacleMaterialController.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\TutorialScripts\StartTutorialButton.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\TutorialScripts\TutorialButtonHandler.cs" />
@@ -88,7 +87,6 @@
     <Compile Include="Assets\Scripts\WwiseUI\CLAUDE\WwiseUIElementV2.cs" />
     <Compile Include="Assets\Scripts\CLAUDE\WwiseComponentToggler.cs" />
     <Compile Include="Assets\Scripts\ObstacleScripts\ObstacleToggleHelper.cs" />
-    <Compile Include="Assets\Scripts\ObstacleScripts\ObstacleMaterialManager.cs" />
     <Compile Include="Assets\Scripts\LandmarkScripts\LandmarksManager.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
@@ -97,6 +95,7 @@
     <Compile Include="Assets\Scripts\CompassController.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
+    <Compile Include="Assets\Scripts\ObstacleScripts\IObstacleService.cs" />
     <Compile Include="Assets\Scripts\EmitterTrigger.cs" />
     <Compile Include="Assets\Scripts\LandmarkScripts\LandmarkToggleController.cs" />
     <Compile Include="Assets\Scripts\AudioEventChannelSO.cs" />

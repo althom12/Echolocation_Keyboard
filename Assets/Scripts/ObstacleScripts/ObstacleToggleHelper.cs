@@ -1,25 +1,95 @@
 using UnityEngine;
 
+/// <summary>
+/// Obstacle Toggle Helper
+/// 
+/// Simple relay component for UI Toggles in the Obstacles menu.
+/// Each toggle in the UI has one of these attached to route user selections to ObstacleManager.
+/// 
+/// USAGE:
+/// 1. Attach to a UI Toggle GameObject
+/// 2. Set the obstacleIndex in Inspector (0-12)
+/// 3. Hook up OnToggleSelected() to the Toggle's OnValueChanged event
+/// 
+/// INDEX MAPPING:
+/// 0     = None/Default
+/// 1-6   = Baked Presets
+/// 7-10  = Custom Columns
+/// 11    = Carpet Material
+/// 12    = Concrete Material
+/// 
+/// DESIGN NOTE:
+/// This is a "dumb relay" - it has no logic, just passes the index to ObstacleManager.
+/// All routing logic lives in ObstacleManager.SelectLayout().
+/// </summary>
 public class ObstacleToggleHelper : MonoBehaviour
 {
-    // 1. Drag your ObstacleManager GameObject here
+    // ???????????????????????????????????????????????????????????
+    // INSPECTOR FIELDS
+    // ???????????????????????????????????????????????????????????
+
+    [Header("Manager Reference")]
+    [Tooltip("Reference to the ObstacleManager in the scene")]
     public ObstacleManager obstacleManager;
 
-    // 2. Set these values in the Inspector for *each* toggle
+    [Header("Configuration")]
+    [Tooltip("The index this toggle represents (0=None, 1-6=Presets, 7-10=Columns, 11-12=Materials)")]
     public int obstacleIndex;
-    public int soundIndex;
 
-    // 3. This is the function you will hook up in the Inspector
+    // ???????????????????????????????????????????????????????????
+    // PUBLIC API - Called by UI Toggle's OnValueChanged
+    // ???????????????????????????????????????????????????????????
+
+    /// <summary>
+    /// Called by the UI Toggle's OnValueChanged event.
+    /// Only triggers action when toggle is turned ON (prevents double-triggers).
+    /// 
+    /// SETUP IN INSPECTOR:
+    /// 1. Select your Toggle GameObject
+    /// 2. In the Toggle component, find "On Value Changed (Boolean)"
+    /// 3. Click the + button
+    /// 4. Drag this GameObject into the object field
+    /// 5. Select ObstacleToggleHelper ? OnToggleSelected
+    /// </summary>
+    /// <param name="isOn">True if toggle was turned ON, false if turned OFF</param>
     public void OnToggleSelected(bool isOn)
     {
-        // 4. Only fire when the toggle is turned ON
-        // This prevents double-triggers [1, 2, 3]
-        if (isOn)
+        // Only fire when the toggle is turned ON
+        // This prevents the action from firing twice when switching between toggles in a group
+        if (!isOn)
         {
-            if (obstacleManager != null)
-            {
-                obstacleManager.SelectLayout(obstacleIndex, soundIndex);
-            }
+            return;
+        }
+
+        // Validate manager reference
+        if (obstacleManager == null)
+        {
+            Debug.LogError($"[ObstacleToggleHelper] '{gameObject.name}': obstacleManager is not assigned!");
+            return;
+        }
+
+        // Route to ObstacleManager
+        Debug.Log($"[ObstacleToggleHelper] '{gameObject.name}': Toggle turned ON, calling SelectLayout({obstacleIndex})");
+        obstacleManager.SelectLayout(obstacleIndex);
+    }
+
+    // ???????????????????????????????????????????????????????????
+    // DEBUG HELPERS
+    // ???????????????????????????????????????????????????????????
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        // Validation warnings in Inspector
+        if (obstacleManager == null)
+        {
+            Debug.LogWarning($"[ObstacleToggleHelper] '{gameObject.name}': obstacleManager is not assigned!");
+        }
+
+        if (obstacleIndex < 0 || obstacleIndex > 12)
+        {
+            Debug.LogWarning($"[ObstacleToggleHelper] '{gameObject.name}': obstacleIndex {obstacleIndex} is outside expected range (0-12)");
         }
     }
+#endif
 }
