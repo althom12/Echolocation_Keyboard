@@ -20,9 +20,7 @@ public class FootstepsToggleController : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Called when the GameObject becomes active. Initializes state and subscribes to events. 
-    /// </summary>
+   
     /// <summary>
     /// Called when the GameObject becomes active. Initializes state and subscribes to events.
     /// </summary>
