@@ -274,15 +274,7 @@ public class MenuNavigationManager : MonoBehaviour
                 ManuallyTriggerButtonAudioV2(buttonScriptV2, audioManager);
             }
             // Fallback to legacy component
-            else
-            {
-                WwiseMainMenuButton buttonScript = firstElement.GetComponent<WwiseMainMenuButton>();
-                if (buttonScript != null)
-                {
-                    Debug.Log($"[MenuNavManager] Manually caching button audio (WwiseMainMenuButton - legacy)");
-                    ManuallyTriggerButtonAudio(buttonScript, audioManager);
-                }
-            }
+            
         }
         else
         {
@@ -300,20 +292,7 @@ public class MenuNavigationManager : MonoBehaviour
         Debug.Log($"[MenuNavManager] ??? OpenMainMenuWithAudio COMPLETE ???");
     }
 
-    private void ManuallyTriggerButtonAudio(WwiseMainMenuButton button, AudioManager audioManager)
-    {
-        AudioEventChannelSO.WwiseEventPacket packet = new AudioEventChannelSO.WwiseEventPacket
-        {
-            WwiseEvent = button.selectionEvent,
-            WwiseSwitch = button.normalSwitch,
-            Emitter = button.gameObject
-        };
-
-        if (button.audioChannel != null)
-        {
-            button.audioChannel.RaiseEvent(packet);
-        }
-    }
+    
 
     private void ManuallyTriggerButtonAudioV2(WwiseUIElementV2 button, AudioManager audioManager)
     {

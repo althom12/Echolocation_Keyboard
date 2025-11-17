@@ -63,7 +63,6 @@
     <Compile Include="Assets\Scripts\ObstacleScripts\ObstacleLocatorAudio.cs" />
     <Compile Include="Assets\Scripts\QuitOnEscape.cs" />
     <Compile Include="Assets\Scripts\UI\BaseSubwindow.cs" />
-    <Compile Include="Assets\Scripts\WwiseUI\WwiseMainMenuButton.cs" />
     <Compile Include="Assets\Scripts\TutorialScripts\TutorialPropertiesSubwindow.cs" />
     <Compile Include="Assets\Scripts\LandmarkScripts\LandmarkVolumeSlider.cs" />
     <Compile Include="Assets\Scripts\ObstacleScripts\ObstacleManager.cs" />
@@ -71,7 +70,6 @@
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\Scripts\FootstepsToggleController.cs" />
     <Compile Include="Assets\Scripts\ObstacleScripts\ObstaclesSubwindow.cs" />
-    <Compile Include="Assets\Scripts\WwiseUI\WwiseRtpcSlider.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\Scripts\WwiseUI\CLAUDE\WwiseRtpcSliderV2.cs" />
     <Compile Include="Assets\Scripts\TutorialScripts\TutorialManager.cs" />
@@ -92,7 +90,6 @@
     <Compile Include="Assets\Scripts\LandmarkScripts\LandmarksManager.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
-    <Compile Include="Assets\Scripts\WwiseUI\WwiseUIElement.cs" />
     <Compile Include="Assets\Scripts\UI\SubWindowInputHandler.cs" />
     <Compile Include="Assets\Scripts\CompassController.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
