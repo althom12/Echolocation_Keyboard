@@ -9,22 +9,28 @@ using AK.Wwise;
 /// 
 /// OBSTACLE SYSTEM ARCHITECTURE:
 /// 
-/// Indices 0-6: Baked Presets (mutually exclusive)
-///   0  = None/Default (clears all obstacles)
-///   1-6 = Fixed presets with baked materials
+/// Index -1: None/Default (clears all obstacles)
 /// 
-/// Indices 7-10: Custom Columns (mutually exclusive among themselves)
-///   7-10 = Column layouts that can accept material assignments
+/// Indices 0-5: Baked Presets (mutually exclusive)
+///   0 = MegaAbsorb
+///   1 = LesserAbsorb
+///   2 = MegaReflect
+///   3 = Cubetrees
+///   4 = Mega Absorb Spheres
+///   5 = VerySmallSet
 /// 
-/// Indices 11-12: Material Selectors (apply to active custom column only)
-///   11 = Carpet material
-///   12 = Concrete material
+/// Indices 6-8: Custom Columns (mutually exclusive among themselves)
+///   6-8 = Column layouts that can accept material assignments
+/// 
+/// Indices 9-10: Material Selectors (apply to active custom column only)
+///   9 = Carpet material
+///   10 = Concrete material
 /// 
 /// SELECTION RULES:
-/// - Selecting any preset (1-6) deactivates all other presets + all custom columns
-/// - Selecting any custom column (7-10) deactivates all presets + other custom columns
-/// - Materials (11-12) only apply to the currently active custom column
-/// - Selecting "None" (0) deactivates everything
+/// - Selecting any preset (0-5) deactivates all other presets + all custom columns
+/// - Selecting any custom column (6-8) deactivates all presets + other custom columns
+/// - Materials (9-10) only apply to the currently active custom column
+/// - Selecting "None" (-1) deactivates everything
 /// - Materials do NOT persist when switching columns (reset to null)
 /// 
 /// RESPONSIBILITIES:
@@ -44,7 +50,7 @@ public class ObstacleManager : MonoBehaviour
     // ???????????????????????????????????????????????????????????
 
     [Header("Obstacle Layouts")]
-    [Tooltip("Array of obstacle set GameObjects. Indices 0-6 = Presets, 7-10 = Custom Columns")]
+    [Tooltip("Array of obstacle set GameObjects. Index -1=None (handled specially), 0-5=Presets, 6-8=Custom Columns")]
     public GameObject[] obstacleSets;
 
     [Header("Material Controller")]
@@ -55,13 +61,13 @@ public class ObstacleManager : MonoBehaviour
     // CONSTANTS - Index Ranges
     // ???????????????????????????????????????????????????????????
 
-    private const int INDEX_NONE = 0;
-    private const int PRESET_START = 1;
-    private const int PRESET_END = 6;
-    private const int CUSTOM_COLUMN_START = 7;
-    private const int CUSTOM_COLUMN_END = 10;
-    private const int MATERIAL_CARPET = 11;
-    private const int MATERIAL_CONCRETE = 12;
+    private const int INDEX_NONE = -1;       // Special case: not an array index
+    private const int PRESET_START = 0;      // MegaAbsorb
+    private const int PRESET_END = 5;        // VerySmallSet
+    private const int CUSTOM_COLUMN_START = 6;  // First custom column
+    private const int CUSTOM_COLUMN_END = 8;    // LargeSet (last custom column)
+    private const int MATERIAL_CARPET = 9;      // Carpet toggle
+    private const int MATERIAL_CONCRETE = 10;   // Concrete toggle
 
     // ???????????????????????????????????????????????????????????
     // PRIVATE FIELDS
@@ -89,14 +95,14 @@ public class ObstacleManager : MonoBehaviour
             Debug.LogError("[ObstacleManager] materialController is not assigned! Material switching will not work.");
         }
 
-        if (obstacleSets == null || obstacleSets.Length < 11)
+        if (obstacleSets == null || obstacleSets.Length < 9)
         {
-            Debug.LogError("[ObstacleManager] obstacleSets array is not properly configured! Expected at least 11 elements.");
+            Debug.LogError("[ObstacleManager] obstacleSets array is not properly configured! Expected at least 9 elements (indices 0-8).");
             this.enabled = false;
             return;
         }
 
-        // Initialize to "None" state (index 0)
+        // Initialize to "None" state (index -1)
         SelectLayout(INDEX_NONE);
     }
 
@@ -115,21 +121,24 @@ public class ObstacleManager : MonoBehaviour
     /// <param name="soundIndex">DEPRECATED - Not used, will be removed in future</param>
     public void SelectLayout(int obstacleIndex, int soundIndex = 0)
     {
-        // Validate index range
-        if (obstacleIndex < 0 || obstacleIndex >= obstacleSets.Length)
-        {
-            Debug.LogError($"[ObstacleManager] Invalid obstacleIndex: {obstacleIndex}. Must be 0-{obstacleSets.Length - 1}");
-            return;
-        }
-
         Debug.Log($"[ObstacleManager] SelectLayout called with index: {obstacleIndex}");
 
-        // Route based on index range
+        // Handle special case for "None" (-1)
         if (obstacleIndex == INDEX_NONE)
         {
             SelectNone();
+            return;
         }
-        else if (obstacleIndex >= PRESET_START && obstacleIndex <= PRESET_END)
+
+        // Validate index range for array access
+        if (obstacleIndex < 0 || obstacleIndex >= obstacleSets.Length)
+        {
+            Debug.LogError($"[ObstacleManager] Invalid obstacleIndex: {obstacleIndex}. Must be -1 or 0-{obstacleSets.Length - 1}");
+            return;
+        }
+
+        // Route based on index range
+        if (obstacleIndex >= PRESET_START && obstacleIndex <= PRESET_END)
         {
             SelectPreset(obstacleIndex);
         }
@@ -311,7 +320,7 @@ public class ObstacleManager : MonoBehaviour
     // ???????????????????????????????????????????????????????????
 
     /// <summary>
-    /// Checks if a preset (1-6) is currently active.
+    /// Checks if a preset (0-5) is currently active.
     /// </summary>
     public bool IsPresetActive()
     {
@@ -319,7 +328,7 @@ public class ObstacleManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Checks if a custom column (7-10) is currently active.
+    /// Checks if a custom column (6-8) is currently active.
     /// </summary>
     public bool IsCustomColumnActive()
     {

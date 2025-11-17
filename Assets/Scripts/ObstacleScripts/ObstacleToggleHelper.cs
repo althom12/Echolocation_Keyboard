@@ -12,11 +12,11 @@ using UnityEngine;
 /// 3. Hook up OnToggleSelected() to the Toggle's OnValueChanged event
 /// 
 /// INDEX MAPPING:
-/// 0     = None/Default
-/// 1-6   = Baked Presets
-/// 7-10  = Custom Columns
-/// 11    = Carpet Material
-/// 12    = Concrete Material
+/// -1    = None/Default
+/// 0-5   = Baked Presets
+/// 6-8   = Custom Columns
+/// 9     = Carpet Material
+/// 10    = Concrete Material
 /// 
 /// DESIGN NOTE:
 /// This is a "dumb relay" - it has no logic, just passes the index to ObstacleManager.
@@ -33,7 +33,7 @@ public class ObstacleToggleHelper : MonoBehaviour
     public ObstacleManager obstacleManager;
 
     [Header("Configuration")]
-    [Tooltip("The index this toggle represents (0=None, 1-6=Presets, 7-10=Columns, 11-12=Materials)")]
+    [Tooltip("The index this toggle represents (-1=None, 0-5=Presets, 6-8=Columns, 9-10=Materials)")]
     public int obstacleIndex;
 
     // ???????????????????????????????????????????????????????????
@@ -86,9 +86,9 @@ public class ObstacleToggleHelper : MonoBehaviour
             Debug.LogWarning($"[ObstacleToggleHelper] '{gameObject.name}': obstacleManager is not assigned!");
         }
 
-        if (obstacleIndex < 0 || obstacleIndex > 12)
+        if (obstacleIndex < -1 || obstacleIndex > 10)
         {
-            Debug.LogWarning($"[ObstacleToggleHelper] '{gameObject.name}': obstacleIndex {obstacleIndex} is outside expected range (0-12)");
+            Debug.LogWarning($"[ObstacleToggleHelper] '{gameObject.name}': obstacleIndex {obstacleIndex} is outside expected range (-1 to 10)");
         }
     }
 #endif

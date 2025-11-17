@@ -320,49 +320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7684e136d2c4a3b449953f2491be5823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: beb39e99e7143844aa5186cfdd4cde4c, type: 2}
-    m_playingId: 0
-  toggleOnSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  toggleOffSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  simpleSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: d07095e16c906fd44a04139d7c96eacc, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!114 &10575197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,7 +446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0bf08415b878849afa1a0d1d134f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myButton: {fileID: 0}
 --- !u!1 &19662997
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,24 +711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &25132619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3368,24 +3306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 4d3edf201f443a4448b4e3d64c5da37f, type: 2}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: fb19fe108e4eefd41afc5f6827962bfb, type: 2}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 4ecaec2e47e406043b2453b24a69a4ed, type: 2}
 --- !u!114 &210976395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4620,24 +4540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &255236535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5125,24 +5027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &283166939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9088,24 +8972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 4d3edf201f443a4448b4e3d64c5da37f, type: 2}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: f9ddfa18a54a5054c90cd8332b222b16, type: 2}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: b15f50fcf080cdb4f8d887b97941cf3d, type: 2}
 --- !u!114 &475050864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10246,24 +10112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &495023062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11358,24 +11206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 4d3edf201f443a4448b4e3d64c5da37f, type: 2}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: d0f589a5f6639614b8df6e76860f56ba, type: 2}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: dd475d5c51240634fb64370640a2632b, type: 2}
 --- !u!114 &550447765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14100,24 +13930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: ac5e7dfb11a9a9243a06e34998e5b6cc, type: 2}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: e6f8a2e40df1da84494b3d40b35ae679, type: 2}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &655385863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14219,24 +14031,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &663241069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14782,24 +14576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &673296109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15008,7 +14784,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: 6
-  soundIndex: 7
 --- !u!114 &679667182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15974,24 +15749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &774605698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16159,24 +15916,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &789080413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16349,49 +16088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7684e136d2c4a3b449953f2491be5823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 5a6d4fa89c5db124ebd92133a31a36e4, type: 2}
-    m_playingId: 0
-  toggleOnSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  toggleOffSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  simpleSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 03f1518c42544a341a08a3a26a3f565a, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!114 &790082680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16649,24 +16345,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &791740695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18778,24 +18456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &965927684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19160,24 +18820,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &978852570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19980,24 +19622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1036016794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22947,7 +22571,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: -1
-  soundIndex: 0
 --- !u!224 &1159409850
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23152,24 +22775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1161477440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23943,24 +23548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1230977029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25730,24 +25317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1362180578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27646,24 +27215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1479215419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27914,24 +27465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1485385004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28267,7 +27800,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: -1
-  soundIndex: 0
 --- !u!114 &1512828233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29036,24 +28568,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1543331908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29954,24 +29468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1629850834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30721,24 +30217,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1669140546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31109,7 +30587,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: 8
-  soundIndex: 9
 --- !u!114 &1680121007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33137,24 +32614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1809499760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33363,7 +32822,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: 5
-  soundIndex: 6
 --- !u!114 &1814899815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33417,43 +32875,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4df4da7da604c4b8e88d5289083dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: d83b732a45066014f83929a28cbf66ea, type: 2}
-    m_playingId: 0
-  checkedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: cf659a2edd7980b41a2235aa4bdc35a8, type: 2}
-  notCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 5438ab0559cc8494c80b0d4f9a622925, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: c145f057e5f569f4eab2ea08cc14ddcb, type: 2}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!1 &1816193643
 GameObject:
   m_ObjectHideFlags: 0
@@ -33580,7 +33001,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: 7
-  soundIndex: 8
 --- !u!114 &1823348511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34630,24 +34050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1895922366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34881,49 +34283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7684e136d2c4a3b449953f2491be5823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: beb39e99e7143844aa5186cfdd4cde4c, type: 2}
-    m_playingId: 0
-  toggleOnSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  toggleOffSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  simpleSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: c58c1392b2fa2cf46b2765a0ed109d10, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!222 &1929924895
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34964,7 +34323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8231e545ccada841885d3499f6bd313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myButton: {fileID: 0}
 --- !u!1 &1939598689
 GameObject:
   m_ObjectHideFlags: 0
@@ -35084,24 +34442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: ac5e7dfb11a9a9243a06e34998e5b6cc, type: 2}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 47ab3ff897007b544b426c2ad51645cd, type: 2}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1939598693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35505,19 +34845,7 @@ MonoBehaviour:
   - {fileID: 1657698415}
   - {fileID: 1955729013}
   - {fileID: 1419756410}
-  activationSounds: []
-  carpetTexture:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  ConcreteTexture:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  carpetIndicator: {fileID: 0}
-  concreteIndicator: {fileID: 0}
-  carpetMaterialToggle: {fileID: 0}
-  concreteMaterialToggle: {fileID: 0}
+  materialController: {fileID: 1952309207}
 --- !u!4 &1952309206
 Transform:
   m_ObjectHideFlags: 0
@@ -35540,25 +34868,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952309204}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 599e7eff07c6fb24390d8184c6252a2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fae216102f9ef448a49fd44b6d97372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   carpetTexture:
     idInternal: 0
-    valueGuidInternal: []
+    valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a574d57379befe644b08d3ca3fff1c46, type: 2}
-  ConcreteTexture:
+  concreteTexture:
     idInternal: 0
-    valueGuidInternal: []
+    valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f0254124c5930d34bbaa95194b002280, type: 2}
-  carpetIndicator: {fileID: 0}
-  concreteIndicator: {fileID: 0}
   carpetMaterialToggle: {fileID: 1159409848}
   concreteMaterialToggle: {fileID: 1512828233}
-  ObstacleReflectors: []
-  isUpdatingToggles: 0
+  carpetIndicator: {fileID: 0}
+  concreteIndicator: {fileID: 0}
 --- !u!1 &1955729013
 GameObject:
   m_ObjectHideFlags: 0
@@ -37618,24 +36944,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &2086004168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37968,24 +37276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &2091271503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40086,24 +39376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  normalSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  returnContextSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &2123463147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51656,7 +50928,6 @@ GameObject:
   - component: {fileID: 6983137893281522073}
   - component: {fileID: 8512380704037330557}
   - component: {fileID: 8512380704037330558}
-  - component: {fileID: 8512380704037330559}
   - component: {fileID: 8512380704037330560}
   m_Layer: 5
   m_Name: CubeTrees
@@ -73155,7 +72426,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: 2
-  soundIndex: 3
 --- !u!114 &7335898034525707945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73168,43 +72438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4df4da7da604c4b8e88d5289083dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: d83b732a45066014f83929a28cbf66ea, type: 2}
-    m_playingId: 0
-  checkedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 8766c70cd8535cb4090a9a8ea4f452c5, type: 2}
-  notCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 9a0f37095473a67449450bf91a543e17, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: c145f057e5f569f4eab2ea08cc14ddcb, type: 2}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!114 &7335898034525707946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76098,7 +75331,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: -1
-  soundIndex: 0
 --- !u!114 &7932841210277701709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76506,7 +75738,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: 0
-  soundIndex: 1
 --- !u!114 &8017409672833821403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76519,43 +75750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4df4da7da604c4b8e88d5289083dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: d83b732a45066014f83929a28cbf66ea, type: 2}
-    m_playingId: 0
-  checkedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: ca92c26bd0c441d4b92b27b64af3b5c2, type: 2}
-  notCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 11f390ab968fb9749838ced3589e396b, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: c145f057e5f569f4eab2ea08cc14ddcb, type: 2}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: cc5cb7c6ad3f7974ab2ae3636586ca66, type: 2}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 9acbcb70e3e24904281bbeafebc72f0c, type: 2}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!114 &8017409672833821404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81022,56 +80216,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: 3
-  soundIndex: 4
---- !u!114 &8512380704037330559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2294410862943151467}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec4df4da7da604c4b8e88d5289083dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: d83b732a45066014f83929a28cbf66ea, type: 2}
-    m_playingId: 0
-  checkedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: f51cf7f596f7e7c45bf73832ef28e1b7, type: 2}
-  notCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 36522cd0b25038249af086a69052cc30, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: c145f057e5f569f4eab2ea08cc14ddcb, type: 2}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!114 &8512380704037330560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82265,7 +81409,6 @@ GameObject:
   - component: {fileID: 4029632500745927246}
   - component: {fileID: 5885525115820505988}
   - component: {fileID: 8682324950862562528}
-  - component: {fileID: 8682324950862562529}
   - component: {fileID: 8682324950862562530}
   m_Layer: 5
   m_Name: MegaAbsorbSpheres
@@ -82288,56 +81431,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: 4
-  soundIndex: 5
---- !u!114 &8682324950862562529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8682324950862562527}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec4df4da7da604c4b8e88d5289083dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: d83b732a45066014f83929a28cbf66ea, type: 2}
-    m_playingId: 0
-  checkedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: fb59acf460bca1e46a095a0e35acda4e, type: 2}
-  notCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: ab98749000938954a8000a2fb3e9f278, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: c145f057e5f569f4eab2ea08cc14ddcb, type: 2}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!114 &8682324950862562530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84097,49 +83190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7684e136d2c4a3b449953f2491be5823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 28f40802b7270974d968e3c97e0b143b, type: 2}
-    m_playingId: 0
-  toggleOnSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  toggleOffSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  simpleSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 04582ab117575ff49b771bb72dd178fc, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 0}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!114 &8946266613718780240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85300,7 +84350,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleManager: {fileID: 1952309205}
   obstacleIndex: 1
-  soundIndex: 2
 --- !u!114 &9049701359106372519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85313,43 +84362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4df4da7da604c4b8e88d5289083dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: d83b732a45066014f83929a28cbf66ea, type: 2}
-    m_playingId: 0
-  checkedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 3f5ae50b6992c9d4a871e3f88b3ce1f0, type: 2}
-  notCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: f891fcd11fb61a345ab31062fa2690ad, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: c145f057e5f569f4eab2ea08cc14ddcb, type: 2}
-    m_playingId: 0
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: cc5cb7c6ad3f7974ab2ae3636586ca66, type: 2}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: []
-    groupIdInternal: 0
-    groupGuidInternal: []
-    WwiseObjectReference: {fileID: 11400000, guid: 9acbcb70e3e24904281bbeafebc72f0c, type: 2}
-  myToggle: {fileID: 0}
-  isCurrentlySelected: 0
 --- !u!114 &9049701359106372520
 MonoBehaviour:
   m_ObjectHideFlags: 0
