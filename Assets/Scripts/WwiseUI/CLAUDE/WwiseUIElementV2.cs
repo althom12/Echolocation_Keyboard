@@ -11,6 +11,12 @@ using UnityEngine.EventSystems;
 /// - Toggles (state-based switches + action audio)
 /// - Main Menu Buttons (context-aware switching based on navigation source)
 /// 
+/// NAVIGATION MODEL:
+/// This system is designed for keyboard-only navigation by blind users:
+/// - Arrow keys: Navigate between UI elements (triggers OnSelect ? selection audio)
+/// - Enter key: Activate/toggle elements (triggers onValueChanged ? action audio for toggles)
+/// - NO mouse interaction
+/// 
 /// REPLACES: WwiseObstacleToggle, WwiseMainMenuButton
 /// ENHANCES: Original WwiseUIElement
 /// 
@@ -65,7 +71,7 @@ public class WwiseUIElementV2 : MonoBehaviour, ISelectHandler
     // TOGGLE ACTION AUDIO (Optional)
     // ???????????????????????????????????????????????????????????????????
     [Header("Toggle Action Audio (Optional)")]
-    [Tooltip("Event to play when toggle value changes (only plays when user clicks, not when set programmatically)")]
+    [Tooltip("Event to play when toggle value changes (only plays when user presses Enter to activate, not when set programmatically)")]
     public AK.Wwise.Event toggleActionEvent;
 
     [Tooltip("Switch for toggle action when checked")]
@@ -129,16 +135,34 @@ public class WwiseUIElementV2 : MonoBehaviour, ISelectHandler
     /// </summary>
     public void OnSelect(BaseEventData eventData)
     {
+        Debug.Log($"[WwiseUIElementV2] OnSelect called on '{gameObject.name}'");
+
         isCurrentlySelected = true;
 
         // Validate required references
         if (audioChannel == null || selectionEvent == null)
         {
             if (audioChannel == null)
-                Debug.LogWarning($"[WwiseUIElementV2] '{gameObject.name}': audioChannel is not assigned!");
+                Debug.LogError($"[WwiseUIElementV2] '{gameObject.name}': audioChannel is not assigned!");
             if (selectionEvent == null)
-                Debug.LogWarning($"[WwiseUIElementV2] '{gameObject.name}': selectionEvent is not assigned!");
+                Debug.LogError($"[WwiseUIElementV2] '{gameObject.name}': selectionEvent is not assigned!");
             return;
+        }
+
+        // For context-based mode, check and cache the return flag BEFORE determining switch
+        bool wasReturning = false;
+        if (useReturnContext)
+        {
+            AudioManager audioManager = AudioManager.Instance;
+            if (audioManager == null)
+            {
+                Debug.LogError($"[WwiseUIElementV2] '{gameObject.name}': useReturnContext is enabled but AudioManager.Instance is null!");
+            }
+            else
+            {
+                wasReturning = audioManager.IsReturningToMainMenu();
+                Debug.Log($"[WwiseUIElementV2] '{gameObject.name}': IsReturning = {wasReturning}");
+            }
         }
 
         // Determine which switch to use based on configuration
@@ -146,9 +170,11 @@ public class WwiseUIElementV2 : MonoBehaviour, ISelectHandler
 
         if (switchToSend == null)
         {
-            Debug.LogWarning($"[WwiseUIElementV2] '{gameObject.name}': No valid switch determined for selection!");
+            Debug.LogError($"[WwiseUIElementV2] '{gameObject.name}': No valid switch determined for selection!");
             return;
         }
+
+        Debug.Log($"[WwiseUIElementV2] '{gameObject.name}': Using switch '{switchToSend.Name}'");
 
         // Create the audio packet
         AudioEventChannelSO.WwiseEventPacket packet = new AudioEventChannelSO.WwiseEventPacket
@@ -158,16 +184,20 @@ public class WwiseUIElementV2 : MonoBehaviour, ISelectHandler
             Emitter = this.gameObject
         };
 
+        Debug.Log($"[WwiseUIElementV2] '{gameObject.name}': Raising audio event through channel");
+
         // Post through the audio channel (AudioManager will handle priority/sequencing)
         audioChannel.RaiseEvent(packet);
 
-        // Handle return context cleanup if applicable
-        if (useReturnContext)
+        // CRITICAL: Clear the return flag ONLY if it was true when we checked
+        // This ensures the return context audio plays only ONCE (on auto-selection after returning)
+        if (wasReturning)
         {
             AudioManager audioManager = AudioManager.Instance;
-            if (audioManager != null && audioManager.IsReturningToMainMenu())
+            if (audioManager != null)
             {
                 audioManager.SetReturningToMainMenu(false);
+                Debug.Log($"[WwiseUIElementV2] '{gameObject.name}': Cleared returning flag");
             }
         }
     }
@@ -178,7 +208,7 @@ public class WwiseUIElementV2 : MonoBehaviour, ISelectHandler
 
     /// <summary>
     /// Called when the toggle value changes.
-    /// Only plays action audio if THIS toggle is currently selected (user-initiated click).
+    /// Only plays action audio if THIS toggle is currently selected (user pressed Enter to activate).
     /// This prevents audio from playing when toggle values are set programmatically.
     /// </summary>
     private void OnToggleValueChanged(bool isOn)

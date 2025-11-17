@@ -57900,7 +57900,6 @@ GameObject:
   - component: {fileID: 3022024349467019631}
   - component: {fileID: 414891919809236135}
   - component: {fileID: 4974876294823347849}
-  - component: {fileID: 4974876294823347850}
   - component: {fileID: 4974876294823347851}
   m_Layer: 5
   m_Name: Toggle
@@ -63341,7 +63340,6 @@ GameObject:
   - component: {fileID: 8854278881182281692}
   - component: {fileID: 8690225729381262307}
   - component: {fileID: 1583196972176462995}
-  - component: {fileID: 8854278881182281693}
   - component: {fileID: 8854278881182281694}
   - component: {fileID: 8854278881182281696}
   - component: {fileID: 8854278881182281695}
@@ -64083,57 +64081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95893b4717fb5dc42aee9b6044d9caad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4974876294823347850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3699387115130609180}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7684e136d2c4a3b449953f2491be5823, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 85244ca21ddd4c94f998876deff075ef, type: 2}
-  toggleOnSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bd26787ca61a06e4da10aff8877f3d36, type: 2}
-  toggleOffSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8e6be23b19853414abe9eb17afc7d711, type: 2}
-  simpleSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c145f057e5f569f4eab2ea08cc14ddcb, type: 2}
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cc5cb7c6ad3f7974ab2ae3636586ca66, type: 2}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9acbcb70e3e24904281bbeafebc72f0c, type: 2}
 --- !u!114 &4974876294823347851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68671,7 +68618,6 @@ GameObject:
   - component: {fileID: 2058111735978008416}
   - component: {fileID: 7029982909541503680}
   - component: {fileID: 1451267249246516821}
-  - component: {fileID: 7029982909541503681}
   - component: {fileID: 7029982909541503682}
   m_Layer: 5
   m_Name: Toggle
@@ -71616,7 +71562,7 @@ GameObject:
   - component: {fileID: 6633769503706898899}
   - component: {fileID: 353711709112105010}
   - component: {fileID: 9040808690255735127}
-  - component: {fileID: 9040808690255735128}
+  - component: {fileID: 9040808690255735129}
   m_Layer: 5
   m_Name: ClickButton
   m_TagString: Untagged
@@ -73170,57 +73116,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
---- !u!114 &7029982909541503681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5843438877885107377}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7684e136d2c4a3b449953f2491be5823, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 28f40802b7270974d968e3c97e0b143b, type: 2}
-  toggleOnSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 43c0f1ad03e65b846a54eb3c703ee0f9, type: 2}
-  toggleOffSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8d0a7e1c36c7d2042b5e90133cc53ccf, type: 2}
-  simpleSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c145f057e5f569f4eab2ea08cc14ddcb, type: 2}
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cc5cb7c6ad3f7974ab2ae3636586ca66, type: 2}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9acbcb70e3e24904281bbeafebc72f0c, type: 2}
 --- !u!114 &7029982909541503682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85549,57 +85444,6 @@ RectTransform:
   m_AnchoredPosition: {x: 99.035, y: -222.9}
   m_SizeDelta: {x: 178.07, y: 33.77}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8854278881182281693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4897644541686735063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7684e136d2c4a3b449953f2491be5823, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
-  selectionEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5a6d4fa89c5db124ebd92133a31a36e4, type: 2}
-  toggleOnSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  toggleOffSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  simpleSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8bef1dd128b7a604ca558667e9f4bed2, type: 2}
-  toggleActionEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  actionCheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  actionUncheckedSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &8854278881182281694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86546,7 +86390,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &9040808690255735128
+--- !u!114 &9040808690255735129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86555,7 +86399,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6689116509831485050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9467ded89033aa44686bf98af8e0e490, type: 3}
+  m_Script: {fileID: 11500000, guid: a1e3dd62ff2ef084aacd39183314be75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioChannel: {fileID: 11400000, guid: dbcf0cf270a328d4e880300abc8b938c, type: 2}
@@ -86563,6 +86407,13 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4d3edf201f443a4448b4e3d64c5da37f, type: 2}
+  simpleSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 35dcb03f2bab37545a7c203b66fc75ad, type: 2}
+  useReturnContext: 1
   normalSwitch:
     idInternal: 0
     valueGuidInternal: 
@@ -86575,6 +86426,34 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d9b91f095c8e5f14da02dd4f9b3449ce, type: 2}
+  toggleOnSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  toggleOffSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  toggleActionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  actionCheckedSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  actionUncheckedSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &9043753052669024609
 MonoBehaviour:
   m_ObjectHideFlags: 0

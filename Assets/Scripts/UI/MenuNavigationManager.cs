@@ -266,11 +266,22 @@ public class MenuNavigationManager : MonoBehaviour
             EventSystem.current.SetSelectedGameObject(firstElement.gameObject);
             Debug.Log($"[MenuNavManager] Selected first element: {firstElement.name}");
 
-            WwiseMainMenuButton buttonScript = firstElement.GetComponent<WwiseMainMenuButton>();
-            if (buttonScript != null)
+            // Check for V2 component first (new standard)
+            WwiseUIElementV2 buttonScriptV2 = firstElement.GetComponent<WwiseUIElementV2>();
+            if (buttonScriptV2 != null)
             {
-                Debug.Log($"[MenuNavManager] Manually caching button audio");
-                ManuallyTriggerButtonAudio(buttonScript, audioManager);
+                Debug.Log($"[MenuNavManager] Manually caching button audio (WwiseUIElementV2)");
+                ManuallyTriggerButtonAudioV2(buttonScriptV2, audioManager);
+            }
+            // Fallback to legacy component
+            else
+            {
+                WwiseMainMenuButton buttonScript = firstElement.GetComponent<WwiseMainMenuButton>();
+                if (buttonScript != null)
+                {
+                    Debug.Log($"[MenuNavManager] Manually caching button audio (WwiseMainMenuButton - legacy)");
+                    ManuallyTriggerButtonAudio(buttonScript, audioManager);
+                }
             }
         }
         else
@@ -295,6 +306,31 @@ public class MenuNavigationManager : MonoBehaviour
         {
             WwiseEvent = button.selectionEvent,
             WwiseSwitch = button.normalSwitch,
+            Emitter = button.gameObject
+        };
+
+        if (button.audioChannel != null)
+        {
+            button.audioChannel.RaiseEvent(packet);
+        }
+    }
+
+    private void ManuallyTriggerButtonAudioV2(WwiseUIElementV2 button, AudioManager audioManager)
+    {
+        // Determine the correct switch based on button configuration
+        AK.Wwise.Switch switchToUse = button.normalSwitch; // Default to normal (not returning)
+
+        // If context-based mode is enabled, check the return flag
+        if (button.useReturnContext && audioManager != null)
+        {
+            bool isReturning = audioManager.IsReturningToMainMenu();
+            switchToUse = isReturning ? button.returnContextSwitch : button.normalSwitch;
+        }
+
+        AudioEventChannelSO.WwiseEventPacket packet = new AudioEventChannelSO.WwiseEventPacket
+        {
+            WwiseEvent = button.selectionEvent,
+            WwiseSwitch = switchToUse,
             Emitter = button.gameObject
         };
 
