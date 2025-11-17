@@ -3,6 +3,10 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using System.Collections;
 
+/// <summary>
+/// Menu Navigation Manager - FINAL FIX
+/// Forces OnSelect to fire by clearing selection first.
+/// </summary>
 public class MenuNavigationManager : MonoBehaviour
 {
     [Header("Main Menu")]
@@ -39,6 +43,9 @@ public class MenuNavigationManager : MonoBehaviour
     private bool _isClosingMenu = false;
 
     private GameObject _lastSelectedMainMenuButton;
+
+    // Track menu open audio playing ID
+    private uint _menuOpenPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
 
     private void Awake()
     {
@@ -79,6 +86,9 @@ public class MenuNavigationManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Opens the main menu with proper audio sequencing.
+    /// </summary>
     public void OpenMainMenu()
     {
         if (_isMenuOpen) return;
@@ -90,42 +100,117 @@ public class MenuNavigationManager : MonoBehaviour
 
         mainMenuPanel.SetActive(true);
 
-        if (firstMainMenuButton != null)
-        {
-            EventSystem.current.SetSelectedGameObject(firstMainMenuButton);
-        }
-
-        if (menuOpenEvent != null && menuOpenEvent.IsValid())
-        {
-            menuOpenEvent.Post(gameObject);
-        }
-
-        // --- MODIFIED: Tutorial audio pause through new architecture ---
-        // Check if tutorial is active before pausing
+        // Pause tutorial audio if active
         if (TutorialManager.Instance != null && TutorialManager.Instance.IsTutorialActive())
         {
-            // Pause tutorial audio through the WwiseStateManager
             if (TutorialManager.Instance.pauseStateManager != null)
             {
                 TutorialManager.Instance.pauseStateManager.SetToSecondaryState(); // Paused
                 Debug.Log("[MenuNavigationManager] Tutorial audio paused (menu opened)");
             }
         }
-        // --- END MODIFIED SECTION ---
 
-        AudioManager.Instance?.SetReturningToMainMenu(false);
+        // 1. SETUP AUDIO MANAGER IMMEDIATELY (Sync)
+        AudioManager audioManager = AudioManager.Instance;
+        if (audioManager != null)
+        {
+            audioManager.SetReturningToMainMenu(false);
+            Debug.Log("[MenuNavigationManager] Setting audio gate to Window_Opening (IMMEDIATE)");
+            audioManager.ClearPendingSelectionAudio();
+            audioManager.SetAudioState(UIAudioState.Window_Opening);
+        }
+
+        // 2. Start the sequence for selection and callbacks
+        StartCoroutine(OpenMainMenuSequence());
     }
 
-
-
     /// <summary>
-    /// Opens a subwindow by direct GameObject reference.
-    /// This is cleaner for Inspector-based button configuration.
+    /// Handles the main menu opening sequence with proper timing.
     /// </summary>
-    /// <summary>
-    /// Opens a subwindow by direct GameObject reference.
-    /// This is cleaner for Inspector-based button configuration.
-    /// </summary>
+    private IEnumerator OpenMainMenuSequence()
+    {
+        // Frame 1: Wait for mainMenuPanel to fully activate
+        yield return null;
+
+        // ---------------------------------------------------------
+        // FIX: FORCE DESELECT
+        // We must clear the EventSystem's current object first. 
+        // If we don't, and the system 'remembers' the button was last selected,
+        // SetSelectedGameObject() will NOT fire OnSelect, and no audio packet will be sent.
+        // ---------------------------------------------------------
+        EventSystem.current.SetSelectedGameObject(null);
+
+        // Select first button
+        if (firstMainMenuButton != null)
+        {
+            EventSystem.current.SetSelectedGameObject(firstMainMenuButton);
+            Debug.Log("[MenuNavigationManager] First button selected (Forced refresh)");
+        }
+
+        // Frame 2: Wait for button's OnSelect to fire and audio to be cached
+        yield return null;
+        Debug.Log("[MenuNavigationManager] Second frame passed, checking if audio was cached");
+
+        // Post menu open event with callback
+        if (menuOpenEvent != null && menuOpenEvent.IsValid())
+        {
+            Debug.Log("[MenuNavigationManager] Posting menu open event with callback");
+            uint flags = (uint)AkCallbackType.AK_EndOfEvent;
+            _menuOpenPlayingID = menuOpenEvent.Post(
+                gameObject,
+                flags,
+                OnMenuOpenAudioFinished,
+                null
+            );
+        }
+        else
+        {
+            // No menu open audio - immediately play cached selection audio
+            Debug.LogWarning("[MenuNavigationManager] No menuOpenEvent assigned, playing cached audio immediately");
+            if (AudioManager.Instance != null)
+            {
+                StartCoroutine(PlayCachedSelectionAudioAfterFrame());
+            }
+        }
+    }
+
+    private void OnMenuOpenAudioFinished(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        if (in_type == AkCallbackType.AK_EndOfEvent)
+        {
+            Debug.Log("[MenuNavigationManager] Menu open audio finished, playing cached selection audio");
+            _menuOpenPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
+
+            if (gameObject.activeInHierarchy)
+            {
+                StartCoroutine(PlayCachedSelectionAudioAfterFrame());
+            }
+        }
+    }
+
+    private IEnumerator PlayCachedSelectionAudioAfterFrame()
+    {
+        yield return null;
+
+        AudioManager audioManager = AudioManager.Instance;
+        if (audioManager != null)
+        {
+            Debug.Log("[MenuNavigationManager] Playing pending selection audio and resetting gate to Idle");
+            audioManager.PlayPendingSelectionAudio();
+            audioManager.SetAudioState(UIAudioState.Idle);
+        }
+    }
+
+    private void StopMainMenuAudio()
+    {
+        if (_menuOpenPlayingID != AkSoundEngine.AK_INVALID_PLAYING_ID)
+        {
+            Debug.Log("[MenuNavigationManager] Stopping main menu open audio");
+            AkSoundEngine.StopPlayingID(_menuOpenPlayingID);
+            _menuOpenPlayingID = AkSoundEngine.AK_INVALID_PLAYING_ID;
+        }
+    }
+
     public void OpenSubwindowByGameObject(GameObject subwindowPanel)
     {
         if (subwindowPanel == null)
@@ -143,7 +228,6 @@ public class MenuNavigationManager : MonoBehaviour
             return;
         }
 
-        // CRITICAL FIX: Remember which button was selected
         _lastSelectedMainMenuButton = EventSystem.current.currentSelectedGameObject;
         Debug.Log($"[MenuNavigationManager] Remembering last selected button: {(_lastSelectedMainMenuButton != null ? _lastSelectedMainMenuButton.name : "NULL")}");
 
@@ -173,7 +257,6 @@ public class MenuNavigationManager : MonoBehaviour
 
         Debug.Log("[MenuNavigationManager] Closing active subwindow");
 
-        // Stop window audio
         BaseSubwindow subwindow = _currentActiveSubwindow.GetComponent<BaseSubwindow>();
         if (subwindow != null)
         {
@@ -183,11 +266,18 @@ public class MenuNavigationManager : MonoBehaviour
         _currentActiveSubwindow.SetActive(false);
         _currentActiveSubwindow = null;
 
+        // FIX: Force unlock the gate in case the subwindow left it closed
+        if (AudioManager.Instance != null)
+        {
+            Debug.Log("[MenuNavigationManager] Forcing Audio State to Idle (Subwindow Closed)");
+            AudioManager.Instance.ClearPendingSelectionAudio();
+            AudioManager.Instance.SetAudioState(UIAudioState.Idle);
+        }
+
         mainMenuPanel.SetActive(true);
 
         AudioManager.Instance?.SetReturningToMainMenu(true);
 
-        // CRITICAL FIX: Select the button we came from, or fall back to first button
         if (_lastSelectedMainMenuButton != null)
         {
             Debug.Log($"[MenuNavigationManager] Returning to last selected button: {_lastSelectedMainMenuButton.name}");
@@ -218,20 +308,22 @@ public class MenuNavigationManager : MonoBehaviour
             _currentActiveSubwindow = null;
         }
 
+        StopMainMenuAudio();
+
+        // SAFETY: Force the gate open (Idle) when closing the menu.
+        AudioManager.Instance?.SetAudioState(UIAudioState.Idle);
+        AudioManager.Instance?.ClearPendingSelectionAudio();
+
         mainMenuPanel.SetActive(false);
 
-        // --- MODIFIED: Tutorial audio resume through new architecture ---
-        // Check if tutorial is active before resuming
         if (TutorialManager.Instance != null && TutorialManager.Instance.IsTutorialActive())
         {
-            // Resume tutorial audio through the WwiseStateManager
             if (TutorialManager.Instance.pauseStateManager != null)
             {
                 TutorialManager.Instance.pauseStateManager.SetToPrimaryState(); // Playing
                 Debug.Log("[MenuNavigationManager] Tutorial audio resumed (menu closed)");
             }
         }
-        // --- END MODIFIED SECTION ---
 
         AudioManager.Instance?.SetReturningToMainMenu(false);
 

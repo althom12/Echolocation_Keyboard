@@ -69462,8 +69462,8 @@ GameObject:
   - component: {fileID: 4666024961162391186}
   - component: {fileID: 4860273862210634376}
   - component: {fileID: 6633769503706898899}
-  - component: {fileID: 353711709112105010}
   - component: {fileID: 9040808690255735127}
+  - component: {fileID: 353711709112105010}
   - component: {fileID: 9040808690255735129}
   m_Layer: 5
   m_Name: ClickButton
