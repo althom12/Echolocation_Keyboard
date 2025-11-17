@@ -16171,7 +16171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7eb5644eaafd9419c044ef290aaf5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  landmarkType: 1
+  landmarkIndex: 0
   defaultValue: 50
   feedbackSound:
     idInternal: 0
@@ -21553,7 +21553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02edb0cbdb916694aa51ecbd7295bafd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  landmarkType: 1
+  landmarkIndex: 0
 --- !u!114 &1122171250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24668,26 +24668,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d9a468ceb5b94f97573d21025d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clockGameObject: {fileID: 1110818908}
-  hvacGameObject: {fileID: 1057404608}
-  clockEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8f4c3cd23cca68e4598981eff8e50937, type: 2}
-  hvacEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5d409923d384eea4692b83cbca98f2e6, type: 2}
-  clockVolumeRTPC:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bbdb3c85226bb784488445e6d57a40cd, type: 2}
-  hvacVolumeRTPC:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bf951f914c2e5e340b4fa5b7d138a2bf, type: 2}
-  defaultClockVolume: 50
-  defaultHVACVolume: 50
+  landmarkBindings:
+  - landmarkDefinition: {fileID: 11400000, guid: 1d79f6738fc86dd40b6b4f8270f9f4b5, type: 2}
+    spatialEmitter: {fileID: 1110818908}
+    toggle: {fileID: 1497649123439719990}
+    volumeSlider: {fileID: 8690225729381262307}
+    visualIndicator: {fileID: 0}
+  - landmarkDefinition: {fileID: 11400000, guid: 26f0ee1b2b9502149b8c182e04bb98eb, type: 2}
+    spatialEmitter: {fileID: 1057404608}
+    toggle: {fileID: 1122171248}
+    volumeSlider: {fileID: 790082681}
+    visualIndicator: {fileID: 0}
 --- !u!4 &1294781173
 Transform:
   m_ObjectHideFlags: 0
@@ -72094,7 +72085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02edb0cbdb916694aa51ecbd7295bafd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  landmarkType: 0
+  landmarkIndex: 0
 --- !u!114 &7274372990857939905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82688,7 +82679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7eb5644eaafd9419c044ef290aaf5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  landmarkType: 0
+  landmarkIndex: 0
   defaultValue: 50
   feedbackSound:
     idInternal: 0

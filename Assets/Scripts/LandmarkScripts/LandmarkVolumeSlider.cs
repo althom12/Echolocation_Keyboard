@@ -4,21 +4,26 @@ using UnityEngine.EventSystems;
 
 /// <summary>
 /// Specialized slider for controlling landmark volume through LandmarksManager.
-/// The feedback sound will play at the same volume level as the slider value for preview.
-/// Stops the feedback sound when the user navigates away from this slider.
+/// 
+/// DUAL-EMITTER PATTERN (CRITICAL for blind user UX):
+/// - Spatial Emitter: The landmark GameObject in the world (e.g., Clock at position X,Y,Z)
+/// - 2D Feedback Emitter: This slider GameObject (always audible, centered, non-spatial)
+/// 
+/// When user adjusts slider:
+/// 1. RTPC is set on BOTH the spatial emitter (affects landmark in world) AND slider (affects feedback)
+/// 2. Feedback sound plays from slider GameObject (user hears it clearly regardless of position)
+/// 3. User can adjust landmarks from anywhere in the world and hear the result
+/// 
+/// REFACTORED: Now uses landmarkIndex instead of enum for scalability.
 /// </summary>
 public class LandmarkVolumeSlider : MonoBehaviour, IDeselectHandler
 {
-    public enum LandmarkType
-    {
-        Clock,
-        HVAC
-    }
-
     [Header("Landmark Configuration")]
-    public LandmarkType landmarkType;
+    [Tooltip("Index of the landmark this slider controls (0 = first in LandmarksManager array)")]
+    public int landmarkIndex = 0;
 
     [Header("Slider Settings")]
+    [Tooltip("Default volume value (0-100)")]
     public float defaultValue = 50f;
 
     [Header("Audio Feedback")]
@@ -43,10 +48,17 @@ public class LandmarkVolumeSlider : MonoBehaviour, IDeselectHandler
 
     private void Start()
     {
+        // Set slider to default value
         _slider.value = defaultValue;
+
+        // Initialize landmark volume in manager
         UpdateLandmarkVolume(defaultValue);
+
         _isInitialized = true;
-        Debug.Log($"LandmarkVolumeSlider: Initialized {landmarkType} slider at volume {defaultValue}");
+
+        // Get landmark name for better logging
+        string landmarkName = GetLandmarkName();
+        Debug.Log($"LandmarkVolumeSlider: Initialized '{landmarkName}' (index {landmarkIndex}) slider at volume {defaultValue}");
     }
 
     private void OnEnable()
@@ -75,57 +87,63 @@ public class LandmarkVolumeSlider : MonoBehaviour, IDeselectHandler
     {
         // Stop the feedback sound when user navigates to another UI element
         StopFeedbackSound();
-        Debug.Log($"LandmarkVolumeSlider: {landmarkType} slider deselected, stopping feedback sound.");
+
+        string landmarkName = GetLandmarkName();
+        Debug.Log($"LandmarkVolumeSlider: '{landmarkName}' (index {landmarkIndex}) slider deselected, stopping feedback sound.");
     }
 
     private void OnSliderValueChanged(float value)
     {
         if (!_isInitialized) return;
 
-        Debug.Log($"LandmarkVolumeSlider: {landmarkType} slider changed to {value}");
+        string landmarkName = GetLandmarkName();
+        Debug.Log($"LandmarkVolumeSlider: '{landmarkName}' (index {landmarkIndex}) slider changed to {value}");
 
+        // Update the landmark volume in the world
         UpdateLandmarkVolume(value);
 
-        // Stop previous feedback sound and play new one at the current volume level
+        // Play feedback sound at the current volume level (DUAL-EMITTER PATTERN)
         PlayFeedbackSound(value);
     }
 
+    /// <summary>
+    /// DUAL-EMITTER PATTERN: Plays feedback sound from THIS slider GameObject (2D, always audible).
+    /// Sets RTPC on slider so feedback plays at same volume as the landmark would.
+    /// This lets blind users hear the volume adjustment regardless of world position.
+    /// </summary>
     private void PlayFeedbackSound(float volume)
     {
-        if (feedbackSound != null && feedbackSound.IsValid())
+        if (feedbackSound == null || !feedbackSound.IsValid())
         {
-            LandmarksManager manager = LandmarksManager.Instance;
-            if (manager == null) return;
-
-            // Stop any existing feedback sound first
-            if (_feedbackPlayingID != AkSoundEngine.AK_INVALID_PLAYING_ID)
-            {
-                AkSoundEngine.StopPlayingID(_feedbackPlayingID);
-            }
-
-            // Set the appropriate RTPC on THIS GameObject (the slider) to match the volume
-            // This makes the feedback sound play at the same volume level as the landmark
-            AK.Wwise.RTPC rtpcToUse = null;
-
-            switch (landmarkType)
-            {
-                case LandmarkType.Clock:
-                    rtpcToUse = manager.clockVolumeRTPC;
-                    break;
-                case LandmarkType.HVAC:
-                    rtpcToUse = manager.hvacVolumeRTPC;
-                    break;
-            }
-
-            if (rtpcToUse != null)
-            {
-                // Set the RTPC value on the slider GameObject
-                rtpcToUse.SetValue(gameObject, volume);
-            }
-
-            // Post the feedback sound - it will use the RTPC value we just set
-            _feedbackPlayingID = feedbackSound.Post(gameObject);
+            return;
         }
+
+        LandmarksManager manager = LandmarksManager.Instance;
+        if (manager == null) return;
+
+        // Stop any existing feedback sound first
+        if (_feedbackPlayingID != AkSoundEngine.AK_INVALID_PLAYING_ID)
+        {
+            AkSoundEngine.StopPlayingID(_feedbackPlayingID);
+        }
+
+        // Get the landmark binding to access the RTPC
+        LandmarkUIBinding binding = manager.GetLandmark(landmarkIndex);
+        if (binding == null || binding.landmarkDefinition == null)
+        {
+            Debug.LogWarning($"LandmarkVolumeSlider: Could not get landmark binding for index {landmarkIndex}");
+            return;
+        }
+
+        // CRITICAL: Set RTPC on THIS slider GameObject (not the spatial emitter!)
+        // This makes the feedback sound play at the volume the user is setting
+        if (binding.landmarkDefinition.volumeRTPC != null)
+        {
+            binding.landmarkDefinition.volumeRTPC.SetValue(gameObject, volume);
+        }
+
+        // Post the feedback sound from THIS slider GameObject (2D, non-spatial)
+        _feedbackPlayingID = feedbackSound.Post(gameObject);
     }
 
     private void StopFeedbackSound()
@@ -137,6 +155,10 @@ public class LandmarkVolumeSlider : MonoBehaviour, IDeselectHandler
         }
     }
 
+    /// <summary>
+    /// Updates the landmark's volume in the world (SPATIAL emitter).
+    /// This is separate from the feedback sound.
+    /// </summary>
     private void UpdateLandmarkVolume(float volume)
     {
         LandmarksManager manager = LandmarksManager.Instance;
@@ -146,14 +168,39 @@ public class LandmarkVolumeSlider : MonoBehaviour, IDeselectHandler
             return;
         }
 
-        switch (landmarkType)
+        // This sets the RTPC on the SPATIAL emitter (the Clock/HVAC GameObject in the world)
+        manager.SetLandmarkVolume(landmarkIndex, volume);
+    }
+
+    /// <summary>
+    /// Helper method to get landmark name for logging.
+    /// </summary>
+    private string GetLandmarkName()
+    {
+        if (LandmarksManager.Instance == null) return "Unknown";
+
+        LandmarkUIBinding binding = LandmarksManager.Instance.GetLandmark(landmarkIndex);
+        if (binding != null && binding.landmarkDefinition != null)
         {
-            case LandmarkType.Clock:
-                manager.SetClockVolume(volume);
-                break;
-            case LandmarkType.HVAC:
-                manager.SetHVACVolume(volume);
-                break;
+            return binding.landmarkDefinition.landmarkName;
+        }
+
+        return $"Index_{landmarkIndex}";
+    }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (landmarkIndex < 0)
+        {
+            Debug.LogWarning($"[{gameObject.name}] landmarkIndex is negative! Setting to 0.");
+            landmarkIndex = 0;
+        }
+
+        if (defaultValue < 0 || defaultValue > 100)
+        {
+            Debug.LogWarning($"[{gameObject.name}] defaultValue should be between 0-100. Current: {defaultValue}");
         }
     }
+#endif
 }
