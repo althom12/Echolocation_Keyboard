@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68488d266c8cca44be5b1d4aa39d15f, type: 3}
+  m_Name: BackwardMovementandCollision
+  m_EditorClassIdentifier: 
+  chapterName: Backward Movement and Collision
+  description: 
+  spawnPointID: TutorialSpawn02
+  disableObstacles: 0
+  instructionEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 97e1799b78afc574599917f9cbadb94f, type: 2}
+  completionType: 0
+  durationSeconds: 0
+  actionID: 
+  nextChapter: {fileID: 11400000, guid: e054884a760746b4c9103a06b9bca3b2, type: 2}
