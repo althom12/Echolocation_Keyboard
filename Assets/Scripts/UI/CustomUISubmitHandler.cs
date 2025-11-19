@@ -5,6 +5,9 @@ using UnityEngine.EventSystems;
 // Assumes the generated C# class is named "CustomUIActions"
 public class CustomUISubmitHandler : MonoBehaviour
 {
+    [Header("Constraint")]
+    public GameObject panelToWatch; // Drag your MainSettingsPanel here in the Inspector
+
     private CustomInputActions _input;
 
     private void Awake()
@@ -34,6 +37,14 @@ public class CustomUISubmitHandler : MonoBehaviour
     // This callback function will execute when the 'Tab' key is pressed
     private void OnTabPressed(InputAction.CallbackContext context)
     {
+
+        // 1. Safety Check: If the panel is closed, ignore the input completely.
+        // This creates the "Auto-Disable" behavior you wanted.
+        if (panelToWatch != null && !panelToWatch.activeInHierarchy)
+        {
+            return;
+        }
+
         // This is the core logic, detailed in Step 3.3
         TriggerSubmitOnSelectedObject();
     }

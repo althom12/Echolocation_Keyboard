@@ -33,15 +33,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "OpenSubMenu",
-                    "type": "Button",
-                    "id": "2e89fcd9-1648-4e52-8b68-82bf40ae6fc8",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Point",
                     "type": "PassThrough",
                     "id": "7e412da1-b5b5-4351-816b-67b843af632e",
@@ -112,6 +103,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "OpenSubMenu",
+                    "type": "Button",
+                    "id": "70e4cbcc-033d-430b-a56c-19d03e2e6da6",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -172,6 +172,17 @@
                 },
                 {
                     "name": "",
+                    "id": "8729addf-a1ef-4bb1-82e4-5c4cbac8c7d5",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "658dd20f-a7eb-4a98-b55b-f42990f9ac27",
                     "path": "<Keyboard>/enter",
                     "interactions": "",
@@ -189,17 +200,6 @@
                     "processors": "",
                     "groups": ";KeyboardMouse",
                     "action": "Cancel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8974449e-b60d-4fb2-890d-d67c8d39d616",
-                    "path": "<Keyboard>/tab",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";KeyboardMouse",
-                    "action": "OpenSubMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -321,6 +321,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ToggleSettingsMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c90fb2f2-e088-4fb3-97ec-a128d94b0eb9",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "OpenSubMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

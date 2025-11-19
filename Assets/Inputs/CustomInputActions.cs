@@ -55,15 +55,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""OpenSubMenu"",
-                    ""type"": ""Button"",
-                    ""id"": ""2e89fcd9-1648-4e52-8b68-82bf40ae6fc8"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Point"",
                     ""type"": ""PassThrough"",
                     ""id"": ""7e412da1-b5b5-4351-816b-67b843af632e"",
@@ -134,6 +125,15 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenSubMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""70e4cbcc-033d-430b-a56c-19d03e2e6da6"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -194,6 +194,17 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""8729addf-a1ef-4bb1-82e4-5c4cbac8c7d5"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Navigate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""658dd20f-a7eb-4a98-b55b-f42990f9ac27"",
                     ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
@@ -211,17 +222,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";KeyboardMouse"",
                     ""action"": ""Cancel"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8974449e-b60d-4fb2-890d-d67c8d39d616"",
-                    ""path"": ""<Keyboard>/tab"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";KeyboardMouse"",
-                    ""action"": ""OpenSubMenu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -343,6 +343,17 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ToggleSettingsMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c90fb2f2-e088-4fb3-97ec-a128d94b0eb9"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";KeyboardMouse"",
+                    ""action"": ""OpenSubMenu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -582,7 +593,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
         m_UI_Submit = m_UI.FindAction("Submit", throwIfNotFound: true);
         m_UI_Cancel = m_UI.FindAction("Cancel", throwIfNotFound: true);
-        m_UI_OpenSubMenu = m_UI.FindAction("OpenSubMenu", throwIfNotFound: true);
         m_UI_Point = m_UI.FindAction("Point", throwIfNotFound: true);
         m_UI_Click = m_UI.FindAction("Click", throwIfNotFound: true);
         m_UI_ScrollWheel = m_UI.FindAction("ScrollWheel", throwIfNotFound: true);
@@ -591,6 +601,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         m_UI_NavigateBack = m_UI.FindAction("NavigateBack", throwIfNotFound: true);
         m_UI_Look = m_UI.FindAction("Look", throwIfNotFound: true);
         m_UI_ToggleSettingsMenu = m_UI.FindAction("ToggleSettingsMenu", throwIfNotFound: true);
+        m_UI_OpenSubMenu = m_UI.FindAction("OpenSubMenu", throwIfNotFound: true);
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
@@ -667,7 +678,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_Navigate;
     private readonly InputAction m_UI_Submit;
     private readonly InputAction m_UI_Cancel;
-    private readonly InputAction m_UI_OpenSubMenu;
     private readonly InputAction m_UI_Point;
     private readonly InputAction m_UI_Click;
     private readonly InputAction m_UI_ScrollWheel;
@@ -676,6 +686,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_NavigateBack;
     private readonly InputAction m_UI_Look;
     private readonly InputAction m_UI_ToggleSettingsMenu;
+    private readonly InputAction m_UI_OpenSubMenu;
     public struct UIActions
     {
         private @CustomInputActions m_Wrapper;
@@ -683,7 +694,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         public InputAction @Navigate => m_Wrapper.m_UI_Navigate;
         public InputAction @Submit => m_Wrapper.m_UI_Submit;
         public InputAction @Cancel => m_Wrapper.m_UI_Cancel;
-        public InputAction @OpenSubMenu => m_Wrapper.m_UI_OpenSubMenu;
         public InputAction @Point => m_Wrapper.m_UI_Point;
         public InputAction @Click => m_Wrapper.m_UI_Click;
         public InputAction @ScrollWheel => m_Wrapper.m_UI_ScrollWheel;
@@ -692,6 +702,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         public InputAction @NavigateBack => m_Wrapper.m_UI_NavigateBack;
         public InputAction @Look => m_Wrapper.m_UI_Look;
         public InputAction @ToggleSettingsMenu => m_Wrapper.m_UI_ToggleSettingsMenu;
+        public InputAction @OpenSubMenu => m_Wrapper.m_UI_OpenSubMenu;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -710,9 +721,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @Cancel.started += instance.OnCancel;
             @Cancel.performed += instance.OnCancel;
             @Cancel.canceled += instance.OnCancel;
-            @OpenSubMenu.started += instance.OnOpenSubMenu;
-            @OpenSubMenu.performed += instance.OnOpenSubMenu;
-            @OpenSubMenu.canceled += instance.OnOpenSubMenu;
             @Point.started += instance.OnPoint;
             @Point.performed += instance.OnPoint;
             @Point.canceled += instance.OnPoint;
@@ -737,6 +745,9 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @ToggleSettingsMenu.started += instance.OnToggleSettingsMenu;
             @ToggleSettingsMenu.performed += instance.OnToggleSettingsMenu;
             @ToggleSettingsMenu.canceled += instance.OnToggleSettingsMenu;
+            @OpenSubMenu.started += instance.OnOpenSubMenu;
+            @OpenSubMenu.performed += instance.OnOpenSubMenu;
+            @OpenSubMenu.canceled += instance.OnOpenSubMenu;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -750,9 +761,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @Cancel.started -= instance.OnCancel;
             @Cancel.performed -= instance.OnCancel;
             @Cancel.canceled -= instance.OnCancel;
-            @OpenSubMenu.started -= instance.OnOpenSubMenu;
-            @OpenSubMenu.performed -= instance.OnOpenSubMenu;
-            @OpenSubMenu.canceled -= instance.OnOpenSubMenu;
             @Point.started -= instance.OnPoint;
             @Point.performed -= instance.OnPoint;
             @Point.canceled -= instance.OnPoint;
@@ -777,6 +785,9 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @ToggleSettingsMenu.started -= instance.OnToggleSettingsMenu;
             @ToggleSettingsMenu.performed -= instance.OnToggleSettingsMenu;
             @ToggleSettingsMenu.canceled -= instance.OnToggleSettingsMenu;
+            @OpenSubMenu.started -= instance.OnOpenSubMenu;
+            @OpenSubMenu.performed -= instance.OnOpenSubMenu;
+            @OpenSubMenu.canceled -= instance.OnOpenSubMenu;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -878,7 +889,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         void OnNavigate(InputAction.CallbackContext context);
         void OnSubmit(InputAction.CallbackContext context);
         void OnCancel(InputAction.CallbackContext context);
-        void OnOpenSubMenu(InputAction.CallbackContext context);
         void OnPoint(InputAction.CallbackContext context);
         void OnClick(InputAction.CallbackContext context);
         void OnScrollWheel(InputAction.CallbackContext context);
@@ -887,6 +897,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         void OnNavigateBack(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnToggleSettingsMenu(InputAction.CallbackContext context);
+        void OnOpenSubMenu(InputAction.CallbackContext context);
     }
     public interface IPlayerActions
     {
