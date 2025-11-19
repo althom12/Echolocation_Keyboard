@@ -69,23 +69,40 @@ public class ObstacleLocatorAudio : MonoBehaviour
 
     void FindAndTriggerClosestObstacle()
     {
-        GameObject[] obstacles = GameObject.FindGameObjectsWithTag(obstacleTag);
-        if (obstacles.Length == 0)
+        // OPTIMIZATION: Ask the Manager for the active set instead of scanning the whole world.
+        if (ObstacleManager.Instance == null) return;
+
+        GameObject activeSet = ObstacleManager.Instance.GetActiveSetObject();
+
+        // If no obstacles are active, stop.
+        if (activeSet == null) return;
+
+        // Search ONLY inside the active set for objects with AkEvents (or your specific component)
+        // This is much faster than FindGameObjectsWithTag
+        AkEvent[] obstacleEvents = activeSet.GetComponentsInChildren<AkEvent>();
+
+        if (obstacleEvents.Length == 0)
         {
-            Debug.LogWarning("No obstacles with tag '" + obstacleTag + "' found in the scene.");
             return;
         }
+
         GameObject closestObstacle = null;
         float minDistance = Mathf.Infinity;
-        foreach (GameObject obstacle in obstacles)
+        Vector3 currentPos = transform.position;
+
+        foreach (AkEvent akEvent in obstacleEvents)
         {
-            float distance = Vector3.Distance(transform.position, obstacle.transform.position);
+            // Optional: Filter by tag if your sets contain non-obstacle AkEvents
+            // if (!akEvent.CompareTag(obstacleTag)) continue;
+
+            float distance = Vector3.Distance(currentPos, akEvent.transform.position);
             if (distance < minDistance)
             {
                 minDistance = distance;
-                closestObstacle = obstacle;
+                closestObstacle = akEvent.gameObject;
             }
         }
+
         if (closestObstacle != null)
         {
             StartCoroutine(PlaySoundWithTemporaryDisable(closestObstacle));
