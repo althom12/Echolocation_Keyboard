@@ -2,83 +2,134 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 
-// Assumes the generated C# class is named "CustomUIActions"
+/// <summary>
+/// Custom UI Submit Handler for Main Menu
+/// 
+/// Handles Tab key as Submit for opening subwindows from MainSettings.
+/// This script automatically enables/disables based on the watched panel's state.
+/// 
+/// IMPORTANT:
+/// - Attach this to the MainSettings panel GameObject itself (not a parent)
+/// - The script will auto-enable when the panel activates
+/// - The script will auto-disable when the panel deactivates
+/// - This prevents conflicts with SubWindowInputHandler
+/// </summary>
 public class CustomUISubmitHandler : MonoBehaviour
 {
-    [Header("Constraint")]
-    public GameObject panelToWatch; // Drag your MainSettingsPanel here in the Inspector
+    [Header("Configuration")]
+    [Tooltip("Optional: Panel to watch. If not set, uses this GameObject.")]
+    public GameObject panelToWatch;
 
     private CustomInputActions _input;
+    private GameObject _actualPanelToWatch;
+
+    // ???????????????????????????????????????????????????????????
+    // UNITY LIFECYCLE
+    // ???????????????????????????????????????????????????????????
 
     private void Awake()
     {
-        // Initialize the input actions wrapper class 
         _input = new CustomInputActions();
+
+        // If no panel specified, watch this GameObject
+        _actualPanelToWatch = panelToWatch != null ? panelToWatch : gameObject;
     }
 
+    /// <summary>
+    /// OnEnable is called when the GameObject (or panel) becomes active.
+    /// This is the key to auto-enabling only when MainSettings is visible.
+    /// </summary>
     private void OnEnable()
     {
-        // Subscribe to the 'performed' event for our custom 'Tab' action [8]
-        _input.UI.OpenSubMenu.performed += OnTabPressed;
-
-        // Enable the "UI" Action Map 
-        _input.UI.Enable();
-    }
-
-    private void OnDisable()
-    {
-        // Unsubscribe to prevent memory leaks
-        _input.UI.OpenSubMenu.performed -= OnTabPressed;
-
-        // Disable the "UI" Action Map 
-        _input.UI.Disable();
-    }
-
-    // This callback function will execute when the 'Tab' key is pressed
-    private void OnTabPressed(InputAction.CallbackContext context)
-    {
-
-        // 1. Safety Check: If the panel is closed, ignore the input completely.
-        // This creates the "Auto-Disable" behavior you wanted.
-        if (panelToWatch != null && !panelToWatch.activeInHierarchy)
+        // Double-check the panel is actually active
+        if (_actualPanelToWatch != null && !_actualPanelToWatch.activeInHierarchy)
         {
             return;
         }
 
-        // This is the core logic, detailed in Step 3.3
+        // Subscribe to Tab as Submit
+        _input.UI.OpenSubMenu.performed += OnTabPressed;
+        _input.UI.Enable();
+
+        Debug.Log("[CustomUISubmitHandler] Enabled - listening for Tab");
+    }
+
+    /// <summary>
+    /// OnDisable is called when the GameObject (or panel) becomes inactive.
+    /// This automatically unsubscribes when MainSettings closes or subwindow opens.
+    /// </summary>
+    private void OnDisable()
+    {
+        // Unsubscribe from Tab
+        _input.UI.OpenSubMenu.performed -= OnTabPressed;
+        _input.UI.Disable();
+
+        Debug.Log("[CustomUISubmitHandler] Disabled - no longer listening for Tab");
+    }
+
+    // ???????????????????????????????????????????????????????????
+    // INPUT HANDLING
+    // ???????????????????????????????????????????????????????????
+
+    /// <summary>
+    /// Called when Tab is pressed.
+    /// Triggers Submit on the currently selected MainSettings button.
+    /// </summary>
+    private void OnTabPressed(InputAction.CallbackContext context)
+    {
+        // Safety check: Ensure panel is still active
+        if (_actualPanelToWatch != null && !_actualPanelToWatch.activeInHierarchy)
+        {
+            Debug.LogWarning("[CustomUISubmitHandler] Tab pressed but panel is inactive - shouldn't happen!");
+            return;
+        }
+
         TriggerSubmitOnSelectedObject();
     }
 
+    /// <summary>
+    /// Executes Submit on the currently selected UI element.
+    /// </summary>
     private void TriggerSubmitOnSelectedObject()
     {
-        // 1. Get the currently selected GameObject from the EventSystem
-        GameObject selectedObject = EventSystem.current.currentSelectedGameObject; 
+        GameObject selectedObject = EventSystem.current.currentSelectedGameObject;
 
-        // 2. A crucial null-check
         if (selectedObject == null)
         {
-            // No object is selected, so do nothing.
+            Debug.LogWarning("[CustomUISubmitHandler] No object selected");
             return;
         }
 
-        // 3. Create a BaseEventData for the event
+        // Create event data
         BaseEventData eventData = new BaseEventData(EventSystem.current);
 
-        // 4. Manually execute a 'Submit' event on the selected object 
+        // Execute Submit event
         ExecuteEvents.Execute(
             selectedObject,
             eventData,
             ExecuteEvents.submitHandler
         );
+
+        Debug.Log($"[CustomUISubmitHandler] Triggered Submit on '{selectedObject.name}'");
     }
+
+    // ???????????????????????????????????????????????????????????
+    // PUBLIC API (Optional)
+    // ???????????????????????????????????????????????????????????
 
     public void EnableOpenSubMenu()
     {
-        _input.UI.OpenSubMenu.Enable();
+        if (_input != null)
+        {
+            _input.UI.OpenSubMenu.Enable();
+        }
     }
 
     public void DisableOpenSubMenu()
     {
-        _input.UI.OpenSubMenu.Disable();
+        if (_input != null)
+        {
+            _input.UI.OpenSubMenu.Disable();
+        }
     }
 }

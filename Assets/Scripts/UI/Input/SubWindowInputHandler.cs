@@ -11,6 +11,7 @@ public class SubWindowInputHandler : MonoBehaviour
     private CustomInputActions _input;
     private GameObject _currentActivePanel;
     private Selectable _firstSelectable;
+    private bool _ignoreNextTab = true; // Start as true to ignore the opening Tab
 
     public void Initialize(CustomInputActions inputActions, GameObject panel, BaseSubwindow subwindow)
     {
@@ -18,6 +19,7 @@ public class SubWindowInputHandler : MonoBehaviour
 
         _input = inputActions;
         _currentActivePanel = panel;
+        _ignoreNextTab = true; // Reset flag on initialization
 
         if (subwindow != null && subwindow.firstSelectedElement != null)
         {
@@ -40,6 +42,9 @@ public class SubWindowInputHandler : MonoBehaviour
     {
         yield return null;
         SubscribeToActions();
+        // Clear ignore flag after another frame
+        yield return null;
+        _ignoreNextTab = false;
     }
 
     private void OnDisable()
@@ -86,6 +91,21 @@ public class SubWindowInputHandler : MonoBehaviour
 
     private void OnTabPressed(InputAction.CallbackContext context)
     {
+        // CRITICAL: Only process if our panel is actually active
+        if (_currentActivePanel == null || !_currentActivePanel.activeInHierarchy)
+        {
+            Debug.Log(">>> OnTabPressed IGNORED (panel not active) <<<");
+            return;
+        }
+
+        // Ignore the Tab that opened this window
+        if (_ignoreNextTab)
+        {
+            Debug.Log(">>> OnTabPressed IGNORED (just opened) <<<");
+            _ignoreNextTab = false;
+            return;
+        }
+
         Debug.Log(">>> OnTabPressed (Forward Navigation) called <<<");
 
         Selectable current = GetCurrentSelectable();
@@ -101,6 +121,13 @@ public class SubWindowInputHandler : MonoBehaviour
 
     private void OnNavigateBackPressed(InputAction.CallbackContext context)
     {
+        // CRITICAL: Only process if our panel is actually active
+        if (_currentActivePanel == null || !_currentActivePanel.activeInHierarchy)
+        {
+            Debug.Log(">>> OnNavigateBackPressed IGNORED (panel not active) <<<");
+            return;
+        }
+
         Debug.Log(">>> OnNavigateBackPressed called <<<");
 
         Selectable current = GetCurrentSelectable();
