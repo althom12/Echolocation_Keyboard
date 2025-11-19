@@ -99,7 +99,6 @@
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Scripts\WwiseGameLogic\WwiseEventPlayer.cs" />
     <Compile Include="Assets\Scripts\ObstacleScripts\IObstacleService.cs" />
-    <Compile Include="Assets\Scripts\EmitterTrigger.cs" />
     <Compile Include="Assets\Scripts\LandmarkScripts\LandmarkToggleController.cs" />
     <Compile Include="Assets\Scripts\AudioEventChannelSO.cs" />
     <Compile Include="Assets\Scripts\UI\MenuNavigationManager.cs" />
