@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseStateManager.cs" />
     <Compile Include="Assets\Scripts\Data\MaterialDefinition.cs" />
     <Compile Include="Assets\Scripts\_Managers\ObstacleManager.cs" />
+    <Compile Include="Assets\Scripts\KeyboardNavigator.cs" />
     <Compile Include="Assets\Scripts\Data\AudioEventChannelSO.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets\Scripts\_Managers\MenuNavigationManager.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseEventPlayer.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Environment\ObstacleMaterialController.cs" />
     <Compile Include="Assets\Scripts\_Managers\SettingsManager.cs" />
+    <Compile Include="Assets\Scripts\AutoScrollToSelect.cs" />
     <Compile Include="Assets\Scripts\TutorialContext.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Scripts\UI\Windows\ObstaclesSubwindow.cs" />

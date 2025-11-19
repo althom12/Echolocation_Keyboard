@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 2e7e9096fc6da5a4b925eb2bffd11801
   - enabled: 1
-    path: Assets/Scenes/Scene_Tutorial_Master.unity
+    path: Assets/Scenes/Scene_Tutorial.unity
     guid: 7986c032c87e028419c5d76f6a6e93b7
   - enabled: 1
     path: Assets/Scenes/MAIN_ECHOLOCATION_SCENE.unity
