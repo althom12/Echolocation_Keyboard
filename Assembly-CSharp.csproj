@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\UI\Windows\BaseSubwindow.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\PlayerAudio.cs" />
     <Compile Include="Assets\Scripts\UI\Controls\LandmarkVolumeSlider.cs" />
+    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Scripts\TutorialDirector.cs" />
     <Compile Include="Assets\Scripts\_Managers\LandmarksManager.cs" />
