@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\TutorialChapterSO.cs" />
     <Compile Include="Assets\Scripts\Utils\QuitOnEscape.cs" />
     <Compile Include="Assets\Scripts\_Managers\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\DropdownArrowNav.cs" />
     <Compile Include="Assets\Scripts\UI\Controls\ObstacleToggleHelper.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\Scripts\UI\Input\CustomUISubmitHandler.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseComponentToggler.cs" />
     <Compile Include="Assets\Scripts\TutorialSequenceSO.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseSequentialEventPlayer.cs" />
+    <Compile Include="Assets\Scripts\TabOrderChain.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\Scripts\UI\Controls\FootstepsToggleController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\ObstacleLocatorAudio.cs" />

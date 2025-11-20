@@ -1,67 +1,64 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+using UnityEngine.UI; // For standard Button
+using TMPro;          // For TMP_Dropdown
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems; // Required for setting selection
-using System.Collections;
+using System.Collections.Generic;
 
 public class TutorialMenuLoader : MonoBehaviour
 {
     [Header("UI References")]
-    public Transform listContentContainer;
-    public GameObject buttonPrefab;
+    public TMP_Dropdown chapterDropdown;
+    public Button launchButton;
+
+    [Header("Data")]
     public TutorialSequenceSO tutorialSequence;
 
-    // We use OnEnable so this runs EVERY time you open the menu
-    private void OnEnable()
+    private void Start()
     {
-        // If the list is empty, generate it. 
-        // If it's already generated (from opening it before), just select the first one.
-        if (listContentContainer.childCount == 0)
-        {
-            GenerateButtons();
-        }
+        InitializeDropdown();
 
-        // Wait one frame to ensure the UI is fully active before selecting
-        StartCoroutine(SelectFirstButton());
+        // Hook up the launch button
+        launchButton.onClick.AddListener(LaunchSelectedChapter);
     }
 
-    public void GenerateButtons()
+    private void InitializeDropdown()
     {
-        // (Your existing Generate code goes here...)
-        foreach (Transform child in listContentContainer) Destroy(child.gameObject);
+        // 1. Clear any dummy options (like "Option A")
+        chapterDropdown.ClearOptions();
 
         if (tutorialSequence == null) return;
 
+        // 2. Create a list of options from your ScriptableObjects
+        List<string> optionNames = new List<string>();
+
         foreach (var chapter in tutorialSequence.chapters)
         {
-            GameObject newBtn = Instantiate(buttonPrefab, listContentContainer);
-            newBtn.GetComponentInChildren<TextMeshProUGUI>().text = chapter.chapterName;
-            Button btnComp = newBtn.GetComponent<Button>();
-            btnComp.onClick.AddListener(() => { LaunchTutorial(chapter); });
+            // Add the name to the list
+            optionNames.Add(chapter.chapterName);
         }
+
+        // 3. Feed the list into the dropdown
+        chapterDropdown.AddOptions(optionNames);
     }
 
-    private IEnumerator SelectFirstButton()
+    public void LaunchSelectedChapter()
     {
-        // Wait for end of frame so Unity UI can update its layout
-        yield return new WaitForEndOfFrame();
+        // 1. Get the index of the selected item (0, 1, 2...)
+        int index = chapterDropdown.value;
 
-        if (listContentContainer.childCount > 0)
+        // 2. Safety check
+        if (index < 0 || index >= tutorialSequence.chapters.Count)
         {
-            // Get the first button child
-            GameObject firstButton = listContentContainer.GetChild(0).gameObject;
-
-            // Tell the Event System to select it
-            EventSystem.current.SetSelectedGameObject(firstButton);
-
-            Debug.Log("Auto-selected first button.");
+            Debug.LogError("Invalid Chapter Selection");
+            return;
         }
-    }
 
-    void LaunchTutorial(TutorialChapterSO chapter)
-    {
-        TutorialContext.RequestedChapter = chapter;
+        // 3. Find the matching data object
+        TutorialChapterSO selectedChapter = tutorialSequence.chapters[index];
+
+        // 4. Launch
+        Debug.Log($"Loading: {selectedChapter.chapterName}");
+        TutorialContext.RequestedChapter = selectedChapter;
         SceneManager.LoadScene("Scene_Tutorial");
     }
 }
