@@ -132,7 +132,7 @@ public class PlayerAudio : MonoBehaviour
         }
 
         // Handle pitch adjustment input (middle mouse button + scroll wheel)
-        HandlePitchAdjustmentInput();
+        
 
         // Update collision cooldown timer
         if (_collisionCooldownTimer > 0)
@@ -159,48 +159,7 @@ public class PlayerAudio : MonoBehaviour
     /// Handles pitch adjustment mode toggling and scroll wheel input.
     /// Middle mouse button toggles the mode, scroll wheel adjusts pitch.
     /// </summary>
-    private void HandlePitchAdjustmentInput()
-    {
-        // Toggle pitch adjustment mode with middle mouse button
-        if (Input.GetMouseButtonDown(2))
-        {
-            if (_currentState == ControlState.Normal)
-            {
-                _currentState = ControlState.AdjustingPitch;
-                Debug.Log("[PlayerAudio] Entered Pitch Adjust Mode.");
-                PA_Settings_Opened?.Post(ClickEmitter);
-            }
-            else
-            {
-                _currentState = ControlState.Normal;
-                Debug.Log("[PlayerAudio] Exited Pitch Adjust Mode.");
-                PA_Settings_Confirmed?.Post(ClickEmitter);
-            }
-        }
-
-        // Handle scroll wheel input when in pitch adjustment mode
-        if (_currentState == ControlState.AdjustingPitch)
-        {
-            float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-            if (scrollInput != 0f)
-            {
-                // Adjust pitch value
-                _currentPitchValue += scrollInput * scrollSensitivity;
-                _currentPitchValue = Mathf.Clamp(_currentPitchValue, -1200f, 1200f);
-
-                // Set RTPC in Wwise
-                if (!string.IsNullOrEmpty(ClickPitchRTPC_Name))
-                {
-                    AkSoundEngine.SetRTPCValue(ClickPitchRTPC_Name, _currentPitchValue);
-                }
-
-                // Play preview click at new pitch
-                EcholocationSound?.Post(ClickEmitter);
-
-                Debug.Log($"[PlayerAudio] Current Pitch Value: {_currentPitchValue}");
-            }
-        }
-    }
+   
 
     // ???????????????????????????????????????????????????????????
     // FOOTSTEP SYSTEM
