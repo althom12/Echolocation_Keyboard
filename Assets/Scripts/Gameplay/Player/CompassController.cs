@@ -83,14 +83,18 @@ public class CompassController : MonoBehaviour
 
     private CompassPoint GetCompassPoint(float yaw)
     {
-        if (yaw <= angleTolerance || yaw >= 360 - angleTolerance) return CompassPoint.North;
-        if (yaw >= 90 - angleTolerance && yaw <= 90 + angleTolerance) return CompassPoint.East;
-        if (yaw >= 180 - angleTolerance && yaw <= 180 + angleTolerance) return CompassPoint.South;
-        if (yaw >= 270 - angleTolerance && yaw <= 270 + angleTolerance) return CompassPoint.West;
-        if (yaw >= 45 - angleTolerance && yaw <= 45 + angleTolerance) return CompassPoint.NorthEast;
-        if (yaw >= 135 - angleTolerance && yaw <= 135 + angleTolerance) return CompassPoint.SouthEast;
-        if (yaw >= 225 - angleTolerance && yaw <= 225 + angleTolerance) return CompassPoint.SouthWest;
-        if (yaw >= 315 - angleTolerance && yaw <= 315 + angleTolerance) return CompassPoint.NorthWest;
+        // Mathf.DeltaAngle calculates the difference. 
+        // Mathf.Abs makes sure we don't care if it's +5 or -5 degrees off.
+
+        if (Mathf.Abs(Mathf.DeltaAngle(yaw, 0)) < angleTolerance) return CompassPoint.North;
+        if (Mathf.Abs(Mathf.DeltaAngle(yaw, 90)) < angleTolerance) return CompassPoint.East;
+        if (Mathf.Abs(Mathf.DeltaAngle(yaw, 180)) < angleTolerance) return CompassPoint.South;
+        if (Mathf.Abs(Mathf.DeltaAngle(yaw, 270)) < angleTolerance) return CompassPoint.West;
+
+        if (Mathf.Abs(Mathf.DeltaAngle(yaw, 45)) < angleTolerance) return CompassPoint.NorthEast;
+        if (Mathf.Abs(Mathf.DeltaAngle(yaw, 135)) < angleTolerance) return CompassPoint.SouthEast;
+        if (Mathf.Abs(Mathf.DeltaAngle(yaw, 225)) < angleTolerance) return CompassPoint.SouthWest;
+        if (Mathf.Abs(Mathf.DeltaAngle(yaw, 315)) < angleTolerance) return CompassPoint.NorthWest;
 
         return CompassPoint.None;
     }
