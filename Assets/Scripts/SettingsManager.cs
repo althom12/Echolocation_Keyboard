@@ -234,6 +234,7 @@ public class SettingsManager : MonoBehaviour
     /// <summary>
     /// Applies the current footstep pitch to Wwise.
     /// Updates immediately regardless of enabled state.
+    /// Maps internal 0-100 range to Wwise -1200 to +1200 range.
     /// </summary>
     private void ApplyFootstepPitchToWwise()
     {
@@ -244,10 +245,15 @@ public class SettingsManager : MonoBehaviour
             return;
         }
 
-        footstepPitchRTPC.SetValue(audioEmitter, _footstepPitch);
+        // Map 0-100 internal range to -1200 to +1200 Wwise range
+        // Formula: (value * 2400 / 100) - 1200
+        // Simplified: (value * 24) - 1200
+        float wwiseValue = (_footstepPitch * 24f) - 1200f;
+
+        footstepPitchRTPC.SetValue(audioEmitter, wwiseValue);
 
         if (enableDebugLogs)
-            Debug.Log($"[SettingsManager] Applied to Wwise RTPC '{footstepPitchRTPC.Name}': {_footstepPitch:F1} on '{audioEmitter.name}'");
+            Debug.Log($"[SettingsManager] Applied to Wwise RTPC '{footstepPitchRTPC.Name}': {wwiseValue:F1} (from internal {_footstepPitch:F1}) on '{audioEmitter.name}'");
     }
 
     // ???????????????????????????????????????????????????????????????????????
