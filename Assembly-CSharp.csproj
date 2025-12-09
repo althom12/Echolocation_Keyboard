@@ -60,6 +60,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.51f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PageControlType.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IObstacleService.cs" />
     <Compile Include="Assets\Scripts\Utils\QuitOnEscape.cs" />
     <Compile Include="Assets\Scripts\_Managers\AudioManager.cs" />
@@ -67,13 +68,13 @@
     <Compile Include="Assets\Scripts\zNEWTUTORIALSCRIPTS(NOTACTIVEINMAINSCENEYET)\TutorialContext.cs" />
     <Compile Include="Assets\Scripts\zNEWTUTORIALSCRIPTS(NOTACTIVEINMAINSCENEYET)\TutorialDirector.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
-    <Compile Include="Assets\Scripts\UI\Input\CustomUISubmitHandler.cs" />
     <Compile Include="Assets\Scripts\Data\LandmarkDefinition.cs" />
     <Compile Include="Assets\Scripts\zNEWTUTORIALSCRIPTS(NOTACTIVEINMAINSCENEYET)\TutorialMenuLoader.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\CompassController.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\Scripts\UI\Windows\BaseSubwindow.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\PlayerAudio.cs" />
+    <Compile Include="Assets\Scripts\GenericPageController.cs" />
     <Compile Include="Assets\Scripts\UI\Controls\LandmarkVolumeSlider.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Scripts\_Managers\LandmarksManager.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts\UI\Controls\FootstepsToggleController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Player\ObstacleLocatorAudio.cs" />
     <Compile Include="Assets\Scripts\Tutorial\TutorialPropertiesSubwindow.cs" />
+    <Compile Include="Assets\Scripts\UIBinder.cs" />
     <Compile Include="Assets\Inputs\CustomInputActions.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseStateManager.cs" />
     <Compile Include="Assets\Scripts\Data\MaterialDefinition.cs" />
@@ -96,8 +98,6 @@
     <Compile Include="Assets\Scripts\Data\AudioEventChannelSO.cs" />
     <Compile Include="Assets\Scripts\zNEWTUTORIALSCRIPTS(NOTACTIVEINMAINSCENEYET)\TutorialChapterSO.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
-    <Compile Include="Assets\Scripts\_Managers\MenuNavigationManager.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TutorialButtonHandler.cs" />
     <Compile Include="Assets\Scripts\UI\Controls\LandmarkToggleController.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseEventPlayer.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Environment\ObstacleMaterialController.cs" />
@@ -105,7 +105,6 @@
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Scripts\UI\Windows\ObstaclesSubwindow.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
-    <Compile Include="Assets\Scripts\UI\Input\SubWindowInputHandler.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioUI\WwiseUIElementV2.cs" />
   </ItemGroup>
   <ItemGroup>

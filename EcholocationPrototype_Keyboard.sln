@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.UI.Panels", "Citrio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.Wwise.Unity.MonoBehaviour", "AK.Wwise.Unity.MonoBehaviour.csproj", "{B1C598B2-11B2-89DE-1BA7-DB069269B715}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F72C0ABC-87AA-73F7-A088-90C01D73792E}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.Wwise.Unity.API", "AK.Wwise.Unity.API.csproj", "{A37BF1E4-B69C-CDA4-1EBD-669F0F9DE19D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.Wwise.Unity.API.Editor", "AK.Wwise.Unity.API.Editor.csproj", "{A148BC7D-9FA9-53E4-552F-1324949372A0}"
@@ -20,8 +22,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.Common.Editor", "CitrioN.Common.Editor.csproj", "{49AFFEED-086E-9EAC-B823-71247E6AC832}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.Wwise.Unity.ProjectDatabase", "AK.Wwise.Unity.ProjectDatabase.csproj", "{6040793C-981B-E0B0-D2DF-93E5B684A9BF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F72C0ABC-87AA-73F7-A088-90C01D73792E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.StyleProfileSystem", "CitrioN.StyleProfileSystem.csproj", "{50C570CF-8A79-4D86-4394-D9894CE53EA2}"
 EndProject
@@ -83,6 +83,10 @@ Global
 		{B1C598B2-11B2-89DE-1BA7-DB069269B715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1C598B2-11B2-89DE-1BA7-DB069269B715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1C598B2-11B2-89DE-1BA7-DB069269B715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F72C0ABC-87AA-73F7-A088-90C01D73792E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72C0ABC-87AA-73F7-A088-90C01D73792E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72C0ABC-87AA-73F7-A088-90C01D73792E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72C0ABC-87AA-73F7-A088-90C01D73792E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A37BF1E4-B69C-CDA4-1EBD-669F0F9DE19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A37BF1E4-B69C-CDA4-1EBD-669F0F9DE19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A37BF1E4-B69C-CDA4-1EBD-669F0F9DE19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -103,10 +107,6 @@ Global
 		{6040793C-981B-E0B0-D2DF-93E5B684A9BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6040793C-981B-E0B0-D2DF-93E5B684A9BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6040793C-981B-E0B0-D2DF-93E5B684A9BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F72C0ABC-87AA-73F7-A088-90C01D73792E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F72C0ABC-87AA-73F7-A088-90C01D73792E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F72C0ABC-87AA-73F7-A088-90C01D73792E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F72C0ABC-87AA-73F7-A088-90C01D73792E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50C570CF-8A79-4D86-4394-D9894CE53EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50C570CF-8A79-4D86-4394-D9894CE53EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50C570CF-8A79-4D86-4394-D9894CE53EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
