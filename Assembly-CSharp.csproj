@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Tutorial\TutorialManager.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseComponentToggler.cs" />
+    <Compile Include="Assets\Scripts\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseSequentialEventPlayer.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\Scripts\UI\Controls\FootstepsToggleController.cs" />
@@ -94,9 +95,11 @@
     <Compile Include="Assets\Inputs\CustomInputActions.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseStateManager.cs" />
     <Compile Include="Assets\Scripts\Data\MaterialDefinition.cs" />
+    <Compile Include="Assets\Scripts\PageToggleListener.cs" />
     <Compile Include="Assets\Scripts\_Managers\ObstacleManager.cs" />
     <Compile Include="Assets\Scripts\Data\AudioEventChannelSO.cs" />
     <Compile Include="Assets\Scripts\zNEWTUTORIALSCRIPTS(NOTACTIVEINMAINSCENEYET)\TutorialChapterSO.cs" />
+    <Compile Include="Assets\Scripts\PageWwiseListener.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets\Scripts\UI\Controls\LandmarkToggleController.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseEventPlayer.cs" />
