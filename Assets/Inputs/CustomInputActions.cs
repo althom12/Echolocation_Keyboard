@@ -100,28 +100,6 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""bffe4957-0f44-42f7-bfc8-95286b60b099"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": ""Scale(factor=-1)"",
-                    ""groups"": """",
-                    ""action"": ""ModifyValue"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ec9b0262-5a8b-490d-a32c-5fd0562f3e0a"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": ""Scale"",
-                    ""groups"": """",
-                    ""action"": ""ModifyValue"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""f4ba6451-f918-475b-8835-57ca44c4647a"",
                     ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",

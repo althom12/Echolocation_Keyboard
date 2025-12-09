@@ -73,7 +73,6 @@
     <Compile Include="Assets\Scripts\Gameplay\Player\CompassController.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\Scripts\UI\Windows\BaseSubwindow.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Player\PlayerAudio.cs" />
     <Compile Include="Assets\Scripts\GenericPageController.cs" />
     <Compile Include="Assets\Scripts\UI\Controls\LandmarkVolumeSlider.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
@@ -82,14 +81,11 @@
     <Compile Include="Assets\Scripts\zNEWTUTORIALSCRIPTS(NOTACTIVEINMAINSCENEYET)\TutorialSequenceSO.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioUI\WwiseRtpcSliderV2.cs" />
     <Compile Include="Assets\Scripts\_Managers\SpawnManager.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TutorialManager.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseComponentToggler.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseSequentialEventPlayer.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
-    <Compile Include="Assets\Scripts\UI\Controls\FootstepsToggleController.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Player\ObstacleLocatorAudio.cs" />
     <Compile Include="Assets\Scripts\Tutorial\TutorialPropertiesSubwindow.cs" />
     <Compile Include="Assets\Scripts\UIBinder.cs" />
     <Compile Include="Assets\Inputs\CustomInputActions.cs" />
@@ -104,7 +100,6 @@
     <Compile Include="Assets\Scripts\UI\Controls\LandmarkToggleController.cs" />
     <Compile Include="Assets\Scripts\Audio\WwiseTools\WwiseEventPlayer.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Environment\ObstacleMaterialController.cs" />
-    <Compile Include="Assets\Scripts\_Managers\SettingsManager.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Scripts\UI\Windows\ObstaclesSubwindow.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
