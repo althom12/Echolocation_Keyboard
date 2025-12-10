@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "TabBack",
+                    "type": "Button",
+                    "id": "aeb07f45-e5cc-40cb-98e6-2a3609604d30",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -130,15 +139,26 @@
                     "action": "ModifyValue",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "3b5c65d4-86cf-482e-820e-8ebd4c95ca39",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TabBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
         {
-            "name": "New action map",
+            "name": "Player",
             "id": "f616e624-e7d7-4ee4-9aee-ee21e7bfb7df",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "LeftClick",
                     "type": "Button",
                     "id": "0556c9db-8635-404e-8eee-00c202b4adb9",
                     "expectedControlType": "",
@@ -151,11 +171,11 @@
                 {
                     "name": "",
                     "id": "00170f50-2074-478d-832c-7bc7b22bde68",
-                    "path": "",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "LeftClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -17,6 +17,10 @@ public enum PageControlType
 /// <summary>
 /// Serializable class representing a single controllable item on a settings page.
 /// This is the "Model" in MVC - it owns the data state.
+/// 
+/// NEW: Supports hierarchical navigation via childPage reference.
+/// If childPage is assigned, this item acts as a "Category Header" that drills down
+/// to a child controller when Submit is pressed.
 /// </summary>
 [System.Serializable]
 public class PageControlItem
@@ -43,6 +47,10 @@ public class PageControlItem
     public float minValue = 0f;
     public float maxValue = 1f;
 
+    [Header("Hierarchical Navigation (NEW)")]
+    [Tooltip("If assigned, pressing Submit on this item will drill down to this child page. Typically used for Category Buttons.")]
+    public GenericPageController childPage;
+
     [Header("Events (Listeners wire up in Inspector)")]
     [Tooltip("Fired when this item receives focus (for audio cues, NVDA announcements)")]
     public UnityEvent OnFocus;
@@ -52,6 +60,11 @@ public class PageControlItem
 
     [Tooltip("Fired when value changes (passes new absolute value as float)")]
     public UnityEvent<float> OnValueChanged;
+
+    /// <summary>
+    /// Checks if this item has a child page assigned (making it a Category Header)
+    /// </summary>
+    public bool HasChildPage => childPage != null;
 
     /// <summary>
     /// Increments the value based on control type and step size

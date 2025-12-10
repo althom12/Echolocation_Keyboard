@@ -62,6 +62,15 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TabBack"",
+                    ""type"": ""Button"",
+                    ""id"": ""aeb07f45-e5cc-40cb-98e6-2a3609604d30"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -152,15 +161,26 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""ModifyValue"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3b5c65d4-86cf-482e-820e-8ebd4c95ca39"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TabBack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
         {
-            ""name"": ""New action map"",
+            ""name"": ""Player"",
             ""id"": ""f616e624-e7d7-4ee4-9aee-ee21e7bfb7df"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
+                    ""name"": ""LeftClick"",
                     ""type"": ""Button"",
                     ""id"": ""0556c9db-8635-404e-8eee-00c202b4adb9"",
                     ""expectedControlType"": """",
@@ -173,11 +193,11 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""00170f50-2074-478d-832c-7bc7b22bde68"",
-                    ""path"": """",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""LeftClick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -192,15 +212,16 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         m_UI_ModifyValue = m_UI.FindAction("ModifyValue", throwIfNotFound: true);
         m_UI_TabNavigate = m_UI.FindAction("TabNavigate", throwIfNotFound: true);
         m_UI_Submit = m_UI.FindAction("Submit", throwIfNotFound: true);
-        // New action map
-        m_Newactionmap = asset.FindActionMap("New action map", throwIfNotFound: true);
-        m_Newactionmap_Newaction = m_Newactionmap.FindAction("New action", throwIfNotFound: true);
+        m_UI_TabBack = m_UI.FindAction("TabBack", throwIfNotFound: true);
+        // Player
+        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
+        m_Player_LeftClick = m_Player.FindAction("LeftClick", throwIfNotFound: true);
     }
 
     ~@CustomInputActions()
     {
         UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, CustomInputActions.UI.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_Newactionmap.enabled, "This will cause a leak and performance issues, CustomInputActions.Newactionmap.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, CustomInputActions.Player.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -266,6 +287,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_ModifyValue;
     private readonly InputAction m_UI_TabNavigate;
     private readonly InputAction m_UI_Submit;
+    private readonly InputAction m_UI_TabBack;
     public struct UIActions
     {
         private @CustomInputActions m_Wrapper;
@@ -274,6 +296,7 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
         public InputAction @ModifyValue => m_Wrapper.m_UI_ModifyValue;
         public InputAction @TabNavigate => m_Wrapper.m_UI_TabNavigate;
         public InputAction @Submit => m_Wrapper.m_UI_Submit;
+        public InputAction @TabBack => m_Wrapper.m_UI_TabBack;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -295,6 +318,9 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @Submit.started += instance.OnSubmit;
             @Submit.performed += instance.OnSubmit;
             @Submit.canceled += instance.OnSubmit;
+            @TabBack.started += instance.OnTabBack;
+            @TabBack.performed += instance.OnTabBack;
+            @TabBack.canceled += instance.OnTabBack;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -311,6 +337,9 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
             @Submit.started -= instance.OnSubmit;
             @Submit.performed -= instance.OnSubmit;
             @Submit.canceled -= instance.OnSubmit;
+            @TabBack.started -= instance.OnTabBack;
+            @TabBack.performed -= instance.OnTabBack;
+            @TabBack.canceled -= instance.OnTabBack;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -329,60 +358,61 @@ public partial class @CustomInputActions: IInputActionCollection2, IDisposable
     }
     public UIActions @UI => new UIActions(this);
 
-    // New action map
-    private readonly InputActionMap m_Newactionmap;
-    private List<INewactionmapActions> m_NewactionmapActionsCallbackInterfaces = new List<INewactionmapActions>();
-    private readonly InputAction m_Newactionmap_Newaction;
-    public struct NewactionmapActions
+    // Player
+    private readonly InputActionMap m_Player;
+    private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
+    private readonly InputAction m_Player_LeftClick;
+    public struct PlayerActions
     {
         private @CustomInputActions m_Wrapper;
-        public NewactionmapActions(@CustomInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_Newactionmap_Newaction;
-        public InputActionMap Get() { return m_Wrapper.m_Newactionmap; }
+        public PlayerActions(@CustomInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @LeftClick => m_Wrapper.m_Player_LeftClick;
+        public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(NewactionmapActions set) { return set.Get(); }
-        public void AddCallbacks(INewactionmapActions instance)
+        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerActions instance)
         {
-            if (instance == null || m_Wrapper.m_NewactionmapActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_NewactionmapActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
+            if (instance == null || m_Wrapper.m_PlayerActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerActionsCallbackInterfaces.Add(instance);
+            @LeftClick.started += instance.OnLeftClick;
+            @LeftClick.performed += instance.OnLeftClick;
+            @LeftClick.canceled += instance.OnLeftClick;
         }
 
-        private void UnregisterCallbacks(INewactionmapActions instance)
+        private void UnregisterCallbacks(IPlayerActions instance)
         {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
+            @LeftClick.started -= instance.OnLeftClick;
+            @LeftClick.performed -= instance.OnLeftClick;
+            @LeftClick.canceled -= instance.OnLeftClick;
         }
 
-        public void RemoveCallbacks(INewactionmapActions instance)
+        public void RemoveCallbacks(IPlayerActions instance)
         {
-            if (m_Wrapper.m_NewactionmapActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_PlayerActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(INewactionmapActions instance)
+        public void SetCallbacks(IPlayerActions instance)
         {
-            foreach (var item in m_Wrapper.m_NewactionmapActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_PlayerActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_NewactionmapActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_PlayerActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public NewactionmapActions @Newactionmap => new NewactionmapActions(this);
+    public PlayerActions @Player => new PlayerActions(this);
     public interface IUIActions
     {
         void OnNavigate(InputAction.CallbackContext context);
         void OnModifyValue(InputAction.CallbackContext context);
         void OnTabNavigate(InputAction.CallbackContext context);
         void OnSubmit(InputAction.CallbackContext context);
+        void OnTabBack(InputAction.CallbackContext context);
     }
-    public interface INewactionmapActions
+    public interface IPlayerActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnLeftClick(InputAction.CallbackContext context);
     }
 }

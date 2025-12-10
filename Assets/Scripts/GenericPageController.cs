@@ -8,6 +8,9 @@ using static UnityEngine.Rendering.DebugUI.Table;
 /// Generic headless controller for navigating and interacting with settings pages.
 /// This is the "Controller" in MVC - it handles input and orchestrates state changes.
 /// Uses Unity's new Input System with C# event subscription.
+/// 
+/// NEW: Supports hierarchical navigation via parent/child controller linking.
+/// Controllers can drill down to child pages and bubble up to parent pages.
 /// </summary>
 public class GenericPageController : MonoBehaviour
 {
@@ -15,8 +18,15 @@ public class GenericPageController : MonoBehaviour
     [Tooltip("List of all controllable items on this page (populate per-instance in Inspector)")]
     [SerializeField] private List<PageControlItem> pageItems = new List<PageControlItem>();
 
+    [Header("Hierarchical Navigation (NEW)")]
+    [Tooltip("If this is a child page, reference to the parent controller. Leave null for root controllers.")]
+    [SerializeField] private GenericPageController parentPage;
+
+    [Tooltip("Is this controller currently accepting input? Root starts true, children start false.")]
+    [SerializeField] private bool isInputActive = false;
+
     [Header("Navigation Events")]
-    [Tooltip("Fired when Shift+Tab is pressed at index 0 (request parent to take focus)")]
+    [Tooltip("Fired when Shift+Tab is pressed at index 0 with no parent (root-level escape request)")]
     public UnityEvent OnRequestReturnToCategories;
 
     [Header("State")]
@@ -28,27 +38,24 @@ public class GenericPageController : MonoBehaviour
     // Input System reference
     private CustomInputActions _input;
 
+    // Timer for held-down arrow key behavior
+    private float _moveTimer = 0f;
+
+    // Frame skip mechanism for bubble-up input consumption
+    private int _skipInputFrame = -1;
+
     private void Awake()
     {
         _input = new CustomInputActions();
 
         if (enableDebugLogs)
-            Debug.Log($"[{gameObject.name}] GenericPageController initialized with {pageItems.Count} items");
-
-        // CRITICAL TEST: Log EVERY phase of ModifyValue
-        _input.UI.ModifyValue.started += ctx =>
-            Debug.Log($"?? [TEST] ModifyValue STARTED | Control: {ctx.control.path} | Value: {ctx.ReadValue<float>()}");
-
-        _input.UI.ModifyValue.performed += ctx =>
-            Debug.Log($"?? [TEST] ModifyValue PERFORMED | Control: {ctx.control.path} | Value: {ctx.ReadValue<float>()}");
-
-        _input.UI.ModifyValue.canceled += ctx =>
-            Debug.Log($"?? [TEST] ModifyValue CANCELED | Control: {ctx.control.path}");
+            Debug.Log($"[{gameObject.name}] GenericPageController initialized with {pageItems.Count} items (isInputActive: {isInputActive})");
     }
 
     private void OnEnable()
     {
-        Debug.Log($"[{gameObject.name}] ===== OnEnable() START =====");
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] ===== OnEnable() START =====");
 
         // Check if input is null
         if (_input == null)
@@ -57,78 +64,166 @@ public class GenericPageController : MonoBehaviour
             return;
         }
 
-        Debug.Log($"[{gameObject.name}] _input exists, enabling...");
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] _input exists, enabling...");
+
         _input.Enable();
-        Debug.Log($"[{gameObject.name}] _input enabled");
 
-        // Check if UI action map exists
-        // UI is a struct, so it always exists - just log that we're accessing it
-        Debug.Log($"[{gameObject.name}] Accessing _input.UI action map...");
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] _input enabled, subscribing to actions...");
 
-        // Check each action individually
-        Debug.Log($"[{gameObject.name}] Checking Navigate action...");
+        // Subscribe to all input actions (but guard logic with isInputActive checks)
         if (_input.UI.Navigate != null)
         {
             _input.UI.Navigate.performed += OnNavigatePerformed;
-            Debug.Log($"[{gameObject.name}] ? Navigate subscribed");
-        }
-        else
-        {
-            Debug.LogError($"[{gameObject.name}] Navigate action is NULL!");
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] ? Navigate subscribed");
         }
 
-        Debug.Log($"[{gameObject.name}] Checking TabNavigate action...");
+        // NEW: Subscribe to Tab/Shift+Tab for navigation (in addition to arrows)
         if (_input.UI.TabNavigate != null)
         {
-            _input.UI.TabNavigate.performed += ctx =>
-            {
-                Debug.Log($"[{gameObject.name}] TabNavigate fired!");
-                if (UnityEngine.InputSystem.Keyboard.current.shiftKey.isPressed)
-                {
-                    NavigateUp();
-                }
-                else
-                {
-                    NavigateDown();
-                }
-            };
-            Debug.Log($"[{gameObject.name}] ? TabNavigate subscribed");
-        }
-        else
-        {
-            Debug.LogError($"[{gameObject.name}] TabNavigate action is NULL!");
+            _input.UI.TabNavigate.performed += OnTabNavigatePerformed;
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] ? TabNavigate subscribed");
         }
 
-        Debug.Log($"[{gameObject.name}] Checking Submit action...");
         if (_input.UI.Submit != null)
         {
             _input.UI.Submit.performed += OnSubmitPerformed;
-            Debug.Log($"[{gameObject.name}] ? Submit subscribed");
-        }
-        else
-        {
-            Debug.LogError($"[{gameObject.name}] Submit action is NULL!");
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] ? Submit subscribed");
         }
 
-        Debug.Log($"[{gameObject.name}] Checking ModifyValue action...");
         if (_input.UI.ModifyValue != null)
         {
             _input.UI.ModifyValue.performed += OnModifyValuePerformed;
             _input.UI.ModifyValue.canceled += OnModifyValueCanceled;
-            Debug.Log($"[{gameObject.name}] ? ModifyValue subscribed");
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] ? ModifyValue subscribed");
+        }
 
-            // Extra debug: Check if the action is enabled
-            Debug.Log($"[{gameObject.name}] ModifyValue enabled: {_input.UI.ModifyValue.enabled}");
-            Debug.Log($"[{gameObject.name}] ModifyValue phase: {_input.UI.ModifyValue.phase}");
+        // Set initial focus if this controller is active and has items
+        if (isInputActive && pageItems.Count > 0)
+        {
+            SetFocus(currentIndex);
+        }
+
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] ===== OnEnable() COMPLETE =====");
+    }
+
+    private void OnDisable()
+    {
+        if (_input == null) return;
+
+        // Unsubscribe from all input actions
+        if (_input.UI.Navigate != null)
+            _input.UI.Navigate.performed -= OnNavigatePerformed;
+
+        if (_input.UI.TabNavigate != null)
+            _input.UI.TabNavigate.performed -= OnTabNavigatePerformed;
+
+        if (_input.UI.Submit != null)
+            _input.UI.Submit.performed -= OnSubmitPerformed;
+
+        if (_input.UI.ModifyValue != null)
+        {
+            _input.UI.ModifyValue.performed -= OnModifyValuePerformed;
+            _input.UI.ModifyValue.canceled -= OnModifyValueCanceled;
+        }
+
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] OnDisable: Input actions unsubscribed");
+    }
+
+    // ???????????????????????????????????????????????????????????????????
+    // INPUT EVENT HANDLERS (with isInputActive guards)
+    // ???????????????????????????????????????????????????????????????????
+
+    /// <summary>
+    /// Handles Up/Down arrow keys for navigation via Input System
+    /// </summary>
+    private void OnNavigatePerformed(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        // GUARD: Only process if this controller is active
+        if (!isInputActive)
+        {
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] Navigate input ignored (isInputActive = false)");
+            return;
+        }
+
+        // GUARD: Skip input if we just became active this frame (bubble-up)
+        if (Time.frameCount == _skipInputFrame)
+        {
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] Navigate input skipped (just bubbled up this frame)");
+            return;
+        }
+
+        if (pageItems.Count == 0)
+            return;
+
+        // Read the navigation input (Vector2: y = 1 for down, y = -1 for up)
+        Vector2 navigationInput = context.ReadValue<Vector2>();
+
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] Navigate input received: {navigationInput}");
+
+        if (navigationInput.y > 0.5f)
+        {
+            // Navigate DOWN (Down Arrow)
+            NavigateDown();
+        }
+        else if (navigationInput.y < -0.5f)
+        {
+            // Navigate UP (Up Arrow)
+            NavigateUp();
+        }
+    }
+
+    /// <summary>
+    /// Handles Tab/Shift+Tab for navigation via Input System
+    /// NEW: Separate handler so Tab can work alongside arrows
+    /// </summary>
+    private void OnTabNavigatePerformed(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        // GUARD: Only process if this controller is active
+        if (!isInputActive)
+        {
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] TabNavigate input ignored (isInputActive = false)");
+            return;
+        }
+
+        // GUARD: Skip input if we just became active this frame (bubble-up)
+        if (Time.frameCount == _skipInputFrame)
+        {
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] TabNavigate input skipped (just bubbled up this frame)");
+            return;
+        }
+
+        if (pageItems.Count == 0)
+            return;
+
+        // Check if Shift is held for reverse navigation
+        bool shiftHeld = UnityEngine.InputSystem.Keyboard.current.shiftKey.isPressed;
+
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] TabNavigate input received (Shift: {shiftHeld})");
+
+        if (shiftHeld)
+        {
+            // Navigate UP (Shift+Tab)
+            NavigateUp();
         }
         else
         {
-            Debug.LogError($"[{gameObject.name}] ? ModifyValue action is NULL! Did you regenerate the C# class?");
+            // Navigate DOWN (Tab)
+            NavigateDown();
         }
-
-        if (pageItems.Count > 0) SetFocus(0);
-
-        Debug.Log($"[{gameObject.name}] ===== OnEnable() COMPLETE =====");
     }
 
     /// <summary>
@@ -136,9 +231,16 @@ public class GenericPageController : MonoBehaviour
     /// </summary>
     private void OnModifyValuePerformed(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
-        Debug.Log($"[{gameObject.name}] ? OnModifyValuePerformed FIRED!");
-        Debug.Log($"[{gameObject.name}] Context phase: {context.phase}");
-        Debug.Log($"[{gameObject.name}] Context control: {context.control}");
+        // GUARD: Only process if this controller is active
+        if (!isInputActive)
+        {
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] ModifyValue input ignored (isInputActive = false)");
+            return;
+        }
+
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] ? OnModifyValuePerformed FIRED!");
 
         if (pageItems.Count == 0)
         {
@@ -147,18 +249,23 @@ public class GenericPageController : MonoBehaviour
         }
 
         PageControlItem currentItem = pageItems[currentIndex];
-        Debug.Log($"[{gameObject.name}] Current item: '{currentItem.itemName}' (Type: {currentItem.controlType})");
+
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] Current item: '{currentItem.itemName}' (Type: {currentItem.controlType})");
 
         // Only Sliders respond to arrow keys
         if (currentItem.controlType != PageControlType.Slider)
         {
-            Debug.LogWarning($"[{gameObject.name}] Current item is not a Slider, ignoring");
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] Current item is not a Slider, ignoring");
             return;
         }
 
         // Read the axis value: +1 for right, -1 for left
         float direction = context.ReadValue<float>();
-        Debug.Log($"[{gameObject.name}] Direction value read: {direction}");
+
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] Direction value read: {direction}");
 
         // Timer check for controlled held-down behavior
         if (Time.time > _moveTimer)
@@ -168,27 +275,30 @@ public class GenericPageController : MonoBehaviour
             if (direction > 0.5f) // Right arrow
             {
                 currentItem.IncrementValue();
-                Debug.Log($"[{gameObject.name}] ?? RIGHT ARROW: '{currentItem.itemName}' changed from {oldValue:F2} to {currentItem.currentValue:F2}");
+                if (enableDebugLogs)
+                    Debug.Log($"[{gameObject.name}] ?? RIGHT ARROW: '{currentItem.itemName}' changed from {oldValue:F2} to {currentItem.currentValue:F2}");
             }
             else if (direction < -0.5f) // Left arrow
             {
                 currentItem.DecrementValue();
-                Debug.Log($"[{gameObject.name}] ?? LEFT ARROW: '{currentItem.itemName}' changed from {oldValue:F2} to {currentItem.currentValue:F2}");
+                if (enableDebugLogs)
+                    Debug.Log($"[{gameObject.name}] ?? LEFT ARROW: '{currentItem.itemName}' changed from {oldValue:F2} to {currentItem.currentValue:F2}");
             }
             else
             {
-                Debug.LogWarning($"[{gameObject.name}] Direction {direction} is in deadzone (not > 0.5 or < -0.5)");
+                if (enableDebugLogs)
+                    Debug.LogWarning($"[{gameObject.name}] Direction {direction} is in deadzone (not > 0.5 or < -0.5)");
             }
 
             _moveTimer = Time.time + 0.15f;
         }
         else
         {
-            Debug.Log($"[{gameObject.name}] Move blocked by timer (too soon)");
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] Move blocked by timer (too soon)");
         }
     }
 
-    
     private void OnModifyValueCanceled(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
         // Reset timer for responsive single taps
@@ -198,89 +308,19 @@ public class GenericPageController : MonoBehaviour
             Debug.Log($"[{gameObject.name}] ModifyValue released, timer reset");
     }
 
-
-
-    /// <summary>
-    /// Handles Tab/Shift+Tab navigation via Input System event
-    /// </summary>
-    private void OnNavigatePerformed(UnityEngine.InputSystem.InputAction.CallbackContext context)
-    {
-        if (pageItems.Count == 0)
-            return;
-
-        // Read the navigation input (Vector2: y = 1 for down/tab, y = -1 for up/shift+tab)
-        Vector2 navigationInput = context.ReadValue<Vector2>();
-
-        if (enableDebugLogs)
-            Debug.Log($"[{gameObject.name}] Navigate input received: {navigationInput}");
-
-        if (navigationInput.y > 0.5f)
-        {
-            // Navigate DOWN (Tab)
-            NavigateDown();
-        }
-        else if (navigationInput.y < -0.5f)
-        {
-            // Navigate UP (Shift + Tab)
-            NavigateUp();
-        }
-    }
-
-    /// <summary>
-    /// Navigate to next item (Tab key)
-    /// </summary>
-    private void NavigateDown()
-    {
-        if (currentIndex < pageItems.Count - 1)
-        {
-            SetFocus(currentIndex + 1);
-
-            if (enableDebugLogs)
-                Debug.Log($"[{gameObject.name}] Navigated DOWN to index {currentIndex}");
-        }
-        else
-        {
-            if (enableDebugLogs)
-                Debug.Log($"[{gameObject.name}] Already at bottom (index {currentIndex}), staying here");
-        }
-    }
-
-    /// <summary>
-    /// Navigate to previous item (Shift + Tab)
-    /// </summary>
-    private void NavigateUp()
-    {
-        if (currentIndex > 0)
-        {
-            SetFocus(currentIndex - 1);
-
-            if (enableDebugLogs)
-                Debug.Log($"[{gameObject.name}] Navigated UP to index {currentIndex}");
-        }
-        else
-        {
-            // At index 0 - request return to categories
-            if (enableDebugLogs)
-                Debug.Log($"[{gameObject.name}] At index 0, requesting return to categories");
-
-            OnRequestReturnToCategories?.Invoke();
-        }
-    }
-
-    /// <summary>
-    /// Handles Left/Right arrow keys for value modification (polled for held-down support)
-    /// </summary>
-    // Add this variable at the top of your class with the other variables
-    // Ensure this is defined at the top of your class
-    private float _moveTimer = 0f;
-
-    
-
     /// <summary>
     /// Handles Enter/Submit key via Input System event
     /// </summary>
     private void OnSubmitPerformed(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
+        // GUARD: Only process if this controller is active
+        if (!isInputActive)
+        {
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] Submit input ignored (isInputActive = false)");
+            return;
+        }
+
         if (pageItems.Count == 0)
             return;
 
@@ -289,7 +329,14 @@ public class GenericPageController : MonoBehaviour
         if (enableDebugLogs)
             Debug.Log($"[{gameObject.name}] SUBMIT pressed on '{currentItem.itemName}' (Type: {currentItem.controlType})");
 
-        // Handle based on control type
+        // NEW: Check if this item has a child page (hierarchical navigation)
+        if (currentItem.HasChildPage)
+        {
+            DrillDownToChild(currentItem.childPage);
+            return; // Don't process normal submit logic
+        }
+
+        // Handle based on control type (original logic)
         switch (currentItem.controlType)
         {
             case PageControlType.Button:
@@ -323,13 +370,54 @@ public class GenericPageController : MonoBehaviour
         }
     }
 
+    // ???????????????????????????????????????????????????????????????????
+    // NAVIGATION LOGIC
+    // ???????????????????????????????????????????????????????????????????
+
+    /// <summary>
+    /// Navigate to next item (Down Arrow)
+    /// </summary>
+    private void NavigateDown()
+    {
+        if (currentIndex < pageItems.Count - 1)
+        {
+            SetFocus(currentIndex + 1);
+
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] Navigated DOWN to index {currentIndex}");
+        }
+        else
+        {
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] Already at bottom (index {currentIndex}), staying here");
+        }
+    }
+
+    /// <summary>
+    /// Navigate to previous item (Up Arrow)
+    /// NEW: If at index 0, bubble up to parent instead of wrapping
+    /// </summary>
+    private void NavigateUp()
+    {
+        if (currentIndex > 0)
+        {
+            SetFocus(currentIndex - 1);
+
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] Navigated UP to index {currentIndex}");
+        }
+        else
+        {
+            // At index 0 - attempt to bubble up to parent
+            BubbleUpToParent();
+        }
+    }
+
     /// <summary>
     /// Sets focus to a specific index, updating visuals and firing events
     /// </summary>
     private void SetFocus(int index)
     {
-
-
         // Validate index
         if (index < 0 || index >= pageItems.Count)
         {
@@ -338,13 +426,11 @@ public class GenericPageController : MonoBehaviour
             return;
         }
 
-        // Clear previous highlight
+        // Clear previous highlight (only on this controller)
         ClearAllHighlights();
 
         // Update state
         currentIndex = index;
-        // Force visual update on focus
-        
 
         // Show new highlight
         PageControlItem currentItem = pageItems[currentIndex];
@@ -360,6 +446,7 @@ public class GenericPageController : MonoBehaviour
             Debug.LogWarning($"[{gameObject.name}] Focus moved to index {currentIndex}: '{currentItem.itemName}', but no highlight visual assigned!");
         }
 
+        // Fire value changed event to update UI
         currentItem.OnValueChanged?.Invoke(currentItem.currentValue);
 
         // Fire focus event for accessibility/audio
@@ -367,7 +454,7 @@ public class GenericPageController : MonoBehaviour
     }
 
     /// <summary>
-    /// Clears all highlight visuals
+    /// Clears all highlight visuals on this controller
     /// </summary>
     private void ClearAllHighlights()
     {
@@ -380,8 +467,99 @@ public class GenericPageController : MonoBehaviour
         }
     }
 
+    // ???????????????????????????????????????????????????????????????????
+    // HIERARCHICAL NAVIGATION (NEW)
+    // ???????????????????????????????????????????????????????????????????
+
     /// <summary>
-    /// Public API: Allow external scripts to programmatically change focus
+    /// Drills down to a child page, transferring input focus.
+    /// Parent's highlight remains active (user knows which category they're in).
+    /// </summary>
+    /// <param name="child">The child controller to activate</param>
+    private void DrillDownToChild(GenericPageController child)
+    {
+        if (child == null)
+        {
+            Debug.LogError($"[{gameObject.name}] DrillDownToChild called with null child!");
+            return;
+        }
+
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] ?? DRILL DOWN to child: {child.gameObject.name}");
+
+        // Transfer input focus
+        this.isInputActive = false;
+        child.isInputActive = true;
+
+        // Link parent reference (supports arbitrary depth)
+        child.parentPage = this;
+
+        // Activate child's first item
+        child.SetFocus(0);
+
+        // NOTE: We do NOT call ClearAllHighlights() on parent
+        // This preserves the parent's highlight (shows active category)
+
+        if (enableDebugLogs)
+        {
+            Debug.Log($"[{gameObject.name}] Input deactivated");
+            Debug.Log($"[{child.gameObject.name}] Input activated, parent linked to '{gameObject.name}'");
+        }
+    }
+
+    /// <summary>
+    /// Bubbles up to the parent page, transferring input focus back.
+    /// If no parent exists (root controller), fires OnRequestReturnToCategories event.
+    /// </summary>
+    private void BubbleUpToParent()
+    {
+        if (parentPage != null)
+        {
+            // We have a parent - bubble up
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] ?? BUBBLE UP to parent: {parentPage.gameObject.name}");
+
+            // Clear this controller's highlights (we're leaving)
+            ClearAllHighlights();
+
+            // Store the parent's current index before any state changes
+            int parentTargetIndex = parentPage.currentIndex;
+
+            // CRITICAL: Mark parent to skip input this frame
+            // This prevents parent from processing the same Shift+Tab that caused bubble-up
+            parentPage._skipInputFrame = Time.frameCount;
+
+            // Transfer input focus back to parent
+            this.isInputActive = false;
+            parentPage.isInputActive = true;
+
+            // CRITICAL: Explicitly call SetFocus on parent to restore its state
+            // This ensures highlight, events, and focus are all properly restored
+            parentPage.SetFocus(parentTargetIndex);
+
+            if (enableDebugLogs)
+            {
+                Debug.Log($"[{gameObject.name}] Input deactivated");
+                Debug.Log($"[{parentPage.gameObject.name}] Input reactivated at index {parentTargetIndex} (skipFrame: {Time.frameCount})");
+            }
+        }
+        else
+        {
+            // No parent - we're at the root
+            if (enableDebugLogs)
+                Debug.Log($"[{gameObject.name}] ?? At ROOT (no parent), firing OnRequestReturnToCategories");
+
+            // Fire event for external systems (e.g., close settings menu)
+            OnRequestReturnToCategories?.Invoke();
+        }
+    }
+
+    // ???????????????????????????????????????????????????????????????????
+    // PUBLIC API
+    // ???????????????????????????????????????????????????????????????????
+
+    /// <summary>
+    /// Allow external scripts to programmatically change focus
     /// </summary>
     public void FocusItem(int index)
     {
@@ -389,7 +567,7 @@ public class GenericPageController : MonoBehaviour
     }
 
     /// <summary>
-    /// Public API: Get current focused item (useful for accessibility announcements)
+    /// Get current focused item (useful for accessibility announcements)
     /// </summary>
     public PageControlItem GetCurrentItem()
     {
@@ -399,10 +577,60 @@ public class GenericPageController : MonoBehaviour
     }
 
     /// <summary>
-    /// Public API: Get current focused index
+    /// Get current focused index
     /// </summary>
     public int GetCurrentIndex()
     {
         return currentIndex;
+    }
+
+    /// <summary>
+    /// Set whether this controller is actively processing input.
+    /// Use this to manually control which controller is active if needed.
+    /// </summary>
+    public void SetInputActive(bool active)
+    {
+        bool wasActive = isInputActive;
+        isInputActive = active;
+
+        if (enableDebugLogs && wasActive != active)
+            Debug.Log($"[{gameObject.name}] Input state changed: {wasActive} ? {active}");
+
+        // If activating, restore focus visual
+        if (active && currentIndex >= 0 && currentIndex < pageItems.Count)
+        {
+            var currentItem = pageItems[currentIndex];
+            if (currentItem.highlightVisual != null)
+            {
+                currentItem.highlightVisual.SetActive(true);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Get whether this controller is actively processing input
+    /// </summary>
+    public bool IsInputActive()
+    {
+        return isInputActive;
+    }
+
+    /// <summary>
+    /// Manually set the parent controller (useful for dynamic scene construction)
+    /// </summary>
+    public void SetParent(GenericPageController parent)
+    {
+        parentPage = parent;
+
+        if (enableDebugLogs)
+            Debug.Log($"[{gameObject.name}] Parent set to: {(parent != null ? parent.gameObject.name : "null")}");
+    }
+
+    /// <summary>
+    /// Get the parent controller (null if this is root)
+    /// </summary>
+    public GenericPageController GetParent()
+    {
+        return parentPage;
     }
 }
