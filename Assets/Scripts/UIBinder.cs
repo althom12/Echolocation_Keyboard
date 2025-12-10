@@ -1,5 +1,4 @@
 using System;
-using CitrioN.SettingsMenuCreator;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
